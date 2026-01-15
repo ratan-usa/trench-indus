@@ -3,14 +3,16 @@ import PipingRiserFeature from '../components/PipingRiserFeature'
 import InfrastructureRisers from '../components/InfrastructureRisers'
 import PavingRisersCatalog from '../components/PavingRisersCatalog'
 import SolutionsSection from '../components/SolutionsSection'
+import IndustrySolutions from '../components/IndustrySolutions'
 
 const Home = () => {
   return (
     <div>
-      {/* <PipingRiserFeature /> */}
-      {/* <InfrastructureRisers/> */}
-      <SolutionsSection/>
-      <PavingRisersCatalog/>
+      <PavingRisersCatalog />
+      <SolutionsSection />
+      <IndustrySolutions />
+      <PipingRiserFeature />
+      <InfrastructureRisers />
     </div>
   )
 }
