@@ -43,7 +43,7 @@ export default function InfrastructureRisers() {
             <div className="space-y-4">
               <h4 className="text-[#cc2221] font-bold text-sm uppercase tracking-[0.2em]">Municipal Solutions</h4>
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
-                Cast Iron <br /> <span className="text-[#cc2221]">piving Risers</span>
+                Cast Iron <br /> <span className="text-[#cc2221]">Paving Risers</span>
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed max-w-xl">
                 Maintain seamless urban traffic flow. Our heavy-duty piving risers allow for precise manhole elevation adjustment during road overlays, eliminating the need for costly digging.
