@@ -92,6 +92,24 @@ export default function MegaPavingRisers() {
     return (
         <div className="min-h-screen bg-white font-sans text-black">
  
+
+
+            {/* --- FEATURES STRIP --- */}
+            <section id="features" className="bg-gray-50 border-b border-gray-200">
+                <div className="container mx-auto px-4 py-16">
+                    <div className="grid md:grid-cols-3 gap-12">
+                        {FEATURES.map((feature, idx) => (
+                            <div key={idx} className="flex flex-col items-center text-center group">
+                                <div className="p-4 bg-white rounded-full shadow-lg border-2 border-transparent group-hover:border-[#cc2221] transition-all duration-300 mb-6">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="text-xl font-black uppercase mb-3">{feature.title}</h3>
+                                <p className="text-gray-600 font-medium">{feature.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             {/* --- HERO SECTION --- */}
             <section className="relative bg-black text-white py-24 overflow-hidden">
                 {/* Abstract Background Element */}
@@ -117,24 +135,6 @@ export default function MegaPavingRisers() {
                     </div>
                 </div>
             </section>
-
-            {/* --- FEATURES STRIP --- */}
-            <section id="features" className="bg-gray-50 border-b border-gray-200">
-                <div className="container mx-auto px-4 py-16">
-                    <div className="grid md:grid-cols-3 gap-12">
-                        {FEATURES.map((feature, idx) => (
-                            <div key={idx} className="flex flex-col items-center text-center group">
-                                <div className="p-4 bg-white rounded-full shadow-lg border-2 border-transparent group-hover:border-[#cc2221] transition-all duration-300 mb-6">
-                                    {feature.icon}
-                                </div>
-                                <h3 className="text-xl font-black uppercase mb-3">{feature.title}</h3>
-                                <p className="text-gray-600 font-medium">{feature.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* --- PRODUCT CATALOG --- */}
             <section id="products" className="py-24 container mx-auto px-4">
                 <div className="text-center mb-16">
