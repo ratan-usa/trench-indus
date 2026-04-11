@@ -7,27 +7,27 @@ const Navbar = () => {
     return (
         <div>
             {/* --- HEADER --- */}
-            <header className="bg-black text-white border-b-4 border-[#cc2221]">
-                <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    {/* Logo Component */}
+            {/* --- LIGHT/RED THEME HEADER --- */}
+            <header className="bg-white border-b-[4px] border-[#cc2221] sticky top-0 z-50 shadow-sm">
+                <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                     <Link href={'/'} className="shrink-0">
                         <Image
                             src={'/PAVING-RISERS-LOGO.png'}
-                            alt='Mega Foundries'
+                            alt='Mega Paving Risers'
                             height={80}
                             width={80}
-                            className="object-contain h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-40 bg-white p-1 rounded-sm"
+                            className="object-contain h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-40"
                         />
                     </Link>
 
-                    {/* Navigation */}
-                    <div className="hidden md:flex gap-8 text-sm font-bold uppercase tracking-wider">
+                    <div className="hidden md:flex gap-8 text-sm font-bold uppercase tracking-wider text-gray-700">
                         <a href="#products" className="hover:text-[#cc2221] transition-colors">Products</a>
-                        <a href="#features" className="hover:text-[#cc2221] transition-colors">Advantages</a>
+                        <a href="#innovation" className="hover:text-[#cc2221] transition-colors">Innovation</a>
+                        <a href="#library" className="hover:text-[#cc2221] transition-colors">Library</a>
                         <a href="#contact" className="hover:text-[#cc2221] transition-colors">Contact</a>
                     </div>
 
-                    <Button className="bg-[#cc2221] hover:bg-[#a01b1a] text-white font-bold hidden sm:flex">
+                    <Button className="bg-[#cc2221] hover:bg-red-800 text-white font-bold hidden sm:flex rounded-sm">
                         Get Quote
                     </Button>
                 </div>
