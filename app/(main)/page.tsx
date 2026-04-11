@@ -8,6 +8,7 @@ import Product3DShowcase from '../../components/ui/sections/Product3DShowcase'
 import HeroCarousel from '@/components/ui/sections/HeroCarousel'
 import ProjectGallery from '@/components/ui/sections/ProjectGallery'
 import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
+import SmartInfraSection from '../components/SmartInfraSection'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <InfrastructureRisers />
       {/* <ProductCatalog /> */}
       <AdjustmentProducts />
+      <SmartInfraSection/>
     </div>
   )
 }
