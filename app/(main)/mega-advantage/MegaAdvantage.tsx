@@ -3,7 +3,7 @@ import React from 'react';
 export default function MegaAdvantage() {
   return (
     <section className="bg-white py-16 font-sans border-t border-gray-100">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="p-6 md:p-8 lg:p-12">
         <div className="max-w-5xl">
           
           {/* Main Title */}
