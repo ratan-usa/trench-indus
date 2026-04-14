@@ -6,14 +6,9 @@ import Link from 'next/link';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const topMenuItems = [
-  { label: 'OUR VALUES', href: '/our-values' },
-  { label: 'HOME', href: '/' },
-  { label: 'HISTORY', href: '/materials' },
-  { label: 'TRANSFORMATION', href: '/transformation' },
-  { label: 'INNOVATIONS', href: '/products' },
-  { label: 'MAKING HISTORY', href: '/making-history' },
-  { label: 'ALWAYS FIRST', href: '/always-first' },
-  { label: 'CONTACT', href: '/contact' },
+  { label: 'INDUSTRY SOLUTIONS', href: '/industry-solutions' },
+  { label: 'MEGA ADVANTAGE', href: '/mega-advantage' },
+  { label: 'PRO SERVICE', href: '/pro-service' }
 ];
 // 1. Define Options Data
 const languageOptions = [
@@ -39,7 +34,7 @@ const TopNavbar = () => {
       <nav className="bg-neutral-800 text-neutral-200 w-full mx-auto shadow-md">
 
         {/* Corrected lg:px-30 to lg:px-8 or standard container usage */}
-        <div className="w-full px-4 sm:px-6 lg:px-10  mx-auto">
+        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto">
           <div className="flex justify-between items-center h-9">
 
             {/* --- DESKTOP: Left Menu Items --- */}

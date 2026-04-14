@@ -10,7 +10,7 @@ export default function IndustrySolutionsBanner() {
       <div className="bg-[#cc2221] text-white flex flex-col md:flex-row items-stretch relative overflow-hidden">
         
         {/* Banner Text Area */}
-        <div className="p-8 md:p-12 lg:p-16 flex-1 flex flex-col justify-center max-w-5xl relative z-10">
+        <div className="p-6 md:p-8 lg:p-12 flex-1 flex flex-col justify-center max-w-5xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
             Industry Solutions
           </h2>
@@ -34,7 +34,7 @@ export default function IndustrySolutionsBanner() {
 
       {/* --- BOTTOM INFO BOX (Light Gray) --- */}
       <div className="bg-gray-50">
-        <div className="container mx-auto px-4 py-10 md:py-14">
+        <div className="p-6 md:p-8 lg:p-12">
           <div className="max-w-4xl">
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
               Our experienced team works directly with contractors, municipal planners, and road crews to understand the exact scope of your paving project. Whether you are dealing with sloped manhole seats, non-standard catch basins, or high-traffic highway specs, our specialized fabrication division ensures you get the exact steel and cast iron components you need. See what Ben & Ben's can do to keep your infrastructure projects moving, no matter your line of work.

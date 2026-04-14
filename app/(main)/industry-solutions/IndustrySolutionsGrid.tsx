@@ -50,6 +50,39 @@ const INDUSTRY_SOLUTIONS = [
     linkText: 'Explore industrial solutions',
     href: '#industrial',
     imageSrc: '/assets/PAVING-RISERS/d-shape.png'
+  },
+  // --- NEWLY ADDED SECTIONS ---
+  {
+    id: 'utilities',
+    title: 'Underground Utilities',
+    description: "Access our deep inventory of standard and expandable adjustment rings. See for yourself why utility contractors rely on us to keep manholes and valve vaults perfectly aligned with final grade.",
+    linkText: 'Find utility solutions',
+    href: '#utilities',
+    imageSrc: '/assets/PAVING-RISERS/d-shape.png'
+  },
+  {
+    id: 'stormwater',
+    title: 'Stormwater Management',
+    description: "Rely on our watertight grade rings and heavy-duty catch basin frames for critical sanitary sewer and stormwater infrastructure projects to prevent inflow and infiltration.",
+    linkText: 'Explore stormwater solutions',
+    href: '#stormwater',
+    imageSrc: '/assets/PAVING-RISERS/d-shape.png'
+  },
+  {
+    id: 'residential',
+    title: 'Residential Subdivisions',
+    description: "From new neighborhood developments to HOA road resurfacing, we provide personalized support and a full catalog of curb inlets and meter box risers to keep your paving crews moving.",
+    linkText: 'Explore residential solutions',
+    href: '#residential',
+    imageSrc: '/assets/PAVING-RISERS/d-shape.png'
+  },
+  {
+    id: 'megaprojects',
+    title: 'Mega-Infrastructure Projects',
+    description: "From pre-bid planning to the final paving pass, Ben & Ben's operates on a massive scale to supply complex highway and airport expansions through single-source fabrication and dedicated logistics.",
+    linkText: 'Partner on mega-projects',
+    href: '#megaprojects',
+    imageSrc: '/assets/PAVING-RISERS/d-shape.png'
   }
 ];
 
@@ -67,7 +100,7 @@ export default function IndustrySolutionsGrid() {
             <div key={item.id} className="flex flex-col sm:flex-row gap-6 group">
               
               {/* Image Left */}
-              <div className="relative w-full sm:w-2/5 aspect-[4/3] sm:aspect-auto sm:min-h-[160px] bg-gray-100 overflow-hidden shrink-0">
+              <div className="relative w-full sm:w-2/5 aspect-[4/3] sm:aspect-auto sm:min-h-[160px] bg-gray-100 overflow-hidden shrink-0 rounded-sm">
                 <Image 
                   src={item.imageSrc} 
                   alt={item.title} 
