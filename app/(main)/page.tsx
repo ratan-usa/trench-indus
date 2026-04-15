@@ -1,5 +1,5 @@
 import React from 'react'
- import PipingRiserFeature from '../components/PipingRiserFeature'
+import PipingRiserFeature from '../components/PipingRiserFeature'
 import InfrastructureRisers from '../components/InfrastructureRisers'
 import PavingRisersCatalog from '../components/PavingRisersCatalog'
 import SolutionsSection from '../components/SolutionsSection'
@@ -9,12 +9,14 @@ import HeroCarousel from '@/components/ui/sections/HeroCarousel'
 import ProjectGallery from '@/components/ui/sections/ProjectGallery'
 import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
+import OurProducts from '../components/ourProduct'
 
 const Home = () => {
   return (
     <div>
       <HeroCarousel />
       <PavingRisersCatalog />
+      <OurProducts />
       <Product3DShowcase />
       {/* <ProjectGallery /> */}
       <SolutionsSection />
@@ -23,7 +25,7 @@ const Home = () => {
       <InfrastructureRisers />
       {/* <ProductCatalog /> */}
       <AdjustmentProducts />
-      <SmartInfraSection/>
+      <SmartInfraSection />
     </div>
   )
 }
