@@ -117,7 +117,7 @@ export default function HeroCarousel() {
 
             {/* --- CONTENT LAYER --- */}
             <div className="absolute inset-0 z-20 container mx-auto px-4 flex flex-col justify-center h-full">
-                <div className="max-w-3xl space-y-6 md:space-y-8 pl-4 md:pl-0 border-l-4 border-[#cc2221] md:border-l-0">
+                <div className="max-w-3xl space-y-6 md:space-y-8 pl-4 md:pl-0 border-l-4 border-[#c92526] md:border-l-0">
 
                     {/* Dynamic Text Content */}
                     <div className="overflow-hidden">
@@ -150,7 +150,7 @@ export default function HeroCarousel() {
                         )}>
                             <Button
                                 size="lg"
-                                className="bg-[#cc2221] hover:bg-white hover:text-[#cc2221] text-white font-bold text-lg px-8 py-6 rounded-sm uppercase tracking-wider transition-all"
+                                className="bg-[#c92526] hover:bg-white hover:text-[#c92526] text-white font-bold text-lg px-8 py-6 rounded-sm uppercase tracking-wider transition-all"
                             >
                                 {HERO_SLIDES[currentSlide].cta} <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
@@ -172,7 +172,7 @@ export default function HeroCarousel() {
                         <div className={cn(
                             "h-1 rounded-full transition-all duration-500 ease-out",
                             currentSlide === index
-                                ? "w-16 bg-[#cc2221]"
+                                ? "w-16 bg-[#c92526]"
                                 : "w-8 bg-gray-600 group-hover:bg-gray-400"
                         )} />
                     </button>

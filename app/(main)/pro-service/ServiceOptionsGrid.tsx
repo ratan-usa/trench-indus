@@ -33,22 +33,22 @@ export default function ServiceOptionsGrid() {
   return (
     <section className="bg-white font-sans">
       <div className="p-6 md:p-8 lg:p-12">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {SERVICE_OPTIONS.map((service) => (
             <div key={service.id} className="flex flex-col h-full group">
-              
+
               {/* Image Container */}
               <div className="relative w-full h-56 mb-6 overflow-hidden bg-gray-100 rounded-sm">
                 {/* Fallback styling if image is missing */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-mono text-xs uppercase tracking-widest z-0">
                   [Image Placeholder]
                 </div>
-                
-                <Image 
-                  src={service.imageSrc} 
-                  alt={service.title} 
-                  fill 
+
+                <Image
+                  src={service.imageSrc}
+                  alt={service.title}
+                  fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105 z-10"
                 />
               </div>
@@ -61,14 +61,14 @@ export default function ServiceOptionsGrid() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {service.description}
                 </p>
-                
+
                 {/* Bottom Link */}
                 <div className="mt-auto">
-                  <a 
-                    href={service.linkHref} 
-                    className="inline-flex items-center text-[#cc2221] font-bold hover:text-black transition-colors"
+                  <a
+                    href={service.linkHref}
+                    className="inline-flex items-center text-[#c92526] font-bold hover:text-black transition-colors"
                   >
-                    {service.linkText} 
+                    {service.linkText}
                     <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
                   </a>
                 </div>

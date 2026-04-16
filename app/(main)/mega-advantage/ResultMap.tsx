@@ -5,10 +5,10 @@ export default function ResultMap() {
   return (
     <section className="bg-white font-sans">
       <div className="p-6 md:p-8 lg:p-12">
-        
+
         {/* Header */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-[#cc2221] mb-2">
+          <h2 className="text-2xl font-bold text-[#c92526] mb-2">
             The result:
           </h2>
           <p className="text-gray-600 text-base">
@@ -19,11 +19,11 @@ export default function ResultMap() {
         {/* Map Area */}
         {/* Changed from aspect-ratio to explicit reduced heights */}
         <div className="relative w-full h-[300px] md:h-[400px] bg-white">
-          
-          <Image 
+
+          <Image
             src="/assets/PAVING-RISERS/paving riser 1.5200.png" // Replace with the actual map image containing the state outlines, lines, and text
-            alt="Map of Manufacturing Facilities, Sales Branches, and Distribution Centers" 
-            fill 
+            alt="Map of Manufacturing Facilities, Sales Branches, and Distribution Centers"
+            fill
             className="object-contain object-left md:object-center"
           />
 
@@ -44,7 +44,7 @@ export default function ResultMap() {
           </div>
 
         </div>
-        
+
       </div>
     </section>
   );

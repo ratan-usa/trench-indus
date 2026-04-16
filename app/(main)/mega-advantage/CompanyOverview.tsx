@@ -29,17 +29,17 @@ export default function CompanyOverview() {
   return (
     <section className="bg-white py-16 font-sans border-b border-gray-100">
       <div className="p-6 md:p-8 lg:p-12">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {OVERVIEW_DATA.map((item) => (
             <div key={item.id} className="flex flex-col group">
-              
+
               {/* Image Container */}
               <div className="relative w-full aspect-[16/9] mb-6 overflow-hidden bg-gray-100">
-                <Image 
-                  src={item.imageSrc} 
-                  alt={item.altText} 
-                  fill 
+                <Image
+                  src={item.imageSrc}
+                  alt={item.altText}
+                  fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Fallback styling if image is missing */}
@@ -49,10 +49,10 @@ export default function CompanyOverview() {
               </div>
 
               {/* Title (Brand Red) */}
-              <h3 className="text-xl font-bold text-[#cc2221] mb-3">
+              <h3 className="text-xl font-bold text-[#c92526] mb-3">
                 {item.title}
               </h3>
-              
+
               {/* Description */}
               <p className="text-gray-700 text-base leading-relaxed">
                 {item.description}

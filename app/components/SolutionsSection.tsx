@@ -1,11 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { 
-  Trees, 
-  Layers, 
-  Grid, 
-  Hammer, 
-  Mountain, 
+import {
+  Trees,
+  Layers,
+  Grid,
+  Hammer,
+  Mountain,
   ArrowRight,
   Car,
   Flower2,
@@ -122,7 +122,7 @@ export default function SolutionsSection() {
   return (
     <section className="bg-white py-20 border-b border-gray-100">
       <div className="container mx-auto px-4">
-        
+
         {/* --- TABS HEADER --- */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-16 border-b border-gray-200 pb-1">
           {TABS.map((tab) => (
@@ -131,15 +131,15 @@ export default function SolutionsSection() {
               onClick={() => setActiveTab(tab.id)}
               className={cn(
                 "pb-4 text-sm md:text-base font-bold uppercase tracking-wider transition-all relative",
-                activeTab === tab.id 
-                  ? "text-black" 
+                activeTab === tab.id
+                  ? "text-black"
                   : "text-gray-400 hover:text-gray-600"
               )}
             >
               {tab.label}
               {/* The "Brush Stroke" Underline Effect */}
               {activeTab === tab.id && (
-                <span className="absolute bottom-[-2px] left-0 w-full h-[4px] bg-[#cc2221] rounded-full" />
+                <span className="absolute bottom-[-2px] left-0 w-full h-[4px] bg-[#c92526] rounded-full" />
               )}
             </button>
           ))}
@@ -149,13 +149,13 @@ export default function SolutionsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {SOLUTIONS_DATA[activeTab as keyof typeof SOLUTIONS_DATA]?.map((item, index) => (
             <div key={index} className="relative group">
-              <Card className="h-full border border-gray-100 shadow-sm group-hover:shadow-lg group-hover:border-[#cc2221]/30 transition-all duration-300 pt-8 pb-12 bg-gray-50/50">
+              <Card className="h-full border border-gray-100 shadow-sm group-hover:shadow-lg group-hover:border-[#c92526] transition-all duration-300 pt-8 pb-12 bg-gray-50/50">
                 <CardContent className="flex flex-col items-center text-center px-4">
                   {/* Icon Area */}
-                  <div className="mb-6 text-gray-400 group-hover:text-[#cc2221] transition-colors duration-300 transform group-hover:scale-110">
+                  <div className="mb-6 text-gray-400 group-hover:text-[#c92526] transition-colors duration-300 transform group-hover:scale-110">
                     {item.icon}
                   </div>
-                  
+
                   {/* Title */}
                   <h3 className="text-sm font-black uppercase tracking-tight mb-2 min-h-[40px] flex items-center justify-center">
                     {item.title}
@@ -170,17 +170,17 @@ export default function SolutionsSection() {
 
               {/* Floating Action Button */}
               <div className="absolute -bottom-5 left-0 right-0 flex justify-center z-10">
-                <Button 
+                <Button
                   size="icon"
-                  className="rounded-full w-10 h-10 bg-[#cc2221] hover:bg-black text-white shadow-md transition-all duration-300 group-hover:scale-110"
+                  className="rounded-full w-10 h-10 bg-[#c92526] hover:bg-black text-white shadow-md transition-all duration-300 group-hover:scale-110"
                 >
-                   <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className="w-5 h-5" />
                 </Button>
               </div>
             </div>
           ))}
         </div>
-        
+
         {/* Fallback for empty tabs in this demo */}
         {SOLUTIONS_DATA[activeTab as keyof typeof SOLUTIONS_DATA]?.length === 0 && (
           <div className="text-center text-gray-400 py-12 italic">

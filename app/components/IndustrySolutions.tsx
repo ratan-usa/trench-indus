@@ -13,13 +13,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Branding: #cc2221 (Red)
+// Branding: #c92526 (Red)
 
 const SOLUTIONS = [
     {
         id: 1,
         title: "STORM DRAINAGE",
-        icon: <Waves className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Waves className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Catch basin risers, trench grates, and drainage access solutions designed for efficient stormwater management.",
         imageSrc: "/assets/industries/image3.jpeg",
@@ -27,7 +27,7 @@ const SOLUTIONS = [
     {
         id: 2,
         title: "SANITARY SEWER",
-        icon: <Droplets className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Droplets className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Manhole covers and risers engineered for safe, durable access to sanitary sewer systems.",
         imageSrc: "/assets/industries/image5.jpeg",
@@ -35,7 +35,7 @@ const SOLUTIONS = [
     {
         id: 3,
         title: "UTILITY – GAS, ELECTRIC & WATER",
-        icon: <Zap className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Zap className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Access assemblies and riser solutions protecting underground gas, electric, and water utilities.",
         imageSrc: "/assets/industries/image13.jpg",
@@ -43,7 +43,7 @@ const SOLUTIONS = [
     {
         id: 4,
         title: "TELECOMMUNICATION",
-        icon: <Wifi className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Wifi className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Secure covers and access points for fiber optic and telecommunication infrastructure in public spaces.",
         imageSrc: "/assets/industries/image14.jpeg",
@@ -51,7 +51,7 @@ const SOLUTIONS = [
     {
         id: 5,
         title: "WATER DISTRIBUTION",
-        icon: <Droplets className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Droplets className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Valve boxes, hydrant surrounds, and access solutions for reliable water distribution networks.",
         imageSrc: "/assets/industries/image17.jpg",
@@ -59,7 +59,7 @@ const SOLUTIONS = [
     {
         id: 6,
         title: "STREETSCAPES & URBAN DESIGN",
-        icon: <Construction className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Construction className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Tree grates, frames, and covers designed to enhance aesthetics while supporting urban infrastructure.",
         imageSrc: "/assets/industries/image18.jpeg",
@@ -67,7 +67,7 @@ const SOLUTIONS = [
     {
         id: 7,
         title: "AIRPORTS & PORTS",
-        icon: <Plane className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Plane className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Heavy-duty trench grates and access systems built for extreme loads in airports and port facilities.",
         imageSrc: "/assets/industries/image19.jpeg",
@@ -75,7 +75,7 @@ const SOLUTIONS = [
     {
         id: 8,
         title: "PAVING & RESURFACING",
-        icon: <Layers className="w-10 h-10 mb-2 text-[#cc2221]" />,
+        icon: <Layers className="w-10 h-10 mb-2 text-[#c92526]" />,
         description:
             "Risers and frames designed to integrate seamlessly with paving and resurfacing projects.",
         imageSrc: "/assets/industries/image20.jpg",
@@ -90,7 +90,7 @@ export default function IndustrySolutions() {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 mb-4">
-                        Industry <span className="text-[#cc2221]">Solutions</span>
+                        Industry <span className="text-[#c92526]">Solutions</span>
                     </h2>
                     <p className="text-gray-500 font-medium max-w-2xl mx-auto">
                         Mega Paving Risers delivers DOT-approved infrastructure solutions for municipalities and contractors across the USA.
@@ -103,7 +103,7 @@ export default function IndustrySolutions() {
                         <Card key={item.id} className="group overflow-hidden border-none shadow-lg rounded-sm bg-slate-50 flex flex-col h-full">
 
                             {/* Header Strip (Black Background like reference) */}
-                            <div className="bg-black text-white p-4 text-center font-bold uppercase tracking-wider text-sm md:text-base group-hover:bg-[#cc2221] transition-colors duration-300">
+                            <div className="bg-black text-white p-4 text-center font-bold uppercase tracking-wider text-sm md:text-base group-hover:bg-[#c92526] transition-colors duration-300">
                                 {item.title}
                             </div>
 
@@ -129,7 +129,7 @@ export default function IndustrySolutions() {
 
                             {/* Button Section */}
                             <div className="p-6 bg-white flex flex-col items-center mt-auto border-t border-gray-100">
-                                <Button className="bg-[#cc2221] hover:bg-black text-white font-bold uppercase w-full tracking-widest">
+                                <Button className="bg-[#c92526] hover:bg-black text-white font-bold uppercase w-full tracking-widest">
                                     Learn More
                                 </Button>
                             </div>

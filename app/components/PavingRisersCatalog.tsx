@@ -22,12 +22,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
- 
+
 
 const FEATURES = [
     {
         title: "Snow Plough Proof",
-        icon: <Snowflake className="w-8 h-8 text-[#cc2221]" />,
+        icon: <Snowflake className="w-8 h-8 text-[#c92526]" />,
         description: "Engineered to withstand heavy snow clearing equipment."
     },
     {
@@ -37,7 +37,7 @@ const FEATURES = [
     },
     {
         title: "7 Years Warranty",
-        icon: <ShieldCheck className="w-8 h-8 text-[#cc2221]" />,
+        icon: <ShieldCheck className="w-8 h-8 text-[#c92526]" />,
         description: "Guaranteed quality and long-lasting performance."
     }
 ];
@@ -45,7 +45,7 @@ const FEATURES = [
 export default function MegaPavingRisers() {
     return (
         <div className="min-h-screen bg-white font-sans text-black">
- 
+
 
 
             {/* --- FEATURES STRIP --- */}
@@ -54,7 +54,7 @@ export default function MegaPavingRisers() {
                     <div className="grid md:grid-cols-3 gap-12">
                         {FEATURES.map((feature, idx) => (
                             <div key={idx} className="flex flex-col items-center text-center group">
-                                <div className="p-4 bg-white rounded-full shadow-lg border-2 border-transparent group-hover:border-[#cc2221] transition-all duration-300 mb-6">
+                                <div className="p-4 bg-white rounded-full shadow-lg border-2 border-transparent group-hover:border-[#c92526] transition-all duration-300 mb-6">
                                     {feature.icon}
                                 </div>
                                 <h3 className="text-xl font-black uppercase mb-3">{feature.title}</h3>
@@ -67,11 +67,11 @@ export default function MegaPavingRisers() {
             {/* --- HERO SECTION --- */}
             <section className="relative bg-black text-white py-24 overflow-hidden">
                 {/* Abstract Background Element */}
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-[#cc2221] opacity-10 skew-x-[-20deg] translate-x-20"></div>
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-[#c92526] opacity-10 skew-x-[-20deg] translate-x-20"></div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase">
-                        Built to <span className="text-[#cc2221]">Last</span>
+                        Built to <span className="text-[#c92526]">Last</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light">
                         Professional Grade Paving Risers. <br />
@@ -79,7 +79,7 @@ export default function MegaPavingRisers() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link href="./assets/catalog/MEGA PAVING RISERS CATALOGS.pdf">
-                            <Button size="lg" className="bg-[#cc2221] hover:bg-[#a01b1a] text-white text-lg px-8 py-6 font-bold uppercase">
+                            <Button size="lg" className="bg-[#c92526] hover:bg-[#a01b1a] text-white text-lg px-8 py-6 font-bold uppercase">
                                 Download Catalog
                             </Button>
                         </Link>
@@ -88,10 +88,10 @@ export default function MegaPavingRisers() {
                         </Button>
                     </div>
                 </div>
-            </section> 
+            </section>
 
             {/* --- INVENTORY LIST --- */}
-            <section className="bg-[#cc2221] text-white py-16">
+            <section className="bg-[#c92526] text-white py-16">
                 <div className="container mx-auto px-4">
                     <h3 className="text-2xl font-black text-center mb-8 uppercase tracking-tight">
                         Full Inventory List

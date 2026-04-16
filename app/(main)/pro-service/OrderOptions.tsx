@@ -5,7 +5,7 @@ export default function OrderOptions() {
   return (
     <section className="bg-white font-sans">
       <div className="p-6 md:p-8 lg:p-12">
-        
+
         {/* --- HEADER --- */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -19,19 +19,19 @@ export default function OrderOptions() {
         {/* --- 3-COLUMN LAYOUT BOX --- */}
         <div className="bg-gray-50 p-8 md:p-10 lg:p-12 border border-gray-100 rounded-sm">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 lg:gap-12">
-            
+
             {/* Column 1: Online */}
             <div className="flex flex-col h-full">
               <h3 className="font-bold text-gray-900 text-lg mb-3">
                 Online
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Place orders in a few clicks through your <Link href="#portal" className="text-[#cc2221] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron risers delivered directly to your staging area so your crew never has to wait.
+                Place orders in a few clicks through your <Link href="#portal" className="text-[#c92526] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron risers delivered directly to your staging area so your crew never has to wait.
               </p>
               <div>
-                <Link 
+                <Link
                   href="#register"
-                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221]/30 hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
                 >
                   Register for account
                 </Link>
@@ -47,9 +47,9 @@ export default function OrderOptions() {
                 Give us a call to place an order with expert help from our dedicated pro sales team. Tell us your specs—whether it's standard rounds or custom rectangular frames—and we'll handle the rest.
               </p>
               <div>
-                <Link 
+                <Link
                   href="tel:+18005550199"
-                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221]/30 hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
                 >
                   Call your local rep
                 </Link>
@@ -62,12 +62,12 @@ export default function OrderOptions() {
                 At the warehouse
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Your local <Link href="#locations" className="text-[#cc2221] hover:underline font-medium">supply counter</Link> has everything you need to keep your paving crew moving. Pull up the truck and pick from thousands of standard adjustment risers and extensions guaranteed to be in stock.
+                Your local <Link href="#locations" className="text-[#c92526] hover:underline font-medium">supply counter</Link> has everything you need to keep your paving crew moving. Pull up the truck and pick from thousands of standard adjustment risers and extensions guaranteed to be in stock.
               </p>
               <div>
-                <Link 
+                <Link
                   href="#locations"
-                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221]/30 hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
                 >
                   Find your warehouse
                 </Link>

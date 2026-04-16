@@ -138,7 +138,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
     };
 
     return (
-        <Card className="border-2 border-gray-100 hover:border-[#cc2221] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
+        <Card className="border-2 border-gray-100 hover:border-[#c92526] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold uppercase">{cat.title}</CardTitle>
                 <CardDescription className="text-gray-500 font-medium">{cat.description}</CardDescription>
@@ -147,7 +147,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
             <CardContent className="pt-2 flex-grow">
                 {/* Image Slider Container */}
                 <div className="relative h-56 w-full mb-6 bg-gray-50 rounded-lg border border-gray-100 flex items-center justify-center overflow-hidden group/slider">
-                    
+
                     <Image
                         src={cat.images[currentImage]}
                         alt={`${cat.title} image ${currentImage + 1}`}
@@ -160,7 +160,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                     {cat.images.length > 1 && (
                         <>
                             {/* Previous Button */}
-                            <button 
+                            <button
                                 onClick={prevImage}
                                 className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity z-10"
                             >
@@ -168,7 +168,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                             </button>
 
                             {/* Next Button */}
-                            <button 
+                            <button
                                 onClick={nextImage}
                                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity z-10"
                             >
@@ -178,9 +178,9 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                             {/* Slider Dots */}
                             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
                                 {cat.images.map((_, idx) => (
-                                    <div 
-                                        key={idx} 
-                                        className={`h-1.5 rounded-full transition-all ${currentImage === idx ? 'w-4 bg-[#cc2221]' : 'w-1.5 bg-gray-300'}`}
+                                    <div
+                                        key={idx}
+                                        className={`h-1.5 rounded-full transition-all ${currentImage === idx ? 'w-4 bg-[#c92526]' : 'w-1.5 bg-gray-300'}`}
                                     />
                                 ))}
                             </div>
@@ -210,7 +210,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
             </CardContent>
 
             <CardFooter className="mt-auto pt-4">
-                <Button className="w-full bg-black hover:bg-[#cc2221] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
+                <Button className="w-full bg-black hover:bg-[#c92526] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
                     View Specs <ChevronRight className="ml-2 w-4 h-4" />
                 </Button>
             </CardFooter>
@@ -223,13 +223,13 @@ export default function OurProducts() {
     return (
         <div className="min-h-screen bg-white font-sans text-black">
             <section id="products" className="p-6 md:p-8 lg:p-12">
-                
+
                 <div className="text-center mb-16">
                     <Badge className="bg-black hover:bg-black text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest">
                         Official Catalog
                     </Badge>
                     <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-                        Our <span className="text-[#cc2221]">Products</span>
+                        Our <span className="text-[#c92526]">Products</span>
                     </h2>
                     <p className="text-gray-500 mt-4 font-medium max-w-xl mx-auto">
                         Available in standard sizes: 1", 1.5", 2", 2.5". <br />

@@ -11,7 +11,7 @@ const GALLERY_PROJECTS = [
     id: 1,
     title: "O'Hare Tarmac: Extra Heavy Duty Risers",
     category: "Airport",
-    imageSrc: "/assets/projects/air-1.jpg", 
+    imageSrc: "/assets/projects/air-1.jpg",
   },
   {
     id: 2,
@@ -48,14 +48,14 @@ const GALLERY_PROJECTS = [
 export default function ProjectCategoryGallery() {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const displayedProjects = activeFilter === "All" 
-    ? GALLERY_PROJECTS 
+  const displayedProjects = activeFilter === "All"
+    ? GALLERY_PROJECTS
     : GALLERY_PROJECTS.filter(p => p.category === activeFilter);
 
   return (
     <section className="bg-white py-16 font-sans">
       <div className="container mx-auto px-4 max-w-7xl">
-        
+
         {/* --- FILTER BAR --- */}
         {/* Matches the exact boxy, outline style from your reference image */}
         <div className="flex flex-wrap gap-2 mb-10">
@@ -67,7 +67,7 @@ export default function ProjectCategoryGallery() {
                 "px-4 py-1.5 border text-sm font-medium transition-colors",
                 activeFilter === filter
                   ? "bg-black text-white border-black" // Active state (black box like reference)
-                  : "bg-white text-gray-700 border-gray-300 hover:border-[#cc2221] hover:text-[#cc2221]"
+                  : "bg-white text-gray-700 border-gray-300 hover:border-[#c92526] hover:text-[#c92526]"
               )}
             >
               {filter}
@@ -81,15 +81,15 @@ export default function ProjectCategoryGallery() {
             <div key={project.id} className="group cursor-pointer">
               {/* Image Container */}
               <div className="relative w-full aspect-[4/3] bg-gray-100 border border-gray-200 mb-3 overflow-hidden">
-                <Image 
-                  src={project.imageSrc} 
-                  alt={project.title} 
-                  fill 
+                <Image
+                  src={project.imageSrc}
+                  alt={project.title}
+                  fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               {/* Simple Text Under Image */}
-              <p className="text-gray-900 text-sm font-medium group-hover:text-[#cc2221] transition-colors">
+              <p className="text-gray-900 text-sm font-medium group-hover:text-[#c92526] transition-colors">
                 {project.title}
               </p>
             </div>
