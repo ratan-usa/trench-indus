@@ -10,10 +10,12 @@ import ProjectGallery from '@/components/ui/sections/ProjectGallery'
 import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
 import OurProducts from '../components/ourProduct'
+import HeroScrollSequence from '@/components/ui/sections/HeroScrollSequence'
 
 const Home = () => {
   return (
     <div>
+      <HeroScrollSequence />
       <HeroCarousel />
       <PavingRisersCatalog />
       <OurProducts />

@@ -5,9 +5,6 @@ import { Search, X, Filter, Box, ChevronDown, ChevronUp } from 'lucide-react';
 import { cn } from "@/lib/utils";
 import { MOCK_FILTERS, adjustment_risers } from '@/lib/product';
 
-
-
-
 const ProductCatalog = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilters, setSelectedFilters] = useState<{ [key: string]: string[] }>({});
