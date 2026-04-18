@@ -67,7 +67,7 @@ export default function MegaPavingRisers() {
             {/* --- HERO SECTION --- */}
             <section className="relative bg-black text-white py-24 overflow-hidden">
                 {/* Abstract Background Element */}
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-[#c92526] opacity-10 skew-x-[-20deg] translate-x-20"></div>
+
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase">

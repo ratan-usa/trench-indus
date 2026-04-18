@@ -42,13 +42,13 @@ const ScrollableMenu = () => {
                                 <MenubarContent className="bg-white border border-gray-100 shadow-xl rounded-md min-w-[220px] p-1">
                                     {section.categories.map((category, index) => (
                                         <MenubarSub key={index}>
-                                            <MenubarSubTrigger className="cursor-pointer text-sm py-2 px-3 rounded-sm text-gray-700 hover:text-[#c92526] hover:bg-red-50">
+                                            <MenubarSubTrigger className="cursor-pointer text-sm py-2 px-3 rounded-sm text-gray-700 hover:text-[#c92526]">
                                                 {category.name}
                                             </MenubarSubTrigger>
                                             <MenubarSubContent className="max-h-[400px] overflow-y-auto bg-white border border-gray-100 shadow-lg min-w-[200px] p-1 ml-1">
                                                 {category.items.map((item, i) => (
                                                     <MenubarItem key={i} asChild>
-                                                        <Link href={`/products/${item.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')}`} className="cursor-pointer text-sm py-1.5 px-2 block w-full hover:text-[#c92526] hover:bg-red-50">
+                                                        <Link href={`/products/${item.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')}`} className="cursor-pointer text-sm py-1.5 px-2 block w-full hover:text-[#c92526]">
                                                             {item}
                                                         </Link>
                                                     </MenubarItem>

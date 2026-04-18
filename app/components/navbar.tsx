@@ -27,7 +27,7 @@ const Navbar = () => {
                         <a href="#contact" className="hover:text-[#c92526] transition-colors">Contact</a>
                     </div>
 
-                    <Button className="bg-[#c92526] hover:bg-red-800 text-white font-bold hidden sm:flex rounded-sm">
+                    <Button className="bg-[#c92526] hover:bg-black text-white font-bold hidden sm:flex rounded-sm">
                         Get Quote
                     </Button>
                 </div>

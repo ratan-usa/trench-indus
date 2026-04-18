@@ -53,7 +53,7 @@ export default function InfrastructureRisers() {
             {/* Feature Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex gap-4">
-                <div className="h-10 w-10 shrink-0 bg-red-50 rounded-lg flex items-center justify-center">
+                <div className="h-10 w-10 shrink-0 bg-black text-[#c92526] rounded-lg flex items-center justify-center">
                   <ShieldCheck className="w-5 h-5 text-[#c92526]" />
                 </div>
                 <div>
@@ -62,7 +62,7 @@ export default function InfrastructureRisers() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="h-10 w-10 shrink-0 bg-red-50 rounded-lg flex items-center justify-center">
+                <div className="h-10 w-10 shrink-0 bg-black text-[#c92526] rounded-lg flex items-center justify-center">
                   <Truck className="w-5 h-5 text-[#c92526]" />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default function InfrastructureRisers() {
             </div>
 
             <div className="pt-4 flex gap-4">
-              <Button className="bg-[#c92526] hover:bg-red-700 text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
+              <Button className="bg-[#c92526] hover:bg-black text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
                 Request Specifications <ArrowUpRight className="ml-2 w-5 h-5" />
               </Button>
             </div>

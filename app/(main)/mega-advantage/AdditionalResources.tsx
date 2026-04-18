@@ -62,7 +62,7 @@ export default function AdditionalResources() {
                     <div className="relative flex items-center">
 
                         {/* Left Navigation Arrow (UI representation) */}
-                        <button className="hidden md:flex absolute -left-12 w-10 h-10 border border-gray-300 items-center justify-center text-[#c92526] hover:border-[#c92526] hover:bg-red-50 transition-colors z-10 bg-white">
+                        <button className="hidden md:flex absolute -left-12 w-10 h-10 border border-gray-300 items-center justify-center text-[#c92526] hover:border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors z-10 bg-white">
                             <ChevronLeft className="w-6 h-6" />
                         </button>
 
@@ -105,7 +105,7 @@ export default function AdditionalResources() {
                         </div>
 
                         {/* Right Navigation Arrow (UI representation) */}
-                        <button className="hidden md:flex absolute -right-12 w-10 h-10 border border-[#c92526] items-center justify-center text-[#c92526] hover:bg-red-50 transition-colors z-10 bg-white">
+                        <button className="hidden md:flex absolute -right-12 w-10 h-10 border border-[#c92526] items-center justify-center text-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors z-10 bg-white">
                             <ChevronRight className="w-6 h-6" />
                         </button>
 

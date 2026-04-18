@@ -215,7 +215,7 @@ export default function Product3DShowcase() {
 
                     {activeVideoIndex === idx && isPlaying && (
                       <div className="absolute inset-0 bg-black/50 flex items-center justify-center z-10">
-                        <div className="w-2 h-2 bg-red-500 rounded-full animate-ping" />
+                        <div className="w-2 h-2 bg-[#c92526] rounded-full animate-ping" />
                       </div>
                     )}
                   </div>

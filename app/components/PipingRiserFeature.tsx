@@ -69,7 +69,7 @@ export default function PipingRiserFeature() {
               {/* Call to Action */}
               <div className="pt-6">
                 <Link href="/contact">
-                  <Button className="group bg-[#c92526] hover:bg-red-700 text-white px-8 py-6 text-base font-bold transition-all">
+                  <Button className="group bg-[#c92526] hover:bg-black text-white px-8 py-6 text-base font-bold transition-all">
                     Request Specs & Quote
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
@@ -91,7 +91,7 @@ export default function PipingRiserFeature() {
               <div className="absolute inset-0 bg-slate-900/40"></div>
 
               {/* Visual Highlight Text */}
-              <div className="absolute bottom-6 left-6 p-3 bg-black/50 backdrop-blur-sm rounded-md border border-red-500/20">
+              <div className="absolute bottom-6 left-6 p-3 bg-black/50 backdrop-blur-sm rounded-md border border-[#c92526]">
                 <p className="text-xl font-bold text-white leading-none">ISO 9001 Certified Materials</p>
               </div>
             </div>
