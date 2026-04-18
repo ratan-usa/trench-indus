@@ -56,7 +56,7 @@ const HeroScrollSequence = () => {
   return (
     // Container height determines how long the scroll animation lasts
     // Increased to 600vh to make the scroll slower and smoother
-    <div ref={containerRef} className="relative h-[600vh] bg-black">
+    <div ref={containerRef} className="relative h-[600vh] bg-[#c92526]">
       <div className="sticky top-0 h-screen w-full flex items-center justify-center p-[50px]">
         <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
           {/* eslint-disable-next-line @next/next/no-img-element */}

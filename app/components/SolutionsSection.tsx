@@ -121,7 +121,7 @@ export default function SolutionsSection() {
 
   return (
     <section className="bg-white py-20 border-b border-gray-100">
-      <div className="container mx-auto px-4">
+      <div className="p-6 md:p-8 lg:p-12">
 
         {/* --- TABS HEADER --- */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-16 border-b border-gray-200 pb-1">

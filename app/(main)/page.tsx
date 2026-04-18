@@ -1,17 +1,18 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 import PipingRiserFeature from '../components/PipingRiserFeature'
 import InfrastructureRisers from '../components/InfrastructureRisers'
-import PavingRisersCatalog from '../components/PavingRisersCatalog'
 import SolutionsSection from '../components/SolutionsSection'
 import IndustrySolutions from '../components/IndustrySolutions'
 import Product3DShowcase from '../../components/ui/sections/Product3DShowcase'
-import HeroCarousel from '@/components/ui/sections/HeroCarousel'
 import ProjectGallery from '@/components/ui/sections/ProjectGallery'
 import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
-import OurProducts from '../components/ourProduct'
 import HeroScrollSequence from '@/components/ui/sections/HeroScrollSequence'
 
+const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
+const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
+const OurProducts = dynamic(() => import('../components/ourProduct'))
 const Home = () => {
   return (
     <div>

@@ -94,7 +94,7 @@ export default function Product3DShowcase() {
 
   return (
     <section className="bg-zinc-950 text-white py-20 border-t border-zinc-900">
-      <div className="container mx-auto px-4">
+      <div className="p-6 md:p-8 lg:p-12">
 
         {/* --- SECTION HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">

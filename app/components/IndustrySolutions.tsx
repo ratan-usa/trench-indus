@@ -85,7 +85,7 @@ const SOLUTIONS = [
 export default function IndustrySolutions() {
     return (
         <section className="py-20 bg-white border-b border-gray-100">
-            <div className="container mx-auto px-4">
+            <div className="p-6 md:p-8 lg:p-12">
 
                 {/* Section Header */}
                 <div className="text-center mb-16">

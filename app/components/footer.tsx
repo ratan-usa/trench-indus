@@ -9,7 +9,7 @@ const footer = () => {
 
       {/* --- FOOTER --- */}
       <footer id="contact" className="bg-black text-white pt-20 pb-10">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16">
+        <div className="p-6 md:p-8 lg:p-12 grid md:grid-cols-2 gap-16">
 
           {/* Contact Info */}
           <div>
@@ -48,7 +48,7 @@ const footer = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 mt-20 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-medium">
+        <div className="p-6 md:p-8 lg:p-12 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-medium">
           <p>&copy; {new Date().getFullYear()} Paving Risers. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">Privacy Policy</Link>
