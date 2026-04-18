@@ -9,6 +9,8 @@ import ProjectGallery from '@/components/ui/sections/ProjectGallery'
 import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
 import HeroScrollSequence from '@/components/ui/sections/HeroScrollSequence'
+import ServicesAndSolutions from '../components/ServicesAndSolutions'
+import ContractorResources from '../components/ContractorResources'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -24,7 +26,9 @@ const Home = () => {
       {/* <ProjectGallery /> */}
       <SolutionsSection />
       <IndustrySolutions />
+      <ServicesAndSolutions/>
       <PipingRiserFeature />
+      <ContractorResources/>
       <InfrastructureRisers />
       {/* <ProductCatalog /> */}
       <AdjustmentProducts />
