@@ -18,7 +18,7 @@ const OurProducts = dynamic(() => import('../components/ourProduct'))
 const Home = () => {
   return (
     <div>
-      <HeroScrollSequence />
+      {/* <HeroScrollSequence /> */}
       <HeroCarousel />
       <PavingRisersCatalog />
       <OurProducts />
