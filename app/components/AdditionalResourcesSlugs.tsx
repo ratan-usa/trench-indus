@@ -37,7 +37,7 @@ const RESOURCES = [
 
 export default function AdditionalResourcesSlugs() {
   return (
-    <section className="bg-white   font-sans border-t border-gray-100">
+    <section className="bg-white w-full  font-sans border-t border-gray-100">
       <div className="p-6 md:p-8 lg:p-12">
         
         {/* --- HEADER --- */}
