@@ -71,7 +71,7 @@ export default function ContactExtraordinary() {
                 </div>
                 <div>
                   <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">VIP Pro Desk</p>
-                  <p className="text-white text-xl font-medium">+1 (800) 555-IRON</p>
+                  <p className="text-white text-xl font-medium">+1 (516) 252-1111</p>
                 </div>
               </div>
 
