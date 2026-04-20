@@ -24,18 +24,18 @@ export default function ContactExtraordinary() {
     <section className="relative min-h-screen flex items-center justify-center bg-zinc-950 font-sans overflow-hidden py-24">
       
       {/* --- BACKGROUND ANIMATED GLOWS --- */}
-      <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#C92027]/20 rounded-full blur-[120px] animate-pulse"></div>
-      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#C92027]/10 rounded-full blur-[150px]"></div>
+      <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#c92526]/20 rounded-full blur-[120px] animate-pulse"></div>
+      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#c92526]/10 rounded-full blur-[150px]"></div>
 
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         
         {/* --- HEADER --- */}
         <div className="text-center mb-16">
-          <h2 className="text-[#C92027] font-black tracking-widest uppercase text-sm mb-4 flex items-center justify-center gap-2">
+          <h2 className="text-[#c92526] font-black tracking-widest uppercase text-sm mb-4 flex items-center justify-center gap-2">
             <HardHat className="w-5 h-5" /> Direct Foundry Access
           </h2>
           <h3 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6">
-            LET'S BUILD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C92027] to-red-500">TOGETHER.</span>
+            LET'S BUILD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c92526] to-red-500">TOGETHER.</span>
           </h3>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">
             Skip the middleman. Send us your project specs, blueprints, or custom fabrication needs, and our engineering team will deliver a quote within 24 hours.
@@ -50,7 +50,7 @@ export default function ContactExtraordinary() {
             {/* FLOATING 3D RENDER STAGE */}
             <div className="relative w-full h-[350px] mb-12 flex items-center justify-center group perspective-1000">
               {/* Glowing Pedestal */}
-              <div className="absolute bottom-10 w-48 h-8 bg-[#C92027]/30 rounded-[100%] blur-xl group-hover:bg-[#C92027]/50 transition-colors duration-700"></div>
+              <div className="absolute bottom-10 w-48 h-8 bg-[#c92526]/30 rounded-[100%] blur-xl group-hover:bg-[#c92526]/50 transition-colors duration-700"></div>
               
               {/* 3D Image Container (Floating Animation) */}
               <div className="relative w-64 h-64 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
@@ -65,9 +65,9 @@ export default function ContactExtraordinary() {
 
             {/* Quick Contact Cards */}
             <div className="space-y-6">
-              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#C92027]/50 transition-all duration-300">
-                <div className="w-14 h-14 rounded-full bg-[#C92027]/20 flex items-center justify-center shrink-0">
-                  <Phone className="w-6 h-6 text-[#C92027]" />
+              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#c92526]/50 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-[#c92526]/20 flex items-center justify-center shrink-0">
+                  <Phone className="w-6 h-6 text-[#c92526]" />
                 </div>
                 <div>
                   <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">VIP Pro Desk</p>
@@ -75,9 +75,9 @@ export default function ContactExtraordinary() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#C92027]/50 transition-all duration-300">
-                <div className="w-14 h-14 rounded-full bg-[#C92027]/20 flex items-center justify-center shrink-0">
-                  <Mail className="w-6 h-6 text-[#C92027]" />
+              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#c92526]/50 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-[#c92526]/20 flex items-center justify-center shrink-0">
+                  <Mail className="w-6 h-6 text-[#c92526]" />
                 </div>
                 <div>
                   <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">Send Blueprints</p>
@@ -92,7 +92,7 @@ export default function ContactExtraordinary() {
             <div className="bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
               
               {/* Subtle top border highlight */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C92027] to-transparent opacity-50"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#c92526] to-transparent opacity-50"></div>
 
               <h3 className="text-2xl font-bold text-white mb-8">Request a Custom Quote</h3>
 
@@ -105,7 +105,7 @@ export default function ContactExtraordinary() {
                     <input 
                       type="text" 
                       required
-                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#c92526] focus:ring-1 focus:ring-[#c92526] transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -114,7 +114,7 @@ export default function ContactExtraordinary() {
                     <input 
                       type="text" 
                       required
-                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#c92526] focus:ring-1 focus:ring-[#c92526] transition-all"
                       placeholder="City Paving Dept."
                     />
                   </div>
@@ -127,7 +127,7 @@ export default function ContactExtraordinary() {
                     <input 
                       type="email" 
                       required
-                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#c92526] focus:ring-1 focus:ring-[#c92526] transition-all"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -135,7 +135,7 @@ export default function ContactExtraordinary() {
                     <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Phone Number</label>
                     <input 
                       type="tel" 
-                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#c92526] focus:ring-1 focus:ring-[#c92526] transition-all"
                       placeholder="(555) 000-0000"
                     />
                   </div>
@@ -147,7 +147,7 @@ export default function ContactExtraordinary() {
                   <textarea 
                     rows={4}
                     required
-                    className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all resize-none"
+                    className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#c92526] focus:ring-1 focus:ring-[#c92526] transition-all resize-none"
                     placeholder="We need 50 expandable adjustment rings for a highway resurfacing project..."
                   ></textarea>
                 </div>
@@ -157,7 +157,7 @@ export default function ContactExtraordinary() {
                   type="submit" 
                   disabled={isSubmitting || isSubmitted}
                   className={`w-full h-16 rounded-lg font-black uppercase tracking-widest text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_-10px_rgba(201,32,39,0.5)] hover:shadow-[0_0_60px_-10px_rgba(201,32,39,0.7)]
-                    ${isSubmitted ? 'bg-green-500 text-white' : 'bg-[#C92027] hover:bg-red-600 text-white'}
+                    ${isSubmitted ? 'bg-green-500 text-white' : 'bg-[#c92526] hover:bg-red-600 text-white'}
                     ${isSubmitting ? 'opacity-80 cursor-wait' : ''}
                   `}
                 >
