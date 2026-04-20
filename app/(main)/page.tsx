@@ -12,6 +12,7 @@ import HeroScrollSequence from '@/components/ui/sections/HeroScrollSequence'
 import ServicesAndSolutions from '../components/ServicesAndSolutions'
 import ContractorResources from '../components/ContractorResources'
 import AdditionalResourcesSlugs from '../components/AdditionalResourcesSlugs'
+import ContactExtraordinary from './ContactExtraordinary'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -22,19 +23,22 @@ const Home = () => {
       {/* <HeroScrollSequence /> */}
       <HeroCarousel />
       <PavingRisersCatalog />
-      <OurProducts />
+      <section className='our-product' id='our-product'>
+        <OurProducts />
+      </section>
       <Product3DShowcase />
       {/* <ProjectGallery /> */}
       <SolutionsSection />
       <IndustrySolutions />
-      <ServicesAndSolutions/>
+      <ServicesAndSolutions />
       <PipingRiserFeature />
-      <ContractorResources/>
+      <ContractorResources />
       <InfrastructureRisers />
       {/* <ProductCatalog /> */}
-      <AdjustmentProducts />
-      <AdditionalResourcesSlugs/>
       <SmartInfraSection />
+      <AdjustmentProducts />
+      <AdditionalResourcesSlugs />
+      <ContactExtraordinary/>
     </div>
   )
 }

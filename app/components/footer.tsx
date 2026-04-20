@@ -25,8 +25,8 @@ const footer = () => {
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="w-6 h-6 text-[#c92526] shrink-0" />
-                <a href="mailto:welcome@pavingrisers.com" className="hover:text-[#c92526] transition font-bold">
-                  welcome@pavingrisers.com
+                <a href="mailto:info@pavingrisers.com" className="hover:text-[#c92526] transition font-bold">
+                  info@pavingrisers.com
                 </a>
               </div>
               <div className="flex items-center gap-4">

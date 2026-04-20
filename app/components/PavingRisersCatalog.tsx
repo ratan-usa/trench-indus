@@ -83,9 +83,11 @@ export default function MegaPavingRisers() {
                                 Download Catalog
                             </Button>
                         </Link>
-                        <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-black text-lg px-8 py-6 font-bold uppercase">
-                            View Products
-                        </Button>
+                        <Link href={'#our-product'}>
+                            <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-black text-lg px-8 py-6 font-bold uppercase">
+                                View Products
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

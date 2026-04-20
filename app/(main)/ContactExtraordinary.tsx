@@ -1,0 +1,188 @@
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { Send, Phone, Mail, MapPin, HardHat, CheckCircle2 } from 'lucide-react';
+
+export default function ContactExtraordinary() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      // Reset after 3 seconds
+      setTimeout(() => setIsSubmitted(false), 3000);
+    }, 1500);
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-zinc-950 font-sans overflow-hidden py-24">
+      
+      {/* --- BACKGROUND ANIMATED GLOWS --- */}
+      <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#C92027]/20 rounded-full blur-[120px] animate-pulse"></div>
+      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#C92027]/10 rounded-full blur-[150px]"></div>
+
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        
+        {/* --- HEADER --- */}
+        <div className="text-center mb-16">
+          <h2 className="text-[#C92027] font-black tracking-widest uppercase text-sm mb-4 flex items-center justify-center gap-2">
+            <HardHat className="w-5 h-5" /> Direct Foundry Access
+          </h2>
+          <h3 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6">
+            LET'S BUILD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C92027] to-red-500">TOGETHER.</span>
+          </h3>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">
+            Skip the middleman. Send us your project specs, blueprints, or custom fabrication needs, and our engineering team will deliver a quote within 24 hours.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* --- LEFT: 3D RENDER & CONTACT INFO --- */}
+          <div className="lg:col-span-5 flex flex-col justify-center">
+            
+            {/* FLOATING 3D RENDER STAGE */}
+            <div className="relative w-full h-[350px] mb-12 flex items-center justify-center group perspective-1000">
+              {/* Glowing Pedestal */}
+              <div className="absolute bottom-10 w-48 h-8 bg-[#C92027]/30 rounded-[100%] blur-xl group-hover:bg-[#C92027]/50 transition-colors duration-700"></div>
+              
+              {/* 3D Image Container (Floating Animation) */}
+              <div className="relative w-64 h-64 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
+                <Image 
+                  src="/assets/PAVING-RISERS/paving riser 1.5203.png" // Put a high-res, transparent 3D render of a riser here
+                  alt="3D Paving Riser Render" 
+                  fill 
+                  className="object-contain drop-shadow-[0_20px_50px_rgba(201,32,39,0.5)]"
+                />
+              </div>
+            </div>
+
+            {/* Quick Contact Cards */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#C92027]/50 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-[#C92027]/20 flex items-center justify-center shrink-0">
+                  <Phone className="w-6 h-6 text-[#C92027]" />
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">VIP Pro Desk</p>
+                  <p className="text-white text-xl font-medium">+1 (800) 555-IRON</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md hover:bg-white/10 hover:border-[#C92027]/50 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-[#C92027]/20 flex items-center justify-center shrink-0">
+                  <Mail className="w-6 h-6 text-[#C92027]" />
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">Send Blueprints</p>
+                  <p className="text-white text-xl font-medium">info@pavingrisers.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- RIGHT: PREMIUM GLASSMORPHISM FORM --- */}
+          <div className="lg:col-span-7">
+            <div className="bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+              
+              {/* Subtle top border highlight */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C92027] to-transparent opacity-50"></div>
+
+              <h3 className="text-2xl font-bold text-white mb-8">Request a Custom Quote</h3>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                
+                {/* Name & Company Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Full Name</label>
+                    <input 
+                      type="text" 
+                      required
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      placeholder="John Doe"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Company / Municipality</label>
+                    <input 
+                      type="text" 
+                      required
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      placeholder="City Paving Dept."
+                    />
+                  </div>
+                </div>
+
+                {/* Email & Phone Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Email Address</label>
+                    <input 
+                      type="email" 
+                      required
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      placeholder="john@company.com"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Phone Number</label>
+                    <input 
+                      type="tel" 
+                      className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all"
+                      placeholder="(555) 000-0000"
+                    />
+                  </div>
+                </div>
+
+                {/* Requirements Textarea */}
+                <div className="space-y-2">
+                  <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Project Requirements (Specs, Sizes, Load Ratings)</label>
+                  <textarea 
+                    rows={4}
+                    required
+                    className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#C92027] focus:ring-1 focus:ring-[#C92027] transition-all resize-none"
+                    placeholder="We need 50 expandable adjustment rings for a highway resurfacing project..."
+                  ></textarea>
+                </div>
+
+                {/* Submit Button */}
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting || isSubmitted}
+                  className={`w-full h-16 rounded-lg font-black uppercase tracking-widest text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_-10px_rgba(201,32,39,0.5)] hover:shadow-[0_0_60px_-10px_rgba(201,32,39,0.7)]
+                    ${isSubmitted ? 'bg-green-500 text-white' : 'bg-[#C92027] hover:bg-red-600 text-white'}
+                    ${isSubmitting ? 'opacity-80 cursor-wait' : ''}
+                  `}
+                >
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                      Encrypting & Sending...
+                    </span>
+                  ) : isSubmitted ? (
+                    <span className="flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5" /> Specs Received
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-2">
+                      Submit to Engineering <Send className="w-4 h-4" />
+                    </span>
+                  )}
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
