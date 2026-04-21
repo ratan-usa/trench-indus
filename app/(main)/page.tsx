@@ -13,6 +13,7 @@ import ServicesAndSolutions from '../components/ServicesAndSolutions'
 import ContractorResources from '../components/ContractorResources'
 import AdditionalResourcesSlugs from '../components/AdditionalResourcesSlugs'
 import ContactExtraordinary from './ContactExtraordinary'
+import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -31,9 +32,10 @@ const Home = () => {
       <SolutionsSection />
       <IndustrySolutions />
       <ServicesAndSolutions />
-      <PipingRiserFeature />
+      {/* <PipingRiserFeature /> */}
       <ContractorResources />
-      <InfrastructureRisers />
+      {/* <InfrastructureRisers /> */}
+      <CombinedRiserSolutions/>
       {/* <ProductCatalog /> */}
       <SmartInfraSection />
       <AdjustmentProducts />
