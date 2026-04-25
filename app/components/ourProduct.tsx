@@ -118,7 +118,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
     };
 
     return (
-        <Card className="border-2 border-gray-100 hover:border-[#c92526] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
+        <Card className="border-2 border-gray-100 hover:border-[#cc2221] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold uppercase">{cat.title}</CardTitle>
                 <CardDescription className="text-gray-500 font-medium">{cat.description}</CardDescription>
@@ -166,7 +166,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
             <CardFooter className="mt-auto pt-4">
                 {/* DYNAMIC LINK TO PRODUCT PAGE */}
                 <Link href={`/product/${cat.slug}`} className="w-full">
-                    <Button className="w-full bg-black hover:bg-[#c92526] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
+                    <Button className="w-full bg-black hover:bg-[#cc2221] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
                         View Specs <ChevronRight className="ml-2 w-4 h-4" />
                     </Button>
                 </Link>
@@ -184,7 +184,7 @@ export default function OurProducts() {
                         Official Catalog
                     </Badge>
                     <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-                        Our <span className="text-[#c92526]">Products</span>
+                        Our <span className="text-[#cc2221]">Products</span>
                     </h2>
                 </div>
 

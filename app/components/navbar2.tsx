@@ -51,9 +51,9 @@ const NAV_LINKS = [
 
 const Navbar = () => {
     return (
-        <header className="bg-white border-b-[4px] border-[#c92526] sticky top-0 z-50 shadow-sm font-sans">
+        <header className="bg-white border-b-[4px] border-[#cc2221] sticky top-0 z-50 shadow-sm font-sans">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                
+
                 {/* --- LOGO --- */}
                 <Link href={'/'} className="shrink-0">
                     <Image
@@ -70,14 +70,14 @@ const Navbar = () => {
                     {NAV_LINKS.map((link) => (
                         <div key={link.title} className="group relative">
                             {/* Main Navigation Item */}
-                            <button className="flex items-center gap-1 px-4 py-2 text-[13px] font-black uppercase tracking-widest text-black hover:text-[#c92526] transition-colors group-hover:bg-gray-50">
+                            <button className="flex items-center gap-1 px-4 py-2 text-[13px] font-black uppercase tracking-widest text-black hover:text-[#cc2221] transition-colors group-hover:bg-gray-50">
                                 {link.title}
                                 <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
                             </button>
 
                             {/* Dropdown Menu (Black & Red Theme) */}
                             <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-[60]">
-                                <ul className="w-72 bg-white border-t-[3px] border-[#c92526] shadow-2xl ring-1 ring-black/5 overflow-hidden">
+                                <ul className="w-72 bg-white border-t-[3px] border-[#cc2221] shadow-2xl ring-1 ring-black/5 overflow-hidden">
                                     {link.dropdown.map((item) => (
                                         <li key={item.name}>
                                             <Link
@@ -95,7 +95,7 @@ const Navbar = () => {
                 </div>
 
                 {/* --- CTA BUTTON --- */}
-                <Button className="bg-black hover:bg-[#c92526] text-white font-black hidden sm:flex rounded-none px-8 h-12 uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                <Button className="bg-black hover:bg-[#cc2221] text-white font-black hidden sm:flex rounded-none px-8 h-12 uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
                     Get Quote
                 </Button>
             </div>

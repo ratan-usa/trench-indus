@@ -13,10 +13,10 @@ const footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-3xl font-black mb-8 uppercase text-[#c92526]">Contact Us</h3>
+            <h3 className="text-3xl font-black mb-8 uppercase text-[#cc2221]">Contact Us</h3>
             <div className="space-y-6 text-lg">
               <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-[#c92526] mt-1 shrink-0" />
+                <MapPin className="w-6 h-6 text-[#cc2221] mt-1 shrink-0" />
                 <p className="leading-relaxed">
                   <span className="font-bold">Mega Paving Risers</span><br />
                   105 Maxes Road<br />
@@ -24,25 +24,25 @@ const footer = () => {
                 </p>
               </div>
               <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-[#c92526] shrink-0" />
-                <a href="mailto:info@pavingrisers.com" className="hover:text-[#c92526] transition font-bold">
+                <Mail className="w-6 h-6 text-[#cc2221] shrink-0" />
+                <a href="mailto:info@pavingrisers.com" className="hover:text-[#cc2221] transition font-bold">
                   info@pavingrisers.com
                 </a>
               </div>
               <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-[#c92526] shrink-0" />
+                <Phone className="w-6 h-6 text-[#cc2221] shrink-0" />
                 <span className="font-bold">Call Now for Wholesale Pricing</span>
               </div>
             </div>
           </div>
 
           {/* CTA Box */}
-          <div className="bg-[#1a1a1a] p-10 border-l-4 border-[#c92526]">
+          <div className="bg-[#1a1a1a] p-10 border-l-4 border-[#cc2221]">
             <h4 className="text-2xl font-bold mb-4">Need a Custom Order?</h4>
             <p className="text-gray-400 mb-8">
               We specialize in custom fabrication. Send us your specs or drawings and we will provide a quote within 24 hours.
             </p>
-            <Button size="lg" className="w-full bg-[#c92526] hover:bg-white hover:text-[#c92526] font-black uppercase text-lg h-14 transition-colors">
+            <Button size="lg" className="w-full bg-[#cc2221] hover:bg-white hover:text-[#cc2221] font-black uppercase text-lg h-14 transition-colors">
               Contact Sales Team
             </Button>
           </div>

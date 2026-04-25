@@ -181,7 +181,7 @@ export default function ProjectGallery() {
         {/* --- HEADER --- */}
         <div className="mb-12">
           <h2 className="text-3xl font-black uppercase tracking-tight mb-6">
-            Featured <span className="text-[#c92526]">Projects</span>
+            Featured <span className="text-[#cc2221]">Projects</span>
           </h2>
 
           {/* --- FILTER BUTTONS --- */}
@@ -195,7 +195,7 @@ export default function ProjectGallery() {
                   "px-6 py-2 border text-sm font-bold uppercase tracking-wider transition-all duration-200",
                   activeCategory === cat
                     ? "bg-black text-white border-black"  // Active State
-                    : "bg-white text-gray-600 border-gray-300 hover:border-[#c92526] hover:text-[#c92526]" // Inactive State
+                    : "bg-white text-gray-600 border-gray-300 hover:border-[#cc2221] hover:text-[#cc2221]" // Inactive State
                 )}
               >
                 {cat}
@@ -233,7 +233,7 @@ export default function ProjectGallery() {
               </div>
 
               {/* Title - Simple text below image as per reference */}
-              <h3 className="text-sm font-bold text-gray-900 leading-tight group-hover:text-[#c92526] transition-colors">
+              <h3 className="text-sm font-bold text-gray-900 leading-tight group-hover:text-[#cc2221] transition-colors">
                 {project.title}
               </h3>
 

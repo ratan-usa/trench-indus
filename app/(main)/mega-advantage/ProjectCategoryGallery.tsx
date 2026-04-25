@@ -67,7 +67,7 @@ export default function ProjectCategoryGallery() {
                 "px-4 py-1.5 border text-sm font-medium transition-colors",
                 activeFilter === filter
                   ? "bg-black text-white border-black" // Active state (black box like reference)
-                  : "bg-white text-gray-700 border-gray-300 hover:border-[#c92526] hover:text-[#c92526]"
+                  : "bg-white text-gray-700 border-gray-300 hover:border-[#cc2221] hover:text-[#cc2221]"
               )}
             >
               {filter}
@@ -89,7 +89,7 @@ export default function ProjectCategoryGallery() {
                 />
               </div>
               {/* Simple Text Under Image */}
-              <p className="text-gray-900 text-sm font-medium group-hover:text-[#c92526] transition-colors">
+              <p className="text-gray-900 text-sm font-medium group-hover:text-[#cc2221] transition-colors">
                 {project.title}
               </p>
             </div>

@@ -40,7 +40,7 @@ export default function ServicesAndSolutions() {
           </h2>
           <Link
             href="/pro-service"
-            className="text-[#c92526] font-medium hover:underline transition-colors"
+            className="text-[#cc2221] font-medium hover:underline transition-colors"
           >
             View all Pro Services
           </Link>
@@ -51,7 +51,7 @@ export default function ServicesAndSolutions() {
           {SERVICES_DATA.map((card) => (
             <div
               key={card.id}
-              className="relative bg-[#c92526] rounded-md overflow-hidden flex flex-col p-8 md:p-10 min-h-[320px] group shadow-sm hover:shadow-md transition-shadow"
+              className="relative bg-[#cc2221] rounded-md overflow-hidden flex flex-col p-8 md:p-10 min-h-[320px] group shadow-sm hover:shadow-md transition-shadow"
             >
 
               {/* Decorative Geometric Background Pattern (Mimicking the original image) */}

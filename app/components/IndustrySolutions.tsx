@@ -23,7 +23,7 @@ const SOLUTIONS = [
         id: 1,
         title: "STORM DRAINAGE",
         slug: "storm-drainage",
-        icon: <Waves className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Waves className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Catch basin risers, trench grates, and drainage access solutions designed for efficient stormwater management.",
         imageSrc: "/assets/industries/image3.jpeg",
     },
@@ -31,7 +31,7 @@ const SOLUTIONS = [
         id: 2,
         title: "SANITARY SEWER",
         slug: "sanitary-sewer",
-        icon: <Droplets className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Droplets className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Manhole covers and risers engineered for safe, durable access to sanitary sewer systems.",
         imageSrc: "/assets/industries/image5.jpeg",
     },
@@ -39,7 +39,7 @@ const SOLUTIONS = [
         id: 3,
         title: "UTILITY – GAS, ELECTRIC & WATER",
         slug: "utility",
-        icon: <Zap className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Zap className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Access assemblies and riser solutions protecting underground gas, electric, and water utilities.",
         imageSrc: "/assets/industries/image13.jpg",
     },
@@ -47,7 +47,7 @@ const SOLUTIONS = [
         id: 4,
         title: "TELECOMMUNICATION",
         slug: "telecommunication",
-        icon: <Wifi className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Wifi className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Secure covers and access points for fiber optic and telecommunication infrastructure in public spaces.",
         imageSrc: "/assets/industries/image14.jpeg",
     },
@@ -55,7 +55,7 @@ const SOLUTIONS = [
         id: 5,
         title: "WATER DISTRIBUTION",
         slug: "water-distribution",
-        icon: <Droplets className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Droplets className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Valve boxes, hydrant surrounds, and access solutions for reliable water distribution networks.",
         imageSrc: "/assets/industries/image17.jpg",
     },
@@ -63,7 +63,7 @@ const SOLUTIONS = [
         id: 6,
         title: "STREETSCAPES & URBAN DESIGN",
         slug: "streetscapes",
-        icon: <Construction className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Construction className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Tree grates, frames, and covers designed to enhance aesthetics while supporting urban infrastructure.",
         imageSrc: "/assets/industries/image18.jpeg",
     },
@@ -71,7 +71,7 @@ const SOLUTIONS = [
         id: 7,
         title: "AIRPORTS & PORTS",
         slug: "airports-ports",
-        icon: <Plane className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Plane className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Heavy-duty trench grates and access systems built for extreme loads in airports and port facilities.",
         imageSrc: "/assets/industries/image19.jpeg",
     },
@@ -79,7 +79,7 @@ const SOLUTIONS = [
         id: 8,
         title: "PAVING & RESURFACING",
         slug: "paving-resurfacing",
-        icon: <Layers className="w-10 h-10 mb-2 text-[#c92526]" />,
+        icon: <Layers className="w-10 h-10 mb-2 text-[#cc2221]" />,
         description: "Risers and frames designed to integrate seamlessly with paving and resurfacing projects.",
         imageSrc: "/assets/industries/image20.jpg",
     },
@@ -93,7 +93,7 @@ export default function IndustrySolutions() {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 mb-4">
-                        Industry <span className="text-[#c92526]">Solutions</span>
+                        Industry <span className="text-[#cc2221]">Solutions</span>
                     </h2>
                     <p className="text-gray-500 font-medium max-w-2xl mx-auto text-lg">
                         Mega Paving Risers delivers DOT-approved infrastructure solutions for municipalities and contractors across the USA.
@@ -106,17 +106,17 @@ export default function IndustrySolutions() {
                         <Card key={item.id} className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-sm bg-slate-50 flex flex-col h-full">
 
                             {/* Header Strip */}
-                            <div className="bg-black text-white p-4 text-center font-bold uppercase tracking-wider text-sm md:text-base group-hover:bg-[#c92526] transition-colors duration-300">
+                            <div className="bg-black text-white p-4 text-center font-bold uppercase tracking-wider text-sm md:text-base group-hover:bg-[#cc2221] transition-colors duration-300">
                                 {item.title}
                             </div>
 
                             {/* Image Area */}
                             <div className="relative h-64 w-full bg-gray-200 overflow-hidden">
-                                
+
                                 <Image
                                     src={item.imageSrc}
-                                    alt={item.title} 
-                                    fill 
+                                    alt={item.title}
+                                    fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700 z-0"
                                 />
 
@@ -137,7 +137,7 @@ export default function IndustrySolutions() {
                             {/* Button Section using Link + Slug */}
                             <div className="p-6 bg-white flex flex-col items-center mt-auto border-t border-gray-100">
                                 <Link href={`/solutions/${item.slug}`} className="w-full">
-                                    <Button className="bg-[#c92526] hover:bg-black text-white font-bold uppercase w-full tracking-widest transition-colors h-12">
+                                    <Button className="bg-[#cc2221] hover:bg-black text-white font-bold uppercase w-full tracking-widest transition-colors h-12">
                                         Learn More
                                     </Button>
                                 </Link>

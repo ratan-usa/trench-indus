@@ -139,7 +139,7 @@ const PRODUCT_DATA = [
 export default function ProductSpecsPage({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = use(params);
     const router = useRouter();
-    
+
     // Search for the product based on the slug
     const product = PRODUCT_DATA.find((p) => p.slug === resolvedParams.slug);
 
@@ -151,23 +151,23 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
     return (
         <div className="min-h-screen bg-gray-50 py-12">
             <div className="max-w-6xl mx-auto px-6">
-                
+
                 {/* Navigation Back */}
-                <button 
-                    onClick={() => router.back()} 
-                    className="flex items-center text-sm font-bold text-gray-500 hover:text-[#c92526] mb-8 uppercase tracking-widest transition-colors"
+                <button
+                    onClick={() => router.back()}
+                    className="flex items-center text-sm font-bold text-gray-500 hover:text-[#cc2221] mb-8 uppercase tracking-widest transition-colors"
                 >
                     <ChevronLeft className="w-4 h-4 mr-1" /> Back to Catalog
                 </button>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white p-8 md:p-12 rounded-sm shadow-sm border border-gray-100">
-                    
+
                     {/* Visual Section */}
                     <div className="relative h-[400px] bg-gray-50 rounded-lg border border-gray-100 flex items-center justify-center p-8">
-                        <Image 
-                            src={product.mainImage} 
-                            alt={product.title} 
-                            fill 
+                        <Image
+                            src={product.mainImage}
+                            alt={product.title}
+                            fill
                             className="object-contain p-10"
                             priority
                         />
@@ -186,7 +186,7 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
 
                         {/* Specs List */}
                         <div className="space-y-4">
-                            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#c92526] flex items-center">
+                            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#cc2221] flex items-center">
                                 <FileText className="w-4 h-4 mr-2" /> Technical Specifications
                             </h3>
                             <div className="grid grid-cols-1 gap-3">
@@ -203,20 +203,20 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
 
                         {/* Features List */}
                         <div className="space-y-4">
-                            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#c92526] flex items-center">
+                            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#cc2221] flex items-center">
                                 <ShieldCheck className="w-4 h-4 mr-2" /> Performance Features
                             </h3>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 {product.features.map((feature, i) => (
                                     <li key={i} className="flex items-center text-sm font-bold text-slate-700">
-                                        <div className="w-1.5 h-1.5 bg-[#c92526] mr-3 rounded-full shrink-0" />
+                                        <div className="w-1.5 h-1.5 bg-[#cc2221] mr-3 rounded-full shrink-0" />
                                         {feature}
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
-                        <Button className="w-full h-14 bg-black hover:bg-[#c92526] text-white font-bold uppercase tracking-widest text-lg transition-all rounded-sm shadow-lg">
+                        <Button className="w-full h-14 bg-black hover:bg-[#cc2221] text-white font-bold uppercase tracking-widest text-lg transition-all rounded-sm shadow-lg">
                             Get A Quote for This Unit
                         </Button>
                     </div>

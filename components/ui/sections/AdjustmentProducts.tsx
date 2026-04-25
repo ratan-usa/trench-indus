@@ -41,7 +41,7 @@ export default function AdjustmentProducts() {
               className="block group"
             >
               {/* Outer Card Container */}
-              <div className="relative overflow-hidden h-[320px] bg-white border border-gray-200 border-b-[6px] border-b-transparent group-hover:border-b-[#c92526] transition-all duration-300">
+              <div className="relative overflow-hidden h-[320px] bg-white border border-gray-200 border-b-[6px] border-b-transparent group-hover:border-b-[#cc2221] transition-all duration-300">
 
                 {/* --- 1. DEFAULT STATE --- */}
                 <div className="absolute inset-0 flex flex-col items-center justify-between p-8 bg-white transition-opacity duration-300 group-hover:opacity-0">
@@ -84,7 +84,7 @@ export default function AdjustmentProducts() {
                     </p>
 
                     {/* Bottom CTA */}
-                    <div className="text-[#c92526] font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 pb-2">
+                    <div className="text-[#cc2221] font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 pb-2">
                       SEE ALL <ChevronRight className="w-5 h-5 stroke-[3]" />
                     </div>
                   </div>

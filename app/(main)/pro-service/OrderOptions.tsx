@@ -26,12 +26,12 @@ export default function OrderOptions() {
                 Online
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Place orders in a few clicks through your <Link href="#portal" className="text-[#c92526] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron risers delivered directly to your staging area so your crew never has to wait.
+                Place orders in a few clicks through your <Link href="#portal" className="text-[#cc2221] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron risers delivered directly to your staging area so your crew never has to wait.
               </p>
               <div>
                 <Link
                   href="#register"
-                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221] hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
                 >
                   Register for account
                 </Link>
@@ -49,7 +49,7 @@ export default function OrderOptions() {
               <div>
                 <Link
                   href="tel:+18005550199"
-                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221] hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
                 >
                   Call your local rep
                 </Link>
@@ -62,12 +62,12 @@ export default function OrderOptions() {
                 At the warehouse
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Your local <Link href="#locations" className="text-[#c92526] hover:underline font-medium">supply counter</Link> has everything you need to keep your paving crew moving. Pull up the truck and pick from thousands of standard adjustment risers and extensions guaranteed to be in stock.
+                Your local <Link href="#locations" className="text-[#cc2221] hover:underline font-medium">supply counter</Link> has everything you need to keep your paving crew moving. Pull up the truck and pick from thousands of standard adjustment risers and extensions guaranteed to be in stock.
               </p>
               <div>
                 <Link
                   href="#locations"
-                  className="inline-block bg-white text-[#c92526] font-bold text-sm px-6 py-2.5 border border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors rounded-sm"
+                  className="inline-block bg-white text-[#cc2221] font-bold text-sm px-6 py-2.5 border border-[#cc2221] hover:bg-[#cc2221] hover:text-white transition-colors rounded-sm"
                 >
                   Find your warehouse
                 </Link>

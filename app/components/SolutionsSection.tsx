@@ -139,7 +139,7 @@ export default function SolutionsSection() {
               {tab.label}
               {/* The "Brush Stroke" Underline Effect */}
               {activeTab === tab.id && (
-                <span className="absolute bottom-[-2px] left-0 w-full h-[4px] bg-[#c92526] rounded-full" />
+                <span className="absolute bottom-[-2px] left-0 w-full h-[4px] bg-[#cc2221] rounded-full" />
               )}
             </button>
           ))}
@@ -149,10 +149,10 @@ export default function SolutionsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {SOLUTIONS_DATA[activeTab as keyof typeof SOLUTIONS_DATA]?.map((item, index) => (
             <div key={index} className="relative group">
-              <Card className="h-full border border-gray-100 shadow-sm group-hover:shadow-lg group-hover:border-[#c92526] transition-all duration-300 pt-8 pb-12 bg-gray-50/50">
+              <Card className="h-full border border-gray-100 shadow-sm group-hover:shadow-lg group-hover:border-[#cc2221] transition-all duration-300 pt-8 pb-12 bg-gray-50/50">
                 <CardContent className="flex flex-col items-center text-center px-4">
                   {/* Icon Area */}
-                  <div className="mb-6 text-gray-400 group-hover:text-[#c92526] transition-colors duration-300 transform group-hover:scale-110">
+                  <div className="mb-6 text-gray-400 group-hover:text-[#cc2221] transition-colors duration-300 transform group-hover:scale-110">
                     {item.icon}
                   </div>
 
@@ -172,7 +172,7 @@ export default function SolutionsSection() {
               <div className="absolute -bottom-5 left-0 right-0 flex justify-center z-10">
                 <Button
                   size="icon"
-                  className="rounded-full w-10 h-10 bg-[#c92526] hover:bg-black text-white shadow-md transition-all duration-300 group-hover:scale-110"
+                  className="rounded-full w-10 h-10 bg-[#cc2221] hover:bg-black text-white shadow-md transition-all duration-300 group-hover:scale-110"
                 >
                   <ArrowRight className="w-5 h-5" />
                 </Button>

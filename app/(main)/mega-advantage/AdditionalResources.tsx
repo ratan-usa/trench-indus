@@ -45,11 +45,11 @@ export default function AdditionalResources() {
 
                 {/* --- TOP: LEARN MORE SECTION --- */}
                 <div className="mb-16">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#c92526] mb-3">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#cc2221] mb-3">
                         Learn More
                     </h2>
                     <p className="text-gray-700 text-lg md:text-xl font-medium">
-                        Talk to an expert at Ben & Ben's to find out how our adjustment risers can work for your next project. <Link href="#contact" className="text-[#c92526] hover:underline transition-colors">Contact us today</Link> or schedule a <Link href="#lunch-and-learn" className="text-[#c92526] hover:underline transition-colors">Lunch and Learn</Link>.
+                        Talk to an expert at Ben & Ben's to find out how our adjustment risers can work for your next project. <Link href="#contact" className="text-[#cc2221] hover:underline transition-colors">Contact us today</Link> or schedule a <Link href="#lunch-and-learn" className="text-[#cc2221] hover:underline transition-colors">Lunch and Learn</Link>.
                     </p>
                 </div>
 
@@ -62,14 +62,14 @@ export default function AdditionalResources() {
                     <div className="relative flex items-center">
 
                         {/* Left Navigation Arrow (UI representation) */}
-                        <button className="hidden md:flex absolute -left-12 w-10 h-10 border border-gray-300 items-center justify-center text-[#c92526] hover:border-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors z-10 bg-white">
+                        <button className="hidden md:flex absolute -left-12 w-10 h-10 border border-gray-300 items-center justify-center text-[#cc2221] hover:border-[#cc2221] hover:bg-[#cc2221] hover:text-white transition-colors z-10 bg-white">
                             <ChevronLeft className="w-6 h-6" />
                         </button>
 
                         {/* Cards Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                             {RESOURCES.map((resource) => (
-                                <Link key={resource.id} href={resource.href} className="group block relative h-[420px] bg-gray-900 overflow-hidden border border-gray-200 hover:border-[#c92526] transition-colors">
+                                <Link key={resource.id} href={resource.href} className="group block relative h-[420px] bg-gray-900 overflow-hidden border border-gray-200 hover:border-[#cc2221] transition-colors">
 
                                     {/* Background Image with Dark Overlay */}
                                     <Image
@@ -94,7 +94,7 @@ export default function AdditionalResources() {
                                         </div>
 
                                         {/* Bottom Link Icon */}
-                                        <div className="flex items-center text-[#c92526] font-bold tracking-wide uppercase text-sm mt-auto group-hover:text-white transition-colors">
+                                        <div className="flex items-center text-[#cc2221] font-bold tracking-wide uppercase text-sm mt-auto group-hover:text-white transition-colors">
                                             <LinkIcon className="w-4 h-4 mr-2" strokeWidth={3} />
                                             {resource.linkText}
                                         </div>
@@ -105,7 +105,7 @@ export default function AdditionalResources() {
                         </div>
 
                         {/* Right Navigation Arrow (UI representation) */}
-                        <button className="hidden md:flex absolute -right-12 w-10 h-10 border border-[#c92526] items-center justify-center text-[#c92526] hover:bg-[#c92526] hover:text-white transition-colors z-10 bg-white">
+                        <button className="hidden md:flex absolute -right-12 w-10 h-10 border border-[#cc2221] items-center justify-center text-[#cc2221] hover:bg-[#cc2221] hover:text-white transition-colors z-10 bg-white">
                             <ChevronRight className="w-6 h-6" />
                         </button>
 

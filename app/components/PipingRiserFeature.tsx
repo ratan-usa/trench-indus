@@ -20,14 +20,14 @@ export default function PipingRiserFeature() {
 
               {/* Header */}
               <div className="flex items-center gap-4">
-                <div className="h-8 w-1.5 bg-[#c92526] rounded-full" />
+                <div className="h-8 w-1.5 bg-[#cc2221] rounded-full" />
                 <h2 className="text-sm font-bold tracking-[0.2em] text-slate-500 uppercase">
                   Critical Infrastructure
                 </h2>
               </div>
 
               <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                High-Integrity <span className="text-[#c92526]">Paving Risers</span> & Vertical Assemblies
+                High-Integrity <span className="text-[#cc2221]">Paving Risers</span> & Vertical Assemblies
               </h3>
 
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -37,28 +37,28 @@ export default function PipingRiserFeature() {
               {/* Feature List */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                 <div className="flex items-start gap-3">
-                  <ShieldCheck className="w-6 h-6 text-[#c92526] flex-shrink-0 mt-1" />
+                  <ShieldCheck className="w-6 h-6 text-[#cc2221] flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Corrosion Resistance</h4>
                     <p className="text-sm text-gray-600">Alloys tailored for harsh marine and chemical exposure.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-[#c92526] flex-shrink-0 mt-1" />
+                  <Zap className="w-6 h-6 text-[#cc2221] flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">High-Pressure Integrity</h4>
                     <p className="text-sm text-gray-600">Guaranteed reliability under extreme vertical stress loads.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Thermometer className="w-6 h-6 text-[#c92526] flex-shrink-0 mt-1" />
+                  <Thermometer className="w-6 h-6 text-[#cc2221] flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Thermal Stability</h4>
                     <p className="text-sm text-gray-600">Components built to operate flawlessly at high temperatures.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <ArrowRight className="w-6 h-6 text-[#c92526] flex-shrink-0 mt-1" />
+                  <ArrowRight className="w-6 h-6 text-[#cc2221] flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Precision Forging</h4>
                     <p className="text-sm text-gray-600">Minimized defects and superior fatigue resistance.</p>
@@ -69,7 +69,7 @@ export default function PipingRiserFeature() {
               {/* Call to Action */}
               <div className="pt-6">
                 <Link href="/contact">
-                  <Button className="group bg-[#c92526] hover:bg-black text-white px-8 py-6 text-base font-bold transition-all">
+                  <Button className="group bg-[#cc2221] hover:bg-black text-white px-8 py-6 text-base font-bold transition-all">
                     Request Specs & Quote
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
@@ -91,7 +91,7 @@ export default function PipingRiserFeature() {
               <div className="absolute inset-0 bg-slate-900/40"></div>
 
               {/* Visual Highlight Text */}
-              <div className="absolute bottom-6 left-6 p-3 bg-black/50 backdrop-blur-sm rounded-md border border-[#c92526]">
+              <div className="absolute bottom-6 left-6 p-3 bg-black/50 backdrop-blur-sm rounded-md border border-[#cc2221]">
                 <p className="text-xl font-bold text-white leading-none">ISO 9001 Certified Materials</p>
               </div>
             </div>

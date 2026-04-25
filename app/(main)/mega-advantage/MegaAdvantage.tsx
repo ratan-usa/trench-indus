@@ -17,7 +17,7 @@ export default function MegaAdvantage() {
           </h3>
 
           {/* Blue/Red Highlight Text */}
-          <h4 className="text-xl font-medium text-[#c92526] mb-4">
+          <h4 className="text-xl font-medium text-[#cc2221] mb-4">
             We're here to support you.
           </h4>
 

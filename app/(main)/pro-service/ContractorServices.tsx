@@ -9,7 +9,7 @@ export default function ContractorServices() {
       {/* --- SECTION 1: PRO TRADE SERVICES --- */}
       <section className="w-full">
         {/* Red Brand Banner Area */}
-        <div className="bg-[#c92526] text-white flex flex-col md:flex-row items-stretch">
+        <div className="bg-[#cc2221] text-white flex flex-col md:flex-row items-stretch">
 
           <div className="p-6 md:p-8 lg:p-12 flex-1 flex flex-col justify-center max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
@@ -29,7 +29,7 @@ export default function ContractorServices() {
               className="object-cover opacity-60 mix-blend-multiply grayscale"
             />
             {/* Gradient fade to blend image with the red background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#c92526] via-[#c92526] to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#cc2221] via-[#cc2221] to-transparent"></div>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ export default function ContractorServices() {
                 Let's talk about setting up a contractor account.
               </p>
 
-              <a href="#contact" className="inline-flex items-center text-[#c92526] font-black uppercase tracking-wider hover:text-black transition-colors">
+              <a href="#contact" className="inline-flex items-center text-[#cc2221] font-black uppercase tracking-wider hover:text-black transition-colors">
                 Contact our pro desk <ChevronRight className="w-5 h-5 ml-1" strokeWidth={3} />
               </a>
             </div>
@@ -54,7 +54,7 @@ export default function ContractorServices() {
       </section>
 
 
-      
+
 
     </div>
   );

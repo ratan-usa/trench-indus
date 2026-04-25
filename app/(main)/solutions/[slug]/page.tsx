@@ -3,11 +3,11 @@
 import React, { use } from 'react';
 import { useRouter, notFound } from 'next/navigation';
 import Image from 'next/image';
-import { 
-  ChevronLeft, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Settings, 
+import {
+  ChevronLeft,
+  CheckCircle2,
+  ShieldCheck,
+  Settings,
   ArrowRight,
   HardHat
 } from 'lucide-react';
@@ -128,30 +128,30 @@ const SOLUTIONS_DB = [
     applications: ['DOT Highway Resurfacing', 'City Street Overlays', 'HOA Neighborhood Paving'],
     featuredProducts: ['Mega-Adjust™ Expandable Risers', 'Solid Steel Adjustment Rings', 'Tapered Paving Rings']
   }
-]; 
+];
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export default function SolutionDetailPage({ params }: PageProps) {
-   const router = useRouter();
+  const router = useRouter();
   const resolvedParams = use(params);
 
-   const solution = SOLUTIONS_DB.find((s) => s.slug === resolvedParams.slug);
+  const solution = SOLUTIONS_DB.find((s) => s.slug === resolvedParams.slug);
 
-   if (!solution) {
+  if (!solution) {
     notFound();
   }
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans pb-24">
-      
+
       {/* --- BREADCRUMB HEADER --- */}
       <div className="bg-white border-b border-gray-200 py-4 sticky top-0 z-40">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-          <button 
-            onClick={() => router.back()} 
-            className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#c92526] transition-colors"
+          <button
+            onClick={() => router.back()}
+            className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#cc2221] transition-colors"
           >
             <ChevronLeft className="w-4 h-4 mr-1" />
             BACK TO SOLUTIONS
@@ -161,14 +161,14 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
       {/* --- HERO SECTION --- */}
       <div className="relative w-full h-[400px] md:h-[500px] bg-slate-900 flex items-center">
-        <Image 
-          src={solution.heroImage} 
-          alt={solution.title} 
-          fill 
+        <Image
+          src={solution.heroImage}
+          alt={solution.title}
+          fill
           className="object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
-        
+
         <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight uppercase tracking-tight">
@@ -184,13 +184,13 @@ export default function SolutionDetailPage({ params }: PageProps) {
       {/* --- MAIN CONTENT GRID --- */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          
+
           {/* LEFT COLUMN: Overview & Applications */}
           <div className="lg:col-span-8 space-y-12">
-            
+
             <section>
               <h2 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-wider flex items-center">
-                <Settings className="w-6 h-6 mr-3 text-[#c92526]" /> 
+                <Settings className="w-6 h-6 mr-3 text-[#cc2221]" />
                 Industry Overview
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -200,24 +200,24 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
             <section>
               <h2 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-wider flex items-center">
-                <HardHat className="w-6 h-6 mr-3 text-[#c92526]" /> 
+                <HardHat className="w-6 h-6 mr-3 text-[#cc2221]" />
                 Common Applications
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {solution.applications.map((app, idx) => (
                   <div key={idx} className="flex items-center p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <CheckCircle2 className="w-5 h-5 text-[#c92526] mr-3 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#cc2221] mr-3 shrink-0" />
                     <span className="font-bold text-slate-700">{app}</span>
                   </div>
                 ))}
               </div>
             </section>
-            
+
           </div>
 
           {/* RIGHT COLUMN: Benefits & Featured Products */}
           <div className="lg:col-span-4 space-y-8">
-            
+
             {/* Benefits Box */}
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-8">
               <h3 className="text-xl font-black text-slate-900 uppercase tracking-widest mb-6 border-b border-gray-100 pb-4">
@@ -226,7 +226,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
               <div className="space-y-6">
                 {solution.benefits.map((benefit, idx) => (
                   <div key={idx} className="flex items-start">
-                    <ShieldCheck className="w-6 h-6 text-[#c92526] shrink-0 mr-4 mt-1" />
+                    <ShieldCheck className="w-6 h-6 text-[#cc2221] shrink-0 mr-4 mt-1" />
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">{benefit.title}</h4>
                       <p className="text-sm text-gray-600 leading-relaxed">{benefit.desc}</p>
@@ -244,15 +244,15 @@ export default function SolutionDetailPage({ params }: PageProps) {
               <ul className="space-y-4 mb-8">
                 {solution.featuredProducts.map((product, idx) => (
                   <li key={idx} className="flex items-center text-sm font-medium text-slate-300">
-                    <div className="w-1.5 h-1.5 bg-[#c92526] rounded-full mr-3 shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#cc2221] rounded-full mr-3 shrink-0"></div>
                     {product}
                   </li>
                 ))}
               </ul>
-              
-              <Button 
-                onClick={() => router.push('/#contact')} 
-                className="w-full bg-[#c92526] hover:bg-white hover:text-black text-white font-bold h-14 uppercase tracking-widest transition-all"
+
+              <Button
+                onClick={() => router.push('/#contact')}
+                className="w-full bg-[#cc2221] hover:bg-white hover:text-black text-white font-bold h-14 uppercase tracking-widest transition-all"
               >
                 Request a Quote <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
