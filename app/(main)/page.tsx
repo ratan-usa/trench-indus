@@ -32,7 +32,7 @@ const Home = () => {
       </section>
       {/* <ProjectGallery /> */}
       <SolutionsSection />
-      <IndustrySolutions />
+      {/* <IndustrySolutions /> */}
       <ServicesAndSolutions />
       {/* <PipingRiserFeature /> */}
       <ContractorResources />
