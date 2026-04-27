@@ -49,7 +49,7 @@ export default function CompanyOverview() {
               </div>
 
               {/* Title (Brand Red) */}
-              <h3 className="text-xl font-bold text-[#cc2221] mb-3">
+              <h3 className="text-xl font-bold text-[#CC0000] mb-3">
                 {item.title}
               </h3>
 

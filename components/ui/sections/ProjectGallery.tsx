@@ -181,7 +181,7 @@ export default function ProjectGallery() {
         {/* --- HEADER --- */}
         <div className="mb-12">
           <h2 className="text-3xl font-black uppercase tracking-tight mb-6">
-            Featured <span className="text-[#cc2221]">Projects</span>
+            Featured <span className="text-[#CC0000]">Projects</span>
           </h2>
 
           {/* --- FILTER BUTTONS --- */}
@@ -194,8 +194,8 @@ export default function ProjectGallery() {
                 className={cn(
                   "px-6 py-2 border text-sm font-bold uppercase tracking-wider transition-all duration-200",
                   activeCategory === cat
-                    ? "bg-black text-white border-black"  // Active State
-                    : "bg-white text-gray-600 border-gray-300 hover:border-[#cc2221] hover:text-[#cc2221]" // Inactive State
+                    ? "bg-[#0F0F0F] text-white border-black"  // Active State
+                    : "bg-white text-gray-600 border-gray-300 hover:border-[#CC0000] hover:text-[#CC0000]" // Inactive State
                 )}
               >
                 {cat}
@@ -225,7 +225,7 @@ export default function ProjectGallery() {
                 />
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-[#0F0F0F]/0 group-hover:bg-[#0F0F0F]/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <div className="bg-white p-2 rounded-full shadow-lg">
                     <ExternalLink className="w-5 h-5 text-black" />
                   </div>
@@ -233,7 +233,7 @@ export default function ProjectGallery() {
               </div>
 
               {/* Title - Simple text below image as per reference */}
-              <h3 className="text-sm font-bold text-gray-900 leading-tight group-hover:text-[#cc2221] transition-colors">
+              <h3 className="text-sm font-bold text-gray-900 leading-tight group-hover:text-[#CC0000] transition-colors">
                 {project.title}
               </h3>
 

@@ -23,7 +23,7 @@ export default function InfrastructureRisers() {
                 className="object-cover"
               />
               {/* Overlay Badge */}
-              <div className="absolute top-6 left-6 bg-[#cc2221] text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">
+              <div className="absolute top-6 left-6 bg-[#CC0000] text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">
                 Infrastructure Standard
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function InfrastructureRisers() {
             {/* Floating Decorative Elements */}
             <div className="absolute -bottom-6 -right-6 w-1/2 aspect-square bg-slate-50 border border-slate-200 rounded-2xl -z-10 hidden md:block"></div>
             <div className="absolute top-1/2 -left-8 -translate-y-1/2 p-6 bg-white shadow-xl rounded-xl border border-slate-50 hidden md:block">
-              <div className="flex items-center gap-4 text-[#cc2221]">
+              <div className="flex items-center gap-4 text-[#CC0000]">
                 <Ruler className="w-8 h-8" />
                 <p className="text-sm font-bold leading-tight">Precision <br /> Height Adjustment</p>
               </div>
@@ -41,9 +41,9 @@ export default function InfrastructureRisers() {
           {/* === RIGHT: CONTENT AND SPECS === */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h4 className="text-[#cc2221] font-bold text-sm uppercase tracking-[0.2em]">Municipal Solutions</h4>
+              <h4 className="text-[#CC0000] font-bold text-sm uppercase tracking-[0.2em]">Municipal Solutions</h4>
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
-                Cast Iron <br /> <span className="text-[#cc2221]">Paving Risers</span>
+                Cast Iron <br /> <span className="text-[#CC0000]">Paving Risers</span>
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed max-w-xl">
                 Maintain seamless urban traffic flow. Our heavy-duty piving risers allow for precise manhole elevation adjustment during road overlays, eliminating the need for costly digging.
@@ -53,8 +53,8 @@ export default function InfrastructureRisers() {
             {/* Feature Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex gap-4">
-                <div className="h-10 w-10 shrink-0 bg-black text-[#cc2221] rounded-lg flex items-center justify-center">
-                  <ShieldCheck className="w-5 h-5 text-[#cc2221]" />
+                <div className="h-10 w-10 shrink-0 bg-[#0F0F0F] text-[#CC0000] rounded-lg flex items-center justify-center">
+                  <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900">Load Bearing</h5>
@@ -62,8 +62,8 @@ export default function InfrastructureRisers() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="h-10 w-10 shrink-0 bg-black text-[#cc2221] rounded-lg flex items-center justify-center">
-                  <Truck className="w-5 h-5 text-[#cc2221]" />
+                <div className="h-10 w-10 shrink-0 bg-[#0F0F0F] text-[#CC0000] rounded-lg flex items-center justify-center">
+                  <Truck className="w-5 h-5 text-[#CC0000]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900">Bulk Ready</h5>
@@ -89,7 +89,7 @@ export default function InfrastructureRisers() {
             </div>
 
             <div className="pt-4 flex gap-4">
-              <Button className="bg-[#cc2221] hover:bg-black text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
+              <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
                 Request Specifications <ArrowUpRight className="ml-2 w-5 h-5" />
               </Button>
             </div>

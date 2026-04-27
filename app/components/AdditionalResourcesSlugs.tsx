@@ -41,7 +41,7 @@ export default function AdditionalResourcesSlugs() {
       <div className="p-6 md:p-8 lg:p-12">
 
         {/* --- HEADER --- */}
-        <h2 className="text-3xl md:text-4xl font-black text-[#cc2221] uppercase tracking-tight mb-8">
+        <h2 className="text-3xl md:text-4xl font-black text-[#CC0000] uppercase tracking-tight mb-8">
           Additional Resources
         </h2>
 
@@ -73,7 +73,7 @@ export default function AdditionalResourcesSlugs() {
               </div>
 
               {/* Bottom Action Icon & Text */}
-              <div className="absolute bottom-6 left-6 z-10 flex items-center text-[#cc2221] font-black uppercase tracking-widest text-sm group-hover:text-white transition-colors duration-300">
+              <div className="absolute bottom-6 left-6 z-10 flex items-center text-[#CC0000] font-black uppercase tracking-widest text-sm group-hover:text-white transition-colors duration-300">
                 {resource.type === 'video' ? (
                   <>
                     <PlayCircle className="w-5 h-5 mr-2" strokeWidth={2.5} />

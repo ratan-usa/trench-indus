@@ -21,7 +21,7 @@ export default function PavingPathHero() {
         style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
       {/* Decorative Brand Accent (Top Left) */}
-      <div className="absolute top-0 left-0 w-32 h-32 border-l-8 border-t-8 border-[#cc2221] -translate-x-12 -translate-y-12" />
+      <div className="absolute top-0 left-0 w-32 h-32 border-l-8 border-t-8 border-[#CC0000] -translate-x-12 -translate-y-12" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center">
@@ -31,9 +31,9 @@ export default function PavingPathHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 mb-8 bg-black px-6 py-2 shadow-2xl"
+            className="flex items-center gap-3 mb-8 bg-[#0F0F0F] px-6 py-2 shadow-2xl"
           >
-            <Construction className="text-[#cc2221] w-5 h-5" />
+            <Construction className="text-[#CC0000] w-5 h-5" />
             <span className="text-white text-[10px] font-black uppercase tracking-[0.4em]">
               The Infrastructure Standard
             </span>
@@ -57,7 +57,7 @@ export default function PavingPathHero() {
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-4xl md:text-7xl font-black uppercase tracking-tighter text-[#cc2221]"
+              className="text-4xl md:text-7xl font-black uppercase tracking-tighter text-[#CC0000]"
             >
               For Any Situation.
             </motion.h2>
@@ -80,11 +80,11 @@ export default function PavingPathHero() {
             transition={{ delay: 1, duration: 0.8 }}
             className="mt-12 flex flex-col sm:flex-row gap-6 w-full sm:w-auto"
           >
-            <Button className="bg-black hover:bg-[#cc2221] text-white font-black px-12 h-20 text-lg uppercase transition-all rounded-none shadow-[20px_20px_0px_rgba(201,37,38,0.2)] hover:shadow-none group">
+            <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black px-12 h-20 text-lg uppercase transition-all rounded-none shadow-[20px_20px_0px_rgba(201,37,38,0.2)] hover:shadow-none group">
               Start Your Project <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" />
             </Button>
 
-            <Button variant="outline" className="border-4 border-black text-black hover:bg-black hover:text-white font-black px-12 h-20 text-lg uppercase transition-all rounded-none">
+            <Button variant="outline" className="border-4 border-black text-black hover:bg-[#0F0F0F] hover:text-white font-black px-12 h-20 text-lg uppercase transition-all rounded-none">
               View All Risers
             </Button>
           </motion.div>
@@ -100,7 +100,7 @@ export default function PavingPathHero() {
       </div>
 
       {/* Vertical Brand Bar */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 h-64 w-1 bg-[#cc2221]" />
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 h-64 w-1 bg-[#CC0000]" />
     </section>
   );
 }

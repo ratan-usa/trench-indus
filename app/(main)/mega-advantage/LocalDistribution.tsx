@@ -9,7 +9,7 @@ export default function LocalDistribution() {
 
         {/* --- HEADER --- */}
         <div className="mb-8 text-xl md:text-2xl font-bold text-gray-900">
-          View <span className="text-[#cc2221]">your local inventory</span> and DOT specifications with an account!
+          View <span className="text-[#CC0000]">your local inventory</span> and DOT specifications with an account!
         </div>
 
         {/* --- 3-IMAGE GRID --- */}
@@ -42,7 +42,7 @@ export default function LocalDistribution() {
 
         {/* --- FOOTER PARAGRAPH --- */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed">
-          Our nationwide distribution network, <Link href="#manufacturing" className="text-[#cc2221] hover:underline">USA-based manufacturing facilities</Link>, and <Link href="#sales" className="text-[#cc2221] hover:underline">regional sales hubs</Link> put us in the perfect position to back our paving risers with real, responsive customer service. Because we understand local municipal and state DOT standards inside and out, our regional production lines keep the exact cast iron and steel components you need within quick reach of your jobsite.
+          Our nationwide distribution network, <Link href="#manufacturing" className="text-[#CC0000] hover:underline">USA-based manufacturing facilities</Link>, and <Link href="#sales" className="text-[#CC0000] hover:underline">regional sales hubs</Link> put us in the perfect position to back our paving risers with real, responsive customer service. Because we understand local municipal and state DOT standards inside and out, our regional production lines keep the exact cast iron and steel components you need within quick reach of your jobsite.
         </div>
 
       </div>

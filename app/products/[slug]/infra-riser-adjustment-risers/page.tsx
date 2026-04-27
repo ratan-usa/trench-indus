@@ -96,7 +96,7 @@ const ProductCatalog = () => {
         <div className="mb-12 border-b-4 border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-4">
           <div>
             <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-              Adjustment <span className="text-[#cc2221]">Risers</span>
+              Adjustment <span className="text-[#CC0000]">Risers</span>
             </h1>
             <p className="text-gray-500 font-medium mt-2">Filter and search through our industrial risers.</p>
           </div>
@@ -118,7 +118,7 @@ const ProductCatalog = () => {
               {sortOption !== 'default' && (
                 <button
                   onClick={() => setSortOption('default')}
-                  className="text-gray-400 hover:text-[#cc2221] transition-colors"
+                  className="text-gray-400 hover:text-[#CC0000] transition-colors"
                   title="Clear Sorting"
                 >
                   <X className="w-5 h-5" />
@@ -135,13 +135,13 @@ const ProductCatalog = () => {
             <div className="bg-white border-2 border-gray-100 p-6 sticky top-24">
               <div className="flex items-center justify-between mb-6 border-b-2 border-gray-100 pb-4">
                 <div className="flex items-center gap-2">
-                  <Filter className="w-5 h-5 text-[#cc2221]" />
+                  <Filter className="w-5 h-5 text-[#CC0000]" />
                   <h2 className="text-xl font-black uppercase tracking-wider">Filters</h2>
                 </div>
                 {Object.values(selectedFilters).some(arr => arr.length > 0) && (
                   <button
                     onClick={() => { setSelectedFilters({}); setCurrentPage(1); }}
-                    className="text-xs font-bold text-[#cc2221] hover:text-black uppercase tracking-widest transition-colors"
+                    className="text-xs font-bold text-[#CC0000] hover:text-black uppercase tracking-widest transition-colors"
                   >
                     Clear All
                   </button>
@@ -154,7 +154,7 @@ const ProductCatalog = () => {
                   <div key={index} className="mb-8 last:mb-0">
                     <button
                       onClick={() => toggleFilter(filter.category)}
-                      className="w-full flex items-center justify-between text-xs font-black text-black uppercase tracking-widest mb-4 bg-gray-50 p-2 border-l-4 border-[#cc2221] hover:bg-gray-100 transition-colors"
+                      className="w-full flex items-center justify-between text-xs font-black text-black uppercase tracking-widest mb-4 bg-gray-50 p-2 border-l-4 border-[#CC0000] hover:bg-gray-100 transition-colors"
                     >
                       <span>{filter.category}</span>
                       {isOpen ? <ChevronUp className="w-4 h-4 text-gray-500" /> : <ChevronDown className="w-4 h-4 text-gray-500" />}
@@ -169,11 +169,11 @@ const ProductCatalog = () => {
                                 type="checkbox"
                                 checked={isChecked}
                                 onChange={() => handleFilterChange(filter.category, option)}
-                                className="mt-1 h-4 w-4 accent-[#cc2221] border-gray-300 rounded-none cursor-pointer"
+                                className="mt-1 h-4 w-4 accent-[#CC0000] border-gray-300 rounded-none cursor-pointer"
                               />
                               <span className={cn(
                                 "ml-3 text-sm font-medium transition-colors duration-200",
-                                isChecked ? "text-black font-bold" : "text-gray-600 group-hover:text-[#cc2221]"
+                                isChecked ? "text-black font-bold" : "text-gray-600 group-hover:text-[#CC0000]"
                               )}>
                                 {option}
                               </span>
@@ -212,7 +212,7 @@ const ProductCatalog = () => {
                     setSearchTerm('');
                     setCurrentPage(1);
                   }}
-                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#cc2221] transition-colors"
+                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#CC0000] transition-colors"
                 >
                   <X className="h-5 w-5" />
                 </button>
@@ -229,7 +229,7 @@ const ProductCatalog = () => {
                   <p className="text-gray-500 mb-6">Adjust your search or filter criteria.</p>
                   <button
                     onClick={() => { setSearchTerm(''); setSelectedFilters({}); setCurrentPage(1); }}
-                    className="bg-[#cc2221] hover:bg-black text-white px-6 py-3 font-bold uppercase tracking-widest text-sm transition-colors"
+                    className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white px-6 py-3 font-bold uppercase tracking-widest text-sm transition-colors"
                   >
                     Clear All Filters
                   </button>
@@ -239,7 +239,7 @@ const ProductCatalog = () => {
                 <>
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     {paginatedProducts.map((product) => (
-                      <div key={product.id} className="group flex flex-col bg-white border-2 border-gray-100 hover:border-[#cc2221] transition-all duration-300 shadow-sm hover:shadow-xl rounded-sm overflow-hidden">
+                      <div key={product.id} className="group flex flex-col bg-white border-2 border-gray-100 hover:border-[#CC0000] transition-all duration-300 shadow-sm hover:shadow-xl rounded-sm overflow-hidden">
 
                         {/* Image Container */}
                         <div className="relative w-full h-64 bg-white p-6 border-b-2 border-gray-50 flex items-center justify-center">
@@ -249,14 +249,14 @@ const ProductCatalog = () => {
                             className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                           />
                           {/* ID Badge */}
-                          <div className="absolute top-0 right-0 bg-black text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
+                          <div className="absolute top-0 right-0 bg-[#0F0F0F] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                             {product.id}
                           </div>
                         </div>
 
                         {/* Content Container */}
                         <div className="p-6 flex flex-col flex-grow">
-                          <h3 className="text-sm font-black uppercase leading-snug mb-4 group-hover:text-[#cc2221] transition-colors line-clamp-3">
+                          <h3 className="text-sm font-black uppercase leading-snug mb-4 group-hover:text-[#CC0000] transition-colors line-clamp-3">
                             {product.title}
                           </h3>
 
@@ -279,7 +279,7 @@ const ProductCatalog = () => {
                           </div>
 
                           {/* Action Button */}
-                          <button className="w-full bg-black hover:bg-[#cc2221] text-white py-4 font-bold uppercase tracking-widest text-xs transition-colors rounded-none mt-auto">
+                          <button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white py-4 font-bold uppercase tracking-widest text-xs transition-colors rounded-none mt-auto">
                             View Specifications
                           </button>
                         </div>
@@ -300,8 +300,8 @@ const ProductCatalog = () => {
                           className={cn(
                             "w-10 h-10 flex items-center justify-center border-2 text-sm font-bold transition-colors",
                             currentPage === i + 1
-                              ? "bg-[#cc2221] border-[#cc2221] text-white"
-                              : "bg-white border-gray-200 text-black hover:border-black hover:text-[#cc2221]"
+                              ? "bg-[#CC0000] border-[#CC0000] text-white"
+                              : "bg-white border-gray-200 text-black hover:border-black hover:text-[#CC0000]"
                           )}
                         >
                           {i + 1}

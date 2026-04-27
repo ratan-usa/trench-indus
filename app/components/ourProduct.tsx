@@ -118,7 +118,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
     };
 
     return (
-        <Card className="border-2 border-gray-100 hover:border-[#cc2221] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
+        <Card className="border-2 border-gray-100 hover:border-[#CC0000] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold uppercase">{cat.title}</CardTitle>
                 <CardDescription className="text-gray-500 font-medium">{cat.description}</CardDescription>
@@ -166,7 +166,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
             <CardFooter className="mt-auto pt-4">
                 {/* DYNAMIC LINK TO PRODUCT PAGE */}
                 <Link href={`/product/${cat.slug}`} className="w-full">
-                    <Button className="w-full bg-black hover:bg-[#cc2221] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
+                    <Button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
                         View Specs <ChevronRight className="ml-2 w-4 h-4" />
                     </Button>
                 </Link>
@@ -180,11 +180,11 @@ export default function OurProducts() {
         <div className="min-h-screen bg-white font-sans text-black">
             <section id="products" className="p-6 md:p-8 lg:p-12 max-w-[1400px] mx-auto">
                 <div className="text-center mb-16">
-                    <Badge className="bg-black text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest">
+                    <Badge className="bg-[#0F0F0F] text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest">
                         Official Catalog
                     </Badge>
                     <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-                        Our <span className="text-[#cc2221]">Products</span>
+                        Our <span className="text-[#CC0000]">Products</span>
                     </h2>
                 </div>
 

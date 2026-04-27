@@ -100,8 +100,8 @@ export default function Product3DShowcase() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <Rotate3d className="text-[#cc2221] w-5 h-5 animate-spin-slow" />
-              <span className="text-[#cc2221] font-bold uppercase tracking-widest text-sm">
+              <Rotate3d className="text-[#CC0000] w-5 h-5 animate-spin-slow" />
+              <span className="text-[#CC0000] font-bold uppercase tracking-widest text-sm">
                 Interactive Showroom
               </span>
             </div>
@@ -115,7 +115,7 @@ export default function Product3DShowcase() {
             className={cn(
               "gap-2 font-bold uppercase tracking-wider px-8 h-12 transition-all",
               isAutoPlayAll
-                ? "bg-[#cc2221] text-white animate-pulse"
+                ? "bg-[#CC0000] text-white animate-pulse"
                 : "bg-white text-black hover:bg-gray-200"
             )}
           >
@@ -129,14 +129,14 @@ export default function Product3DShowcase() {
 
           {/* LEFT: The Main Screen */}
           <div className="lg:col-span-2">
-            <div className="relative aspect-video bg-black rounded-lg border border-zinc-800 shadow-2xl overflow-hidden group">
+            <div className="relative aspect-video bg-[#0F0F0F] rounded-lg border border-zinc-800 shadow-2xl overflow-hidden group">
 
               {/* VIDEO PLAYER LOGIC */}
               {isPlaying ? (
                 <video
                   ref={videoRef}
                   key={activeVideo.src} // Key ensures react rebuilds element on change
-                  className="w-full h-full object-contain bg-black"
+                  className="w-full h-full object-contain bg-[#0F0F0F]"
                   controls
                   autoPlay
                   onEnded={handleVideoEnd}
@@ -156,8 +156,8 @@ export default function Product3DShowcase() {
                   />
 
                   {/* Play Button Overlay */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer hover:bg-black/30 transition-all z-10" onClick={() => setIsPlaying(true)}>
-                    <div className="w-20 h-20 bg-[#cc2221] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer hover:bg-[#0F0F0F]/30 transition-all z-10" onClick={() => setIsPlaying(true)}>
+                    <div className="w-20 h-20 bg-[#CC0000] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <Play className="w-8 h-8 text-white fill-current ml-1" />
                     </div>
                     <p className="mt-4 font-bold uppercase tracking-wider text-sm text-white drop-shadow-md">Start Interactive Tour</p>
@@ -169,7 +169,7 @@ export default function Product3DShowcase() {
               {!isPlaying && (
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
                   <div className="flex items-center gap-3 mb-1">
-                    <Badge variant="outline" className="text-[#cc2221] border-[#cc2221] bg-[#cc2221]">
+                    <Badge variant="outline" className="text-[#CC0000] border-[#CC0000] bg-[#CC0000]">
                       {activeVideo.type.replace('_', ' ')}
                     </Badge>
                     <span className="text-xs text-gray-400 font-mono">{activeVideo.duration}</span>
@@ -200,8 +200,8 @@ export default function Product3DShowcase() {
                   className={cn(
                     "flex gap-4 p-3 rounded-md cursor-pointer transition-all border group",
                     activeVideoIndex === idx
-                      ? "bg-black text-white border-[#cc2221]"
-                      : "bg-black border-zinc-800 hover:border-zinc-600"
+                      ? "bg-[#0F0F0F] text-white border-[#CC0000]"
+                      : "bg-[#0F0F0F] border-zinc-800 hover:border-zinc-600"
                   )}
                 >
                   {/* Thumbnail Placeholder */}
@@ -214,15 +214,15 @@ export default function Product3DShowcase() {
                     />
 
                     {activeVideoIndex === idx && isPlaying && (
-                      <div className="absolute inset-0 bg-black/50 flex items-center justify-center z-10">
-                        <div className="w-2 h-2 bg-[#cc2221] rounded-full animate-ping" />
+                      <div className="absolute inset-0 bg-[#0F0F0F]/50 flex items-center justify-center z-10">
+                        <div className="w-2 h-2 bg-[#CC0000] rounded-full animate-ping" />
                       </div>
                     )}
                   </div>
 
                   {/* Text Info */}
                   <div className="flex flex-col justify-center">
-                    <h5 className={cn("font-bold text-sm leading-tight mb-1 group-hover:text-[#cc2221] transition-colors", activeVideoIndex === idx ? "text-[#cc2221]" : "text-white")}>
+                    <h5 className={cn("font-bold text-sm leading-tight mb-1 group-hover:text-[#CC0000] transition-colors", activeVideoIndex === idx ? "text-[#CC0000]" : "text-white")}>
                       {video.title}
                     </h5>
                     <p className="text-xs text-gray-500 line-clamp-1">{video.description}</p>
@@ -234,7 +234,7 @@ export default function Product3DShowcase() {
             {/* Bottom Call to Action */}
             <div className="mt-4 pt-4 border-t border-zinc-800 text-center">
               <p className="text-xs text-gray-500 mb-3">Need 3D CAD files for your project?</p>
-              <Button variant="outline" className="w-full text-xs text-[#cc2221] border-[#cc2221] hover:bg-white hover:text-black uppercase">
+              <Button variant="outline" className="w-full text-xs text-[#CC0000] border-[#CC0000] hover:bg-white hover:text-black uppercase">
                 Request CAD / BIM Files <ChevronRight className="w-3 h-3 ml-1" />
               </Button>
             </div>

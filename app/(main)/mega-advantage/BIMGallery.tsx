@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { cn } from "@/lib/utils";
 
 const FILTERS = [
-  "All", "Airport", "Commercial", "Education", "Furniture", 
-  "Hospital", "Hospitality", "Industrial", "Infrastructure", 
+  "All", "Airport", "Commercial", "Education", "Furniture",
+  "Hospital", "Hospitality", "Industrial", "Infrastructure",
   "Residential", "Retail"
 ];
 
@@ -27,7 +27,7 @@ export default function BIMGallery() {
   return (
     <section className="bg-white py-12 font-sans">
       <div className="container mx-auto px-4 max-w-7xl">
-        
+
         {/* Filter Buttons */}
         <div className="flex flex-wrap gap-2 mb-6">
           {FILTERS.map((filter) => (
@@ -37,7 +37,7 @@ export default function BIMGallery() {
               className={cn(
                 "px-3 py-1 border text-sm transition-colors",
                 activeFilter === filter
-                  ? "bg-black text-white border-black" 
+                  ? "bg-[#0F0F0F] text-white border-black"
                   : "bg-white text-gray-800 border-gray-300 hover:border-gray-500"
               )}
             >
@@ -58,10 +58,10 @@ export default function BIMGallery() {
           {PROJECTS.map((project) => (
             <div key={project.id} className="group">
               <div className="relative w-full aspect-[4/3] bg-gray-100 border border-gray-200 mb-2 overflow-hidden">
-                <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  fill 
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
                   className="object-cover"
                 />
               </div>

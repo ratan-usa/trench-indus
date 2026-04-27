@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
             {/* --- HEADER --- */}
             {/* --- LIGHT/RED THEME HEADER --- */}
-            <header className="bg-white border-b-[4px] border-[#cc2221] sticky top-0 z-50 shadow-sm">
+            <header className="bg-white border-b-[4px] border-[#CC0000] sticky top-0 z-50 shadow-sm">
                 <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                     <Link href={'/'} className="shrink-0">
                         <Image
@@ -21,13 +21,13 @@ const Navbar = () => {
                     </Link>
 
                     <div className="hidden md:flex gap-8 text-sm font-bold uppercase tracking-wider text-gray-700">
-                        <a href="#products" className="hover:text-[#cc2221] transition-colors">Products</a>
-                        <a href="#innovation" className="hover:text-[#cc2221] transition-colors">Innovation</a>
-                        <a href="#library" className="hover:text-[#cc2221] transition-colors">Library</a>
-                        <a href="#contact" className="hover:text-[#cc2221] transition-colors">Contact</a>
+                        <a href="#products" className="hover:text-[#CC0000] transition-colors">Products</a>
+                        <a href="#innovation" className="hover:text-[#CC0000] transition-colors">Innovation</a>
+                        <a href="#library" className="hover:text-[#CC0000] transition-colors">Library</a>
+                        <a href="#contact" className="hover:text-[#CC0000] transition-colors">Contact</a>
                     </div>
 
-                    <Button className="bg-[#cc2221] hover:bg-black text-white font-bold hidden sm:flex rounded-sm">
+                    <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-bold hidden sm:flex rounded-sm">
                         Get Quote
                     </Button>
                 </div>

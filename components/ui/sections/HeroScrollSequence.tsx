@@ -56,7 +56,7 @@ const HeroScrollSequence = () => {
   return (
     // Container height determines how long the scroll animation lasts
     // Increased to 600vh to make the scroll slower and smoother
-    <div ref={containerRef} className="relative h-[600vh] bg-[#cc2221]">
+    <div ref={containerRef} className="relative h-[600vh] bg-[#CC0000]">
       <div className="sticky top-0 h-screen w-full flex items-center justify-center p-[50px]">
         <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -69,7 +69,7 @@ const HeroScrollSequence = () => {
           />
 
           {/* Optional overlay content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none bg-black/30">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none bg-[#0F0F0F]/30">
             <h1 className="text-5xl md:text-7xl font-bold text-white text-center mb-6 tracking-tight drop-shadow-lg">
               Experience the Future
             </h1>

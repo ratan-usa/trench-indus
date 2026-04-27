@@ -32,12 +32,12 @@ const AIRPORT_DATA = {
 
 export default function AirportPortsPage() {
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-[#cc2221] selection:text-white">
+    <div className="min-h-screen bg-white text-black font-sans selection:bg-[#CC0000] selection:text-white">
 
       {/* ========================================= */}
       {/* 1. HERO SECTION                           */}
       {/* ========================================= */}
-      <section className="relative h-[75vh] min-h-[600px] w-full bg-black overflow-hidden">
+      <section className="relative h-[75vh] min-h-[600px] w-full bg-[#0F0F0F] overflow-hidden">
         <Image
           src={AIRPORT_DATA.heroImage}
           alt={AIRPORT_DATA.title}
@@ -51,8 +51,8 @@ export default function AirportPortsPage() {
           <div className="max-w-[1400px] mx-auto px-6 w-full">
             <div className="max-w-4xl space-y-6">
               <div className="flex items-center gap-3">
-                <div className="h-1.5 w-16 bg-[#cc2221]" />
-                <span className="text-[#cc2221] font-black uppercase tracking-[0.4em] text-sm">
+                <div className="h-1.5 w-16 bg-[#CC0000]" />
+                <span className="text-[#CC0000] font-black uppercase tracking-[0.4em] text-sm">
                   Extra-Heavy Duty Division
                 </span>
               </div>
@@ -63,7 +63,7 @@ export default function AirportPortsPage() {
                 </span>
               </h1>
               <div className="flex flex-wrap gap-4 pt-12">
-                <Button className="bg-[#cc2221] hover:bg-white hover:text-black text-white font-black px-12 h-20 uppercase tracking-widest transition-all rounded-none border-none shadow-2xl text-base">
+                <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black px-12 h-20 uppercase tracking-widest transition-all rounded-none border-none shadow-2xl text-base">
                   Get Airport Specs <ChevronRight className="ml-2" />
                 </Button>
                 <Button variant="outline" className="border-4 border-white text-white hover:bg-white hover:text-black font-black px-12 h-20 uppercase tracking-widest transition-all rounded-none text-base">
@@ -78,12 +78,12 @@ export default function AirportPortsPage() {
       {/* ========================================= */}
       {/* 2. EXTREME RATING BAR                      */}
       {/* ========================================= */}
-      <section className="bg-black text-white py-16 border-b border-white/10">
+      <section className="bg-[#0F0F0F] text-white py-16 border-b border-white/10">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {AIRPORT_DATA.stats.map((stat, i) => (
               <div key={i} className="flex flex-col gap-4 group">
-                <div className="h-16 w-16 bg-[#cc2221] flex items-center justify-center text-white group-hover:rotate-45 transition-transform duration-500">
+                <div className="h-16 w-16 bg-[#CC0000] flex items-center justify-center text-white group-hover:rotate-45 transition-transform duration-500">
                   {stat.icon}
                 </div>
                 <div>
@@ -106,8 +106,8 @@ export default function AirportPortsPage() {
             <div className="lg:col-span-7 space-y-12">
               <div className="space-y-8">
                 <h2 className="text-5xl font-black uppercase tracking-tight text-black flex items-center gap-6">
-                  <Maximize2 className="text-[#cc2221] w-12 h-12" />
-                  Terminal <span className="text-[#cc2221]">Integrity</span>
+                  <Maximize2 className="text-[#CC0000] w-12 h-12" />
+                  Terminal <span className="text-[#CC0000]">Integrity</span>
                 </h2>
                 <p className="text-3xl font-bold leading-tight text-gray-900 border-l-[12px] border-black pl-10">
                   {AIRPORT_DATA.description}
@@ -125,8 +125,8 @@ export default function AirportPortsPage() {
                   { icon: <Activity />, title: 'Fatigue Resistance', desc: 'Ductile iron alloys specifically formulated to resist cold-cracking and high-impact cycles.' },
                   { icon: <Anchor />, title: 'Saltwater Shield', desc: 'Available with hot-dip galvanized or epoxy coatings for coastal port facilities.' }
                 ].map((feat, i) => (
-                  <div key={i} className="bg-zinc-50 p-10 border border-zinc-100 hover:border-[#cc2221] transition-all group">
-                    <div className="text-[#cc2221] mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div key={i} className="bg-zinc-50 p-10 border border-zinc-100 hover:border-[#CC0000] transition-all group">
+                    <div className="text-[#CC0000] mb-6 group-hover:scale-110 transition-transform duration-300">
                       {feat.icon}
                     </div>
                     <h4 className="font-black uppercase text-lg mb-3 tracking-widest text-black">{feat.title}</h4>
@@ -139,9 +139,9 @@ export default function AirportPortsPage() {
             {/* Sidebar Engineering Data */}
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <div className="bg-zinc-950 text-white p-12 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] relative">
-                <div className="absolute top-0 left-0 w-full h-2 bg-[#cc2221]" />
+                <div className="absolute top-0 left-0 w-full h-2 bg-[#CC0000]" />
 
-                <h3 className="text-[11px] font-black uppercase tracking-[0.4em] text-[#cc2221] mb-12 pb-6 border-b border-white/10 flex items-center gap-3">
+                <h3 className="text-[11px] font-black uppercase tracking-[0.4em] text-[#CC0000] mb-12 pb-6 border-b border-white/10 flex items-center gap-3">
                   <FileText size={18} /> EHD Data Sheet
                 </h3>
 
@@ -160,7 +160,7 @@ export default function AirportPortsPage() {
                   ))}
                 </div>
 
-                <Button className="w-full bg-[#cc2221] hover:bg-white hover:text-black text-white font-black h-20 uppercase tracking-[0.25em] text-xs transition-all rounded-none group">
+                <Button className="w-full bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-20 uppercase tracking-[0.25em] text-xs transition-all rounded-none group">
                   Download Full EHD Catalog <ArrowRight className="ml-2 group-hover:translate-x-3 transition-transform" />
                 </Button>
               </div>
@@ -173,22 +173,22 @@ export default function AirportPortsPage() {
       {/* ========================================= */}
       {/* 4. CALL TO ACTION                          */}
       {/* ========================================= */}
-      <section className="py-32 bg-black text-white relative overflow-hidden">
+      <section className="py-32 bg-[#0F0F0F] text-white relative overflow-hidden">
         {/* Decorative Grid Background */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#cc2221 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#CC0000 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
         <div className="max-w-[1400px] mx-auto px-6 relative z-10 text-center">
           <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-10 leading-none">
-            Secure Your <br /> <span className="text-[#cc2221]">Heavy Logistics</span>
+            Secure Your <br /> <span className="text-[#CC0000]">Heavy Logistics</span>
           </h2>
           <p className="max-w-3xl mx-auto font-bold text-2xl text-zinc-400 mb-16 leading-relaxed">
             "Compromise is not an option in aviation infrastructure. We deliver the duty ratings required for the world's busiest hubs."
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-8">
-            <Button className="bg-[#cc2221] text-white hover:bg-white hover:text-black font-black px-16 h-24 text-xl uppercase transition-all rounded-none shadow-2xl">
+            <Button className="bg-[#CC0000] text-white hover:bg-white hover:text-black font-black px-16 h-24 text-xl uppercase transition-all rounded-none shadow-2xl">
               Consult a Specialist
             </Button>
-            <Button variant="outline" className="border-4 border-white text-white hover:bg-[#cc2221] hover:border-[#cc2221] font-black px-16 h-24 text-xl uppercase transition-all rounded-none">
+            <Button variant="outline" className="border-4 border-white text-white hover:bg-[#CC0000] hover:border-[#CC0000] font-black px-16 h-24 text-xl uppercase transition-all rounded-none">
               Project Pricing
             </Button>
           </div>

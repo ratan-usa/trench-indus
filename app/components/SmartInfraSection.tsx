@@ -17,25 +17,25 @@ const AI_FEATURES = [
   {
     id: "iot-telemetry",
     title: "IoT Telemetry Sensors",
-    icon: <Radio className="w-8 h-8 text-[#cc2221]" />,
+    icon: <Radio className="w-8 h-8 text-[#CC0000]" />,
     description: "Optional embedded sensors transmit real-time data on water levels, toxic gas buildup, and temperature directly to municipal dashboards."
   },
   {
     id: "predictive-ml",
     title: "ML Predictive Maintenance",
-    icon: <Activity className="w-8 h-8 text-[#cc2221]" />,
+    icon: <Activity className="w-8 h-8 text-[#CC0000]" />,
     description: "Machine learning algorithms analyze micro-stress and traffic load patterns over time to predict fatigue before a structural failure occurs."
   },
   {
     id: "robotic-fab",
     title: "Robotic Precision Casting",
-    icon: <Bot className="w-8 h-8 text-[#cc2221]" />,
+    icon: <Bot className="w-8 h-8 text-[#CC0000]" />,
     description: "Our foundries utilize AI-guided robotics for 100% automated pouring and milling, ensuring zero-defect tolerances down to the millimeter."
   },
   {
     id: "security-grid",
     title: "Automated Threat Detection",
-    icon: <ShieldAlert className="w-8 h-8 text-[#cc2221]" />,
+    icon: <ShieldAlert className="w-8 h-8 text-[#CC0000]" />,
     description: "Smart access frames detect unauthorized lid removal or tampering, immediately alerting central security networks for critical utility vaults."
   }
 ];
@@ -46,7 +46,7 @@ export default function SmartInfraSection() {
 
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(#cc2221 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+        style={{ backgroundImage: 'radial-gradient(#CC0000 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
 
       <div className="p-6 md:p-8 lg:p-12 relative z-10">
@@ -55,8 +55,8 @@ export default function SmartInfraSection() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-4">
-              <Cpu className="text-[#cc2221] w-5 h-5 animate-pulse" />
-              <span className="text-[#cc2221] font-bold uppercase tracking-widest text-sm">
+              <Cpu className="text-[#CC0000] w-5 h-5 animate-pulse" />
+              <span className="text-[#CC0000] font-bold uppercase tracking-widest text-sm">
                 Smart City Ready
               </span>
             </div>
@@ -71,7 +71,7 @@ export default function SmartInfraSection() {
             </p>
           </div>
 
-          <Button className="bg-white text-black hover:bg-[#cc2221] hover:text-white font-bold uppercase tracking-wider px-8 h-12 transition-all">
+          <Button className="bg-white text-black hover:bg-[#CC0000] hover:text-white font-bold uppercase tracking-wider px-8 h-12 transition-all">
             View Smart Specs <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -80,12 +80,12 @@ export default function SmartInfraSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
 
           {/* Left: Large Highlight Card */}
-          <div className="lg:col-span-7 relative bg-black rounded-xl border border-zinc-800 overflow-hidden group p-8 md:p-12 flex flex-col justify-center">
+          <div className="lg:col-span-7 relative bg-[#0F0F0F] rounded-xl border border-zinc-800 overflow-hidden group p-8 md:p-12 flex flex-col justify-center">
             {/* Glowing Accent */}
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#cc2221] rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#CC0000] rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
 
             <Badge className="w-fit bg-zinc-900 text-zinc-300 border-zinc-700 mb-6 uppercase tracking-widest text-xs">
-              <Database className="w-3 h-3 mr-2 text-[#cc2221]" /> Mega-Grid Platform
+              <Database className="w-3 h-3 mr-2 text-[#CC0000]" /> Mega-Grid Platform
             </Badge>
 
             <h3 className="text-3xl font-bold mb-4">The Connected Catch Basin</h3>
@@ -94,7 +94,7 @@ export default function SmartInfraSection() {
             </p>
 
             {/* Mock Data UI element */}
-            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-4 font-mono text-sm text-[#cc2221] inline-block w-fit">
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-4 font-mono text-sm text-[#CC0000] inline-block w-fit">
               <div className="flex items-center gap-4 mb-2">
                 <span className="text-zinc-500">UNIT_ID:</span> M72400-SMART
                 <span className="flex items-center gap-1 text-green-500"><div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div> ONLINE</span>
@@ -110,8 +110,8 @@ export default function SmartInfraSection() {
           {/* Right: Drone/Robotic Access Image */}
           <div className="lg:col-span-5 relative bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden min-h-[300px]">
             {/* Placeholder for a cool tech image (e.g. a robotic sewer crawler or drone entering a manhole) */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 z-10 p-6 text-center">
-              <Scan className="w-12 h-12 text-[#cc2221] mb-4 opacity-70" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0F0F0F]/40 z-10 p-6 text-center">
+              <Scan className="w-12 h-12 text-[#CC0000] mb-4 opacity-70" />
               <h4 className="font-bold text-xl mb-2">Robotic Inspection Ports</h4>
               <p className="text-sm text-zinc-400">Specially milled access configurations designed to accommodate automated subterranean survey crawlers without human entry.</p>
             </div>
@@ -123,7 +123,7 @@ export default function SmartInfraSection() {
         {/* --- 4-COLUMN FEATURE GRID --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {AI_FEATURES.map((feature) => (
-            <Card key={feature.id} className="bg-black border-zinc-800 hover:border-[#cc2221] transition-colors duration-300">
+            <Card key={feature.id} className="bg-[#0F0F0F] border-zinc-800 hover:border-[#CC0000] transition-colors duration-300">
               <CardContent className="p-6">
                 <div className="bg-zinc-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   {feature.icon}

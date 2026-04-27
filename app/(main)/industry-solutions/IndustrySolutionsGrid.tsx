@@ -120,7 +120,7 @@ export default function IndustrySolutionsGrid() {
                 <div className="mt-auto">
                   <a
                     href={item.href}
-                    className="inline-flex items-center text-[#cc2221] font-bold text-sm hover:text-black transition-colors"
+                    className="inline-flex items-center text-[#CC0000] font-bold text-sm hover:text-black transition-colors"
                   >
                     {item.linkText} <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
                   </a>

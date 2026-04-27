@@ -31,7 +31,7 @@ export default function ServiceLogistics() {
 
             <a
               href="#delivery-solutions"
-              className="inline-flex items-center text-[#cc2221] font-bold hover:text-black transition-colors group"
+              className="inline-flex items-center text-[#CC0000] font-bold hover:text-black transition-colors group"
             >
               Discover delivery solutions
               <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />

@@ -81,7 +81,7 @@ export default function HeroCarousel() {
     };
 
     return (
-        <section className="relative w-full h-[400px] md:h-[550px] bg-black overflow-hidden text-white group">
+        <section className="relative w-full h-[400px] md:h-[550px] bg-[#0F0F0F] overflow-hidden text-white group">
 
             {/* --- BACKGROUND IMAGES (FADE TRANSITION) --- */}
             {HERO_SLIDES.map((slide, index) => (
@@ -117,7 +117,7 @@ export default function HeroCarousel() {
 
             {/* --- CONTENT LAYER --- */}
             <div className="absolute inset-0 z-20 p-6 md:p-8 lg:p-12 flex flex-col justify-center h-full">
-                <div className="max-w-3xl space-y-6 md:space-y-8 pl-4 md:pl-0 border-l-4 border-[#cc2221] md:border-l-0">
+                <div className="max-w-3xl space-y-6 md:space-y-8 pl-4 md:pl-0 border-l-4 border-[#CC0000] md:border-l-0">
 
                     {/* Dynamic Text Content */}
                     <div className="overflow-hidden">
@@ -150,7 +150,7 @@ export default function HeroCarousel() {
                         )}>
                             <Button
                                 size="lg"
-                                className="bg-[#cc2221] hover:bg-white hover:text-[#cc2221] text-white font-bold text-lg px-8 py-6 rounded-sm uppercase tracking-wider transition-all"
+                                className="bg-[#CC0000] hover:bg-white hover:text-[#CC0000] text-white font-bold text-lg px-8 py-6 rounded-sm uppercase tracking-wider transition-all"
                             >
                                 {HERO_SLIDES[currentSlide].cta} <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
@@ -172,7 +172,7 @@ export default function HeroCarousel() {
                         <div className={cn(
                             "h-1 rounded-full transition-all duration-500 ease-out",
                             currentSlide === index
-                                ? "w-16 bg-[#cc2221]"
+                                ? "w-16 bg-[#CC0000]"
                                 : "w-8 bg-gray-600 group-hover:bg-gray-400"
                         )} />
                     </button>
@@ -183,7 +183,7 @@ export default function HeroCarousel() {
             <div className="hidden md:block">
                 <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 text-gray-500 hover:text-white hover:bg-black/20 rounded-full transition-all opacity-0 group-hover:opacity-100"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 text-gray-500 hover:text-white hover:bg-[#0F0F0F]/20 rounded-full transition-all opacity-0 group-hover:opacity-100"
                 >
                     <ChevronRight className="w-12 h-12" />
                 </button>

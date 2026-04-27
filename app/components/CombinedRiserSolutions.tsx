@@ -143,7 +143,7 @@ export default function ComprehensivePavingRisersMapped() {
           >
             {/* Dark mode background glow */}
             {isDark && (
-              <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#cc2221]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+              <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
             )}
 
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -170,11 +170,11 @@ export default function ComprehensivePavingRisersMapped() {
 
                   {/* Header Text */}
                   <div className="space-y-4">
-                    <h4 className={`font-bold text-sm uppercase tracking-[0.2em] ${isDark ? 'text-zinc-400' : 'text-[#cc2221]'}`}>
+                    <h4 className={`font-bold text-sm uppercase tracking-[0.2em] ${isDark ? 'text-zinc-400' : 'text-[#CC0000]'}`}>
                       {section.overline}
                     </h4>
                     <h2 className="text-4xl md:text-5xl font-black leading-tight">
-                      {section.title} <br /> <span className="text-[#cc2221]">{section.highlightText}</span>
+                      {section.title} <br /> <span className="text-[#CC0000]">{section.highlightText}</span>
                     </h2>
                     <p className={`text-lg leading-relaxed max-w-xl ${isDark ? 'text-zinc-400' : 'text-slate-600'}`}>
                       {section.description}
@@ -186,8 +186,8 @@ export default function ComprehensivePavingRisersMapped() {
                     <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 ${isDark ? 'border-t border-zinc-800' : ''}`}>
                       {section.features.map((feat, i) => (
                         <div key={i} className="flex items-start gap-4">
-                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center ${isDark ? 'bg-transparent' : 'bg-black text-[#cc2221]'}`}>
-                            {renderIcon(feat.icon, `w-6 h-6 text-[#cc2221]`)}
+                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center ${isDark ? 'bg-transparent' : 'bg-[#0F0F0F] text-[#CC0000]'}`}>
+                            {renderIcon(feat.icon, `w-6 h-6 text-[#CC0000]`)}
                           </div>
                           <div>
                             <h5 className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{feat.title}</h5>
@@ -217,7 +217,7 @@ export default function ComprehensivePavingRisersMapped() {
                   {/* Button */}
                   <div className="pt-4">
                     <Link href={section.buttonLink}>
-                      <Button className={`font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105 w-full sm:w-auto ${isDark ? 'bg-[#cc2221] hover:bg-white hover:text-black text-white' : 'bg-[#cc2221] hover:bg-black text-white'}`}>
+                      <Button className={`font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105 w-full sm:w-auto ${isDark ? 'bg-[#CC0000] hover:bg-white hover:text-black text-white' : 'bg-[#CC0000] hover:bg-[#0F0F0F] text-white'}`}>
                         {section.buttonText} <ArrowUpRight className="ml-2 w-5 h-5" />
                       </Button>
                     </Link>
@@ -231,7 +231,7 @@ export default function ComprehensivePavingRisersMapped() {
         );
       })}
 
-      {/* <section className="py-20 bg-[#cc2221] text-white">
+      {/* <section className="py-20 bg-[#CC0000] text-white">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center mb-16">
@@ -255,7 +255,7 @@ export default function ComprehensivePavingRisersMapped() {
 
           <div className="mt-16 text-center">
             <Link href="#contact">
-              <Button className="bg-white text-[#cc2221] hover:bg-black hover:text-white px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl">
+              <Button className="bg-white text-[#CC0000] hover:bg-[#0F0F0F] hover:text-white px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl">
                 Equip Your Next Jobsite <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>

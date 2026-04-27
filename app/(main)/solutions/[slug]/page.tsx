@@ -151,7 +151,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={() => router.back()}
-            className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#cc2221] transition-colors"
+            className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#CC0000] transition-colors"
           >
             <ChevronLeft className="w-4 h-4 mr-1" />
             BACK TO SOLUTIONS
@@ -190,7 +190,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
             <section>
               <h2 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-wider flex items-center">
-                <Settings className="w-6 h-6 mr-3 text-[#cc2221]" />
+                <Settings className="w-6 h-6 mr-3 text-[#CC0000]" />
                 Industry Overview
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -200,13 +200,13 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
             <section>
               <h2 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-wider flex items-center">
-                <HardHat className="w-6 h-6 mr-3 text-[#cc2221]" />
+                <HardHat className="w-6 h-6 mr-3 text-[#CC0000]" />
                 Common Applications
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {solution.applications.map((app, idx) => (
                   <div key={idx} className="flex items-center p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <CheckCircle2 className="w-5 h-5 text-[#cc2221] mr-3 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#CC0000] mr-3 shrink-0" />
                     <span className="font-bold text-slate-700">{app}</span>
                   </div>
                 ))}
@@ -226,7 +226,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
               <div className="space-y-6">
                 {solution.benefits.map((benefit, idx) => (
                   <div key={idx} className="flex items-start">
-                    <ShieldCheck className="w-6 h-6 text-[#cc2221] shrink-0 mr-4 mt-1" />
+                    <ShieldCheck className="w-6 h-6 text-[#CC0000] shrink-0 mr-4 mt-1" />
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">{benefit.title}</h4>
                       <p className="text-sm text-gray-600 leading-relaxed">{benefit.desc}</p>
@@ -244,7 +244,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
               <ul className="space-y-4 mb-8">
                 {solution.featuredProducts.map((product, idx) => (
                   <li key={idx} className="flex items-center text-sm font-medium text-slate-300">
-                    <div className="w-1.5 h-1.5 bg-[#cc2221] rounded-full mr-3 shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#CC0000] rounded-full mr-3 shrink-0"></div>
                     {product}
                   </li>
                 ))}
@@ -252,7 +252,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
               <Button
                 onClick={() => router.push('/#contact')}
-                className="w-full bg-[#cc2221] hover:bg-white hover:text-black text-white font-bold h-14 uppercase tracking-widest transition-all"
+                className="w-full bg-[#CC0000] hover:bg-white hover:text-black text-white font-bold h-14 uppercase tracking-widest transition-all"
               >
                 Request a Quote <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
