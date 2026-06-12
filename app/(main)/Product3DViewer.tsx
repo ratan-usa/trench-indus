@@ -4,11 +4,20 @@ import React, { useState, useEffect } from 'react';
 import { Box, Play, Loader2, ChevronRight, CheckCircle2, Info, Maximize2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-// --- TYPESCRIPT GLOBAL DECLARATION ---
-declare global {
+// --- TYPESCRIPT DECLARATION FOR MODEL-VIEWER WEB COMPONENT ---
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'model-viewer': any;
+      'model-viewer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        src?: string;
+        'camera-controls'?: boolean;
+        'shadow-intensity'?: string;
+        'auto-rotate'?: boolean;
+        'interaction-prompt'?: string;
+        exposure?: string;
+        'environment-image'?: string;
+        [key: string]: any;
+      };
     }
   }
 }
