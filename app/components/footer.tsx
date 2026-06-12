@@ -18,7 +18,7 @@ const footer = () => {
                 <p className="leading-relaxed">
                   <span className="font-bold">Mega Paving Risers</span><br />
                   105 Maxes Road<br />
-                  Huntington, NY 11747, USA
+                  Melville, NY 11747, USA
                 </p>
               </div>
               <div className="flex items-center gap-4">
