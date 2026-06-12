@@ -9,7 +9,7 @@ const Navbar = () => {
             {/* --- HEADER --- */}
             {/* --- LIGHT/RED THEME HEADER --- */}
             <header className="bg-white border-b-[4px] border-[#CC0000] sticky top-0 z-50 shadow-sm">
-                <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div className="w-full px-6 md:px-8 lg:px-12 py-3 flex justify-between items-center">
                     <Link href={'/'} className="shrink-0">
                         <Image
                             src={'/PAVING-RISERS-LOGO.png'}

@@ -146,7 +146,7 @@ export default function ComprehensivePavingRisersMapped() {
               <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
             )}
 
-            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="w-full px-6 md:px-8 lg:px-12  relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 {/* --- IMAGE COLUMN --- */}

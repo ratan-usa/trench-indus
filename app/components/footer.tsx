@@ -6,8 +6,6 @@ import React from 'react'
 const footer = () => {
   return (
     <div>
-
-      {/* --- FOOTER --- */}
       <footer id="contact" className="bg-[#0F0F0F] text-white pt-20 pb-10">
         <div className="p-6 md:p-8 lg:p-12 grid md:grid-cols-2 gap-16">
 

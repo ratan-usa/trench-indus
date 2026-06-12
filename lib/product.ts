@@ -2,8 +2,11 @@ export const MOCK_FILTERS = [
   {
     "category": "MATERIAL",
     "options": [
-      "Gray Iron",
-      "Steel"
+      "Steel",
+      "Cast Iron",
+      "Ductile Iron",
+      "Aluminium",
+      "FRP",
     ]
   },
   {

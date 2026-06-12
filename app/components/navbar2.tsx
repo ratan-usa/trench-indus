@@ -52,7 +52,7 @@ const NAV_LINKS = [
 const Navbar = () => {
     return (
         <header className="bg-white border-b-[4px] border-[#CC0000] sticky top-0 z-50 shadow-sm font-sans">
-            <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div className="w-full px-6 md:px-8 lg:px-12 py-3 flex justify-between items-center">
 
                 {/* --- LOGO --- */}
                 <Link href={'/'} className="shrink-0">

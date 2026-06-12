@@ -31,10 +31,9 @@ const TopNavbar = () => {
   const [selectedCountry, setSelectedCountry] = useState(countryOptions[0])
   return (
     <div className='w-full relative z-50'>
-      <nav className="bg-neutral-800 text-neutral-200 w-full mx-auto shadow-md">
+      <nav className="bg-neutral-800 text-neutral-200 w-full  shadow-md">
 
-        {/* Corrected lg:px-30 to lg:px-8 or standard container usage */}
-        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto">
+        <div className="w-full px-6 md:px-8 lg:px-12">
           <div className="flex justify-between items-center h-9">
 
             {/* --- DESKTOP: Left Menu Items --- */}
