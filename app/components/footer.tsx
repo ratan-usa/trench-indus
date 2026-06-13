@@ -16,7 +16,7 @@ const footer = () => {
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-[#CC0000] mt-1 shrink-0" />
                 <p className="leading-relaxed">
-                  <span className="font-bold">Mega Paving Risers</span><br />
+                  <span className="font-bold">Paving Risers</span><br />
                   105 Maxes Road<br />
                   Melville, NY 11747, USA
                 </p>
