@@ -155,7 +155,6 @@ const PRODUCT_DATA = [
         },
         features: ['Bespoke engineering', 'Rapid prototyping', 'Certified welding'],
         images: ['/assets/PAVING-RISERS/recatangle riser.png',
-
             '/assets/PAVING-RISERS/paving riser 1.5203.png'
         ]
     }
