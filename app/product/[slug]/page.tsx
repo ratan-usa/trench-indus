@@ -1,12 +1,12 @@
 'use client';
 
-import React, { use } from 'react';
+import React, { use, useState, useRef } from 'react';
 import { notFound, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { ChevronLeft, FileText, ShieldCheck } from 'lucide-react';
+import { ChevronLeft, FileText, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
-// --- FULL PRODUCT DATABASE ---
+// --- FULL PRODUCT DATABASE (UPDATED FOR MULTIPLE IMAGES) ---
 const PRODUCT_DATA = [
     {
         slug: 'round-risers',
@@ -20,7 +20,11 @@ const PRODUCT_DATA = [
             coating: 'Black Asphaltic Bituminous Coating'
         },
         features: ['Mega-Adjust™ Expansion system', 'No excavation required', 'DOT Approved', 'Stackable design'],
-        mainImage: '/assets/PAVING-RISERS/paving riser 1.5201.png'
+        images: [
+            '/assets/PAVING-RISERS/paving riser 1.5201.png',
+            '/assets/PAVING-RISERS/paving riser 1.5203.png',
+            '/assets/PAVING-RISERS/paving riser 1.5205.png'
+        ]
     },
     {
         slug: 'square-risers',
@@ -34,7 +38,11 @@ const PRODUCT_DATA = [
             coating: 'Galvanized or Painted'
         },
         features: ['Perfect for utility vaults', 'Reinforced corners', 'Anti-slip surface compatibility'],
-        mainImage: '/assets/PAVING-RISERS/paving riser 1.5205.png'
+        images: [
+            '/assets/PAVING-RISERS/paving riser 1.5205.png',
+            '/assets/PAVING-RISERS/paving riser 1.5203.png',
+            '/assets/PAVING-RISERS/recatangle riser.png'
+        ]
     },
     {
         slug: 'rectangle-risers',
@@ -48,7 +56,11 @@ const PRODUCT_DATA = [
             coating: 'Hot-Dip Galvanized'
         },
         features: ['Precision welded seams', 'Adjustable height bolts', 'Curb-side compatible'],
-        mainImage: '/assets/PAVING-RISERS/recatangle riser.png'
+        images: [
+            '/assets/PAVING-RISERS/recatangle riser.png',
+            '/assets/PAVING-RISERS/paving riser 1.5203.png',
+            '/assets/PAVING-RISERS/d-shape.png'
+        ]
     },
     {
         slug: 'd-shape-risers',
@@ -62,7 +74,9 @@ const PRODUCT_DATA = [
             coating: 'Bituminous Asphalt'
         },
         features: ['Flush curb alignment', 'No-shift installation', 'Storm-water optimized'],
-        mainImage: '/assets/PAVING-RISERS/d-shape.png'
+        images: [
+            '/assets/PAVING-RISERS/paving riser 1.5203.png',
+            '/assets/PAVING-RISERS/d-shape.png']
     },
     {
         slug: 'valve-box-risers',
@@ -76,7 +90,9 @@ const PRODUCT_DATA = [
             coating: 'Black Dip'
         },
         features: ['Flanged and Non-flanged versions', 'Drop-in installation', 'Protects valve stems'],
-        mainImage: '/assets/PAVING-RISERS/recatangle riser.png'
+        images: [
+            '/assets/PAVING-RISERS/paving riser 1.5203.png',
+            '/assets/PAVING-RISERS/recatangle riser.png']
     },
     {
         slug: 'catch-basin-frames',
@@ -90,7 +106,10 @@ const PRODUCT_DATA = [
             coating: 'Black Paint'
         },
         features: ['3-Sided and 4-Sided options', 'Sloped for drainage', 'Easy grate fitment'],
-        mainImage: '/assets/PAVING-RISERS/paving riser 1.5203.png'
+        images: ['/assets/PAVING-RISERS/paving riser 1.5203.png',
+
+            '/assets/PAVING-RISERS/paving riser 1.5203.png'
+        ]
     },
     {
         slug: 'precast-concrete-rings',
@@ -104,7 +123,8 @@ const PRODUCT_DATA = [
             coating: 'Natural'
         },
         features: ['Reinforced with steel', 'Precision flat top', 'Economical solution'],
-        mainImage: '/assets/PAVING-RISERS/paving riser 1.5205.png'
+        images: ['/assets/PAVING-RISERS/paving riser 1.5205.png',
+            '/assets/PAVING-RISERS/paving riser 1.5203.png']
     },
     {
         slug: 'manhole-covers',
@@ -118,7 +138,9 @@ const PRODUCT_DATA = [
             coating: 'Anti-skid Black'
         },
         features: ['Vented or Solid', 'Custom lettering available', 'Gasketed for watertightness'],
-        mainImage: '/assets/PAVING-RISERS/paving riser 1.5201.png'
+        images: ['/assets/PAVING-RISERS/paving riser 1.5201.png',
+            '/assets/PAVING-RISERS/paving riser 1.5203.png'
+        ]
     },
     {
         slug: 'custom-fabrications',
@@ -132,7 +154,10 @@ const PRODUCT_DATA = [
             coating: 'Various options'
         },
         features: ['Bespoke engineering', 'Rapid prototyping', 'Certified welding'],
-        mainImage: '/assets/PAVING-RISERS/recatangle riser.png'
+        images: ['/assets/PAVING-RISERS/recatangle riser.png',
+
+            '/assets/PAVING-RISERS/paving riser 1.5203.png'
+        ]
     }
 ];
 
@@ -140,13 +165,47 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
     const resolvedParams = use(params);
     const router = useRouter();
 
-    // Search for the product based on the slug
     const product = PRODUCT_DATA.find((p) => p.slug === resolvedParams.slug);
 
-    // CRITICAL: This "Gatekeeper" check fixes the 'undefined' error for TypeScript.
     if (!product) {
         notFound();
     }
+
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [zoomStyle, setZoomStyle] = useState<React.CSSProperties>({ opacity: 0 });
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    const productImages = product.images && product.images.length > 0
+        ? product.images
+        : ['/assets/PAVING-RISERS/paving riser 1.5201.png'];
+
+    const handleNextImage = () => {
+        setActiveIndex((prev) => (prev + 1) % productImages.length);
+    };
+
+    const handlePrevImage = () => {
+        setActiveIndex((prev) => (prev - 1 + productImages.length) % productImages.length);
+    };
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!containerRef.current) return;
+
+        const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+        const x = ((e.clientX - left) / width) * 100;
+        const y = ((e.clientY - top) / height) * 100;
+
+        // CRITICAL FIX: Wrapped the image URL path inside extra quotes '' to handle spaces inside filenames smoothly.
+        setZoomStyle({
+            opacity: 1,
+            backgroundImage: `url('${productImages[activeIndex]}')`,
+            backgroundPosition: `${x}% ${y}%`,
+            backgroundSize: '250%',
+        });
+    };
+
+    const handleMouseLeave = () => {
+        setZoomStyle({ opacity: 0 });
+    };
 
     return (
         <div className="min-h-screen bg-gray-50 py-12">
@@ -162,18 +221,75 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white p-8 md:p-12 rounded-sm shadow-sm border border-gray-100">
 
-                    {/* Visual Section */}
-                    <div className="relative h-[400px] bg-gray-50 rounded-lg border border-gray-100 flex items-center justify-center p-8">
-                        <Image
-                            src={product.mainImage}
-                            alt={product.title}
-                            fill
-                            className="object-contain p-10"
-                            priority
-                        />
+                    {/* Left: Interactive Media Gallery Section */}
+                    <div className="flex flex-col gap-4">
+
+                        {/* Main Stage Display Container */}
+                        <div
+                            ref={containerRef}
+                            onMouseMove={handleMouseMove}
+                            onMouseLeave={handleMouseLeave}
+                            className="relative h-[400px] bg-gray-50 rounded-sm border border-gray-100 flex items-center justify-center p-8 overflow-hidden group cursor-zoom-in"
+                        >
+                            {/* Standard Display Image */}
+                            <Image
+                                src={productImages[activeIndex]}
+                                alt={`${product.title} view ${activeIndex + 1}`}
+                                fill
+                                className="object-contain p-10 transition-opacity duration-200 group-hover:opacity-0"
+                                priority
+                            />
+
+                            {/* Magnifying Glass Lens Canvas (Renders on Hover) */}
+                            <div
+                                className="absolute inset-0 pointer-events-none transition-opacity duration-200 bg-no-repeat bg-gray-50"
+                                style={zoomStyle}
+                            />
+
+                            {/* Slider Arrows */}
+                            {productImages.length > 1 && (
+                                <>
+                                    <button
+                                        onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
+                                        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-[#CC0000] hover:text-white flex items-center justify-center text-slate-800 shadow-sm border border-gray-100 transition-colors rounded-sm z-10"
+                                    >
+                                        <ChevronLeft className="w-5 h-5" />
+                                    </button>
+                                    <button
+                                        onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
+                                        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-[#CC0000] hover:text-white flex items-center justify-center text-slate-800 shadow-sm border border-gray-100 transition-colors rounded-sm z-10"
+                                    >
+                                        <ChevronRight className="w-5 h-5" />
+                                    </button>
+                                </>
+                            )}
+                        </div>
+
+                        {/* Slide Thumbnails Selection List */}
+                        {productImages.length > 1 && (
+                            <div className="flex items-center gap-3 overflow-x-auto py-1">
+                                {productImages.map((img, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setActiveIndex(index)}
+                                        className={`relative w-20 h-20 bg-gray-50 rounded-sm border p-2 flex-shrink-0 transition-all ${index === activeIndex
+                                            ? 'border-[#CC0000] ring-1 ring-[#CC0000]'
+                                            : 'border-gray-200 hover:border-gray-400'
+                                            }`}
+                                    >
+                                        <Image
+                                            src={img}
+                                            alt={`Thumbnail ${index + 1}`}
+                                            fill
+                                            className="object-contain p-1"
+                                        />
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
-                    {/* Technical Content Section */}
+                    {/* Right: Technical Content Section */}
                     <div className="space-y-8">
                         <div>
                             <h1 className="text-4xl font-black uppercase text-slate-900 mb-4 tracking-tight">
