@@ -85,6 +85,7 @@ const RISER_SECTIONS = [
     highlightText: "Tapered Risers",
     description: "Roads are rarely perfectly flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a perfectly flush fit.",
     image: "/assets/PAVING-RISERS/paving riser 1.5205.png",
+    isComingSoon: true, // Added flag for the badge
     features: [
       { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to 15%+ grades." },
       { icon: "ShieldCheck", title: "Snowplow Safe", desc: "Ensures covers sit flush, preventing plow blade snags." }
@@ -133,7 +134,6 @@ export default function ComprehensivePavingRisersMapped() {
       {/* --- SHOWCASE SECTIONS (MAPPED) --- */}
       {RISER_SECTIONS.map((section, index) => {
         const isDark = section.theme === 'dark';
-        // Alternating logic: Even index = Image Left, Odd index = Image Right
         const isImageLeft = index % 2 === 0;
 
         return (
@@ -146,7 +146,7 @@ export default function ComprehensivePavingRisersMapped() {
               <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
             )}
 
-            <div className="w-full px-6 md:px-8 lg:px-12  relative z-10">
+            <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 {/* --- IMAGE COLUMN --- */}
@@ -158,7 +158,15 @@ export default function ComprehensivePavingRisersMapped() {
                       fill
                       className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.2)]' : ''}`}
                     />
+
+                    {/* --- COMING SOON OVERLAY --- */}
+                    {section.isComingSoon && (
+                      <div className="absolute bottom-0 left-0 right-0 bg-[#CC0000] text-white text-center py-4 font-black uppercase tracking-[0.25em] text-sm shadow-[0_-10px_20px_rgba(204,0,0,0.2)] z-20">
+                        Comming Soon
+                      </div>
+                    )}
                   </div>
+                  
                   {/* Decorative square behind image (only on light theme) */}
                   {!isDark && (
                     <div className={`absolute -bottom-6 ${isImageLeft ? '-right-6' : '-left-6'} w-1/2 aspect-square bg-slate-50 border border-slate-200 rounded-2xl -z-10 hidden md:block`}></div>
@@ -198,7 +206,7 @@ export default function ComprehensivePavingRisersMapped() {
                     </div>
                   )}
 
-                  {/* Meta Information Table (If it exists) */}
+                  {/* Meta Information Table */}
                   {section.meta && section.meta.length > 0 && (
                     <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-zinc-900/50 border-zinc-800' : 'bg-slate-50 border-slate-100'}`}>
                       <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
@@ -231,11 +239,12 @@ export default function ComprehensivePavingRisersMapped() {
         );
       })}
 
-      {/* <section className="py-20 bg-[#CC0000] text-white">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* --- ADVANTAGES SECTION --- */}
+      <section className="py-20 bg-[#CC0000] text-white">
+        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-6">Why Paving Crews Choose Us</h2>
+            <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto font-medium">
               We design our risers to minimize road closure times and maximize daily paving footprints.
             </p>
@@ -243,26 +252,26 @@ export default function ComprehensivePavingRisersMapped() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {ADVANTAGES.map((adv, i) => (
-              <div key={i} className="bg-red-800/30 border border-red-400/30 p-8 rounded-xl backdrop-blur-sm text-center shadow-lg">
-                <div className="flex justify-center mb-4">
+              <div key={i} className="bg-white/10 border border-white/20 p-8 rounded-xl backdrop-blur-sm text-center shadow-lg hover:bg-white/20 transition-colors group">
+                <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform">
                    {renderIcon(adv.icon, "w-12 h-12 text-white")}
                 </div>
-                <h4 className="text-xl font-bold mb-2">{adv.title}</h4>
-                <p className="text-sm text-red-100">{adv.desc}</p>
+                <h4 className="text-xl font-bold mb-2 uppercase tracking-wide">{adv.title}</h4>
+                <p className="text-sm text-red-50 leading-relaxed">{adv.desc}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-16 text-center">
             <Link href="#contact">
-              <Button className="bg-white text-[#CC0000] hover:bg-[#0F0F0F] hover:text-white px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl">
+              <Button className="bg-white text-[#CC0000] hover:bg-[#0F0F0F] hover:text-white px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl rounded-lg">
                 Equip Your Next Jobsite <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>
           </div>
 
         </div>
-      </section> */}
+      </section>
 
     </div>
   );
