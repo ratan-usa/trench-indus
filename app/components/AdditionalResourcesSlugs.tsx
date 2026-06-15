@@ -59,7 +59,7 @@ export default function AdditionalResourcesSlugs() {
                 src={resource.imageSrc}
                 alt={resource.title}
                 fill
-                className="object-cover opacity-50 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
+                className="object-cover opacity-90 transition-all duration-500"
               />
 
               {/* Dark Gradient Overlay for text readability */}

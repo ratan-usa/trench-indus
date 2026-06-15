@@ -11,6 +11,8 @@ import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
 import PavingPathHero from '../components/mega-taglines'
 import ProductInteractiveImage from '../components/ProductInteractiveImage'
 import RedesignedSolutionsSection from './RedesignedSolutionsSection'
+import PavingRisersHeroSection from '../components/PavingRisersHeroSection'
+import ToolsAndAccessoriesCatalog from '../components/ToolsAndAccessoriesCatalog'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -21,6 +23,8 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <Product3DShowcase />
+      <PavingRisersHeroSection/>
+      <ToolsAndAccessoriesCatalog/>
       <PavingPathHero />
       <HeroCarousel />
       <PavingRisersCatalog />
