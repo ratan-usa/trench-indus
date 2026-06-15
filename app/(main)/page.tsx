@@ -1,17 +1,17 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-  import SolutionsSection from '../components/SolutionsSection'
- import Product3DShowcase from '../../components/ui/sections/Product3DShowcase'
- import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
+import Product3DShowcase from '../../components/ui/sections/Product3DShowcase'
+import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
- import ServicesAndSolutions from '../components/ServicesAndSolutions'
+import ServicesAndSolutions from '../components/ServicesAndSolutions'
 import ContractorResources from '../components/ContractorResources'
 import AdditionalResourcesSlugs from '../components/AdditionalResourcesSlugs'
 import ContactExtraordinary from './ContactExtraordinary'
 import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
 import PavingPathHero from '../components/mega-taglines'
 import ProductInteractiveImage from '../components/ProductInteractiveImage'
- 
+import RedesignedSolutionsSection from './RedesignedSolutionsSection'
+
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
 const OurProducts = dynamic(() => import('../components/ourProduct'))
@@ -24,11 +24,11 @@ const Home = () => {
       <PavingPathHero />
       <HeroCarousel />
       <PavingRisersCatalog />
+      <RedesignedSolutionsSection />
       <section className='our-product' id='our-product'>
         <OurProducts />
       </section>
-      {/* <ProjectGallery /> */}
-      <SolutionsSection />
+      {/* <ProjectGallery /> */} 
       {/* <IndustrySolutions /> */}
       <ServicesAndSolutions />
       {/* <PipingRiserFeature /> */}
