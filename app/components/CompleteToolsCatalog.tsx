@@ -40,180 +40,180 @@ const ACCESSORIES_DATA = [
     spec: "Heavy-Gauge Fabricated Box Steel",
     image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
   },
-  // {
-  //   title: "Adjustable Hydrant Wrench",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-AHW-10",
-  //   description: "Universal pinned plumbing wrench design configured to fit multiple sizes of hydrant pentagon nuts and pin couplers.",
-  //   spec: "Adjustable Jaw • Heavy Cast Finish",
-  //   image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "¾\" - 1\" Service Line Puller Kit",
-  //   category: "Utility Locks & Pullers",
-  //   sku: "PR-SLP-01",
-  //   description: "Complete heavy-duty contractor tool kit in a ballistic nylon canvas bag for underground pipe pulling swaps.",
-  //   spec: "Includes Cable Lines, Grippers, Adaptors",
-  //   image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "1¼\" - 2\" Service Line Puller Kit",
-  //   category: "Utility Locks & Pullers",
-  //   sku: "PR-SLP-02",
-  //   description: "Industrial-grade large diameter pipe puller extraction kit engineered to withstand massive tensile loads.",
-  //   spec: "Includes Heavy Cable Matrix Cases",
-  //   image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
-  // },
+  {
+    title: "Adjustable Hydrant Wrench",
+    category: "Wrenches & Setters",
+    sku: "PR-AHW-10",
+    description: "Universal pinned plumbing wrench design configured to fit multiple sizes of hydrant pentagon nuts and pin couplers.",
+    spec: "Adjustable Jaw • Heavy Cast Finish",
+    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "¾\" - 1\" Service Line Puller Kit",
+    category: "Utility Locks & Pullers",
+    sku: "PR-SLP-01",
+    description: "Complete heavy-duty contractor tool kit in a ballistic nylon canvas bag for underground pipe pulling swaps.",
+    spec: "Includes Cable Lines, Grippers, Adaptors",
+    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "1¼\" - 2\" Service Line Puller Kit",
+    category: "Utility Locks & Pullers",
+    sku: "PR-SLP-02",
+    description: "Industrial-grade large diameter pipe puller extraction kit engineered to withstand massive tensile loads.",
+    spec: "Includes Heavy Cable Matrix Cases",
+    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+  },
 
-  // // --- FILE REFERENCE: 8.jpg ---
-  // {
-  //   title: "Pipe Cleaner / Descaler",
-  //   category: "Maintenance Tools",
-  //   sku: "PR-PCD-11",
-  //   description: "Segmented steel scraper assembly configured to drop inside operational pipelines to strip internal scale layers.",
-  //   spec: "Multi-Link Flex Joint Configuration",
-  //   image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "1\" Service Box Cleaning Auger",
-  //   category: "Maintenance Tools",
-  //   sku: "PR-SBA-12",
-  //   description: "Heavy-duty screw drill bit designed to drill out mud, hard debris, and packed rocks inside 1-inch utility service shafts.",
-  //   spec: "High-Pitch Clear Helix Design",
-  //   image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Valve Box Auger Cleaner",
-  //   category: "Maintenance Tools",
-  //   sku: "PR-VBA-13",
-  //   description: "Deep-reach hand-cranked earth and debris auger for extracting blockages at the bottom of valve boxes.",
-  //   spec: "Extended Shaft with T-Handle Crank",
-  //   image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Manhole Cover Hook",
-  //   category: "Lifting Hooks & Keys",
-  //   sku: "PR-MHH-01",
-  //   description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
-  //   spec: "Heat-Treated Solid Carbon Steel",
-  //   image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Hydrant Meter Stand",
-  //   category: "Specialized Kits",
-  //   sku: "PR-HMS-21",
-  //   description: "Solid-base floor support stand built to isolate and secure heavy fire hydrant monitoring meters off the ground.",
-  //   spec: "Wide Stability Base Plate Shield",
-  //   image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Service Box Extensions",
-  //   category: "Specialized Kits",
-  //   sku: "PR-SBE-22",
-  //   description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during paving overlays.",
-  //   spec: "Available in Three Uniform Length Tiers",
-  //   image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
-  // },
+  // --- FILE REFERENCE: 8.jpg ---
+  {
+    title: "Pipe Cleaner / Descaler",
+    category: "Maintenance Tools",
+    sku: "PR-PCD-11",
+    description: "Segmented steel scraper assembly configured to drop inside operational pipelines to strip internal scale layers.",
+    spec: "Multi-Link Flex Joint Configuration",
+    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "1\" Service Box Cleaning Auger",
+    category: "Maintenance Tools",
+    sku: "PR-SBA-12",
+    description: "Heavy-duty screw drill bit designed to drill out mud, hard debris, and packed rocks inside 1-inch utility service shafts.",
+    spec: "High-Pitch Clear Helix Design",
+    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Valve Box Auger Cleaner",
+    category: "Maintenance Tools",
+    sku: "PR-VBA-13",
+    description: "Deep-reach hand-cranked earth and debris auger for extracting blockages at the bottom of valve boxes.",
+    spec: "Extended Shaft with T-Handle Crank",
+    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Manhole Cover Hook",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-MHH-01",
+    description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
+    spec: "Heat-Treated Solid Carbon Steel",
+    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Hydrant Meter Stand",
+    category: "Specialized Kits",
+    sku: "PR-HMS-21",
+    description: "Solid-base floor support stand built to isolate and secure heavy fire hydrant monitoring meters off the ground.",
+    spec: "Wide Stability Base Plate Shield",
+    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Service Box Extensions",
+    category: "Specialized Kits",
+    sku: "PR-SBE-22",
+    description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during paving overlays.",
+    spec: "Available in Three Uniform Length Tiers",
+    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+  },
 
-  // // --- FILE REFERENCE: 9.jpg ---
-  // {
-  //   title: "The Chook™ – Combination Chisel & Manhole Hook",
-  //   category: "Lifting Hooks & Keys",
-  //   sku: "PR-CHK-02",
-  //   description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
-  //   spec: "Reinforced Alloy Steel Profile",
-  //   image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Pent End Wrench, Standard T Handle",
-  //   category: "Specialized Kits",
-  //   sku: "PR-PEW-17",
-  //   description: "Pentagonal socket wrench built to operate proprietary water department utility security covers.",
-  //   spec: "Five-Sided Machined Socket Box",
-  //   image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "T Handle 2-Hole End Wrench",
-  //   category: "Specialized Kits",
-  //   sku: "PR-2HW-18",
-  //   description: "Specialized double-prong spanner key engineered for utility covers requiring circular pin drive connections.",
-  //   spec: "Machined Steel Prong Layout",
-  //   image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Curb End Wrench / Curb Key, Standard T Handle",
-  //   category: "Lifting Hooks & Keys",
-  //   sku: "PR-CEW-03",
-  //   description: "Slotted jaw profile designed to reach deep into narrow curb boxes to operate municipal shutoff valves.",
-  //   spec: "Fixed T-Bar Handwheel Grip",
-  //   image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Standard T Handle Gate Wrench",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-STW-04",
-  //   description: "Standard infrastructure operator key designed to engage square gate valve operating nuts on main lines.",
-  //   spec: "Square-Socket Engagement Drive",
-  //   image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Telescopic Gate Wrench",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-TGW-05",
-  //   description: "Adjustable height shaft design that expands and locks to match varying utility vault depths on-site.",
-  //   spec: "Variable Telescopic Slide Lock",
-  //   image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Universal Curb Box and Valve Kit",
-  //   category: "Specialized Kits",
-  //   sku: "PR-UCK-19",
-  //   description: "Multi-piece modular rod system that interchanges sections to assemble the correct depth valve key on the fly.",
-  //   spec: "Snap-Fit High-Tensile Steel Rod Lines",
-  //   image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Combination Valve and Curb Key Kit",
-  //   category: "Specialized Kits",
-  //   sku: "PR-CCK-20",
-  //   description: "Master multi-key kit configured with multiple socket heads, structural adapter fittings, and extended extensions.",
-  //   spec: "Modular Head Configurations Included",
-  //   image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
-  // },
+  // --- FILE REFERENCE: 9.jpg ---
+  {
+    title: "The Chook™ – Combination Chisel & Manhole Hook",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-CHK-02",
+    description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
+    spec: "Reinforced Alloy Steel Profile",
+    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Pent End Wrench, Standard T Handle",
+    category: "Specialized Kits",
+    sku: "PR-PEW-17",
+    description: "Pentagonal socket wrench built to operate proprietary water department utility security covers.",
+    spec: "Five-Sided Machined Socket Box",
+    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "T Handle 2-Hole End Wrench",
+    category: "Specialized Kits",
+    sku: "PR-2HW-18",
+    description: "Specialized double-prong spanner key engineered for utility covers requiring circular pin drive connections.",
+    spec: "Machined Steel Prong Layout",
+    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Curb End Wrench / Curb Key, Standard T Handle",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-CEW-03",
+    description: "Slotted jaw profile designed to reach deep into narrow curb boxes to operate municipal shutoff valves.",
+    spec: "Fixed T-Bar Handwheel Grip",
+    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Standard T Handle Gate Wrench",
+    category: "Wrenches & Setters",
+    sku: "PR-STW-04",
+    description: "Standard infrastructure operator key designed to engage square gate valve operating nuts on main lines.",
+    spec: "Square-Socket Engagement Drive",
+    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Telescopic Gate Wrench",
+    category: "Wrenches & Setters",
+    sku: "PR-TGW-05",
+    description: "Adjustable height shaft design that expands and locks to match varying utility vault depths on-site.",
+    spec: "Variable Telescopic Slide Lock",
+    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Universal Curb Box and Valve Kit",
+    category: "Specialized Kits",
+    sku: "PR-UCK-19",
+    description: "Multi-piece modular rod system that interchanges sections to assemble the correct depth valve key on the fly.",
+    spec: "Snap-Fit High-Tensile Steel Rod Lines",
+    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Combination Valve and Curb Key Kit",
+    category: "Specialized Kits",
+    sku: "PR-CCK-20",
+    description: "Master multi-key kit configured with multiple socket heads, structural adapter fittings, and extended extensions.",
+    spec: "Modular Head Configurations Included",
+    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+  },
 
-  // // --- FILE REFERENCE: 10.jpg ---
-  // {
-  //   title: "Heavy Duty Ring Style Gate Wrench",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-RSW-06",
-  //   description: "High-torque operational wrench featuring a top alignment ring base optimized for heavy municipal infrastructure keys.",
-  //   spec: "Solid High-Torque Weldment",
-  //   image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Standard Valve Setter",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-SVS-07",
-  //   description: "Heavy-duty alignment layout tool finished in high-visibility safety red for positioning water valve lines securely.",
-  //   spec: "Powder-Coated Steel Frame",
-  //   image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Heavy Duty Valve Setter",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-HVS-08",
-  //   description: "Reinforced structural steel setup framework configured to lock and true industrial grade main valves.",
-  //   spec: "Dual-Braced Industrial Weldment",
-  //   image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
-  // },
-  // {
-  //   title: "Hydrant Setter",
-  //   category: "Wrenches & Setters",
-  //   sku: "PR-HDS-09",
-  //   description: "Rigging-certified chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
-  //   spec: "Dual Lifting Eyes • Certified Chain Link",
-  //   image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
-  // }
+  // --- FILE REFERENCE: 10.jpg ---
+  {
+    title: "Heavy Duty Ring Style Gate Wrench",
+    category: "Wrenches & Setters",
+    sku: "PR-RSW-06",
+    description: "High-torque operational wrench featuring a top alignment ring base optimized for heavy municipal infrastructure keys.",
+    spec: "Solid High-Torque Weldment",
+    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Standard Valve Setter",
+    category: "Wrenches & Setters",
+    sku: "PR-SVS-07",
+    description: "Heavy-duty alignment layout tool finished in high-visibility safety red for positioning water valve lines securely.",
+    spec: "Powder-Coated Steel Frame",
+    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Heavy Duty Valve Setter",
+    category: "Wrenches & Setters",
+    sku: "PR-HVS-08",
+    description: "Reinforced structural steel setup framework configured to lock and true industrial grade main valves.",
+    spec: "Dual-Braced Industrial Weldment",
+    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+  },
+  {
+    title: "Hydrant Setter",
+    category: "Wrenches & Setters",
+    sku: "PR-HDS-09",
+    description: "Rigging-certified chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
+    spec: "Dual Lifting Eyes • Certified Chain Link",
+    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+  }
 ];
 
 const CATEGORIES = ["All Tools", "Lifting Hooks & Keys", "Wrenches & Setters", "Maintenance Tools", "Utility Locks & Pullers", "Specialized Kits"];
