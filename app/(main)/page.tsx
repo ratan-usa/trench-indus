@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <div>
       {/* <HeroScrollSequence /> */}
+      <PavingPathHero />
       <Product3DShowcase />
       <PavingRisersHeroSection/>
       <ToolsAndAccessoriesCatalog/>
-      <PavingPathHero />
       <CompleteToolsCatalog/>
       <HeroCarousel />
       <PavingRisersCatalog />
