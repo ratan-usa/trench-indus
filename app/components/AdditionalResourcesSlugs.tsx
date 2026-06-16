@@ -38,7 +38,7 @@ const RESOURCES = [
 export default function AdditionalResourcesSlugs() {
   return (
     <section className="bg-white w-full  font-sans border-t border-gray-100">
-      <div className="p-6 md:p-8 lg:p-12">
+      <div className="px-6 md:px-8 lg:px-12 py-12">
 
         {/* --- HEADER --- */}
         <h2 className="text-3xl md:text-4xl font-black text-[#CC0000] uppercase tracking-tight mb-8">
@@ -51,7 +51,7 @@ export default function AdditionalResourcesSlugs() {
             <Link
               key={resource.id}
               href={`/resources/${resource.slug}`} // Dynamic routing using the slug
-              className="group relative w-full aspect-[3/4] bg-gray-900 overflow-hidden rounded-sm block"
+              className="group relative w-full aspect-[3/4] bg-gray-600 overflow-hidden rounded-sm block"
             >
 
               {/* Background Image */}
@@ -62,9 +62,7 @@ export default function AdditionalResourcesSlugs() {
                 className="object-cover opacity-90 transition-all duration-500"
               />
 
-              {/* Dark Gradient Overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-black/80 pointer-events-none"></div>
-
+ 
               {/* Top Text (Title) */}
               <div className="absolute top-6 left-6 right-6 z-10">
                 <h3 className="text-white text-xl md:text-2xl font-bold leading-snug drop-shadow-md">
