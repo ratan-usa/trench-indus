@@ -19,141 +19,139 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-// ────────────────────────────────────────────────────
-// 1. GLB MODEL REGISTRY  –  x / y / z are real 3D
-//    coordinates on the model mesh surface.
-// ────────────────────────────────────────────────────
-interface Hotspot {
-    id: string;
-    title: string;
-    description: string;
-    x: number;
-    y: number;
-    z: number;
-    specLabel: string;
-    specValue: string;
+ 
+
+export interface Hotspot {
+  id: string;
+  title: string;
+  description: string;
+  x: number;
+  y: number;
+  z: number;
+  specLabel: string;
+  specValue: string;
 }
 
-interface GlbModel {
-    id: string;
-    name: string;
-    path: string;
-    hotspots: Hotspot[];
+export interface GlbModel {
+  id: string;
+  name: string;
+  path: string;
+  hotspots: Hotspot[];
 }
 
 const GLB_MODELS: GlbModel[] = [
     {
-        id: "leaching-galley-1ft",
-        name: "1 FT Leaching Galley",
-        path: "/gib files/1 FT LEACHING GALLEY .glb",
+        id: "round-paving-riser-1in",
+        name: "1 Inch Round Paving Riser",
+        path: "/gib files/1 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
         hotspots: [
             {
-                id: "lg1-p1",
-                title: "Inlet Portal Port",
-                description: "Heavy-gauge reinforced opening configuration managing heavy volume wastewater dispersion layouts.",
+                id: "r1-p1",
+                title: "Precision Height Trim Flange",
+                description: "Low-profile heavy-duty cast iron seating ring designed for thin micro-surfacing and single-lift asphalt overlays.",
                 x: 0, y: 0.6, z: 0.5,
-                specLabel: "Structural Bore",
-                specValue: 'Pre-Cored 12" Connection'
+                specLabel: "Nominal Rise",
+                specValue: '1" Clear Elevation'
             },
             {
-                id: "lg1-p2",
-                title: "Perforated Sidewall Matrix",
-                description: "Engineered high-flow concrete pattern providing structural reinforcement alongside maximum soil absorption rates.",
+                id: "r1-p2",
+                title: "Bituminous Seating Base",
+                description: "Machined flat bottom surface finished with an asphaltic bituminous coating to eliminate vibration rattle under heavy traffic loading.",
                 x: 0.7, y: -0.2, z: 0.3,
-                specLabel: "Flow Output",
-                specValue: "ASTM Certified Porosity"
+                specLabel: "Material Spec",
+                specValue: "ASTM A48 Class 35B Iron"
             }
         ]
     },
     {
-        id: "leaching-galley-2ft",
-        name: "2 FT Leaching Galley",
-        path: "/gib files/2 FT LEACHING GALLEY .glb",
+        id: "mega-adjust-riser-2in",
+        name: "2 Inch Mega-Adjust™ Expandable Riser",
+        path: "/gib files/2 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
         hotspots: [
             {
-                id: "lg2-p1",
-                title: "Extended Chamber Body",
-                description: "Double-height precast concrete chamber providing increased storage volume for high-capacity subsurface leaching fields.",
+                id: "ma2-p1",
+                title: "Mechanical Expansion Linkage",
+                description: "Integrated heavy-duty turnbuckle assembly that expands outward horizontally to bite permanently into the existing utility frame base.",
                 x: 0, y: 0.8, z: 0.4,
-                specLabel: "Chamber Height",
-                specValue: "24\" Nominal Rise"
+                specLabel: "Lock Mechanism",
+                specValue: "Turnbuckle Expansion Bolt"
             },
             {
-                id: "lg2-p2",
-                title: "Perforated Sidewall Matrix",
-                description: "Engineered high-flow concrete perforation pattern allowing maximum lateral soil absorption across expanded surface area.",
+                id: "ma2-p2",
+                title: "Heavy Load-Bearing Core",
+                description: "Reinforced structural profile design engineered to bear continuous high-velocity impact loads from commercial truck traffic.",
                 x: 0.6, y: 0, z: 0.4,
-                specLabel: "Flow Rating",
-                specValue: "ASTM Certified Porosity"
+                specLabel: "Traffic Rating",
+                specValue: "AASHTO H-20 & HS-20 Traffic"
             }
         ]
     },
     {
-        id: "leaching-galley-3ft",
-        name: "3 FT Leaching Galley",
-        path: "/gib files/3 FT LEACHING GALLEY .glb",
+        id: "tapered-road-riser-3in",
+        name: "3 Inch Custom Tapered Road Riser",
+        path: "/gib files/3 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
         hotspots: [
             {
-                id: "lg3-p1",
-                title: "Full-Depth Chamber Profile",
-                description: "Maximum-height leaching galley unit delivering the highest per-unit storage and dispersion capacity for commercial-grade septic layouts.",
+                id: "tr3-p1",
+                title: "Sloped Grade Profile",
+                description: "Bespoke angled casting engineered specifically to accommodate severe road crowning, drainage slope pitches, or localized grade variations.",
                 x: 0, y: 1.0, z: 0.5,
-                specLabel: "Chamber Height",
-                specValue: "36\" Nominal Rise"
+                specLabel: "Taper Pitch",
+                specValue: "Custom Variable Slope"
             },
             {
-                id: "lg3-p2",
-                title: "Base Support Ledge",
-                description: "Integrated bottom flange providing stable footing on prepared aggregate bedding and preventing lateral shift under soil load.",
+                id: "tr3-p2",
+                title: "Snowplow Protection Bevel",
+                description: "Specially machined, run-out rim alignment profile that sits perfectly flush with the final wear course to prevent plow blade snags.",
                 x: 0.5, y: -0.5, z: 0.3,
-                specLabel: "Base Width",
-                specValue: "Full-Span Bearing"
+                specLabel: "Safety Profile",
+                specValue: "Flush Anti-Snag Trim"
             }
         ]
     },
     {
-        id: "monogrease-trap",
-        name: "1250 Mono Grease Trap",
-        path: "/gib files/1250 monogrease trap.glb",
+        id: "catch-basin-riser-1250",
+        name: "1250 Series Square Catch Basin Riser",
+        path: "/gib files/1250 monogrease trap.glb", // Preserved exact local path per instructions
         hotspots: [
             {
-                id: "gt-p1",
-                title: "Inlet Baffle Assembly",
-                description: "Internal flow diversion baffle slowing incoming wastewater velocity to promote grease separation and solid settling.",
+                id: "cb-p1",
+                title: "Fabricated Steel Outer Housing",
+                description: "Heavy-duty perimeter framework box constructed to lift square flat drainage grates to final highway grade without excavation.",
                 x: -0.5, y: 0.5, z: 0.4,
-                specLabel: "Capacity",
-                specValue: "1250 Gallon Rated"
+                specLabel: "Construction Type",
+                specValue: "Structural Welded Steel"
             },
             {
-                id: "gt-p2",
-                title: "Access Riser Port",
-                description: "Topside inspection and pump-out opening configured for standard municipal maintenance access and vacuum truck coupling.",
+                id: "cb-p2",
+                title: "Corner Gusset Reinforcements",
+                description: "Internal heavy-gauge structural plates welded at all core stress corners to prevent vertical deflection under load conditions.",
                 x: 0, y: 0.9, z: 0,
-                specLabel: "Opening Size",
-                specValue: '24" Manway Cover'
+                specLabel: "Reinforcement",
+                specValue: "4-Point Welded Bracing"
             }
         ]
     },
     {
-        id: "d-box",
-        name: "Distribution Box",
-        path: "/gib files/d bix.glb",
+        id: "d-profile-curb-riser",
+        name: "D-Shape Curb Inlet Riser Frame",
+        path: "/gib files/d bix.glb", // Preserved exact local path per instructions
         hotspots: [
             {
-                id: "db-p1",
-                title: "Multi-Port Outlet Array",
-                description: "Precision-leveled outlet ports distributing effluent evenly across multiple leaching field laterals for balanced soil loading.",
+                id: "cr-p1",
+                title: "Asymmetric Flush Backing Flange",
+                description: "Straight-back vertical mounting edge optimized to align directly flush against poured concrete municipal curb lines.",
                 x: 0.5, y: 0.3, z: 0.5,
-                specLabel: "Outlet Count",
-                specValue: "Multi-Port Configuration"
+                specLabel: "Profile Style",
+                specValue: "3-Sided D-Shape Curb Unit"
             },
             {
-                id: "db-p2",
-                title: "Equalizer Weir Plate",
-                description: "Adjustable internal speed leveler ensuring equal flow distribution to all connected lateral lines regardless of grade variation.",
+                id: "cr-p2",
+                title: "Adjustable Equalizer Alignment Screws",
+                description: "Heavy setting adjustment bolts positioned along the frame parameters to assist crews in truing up individual sides before laying final asphalt overlays.",
                 x: 0, y: 0, z: 0.4,
-                specLabel: "Flow Control",
-                specValue: "Adjustable Weir System"
+                specLabel: "Leveling Control",
+                specValue: "Integrated Leveling Set"
             }
         ]
     }
