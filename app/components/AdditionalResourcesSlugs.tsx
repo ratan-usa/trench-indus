@@ -51,7 +51,7 @@ export default function AdditionalResourcesSlugs() {
             <Link
               key={resource.id}
               href={`/resources/${resource.slug}`} // Dynamic routing using the slug
-              className="group relative w-full aspect-[3/4] bg-gray-600 overflow-hidden rounded-sm block"
+              className="group bg-[#CC0000] relative w-full aspect-[3/4]  overflow-hidden rounded-sm block"
             >
 
               {/* Background Image */}

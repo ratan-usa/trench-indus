@@ -14,6 +14,8 @@ import RedesignedSolutionsSection from './RedesignedSolutionsSection'
 import PavingRisersHeroSection from '../components/PavingRisersHeroSection'
 import ToolsAndAccessoriesCatalog from '../components/ToolsAndAccessoriesCatalog'
 import CompleteToolsCatalog from '../components/CompleteToolsCatalog'
+import InteractiveProduct from '../components/InteractiveProduct'
+import Interactive3DShowcase from '../components/Interactive3DShowcase'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -25,16 +27,16 @@ const Home = () => {
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
       <Product3DShowcase />
-      <PavingRisersHeroSection/>
-      <ToolsAndAccessoriesCatalog/>
-      <CompleteToolsCatalog/>
+      <PavingRisersHeroSection />
+      <ToolsAndAccessoriesCatalog />
+      <CompleteToolsCatalog />
       <HeroCarousel />
       <PavingRisersCatalog />
       <RedesignedSolutionsSection />
       <section className='our-product' id='our-product'>
         <OurProducts />
       </section>
-      {/* <ProjectGallery /> */} 
+      {/* <ProjectGallery /> */}
       {/* <IndustrySolutions /> */}
       <ServicesAndSolutions />
       {/* <PipingRiserFeature /> */}
@@ -47,6 +49,8 @@ const Home = () => {
       <AdditionalResourcesSlugs />
       <ContactExtraordinary />
       <ProductInteractiveImage />
+      {/* <InteractiveProduct/> */}
+      <Interactive3DShowcase />
 
 
     </div>

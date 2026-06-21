@@ -15,13 +15,11 @@ export default function PavingPathHero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative min-h-[90vh] w-full flex items-center justify-center bg-white overflow-hidden font-sans">
-      {/* Background Industrial Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+    <section className="relative py-8  w-full flex items-center justify-center bg-white overflow-hidden font-sans">
+       <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
-      {/* Decorative Brand Accent (Top Left) */}
-      <div className="absolute top-0 left-0 w-32 h-32 border-l-8 border-t-8 border-[#CC0000] -translate-x-12 -translate-y-12" />
+       <div className="absolute top-0 left-0 w-32 h-32 border-l-8 border-t-8 border-[#CC0000] -translate-x-12 -translate-y-12" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center">
@@ -63,8 +61,7 @@ export default function PavingPathHero() {
             </motion.h2>
           </div>
 
-          {/* Subtext & Description */}
-          <motion.p
+           {/* <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
@@ -73,8 +70,7 @@ export default function PavingPathHero() {
             "From municipal streets to international airport runways, we provide the vertical precision required for the world's toughest environments."
           </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
+           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -87,7 +83,7 @@ export default function PavingPathHero() {
             <Button variant="outline" className="border-4 border-black text-black hover:bg-[#0F0F0F] hover:text-white font-black px-12 h-20 text-lg uppercase transition-all rounded-none">
               View All Risers
             </Button>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
