@@ -16,6 +16,7 @@ import ToolsAndAccessoriesCatalog from '../components/ToolsAndAccessoriesCatalog
 import CompleteToolsCatalog from '../components/CompleteToolsCatalog'
 import InteractiveProduct from '../components/InteractiveProduct'
 import Interactive3DShowcase from '../components/Interactive3DShowcase'
+import PremiumPavingShowcase from '../components/PremiumPavingShowcase'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -46,6 +47,7 @@ const Home = () => {
       {/* <ProductCatalog /> */}
       <SmartInfraSection />
       <AdjustmentProducts />
+      <PremiumPavingShowcase/>
       <AdditionalResourcesSlugs />
       <ContactExtraordinary />
       <ProductInteractiveImage />
