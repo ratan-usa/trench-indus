@@ -19,31 +19,31 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
- 
+  
 
 export interface Hotspot {
-  id: string;
-  title: string;
-  description: string;
-  x: number;
-  y: number;
-  z: number;
-  specLabel: string;
-  specValue: string;
+  : string;
+  tle: string;
+  scription: string;
+   number;
+   number;
+   number;
+  ecLabel: string;
+  ecValue: string;
 }
 
 export interface GlbModel {
-  id: string;
-  name: string;
-  path: string;
-  hotspots: Hotspot[];
+  : string;
+  me: string;
+  th: string;
+  tspots: Hotspot[];
 }
 
 const GLB_MODELS: GlbModel[] = [
     {
         id: "round-paving-riser-1in",
         name: "1 Inch Round Paving Riser",
-        path: "/gib files/1 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
         hotspots: [
             {
                 id: "r1-p1",
@@ -66,7 +66,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "mega-adjust-riser-2in",
         name: "2 Inch Mega-Adjust™ Expandable Riser",
-        path: "/gib files/2 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
         hotspots: [
             {
                 id: "ma2-p1",
@@ -89,7 +89,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "tapered-road-riser-3in",
         name: "3 Inch Custom Tapered Road Riser",
-        path: "/gib files/3 FT LEACHING GALLEY .glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
         hotspots: [
             {
                 id: "tr3-p1",
@@ -112,7 +112,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "catch-basin-riser-1250",
         name: "1250 Series Square Catch Basin Riser",
-        path: "/gib files/1250 monogrease trap.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
         hotspots: [
             {
                 id: "cb-p1",
@@ -135,7 +135,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "d-profile-curb-riser",
         name: "D-Shape Curb Inlet Riser Frame",
-        path: "/gib files/d bix.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
         hotspots: [
             {
                 id: "cr-p1",
