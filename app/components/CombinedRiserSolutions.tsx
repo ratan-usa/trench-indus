@@ -18,10 +18,7 @@ import {
   ArrowRight,
   CheckCircle2
 } from 'lucide-react';
-
-// ==========================================
-// 1. JSON DATA FOR SHOWCASE SECTIONS
-// ==========================================
+ 
 const RISER_SECTIONS = [
   {
     id: "standard-municipal",
@@ -96,19 +93,15 @@ const RISER_SECTIONS = [
   }
 ];
 
-// ==========================================
-// 2. JSON DATA FOR INSTALLATION ADVANTAGES
-// ==========================================
+ 
 const ADVANTAGES = [
-  { icon: "Timer", title: "5-Minute Install", desc: "Drop in, adjust, and pave. Reduce labor costs on every single utility hole." },
+  { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and pave. Reduce labor costs on every single utility hole." },
   { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" riser securely for exact elevation matching." },
   { icon: "Wrench", title: "No Digging", desc: "Keep jackhammers off the jobsite. Avoid digging out the concrete base structure." },
   { icon: "HardHat", title: "DOT Approved", desc: "Materials and load ratings designed to breeze through municipal inspections." }
 ];
 
-// ==========================================
-// HELPER: ICON RENDERER
-// ==========================================
+ 
 const renderIcon = (iconName: string, className: string) => {
   switch (iconName) {
     case "ShieldCheck": return <ShieldCheck className={className} />;
