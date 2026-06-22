@@ -19,31 +19,32 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-  
+
+
 
 export interface Hotspot {
-  : string;
-  tle: string;
-  scription: string;
-   number;
-   number;
-   number;
-  ecLabel: string;
-  ecValue: string;
+    id: string;
+    title: string;
+    description: string;
+    x: number;
+    y: number;
+    z: number;
+    specLabel: string;
+    specValue: string;
 }
 
 export interface GlbModel {
-  : string;
-  me: string;
-  th: string;
-  tspots: Hotspot[];
+    id: string;
+    name: string;
+    path: string;
+    hotspots: Hotspot[];
 }
 
 const GLB_MODELS: GlbModel[] = [
     {
         id: "round-paving-riser-1in",
         name: "1 Inch Round Paving Riser",
-        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb",
         hotspots: [
             {
                 id: "r1-p1",
@@ -66,7 +67,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "mega-adjust-riser-2in",
         name: "2 Inch Mega-Adjust™ Expandable Riser",
-        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb",
         hotspots: [
             {
                 id: "ma2-p1",
@@ -89,7 +90,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "tapered-road-riser-3in",
         name: "3 Inch Custom Tapered Road Riser",
-        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb",
         hotspots: [
             {
                 id: "tr3-p1",
@@ -112,7 +113,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "catch-basin-riser-1250",
         name: "1250 Series Square Catch Basin Riser",
-        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb",
         hotspots: [
             {
                 id: "cb-p1",
@@ -135,7 +136,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "d-profile-curb-riser",
         name: "D-Shape Curb Inlet Riser Frame",
-        path: "/gib files/mr3.glb", // Preserved exact local path per instructions
+        path: "/gib files/mr3.glb",
         hotspots: [
             {
                 id: "cr-p1",
@@ -156,7 +157,6 @@ const GLB_MODELS: GlbModel[] = [
         ]
     }
 ];
-
 // ────────────────────────────────────────────────────
 // 2. GLB MODEL RENDERER
 // ────────────────────────────────────────────────────
@@ -359,7 +359,7 @@ export default function Interactive3DShowcase() {
         <section className="bg-black text-white py-24 font-sans overflow-hidden relative">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 pointer-events-none" />
 
-            <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
+            <div className="  px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
 
                 {/* ── SECTION HEADER ── */}
                 <div className="max-w-3xl space-y-4">
