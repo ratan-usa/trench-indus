@@ -18,39 +18,39 @@ import { cn } from "@/lib/utils";
 const PRODUCT_VIDEOS = [
   {
     id: 1,
-    title: "360° View: Round Riser",
-    description: "Full rotation showing the variable height adjustment ring mechanism.",
+    title: "Pro Series Round Risers 360° View",
+    description: "Full rotation showcase highlighting our high-precision ductile iron height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png"
+    src: "video/paving_riser/1 FT LEACHING GALLEY .glb", 
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png" 
   },
   {
     id: 2,
-    title: "Exploded View: Square Riser",
-    description: "Technical breakdown of the corner interlocking system and frame strength.",
+    title: "Elite Manhole Systems",
+    description: "Technical exploded breakdown showing the multi-ton load capacity and interlocking frame security.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5201.png"
+    src: "video/paving_riser/paving riser 1.5213.mp4", 
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5201.png" 
   },
   {
     id: 3,
-    title: "Installation Demo: Valve Box",
-    description: "Step-by-step 3D animation of a standard valve box riser installation.",
+    title: "Infrastructure Valve Boxes",
+    description: "Step-by-step industrial 3D animation showing a standard heavy-traffic utility valve box casing setup.",
     duration: "2:00",
-    type: "ANIMATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5203.png"
+    type: "ANIMATION", 
+    src: "video/paving_riser/paving riser 1.5213.mp4", 
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5203.png" 
   },
   {
     id: 4,
-    title: "Stress Test Simulation",
-    description: "Finite Element Analysis (FEA) visualization of load distribution.",
+    title: "Custom Foundry Components",
+    description: "Finite Element Analysis (FEA) testing simulation illustrating severe shear stress distribution on custom cast matrices.",
     duration: "0:30",
     type: "SIMULATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+    src: "video/paving_riser/paving riser 1.5213.mp4", 
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png" 
   }
 ];
 
