@@ -160,6 +160,7 @@ export default function ComprehensivePavingRisersMapped() {
                     )}
                   </div>
                   
+                  
                   {/* Decorative square behind image (only on light theme) */}
                   {!isDark && (
                     <div className={`absolute -bottom-6 ${isImageLeft ? '-right-6' : '-left-6'} w-1/2 aspect-square bg-slate-50 border border-slate-200 rounded-2xl -z-10 hidden md:block`}></div>
