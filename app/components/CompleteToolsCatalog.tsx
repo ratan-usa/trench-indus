@@ -8,7 +8,8 @@ import {
   ArrowRight, 
   ShieldCheck, 
   Search, 
-  SlidersHorizontal 
+  SlidersHorizontal,
+  Plus
 } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,7 +23,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CTR-16",
     description: "Precision clamping system designed to quickly reshape crushed or out-of-round soft copper service lines on jobsites.",
     spec: "Dual-Vice Vise-Grip Pressure Frame",
-    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.1.png"
   },
   {
     title: "Water Service Curb Box Lock",
@@ -30,7 +31,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CBL-14",
     description: "Heavy tamper-proof physical locking shroud designed to block unauthorized access to curb box covers.",
     spec: "High-Vis Safety Red Shroud Core",
-    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.2.png"
   },
   {
     title: "Water Service Locking Valve Cover",
@@ -38,7 +39,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-LVC-15",
     description: "Solid steel enclosure engineered to bolt directly over underground water service lines for security.",
     spec: "Heavy-Gauge Fabricated Box Steel",
-    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.3.png"
   },
   {
     title: "Adjustable Hydrant Wrench",
@@ -46,7 +47,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-AHW-10",
     description: "Universal pinned plumbing wrench design configured to fit multiple sizes of hydrant pentagon nuts and pin couplers.",
     spec: "Adjustable Jaw • Heavy Cast Finish",
-    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.4.png"
   },
   {
     title: "¾\" - 1\" Service Line Puller Kit",
@@ -54,7 +55,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SLP-01",
     description: "Complete heavy-duty contractor tool kit in a ballistic nylon canvas bag for underground pipe pulling swaps.",
     spec: "Includes Cable Lines, Grippers, Adaptors",
-    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.5.png"
   },
   {
     title: "1¼\" - 2\" Service Line Puller Kit",
@@ -62,7 +63,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SLP-02",
     description: "Industrial-grade large diameter pipe puller extraction kit engineered to withstand massive tensile loads.",
     spec: "Includes Heavy Cable Matrix Cases",
-    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.1.png"
   },
 
   // --- FILE REFERENCE: 8.jpg ---
@@ -72,7 +73,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-PCD-11",
     description: "Segmented steel scraper assembly configured to drop inside operational pipelines to strip internal scale layers.",
     spec: "Multi-Link Flex Joint Configuration",
-    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.2.png"
   },
   {
     title: "1\" Service Box Cleaning Auger",
@@ -80,7 +81,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SBA-12",
     description: "Heavy-duty screw drill bit designed to drill out mud, hard debris, and packed rocks inside 1-inch utility service shafts.",
     spec: "High-Pitch Clear Helix Design",
-    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.3.png"
   },
   {
     title: "Valve Box Auger Cleaner",
@@ -88,7 +89,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-VBA-13",
     description: "Deep-reach hand-cranked earth and debris auger for extracting blockages at the bottom of valve boxes.",
     spec: "Extended Shaft with T-Handle Crank",
-    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.4.png"
   },
   {
     title: "Manhole Cover Hook",
@@ -96,7 +97,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-MHH-01",
     description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
     spec: "Heat-Treated Solid Carbon Steel",
-    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.5.png"
   },
   {
     title: "Hydrant Meter Stand",
@@ -104,7 +105,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HMS-21",
     description: "Solid-base floor support stand built to isolate and secure heavy fire hydrant monitoring meters off the ground.",
     spec: "Wide Stability Base Plate Shield",
-    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.1.png"
   },
   {
     title: "Service Box Extensions",
@@ -112,7 +113,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SBE-22",
     description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during paving overlays.",
     spec: "Available in Three Uniform Length Tiers",
-    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.2.png"
   },
 
   // --- FILE REFERENCE: 9.jpg ---
@@ -122,7 +123,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CHK-02",
     description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
     spec: "Reinforced Alloy Steel Profile",
-    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.3.png"
   },
   {
     title: "Pent End Wrench, Standard T Handle",
@@ -130,7 +131,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-PEW-17",
     description: "Pentagonal socket wrench built to operate proprietary water department utility security covers.",
     spec: "Five-Sided Machined Socket Box",
-    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.4.png"
   },
   {
     title: "T Handle 2-Hole End Wrench",
@@ -138,7 +139,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-2HW-18",
     description: "Specialized double-prong spanner key engineered for utility covers requiring circular pin drive connections.",
     spec: "Machined Steel Prong Layout",
-    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.5.png"
   },
   {
     title: "Curb End Wrench / Curb Key, Standard T Handle",
@@ -146,7 +147,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CEW-03",
     description: "Slotted jaw profile designed to reach deep into narrow curb boxes to operate municipal shutoff valves.",
     spec: "Fixed T-Bar Handwheel Grip",
-    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.1.png"
   },
   {
     title: "Standard T Handle Gate Wrench",
@@ -154,7 +155,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-STW-04",
     description: "Standard infrastructure operator key designed to engage square gate valve operating nuts on main lines.",
     spec: "Square-Socket Engagement Drive",
-    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.2.png"
   },
   {
     title: "Telescopic Gate Wrench",
@@ -162,7 +163,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-TGW-05",
     description: "Adjustable height shaft design that expands and locks to match varying utility vault depths on-site.",
     spec: "Variable Telescopic Slide Lock",
-    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.3.png"
   },
   {
     title: "Universal Curb Box and Valve Kit",
@@ -170,7 +171,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-UCK-19",
     description: "Multi-piece modular rod system that interchanges sections to assemble the correct depth valve key on the fly.",
     spec: "Snap-Fit High-Tensile Steel Rod Lines",
-    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.4.png"
   },
   {
     title: "Combination Valve and Curb Key Kit",
@@ -178,7 +179,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CCK-20",
     description: "Master multi-key kit configured with multiple socket heads, structural adapter fittings, and extended extensions.",
     spec: "Modular Head Configurations Included",
-    image: "/assets/paving rings/mr2.5.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.5.png"
   },
 
   // --- FILE REFERENCE: 10.jpg ---
@@ -188,7 +189,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-RSW-06",
     description: "High-torque operational wrench featuring a top alignment ring base optimized for heavy municipal infrastructure keys.",
     spec: "Solid High-Torque Weldment",
-    image: "/assets/paving rings/mr2.1.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.1.png"
   },
   {
     title: "Standard Valve Setter",
@@ -196,7 +197,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SVS-07",
     description: "Heavy-duty alignment layout tool finished in high-visibility safety red for positioning water valve lines securely.",
     spec: "Powder-Coated Steel Frame",
-    image: "/assets/paving rings/mr2.2.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.2.png"
   },
   {
     title: "Heavy Duty Valve Setter",
@@ -204,7 +205,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HVS-08",
     description: "Reinforced structural steel setup framework configured to lock and true industrial grade main valves.",
     spec: "Dual-Braced Industrial Weldment",
-    image: "/assets/paving rings/mr2.3.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.3.png"
   },
   {
     title: "Hydrant Setter",
@@ -212,7 +213,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HDS-09",
     description: "Rigging-certified chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
     spec: "Dual Lifting Eyes • Certified Chain Link",
-    image: "/assets/paving rings/mr2.4.png" // Referenced directly from 7.jpg
+    image: "/assets/paving rings/mr2.4.png"
   }
 ];
 
@@ -221,13 +222,25 @@ const CATEGORIES = ["All Tools", "Lifting Hooks & Keys", "Wrenches & Setters", "
 export default function CompleteToolsCatalog() {
   const [selectedCategory, setSelectedCategory] = useState("All Tools");
   const [searchQuery, setSearchQuery] = useState("");
+  const [isExpanded, setIsExpanded] = useState(false);
 
+  // Filter core logic
   const filteredProducts = ACCESSORIES_DATA.filter((product) => {
     const matchesCategory = selectedCategory === "All Tools" || product.category === selectedCategory;
     const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           product.sku.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+
+  // Calculate rendering subset based on expanded status toggle
+  const shouldTruncate = filteredProducts.length > 5 && !isExpanded;
+  const displayedProducts = shouldTruncate ? filteredProducts.slice(0, 5) : filteredProducts;
+
+  // Reset expansion when filters update to avoid unexpected empty views
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    setIsExpanded(false);
+  };
 
   return (
     <section className="bg-slate-50 py-24 border-b border-slate-200 font-sans">
@@ -245,14 +258,14 @@ export default function CompleteToolsCatalog() {
             </h2>
           </div>
 
-          {/* Search Input */}
+          {/* Search Input Bar */}
           <div className="relative w-full lg:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input 
               type="text" 
               placeholder="Search by name or SKU..." 
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => { setSearchQuery(e.target.value); setIsExpanded(false); }}
               className="w-full h-12 pl-10 pr-4 bg-white border border-slate-200 text-sm rounded-sm font-medium focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
             />
           </div>
@@ -267,7 +280,7 @@ export default function CompleteToolsCatalog() {
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => handleCategoryChange(cat)}
               className={cn(
                 "px-4 py-2.5 text-xs font-black uppercase tracking-wider rounded-sm border whitespace-nowrap transition-all duration-150",
                 selectedCategory === cat 
@@ -282,7 +295,7 @@ export default function CompleteToolsCatalog() {
 
         {/* --- PRODUCT GRID MATRIX --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProducts.map((product, idx) => (
+          {displayedProducts.map((product, idx) => (
             <Card 
               key={idx} 
               className="bg-white border border-slate-200 rounded-sm shadow-sm hover:shadow-md hover:border-[#CC0000] transition-all duration-300 flex flex-col justify-between overflow-hidden group"
@@ -295,6 +308,7 @@ export default function CompleteToolsCatalog() {
                   fill
                   className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
+                  priority={idx < 3}
                 />
               </div>
               
@@ -337,6 +351,24 @@ export default function CompleteToolsCatalog() {
               </CardContent>
             </Card>
           ))}
+
+          {/* --- INJECTED 6TH CARD: LOAD MORE INTERACTIVE BANNER SLIP --- */}
+          {shouldTruncate && (
+            <Card 
+              onClick={() => setIsExpanded(true)}
+              className="border-2 border-dashed border-slate-300 bg-slate-100/50 rounded-sm shadow-sm hover:shadow-md hover:border-[#CC0000] hover:bg-white transition-all duration-300 flex flex-col items-center justify-center p-8 text-center cursor-pointer group min-h-[400px]"
+            >
+              <div className="w-14 h-14 bg-white border border-slate-200 text-slate-700 group-hover:bg-[#0F0F0F] group-hover:border-[#0F0F0F] group-hover:text-white rounded-full flex items-center justify-center shadow-sm transition-all duration-300 transform group-hover:scale-110 mb-4">
+                <Plus className="w-6 h-6 transition-transform duration-300 group-hover:rotate-90" />
+              </div>
+              <h3 className="text-lg font-black uppercase tracking-tight text-slate-900 group-hover:text-[#CC0000] transition-colors">
+                Load More Accessories
+              </h3>
+              <p className="text-sm text-slate-500 font-medium max-w-[240px] mt-2 leading-relaxed">
+                Discover {filteredProducts.length - 5} additional professional municipal tools in this catalog line.
+              </p>
+            </Card>
+          )}
         </div>
 
         {/* --- EMPTY STATE FALLBACK --- */}

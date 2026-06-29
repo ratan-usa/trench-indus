@@ -2,10 +2,11 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link'; // Import Link
+import Link from 'next/link';
 import {
     ChevronRight,
     ChevronLeft,
+    Plus
 } from 'lucide-react';
 import {
     Card,
@@ -121,7 +122,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
         <Card className="border-2 border-gray-100 hover:border-[#CC0000] transition-all duration-300 shadow-none hover:shadow-xl bg-white overflow-hidden flex flex-col">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold uppercase">{cat.title}</CardTitle>
-                <CardDescription className="text-gray-500 font-medium">{cat.description}</CardDescription>
+                <CardDescription className="text-gray-500 font-medium line-clamp-1">{cat.description}</CardDescription>
             </CardHeader>
 
             <CardContent className="pt-2 flex-grow">
@@ -134,10 +135,10 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                     />
                     {cat.images.length > 1 && (
                         <>
-                            <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 z-10">
+                            <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 z-10 text-black hover:bg-[#CC0000] hover:text-white transition-colors">
                                 <ChevronLeft className="w-5 h-5" />
                             </button>
-                            <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 z-10">
+                            <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 z-10 text-black hover:bg-[#CC0000] hover:text-white transition-colors">
                                 <ChevronRight className="w-5 h-5" />
                             </button>
                         </>
@@ -158,13 +159,12 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                     <Separator className="bg-gray-200" />
                     <div>
                         <h4 className="text-xs font-black text-black uppercase tracking-widest mb-2">Configurations</h4>
-                        <p className="text-sm font-medium text-gray-700">{cat.types.join(" / ")}</p>
+                        <p className="text-sm font-medium text-gray-700 min-h-[20px]">{cat.types.join(" / ")}</p>
                     </div>
                 </div>
             </CardContent>
 
             <CardFooter className="mt-auto pt-4">
-                {/* DYNAMIC LINK TO PRODUCT PAGE */}
                 <Link href={`/product/${cat.slug}`} className="w-full">
                     <Button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-bold transition-colors uppercase tracking-wider rounded-sm h-12">
                         View Specs <ChevronRight className="ml-2 w-4 h-4" />
@@ -176,11 +176,17 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
 }
 
 export default function OurProducts() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    // Filter parameters to evaluate if initial subset view requires truncate slices
+    const shouldTruncate = CATEGORIES.length > 5 && !isExpanded;
+    const displayedCategories = shouldTruncate ? CATEGORIES.slice(0, 5) : CATEGORIES;
+
     return (
         <div className="min-h-screen bg-white font-sans text-black">
-            <section id="products" className="p-6 md:p-8 lg:p-12 w-full px-6 md:px-8 lg:px-12">
+            <section id="products" className="py-20 w-full px-6 md:px-8 lg:px-12">
                 <div className="text-center mb-16">
-                    <Badge className="bg-[#0F0F0F] text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest">
+                    <Badge className="bg-[#0F0F0F] text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest rounded-sm">
                         Official Catalog
                     </Badge>
                     <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
@@ -189,9 +195,27 @@ export default function OurProducts() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {CATEGORIES.map((cat) => (
+                    {displayedCategories.map((cat) => (
                         <ProductCard key={cat.id} cat={cat} />
                     ))}
+
+                    {/* --- INJECTED 6TH SLOT: LOAD MORE DIGITAL TRUNCATE CARD --- */}
+                    {shouldTruncate && (
+                        <Card 
+                            onClick={() => setIsExpanded(true)}
+                            className="border-2 border-dashed border-slate-300 bg-slate-50/50 rounded-sm shadow-none hover:shadow-xl hover:border-[#CC0000] hover:bg-white transition-all duration-300 flex flex-col items-center justify-center p-8 text-center cursor-pointer min-h-[500px] group"
+                        >
+                            <div className="w-14 h-14 bg-white border border-slate-200 text-slate-800 group-hover:bg-[#0F0F0F] group-hover:border-[#0F0F0F] group-hover:text-white rounded-full flex items-center justify-center shadow-sm transition-all duration-300 transform group-hover:scale-110 mb-4">
+                                <Plus className="w-6 h-6 transition-transform duration-300 group-hover:rotate-90" />
+                            </div>
+                            <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 group-hover:text-[#CC0000] transition-colors">
+                                Load More Systems
+              </h3>
+                            <p className="text-sm text-slate-500 font-medium max-w-[240px] mt-2 leading-relaxed">
+                                Expand catalog matrix fields to explore {CATEGORIES.length - 5} remaining infrastructure riser lines.
+                            </p>
+                        </Card>
+                    )}
                 </div>
             </section>
         </div>
