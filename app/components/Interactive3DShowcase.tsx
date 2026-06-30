@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, Suspense, useRef, useEffect } from 'react';
+import React, { useState, Suspense, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { Canvas, useThree } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Stage, Html } from '@react-three/drei';
@@ -162,7 +162,8 @@ const GLB_MODELS: GlbModel[] = [
 // ────────────────────────────────────────────────────
 function ModelViewer({ url }: { url: string }) {
     const { scene } = useGLTF(url);
-    return <primitive object={scene} dispose={null} />;
+    const clonedScene = useMemo(() => scene.clone(true), [scene]);
+    return <primitive object={clonedScene} dispose={null} />;
 }
 
 // ────────────────────────────────────────────────────
@@ -173,14 +174,12 @@ function ModelViewer({ url }: { url: string }) {
 function Hotspot3D({
     spot,
     isActive,
-    isHovered,
     onHoverIn,
     onHoverOut,
     onClick,
 }: {
     spot: Hotspot;
     isActive: boolean;
-    isHovered: boolean;
     onHoverIn: () => void;
     onHoverOut: () => void;
     onClick: () => void;
@@ -189,94 +188,59 @@ function Hotspot3D({
         <Html
             position={[spot.x, spot.y, spot.z]}
             center
-            distanceFactor={5}
+            distanceFactor={4}
             zIndexRange={[20, 0]}
             style={{ pointerEvents: 'auto' }}
         >
             <button
-                onMouseEnter={onHoverIn}
-                onMouseLeave={onHoverOut}
-                onClick={onClick}
-                className="relative flex items-center justify-center w-7 h-7 focus:outline-none group/dot"
-                style={{ cursor: 'pointer' }}
+                onMouseEnter={(e) => { e.stopPropagation(); onHoverIn(); }}
+                onMouseLeave={(e) => { e.stopPropagation(); onHoverOut(); }}
+                onClick={(e) => { e.stopPropagation(); onClick(); }}
+                onPointerDown={(e) => e.stopPropagation()}
+                onPointerUp={(e) => e.stopPropagation()}
+                onPointerMove={(e) => e.stopPropagation()}
+                onWheel={(e) => e.stopPropagation()}
+                style={{
+                    position: 'relative',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '20px',
+                    height: '20px',
+                    cursor: 'pointer',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    outline: 'none',
+                }}
             >
                 {/* Ping ring */}
                 <span
-                    className="absolute inline-flex h-full w-full rounded-full opacity-60 animate-ping"
-                    style={{ backgroundColor: isActive ? '#CC0000' : '#555' }}
-                />
-                {/* Glow ring */}
-                <span
-                    className="absolute inline-flex h-5 w-5 rounded-full opacity-30 animate-pulse"
-                    style={{ backgroundColor: isActive ? '#CC0000' : '#555' }}
+                    style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '50%',
+                        opacity: 0.5,
+                        backgroundColor: isActive ? '#CC0000' : '#666',
+                        animation: 'ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                    }}
                 />
                 {/* Core dot */}
                 <span
-                    className="relative inline-flex rounded-full h-3 w-3 shadow-lg"
                     style={{
-                        backgroundColor: isActive ? '#CC0000' : '#555',
-                        border: '2px solid rgba(255,255,255,0.5)',
+                        position: 'relative',
+                        display: 'inline-flex',
+                        borderRadius: '50%',
+                        width: '10px',
+                        height: '10px',
+                        backgroundColor: isActive ? '#CC0000' : '#666',
+                        border: '2px solid rgba(255,255,255,0.6)',
                         boxShadow: isActive
-                            ? '0 0 12px rgba(204,0,0,0.6)'
-                            : '0 0 6px rgba(85,85,85,0.4)',
+                            ? '0 0 8px rgba(204,0,0,0.6)'
+                            : '0 0 4px rgba(100,100,100,0.4)',
                     }}
                 />
-
-                {/* ── Hover tooltip card ── */}
-                <div
-                    className="absolute z-50 pointer-events-none transition-all duration-200 origin-bottom"
-                    style={{
-                        bottom: 'calc(100% + 12px)',
-                        left: '50%',
-                        transform: `translateX(-50%) ${isHovered ? 'translateY(0) scale(1)' : 'translateY(4px) scale(0.95)'}`,
-                        opacity: isHovered ? 1 : 0,
-                        width: '220px',
-                    }}
-                >
-                    <div
-                        className="rounded-md shadow-2xl overflow-hidden"
-                        style={{
-                            background: 'linear-gradient(145deg, #0a0a0a 0%, #111111 100%)',
-                            border: '1px solid rgba(255,255,255,0.08)',
-                            backdropFilter: 'blur(12px)',
-                        }}
-                    >
-                        {/* Red accent bar */}
-                        <div style={{ height: '3px', background: 'linear-gradient(90deg, #CC0000, #ff4444, #CC0000)' }} />
-
-                        <div className="p-3 space-y-1.5">
-                            <h4 className="text-[11px] font-black uppercase tracking-wider text-white leading-tight">
-                                {spot.title}
-                            </h4>
-                            <p className="text-[10px] text-[#888] leading-snug">
-                                {spot.description}
-                            </p>
-                            <div
-                                className="flex items-center gap-1.5 pt-1"
-                                style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
-                            >
-                                <span className="text-[9px] font-bold uppercase tracking-widest text-[#CC0000]">
-                                    {spot.specLabel}
-                                </span>
-                                <span className="text-[9px] text-[#555]">→</span>
-                                <span className="text-[9px] font-mono text-white">
-                                    {spot.specValue}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Arrow pointer */}
-                    <div
-                        className="mx-auto"
-                        style={{
-                            width: 0,
-                            height: 0,
-                            borderLeft: '6px solid transparent',
-                            borderRight: '6px solid transparent',
-                            borderTop: '6px solid #111111',
-                        }}
-                    />
-                </div>
             </button>
         </Html>
     );
@@ -304,14 +268,12 @@ function CanvasLoader() {
 function SceneContent({
     model,
     activeSpot,
-    hoveredSpotId,
     onSpotClick,
     onSpotHoverIn,
     onSpotHoverOut,
 }: {
     model: GlbModel;
     activeSpot: Hotspot | null;
-    hoveredSpotId: string | null;
     onSpotClick: (s: Hotspot) => void;
     onSpotHoverIn: (s: Hotspot) => void;
     onSpotHoverOut: () => void;
@@ -322,20 +284,20 @@ function SceneContent({
                 <Suspense fallback={<CanvasLoader />}>
                     <ModelViewer url={model.path} />
                 </Suspense>
-
-                {/* Hotspot dots anchored in 3D space */}
-                {model.hotspots.map((spot) => (
-                    <Hotspot3D
-                        key={spot.id}
-                        spot={spot}
-                        isActive={activeSpot?.id === spot.id}
-                        isHovered={hoveredSpotId === spot.id}
-                        onHoverIn={() => onSpotHoverIn(spot)}
-                        onHoverOut={onSpotHoverOut}
-                        onClick={() => onSpotClick(spot)}
-                    />
-                ))}
             </Stage>
+
+            {/* Hotspot dots anchored in 3D space — OUTSIDE Stage to prevent camera re-adjust */}
+            {model.hotspots.map((spot) => (
+                <Hotspot3D
+                    key={spot.id}
+                    spot={spot}
+                    isActive={activeSpot?.id === spot.id}
+                    onHoverIn={() => onSpotHoverIn(spot)}
+                    onHoverOut={onSpotHoverOut}
+                    onClick={() => onSpotClick(spot)}
+                />
+            ))}
+
             <OrbitControls makeDefault enableZoom={true} />
         </>
     );
@@ -348,6 +310,8 @@ export default function Interactive3DShowcase() {
     const [activeModel, setActiveModel] = useState<GlbModel>(GLB_MODELS[0]);
     const [activeSpot, setActiveSpot] = useState<Hotspot | null>(GLB_MODELS[0].hotspots[0] ?? null);
     const [hoveredSpotId, setHoveredSpotId] = useState<string | null>(null);
+
+    const hoveredSpot = activeModel.hotspots.find(s => s.id === hoveredSpotId) ?? null;
 
     const handleModelChange = (model: GlbModel) => {
         setActiveModel(model);
@@ -419,13 +383,43 @@ export default function Interactive3DShowcase() {
                                 <SceneContent
                                     model={activeModel}
                                     activeSpot={activeSpot}
-                                    hoveredSpotId={hoveredSpotId}
                                     onSpotClick={(s) => setActiveSpot(s)}
                                     onSpotHoverIn={(s) => { setActiveSpot(s); setHoveredSpotId(s.id); }}
                                     onSpotHoverOut={() => setHoveredSpotId(null)}
                                 />
                             </Canvas>
                         </div>
+
+                        {/* ── Hover tooltip — rendered in DOM, stays inside viewport ── */}
+                        {hoveredSpot && (
+                            <div
+                                className="absolute z-30 pointer-events-none"
+                                style={{
+                                    top: '16px',
+                                    right: '16px',
+                                    maxWidth: '180px',
+                                    animation: 'fadeIn 150ms ease-out',
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        background: 'rgba(0,0,0,0.92)',
+                                        border: '1px solid rgba(255,255,255,0.1)',
+                                        borderRadius: '6px',
+                                        padding: '8px 12px',
+                                        backdropFilter: 'blur(10px)',
+                                        borderTop: '2px solid #CC0000',
+                                    }}
+                                >
+                                    <p style={{ fontSize: '10px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em', color: '#fff', margin: 0, lineHeight: 1.3 }}>
+                                        {hoveredSpot.title}
+                                    </p>
+                                    <p style={{ fontSize: '9px', color: '#888', margin: '4px 0 0', lineHeight: 1.4 }}>
+                                        {hoveredSpot.description.length > 100 ? hoveredSpot.description.slice(0, 100) + '…' : hoveredSpot.description}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
 
                         {/* Bottom helper bar */}
                         <div className="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-sm border border-[#1a1a1a] p-2 text-[10px] uppercase font-bold tracking-wide text-[#888] text-center flex items-center justify-center gap-2 rounded-sm pointer-events-none z-10">

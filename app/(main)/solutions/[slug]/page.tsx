@@ -148,7 +148,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
 
       {/* --- BREADCRUMB HEADER --- */}
       <div className="bg-white border-b border-gray-200 py-4 sticky top-0 z-40">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <button
             onClick={() => router.back()}
             className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#CC0000] transition-colors"
@@ -169,7 +169,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight uppercase tracking-tight">
               {solution.title}
@@ -182,7 +182,7 @@ export default function SolutionDetailPage({ params }: PageProps) {
       </div>
 
       {/* --- MAIN CONTENT GRID --- */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-16">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 mt-12 md:mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
           {/* LEFT COLUMN: Overview & Applications */}

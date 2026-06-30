@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'; // Assuming you have a Button c
 export default function PipingRiserFeature() {
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-6 sm:px-8 lg:px-12">
 
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
 

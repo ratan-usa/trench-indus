@@ -87,7 +87,7 @@ const ProductCatalog = () => {
 
   return (
     <section className="bg-white min-h-screen py-16 font-sans text-black border-t border-gray-200">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* PAGE HEADER */}
         <div className="mb-12 border-b-4 border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-4">

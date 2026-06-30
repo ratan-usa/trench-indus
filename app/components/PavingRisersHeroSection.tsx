@@ -8,7 +8,7 @@ export default function PavingRisersHeroSection() {
     <section className="bg-slate-50 py-20 border-b border-slate-200 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* LEFT PANEL: EASY, FAST, ACCURATE VALUE PROPOSITION */}
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-3">
@@ -20,7 +20,7 @@ export default function PavingRisersHeroSection() {
                 <span className="text-[#CC0000]">being built live.</span>
               </h2>
             </div>
-            
+
             <p className="text-slate-600 text-lg leading-relaxed font-medium max-w-xl">
               Ditch the complex setups and mortar beds. Our specialized paving risers unlock quick installs on-site while preserving precision structural alignments under demanding municipal loads.
             </p>
@@ -34,7 +34,7 @@ export default function PavingRisersHeroSection() {
                 </div>
                 <p className="text-xs font-bold text-slate-500 leading-snug">Drop-in design. No excavation.</p>
               </div>
-              
+
               <div className="space-y-1 border-x border-slate-200 px-3">
                 <div className="flex items-center gap-1.5 text-[#CC0000]">
                   <Clock className="w-4 h-4" />
@@ -56,15 +56,14 @@ export default function PavingRisersHeroSection() {
           {/* RIGHT PANEL: LIVE FABRICATION INDUSTRIAL LOOP FEED */}
           <div className="lg:col-span-7 w-full">
             <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200">
-              
+
               {/* Vimeo loop streaming background configurations */}
               <iframe
-                src="https://player.vimeo.com/video/705916447?background=1&autoplay=1&loop=1&muted=1"
-                allow="autoplay; fullscreen; picture-in-picture"
-                className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
-                title="Paving Risers Factory Production Footage"
+                src="/video/C24A 11 options.mp4"
+              allow="autoplay; fullscreen; picture-in-picture"
+              className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
+              title="Paving Risers Factory Production Footage"
               />
-              
               <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10" />
               <div className="absolute top-4 left-4 bg-[#0F0F0F]/80 backdrop-blur-sm text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm flex items-center gap-2 pointer-events-none z-20">
                 <PlayCircle className="w-3.5 h-3.5 text-[#CC0000] animate-pulse" /> Shop Floor Feed
