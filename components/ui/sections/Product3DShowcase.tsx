@@ -26,33 +26,49 @@ interface ProductModel {
 const PRODUCT_MODELS: ProductModel[] = [
   {
     id: 1,
-    title: "Pro Series Round Risers 360° View",
-    description: "Full rotation showcase highlighting our high-precision ductile iron height adjustment ring mechanism.",
-    type: "360_ROTATION",
-    glbPath: "/gib files/mr3.glb",
+    title: "Round Riser – Coated Finish",
+    description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
+    type: "ROUND",
+    glbPath: "/gib files/Round Riser coated Finish.glb",
     thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png"
   },
   {
     id: 2,
-    title: "Elite Manhole Systems",
-    description: "Technical exploded breakdown showing the multi-ton load capacity and interlocking frame security.",
-    type: "EXPLODED_VIEW",
-    glbPath: "/gib files/mr3.glb",
+    title: "Round Riser with Screw",
+    description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
+    type: "ROUND_WITH_SCREW",
+    glbPath: "/gib files/Round Riser with screw coated Finish.glb",
     thumbnail: "/assets/PAVING-RISERS/paving riser 1.5201.png"
   },
   {
     id: 3,
-    title: "Infrastructure Valve Boxes",
-    description: "Step-by-step industrial 3D animation showing a standard heavy-traffic utility valve box casing setup.",
-    type: "ANIMATION",
-    glbPath: "/gib files/mr3.glb",
+    title: "Square Riser – Coated Finish",
+    description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
+    type: "SQUARE",
+    glbPath: "/gib files/Square Riser coated Finish.glb",
     thumbnail: "/assets/PAVING-RISERS/paving riser 1.5203.png"
   },
   {
     id: 4,
-    title: "Custom Foundry Components",
-    description: "Finite Element Analysis (FEA) testing simulation illustrating severe shear stress distribution on custom cast matrices.",
-    type: "SIMULATION",
+    title: "Rectangle Riser – Coated Finish",
+    description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
+    type: "RECTANGLE",
+    glbPath: "/gib files/RectangleRiser coated Finish.glb",
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+  },
+  {
+    id: 5,
+    title: "D-Shape Riser – Coated Finish",
+    description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
+    type: "D_SHAPE",
+    glbPath: "/gib files/D shape Riser coated Finish.glb",
+    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+  },
+  {
+    id: 6,
+    title: "MR3 Master Riser Assembly",
+    description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
+    type: "ASSEMBLY",
     glbPath: "/gib files/mr3.glb",
     thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
   }
@@ -101,12 +117,12 @@ export default function Product3DShowcase() {
           </div>
         </div>
 
-        {/* --- MAIN AREA --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* --- MAIN AREA COMPACT SYNERGY CONTAINER --- */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
           {/* LEFT: 3D Canvas Viewport */}
           <div className="lg:col-span-2">
-            <div className="relative aspect-video bg-[#0F0F0F] rounded-lg border border-zinc-800 shadow-2xl overflow-hidden group">
+            <div className="relative aspect-video bg-[#e5e5e5] rounded-lg border border-zinc-800 shadow-2xl overflow-hidden group">
 
               {/* Model ID Badge */}
               <div className="absolute top-4 left-4 bg-black/90 border border-zinc-800 rounded px-3 py-1.5 text-[9px] font-mono uppercase tracking-widest text-gray-500 z-20 flex items-center gap-2 pointer-events-none">
@@ -144,20 +160,21 @@ export default function Product3DShowcase() {
             </div>
           </div>
 
-          {/* RIGHT: Model Playlist */}
-          <div className="lg:col-span-1 bg-zinc-900/50 rounded-lg border border-zinc-800 p-4 h-full flex flex-col">
-            <h4 className="text-gray-400 font-bold uppercase text-xs tracking-widest mb-4 flex items-center gap-2">
+          {/* RIGHT: Model Playlist with Strict Aspect-Video Height Adaptation */}
+          <div className="lg:col-span-1 bg-zinc-900/50 rounded-lg border border-zinc-800 p-4 w-full aspect-video lg:aspect-auto lg:h-[56.25vw] lg:max-h-[500px] xl:max-h-[540px] 2xl:max-h-[640px] flex flex-col min-h-0 overflow-hidden">
+            <h4 className="text-gray-400 font-bold uppercase text-xs tracking-widest mb-4 flex items-center gap-2 shrink-0">
               <Layers className="w-4 h-4" />
               3D Models
             </h4>
 
-            <div className="space-y-3 overflow-y-auto pr-2 custom-scrollbar flex-1">
+            {/* Scrollable Core Playlist Viewport */}
+            <div className="space-y-3 overflow-y-scroll pr-1 scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent flex-grow min-h-0">
               {PRODUCT_MODELS.map((model, idx) => (
                 <div
                   key={model.id}
                   onClick={() => setActiveModelIndex(idx)}
                   className={cn(
-                    "flex gap-4 p-3 rounded-md cursor-pointer transition-all border group",
+                    "flex gap-4 p-3 rounded-md cursor-pointer transition-all border group select-none",
                     activeModelIndex === idx
                       ? "bg-[#0F0F0F] text-white border-[#CC0000]"
                       : "bg-[#0F0F0F] border-zinc-800 hover:border-zinc-600"
@@ -169,7 +186,7 @@ export default function Product3DShowcase() {
                       src={model.thumbnail}
                       alt={model.title}
                       fill
-                      className="object-cover opacity-70 group-hover:opacity-100"
+                      className="object-cover opacity-70 group-hover:opacity-100 transition-opacity"
                     />
                     {activeModelIndex === idx && (
                       <div className="absolute inset-0 bg-[#0F0F0F]/50 flex items-center justify-center z-10">
@@ -179,24 +196,28 @@ export default function Product3DShowcase() {
                   </div>
 
                   {/* Text Info */}
-                  <div className="flex flex-col justify-center">
-                    <h5 className={cn("font-bold text-sm leading-tight mb-1 group-hover:text-[#CC0000] transition-colors", activeModelIndex === idx ? "text-[#CC0000]" : "text-white")}>
+                  <div className="flex flex-col justify-center min-w-0">
+                    <h5 className={cn(
+                      "font-bold text-sm leading-tight mb-1 group-hover:text-[#CC0000] transition-colors truncate", 
+                      activeModelIndex === idx ? "text-[#CC0000]" : "text-white"
+                    )}>
                       {model.title}
                     </h5>
-                    <p className="text-xs text-gray-500 line-clamp-1">{model.description}</p>
+                    <p className="text-xs text-gray-500 truncate">{model.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Bottom Call to Action */}
-            <div className="mt-4 pt-4 border-t border-zinc-800 text-center">
+            {/* Bottom Call to Action Section (Shrink Shield Protected) */}
+            <div className="mt-4 pt-4 border-t border-zinc-800 text-center shrink-0">
               <p className="text-xs text-gray-500 mb-3">Need 3D CAD files for your project?</p>
-              <Button variant="outline" className="w-full text-xs text-[#CC0000] border-[#CC0000] hover:bg-white hover:text-black uppercase">
+              <Button variant="outline" className="w-full text-xs text-[#CC0000] border-[#CC0000] hover:bg-white hover:text-black uppercase rounded-sm h-10 transition-colors">
                 Request CAD / BIM Files <ChevronRight className="w-3 h-3 ml-1" />
               </Button>
             </div>
           </div>
+
         </div>
       </div>
     </section>

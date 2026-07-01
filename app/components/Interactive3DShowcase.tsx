@@ -42,45 +42,45 @@ export interface GlbModel {
 
 const GLB_MODELS: GlbModel[] = [
     {
-        id: "round-paving-riser-1in",
-        name: "1 Inch Round Paving Riser",
-        path: "/gib files/mr3.glb",
+        id: "round-riser-coated",
+        name: "Round Riser – Coated Finish",
+        path: "/gib files/Round Riser coated Finish.glb",
         hotspots: [
             {
-                id: "r1-p1",
-                title: "Precision Height Trim Flange",
-                description: "Low-profile heavy-duty cast iron seating ring designed for thin micro-surfacing and single-lift asphalt overlays.",
+                id: "rr-p1",
+                title: "Coated Surface Finish",
+                description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
                 x: 0, y: 0.6, z: 0.5,
-                specLabel: "Nominal Rise",
-                specValue: '1" Clear Elevation'
+                specLabel: "Coating Type",
+                specValue: "Bituminous Epoxy Coat"
             },
             {
-                id: "r1-p2",
-                title: "Bituminous Seating Base",
-                description: "Machined flat bottom surface finished with an asphaltic bituminous coating to eliminate vibration rattle under heavy traffic loading.",
+                id: "rr-p2",
+                title: "Concentric Ring Profile",
+                description: "Precision-machined circular profile ensures a snug universal fit over standard round manhole frames and utility castings.",
                 x: 0.7, y: -0.2, z: 0.3,
-                specLabel: "Material Spec",
-                specValue: "ASTM A48 Class 35B Iron"
+                specLabel: "Profile Shape",
+                specValue: "Round Concentric Ring"
             }
         ]
     },
     {
-        id: "mega-adjust-riser-2in",
-        name: "2 Inch Mega-Adjust™ Expandable Riser",
-        path: "/gib files/mr3.glb",
+        id: "round-riser-with-screw",
+        name: "Round Riser with Screw – Coated Finish",
+        path: "/gib files/Round Riser with screw coated Finish.glb",
         hotspots: [
             {
-                id: "ma2-p1",
-                title: "Mechanical Expansion Linkage",
-                description: "Integrated heavy-duty turnbuckle assembly that expands outward horizontally to bite permanently into the existing utility frame base.",
+                id: "rs-p1",
+                title: "Integrated Leveling Screws",
+                description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
                 x: 0, y: 0.8, z: 0.4,
-                specLabel: "Lock Mechanism",
-                specValue: "Turnbuckle Expansion Bolt"
+                specLabel: "Adjustment Method",
+                specValue: "Screw-Type Fine Adjust"
             },
             {
-                id: "ma2-p2",
+                id: "rs-p2",
                 title: "Heavy Load-Bearing Core",
-                description: "Reinforced structural profile design engineered to bear continuous high-velocity impact loads from commercial truck traffic.",
+                description: "Reinforced structural profile designed to bear continuous high-velocity impact loads from commercial truck traffic.",
                 x: 0.6, y: 0, z: 0.4,
                 specLabel: "Traffic Rating",
                 specValue: "AASHTO H-20 & HS-20 Traffic"
@@ -88,45 +88,22 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "tapered-road-riser-3in",
-        name: "3 Inch Custom Tapered Road Riser",
-        path: "/gib files/mr3.glb",
+        id: "square-riser-coated",
+        name: "Square Riser – Coated Finish",
+        path: "/gib files/Square Riser coated Finish.glb",
         hotspots: [
             {
-                id: "tr3-p1",
-                title: "Sloped Grade Profile",
-                description: "Bespoke angled casting engineered specifically to accommodate severe road crowning, drainage slope pitches, or localized grade variations.",
-                x: 0, y: 1.0, z: 0.5,
-                specLabel: "Taper Pitch",
-                specValue: "Custom Variable Slope"
-            },
-            {
-                id: "tr3-p2",
-                title: "Snowplow Protection Bevel",
-                description: "Specially machined, run-out rim alignment profile that sits perfectly flush with the final wear course to prevent plow blade snags.",
-                x: 0.5, y: -0.5, z: 0.3,
-                specLabel: "Safety Profile",
-                specValue: "Flush Anti-Snag Trim"
-            }
-        ]
-    },
-    {
-        id: "catch-basin-riser-1250",
-        name: "1250 Series Square Catch Basin Riser",
-        path: "/gib files/mr3.glb",
-        hotspots: [
-            {
-                id: "cb-p1",
-                title: "Fabricated Steel Outer Housing",
-                description: "Heavy-duty perimeter framework box constructed to lift square flat drainage grates to final highway grade without excavation.",
+                id: "sq-p1",
+                title: "Square Perimeter Frame",
+                description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
                 x: -0.5, y: 0.5, z: 0.4,
                 specLabel: "Construction Type",
                 specValue: "Structural Welded Steel"
             },
             {
-                id: "cb-p2",
+                id: "sq-p2",
                 title: "Corner Gusset Reinforcements",
-                description: "Internal heavy-gauge structural plates welded at all core stress corners to prevent vertical deflection under load conditions.",
+                description: "Internal heavy-gauge structural plates welded at all core stress corners to prevent vertical deflection under load.",
                 x: 0, y: 0.9, z: 0,
                 specLabel: "Reinforcement",
                 specValue: "4-Point Welded Bracing"
@@ -134,25 +111,71 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "d-profile-curb-riser",
-        name: "D-Shape Curb Inlet Riser Frame",
-        path: "/gib files/mr3.glb",
+        id: "rectangle-riser-coated",
+        name: "Rectangle Riser – Coated Finish",
+        path: "/gib files/RectangleRiser coated Finish.glb",
         hotspots: [
             {
-                id: "cr-p1",
-                title: "Asymmetric Flush Backing Flange",
-                description: "Straight-back vertical mounting edge optimized to align directly flush against poured concrete municipal curb lines.",
+                id: "re-p1",
+                title: "Rectangular Profile Casting",
+                description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
+                x: 0, y: 0.6, z: 0.5,
+                specLabel: "Form Factor",
+                specValue: "Oblong Rectangular Unit"
+            },
+            {
+                id: "re-p2",
+                title: "Anti-Corrosion Coating",
+                description: "Full-body protective coating applied at the foundry to resist subsurface degradation from moisture and road treatment chemicals.",
+                x: 0.5, y: -0.3, z: 0.3,
+                specLabel: "Protection",
+                specValue: "Factory Coated Finish"
+            }
+        ]
+    },
+    {
+        id: "d-shape-riser-coated",
+        name: "D-Shape Riser – Coated Finish",
+        path: "/gib files/D shape Riser coated Finish.glb",
+        hotspots: [
+            {
+                id: "ds-p1",
+                title: "Asymmetric D-Shape Profile",
+                description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
                 x: 0.5, y: 0.3, z: 0.5,
                 specLabel: "Profile Style",
                 specValue: "3-Sided D-Shape Curb Unit"
             },
             {
-                id: "cr-p2",
-                title: "Adjustable Equalizer Alignment Screws",
-                description: "Heavy setting adjustment bolts positioned along the frame parameters to assist crews in truing up individual sides before laying final asphalt overlays.",
+                id: "ds-p2",
+                title: "Curb Inlet Alignment System",
+                description: "Precision-engineered curb-side riser frame that seamlessly integrates with existing stormwater inlet infrastructure.",
                 x: 0, y: 0, z: 0.4,
-                specLabel: "Leveling Control",
-                specValue: "Integrated Leveling Set"
+                specLabel: "Application",
+                specValue: "Curb Inlet Adjustment"
+            }
+        ]
+    },
+    {
+        id: "mr3-master-riser",
+        name: "MR3 Master Riser Assembly",
+        path: "/gib files/mr3.glb",
+        hotspots: [
+            {
+                id: "mr-p1",
+                title: "Full Assembly Structure",
+                description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
+                x: 0, y: 1.0, z: 0.5,
+                specLabel: "Assembly Type",
+                specValue: "Multi-Stack Master Unit"
+            },
+            {
+                id: "mr-p2",
+                title: "Interlocking Base Ring",
+                description: "Bottom seating ring with machined registration features for secure interlocking between stacked riser components.",
+                x: 0.5, y: -0.5, z: 0.3,
+                specLabel: "Material Spec",
+                specValue: "ASTM A48 Class 35B Iron"
             }
         ]
     }
@@ -369,7 +392,7 @@ export default function Interactive3DShowcase() {
                     </div>
 
                     {/* COL 2 — 3D Canvas viewport */}
-                    <div className="lg:col-span-5 relative min-h-[500px] bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm overflow-hidden shadow-2xl group">
+                    <div className="lg:col-span-5 relative min-h-[500px] bg-[#e5e5e5] border border-[#1a1a1a] rounded-sm overflow-hidden shadow-2xl group">
 
                         {/* Model ID badge */}
                         <div className="absolute top-4 left-4 bg-black/90 border border-[#1a1a1a] rounded-sm px-3 py-1.5 text-[9px] font-mono uppercase tracking-widest text-[#888] z-20 flex items-center gap-2 pointer-events-none">

@@ -17,6 +17,7 @@ import CompleteToolsCatalog from '../components/CompleteToolsCatalog'
 import InteractiveProduct from '../components/InteractiveProduct'
 import Interactive3DShowcase from '../components/Interactive3DShowcase'
 import PremiumPavingShowcase from '../components/PremiumPavingShowcase'
+import AppleStylePavingShowcase from '../components/AppleStylePavingShowcase'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -29,6 +30,7 @@ const Home = () => {
       <PavingPathHero />
       <Product3DShowcase />
       <PavingRisersHeroSection />
+      {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
       <HeroCarousel />
