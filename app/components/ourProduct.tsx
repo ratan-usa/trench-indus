@@ -19,93 +19,9 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { PRODUCT_DATA, Product } from '@/lib/productData';
 
-// --- UPDATED DATA WITH SLUGS ---
-const CATEGORIES = [
-    {
-        id: 'round',
-        slug: 'round-risers',
-        title: 'Round Risers',
-        types: ['Fixed', 'Expandable', 'Extension Rings'],
-        materials: ['Cast Iron', 'Ductile Iron', 'Steel'],
-        description: 'Standard round risers for manholes and catch basins.',
-        images: ['/assets/PAVING-RISERS/paving riser 1.5201.png', '/assets/PAVING-RISERS/paving riser 1.5203.png']
-    },
-    {
-        id: 'square',
-        slug: 'square-risers',
-        title: 'Square Risers',
-        types: ['Fixed', 'Expandable'],
-        materials: ['Steel', 'Cast Iron'],
-        description: 'Square frames suitable for specific catch basin designs.',
-        images: ['/assets/PAVING-RISERS/paving riser 1.5205.png', '/assets/PAVING-RISERS/paving riser 1.5201.png']
-    },
-    {
-        id: 'rect',
-        slug: 'rectangle-risers',
-        title: 'Rectangle Risers',
-        types: ['Fixed', 'Expandable'],
-        materials: ['Fabricated Steel', 'Cast Iron'],
-        description: 'Durable rectangular risers for drainage and utility access.',
-        images: ['/assets/PAVING-RISERS/recatangle riser.png', '/assets/PAVING-RISERS/paving riser 1.5205.png']
-    },
-    {
-        id: 'd-shape',
-        slug: 'd-shape-risers',
-        title: 'D-Shape Risers',
-        types: ['Fixed', 'Expandable'],
-        materials: ['Steel', 'Cast Iron'],
-        description: 'Specialized D-shape risers for curb inlets.',
-        images: ['/assets/PAVING-RISERS/d-shape.png', '/assets/PAVING-RISERS/paving riser 1.5203.png']
-    },
-    {
-        id: 'valve',
-        slug: 'valve-box-risers',
-        title: 'Valve Box Risers',
-        types: ['With Flange', 'Without Flange'],
-        materials: ['Cast Iron', 'Ductile Iron'],
-        description: 'Heavy duty protection for water and gas valve boxes.',
-        images: ['/assets/PAVING-RISERS/recatangle riser.png', '/assets/PAVING-RISERS/paving riser 1.5201.png']
-    },
-    {
-        id: 'catch-basin',
-        slug: 'catch-basin-frames',
-        title: 'Catch Basin Frames',
-        types: ['3-Sided', '4-Sided', 'Sloped'],
-        materials: ['Fabricated Steel', 'Cast Iron'],
-        description: 'Heavy-duty frames designed for precise curb and street level alignment.',
-        images: ['/assets/PAVING-RISERS/paving riser 1.5203.png', '/assets/PAVING-RISERS/recatangle riser.png']
-    },
-    {
-        id: 'precast',
-        slug: 'precast-concrete-rings',
-        title: 'Precast Concrete Rings',
-        types: ['Grade Rings', 'Flat Top', 'Concentric'],
-        materials: ['Precast Concrete'],
-        description: 'Durable precast grade rings for rapid structural elevation.',
-        images: ['/assets/PAVING-RISERS/paving riser 1.5205.png', '/assets/PAVING-RISERS/d-shape.png']
-    },
-    {
-        id: 'covers',
-        slug: 'manhole-covers',
-        title: 'Manhole Covers',
-        types: ['Solid', 'Vented', 'Watertight'],
-        materials: ['Cast Iron', 'Ductile Iron'],
-        description: 'High-traffic rated covers for all standard round openings.',
-        images: ['/assets/PAVING-RISERS/paving riser 1.5201.png', '/assets/PAVING-RISERS/paving riser 1.5205.png']
-    },
-    {
-        id: 'custom',
-        slug: 'custom-fabrications',
-        title: 'Custom Fabrications',
-        types: ['Oversized', 'Specialty Shapes'],
-        materials: ['Steel', 'Aluminum'],
-        description: 'Welded-to-spec infrastructure components for unique projects.',
-        images: ['/assets/PAVING-RISERS/recatangle riser.png', '/assets/PAVING-RISERS/paving riser 1.5203.png']
-    }
-];
-
-function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
+function ProductCard({ cat }: { cat: Product }) {
     const [currentImage, setCurrentImage] = useState(0);
 
     const nextImage = (e: React.MouseEvent) => {
@@ -128,7 +44,7 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
             <CardContent className="pt-2 flex-grow">
                 <div className="relative h-56 w-full mb-6 bg-gray-50 rounded-lg border border-gray-100 flex items-center justify-center overflow-hidden group/slider">
                     <Image
-                        src={cat.images[currentImage]}
+                        src={cat.images[currentImage].src}
                         alt={`${cat.title} image`}
                         fill
                         className="object-contain p-4 transition-transform duration-500 group-hover/slider:scale-105"
@@ -158,8 +74,25 @@ function ProductCard({ cat }: { cat: typeof CATEGORIES[0] }) {
                     </div>
                     <Separator className="bg-gray-200" />
                     <div>
-                        <h4 className="text-xs font-black text-black uppercase tracking-widest mb-2">Configurations</h4>
-                        <p className="text-sm font-medium text-gray-700 min-h-[20px]">{cat.types.join(" / ")}</p>
+                        <h4 className="text-xs font-black text-black uppercase tracking-widest mb-2">Configurations / Finishes</h4>
+                        <div className="flex flex-wrap gap-2 min-h-[36px]">
+                            {cat.images.map((img, idx) => (
+                                <button
+                                    key={img.label}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setCurrentImage(idx);
+                                    }}
+                                    className={`text-xs font-bold px-3 py-1.5 border transition-all rounded-sm ${
+                                        currentImage === idx
+                                            ? 'bg-[#CC0000] border-[#CC0000] text-white shadow-sm'
+                                            : 'bg-white border-gray-200 text-gray-700 hover:border-gray-400'
+                                    }`}
+                                >
+                                    {img.label}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </CardContent>
@@ -179,8 +112,8 @@ export default function OurProducts() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     // Filter parameters to evaluate if initial subset view requires truncate slices
-    const shouldTruncate = CATEGORIES.length > 5 && !isExpanded;
-    const displayedCategories = shouldTruncate ? CATEGORIES.slice(0, 5) : CATEGORIES;
+    const shouldTruncate = PRODUCT_DATA.length > 5 && !isExpanded;
+    const displayedCategories = shouldTruncate ? PRODUCT_DATA.slice(0, 5) : PRODUCT_DATA;
 
     return (
         <div className="min-h-screen bg-white font-sans text-black">
@@ -210,9 +143,9 @@ export default function OurProducts() {
                             </div>
                             <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 group-hover:text-[#CC0000] transition-colors">
                                 Load More Systems
-              </h3>
+                            </h3>
                             <p className="text-sm text-slate-500 font-medium max-w-[240px] mt-2 leading-relaxed">
-                                Expand catalog matrix fields to explore {CATEGORIES.length - 5} remaining infrastructure riser lines.
+                                Expand catalog matrix fields to explore {PRODUCT_DATA.length - 5} remaining infrastructure riser lines.
                             </p>
                         </Card>
                     )}
