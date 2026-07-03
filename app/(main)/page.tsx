@@ -18,6 +18,7 @@ import InteractiveProduct from '../components/InteractiveProduct'
 import Interactive3DShowcase from '../components/Interactive3DShowcase'
 import PremiumPavingShowcase from '../components/PremiumPavingShowcase'
 import AppleStylePavingShowcase from '../components/AppleStylePavingShowcase'
+import Product3DShowcase2 from './Product3DShowcase2'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -28,6 +29,7 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
+      <Product3DShowcase2/>
       <Product3DShowcase />
       <PavingRisersHeroSection />
       {/* <AppleStylePavingShowcase/> */}
