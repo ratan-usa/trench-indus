@@ -33,11 +33,12 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
-      <Product3DShowcase2/>
+      <Product3DShowcase2 />
       <Product3DShowcase />
-      <PavingRisersHeroSection />
       <Interactive3DShowcase />
- 
+      <PavingRisersHeroSection />
+      <PavingRiserClassification />
+      <RiserProductSpecifications />
       {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
@@ -57,7 +58,7 @@ const Home = () => {
       {/* <ProductCatalog /> */}
       <SmartInfraSection />
       <AdjustmentProducts />
-      <PremiumPavingShowcase/>
+      <PremiumPavingShowcase />
       <AdditionalResourcesSlugs />
       <ContactExtraordinary />
       <ProductInteractiveImage />
