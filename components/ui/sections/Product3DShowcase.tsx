@@ -29,7 +29,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
-    glbPath: "/gib files/Round Riser coated Finish.glb",
+    glbPath: "/gib files/Hero Product.glb",
     thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png"
   },
   {

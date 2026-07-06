@@ -55,11 +55,11 @@ export default function PavingRisersHeroSection() {
 
           {/* RIGHT PANEL: LIVE FABRICATION INDUSTRIAL LOOP FEED */}
           <div className="lg:col-span-7 w-full">
-            <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200">
+            <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-[#0F0F0F] shadow-xl border border-slate-200">
 
               {/* Vimeo loop streaming background configurations */}
               <iframe
-                src="/video/C24A 11 options.mp4"
+                src="/video/paving riser solid ring utilisation animation.676.mp4"
               allow="autoplay; fullscreen; picture-in-picture"
               className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
               title="Paving Risers Factory Production Footage"

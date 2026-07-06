@@ -35,7 +35,7 @@ const TABS = [
     label: 'Paved Terraces & Decks', 
     count: "05",
     // Replace this ID with your Vimeo Video ID for Terraces
-    videoUrl: "/video/C24A 11 options.mp4" 
+    videoUrl: "/video/PR Manufacturing Video.mp4" 
   },
   { 
     id: 'landscaping', 
