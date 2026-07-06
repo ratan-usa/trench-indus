@@ -21,7 +21,7 @@ export default function ContactExtraordinary() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-zinc-950 font-sans overflow-hidden py-24">
+    <section className="relative min-h-screen flex items-center justify-center bg-zinc-950 font-sans overflow-hidden py-8">
 
       {/* --- BACKGROUND ANIMATED GLOWS --- */}
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#CC0000]/20 rounded-full blur-[120px] animate-pulse"></div>

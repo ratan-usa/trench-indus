@@ -42,7 +42,7 @@ const AI_FEATURES = [
 
 export default function SmartInfraSection() {
   return (
-    <section className="bg-zinc-950 py-24 border-t border-zinc-900 font-sans text-white overflow-hidden relative">
+    <section className="bg-zinc-950 py-8 border-t border-zinc-900 font-sans text-white overflow-hidden relative">
 
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none"

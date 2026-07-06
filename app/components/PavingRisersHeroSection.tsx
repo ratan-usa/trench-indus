@@ -5,7 +5,7 @@ import { ShieldCheck, PlayCircle, Zap, Clock, Target } from 'lucide-react';
 
 export default function PavingRisersHeroSection() {
   return (
-    <section className="bg-slate-50 py-20 border-b border-slate-200 font-sans">
+    <section className="bg-slate-50 py-4 border-b border-slate-200 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 

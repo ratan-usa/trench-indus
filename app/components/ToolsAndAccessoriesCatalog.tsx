@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Wrench, 
-  ArrowRight, 
-  ShieldCheck, 
-  Hammer, 
-  Layers, 
-  Construction 
+import {
+  Wrench,
+  ArrowRight,
+  ShieldCheck,
+  Hammer,
+  Layers,
+  Construction
 } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -40,9 +40,9 @@ const ACCESSORY_PRODUCTS = [
 
 export default function ToolsAndAccessoriesCatalog() {
   return (
-    <section className="bg-slate-50 py-24 border-b border-slate-200 font-sans">
+    <section className="bg-slate-50 py-8 border-b border-slate-200 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
-        
+
         {/* --- SECTION INTRO HEADER --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
@@ -60,15 +60,15 @@ export default function ToolsAndAccessoriesCatalog() {
         {/* --- COMMERCIAL PRODUCT GRID --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ACCESSORY_PRODUCTS.map((product, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="bg-white border border-slate-200 rounded-sm shadow-sm hover:shadow-md hover:border-[#CC0000] transition-all duration-300 flex flex-col justify-between overflow-hidden group"
             >
               {/* Brand Color Visual Accent Indicator strip */}
               <div className="w-full h-[3px] bg-slate-100 group-hover:bg-[#CC0000] transition-colors duration-300" />
-              
+
               <CardContent className="p-8 flex flex-col justify-between flex-grow space-y-6">
-                
+
                 {/* Structural Identifier Block */}
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -101,7 +101,7 @@ export default function ToolsAndAccessoriesCatalog() {
 
                   {/* Standardized Call-To-Action Button */}
                   <Link href="#contact" className="block pt-2">
-                    <Button 
+                    <Button
                       className="w-full h-11 bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-bold uppercase tracking-widest text-xs rounded-sm transition-colors duration-200 shadow-sm flex items-center justify-center gap-2"
                     >
                       Request Part Pricing <ArrowRight className="w-4 h-4" />

@@ -28,7 +28,7 @@ const DESIGN_OPTIONS = [
 
 export default function PavingRiserClassification() {
   return (
-    <section className="bg-white py-24 border-b border-gray-100 font-sans">
+    <section className="bg-white py-8 border-b border-gray-100 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
         
         {/* --- SECTION HEADER --- */}

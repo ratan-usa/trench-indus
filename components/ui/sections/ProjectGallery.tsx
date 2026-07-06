@@ -175,7 +175,7 @@ export default function ProjectGallery() {
     : PROJECTS.filter(project => project.category === activeCategory);
 
   return (
-    <section className="bg-white py-24 border-t border-gray-100">
+    <section className="bg-white py-8 border-t border-gray-100">
       <div className="container mx-auto px-4">
 
         {/* --- HEADER --- */}

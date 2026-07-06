@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { 
-  Wrench, 
-  ArrowRight, 
-  ShieldCheck, 
-  Search, 
+import {
+  Wrench,
+  ArrowRight,
+  ShieldCheck,
+  Search,
   SlidersHorizontal,
   Plus
 } from 'lucide-react';
@@ -227,8 +227,8 @@ export default function CompleteToolsCatalog() {
   // Filter core logic
   const filteredProducts = ACCESSORIES_DATA.filter((product) => {
     const matchesCategory = selectedCategory === "All Tools" || product.category === selectedCategory;
-    const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          product.sku.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.sku.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -243,9 +243,9 @@ export default function CompleteToolsCatalog() {
   };
 
   return (
-    <section className="bg-slate-50 py-24 border-b border-slate-200 font-sans">
+    <section className="bg-slate-50 py-8 border-b border-slate-200 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
-        
+
         {/* --- MAIN CATALOG INTRO HEADER --- */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-slate-200">
           <div className="space-y-4">
@@ -261,9 +261,9 @@ export default function CompleteToolsCatalog() {
           {/* Search Input Bar */}
           <div className="relative w-full lg:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-            <input 
-              type="text" 
-              placeholder="Search by name or SKU..." 
+            <input
+              type="text"
+              placeholder="Search by name or SKU..."
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setIsExpanded(false); }}
               className="w-full h-12 pl-10 pr-4 bg-white border border-slate-200 text-sm rounded-sm font-medium focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
@@ -283,8 +283,8 @@ export default function CompleteToolsCatalog() {
               onClick={() => handleCategoryChange(cat)}
               className={cn(
                 "px-4 py-2.5 text-xs font-black uppercase tracking-wider rounded-sm border whitespace-nowrap transition-all duration-150",
-                selectedCategory === cat 
-                  ? "bg-[#0F0F0F] border-[#0F0F0F] text-white" 
+                selectedCategory === cat
+                  ? "bg-[#0F0F0F] border-[#0F0F0F] text-white"
                   : "bg-white border-slate-200 text-slate-600 hover:border-slate-400 hover:text-slate-900"
               )}
             >
@@ -296,8 +296,8 @@ export default function CompleteToolsCatalog() {
         {/* --- PRODUCT GRID MATRIX --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {displayedProducts.map((product, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="bg-white border border-slate-200 rounded-sm shadow-sm hover:shadow-md hover:border-[#CC0000] transition-all duration-300 flex flex-col justify-between overflow-hidden group"
             >
               {/* Image Frame Area */}
@@ -311,7 +311,7 @@ export default function CompleteToolsCatalog() {
                   priority={idx < 3}
                 />
               </div>
-              
+
               <CardContent className="p-6 flex flex-col justify-between flex-grow space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -341,7 +341,7 @@ export default function CompleteToolsCatalog() {
                   </div>
 
                   <Link href="#contact" className="block pt-1">
-                    <Button 
+                    <Button
                       className="w-full h-11 bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-bold uppercase tracking-widest text-xs rounded-sm transition-colors duration-200 shadow-sm flex items-center justify-center gap-2"
                     >
                       Quote Item Pricing <ArrowRight className="w-4 h-4" />
@@ -354,7 +354,7 @@ export default function CompleteToolsCatalog() {
 
           {/* --- INJECTED 6TH CARD: LOAD MORE INTERACTIVE BANNER SLIP --- */}
           {shouldTruncate && (
-            <Card 
+            <Card
               onClick={() => setIsExpanded(true)}
               className="border-2 border-dashed border-slate-300 bg-slate-100/50 rounded-sm shadow-sm hover:shadow-md hover:border-[#CC0000] hover:bg-white transition-all duration-300 flex flex-col items-center justify-center p-8 text-center cursor-pointer group min-h-[400px]"
             >
@@ -373,7 +373,7 @@ export default function CompleteToolsCatalog() {
 
         {/* --- EMPTY STATE FALLBACK --- */}
         {filteredProducts.length === 0 && (
-          <div className="w-full flex flex-col items-center justify-center py-24 bg-white border border-dashed border-slate-200 text-center rounded-sm">
+          <div className="w-full flex flex-col items-center justify-center py-8 bg-white border border-dashed border-slate-200 text-center rounded-sm">
             <Wrench className="w-12 h-12 text-slate-300 stroke-[1.5] mb-4" />
             <h4 className="text-base font-black uppercase tracking-wide text-slate-800">No Matching Tools Found</h4>
             <p className="text-sm text-slate-400 max-w-sm mt-1">

@@ -99,7 +99,7 @@ export default function StormDrainagePage() {
       {/* ========================================= */}
       {/* 3. TECHNICAL DEEP DIVE                    */}
       {/* ========================================= */}
-      <section className="py-24">
+      <section className="py-8">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 
@@ -175,7 +175,7 @@ export default function StormDrainagePage() {
       {/* ========================================= */}
       {/* 4. DRAINAGE SOLUTIONS GRID                */}
       {/* ========================================= */}
-      <section className="py-24 bg-zinc-900 text-white overflow-hidden relative">
+      <section className="py-8 bg-zinc-900 text-white overflow-hidden relative">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -214,7 +214,7 @@ export default function StormDrainagePage() {
       {/* ========================================= */}
       {/* 5. CALL TO ACTION                          */}
       {/* ========================================= */}
-      <section className="py-24 bg-white relative">
+      <section className="py-8 bg-white relative">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none">
             Secure Your <br /> Gutter Flow

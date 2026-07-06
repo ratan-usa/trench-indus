@@ -168,7 +168,7 @@ export default function RedesignedSolutionsSection() {
   const currentVideoUrl = TABS.find((tab) => tab.id === activeTab)?.videoUrl || TABS[0].videoUrl;
 
   return (
-    <section className="bg-slate-50 py-24 border-b border-slate-200">
+    <section className="bg-slate-50 py-8 border-b border-slate-200">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
 
         {/* ========================================================================= */}

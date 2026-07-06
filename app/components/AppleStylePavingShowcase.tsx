@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  ShieldCheck, 
-  Layers, 
-  Zap, 
-  Target, 
-  ArrowRight, 
-  Play, 
+import {
+  ShieldCheck,
+  Layers,
+  Zap,
+  Target,
+  ArrowRight,
+  Play,
   Sparkles,
   Maximize2
 } from 'lucide-react';
@@ -49,19 +49,19 @@ export default function AppleStylePavingShowcase() {
   const current = NEW_TAGLINES[activeIdx];
 
   return (
-    <section className="bg-[#000000] text-white min-h-screen py-24 px-6 sm:px-8 lg:px-12 flex items-center justify-center font-sans relative overflow-hidden">
-      
+    <section className="bg-[#000000] text-white min-h-screen py-8 px-6 sm:px-8 lg:px-12 flex items-center justify-center font-sans relative overflow-hidden">
+
       {/* Crisp Apple-Style Subtle Geometric Ambient Mesh using strict brand red */}
       <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-[#CC0000]/5 rounded-full blur-[140px] pointer-events-none z-0 animate-pulse" />
       <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#CC0000]/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
       <div className="  w-full mx-auto    relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        
+
         {/* ========================================================================= */}
         {/* --- LEFT PANEL: BOLD HIGH-CONTRAST CRISP TEXT LAYER (5 Columns Wide) --- */}
         {/* ========================================================================= */}
         <div className="lg:col-span-5 space-y-8 flex flex-col justify-between h-full">
-          
+
           {/* Main Keyframe-Animated Copy Block */}
           <div key={activeIdx} className="space-y-6 animate-[appleSlideUp_0.5s_cubic-bezier(0.16,1,0.3,1)]">
             <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1A1A] border border-zinc-800 text-[#CC0000] text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
@@ -113,7 +113,7 @@ export default function AppleStylePavingShowcase() {
         {/* ========================================================================= */}
         <div className="lg:col-span-7 w-full flex flex-col gap-6">
           <div className="relative aspect-video w-full rounded-2xl bg-[#0F0F0F] border border-zinc-800/80 overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] group cursor-pointer">
-            
+
             {/* Viewport Top Diagnostics HUD Indicator Overlay */}
             <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full px-3 py-1 text-[9px] font-mono uppercase tracking-widest text-zinc-400 z-20 flex items-center gap-1.5 pointer-events-none">
               <span className="w-1.5 h-1.5 rounded-full bg-[#CC0000] animate-pulse" /> Asset Renderer: Sandbox Mode
@@ -126,7 +126,7 @@ export default function AppleStylePavingShowcase() {
             {/* Apple Cinematic 3D Floating Geometry Simulation Area */}
             <div className="absolute inset-0 w-full h-full flex items-center justify-center p-12">
               <div className="relative w-full h-full max-w-sm aspect-square flex items-center justify-center">
-                
+
                 {/* 3D Core Layer 3: Top Grade Ring Accent (Floating Back Loop) */}
                 <div className="absolute inset-0 border-2 border-dashed border-zinc-800 rounded-full animate-[spin_80s_linear_infinite]" />
 
@@ -155,7 +155,7 @@ export default function AppleStylePavingShowcase() {
 
           {/* Quick External Actions Grid Links Bar */}
           <div className="grid grid-cols-2 gap-4">
-            <button 
+            <button
               onClick={() => setActiveIdx((prev) => (prev + 1) % NEW_TAGLINES.length)}
               className="h-14 border border-zinc-800 bg-[#0F0F0F] hover:bg-zinc-900 text-white font-bold uppercase tracking-widest text-xs transition-colors rounded-xl flex items-center justify-center gap-2 group"
             >

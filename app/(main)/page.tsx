@@ -20,6 +20,9 @@ import PremiumPavingShowcase from '../components/PremiumPavingShowcase'
 import AppleStylePavingShowcase from '../components/AppleStylePavingShowcase'
 import Product3DShowcase2 from './Product3DShowcase2'
 import PavingRiserClassification from './PavingRiserClassification'
+import RiserProductSpecifications from './RiserProductSpecifications'
+import CatchBasinSteelRisers from './CatchBasinSteelRisers'
+import RiserOrderSpecifications from './RiserOrderSpecifications'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -33,7 +36,8 @@ const Home = () => {
       <Product3DShowcase2/>
       <Product3DShowcase />
       <PavingRisersHeroSection />
-      <PavingRiserClassification/>
+      <Interactive3DShowcase />
+ 
       {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
@@ -58,7 +62,6 @@ const Home = () => {
       <ContactExtraordinary />
       <ProductInteractiveImage />
       {/* <InteractiveProduct/> */}
-      <Interactive3DShowcase />
 
 
     </div>
