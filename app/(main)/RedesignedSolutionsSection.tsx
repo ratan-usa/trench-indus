@@ -30,33 +30,35 @@ interface SolutionItem {
 
 // --- TAB SCHEMAS WITH DYNAMIC VIDEO PATHS ---
 const TABS = [
-  { 
-    id: 'terraces', 
-    label: 'Paved Terraces & Decks', 
+  {
+    id: 'terraces',
+    label: 'Paved Terraces & Decks',
     count: "05",
     // Replace this ID with your Vimeo Video ID for Terraces
-    videoUrl: "/video/PR Manufacturing Video.mp4" 
+    // videoUrl: "/video/PR Manufacturing Video.mp4" 
+    videoUrl: "/video/C24A 11 options.mp4"
+
   },
-  { 
-    id: 'landscaping', 
-    label: 'Landscaping & Gardens', 
+  {
+    id: 'landscaping',
+    label: 'Landscaping & Gardens',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Landscaping
-    videoUrl: "/video/C24A 11 options.mp4" 
+    videoUrl: "/video/C24A 11 options.mp4"
   },
-  { 
-    id: 'driveways', 
-    label: 'Driveways & Access Areas', 
+  {
+    id: 'driveways',
+    label: 'Driveways & Access Areas',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Driveways/Heavy Traffic
-    videoUrl: "/video/C24A 11 options.mp4" 
+    videoUrl: "/video/C24A 11 options.mp4"
   },
-  { 
-    id: 'joinery', 
-    label: 'Structural & Custom Works', 
+  {
+    id: 'joinery',
+    label: 'Structural & Custom Works',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Structural Custom fabrications
-    videoUrl: "/video/C24A 11 options.mp4" 
+    videoUrl: "/video/C24A 11 options.mp4"
   },
 ];
 
@@ -168,12 +170,12 @@ export default function RedesignedSolutionsSection() {
   return (
     <section className="bg-slate-50 py-24 border-b border-slate-200">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
-        
+
         {/* ========================================================================= */}
         {/* --- DUAL PANEL HERO SECTION: LEFT TAGLINES & RIGHT DYNAMIC VIDEO --- */}
         {/* ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-slate-200 pb-16">
-          
+
           {/* LEFT PANEL: HEAVY INDUSTRY TAGLINES (5 Columns Wide) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-2">
@@ -186,7 +188,7 @@ export default function RedesignedSolutionsSection() {
                 Built to Last.
               </h2>
             </div>
-            
+
             <p className="text-slate-600 text-lg leading-relaxed font-medium max-w-xl">
               Engineered pedestal layout lines designed to level architectural slab elevations effortlessly. Select an application category below to explore certified technical specification assets.
             </p>
@@ -206,7 +208,7 @@ export default function RedesignedSolutionsSection() {
           {/* RIGHT PANEL: FULL SCREEN DYNAMIC VIMEO LOOP (7 Columns Wide) */}
           <div className="lg:col-span-7 w-full">
             <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200">
-              
+
               {/* Dynamic source updates seamlessly on tab shift clicks */}
               <iframe
                 key={activeTab} // Force iframe re-mount cleanly when url toggles
@@ -215,7 +217,7 @@ export default function RedesignedSolutionsSection() {
                 className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
                 title="Paving Risers Action Footage"
               />
-              
+
               <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10" />
               <div className="absolute top-4 left-4 bg-[#0F0F0F]/80 backdrop-blur-sm text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm flex items-center gap-2 pointer-events-none z-20">
                 <PlayCircle className="w-3.5 h-3.5 text-[#CC0000] animate-pulse" /> Project Media Link
@@ -239,7 +241,7 @@ export default function RedesignedSolutionsSection() {
         {/* --- MATRIX SYSTEM PLATFORM: CONTROLS & DYNAMIC GRID CARDS --- */}
         {/* ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
-          
+
           {/* CONTROL MATRIX TABS */}
           <div className="lg:col-span-1 flex flex-col gap-2 bg-white p-4 rounded-sm border border-slate-200 shadow-sm sticky top-6">
             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-3 mb-2 block">
@@ -276,9 +278,9 @@ export default function RedesignedSolutionsSection() {
               {SOLUTIONS_DATA[activeTab]?.map((item, index) => (
                 <Link href={item.href} key={index} className="group block h-full">
                   <Card className="h-full bg-white border border-slate-200 shadow-sm rounded-sm group-hover:border-[#CC0000] group-hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-                    
+
                     <div className="absolute top-0 left-0 w-0 h-[3px] bg-[#CC0000] group-hover:w-full transition-all duration-300" />
-                    
+
                     <CardContent className="p-6 flex flex-col items-start text-left h-full">
                       <div className="w-full flex items-center justify-between mb-6">
                         <div className="h-10 w-10 rounded-sm bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-700 group-hover:text-white group-hover:bg-[#0F0F0F] group-hover:border-[#0F0F0F] transition-all duration-300">
