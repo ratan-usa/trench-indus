@@ -117,7 +117,7 @@ export default function RiserOrderSpecifications() {
             */}
             <div className="relative w-full h-48 bg-zinc-900 border border-zinc-800 rounded-sm mt-6 mb-6 overflow-hidden flex items-center justify-center p-4 shadow-inner">
               <Image 
-                src="/4.png" 
+                src="/paving/D shape Riser coated Finish.604.png" 
                 alt="4.png Ordering Data Visual Guide Component Reference"
                 fill
                 className="object-contain p-2 opacity-90 mix-blend-screen transition-transform duration-500 group-hover:scale-102"

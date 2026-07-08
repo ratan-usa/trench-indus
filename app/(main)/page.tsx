@@ -40,6 +40,7 @@ const Home = () => {
       <PavingRiserClassification />
       <RiserProductSpecifications />
       <CatchBasinSteelRisers/>
+      <RiserOrderSpecifications/>
       {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
