@@ -44,7 +44,7 @@ const TABS = [
     label: 'Landscaping & Gardens',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Landscaping
-    videoUrl: "/video/C24A 11 options.mp4"
+    videoUrl: "/video/GIF paving risere with frame.698.mp4"
   },
   {
     id: 'driveways',
@@ -58,7 +58,7 @@ const TABS = [
     label: 'Structural & Custom Works',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Structural Custom fabrications
-    videoUrl: "/video/C24A 11 options.mp4"
+    videoUrl: "/video/GIF paving risere with frame.698.mp4"
   },
 ];
 
@@ -177,7 +177,7 @@ export default function RedesignedSolutionsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-slate-200 pb-16">
 
           {/* LEFT PANEL: HEAVY INDUSTRY TAGLINES (5 Columns Wide) */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-6 space-y-6">
             <div className="space-y-2">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> System Applications
@@ -206,8 +206,8 @@ export default function RedesignedSolutionsSection() {
           </div>
 
           {/* RIGHT PANEL: FULL SCREEN DYNAMIC VIMEO LOOP (7 Columns Wide) */}
-          <div className="lg:col-span-7 w-full">
-            <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200">
+          <div className="lg:col-span-6 w-full">
+            <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200">
 
               {/* Dynamic source updates seamlessly on tab shift clicks */}
               <iframe

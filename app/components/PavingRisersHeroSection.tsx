@@ -10,7 +10,7 @@ export default function PavingRisersHeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           {/* LEFT PANEL: EASY, FAST, ACCURATE VALUE PROPOSITION */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-6 space-y-6">
             <div className="space-y-3">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Infrastructure Engineering
@@ -54,15 +54,15 @@ export default function PavingRisersHeroSection() {
           </div>
 
           {/* RIGHT PANEL: LIVE FABRICATION INDUSTRIAL LOOP FEED */}
-          <div className="lg:col-span-7 w-full">
-            <div className="relative aspect-video w-full rounded-sm overflow-hidden bg-[#0F0F0F] shadow-xl border border-slate-200">
+          <div className="lg:col-span-6 w-full">
+            <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-[#CC0000] shadow-xl border border-slate-200">
 
               {/* Vimeo loop streaming background configurations */}
               <iframe
-                src="/video/paving riser solid ring utilisation animation.676.mp4"
-              allow="autoplay; fullscreen; picture-in-picture"
-              className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
-              title="Paving Risers Factory Production Footage"
+                src="/video/GIF paving risere with frame.698.mp4"
+                allow="autoplay; fullscreen; picture-in-picture"
+                className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
+                title="Paving Risers Factory Production Footage"
               />
               <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10" />
               <div className="absolute top-4 left-4 bg-[#0F0F0F]/80 backdrop-blur-sm text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm flex items-center gap-2 pointer-events-none z-20">
