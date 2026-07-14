@@ -95,9 +95,11 @@ const Navbar = () => {
                 </div>
 
                 {/* --- CTA BUTTON --- */}
-                <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black hidden sm:flex rounded-none px-8 h-12 uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
-                    Get Quote
-                </Button>
+                <Link href={'#contact'}>
+                    <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black hidden sm:flex rounded-none px-8 h-12 uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                        Get Quote
+                    </Button>
+                </Link>
             </div>
         </header>
     )

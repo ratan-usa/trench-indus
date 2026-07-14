@@ -62,7 +62,9 @@ const Home = () => {
       <AdjustmentProducts />
       <PremiumPavingShowcase />
       <AdditionalResourcesSlugs />
-      <ContactExtraordinary />
+<section id='contact-us'>
+        <ContactExtraordinary />
+</section>
       <ProductInteractiveImage />
       {/* <InteractiveProduct/> */}
 

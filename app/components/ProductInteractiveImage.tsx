@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import InteractiveProduct from './InteractiveProduct';
+import { ShieldCheck, Crosshair, Hammer, Layers, Ruler } from 'lucide-react';
 
-// --- DEFINITIONS MATCHING INTERACTIVEPRODUCT EXPECTATIONS ---
 interface Hotspot {
-  id: number; // Strictly matching the component's expected number type
+  id: number;
   x: string;
   y: string;
   title: string;
@@ -13,15 +13,18 @@ interface Hotspot {
 }
 
 interface ProductDataItem {
-  id: string; // Keep this as a string for React's top-level loop key
+  id: string;
+  name: string;
+  type: string;
   imgSrc: string;
   HOTSPOTS: Hotspot[];
 }
 
-// --- UPDATED PRODUCT DATA WITH UNIQUE NUMERICAL IDs ---
 const data: ProductDataItem[] = [
   {
     id: 'riser-15200',
+    name: 'Class 30 Solid Iron Riser',
+    type: 'Standard Circular Profile',
     imgSrc: '/assets/PAVING-RISERS/paving riser 1.5200.png',
     HOTSPOTS: [
       { id: 101, x: '37%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
@@ -31,6 +34,8 @@ const data: ProductDataItem[] = [
   }, 
   {
     id: 'riser-15205',
+    name: 'Heavy Duty Square Frame Riser',
+    type: 'Catch Basin Configuration',
     imgSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png',
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
@@ -41,6 +46,8 @@ const data: ProductDataItem[] = [
   }, 
   {
     id: 'riser-15203',
+    name: 'Custom Rectangular Extension Ring',
+    type: 'Utility Vault Profile',
     imgSrc: '/assets/PAVING-RISERS/paving riser 1.5203.png',
     HOTSPOTS: [
       { id: 301, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
@@ -51,31 +58,120 @@ const data: ProductDataItem[] = [
 ];
 
 export default function ProductInteractiveImage() {
+  const [activeTab, setActiveTab] = useState(0);
+  const currentProduct = data[activeTab];
+
   return (
-    <section className="py-20 bg-white font-sans">
-      <div className="max-w-4xl mx-auto px-4">
-
-        <h2 className="text-[#CC0000] text-3xl font-black mb-10 text-center uppercase tracking-tight">
-          Product Features
-        </h2>
-
-        <div className="space-y-12">
-          {data.map((link) => (
-            <section key={link.id} className="pb-12 border-b border-gray-100 last:border-b-0">
-              <InteractiveProduct
-                imageSrc={link.imgSrc}
-                altText="Paving Riser Blueprint Inspection"
-                hotspots={link.HOTSPOTS}
-              />
-            </section>
-          ))}
+    <section className="py-24 bg-white font-sans text-[#0F0F0F]">
+      <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
+        
+        {/* --- HEADER DESK --- */}
+        <div className="max-w-3xl space-y-4">
+          <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
+            <Crosshair className="w-4 h-4 text-[#CC0000]" /> Visual Blueprint Inspection
+          </span>
+          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+            Interactive Product <br />
+            <span className="text-[#CC0000]">Feature Hotspots.</span>
+          </h2>
+          <p className="text-slate-600 text-lg font-medium leading-relaxed">
+            Select an infrastructure casting profile below. Hover over marked diagnostic vectors to review localized engineering design specifications.
+          </p>
         </div>
 
-        <p className="mt-8 text-center text-slate-400 text-sm italic">
-          Hover over the points to see details
-        </p>
+        {/* --- SPLIT MATRIX TO FILL SIDE SPACE --- */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          {/* LEFT COLUMN: INTERACTIVE NAVIGATION & TECHNICAL STATS (5 Columns) */}
+          <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-24">
+            
+            {/* Tab Swappers */}
+            <div className="flex flex-col gap-3">
+              <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block px-1">
+                Select Hardware Model
+              </span>
+              {data.map((item, idx) => {
+                const isActive = activeTab === idx;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => setActiveTab(idx)}
+                    className={`w-full text-left p-5 rounded-sm border transition-all duration-200 flex flex-col gap-1 relative overflow-hidden ${
+                      isActive 
+                        ? 'bg-[#0F0F0F] border-[#0F0F0F] text-white pl-8 shadow-xl' 
+                        : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100 hover:border-slate-300'
+                    }`}
+                  >
+                    {isActive && (
+                      <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#CC0000]" />
+                    )}
+                    <span className="font-black uppercase tracking-wide text-sm">
+                      {item.name}
+                    </span>
+                    <span className={`text-xs font-medium ${isActive ? 'text-slate-400' : 'text-slate-500'}`}>
+                      {item.type}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Paving Engineering Context Info Block */}
+            <div className="border border-slate-200 rounded-sm p-6 bg-slate-50/50 space-y-4">
+              <div className="flex items-center gap-2 text-[#CC0000] border-b border-slate-200 pb-3">
+                <ShieldCheck className="w-5 h-5" />
+                <h4 className="text-xs font-black uppercase tracking-widest text-[#0F0F0F]">
+                  Rigid Structural Metrics
+                </h4>
+              </div>
+
+              <div className="space-y-3 text-xs font-bold text-slate-600 uppercase tracking-wider">
+                <div className="flex justify-between items-center">
+                  <span className="flex items-center gap-1.5"><Layers className="w-4 h-4 text-slate-400" /> Casting Core:</span>
+                  <span className="text-[#0F0F0F]">Class 30 Gray Iron</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>
+                  <span className="text-[#0F0F0F]">0.25" to 4.00" Rise</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="flex items-center gap-1.5"><Hammer className="w-4 h-4 text-slate-400" /> Compliance:</span>
+                  <span className="text-[#CC0000]">AASHTO H-20 Traffic</span>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-center lg:text-left text-slate-400 text-xs italic tracking-wide">
+              * Hover over target hotpoints on the layout preview to open dynamic telemetry windows.
+            </p>
+
+          </div>
+
+          {/* RIGHT COLUMN: HIGH-CONTRAST INTERACTIVE CANVAS FRAME (7 Columns) */}
+          <div className="lg:col-span-7 bg-slate-50 border border-slate-200 rounded-sm p-6 md:p-10 shadow-inner min-h-[500px] flex items-center justify-center relative group">
+            <div className="absolute top-4 left-4 bg-[#0F0F0F] border border-zinc-800 rounded px-3 py-1 text-[9px] font-mono uppercase tracking-widest text-slate-400 z-10 pointer-events-none">
+              Viewport: active_spec_{currentProduct.id}.png
+            </div>
+            
+            <div key={currentProduct.id} className="w-full animate-[fadeIn_0.35s_ease-out]">
+              <InteractiveProduct
+                imageSrc={currentProduct.imgSrc}
+                altText={currentProduct.name}
+                hotspots={currentProduct.HOTSPOTS}
+              />
+            </div>
+          </div>
+
+        </div>
 
       </div>
+
+      <style jsx global>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.99); }
+          to { opacity: 1; transform: scale(1); }
+        }
+      `}</style>
     </section>
   );
 }
