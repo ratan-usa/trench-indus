@@ -23,6 +23,7 @@ import PavingRiserClassification from './PavingRiserClassification'
 import RiserProductSpecifications from './RiserProductSpecifications'
 import CatchBasinSteelRisers from './CatchBasinSteelRisers'
 import RiserOrderSpecifications from './RiserOrderSpecifications'
+import FabricatedGratesSection from './FabricatedGratesSection'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -40,6 +41,7 @@ const Home = () => {
       <PavingRiserClassification />
       <RiserProductSpecifications />
       <CatchBasinSteelRisers/>
+      <FabricatedGratesSection/>
       <RiserOrderSpecifications/>
       {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
