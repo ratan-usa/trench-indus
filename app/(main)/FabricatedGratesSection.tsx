@@ -132,6 +132,8 @@ export default function FabricatedGratesSection() {
               </div>
             </div>
 
+
+
             <div className="relative z-10">
               <Button className="w-full h-12 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-200 shadow-md flex items-center justify-center gap-2">
                 Request Grate Quote <ArrowUpRight className="w-4 h-4" />
