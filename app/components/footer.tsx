@@ -79,6 +79,23 @@ export default function HeavyFooter() {
                 </div>
               </div>
 
+              {/* Address Row - Florida */}
+              <div className="flex items-start gap-4 p-4 bg-black/40 border border-zinc-900 rounded-sm group hover:border-[#CC0000] transition-colors duration-300">
+                <div className="w-10 h-10 bg-zinc-900 rounded-sm border border-zinc-800 flex items-center justify-center shrink-0 text-[#CC0000]">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold text-white leading-relaxed mt-1">
+                    850 NW FEDERAL HWY<br />
+                    STUART, FL 34994
+                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <Phone className="w-4 h-4 text-[#CC0000]" />
+                    <span className="font-mono font-bold text-white text-sm">(772) 297-0700</span>
+                  </div>
+                </div>
+              </div>
+
               {/* Email Row */}
               <div className="flex items-start gap-4 p-4 bg-black/40 border border-zinc-900 rounded-sm group hover:border-[#CC0000] transition-colors duration-300">
                 <div className="w-10 h-10 bg-zinc-900 rounded-sm border border-zinc-800 flex items-center justify-center shrink-0 text-[#CC0000]">
