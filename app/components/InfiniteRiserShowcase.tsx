@@ -66,6 +66,7 @@ export default function InfiniteRiserShowcase() {
                     </div>
 
 
+
                     {/* RIGHT: TECHNICAL FEATURES & CALL TO ACTION (5 Columns) */}
                     <div className="lg:col-span-7">
                         <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
