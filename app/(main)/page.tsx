@@ -24,6 +24,8 @@ import RiserProductSpecifications from './RiserProductSpecifications'
 import CatchBasinSteelRisers from './CatchBasinSteelRisers'
 import RiserOrderSpecifications from './RiserOrderSpecifications'
 import FabricatedGratesSection from './FabricatedGratesSection'
+import RiserAnimationShowcase from '../components/RiserAnimationShowcase'
+import InfiniteRiserShowcase from '../components/InfiniteRiserShowcase'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -34,6 +36,7 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
+      <InfiniteRiserShowcase/>
       <Product3DShowcase2 />
       <Product3DShowcase />
       <Interactive3DShowcase />
@@ -52,6 +55,7 @@ const Home = () => {
       <section className='our-product' id='our-product'>
         <OurProducts />
       </section>
+      {/* <RiserAnimationShowcase/> */}
       {/* <ProjectGallery /> */}
       {/* <IndustrySolutions /> */}
       <ServicesAndSolutions />

@@ -45,7 +45,7 @@ const data: ProductDataItem[] = [
     ]
   }, 
   {
-    id: 'riser-15203',
+    id: 'riser-15203',    
     name: 'Custom Rectangular Extension Ring',
     type: 'Utility Vault Profile',
     imgSrc: '/assets/PAVING-RISERS/paving riser 1.5203.png',
