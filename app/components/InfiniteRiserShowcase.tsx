@@ -18,9 +18,9 @@ export default function InfiniteRiserShowcase() {
                     <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
                         <Layers className="w-4 h-4 text-[#CC0000]" /> Exploded Assembly Sequence
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white leading-none">
-                        Adjustable Round Riser <br />
-                        <span className="text-[#CC0000]">Infinite CAD Showcase.</span>
+                    <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
+                        Adjustable Round Riser  
+                        <span className="text-[#CC0000]"> Infinite CAD Showcase.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
                         Continuous exploded breakdown illustrating the outer flange frame, variable adjustment ring, turnbuckle set-screws, and top grate assembly.
@@ -31,7 +31,24 @@ export default function InfiniteRiserShowcase() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                     {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
-                    <div className="lg:col-span-5 space-y-6">
+                    <div className="lg:col-span-6">
+                        <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
+                            <video
+                                src="/video/paving-riser-frame.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+
+
+
+                    {/* RIGHT: TECHNICAL FEATURES & CALL TO ACTION (5 Columns) */}
+                    <div className="lg:col-span-6 space-y-6 flex flex-col justify-start ">
 
                         <div className="space-y-4">
                             <h3 className="text-2xl font-black uppercase tracking-tight text-white">
@@ -63,22 +80,6 @@ export default function InfiniteRiserShowcase() {
                             </Button>
                         </a>
 
-                    </div>
-
-
-
-                    {/* RIGHT: TECHNICAL FEATURES & CALL TO ACTION (5 Columns) */}
-                    <div className="lg:col-span-7">
-                        <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                            <video
-                                src="/video/paving-riser-frame.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
                     </div>
 
                 </div>
