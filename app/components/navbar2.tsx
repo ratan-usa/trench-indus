@@ -70,7 +70,7 @@ const Navbar = () => {
                     {NAV_LINKS.map((link) => (
                         <div key={link.title} className="group relative">
                             {/* Main Navigation Item */}
-                            <button className="flex items-center gap-1 px-4 py-2 text-[13px] font-black uppercase tracking-widest text-black hover:text-[#CC0000] transition-colors group-hover:bg-gray-50">
+                            <button className="flex items-center gap-1 px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors group-hover:bg-gray-50">
                                 {link.title}
                                 <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
                             </button>
