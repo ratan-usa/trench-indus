@@ -15,17 +15,13 @@ export default function PavingPathHero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative py-8  w-full flex items-center justify-center bg-white overflow-hidden font-sans">
-       <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-
-       <div className="absolute top-0 left-0 w-32 h-32 border-l-8 border-t-8 border-[#CC0000] -translate-x-12 -translate-y-12" />
+    <section className="relative w-full flex items-center justify-center bg-white overflow-hidden font-sans">
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col   py-8 text-center">
 
           {/* Animated Icon Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -35,17 +31,17 @@ export default function PavingPathHero() {
             <span className="text-white text-[10px] font-black uppercase tracking-[0.4em]">
               The Infrastructure Standard
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* MAIN TAGLINE 1: "Paving your way..." */}
-          <div className="overflow-hidden mb-2">
+          <div className="overflow-hidden pb-6">
             <motion.h1
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.8] text-black"
+              className="text-6xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] text-black scale-y-[0.70] origin-bottom"
             >
-              Paving <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>Your Way</span>
+              Paving <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>Your Way </span>
             </motion.h1>
           </div>
 
@@ -88,12 +84,12 @@ export default function PavingPathHero() {
       </div>
 
       {/* Side Decorative Numbers (Industrial Blueprint Style) */}
-      <div className="absolute bottom-10 right-10 hidden lg:block">
+      {/* <div className="absolute bottom-10 right-10 hidden lg:block">
         <div className="flex flex-col items-end">
           <span className="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">Elevation Accuracy</span>
           <span className="text-4xl font-black text-gray-100">±0.25"</span>
         </div>
-      </div>
+      </div> */}
 
       {/* Vertical Brand Bar */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 h-64 w-1 bg-[#CC0000]" />
