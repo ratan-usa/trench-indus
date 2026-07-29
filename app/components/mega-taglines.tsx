@@ -18,7 +18,7 @@ export default function PavingPathHero() {
     <section className="relative w-full flex items-center justify-center bg-white overflow-hidden font-sans">
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col   py-8 text-center">
+        <div className="flex flex-col text-center">
 
           {/* Animated Icon Badge */}
           {/* <motion.div
