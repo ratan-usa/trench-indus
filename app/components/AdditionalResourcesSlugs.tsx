@@ -10,28 +10,28 @@ const RESOURCES = [
     title: 'Mega-Adjust™ White Paper',
     slug: 'mega-adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
-    imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png', // Replace with product photo
+    imageSrc: '/paving/Round Riser iron Finish.614.png', // Replace with product photo
   },
   {
     id: 'res-2',
     title: 'Installation Guidelines',
     slug: 'installation-guidelines',
     type: 'document',
-    imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png', // Replace with product photo
+    imageSrc: '/paving/Round Riser with screw Raw Finish.617.png', // Replace with product photo
   },
   {
     id: 'res-3',
     title: 'Adjustment Riser Brochure',
     slug: 'adjustment-riser-brochure',
     type: 'document',
-    imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png', // Replace with product photo
+    imageSrc: '/paving/Sqaure Riser Raw Finish.610.png', // Replace with product photo
   },
   {
     id: 'res-4',
     title: 'Adjustment Riser Video',
     slug: 'adjustment-riser-video',
     type: 'video',
-    imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png', // Replace with product photo
+    imageSrc: '/paving/Rectangle Paving Riser 1 Coated finish.621.png', // Replace with product photo
   }
 ];
 

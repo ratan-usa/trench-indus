@@ -53,9 +53,9 @@ export default function ContactExtraordinary() {
               <div className="absolute bottom-10 w-48 h-8 bg-[#CC0000]/30 rounded-[100%] blur-xl group-hover:bg-[#CC0000]/50 transition-colors duration-700"></div>
 
               {/* 3D Image Container (Floating Animation) */}
-              <div className="relative w-64 h-64 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
+              <div className="relative w-120 h-120 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
                 <Image
-                  src="/assets/PAVING-RISERS/paving riser 1.5203.png" // Put a high-res, transparent 3D render of a riser here
+                  src="/paving/paving riser Round No screw iron.658.png" // Put a high-res, transparent 3D render of a riser here
                   alt="3D Paving Riser Render"
                   fill
                   className="object-contain drop-shadow-[0_20px_50px_rgba(201,32,39,0.5)]"

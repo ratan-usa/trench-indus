@@ -37,17 +37,17 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
-      <InfiniteRiserShowcase/>
+      <InfiniteRiserShowcase />
       <Product3DShowcase2 />
-      <GratesRacksAndTools/>
+      <GratesRacksAndTools />
       <Product3DShowcase />
       <Interactive3DShowcase />
       <PavingRisersHeroSection />
       <PavingRiserClassification />
       <RiserProductSpecifications />
-      <CatchBasinSteelRisers/>
-      <FabricatedGratesSection/>
-      <RiserOrderSpecifications/>
+      <CatchBasinSteelRisers />
+      <FabricatedGratesSection />
+      <RiserOrderSpecifications />
       {/* <AppleStylePavingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
@@ -70,9 +70,9 @@ const Home = () => {
       <AdjustmentProducts />
       <PremiumPavingShowcase />
       <AdditionalResourcesSlugs />
-<section id='contact-us'>
+      <section id='contact-us'>
         <ContactExtraordinary />
-</section>
+      </section>
       <ProductInteractiveImage />
       {/* <InteractiveProduct/> */}
 

@@ -38,8 +38,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Mega-Adjust™ Expansion system', 'No excavation required', 'DOT Approved', 'Stackable design'],
         images: [
-            { label: 'Raw Finish', src: '/paving/Round Riser Raw Finish.613.png' },
             { label: 'Coated Finish', src: '/paving/Round Riser Coated Finish.612.png' },
+            { label: 'Raw Finish', src: '/paving/Round Riser Raw Finish.613.png' },
             { label: 'Iron Finish', src: '/paving/Round Riser iron Finish.614.png' },
             { label: 'Round No-Screw Raw', src: '/paving/paving riser Round No screw raw.659.png' },
             { label: 'Round No-Screw Coated', src: '/paving/paving riser Round No screw coated.660.png' },
@@ -63,8 +63,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Integrated Leveling Screws', 'No excavation required', 'DOT Approved', 'Stackable design'],
         images: [
-            { label: 'Raw Finish', src: '/paving/Round Riser with screw Raw Finish.617.png' },
             { label: 'Coated Finish', src: '/paving/Round Riser with screw coated Finish.618.png' },
+            { label: 'Raw Finish', src: '/paving/Round Riser with screw Raw Finish.617.png' },
             { label: 'Iron Finish', src: '/paving/Round Riser with screw iron Finish.615.png' }
         ]
     },
@@ -83,8 +83,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Perfect for utility vaults', 'Reinforced corners', 'Anti-slip surface compatibility'],
         images: [
-            { label: 'Raw Finish', src: '/paving/Sqaure Riser Raw Finish.610.png' },
             { label: 'Coated Finish', src: '/paving/Sqaure Riser Coated Finish.611.png' },
+            { label: 'Raw Finish', src: '/paving/Sqaure Riser Raw Finish.610.png' },
             { label: 'Iron Finish', src: '/paving/Sqaure Riser iron.609.png' },
             { label: 'Square Raw', src: '/paving/paving riser Square raw.666.png' },
             { label: 'Square Coated', src: '/paving/paving riser Square coated.665.png' },
@@ -108,8 +108,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Precision welded seams', 'Adjustable height bolts', 'Curb-side compatible'],
         images: [
-            { label: 'Raw Finish', src: '/paving/Rectangle Riser Raw Finish.606.png' },
             { label: 'Coated Finish', src: '/paving/Rectangle Riser coated Finish.605.png' },
+            { label: 'Raw Finish', src: '/paving/Rectangle Riser Raw Finish.606.png' },
             { label: 'Iron Finish', src: '/paving/Rectangle Riser iron.608.png' },
             { label: 'Riser 1 Standard', src: '/paving/Rectangle Paving Riser 1.619.png' },
             { label: 'Riser 1 Coated', src: '/paving/Rectangle Paving Riser 1 Coated finish.621.png' },
@@ -161,8 +161,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Flush curb alignment', 'No-shift installation', 'Storm-water optimized'],
         images: [
-            { label: 'Raw Finish', src: '/paving/D shape Riser Raw Finish.602.png' },
             { label: 'Coated Finish', src: '/paving/D shape Riser coated Finish.604.png' },
+            { label: 'Raw Finish', src: '/paving/D shape Riser Raw Finish.602.png' },
             { label: 'Iron Finish', src: '/paving/D shape Riser Iron Finish.603.png' },
             { label: 'With Iron', src: '/paving/D shape Riser with Iron.635.png' },
             { label: 'With Steel', src: '/paving/D shape Riser with Steel.634.png' },

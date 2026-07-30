@@ -22,8 +22,8 @@ const PRODUCT_VIDEOS = [
     description: "Full rotation showing the variable height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png"
+    src: "/video/paving-video.mp4",
+    thumbnail: "/paving/paving riser Round No screw steel.661.png"
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5201.png"
+    src: "/video/paving-video.mp4",
+    thumbnail: "/paving/paving riser Square ductile steel.664.png"
   },
   {
     id: 3,
@@ -40,8 +40,8 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5203.png"
+    src: "/video/paving-video.mp4",
+    thumbnail: "/paving/D shape Riser with cast iron.636.png"
   },
   {
     id: 4,
@@ -49,8 +49,8 @@ const PRODUCT_VIDEOS = [
     description: "Finite Element Analysis (FEA) visualization of load distribution.",
     duration: "0:30",
     type: "SIMULATION",
-    src: "/assets/PAVING-RISERS/paving riser 1.5213.mp4",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+    src: "/video/paving-video.mp4",
+    thumbnail: "/paving/Round Riser with screw Raw Finish.617.png"
   }
 ];
 
@@ -185,7 +185,7 @@ export default function Product3DShowcase2() {
                     )}
                   >
                     {/* Thumbnail Block */}
-                    <div className="relative w-24 h-16 bg-zinc-800 rounded-sm overflow-hidden shrink-0 flex items-center justify-center border border-zinc-800">
+                    <div className="relative w-24 h-16 bg-zinc-200 rounded-sm overflow-hidden shrink-0 flex items-center justify-center border border-zinc-800">
                       <Image
                         src={video.thumbnail}
                         alt="Video Thumbnail Preview"

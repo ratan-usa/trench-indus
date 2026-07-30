@@ -11,14 +11,14 @@ export const PRODUCT_CATEGORIES = [
     title: "Adjustment Risers",
     slug: "adjustment-risers",
     description: "Adjust any manhole or catch basin to final grade with steel or cast iron riser rings.",
-    imageSrc: "/assets/PAVING-RISERS/paving riser 1.5203.png",
+    imageSrc: "/paving/Round Riser with screw Raw Finish.617.png",
   },
   {
     id: 2,
     title: "INFRA-RISER® Adjustment Risers",
     slug: "infra-riser-adjustment-risers",
     description: "Prolong structure life with the INFRA-RISER® rubber composite adjustment riser",
-    imageSrc: "/assets/PAVING-RISERS/paving riser 1.5204.png",
+    imageSrc: "/paving/Round Riser iron Finish.614.png",
   }
 ];
 

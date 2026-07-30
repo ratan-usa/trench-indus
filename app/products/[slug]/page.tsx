@@ -116,14 +116,14 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-            <div className="text-sm font-bold uppercase tracking-widest text-gray-400">
+            <div className="text-sm font-bold uppercase tracking-widest text-[#CC0000]">
               {filteredProducts.length} Results Found
             </div>
             <div className="flex items-center gap-2">
               <select
                 value={sortOption}
                 onChange={(e) => setSortOption(e.target.value)}
-                className="bg-gray-50 border-2 border-gray-200 text-black text-xs font-bold uppercase tracking-widest p-2 outline-none focus:border-black cursor-pointer appearance-none"
+                className="bg-gray-50 border-2 border-[#CC0000] text-[#CC0000] text-xs font-bold uppercase tracking-widest p-2 outline-none focus:border-black cursor-pointer appearance-none"
               >
                 <option value="default">Sort: Default</option>
                 <option value="name-asc">Sort: Name (A-Z)</option>
@@ -150,7 +150,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
               <div className="flex items-center justify-between mb-6 border-b-2 border-gray-100 pb-4">
                 <div className="flex items-center gap-2">
                   <Filter className="w-5 h-5 text-[#CC0000]" />
-                  <h2 className="text-xl font-black uppercase tracking-wider">Filters</h2>
+                  <h2 className="text-xl text-[#CC0000] font-black uppercase tracking-wider">Filters</h2>
                 </div>
                 {Object.values(selectedFilters).some(arr => arr.length > 0) && (
                   <button
@@ -168,7 +168,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
                   <div key={index} className="mb-8 last:mb-0">
                     <button
                       onClick={() => toggleFilter(filter.category)}
-                      className="w-full flex items-center justify-between text-xs font-black text-black uppercase tracking-widest mb-4 bg-gray-50 p-2 border-l-4 border-[#CC0000] hover:bg-gray-100 transition-colors"
+                      className="w-full flex items-center justify-between text-xs font-black text-[#CC0000] uppercase tracking-widest mb-4 bg-gray-50 p-2 border-l-4 border-[#CC0000] hover:bg-gray-100 transition-colors"
                     >
                       <span>{filter.category}</span>
                       {isOpen ? <ChevronUp className="w-4 h-4 text-gray-500" /> : <ChevronDown className="w-4 h-4 text-gray-500" />}
@@ -263,7 +263,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
                             className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                           />
                           {/* ID Badge */}
-                          <div className="absolute top-0 right-0 bg-[#0F0F0F] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
+                          <div className="absolute top-0 right-0 bg-[#CC0000] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                             {product.id}
                           </div>
                         </div>

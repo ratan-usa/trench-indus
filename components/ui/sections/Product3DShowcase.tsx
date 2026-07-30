@@ -30,7 +30,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
     glbPath: "/gib files/Hero Product.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5200.png"
+    thumbnail: "/paving/paving riser Square coated.665.png"
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
     glbPath: "/gib files/Round Riser with screw coated Finish.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5201.png"
+    thumbnail: "/paving/paving riser with screws.600.png"
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
     glbPath: "/gib files/Square Riser coated Finish.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5203.png"
+    thumbnail: "/paving/paving riser Square coated.665.png"
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
     glbPath: "/gib files/RectangleRiser coated Finish.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+    thumbnail: "/paving/Rectangle Paving Riser 4 coated Finish.631.png"
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
     glbPath: "/gib files/D shape Riser coated Finish.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+    thumbnail: "/paving/D shape Riser with coated Finish.633.png"
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
     type: "ASSEMBLY",
     glbPath: "/gib files/mr3.glb",
-    thumbnail: "/assets/PAVING-RISERS/paving riser 1.5204.png"
+    thumbnail: "/paving/paving riser Round No screw steel.661.png"
   }
 ];
 
@@ -181,7 +181,7 @@ export default function Product3DShowcase() {
                   )}
                 >
                   {/* Thumbnail */}
-                  <div className="relative w-24 h-16 bg-zinc-800 rounded overflow-hidden shrink-0 flex items-center justify-center">
+                  <div className="relative w-24 h-16 bg-zinc-200 rounded overflow-hidden shrink-0 flex items-center justify-center">
                     <Image
                       src={model.thumbnail}
                       alt={model.title}
