@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ben & Ben's Mega Paving Risers",
+  title: "Paving Risers",
   description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",
   icons: {
     icon: '/favicon.png', 
