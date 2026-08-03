@@ -8,56 +8,53 @@ import {
   Settings,
   ShieldCheck,
   Construction,
-  Truck,
   FileText,
   ArrowRight,
-  AlignLeft,
+  CircleDot,
   ChevronRight
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: '/paving/D shape Riser Raw Finish.602.png' },
-  { name: 'Coated Finish', image: '/paving/D shape Riser coated Finish.604.png' },
-  { name: 'Iron Finish', image: '/paving/D shape Riser Iron Finish.603.png' },
-  { name: 'With Iron', image: '/paving/D shape Riser with Iron.635.png' },
-  { name: 'With Steel', image: '/paving/D shape Riser with Steel.634.png' },
-  { name: 'With Cast Iron', image: '/paving/D shape Riser with cast iron.636.png' },
-  { name: 'With Coated Finish', image: '/paving/D shape Riser with coated Finish.633.png' }
+  { name: 'Raw Finish', image: '/paving/Round Riser Raw Finish.613.png' },
+  { name: 'Coated Finish', image: '/paving/Round Riser Coated Finish.612.png' },
+  { name: 'Iron Finish', image: '/paving/Round Riser iron Finish.614.png' },
+  { name: 'With Screw (Raw)', image: '/paving/Round Riser with screw Raw Finish.617.png' },
+  { name: 'With Screw (Coated)', image: '/paving/Round Riser with screw coated Finish.618.png' },
+  { name: 'With Screw (Iron)', image: '/paving/Round Riser with screw iron Finish.615.png' }
 ];
 
-const D_SHAPE_DATA = {
-  title: 'D-Shape Curb Risers',
-  headline: 'Specialized Geometry for Perimeter Curb Inlets.',
-  description: 'The D-Shape Riser is a precision-engineered solution for curb-back manholes and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these risers allow for seamless asphalt resurfacing around complex perimeter geometries without obstructing the gutter line.',
-  image: '/paving/D shape Riser with cast iron.636.png',
+const MANHOLE_RISER_DATA = {
+  title: 'Manhole Risers',
+  headline: 'Precision Adjustment for Municipal Manholes.',
+  description: 'Our Manhole Risers provide an efficient and durable solution for elevating manhole covers to grade level during paving and resurfacing operations. Fabricated from high-strength cast or ductile iron, they eliminate the need for costly digging and rebuilding, ensuring a perfect flush fit with the new asphalt surface.',
   specs: [
     { label: 'Material', value: 'Ductile Iron (65-45-12) or Cast Iron' },
-    { label: 'Profile Type', value: 'Single Flat-Back "D" Geometry' },
+    { label: 'Profile Type', value: 'Standard Round / Adjustable' },
     { label: 'Load Rating', value: 'AASHTO M306 / H-20 Heavy Traffic' },
-    { label: 'Standard Sizes', value: '24", 30", 32" Diameter equivalents' },
-    { label: 'Rise Increments', value: '1.5" to 4" (Custom stackable available)' },
-    { label: 'Certification', value: 'ISO 9001:2015 Material Standards' },
+    { label: 'Standard Diameters', value: '24", 27", 30", 36" equivalents' },
+    { label: 'Rise Increments', value: '3/4" to 4" (Custom stackable available)' },
+    { label: 'Certification', value: 'Buy America Act Compliant, ISO 9001:2015' },
   ],
   technicalPoints: [
     {
-      title: 'Flush Curb Alignment',
-      desc: 'The flat side is precision-machined to ensure a tight, no-gap fit against existing concrete curbs, preventing asphalt seepage into the basin.'
+      title: 'Seamless Grade Adjustment',
+      desc: 'Quickly raise existing utilities to the new paving grade in minutes, saving substantial labor and material costs compared to traditional masonry adjustments.'
     },
     {
-      title: 'Anti-Lateral Shift',
-      desc: 'Features integrated seat-locking lugs to prevent the riser from rotating or shifting under the pressure of a steam roller.'
+      title: 'Locking Turnbuckles',
+      desc: 'Available with robust screw and turnbuckle mechanisms to expand and securely lock the riser into the existing frame.'
     },
     {
-      title: 'High-Temp Coating',
-      desc: 'Finished with industrial-grade bituminous paint to withstand the extreme temperatures of fresh hot-mix asphalt.'
+      title: 'Heavy Traffic Rated',
+      desc: 'Engineered with heavy-duty construction to withstand the intense pressures of highway traffic and industrial heavy loads.'
     }
   ]
 };
 
-export default function DShapeRisersPage() {
+export default function ManholeRiserPage() {
   const router = useRouter();
-  const [activeFinish, setActiveFinish] = useState(FINISHES[5]); // Default to 'With Cast Iron'
+  const [activeFinish, setActiveFinish] = useState(FINISHES[0]); // Default to 'Raw Finish'
 
   const handlePrev = () => {
     const currentIndex = FINISHES.findIndex(f => f.name === activeFinish.name);
@@ -110,11 +107,11 @@ export default function DShapeRisersPage() {
             <div className="grid grid-cols-3 gap-4 mt-6">
               <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
                 <ShieldCheck className="mb-2 text-[#CC0000]" size={24} />
-                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Curb Ready</span>
+                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Fast Install</span>
               </div>
               <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
-                <AlignLeft className="mb-2 text-[#CC0000]" size={24} />
-                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Zero-Gap Fit</span>
+                <CircleDot className="mb-2 text-[#CC0000]" size={24} />
+                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Precise Fit</span>
               </div>
               <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
                 <Construction className="mb-2 text-[#CC0000]" size={24} />
@@ -126,8 +123,8 @@ export default function DShapeRisersPage() {
           {/* --- RIGHT COLUMN: TECHNICAL DETAILS --- */}
           <div className="space-y-12">
             <div>
-              <h1 className="text-5xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-6">
-                D-Shape <br />
+              <h1 className="text-5xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.85] mb-6">
+                Manhole <br />
                 <span className="text-[#CC0000]">Risers</span>
               </h1>
 
@@ -137,12 +134,12 @@ export default function DShapeRisersPage() {
 
               <div className="flex gap-4 items-start border-l-4 border-black pl-6">
                 <p className="text-xl font-bold text-gray-900 italic leading-relaxed">
-                  "{D_SHAPE_DATA.headline}"
+                  "{MANHOLE_RISER_DATA.headline}"
                 </p>
               </div>
 
               <p className="mt-8 text-gray-600 leading-relaxed text-lg font-medium">
-                {D_SHAPE_DATA.description}
+                {MANHOLE_RISER_DATA.description}
               </p>
             </div>
 
@@ -152,7 +149,7 @@ export default function DShapeRisersPage() {
                 <FileText size={18} className="text-[#CC0000]" /> Dimension Specs
               </h3>
               <div className="grid grid-cols-1 border-t-2 border-black">
-                {D_SHAPE_DATA.specs.map((spec, i) => (
+                {MANHOLE_RISER_DATA.specs.map((spec, i) => (
                   <div key={i} className="flex justify-between py-4 border-b border-gray-100 hover:bg-gray-50 px-2 transition-colors">
                     <span className="text-[11px] font-black uppercase text-gray-400">{spec.label}</span>
                     <span className="text-sm font-black text-black">{spec.value}</span>
@@ -169,7 +166,7 @@ export default function DShapeRisersPage() {
                 <Settings size={18} /> Design Integrity
               </h3>
               <div className="space-y-8 relative z-10">
-                {D_SHAPE_DATA.technicalPoints.map((point, i) => (
+                {MANHOLE_RISER_DATA.technicalPoints.map((point, i) => (
                   <div key={i} className="group">
                     <h4 className="text-[#CC0000] font-black uppercase text-sm mb-2 flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
@@ -200,9 +197,9 @@ export default function DShapeRisersPage() {
               Available <span className="text-[#CC0000]">Finishes</span>
             </h2>
           </div>
-          <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our D-Shape Risers.</p>
+          <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our Manhole Risers.</p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
             {FINISHES.map((finish, i) => (
               <div 
                 key={i} 
@@ -214,16 +211,16 @@ export default function DShapeRisersPage() {
                   activeFinish.name === finish.name ? 'border-[#CC0000] ring-1 ring-[#CC0000]' : 'border-gray-100 hover:border-[#CC0000]'
                 }`}
               >
-                <div className="relative w-full h-56 bg-white flex items-center justify-center border-b border-gray-50">
+                <div className="relative w-full h-40 bg-white flex items-center justify-center border-b border-gray-50">
                   <Image 
                     src={finish.image} 
                     alt={finish.name} 
                     fill 
-                    className="object-contain p-8 mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
+                    className="object-contain p-6 mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
                   />
                 </div>
-                <div className="p-5 bg-gray-50 flex items-center justify-center">
-                  <span className="text-xs font-black uppercase tracking-widest text-black group-hover:text-[#CC0000] transition-colors">
+                <div className="p-4 bg-gray-50 flex items-center justify-center text-center">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-black group-hover:text-[#CC0000] transition-colors leading-tight">
                     {finish.name}
                   </span>
                 </div>
