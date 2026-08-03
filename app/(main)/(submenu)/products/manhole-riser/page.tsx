@@ -54,7 +54,7 @@ const MANHOLE_RISER_DATA = {
 
 export default function ManholeRiserPage() {
   const router = useRouter();
-  const [activeFinish, setActiveFinish] = useState(FINISHES[0]); // Default to 'Raw Finish'
+  const [activeFinish, setActiveFinish] = useState(FINISHES[0]);
 
   const handlePrev = () => {
     const currentIndex = FINISHES.findIndex(f => f.name === activeFinish.name);
@@ -69,166 +69,173 @@ export default function ManholeRiserPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-black">
+    <div className="min-h-screen bg-[#050505] font-sans text-white overflow-hidden selection:bg-[#CC0000] selection:text-white">
+      
+      {/* --- 1. EDITORIAL HERO SECTION --- */}
+      <section className="relative w-full min-h-[90vh] flex flex-col justify-center pt-24 px-6 lg:px-12">
+        {/* Abstract Background Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
+        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-[#CC0000]/15 blur-[120px] rounded-full pointer-events-none mix-blend-screen"></div>
 
-      <div className="w-full px-6 md:px-8 lg:px-12 py-12">
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
-          {/* --- LEFT COLUMN: PRODUCT VISUAL --- */}
-          <div className="lg:sticky lg:top-32">
-            <div className="relative aspect-square w-full bg-gray-50 rounded-none border border-gray-100 flex items-center justify-center p-12 overflow-hidden shadow-sm group">
-   
-              <button 
-                onClick={handlePrev}
-                className="absolute left-4 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-gray-100"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
-              <Image
-                key={activeFinish.name}
-                src={activeFinish.image}
-                alt={activeFinish.name}
-                fill
-                className="object-contain p-10 hover:rotate-3 transition-transform duration-700 animate-in fade-in zoom-in-95"
-                priority
-              />
-
-              <button 
-                onClick={handleNext}
-                className="absolute right-4 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-gray-100"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
+        <div className="relative z-10 w-full max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+          
+          {/* LEFT: Massive Typography */}
+          <div className="lg:w-5/12 space-y-6 z-20">
+            <div className="flex items-center gap-4">
+              <div className="h-0.5 w-12 bg-[#CC0000]"></div>
+              <span className="text-[#CC0000] font-black uppercase tracking-[0.3em] text-xs">Precision Elevation</span>
             </div>
-
-            {/* Industrial Feature Badges */}
-            <div className="grid grid-cols-3 gap-4 mt-6">
-              <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
-                <ShieldCheck className="mb-2 text-[#CC0000]" size={24} />
-                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Fast Install</span>
-              </div>
-              <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
-                <CircleDot className="mb-2 text-[#CC0000]" size={24} />
-                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Precise Fit</span>
-              </div>
-              <div className="bg-black text-white p-5 text-center flex flex-col items-center justify-center">
-                <Construction className="mb-2 text-[#CC0000]" size={24} />
-                <span className="block text-[10px] font-black uppercase tracking-tighter leading-none text-center">Heavy Traffic</span>
-              </div>
-            </div>
-          </div>
-
-          {/* --- RIGHT COLUMN: TECHNICAL DETAILS --- */}
-          <div className="space-y-12">
-            <div>
-              <h1 className="text-5xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.85] mb-6">
-                Manhole <br />
-                <span className="text-[#CC0000]">Risers</span>
-              </h1>
-
-              <div className="inline-block bg-gray-50 text-black px-4 py-2 font-bold uppercase tracking-widest text-xs mb-8 rounded-sm border border-gray-200">
-                Selected Finish: <span className="text-[#CC0000]">{activeFinish.name}</span>
-              </div>
-
-              <div className="flex gap-4 items-start border-l-4 border-black pl-6">
-                <p className="text-xl font-bold text-gray-900 italic leading-relaxed">
-                  "{MANHOLE_RISER_DATA.headline}"
-                </p>
-              </div>
-
-              <p className="mt-8 text-gray-600 leading-relaxed text-lg font-medium">
-                {MANHOLE_RISER_DATA.description}
-              </p>
-            </div>
-
-            {/* Technical Spec Grid */}
-            <div className="space-y-4">
-              <h3 className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-black">
-                <FileText size={18} className="text-[#CC0000]" /> Dimension Specs
-              </h3>
-              <div className="grid grid-cols-1 border-t-2 border-black">
-                {MANHOLE_RISER_DATA.specs.map((spec, i) => (
-                  <div key={i} className="flex justify-between py-4 border-b border-gray-100 hover:bg-gray-50 px-2 transition-colors">
-                    <span className="text-[11px] font-black uppercase text-gray-400">{spec.label}</span>
-                    <span className="text-sm font-black text-black">{spec.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Performance - Dark Mode Block */}
-            <div className="bg-black text-white p-8 md:p-10 space-y-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-[#CC0000]/10 rounded-full blur-3xl"></div>
-
-              <h3 className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-[#CC0000]">
-                <Settings size={18} /> Design Integrity
-              </h3>
-              <div className="space-y-8 relative z-10">
-                {MANHOLE_RISER_DATA.technicalPoints.map((point, i) => (
-                  <div key={i} className="group">
-                    <h4 className="text-[#CC0000] font-black uppercase text-sm mb-2 flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                      {point.title}
-                    </h4>
-                    <p className="text-sm font-bold text-zinc-400 leading-relaxed group-hover:text-white transition-colors pl-4">
-                      {point.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="pt-4">
-              <Button className="w-full bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black h-20 uppercase tracking-[0.25em] text-sm group rounded-none shadow-xl transition-colors">
-                Request Municipal Pricing <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" />
+            
+            {/* Outline Text Styling */}
+            <h1 className="text-6xl sm:text-8xl lg:text-[9rem] font-black uppercase tracking-tighter leading-[0.8] text-white mix-blend-difference drop-shadow-2xl">
+              Manhole<br/>
+              <span className="text-transparent" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.7)' }}>Risers</span>
+            </h1>
+            
+            <p className="text-zinc-400 text-lg sm:text-xl font-medium leading-relaxed max-w-md pt-8">
+              {MANHOLE_RISER_DATA.description}
+            </p>
+            
+            <div className="pt-8">
+              <Button className="bg-white hover:bg-[#CC0000] text-black hover:text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all duration-300">
+                Explore Specs <ArrowRight className="ml-3" />
               </Button>
             </div>
           </div>
 
-        </div>
-
-        {/* --- AVAILABLE FINISHES --- */}
-        <div className="mt-24 pt-12 border-t border-gray-100">
-          <div className="mb-6 border-b-4 border-black pb-4 inline-block">
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight pr-8">
-              Available <span className="text-[#CC0000]">Finishes</span>
-            </h2>
+          {/* RIGHT: Floating Carousel Image */}
+          <div className="lg:w-7/12 relative h-[500px] sm:h-[700px] w-full flex items-center justify-center group">
+            
+            <button 
+              onClick={handlePrev} 
+              className="absolute left-0 lg:left-10 z-30 bg-black/50 backdrop-blur-md border border-white/10 text-white p-5 rounded-full hover:bg-[#CC0000] hover:scale-110 transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 shadow-2xl"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            
+            <div className="relative w-full h-full flex items-center justify-center">
+               <Image 
+                  key={activeFinish.name}
+                  src={activeFinish.image}
+                  alt={activeFinish.name}
+                  fill
+                  className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700 ease-out animate-in fade-in zoom-in-90"
+                  priority
+               />
+            </div>
+            
+            <button 
+              onClick={handleNext} 
+              className="absolute right-0 lg:right-10 z-30 bg-black/50 backdrop-blur-md border border-white/10 text-white p-5 rounded-full hover:bg-[#CC0000] hover:scale-110 transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 shadow-2xl"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+            
+            {/* Current Finish Label Floating */}
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-xl border border-white/10 px-8 py-4 flex items-center gap-4 shadow-2xl rounded-full">
+              <span className="text-zinc-400 text-[10px] font-black uppercase tracking-[0.2em]">Active Finish:</span>
+              <span className="text-[#CC0000] font-black uppercase tracking-widest text-xs">{activeFinish.name}</span>
+            </div>
           </div>
-          <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our Manhole Risers.</p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+        </div>
+      </section>
+
+      {/* --- 2. DYNAMIC FINISHES STRIP --- */}
+      <section className="border-y border-white/10 bg-[#0A0A0A] relative z-20">
+         {/* Custom Scrollbar Hide but keep horizontal scroll */}
+         <style dangerouslySetInnerHTML={{__html: `
+           .hide-scrollbar::-webkit-scrollbar { display: none; }
+           .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+         `}} />
+         
+         <div className="w-full flex overflow-x-auto hide-scrollbar snap-x snap-mandatory">
             {FINISHES.map((finish, i) => (
               <div 
                 key={i} 
-                onClick={() => {
-                  setActiveFinish(finish);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className={`group flex flex-col bg-white border-2 transition-all duration-300 shadow-sm hover:shadow-xl rounded-sm overflow-hidden cursor-pointer ${
-                  activeFinish.name === finish.name ? 'border-[#CC0000] ring-1 ring-[#CC0000]' : 'border-gray-100 hover:border-[#CC0000]'
-                }`}
+                onClick={() => setActiveFinish(finish)}
+                className={`min-w-[200px] sm:min-w-[280px] h-32 flex-shrink-0 flex items-center justify-center border-r border-white/10 cursor-pointer transition-all duration-500 snap-center group relative overflow-hidden ${activeFinish.name === finish.name ? 'bg-white/5' : 'hover:bg-white/5'}`}
               >
-                <div className="relative w-full h-40 bg-white flex items-center justify-center border-b border-gray-50">
-                  <Image 
-                    src={finish.image} 
-                    alt={finish.name} 
-                    fill 
-                    className="object-contain p-6 mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
-                  />
-                </div>
-                <div className="p-4 bg-gray-50 flex items-center justify-center text-center">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-black group-hover:text-[#CC0000] transition-colors leading-tight">
-                    {finish.name}
-                  </span>
-                </div>
+                 {/* Active Indicator Line */}
+                 <div className={`absolute bottom-0 left-0 h-1 bg-[#CC0000] transition-all duration-500 ${activeFinish.name === finish.name ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
+                 
+                 <div className={`w-20 h-20 relative mr-4 transition-opacity duration-300 ${activeFinish.name === finish.name ? 'opacity-100' : 'opacity-40 group-hover:opacity-100'}`}>
+                    <Image src={finish.image} alt={finish.name} fill className="object-contain drop-shadow-lg" />
+                 </div>
+                 <span className={`text-[10px] font-black uppercase tracking-[0.2em] transition-colors duration-300 ${activeFinish.name === finish.name ? 'text-[#CC0000]' : 'text-zinc-500 group-hover:text-white'}`}>
+                   {finish.name}
+                 </span>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
+         </div>
+      </section>
+
+      {/* --- 3. BENTO GRID SPECS (Brutalist style) --- */}
+      <section className="w-full max-w-screen-2xl mx-auto px-6 lg:px-12 py-24 relative z-10">
+         
+         <div className="mb-16">
+            <h2 className="text-3xl lg:text-5xl font-black uppercase tracking-tight text-white">
+              Industrial <span className="text-[#CC0000]">Specifications</span>
+            </h2>
+            <p className="text-zinc-500 font-bold uppercase tracking-widest text-xs mt-2">
+              Engineered for extreme performance
+            </p>
+         </div>
+
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+           
+           {/* Box 1: Large Stat */}
+           <div className="lg:col-span-2 bg-[#CC0000] text-white p-10 flex flex-col justify-between hover:bg-[#B30000] transition-colors duration-300 group">
+              <ShieldCheck className="w-12 h-12 text-white/50 group-hover:text-white transition-colors" />
+              <div>
+                <h3 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-2">H-20</h3>
+                <p className="font-bold uppercase tracking-widest text-xs opacity-80">AASHTO M306 Load Rating</p>
+              </div>
+           </div>
+
+           {/* Box 2: Spec List */}
+           <div className="lg:col-span-2 bg-[#111] border border-white/10 p-10 flex flex-col justify-between hover:border-white/20 transition-colors">
+              <h3 className="text-xl font-black uppercase tracking-widest mb-6 text-white flex items-center gap-3">
+                <FileText className="text-[#CC0000]" /> Technical Data
+              </h3>
+              <div className="space-y-4">
+                 {MANHOLE_RISER_DATA.specs.slice(0, 4).map((spec, i) => (
+                    <div key={i} className="flex flex-col sm:flex-row sm:justify-between sm:items-end border-b border-white/10 pb-2">
+                       <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">{spec.label}</span>
+                       <span className="text-sm font-black text-zinc-200 mt-1 sm:mt-0">{spec.value}</span>
+                    </div>
+                 ))}
+              </div>
+           </div>
+
+           {/* Box 3: Point 1 */}
+           <div className="bg-[#111] border border-white/10 p-10 flex flex-col justify-between hover:border-[#CC0000] transition-colors duration-300 group">
+              <CircleDot className="w-8 h-8 text-[#CC0000] group-hover:scale-110 transition-transform" />
+              <div>
+                 <h4 className="font-black uppercase mb-3 text-white tracking-widest text-sm">Seamless Grade</h4>
+                 <p className="text-xs text-zinc-400 font-medium leading-relaxed">Save labor by raising utilities to paving grade in minutes without costly digging.</p>
+              </div>
+           </div>
+
+           {/* Box 4: Graphic Box */}
+           <div className="bg-[#111] border border-white/10 relative overflow-hidden flex items-center justify-center group">
+              <div className="absolute inset-0 bg-[#CC0000]/5 group-hover:bg-[#CC0000]/10 transition-colors duration-500"></div>
+              <Settings className="w-32 h-32 text-[#CC0000]/20 group-hover:text-[#CC0000]/40 group-hover:rotate-90 transition-all duration-1000 ease-out" />
+           </div>
+
+           {/* Box 5: Large Point 2 */}
+           <div className="lg:col-span-2 bg-white text-black p-10 flex flex-col justify-between hover:scale-[1.01] hover:shadow-2xl transition-transform duration-300 cursor-default">
+              <Construction className="w-12 h-12 text-[#CC0000]" />
+              <div>
+                 <h4 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter mb-4 leading-none">Locking Turnbuckles</h4>
+                 <p className="text-sm font-bold text-gray-600 max-w-lg leading-relaxed">
+                   Available with robust screw and turnbuckle mechanisms to expand and securely lock the riser directly into the existing municipal frame under extreme pressure.
+                 </p>
+              </div>
+           </div>
+
+         </div>
+      </section>
+      
     </div>
   );
 }

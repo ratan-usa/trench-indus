@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import {
@@ -58,17 +58,18 @@ const D_SHAPE_DATA = {
 export default function DShapeRisersPage() {
   const router = useRouter();
   const [activeFinish, setActiveFinish] = useState(FINISHES[5]); // Default to 'With Cast Iron'
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  const handlePrev = () => {
-    const currentIndex = FINISHES.findIndex(f => f.name === activeFinish.name);
-    const prevIndex = currentIndex === 0 ? FINISHES.length - 1 : currentIndex - 1;
-    setActiveFinish(FINISHES[prevIndex]);
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
   };
 
-  const handleNext = () => {
-    const currentIndex = FINISHES.findIndex(f => f.name === activeFinish.name);
-    const nextIndex = currentIndex === FINISHES.length - 1 ? 0 : currentIndex + 1;
-    setActiveFinish(FINISHES[nextIndex]);
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -80,15 +81,8 @@ export default function DShapeRisersPage() {
 
           {/* --- LEFT COLUMN: PRODUCT VISUAL --- */}
           <div className="lg:sticky lg:top-32">
-            <div className="relative aspect-square w-full bg-gray-50 rounded-none border border-gray-100 flex items-center justify-center p-12 overflow-hidden shadow-sm group">
+            <div className="relative aspect-square w-full bg-gray-50 rounded-none border border-gray-100 flex items-center justify-center p-12 overflow-hidden shadow-sm">
    
-              <button 
-                onClick={handlePrev}
-                className="absolute left-4 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-gray-100"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
               <Image
                 key={activeFinish.name}
                 src={activeFinish.image}
@@ -98,12 +92,6 @@ export default function DShapeRisersPage() {
                 priority
               />
 
-              <button 
-                onClick={handleNext}
-                className="absolute right-4 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-gray-100"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
             </div>
 
             {/* Industrial Feature Badges */}
@@ -193,8 +181,8 @@ export default function DShapeRisersPage() {
 
         </div>
 
-        {/* --- AVAILABLE FINISHES --- */}
-        <div className="mt-24 pt-12 border-t border-gray-100">
+        {/* --- AVAILABLE FINISHES (HORIZONTAL CAROUSEL) --- */}
+        <div className="mt-24 pt-12 border-t border-gray-100 relative group">
           <div className="mb-6 border-b-4 border-black pb-4 inline-block">
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight pr-8">
               Available <span className="text-[#CC0000]">Finishes</span>
@@ -202,33 +190,60 @@ export default function DShapeRisersPage() {
           </div>
           <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our D-Shape Risers.</p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FINISHES.map((finish, i) => (
-              <div 
-                key={i} 
-                onClick={() => {
-                  setActiveFinish(finish);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className={`group flex flex-col bg-white border-2 transition-all duration-300 shadow-sm hover:shadow-xl rounded-sm overflow-hidden cursor-pointer ${
-                  activeFinish.name === finish.name ? 'border-[#CC0000] ring-1 ring-[#CC0000]' : 'border-gray-100 hover:border-[#CC0000]'
-                }`}
-              >
-                <div className="relative w-full h-56 bg-white flex items-center justify-center border-b border-gray-50">
-                  <Image 
-                    src={finish.image} 
-                    alt={finish.name} 
-                    fill 
-                    className="object-contain p-8 mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
-                  />
+          <div className="relative">
+            {/* Scroll Left Button */}
+            <button 
+              onClick={scrollLeft}
+              className="absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all shadow-xl border border-gray-100 opacity-0 group-hover:opacity-100 hidden md:block"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Custom Scrollbar Hide but keep horizontal scroll */}
+            <style dangerouslySetInnerHTML={{__html: `
+              .hide-scrollbar::-webkit-scrollbar { display: none; }
+              .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+            `}} />
+
+            <div 
+              ref={scrollContainerRef}
+              className="flex overflow-x-auto gap-6 hide-scrollbar snap-x snap-mandatory py-4 px-2"
+            >
+              {FINISHES.map((finish, i) => (
+                <div 
+                  key={i} 
+                  onClick={() => {
+                    setActiveFinish(finish);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className={`flex-shrink-0 w-[240px] snap-center group/card flex flex-col bg-white border-2 transition-all duration-300 shadow-sm hover:shadow-xl rounded-sm overflow-hidden cursor-pointer ${
+                    activeFinish.name === finish.name ? 'border-[#CC0000] ring-1 ring-[#CC0000]' : 'border-gray-100 hover:border-[#CC0000]'
+                  }`}
+                >
+                  <div className="relative w-full h-40 bg-white flex items-center justify-center border-b border-gray-50">
+                    <Image 
+                      src={finish.image} 
+                      alt={finish.name} 
+                      fill 
+                      className="object-contain p-6 mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500" 
+                    />
+                  </div>
+                  <div className="p-4 bg-gray-50 flex items-center justify-center text-center">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-black group-hover/card:text-[#CC0000] transition-colors leading-tight">
+                      {finish.name}
+                    </span>
+                  </div>
                 </div>
-                <div className="p-5 bg-gray-50 flex items-center justify-center">
-                  <span className="text-xs font-black uppercase tracking-widest text-black group-hover:text-[#CC0000] transition-colors">
-                    {finish.name}
-                  </span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {/* Scroll Right Button */}
+            <button 
+              onClick={scrollRight}
+              className="absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-3 rounded-full hover:bg-[#CC0000] hover:text-white transition-all shadow-xl border border-gray-100 opacity-0 group-hover:opacity-100 hidden md:block"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </div>
