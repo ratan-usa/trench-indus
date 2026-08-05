@@ -1,199 +1,170 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import {
   Plane,
   Anchor,
-  Weight,
-  ShieldAlert,
-  ChevronRight,
+  ShieldCheck,
+  TrendingUp,
+  Target,
   ArrowRight,
-  FileText,
-  Lock,
-  Zap,
   Activity,
-  Maximize2
+  Layers,
+  Crosshair
 } from 'lucide-react';
 
-const AIRPORT_DATA = {
-  title: 'Airport &',
-  subtitle: 'Heavy Port',
-  heroImage: '/assets/industries/image19.jpeg',
-  description: 'Engineered for 100,000+ lb wheel loads. Our Extra-Heavy-Duty (EHD) castings provide the structural integrity required for modern aviation and maritime logistics.',
-  overview: 'In environments where aircraft taxi and container handlers operate, standard municipal castings are insufficient. Mega Paving Risers manufactures high-tensile ductile iron solutions specifically for FAA-regulated runways and heavy-duty port terminals. These units are cast with increased wall thickness and integrated bolt-down systems to ensure stability under extreme dynamic loads.',
-  stats: [
-    { label: 'Load Rating', value: '100k - 250k lbs', icon: <Weight className="w-5 h-5" /> },
-    { label: 'Material', value: 'Ductile Iron', icon: <Zap className="w-5 h-5" /> },
-    { label: 'Security', value: 'Bolted/Locked', icon: <Lock className="w-5 h-5" /> },
-  ]
-};
-
-export default function AirportPortsPage() {
+export default function AirportsPortsPage() {
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-[#CC0000] selection:text-white">
+    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-[#CC0000] selection:text-white pb-32">
 
-      {/* ========================================= */}
-      {/* 1. HERO SECTION                           */}
-      {/* ========================================= */}
-      <section className="relative h-[75vh] min-h-[600px] w-full bg-[#0F0F0F] overflow-hidden">
-        <Image
-          src={AIRPORT_DATA.heroImage}
-          alt={AIRPORT_DATA.title}
-          fill
-          className="object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
+      {/* --- RADAR / AVIATION BACKGROUND EFFECT --- */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden flex items-center justify-center opacity-20">
+        <div className="absolute w-[150vw] h-[150vw] max-w-[1200px] max-h-[1200px] rounded-full border border-white/5" />
+        <div className="absolute w-[100vw] h-[100vw] max-w-[800px] max-h-[800px] rounded-full border border-white/10" />
+        <div className="absolute w-[50vw] h-[50vw] max-w-[400px] max-h-[400px] rounded-full border border-[#CC0000]/20" />
+        {/* Radar Sweep Line */}
+        <div className="absolute w-[50vw] h-[1px] max-w-[400px] bg-gradient-to-r from-transparent via-[#CC0000] to-transparent origin-left animate-[spin_4s_linear_infinite]" />
+      </div>
 
-        <div className="absolute inset-0 flex items-center">
-          <div className="max-w-[1400px] mx-auto px-6 w-full">
-            <div className="max-w-4xl space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="h-1.5 w-16 bg-[#CC0000]" />
-                <span className="text-[#CC0000] font-black uppercase tracking-[0.4em] text-sm">
-                  Extra-Heavy Duty Division
-                </span>
-              </div>
-              <h1 className="text-6xl md:text-[10rem] font-black uppercase tracking-tighter text-white leading-[0.8]">
-                {AIRPORT_DATA.title} <br />
-                <span className="text-transparent stroke-white" style={{ WebkitTextStroke: '2px white' }}>
-                  {AIRPORT_DATA.subtitle}
-                </span>
+      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+        
+        {/* ========================================= */}
+        {/* 1. CLASSIFIED / EXTREME HERO              */}
+        {/* ========================================= */}
+        <div className="max-w-7xl mx-auto mb-32">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-4 h-4 bg-[#CC0000] animate-pulse" />
+            <span className="text-xs font-mono font-bold uppercase tracking-[0.3em] text-[#CC0000]">
+              Class: Extreme Load Bearing
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+            <div>
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85]">
+                Airports<br />
+                <span className="text-zinc-600">& Ports</span>
               </h1>
-              <div className="flex flex-wrap gap-4 pt-12">
-                <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black px-12 h-20 uppercase tracking-widest transition-all rounded-none border-none shadow-2xl text-base">
-                  Get Airport Specs <ChevronRight className="ml-2" />
-                </Button>
-                <Button variant="outline" className="border-4 border-white text-white hover:bg-white hover:text-black font-black px-12 h-20 uppercase tracking-widest transition-all rounded-none text-base">
-                  FAA Certifications
-                </Button>
-              </div>
+            </div>
+            <div className="bg-[#111] border-l-4 border-[#CC0000] p-8 space-y-6 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#CC0000]/10 blur-3xl pointer-events-none" />
+              <Crosshair className="w-8 h-8 text-[#CC0000] mb-4 group-hover:rotate-90 transition-transform duration-700" />
+              <p className="text-lg text-zinc-400 font-medium leading-relaxed">
+                Aviation tarmacs and deep-water port terminals endure the highest concentrated vehicular weight on earth. Our extra-heavy-duty casting risers are engineered specifically to survive cargo handlers and commercial aircraft traffic.
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* ========================================= */}
-      {/* 2. EXTREME RATING BAR                      */}
-      {/* ========================================= */}
-      <section className="bg-[#0F0F0F] text-white py-16 border-b border-white/10">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-            {AIRPORT_DATA.stats.map((stat, i) => (
-              <div key={i} className="flex flex-col gap-4 group">
-                <div className="h-16 w-16 bg-[#CC0000] flex items-center justify-center text-white group-hover:rotate-45 transition-transform duration-500">
+        {/* ========================================= */}
+        {/* 2. MILITARY-GRADE METRICS GRID            */}
+        {/* ========================================= */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mb-32 border border-white/10 bg-white/10">
+          {[
+            { label: 'Max Point Load', value: '150K+', unit: 'LBS', icon: <TrendingUp className="w-6 h-6 text-[#CC0000]" /> },
+            { label: 'Compliance', value: 'FAA', unit: 'APPRVD', icon: <Plane className="w-6 h-6 text-[#CC0000]" /> },
+            { label: 'Material Yield', value: 'Class', unit: '35 IRON', icon: <ShieldCheck className="w-6 h-6 text-[#CC0000]" /> }
+          ].map((stat, i) => (
+            <div key={i} className="bg-[#050505] p-12 hover:bg-[#111] transition-colors group relative overflow-hidden">
+              <div className="flex justify-between items-start mb-12">
+                <div className="w-12 h-12 bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#CC0000] transition-colors">
                   {stat.icon}
                 </div>
-                <div>
-                  <p className="text-4xl font-black tracking-tighter leading-none">{stat.value}</p>
-                  <p className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-500 mt-2">{stat.label}</p>
+                <div className="text-zinc-600 font-mono text-[10px] uppercase tracking-widest text-right">
+                  System<br />Metric 0{i + 1}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================= */}
-      {/* 3. LOGISTICS & AVIATION DEEP DIVE         */}
-      {/* ========================================= */}
-      <section className="py-32">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
-
-            <div className="lg:col-span-7 space-y-12">
-              <div className="space-y-8">
-                <h2 className="text-5xl font-black uppercase tracking-tight text-black flex items-center gap-6">
-                  <Maximize2 className="text-[#CC0000] w-12 h-12" />
-                  Terminal <span className="text-[#CC0000]">Integrity</span>
-                </h2>
-                <p className="text-3xl font-bold leading-tight text-gray-900 border-l-[12px] border-black pl-10">
-                  {AIRPORT_DATA.description}
+              <div className="relative z-10">
+                <p className="text-6xl font-black tracking-tighter text-white group-hover:text-[#CC0000] transition-colors duration-500">
+                  {stat.value}<span className="text-2xl text-zinc-600 ml-2">{stat.unit}</span>
                 </p>
-                <p className="text-xl text-gray-600 leading-relaxed font-medium">
-                  {AIRPORT_DATA.overview}
+                <p className="text-sm font-black uppercase tracking-widest text-zinc-400 mt-4">{stat.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ========================================= */}
+        {/* 3. TERMINAL APPLICATIONS BENTO            */}
+        {/* ========================================= */}
+        <div className="mb-32">
+          <div className="flex items-center gap-4 mb-12">
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">
+              Extreme <span className="text-[#CC0000]">Applications</span>
+            </h2>
+            <div className="h-1 flex-1 bg-white/10 ml-4" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            {/* Aviation Box */}
+            <div className="bg-[#0A0A0A] border border-white/5 hover:border-[#CC0000] transition-all duration-500 group flex flex-col justify-between p-12 h-full min-h-[400px]">
+              <div>
+                <Plane className="w-12 h-12 text-zinc-600 group-hover:text-white mb-8 transition-colors" />
+                <h3 className="text-4xl font-black uppercase tracking-wide mb-4">Aviation Tarmacs</h3>
+                <p className="text-zinc-400 font-medium leading-relaxed max-w-lg">
+                  Runways, taxiways, and terminal aprons require infrastructure that will not deflect under the massive point-load of a commercial jetliner gear. Our solid iron utility risers lock down flush to ensure zero FOD (Foreign Object Debris) hazard.
                 </p>
               </div>
-
-              {/* Engineering Feature Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
-                {[
-                  { icon: <Lock />, title: 'Jet-Blast Security', desc: 'Recessed mechanical locking prevents riser displacement during engine thrust.' },
-                  { icon: <ShieldAlert />, title: 'FAA Compliant', desc: 'Built to AC 150/5320-6G standards for runway safety areas.' },
-                  { icon: <Activity />, title: 'Fatigue Resistance', desc: 'Ductile iron alloys specifically formulated to resist cold-cracking and high-impact cycles.' },
-                  { icon: <Anchor />, title: 'Saltwater Shield', desc: 'Available with hot-dip galvanized or epoxy coatings for coastal port facilities.' }
-                ].map((feat, i) => (
-                  <div key={i} className="bg-zinc-50 p-10 border border-zinc-100 hover:border-[#CC0000] transition-all group">
-                    <div className="text-[#CC0000] mb-6 group-hover:scale-110 transition-transform duration-300">
-                      {feat.icon}
-                    </div>
-                    <h4 className="font-black uppercase text-lg mb-3 tracking-widest text-black">{feat.title}</h4>
-                    <p className="text-sm font-bold text-gray-500 leading-relaxed">{feat.desc}</p>
-                  </div>
-                ))}
+              <div className="mt-12 flex justify-end">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
+                  View Aviation Specs
+                </Button>
               </div>
             </div>
 
-            {/* Sidebar Engineering Data */}
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
-              <div className="bg-zinc-950 text-white p-12 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] relative">
-                <div className="absolute top-0 left-0 w-full h-2 bg-[#CC0000]" />
-
-                <h3 className="text-[11px] font-black uppercase tracking-[0.4em] text-[#CC0000] mb-12 pb-6 border-b border-white/10 flex items-center gap-3">
-                  <FileText size={18} /> EHD Data Sheet
-                </h3>
-
-                <div className="space-y-8 mb-16">
-                  {[
-                    { label: 'Tensile Strength', value: '80,000 PSI Minimum' },
-                    { label: 'Yield Strength', value: '55,000 PSI Minimum' },
-                    { label: 'Elongation', value: '10% Minimum' },
-                    { label: 'Load Rating', value: 'Extra-Heavy Duty (EHD)' },
-                    { label: 'Compliance', value: 'FAA / NAVFAC / Port Authority' }
-                  ].map((spec, i) => (
-                    <div key={i} className="flex flex-col gap-2 border-b border-white/5 pb-5">
-                      <span className="text-zinc-500 text-[10px] font-black uppercase tracking-widest">{spec.label}</span>
-                      <span className="font-black text-xl text-white tracking-tight">{spec.value}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <Button className="w-full bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-20 uppercase tracking-[0.25em] text-xs transition-all rounded-none group">
-                  Download Full EHD Catalog <ArrowRight className="ml-2 group-hover:translate-x-3 transition-transform" />
+            {/* Ports Box */}
+            <div className="bg-[#0A0A0A] border border-white/5 hover:border-[#CC0000] transition-all duration-500 group flex flex-col justify-between p-12 h-full min-h-[400px]">
+              <div>
+                <Anchor className="w-12 h-12 text-zinc-600 group-hover:text-white mb-8 transition-colors" />
+                <h3 className="text-4xl font-black uppercase tracking-wide mb-4">Intermodal Ports</h3>
+                <p className="text-zinc-400 font-medium leading-relaxed max-w-lg">
+                  Gantry cranes, reach stackers, and fully loaded shipping containers exert extreme continuous pressure on port asphalt. Our heavy-duty catch basin frames handle the crushing weight while draining massive seaside stormwater volumes.
+                </p>
+              </div>
+              <div className="mt-12 flex justify-end">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
+                  View Port Specs
                 </Button>
               </div>
             </div>
 
           </div>
         </div>
-      </section>
 
-      {/* ========================================= */}
-      {/* 4. CALL TO ACTION                          */}
-      {/* ========================================= */}
-      <section className="py-32 bg-[#0F0F0F] text-white relative overflow-hidden">
-        {/* Decorative Grid Background */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#CC0000 1px, transparent 0)', backgroundSize: '40px 40px' }} />
-
-        <div className="max-w-[1400px] mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-10 leading-none">
-            Secure Your <br /> <span className="text-[#CC0000]">Heavy Logistics</span>
-          </h2>
-          <p className="max-w-3xl mx-auto font-bold text-2xl text-zinc-400 mb-16 leading-relaxed">
-            "Compromise is not an option in aviation infrastructure. We deliver the duty ratings required for the world's busiest hubs."
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-8">
-            <Button className="bg-[#CC0000] text-white hover:bg-white hover:text-black font-black px-16 h-24 text-xl uppercase transition-all rounded-none shadow-2xl">
-              Consult a Specialist
-            </Button>
-            <Button variant="outline" className="border-4 border-white text-white hover:bg-[#CC0000] hover:border-[#CC0000] font-black px-16 h-24 text-xl uppercase transition-all rounded-none">
-              Project Pricing
-            </Button>
+        {/* ========================================= */}
+        {/* 4. HEAVY FABRICATION CALLOUT               */}
+        {/* ========================================= */}
+        <div className="bg-gradient-to-r from-[#CC0000] to-[#800000] p-12 lg:p-24 relative overflow-hidden group">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 group-hover:scale-105 transition-transform duration-1000">
+            <Layers className="w-[800px] h-[800px] text-black" />
+          </div>
+          
+          <div className="relative z-10 max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-black text-white text-[10px] font-black uppercase tracking-widest mb-8">
+              <Activity className="w-3 h-3 text-[#CC0000]" /> Custom Engineering Division
+            </div>
+            
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white mb-6">
+              Require A Custom <br /> Load Rating?
+            </h2>
+            <p className="text-xl font-bold text-white/90 leading-relaxed mb-12">
+              If your facility hosts specialized heavy equipment that exceeds standard highway H-20 ratings, our foundry engineers will design and cast a custom solution guaranteed to perform.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button size="lg" className="bg-black hover:bg-white text-white hover:text-black font-black uppercase tracking-widest px-10 h-16 rounded-none transition-colors shadow-2xl">
+                Submit Blueprints
+              </Button>
+              <Button size="lg" variant="outline" className="border-4 border-black text-black bg-transparent hover:bg-black hover:text-white font-black uppercase tracking-widest px-10 h-16 rounded-none transition-colors">
+                Contact Engineers
+              </Button>
+            </div>
           </div>
         </div>
-      </section>
+
+      </div>
     </div>
   );
 }
