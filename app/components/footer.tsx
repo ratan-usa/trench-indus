@@ -43,10 +43,10 @@ const FOOTER_LINKS = [
     {
         title: 'Technical Library',
         links: [
-            { name: 'DOT Approval Letters', href: '/resources/literature' },
-            { name: 'Installation Videos', href: '/resources/videos' },
-            { name: 'Load Test Reports', href: '/resources/briefs' },
-            { name: 'CAD/BIM Riser Files', href: '/resources/calculators' },
+            { name: 'Literature & Specs', href: '/resources/literature' },
+            { name: 'Video Gallery', href: '/resources/videos' },
+            { name: 'Engineering Briefs', href: '/resources/briefs' },
+            { name: 'Calculators & Tools', href: '/resources/calculators' },
         ],
     },
     {
