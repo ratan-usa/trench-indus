@@ -36,7 +36,7 @@ const TABS = [
     count: "05",
     // Replace this ID with your Vimeo Video ID for Terraces
     // videoUrl: "/video/PR Manufacturing Video.mp4" 
-    videoUrl: "/video/C24A 11 options.mp4"
+    videoUrl: "/video/C24A_11_options.mp4"
 
   },
   {
@@ -44,21 +44,21 @@ const TABS = [
     label: 'Landscaping & Gardens',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Landscaping
-    videoUrl: "/video/GIF paving risere with frame.698.mp4"
+    videoUrl: "/video/Catch basin riser ayush.718.mp4"
   },
   {
     id: 'driveways',
     label: 'Driveways & Access Areas',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Driveways/Heavy Traffic
-    videoUrl: "/video/C24A 11 options.mp4"
+    videoUrl: "/video/C24A_11_options.mp4"
   },
   {
     id: 'joinery',
     label: 'Structural & Custom Works',
     count: "02",
     // Replace this ID with your Vimeo Video ID for Structural Custom fabrications
-    videoUrl: "/video/GIF paving risere with frame.698.mp4"
+    videoUrl: "/video/paving_riser_solid_ring_utilisation_animation_676.mp4"
   },
 ];
 

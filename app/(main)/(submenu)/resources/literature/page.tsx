@@ -118,7 +118,7 @@ export default function LiteraturePage() {
                   playsInline
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 >
-                  <source src="/video/GIF_paving_risere_with_frame_698.mp4" type="video/mp4" />
+                  <source src="/video/1.719.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-20 h-20 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center pl-2 opacity-90 group-hover:scale-110 transition-transform">
