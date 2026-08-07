@@ -40,7 +40,7 @@ const CATEGORIES = [
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
       { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
     ],
-    image: '/assets/Fabricated Steel Drainage Grate Assembl.jpeg'
+    image: '/assets/Fabricated Steel Drainage Grate Assembl.png'
   },
   {
     id: 'trash-racks',

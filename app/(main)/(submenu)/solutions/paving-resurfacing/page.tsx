@@ -105,7 +105,7 @@ export default function PavingResurfacingPage() {
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
               Primary Solutions for <span className="text-[#CC0000]">Paving</span>
             </h2>
-            <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none px-8 h-12 transition-colors">
+            <Button variant="outline" className="border-white/20 text-[#CC0000] hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none px-8 h-12 transition-colors">
               View All Products <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>

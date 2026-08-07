@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { ChevronDown } from 'lucide-react'
 
 const NAV_LINKS = [
@@ -46,9 +45,9 @@ const NAV_LINKS = [
         title: 'Contact',
         href: '#contact',
         dropdown: [
-            { name: 'Request a Quote', href: '/contact' },
+            { name: 'Request a Quote', href: '/contact/quote' },
             { name: 'Foundry Locations', href: '/about/locations' },
-            { name: 'Submit Specifications', href: '/contact' },
+            { name: 'Submit Specifications', href: '/contact/specifications' },
         ],
     },
 ];

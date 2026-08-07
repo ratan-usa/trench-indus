@@ -13,6 +13,7 @@ import {
   Layers,
   Crosshair
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AirportsPortsPage() {
   return (
@@ -32,7 +33,7 @@ export default function AirportsPortsPage() {
         {/* ========================================= */}
         {/* 1. CLASSIFIED / EXTREME HERO              */}
         {/* ========================================= */}
-        <div className="max-w-7xl mx-auto mb-32">
+        <div className="mb-16">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-4 h-4 bg-[#CC0000] animate-pulse" />
             <span className="text-xs font-mono font-bold uppercase tracking-[0.3em] text-[#CC0000]">
@@ -108,7 +109,7 @@ export default function AirportsPortsPage() {
                 </p>
               </div>
               <div className="mt-12 flex justify-end">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
+                <Button variant="outline" className="border-white/20 text-[#CC0000] hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
                   View Aviation Specs
                 </Button>
               </div>
@@ -124,7 +125,7 @@ export default function AirportsPortsPage() {
                 </p>
               </div>
               <div className="mt-12 flex justify-end">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
+                <Button variant="outline" className="border-white/20 text-[#CC0000] hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none h-12 px-6">
                   View Port Specs
                 </Button>
               </div>
@@ -137,8 +138,9 @@ export default function AirportsPortsPage() {
         {/* 4. HEAVY FABRICATION CALLOUT               */}
         {/* ========================================= */}
         <div className="bg-gradient-to-r from-[#CC0000] to-[#800000] p-12 lg:p-24 relative overflow-hidden group">
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 group-hover:scale-105 transition-transform duration-1000">
-            <Layers className="w-[800px] h-[800px] text-black" />
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-50 group-hover:scale-105 transition-transform duration-1000">
+            {/* <Layers className="w-[800px] h-[800px] text-black" /> */}
+            <Image src={'/assets/TechnoML (1).png'} alt='Heavy Fabrication Callout' width={'400'} height={'400'}/>
           </div>
           
           <div className="relative z-10 max-w-3xl">

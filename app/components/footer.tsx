@@ -52,9 +52,9 @@ const FOOTER_LINKS = [
     {
         title: 'Contact',
         links: [
-            { name: 'Request a Quote', href: '/contact' },
+            { name: 'Request a Quote', href: '/contact/quote' },
             { name: 'Foundry Locations', href: '/about/locations' },
-            { name: 'Submit Specifications', href: '/contact' },
+            { name: 'Submit Specifications', href: '/contact/specifications' },
         ],
     },
 ];
@@ -113,7 +113,7 @@ export default function HeavyFooter() {
                 <div className="text-sm">
                   <h4 className="font-black uppercase tracking-wider text-white/70 text-xs mb-1">Casting Foundry Logistics</h4>
                   <p className="font-bold text-white leading-relaxed">
-                    Paving Risers Supply<br />
+                   
                     105 Maxes Road<br />
                     Melville, NY 11747, USA
                   </p>

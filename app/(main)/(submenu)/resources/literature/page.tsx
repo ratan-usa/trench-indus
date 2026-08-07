@@ -177,6 +177,9 @@ export default function LiteraturePage() {
               <div className="relative h-64 bg-[#0A0A0A] overflow-hidden flex items-center justify-center border-b border-white/5">
                 {/* Simulated blueprint background */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(204,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,0,0,0.1)_1px,transparent_1px)] bg-[size:10px_10px]" />
+                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
+                  <source src="/video/C24A_11_options.mp4" type="video/mp4" />
+                </video>
                 <FileCheck2 className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">

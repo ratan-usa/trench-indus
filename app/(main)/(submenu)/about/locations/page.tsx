@@ -69,7 +69,7 @@ export default function FoundryLocationsPage() {
               <div className="space-y-8 flex-1">
                 <div className="space-y-2">
                   <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2">Address</p>
-                  <p className="text-2xl font-bold leading-tight">Paving Risers Supply<br />105 Maxes Road<br />Melville, NY 11747, USA</p>
+                  <p className="text-2xl font-bold leading-tight">105 Maxes Road<br />Melville, NY 11747, USA</p>
                 </div>
 
                 <div className="h-[1px] w-full bg-white/10" />
@@ -112,7 +112,7 @@ export default function FoundryLocationsPage() {
               <div className="space-y-8 flex-1">
                 <div className="space-y-2">
                   <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2">Address</p>
-                  <p className="text-2xl font-bold leading-tight">Paving Risers Supply<br />850 NW Federal Hwy<br />Stuart, FL 34994, USA</p>
+                  <p className="text-2xl font-bold leading-tight">850 NW Federal Hwy<br />Stuart, FL 34994, USA</p>
                 </div>
 
                 <div className="h-[1px] w-full bg-white/10" />
