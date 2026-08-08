@@ -85,7 +85,7 @@ export default function CatchBasinSteelRisers() {
           {/* RIGHT: SCHEMATIC VIEWPORT (5 Columns Wide) */}
           <div className="lg:col-span-5 relative  h-full bg-gray-50 border border-gray-200 rounded-xs overflow-hidden p-6 flex items-center justify-center group shadow-sm hover:border-[#cc2221] transition-colors duration-300 w-full">
             <Image 
-              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%201%20coated.655.png" 
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201%20coated.655.png`} 
               alt="Catch Basin Riser Schematic Layout"
               fill
               className="object-contain p-8 mix-blend-multiply transition-transform duration-500 group-hover:scale-102"

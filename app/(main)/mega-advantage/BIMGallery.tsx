@@ -10,15 +10,15 @@ const FILTERS = [
 ];
 
 const PROJECTS = [
-  { id: 1, title: "Point Cloud Data to CAD Drawings", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-1.jpg" },
-  { id: 2, title: "Convert 3D Scan images to BIM models", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-2.jpg" },
-  { id: 3, title: "3D Scanned Point Cloud Data into BIM", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-3.jpg" },
-  { id: 4, title: "Revit Families for Plumbing Products", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-4.jpg" },
-  { id: 5, title: "BIM Objects for MEP Product Manufacturer", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-5.jpg" },
-  { id: 6, title: "3D MEP Modeling for Residential Building", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-6.jpg" },
-  { id: 7, title: "Large Scale Infrastructure Planning", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-7.jpg" },
-  { id: 8, title: "Industrial Plant MEP Coordination", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-8.jpg" },
-  { id: 9, title: "Commercial Building Facade BIM", image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/bim-9.jpg" },
+  { id: 1, title: "Point Cloud Data to CAD Drawings", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-1.jpg` },
+  { id: 2, title: "Convert 3D Scan images to BIM models", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-2.jpg` },
+  { id: 3, title: "3D Scanned Point Cloud Data into BIM", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-3.jpg` },
+  { id: 4, title: "Revit Families for Plumbing Products", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-4.jpg` },
+  { id: 5, title: "BIM Objects for MEP Product Manufacturer", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-5.jpg` },
+  { id: 6, title: "3D MEP Modeling for Residential Building", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-6.jpg` },
+  { id: 7, title: "Large Scale Infrastructure Planning", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-7.jpg` },
+  { id: 8, title: "Industrial Plant MEP Coordination", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-8.jpg` },
+  { id: 9, title: "Commercial Building Facade BIM", image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/bim-9.jpg` },
 ];
 
 export default function BIMGallery() {

@@ -27,7 +27,7 @@ const RISER_SECTIONS = [
     title: "Cast Iron",
     highlightText: "Paving Risers",
     description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
-    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Round%20No%20screw%20coated.660.png",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20coated.660.png`,
     features: [
       { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for H-20 heavy traffic loads." },
       { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
@@ -46,7 +46,7 @@ const RISER_SECTIONS = [
     title: "Mega-Adjust™",
     highlightText: "Expandable Risers",
     description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in turnbuckle linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
-    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Round%20No%20screw%20ductile%20iron.662.png",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20ductile%20iron.662.png`,
     features: [
       { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to bite into the base frame permanently." },
       { icon: "Timer", title: "Zero Cure Time", desc: "Paving crews can lay asphalt immediately after installation." }
@@ -62,7 +62,7 @@ const RISER_SECTIONS = [
     title: "Catch Basin &",
     highlightText: "Curb Inlets",
     description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers designed specifically to raise storm grates and curb inlets to final grade.",
-    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`,
     features: [
       { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
       { icon: "ShieldCheck", title: "Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
@@ -81,7 +81,7 @@ const RISER_SECTIONS = [
     title: "Sloped &",
     highlightText: "Tapered Risers",
     description: "Roads are rarely perfectly flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a perfectly flush fit.",
-    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Square%20ductile%20iron.663.png",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20ductile%20iron.663.png`,
     isComingSoon: true, // Added flag for the badge
     features: [
       { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to 15%+ grades." },

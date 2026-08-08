@@ -22,7 +22,7 @@ const SOLUTIONS = [
         slug: "storm-drainage",
         icon: <Waves className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Catch basin risers, trench grates, and drainage access solutions designed for efficient stormwater management.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image3.jpeg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image3.jpeg`,
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ const SOLUTIONS = [
         slug: "sanitary-sewer",
         icon: <Droplets className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Manhole covers and risers engineered for safe, durable access to sanitary sewer systems.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image5.jpeg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image5.jpeg`,
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ const SOLUTIONS = [
         slug: "utility",
         icon: <Zap className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Access assemblies and riser solutions protecting underground gas, electric, and water utilities.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image13.jpg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image13.jpg`,
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const SOLUTIONS = [
         slug: "telecommunication",
         icon: <Wifi className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Secure covers and access points for fiber optic and telecommunication infrastructure in public spaces.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image14.jpeg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image14.jpeg`,
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const SOLUTIONS = [
         slug: "water-distribution",
         icon: <Droplets className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Valve boxes, hydrant surrounds, and access solutions for reliable water distribution networks.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image17.jpg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image17.jpg`,
     },
     {
         id: 6,
@@ -62,7 +62,7 @@ const SOLUTIONS = [
         slug: "streetscapes",
         icon: <Construction className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Tree grates, frames, and covers designed to enhance aesthetics while supporting urban infrastructure.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image18.jpeg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image18.jpeg`,
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ const SOLUTIONS = [
         slug: "airports-ports",
         icon: <Plane className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Heavy-duty trench grates and access systems built for extreme loads in airports and port facilities.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image19.jpeg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image19.jpeg`,
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ const SOLUTIONS = [
         slug: "paving-resurfacing",
         icon: <Layers className="w-10 h-10 mb-2 text-[#CC0000]" />,
         description: "Risers and frames designed to integrate seamlessly with paving and resurfacing projects.",
-        imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image20.jpg",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image20.jpg`,
     },
 ];
 

@@ -73,7 +73,7 @@ export default function MegaPavingRisers() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/catalog/MEGA-PAVING-RISERS-CATALOGS.pdf">
+                        <Link href={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/catalog/MEGA-PAVING-RISERS-CATALOGS.pdf`}>
                             <Button size="lg" className="bg-[#CC0000] hover:bg-white hover:text-black text-white text-sm px-10 py-8 font-black uppercase tracking-[0.2em] rounded-none transition-all duration-300">
                                 <Download className="mr-2 w-5 h-5" /> Download Catalog
                             </Button>

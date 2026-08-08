@@ -7,21 +7,21 @@ const RESOURCES = [
     id: 'safety',
     title: 'Safety & DOT Compliance',
     description: 'Learn best practices for minimizing jobsite risks and ensuring your adjustment risers meet local DOT load ratings.',
-    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20rectangle%20iron.668.png', // Replace with an active paving/roadwork jobsite
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20iron.668.png`, // Replace with an active paving/roadwork jobsite
     href: '#safety'
   },
   {
     id: 'installation',
     title: 'Installation Guides',
     description: 'Get step-by-step tips from the foundry on setting, sealing, and expanding heavy-duty cast iron frames.',
-    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%201.641.png', // Replace with an active paving/roadwork jobsite
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201.641.png`, // Replace with an active paving/roadwork jobsite
     href: '#installation'
   },
   {
     id: 'case-studies',
     title: 'Case Studies',
     description: 'See how our direct-to-site delivery helped municipal road crews overcome tight resurfacing deadlines.',
-    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/D%20shape%20Riser%20Raw%20Finish.602.png', // Replace with an active paving/roadwork jobsite
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20Raw%20Finish.602.png`, // Replace with an active paving/roadwork jobsite
     href: '#case-studies'
   }
 ];

@@ -17,11 +17,11 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Riser%20Raw%20Finish.606.png' },
-  { name: 'Coated Finish', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Riser%20coated%20Finish.605.png' },
-  { name: 'Cast Iron', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Riser%20iron.608.png' },
-  { name: 'Ductile Iron', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20rectangle%20ductile%20iron.672.png' },
-  { name: 'Steel Fabricated', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20rectangle%20steel.671.png' },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20Raw%20Finish.606.png` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20coated%20Finish.605.png` },
+  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20iron.608.png` },
+  { name: 'Ductile Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20ductile%20iron.672.png` },
+  { name: 'Steel Fabricated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20steel.671.png` },
 ];
 
 export default function CatchBasinRisersPage() {

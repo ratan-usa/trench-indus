@@ -22,7 +22,7 @@ export default function IndustrySolutionsBanner() {
         {/* Banner Background Image */}
         <div className="absolute top-0 right-0 w-full md:w-2/3 h-full z-0">
           <Image
-            src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/ind-1.jpg" // Replace with a shot of workers or a foundry
+            src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/ind-1.jpg`} // Replace with a shot of workers or a foundry
             alt="Industrial workers"
             fill
             className="object-cover opacity-30 mix-blend-multiply grayscale"

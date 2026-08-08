@@ -103,7 +103,7 @@ export default function RiserAnimationShowcase() {
                 onPause={() => setIsPlaying(false)}
               >
                 {/* Ensure your video file path matches your project structure */}
-                <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/GIF%20paving%20risere%20with%20frame.748.mp4" type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/GIF%20paving%20risere%20with%20frame.748.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 

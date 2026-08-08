@@ -20,7 +20,7 @@ const SOLUTIONS_DB = [
     slug: 'storm-drainage',
     title: 'Storm Drainage Solutions',
     subtitle: 'Catch basin risers and trench grates designed for efficient municipal stormwater management.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image3.jpeg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image3.jpeg`,
     overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Mega Paving Risers provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
     benefits: [
       { title: 'Heavy-Duty Grate Compatibility', desc: 'Fits all standard bicycle-safe and heavy-traffic grates.' },
@@ -34,7 +34,7 @@ const SOLUTIONS_DB = [
     slug: 'sanitary-sewer',
     title: 'Sanitary Sewer Infrastructure',
     subtitle: 'Manhole covers and risers engineered to prevent Inflow & Infiltration (I&I).',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image5.jpeg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image5.jpeg`,
     overview: 'Sanitary sewer systems require absolutely watertight access points to prevent environmental hazards and costly water treatment overloads. Our solid cast iron and expandable risers are designed to create a perfect, sealed fit with existing manhole frames, ensuring zero movement under heavy traffic loads.',
     benefits: [
       { title: 'I&I Prevention', desc: 'Machined surfaces for watertight gasket seals.' },
@@ -48,7 +48,7 @@ const SOLUTIONS_DB = [
     slug: 'utility',
     title: 'Utility Infrastructure',
     subtitle: 'Access assemblies protecting underground gas, electric, and water utilities.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image13.jpg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image13.jpg`,
     overview: 'Underground utilities require secure, easily accessible, and highly identifiable access points. We fabricate heavy-duty valve box risers, monument boxes, and electrical vault covers that protect critical infrastructure while allowing rapid access for municipal maintenance crews.',
     benefits: [
       { title: 'Secure Access', desc: 'Locking mechanisms available for high-security vault covers.' },
@@ -62,7 +62,7 @@ const SOLUTIONS_DB = [
     slug: 'telecommunication',
     title: 'Telecommunication Networks',
     subtitle: 'Secure covers and access points for fiber optic and telecommunication infrastructure.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image14.jpeg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image14.jpeg`,
     overview: 'As urban environments upgrade their digital infrastructure, securing fiber optic and telecom access points is paramount. Our specialized covers and frames are designed to protect sensitive subsurface equipment from water intrusion, heavy traffic, and unauthorized access.',
     benefits: [
       { title: 'Lightweight Options', desc: 'Composite and aluminum covers available for easier crew access.' },
@@ -76,7 +76,7 @@ const SOLUTIONS_DB = [
     slug: 'water-distribution',
     title: 'Water Distribution',
     subtitle: 'Valve boxes, hydrant surrounds, and access solutions for reliable water networks.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image17.jpg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image17.jpg`,
     overview: 'Maintaining clean, continuous water flow to municipalities requires durable infrastructure. We supply a massive inventory of valve box risers, curb boxes, and meter pit covers designed specifically to keep water distribution controls accessible and protected from street paving overlays.',
     benefits: [
       { title: 'Adjustable Heights', desc: 'Slip-type and screw-type valve box extensions.' },
@@ -90,7 +90,7 @@ const SOLUTIONS_DB = [
     slug: 'streetscapes',
     title: 'Streetscapes & Urban Design',
     subtitle: 'Tree grates, frames, and covers designed to enhance aesthetics while supporting infrastructure.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image18.jpeg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image18.jpeg`,
     overview: 'Urban renewal projects demand infrastructure that is both highly functional and visually appealing. Our streetscape division focuses on architectural cast iron, providing tree grates, decorative trench drains, and ADA-compliant pedestrian covers that elevate city downtowns and public parks.',
     benefits: [
       { title: 'ADA Compliant', desc: 'Heel-proof grate designs ensure pedestrian and wheelchair safety.' },
@@ -104,7 +104,7 @@ const SOLUTIONS_DB = [
     slug: 'airports-ports',
     title: 'Airports & Ports',
     subtitle: 'Heavy-duty trench grates and access systems built for extreme loads.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image19.jpeg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image19.jpeg`,
     overview: 'Aviation and maritime logistics require infrastructure capable of withstanding the most extreme dynamic loads on the planet. Our Extra-Heavy Duty (Airport Rated) castings are engineered to support massive aircraft wheel loads, container handlers, and specialized freight equipment.',
     benefits: [
       { title: 'Extreme Load Rating', desc: 'Engineered for FAA and Port Authority load specifications (100,000+ lbs).' },
@@ -118,7 +118,7 @@ const SOLUTIONS_DB = [
     slug: 'paving-resurfacing',
     title: 'Paving & Resurfacing',
     subtitle: 'Risers and frames designed to integrate seamlessly with paving projects.',
-    heroImage: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/industries/image20.jpg',
+    heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image20.jpg`,
     overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Mega-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations in minutes, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
     benefits: [
       { title: 'Zero Cure Time', desc: 'Pave immediately after dropping the riser into place.' },

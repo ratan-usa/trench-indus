@@ -16,12 +16,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20Raw%20Finish.613.png' },
-  { name: 'Coated Finish', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20Coated%20Finish.612.png' },
-  { name: 'Iron Finish', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20iron%20Finish.614.png' },
-  { name: 'With Screw (Raw)', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png' },
-  { name: 'With Screw (Coated)', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20with%20screw%20coated%20Finish.618.png' },
-  { name: 'With Screw (Iron)', image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20with%20screw%20iron%20Finish.615.png' }
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Raw%20Finish.613.png` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Coated%20Finish.612.png` },
+  { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png` },
+  { name: 'With Screw (Raw)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png` },
+  { name: 'With Screw (Coated)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20coated%20Finish.618.png` },
+  { name: 'With Screw (Iron)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20iron%20Finish.615.png` }
 ];
 
 const MANHOLE_RISER_DATA = {

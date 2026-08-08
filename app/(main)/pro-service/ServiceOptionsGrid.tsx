@@ -9,7 +9,7 @@ const SERVICE_OPTIONS = [
     description: "Manage your riser inventory from the truck. Use our contractor portal to check live stock for standard cast iron rings, submit specs for custom fabrication, and track your jobsite deliveries in real-time.",
     linkText: "Explore online tools",
     linkHref: "#online-tools",
-    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png" // Replace with an image of a contractor on a tablet
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   },
   {
     id: 'jobsite',
@@ -17,7 +17,7 @@ const SERVICE_OPTIONS = [
     description: "Don't waste time making warehouse runs. We deliver pallets of steel and ductile iron adjustment risers straight to your staging area. Our logistics crew ensures you have the exact sizes you need before the road gets torn up.",
     linkText: "Find delivery solutions",
     linkHref: "#delivery",
-    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png" // Replace with an image of a contractor on a tablet
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   },
   {
     id: 'branch',
@@ -25,7 +25,7 @@ const SERVICE_OPTIONS = [
     description: "Drop by our warehouse to get hands-on help from our infrastructure experts. We can help you match degraded manhole seats with the right expandable rings, walk you through DOT specs, and set up commercial credit terms.",
     linkText: "Connect with our pro desk",
     linkHref: "#pro-desk",
-    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png" // Replace with an image of a contractor on a tablet
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   }
 ];
 
