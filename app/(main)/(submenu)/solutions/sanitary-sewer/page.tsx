@@ -111,7 +111,7 @@ export default function SanitarySewerPage() {
         <div className="bg-[#CC0000] p-12 lg:p-24 relative overflow-hidden">
           <div className="absolute -right-32 -bottom-32 opacity-10">
             <Image 
-              src="/paving/Round Riser with screw Raw Finish.617.png" 
+              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png" 
               alt="Background Riser" 
               width={800} 
               height={800} 

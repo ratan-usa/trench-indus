@@ -23,7 +23,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CTR-16",
     description: "Precision clamping system designed to quickly reshape crushed or out-of-round soft copper service lines on jobsites.",
     spec: "Dual-Vice Vise-Grip Pressure Frame",
-    image: "/assets/paving rings/mr2.1.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.1.png"
   },
   {
     title: "Water Service Curb Box Lock",
@@ -31,7 +31,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CBL-14",
     description: "Heavy tamper-proof physical locking shroud designed to block unauthorized access to curb box covers.",
     spec: "High-Vis Safety Red Shroud Core",
-    image: "/assets/paving rings/mr2.2.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.2.png"
   },
   {
     title: "Water Service Locking Valve Cover",
@@ -39,7 +39,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-LVC-15",
     description: "Solid steel enclosure engineered to bolt directly over underground water service lines for security.",
     spec: "Heavy-Gauge Fabricated Box Steel",
-    image: "/assets/paving rings/mr2.3.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.3.png"
   },
   {
     title: "Adjustable Hydrant Wrench",
@@ -47,7 +47,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-AHW-10",
     description: "Universal pinned plumbing wrench design configured to fit multiple sizes of hydrant pentagon nuts and pin couplers.",
     spec: "Adjustable Jaw • Heavy Cast Finish",
-    image: "/assets/paving rings/mr2.4.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.4.png"
   },
   {
     title: "¾\" - 1\" Service Line Puller Kit",
@@ -55,7 +55,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SLP-01",
     description: "Complete heavy-duty contractor tool kit in a ballistic nylon canvas bag for underground pipe pulling swaps.",
     spec: "Includes Cable Lines, Grippers, Adaptors",
-    image: "/assets/paving rings/mr2.5.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.5.png"
   },
   {
     title: "1¼\" - 2\" Service Line Puller Kit",
@@ -63,7 +63,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SLP-02",
     description: "Industrial-grade large diameter pipe puller extraction kit engineered to withstand massive tensile loads.",
     spec: "Includes Heavy Cable Matrix Cases",
-    image: "/assets/paving rings/mr2.1.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.1.png"
   },
 
   // --- FILE REFERENCE: 8.jpg ---
@@ -73,7 +73,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-PCD-11",
     description: "Segmented steel scraper assembly configured to drop inside operational pipelines to strip internal scale layers.",
     spec: "Multi-Link Flex Joint Configuration",
-    image: "/assets/paving rings/mr2.2.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.2.png"
   },
   {
     title: "1\" Service Box Cleaning Auger",
@@ -81,7 +81,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SBA-12",
     description: "Heavy-duty screw drill bit designed to drill out mud, hard debris, and packed rocks inside 1-inch utility service shafts.",
     spec: "High-Pitch Clear Helix Design",
-    image: "/assets/paving rings/mr2.3.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.3.png"
   },
   {
     title: "Valve Box Auger Cleaner",
@@ -89,7 +89,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-VBA-13",
     description: "Deep-reach hand-cranked earth and debris auger for extracting blockages at the bottom of valve boxes.",
     spec: "Extended Shaft with T-Handle Crank",
-    image: "/assets/paving rings/mr2.4.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.4.png"
   },
   {
     title: "Manhole Cover Hook",
@@ -97,7 +97,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-MHH-01",
     description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
     spec: "Heat-Treated Solid Carbon Steel",
-    image: "/assets/paving rings/mr2.5.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.5.png"
   },
   {
     title: "Hydrant Meter Stand",
@@ -105,7 +105,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HMS-21",
     description: "Solid-base floor support stand built to isolate and secure heavy fire hydrant monitoring meters off the ground.",
     spec: "Wide Stability Base Plate Shield",
-    image: "/assets/paving rings/mr2.1.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.1.png"
   },
   {
     title: "Service Box Extensions",
@@ -113,7 +113,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SBE-22",
     description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during paving overlays.",
     spec: "Available in Three Uniform Length Tiers",
-    image: "/assets/paving rings/mr2.2.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.2.png"
   },
 
   // --- FILE REFERENCE: 9.jpg ---
@@ -123,7 +123,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CHK-02",
     description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
     spec: "Reinforced Alloy Steel Profile",
-    image: "/assets/paving rings/mr2.3.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.3.png"
   },
   {
     title: "Pent End Wrench, Standard T Handle",
@@ -131,7 +131,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-PEW-17",
     description: "Pentagonal socket wrench built to operate proprietary water department utility security covers.",
     spec: "Five-Sided Machined Socket Box",
-    image: "/assets/paving rings/mr2.4.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.4.png"
   },
   {
     title: "T Handle 2-Hole End Wrench",
@@ -139,7 +139,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-2HW-18",
     description: "Specialized double-prong spanner key engineered for utility covers requiring circular pin drive connections.",
     spec: "Machined Steel Prong Layout",
-    image: "/assets/paving rings/mr2.5.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.5.png"
   },
   {
     title: "Curb End Wrench / Curb Key, Standard T Handle",
@@ -147,7 +147,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CEW-03",
     description: "Slotted jaw profile designed to reach deep into narrow curb boxes to operate municipal shutoff valves.",
     spec: "Fixed T-Bar Handwheel Grip",
-    image: "/assets/paving rings/mr2.1.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.1.png"
   },
   {
     title: "Standard T Handle Gate Wrench",
@@ -155,7 +155,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-STW-04",
     description: "Standard infrastructure operator key designed to engage square gate valve operating nuts on main lines.",
     spec: "Square-Socket Engagement Drive",
-    image: "/assets/paving rings/mr2.2.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.2.png"
   },
   {
     title: "Telescopic Gate Wrench",
@@ -163,7 +163,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-TGW-05",
     description: "Adjustable height shaft design that expands and locks to match varying utility vault depths on-site.",
     spec: "Variable Telescopic Slide Lock",
-    image: "/assets/paving rings/mr2.3.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.3.png"
   },
   {
     title: "Universal Curb Box and Valve Kit",
@@ -171,7 +171,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-UCK-19",
     description: "Multi-piece modular rod system that interchanges sections to assemble the correct depth valve key on the fly.",
     spec: "Snap-Fit High-Tensile Steel Rod Lines",
-    image: "/assets/paving rings/mr2.4.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.4.png"
   },
   {
     title: "Combination Valve and Curb Key Kit",
@@ -179,7 +179,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-CCK-20",
     description: "Master multi-key kit configured with multiple socket heads, structural adapter fittings, and extended extensions.",
     spec: "Modular Head Configurations Included",
-    image: "/assets/paving rings/mr2.5.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.5.png"
   },
 
   // --- FILE REFERENCE: 10.jpg ---
@@ -189,7 +189,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-RSW-06",
     description: "High-torque operational wrench featuring a top alignment ring base optimized for heavy municipal infrastructure keys.",
     spec: "Solid High-Torque Weldment",
-    image: "/assets/paving rings/mr2.1.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.1.png"
   },
   {
     title: "Standard Valve Setter",
@@ -197,7 +197,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SVS-07",
     description: "Heavy-duty alignment layout tool finished in high-visibility safety red for positioning water valve lines securely.",
     spec: "Powder-Coated Steel Frame",
-    image: "/assets/paving rings/mr2.2.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.2.png"
   },
   {
     title: "Heavy Duty Valve Setter",
@@ -205,7 +205,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HVS-08",
     description: "Reinforced structural steel setup framework configured to lock and true industrial grade main valves.",
     spec: "Dual-Braced Industrial Weldment",
-    image: "/assets/paving rings/mr2.3.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.3.png"
   },
   {
     title: "Hydrant Setter",
@@ -213,7 +213,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-HDS-09",
     description: "Rigging-certified chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
     spec: "Dual Lifting Eyes • Certified Chain Link",
-    image: "/assets/paving rings/mr2.4.png"
+    image: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/paving%20rings/mr2.4.png"
   }
 ];
 

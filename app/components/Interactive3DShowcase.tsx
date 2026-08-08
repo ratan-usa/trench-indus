@@ -44,7 +44,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-coated",
         name: "Round Riser – Coated Finish",
-        path: "/gib files/Round Riser coated Finish.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Round%20Riser%20coated%20Finish.glb",
         hotspots: [
             {
                 id: "rr-p1",
@@ -67,7 +67,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-with-screw",
         name: "Round Riser with Screw – Coated Finish",
-        path: "/gib files/Round Riser with screw coated Finish.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Round%20Riser%20with%20screw%20coated%20Finish.glb",
         hotspots: [
             {
                 id: "rs-p1",
@@ -90,7 +90,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "square-riser-coated",
         name: "Square Riser – Coated Finish",
-        path: "/gib files/Square Riser coated Finish.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Square%20Riser%20coated%20Finish.glb",
         hotspots: [
             {
                 id: "sq-p1",
@@ -113,7 +113,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "rectangle-riser-coated",
         name: "Rectangle Riser – Coated Finish",
-        path: "/gib files/RectangleRiser coated Finish.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/RectangleRiser%20coated%20Finish.glb",
         hotspots: [
             {
                 id: "re-p1",
@@ -136,7 +136,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "d-shape-riser-coated",
         name: "D-Shape Riser – Coated Finish",
-        path: "/gib files/D shape Riser coated Finish.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/D%20shape%20Riser%20coated%20Finish.glb",
         hotspots: [
             {
                 id: "ds-p1",
@@ -159,7 +159,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "mr3-master-riser",
         name: "MR3 Master Riser Assembly",
-        path: "/gib files/mr3.glb",
+        path: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/mr3.glb",
         hotspots: [
             {
                 id: "mr-p1",

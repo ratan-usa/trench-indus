@@ -22,8 +22,8 @@ const PRODUCT_VIDEOS = [
     description: "Full rotation showing the variable height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: "/video/paving-video.mp4",
-    thumbnail: "/paving/paving riser Round No screw steel.661.png"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Round%20No%20screw%20steel.661.png"
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: "/video/paving-video.mp4",
-    thumbnail: "/paving/paving riser Square ductile steel.664.png"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Square%20ductile%20steel.664.png"
   },
   {
     id: 3,
@@ -40,8 +40,8 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: "/video/paving-video.mp4",
-    thumbnail: "/paving/D shape Riser with cast iron.636.png"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/D%20shape%20Riser%20with%20cast%20iron.636.png"
   },
   {
     id: 4,
@@ -49,8 +49,8 @@ const PRODUCT_VIDEOS = [
     description: "Finite Element Analysis (FEA) visualization of load distribution.",
     duration: "0:30",
     type: "SIMULATION",
-    src: "/video/paving-video.mp4",
-    thumbnail: "/paving/Round Riser with screw Raw Finish.617.png"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png"
   }
 ];
 
@@ -204,7 +204,7 @@ export default function Product3DShowcase2() {
                     {/* Text Description fields */}
                     <div className="flex flex-col justify-center min-w-0">
                       <h5 className={cn(
-                        "font-black text-xs uppercase tracking-wide truncate mb-0.5 transition-colors", 
+                        "font-black text-xs uppercase tracking-wide truncate mb-0.5 transition-colors",
                         isCurrent ? "text-[#CC0000]" : "text-white group-hover:text-[#CC0000]"
                       )}>
                         {video.title}

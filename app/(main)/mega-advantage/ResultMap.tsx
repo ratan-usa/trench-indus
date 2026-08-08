@@ -21,7 +21,7 @@ export default function ResultMap() {
         <div className="relative w-full h-[300px] md:h-[400px] bg-white">
 
           <Image
-            src="/assets/PAVING-RISERS/paving riser 1.5200.png" // Replace with the actual map image containing the state outlines, lines, and text
+            src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5200.png" // Replace with the actual map image containing the state outlines, lines, and text
             alt="Map of Manufacturing Facilities, Sales Branches, and Distribution Centers"
             fill
             className="object-contain object-left md:object-center"

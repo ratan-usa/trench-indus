@@ -25,7 +25,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15200',
     name: 'Class 30 Solid Iron Riser',
     type: 'Standard Circular Profile',
-    imgSrc: '/paving/Rectangle Paving Riser 1 Coated finish.621.png',
+    imgSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png',
     HOTSPOTS: [
       { id: 101, x: '37%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 102, x: '45%', y: '70%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
@@ -36,7 +36,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15205',
     name: 'Heavy Duty Square Frame Riser',
     type: 'Catch Basin Configuration',
-    imgSrc: '/paving/Sqaure Riser Raw Finish.610.png',
+    imgSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Sqaure%20Riser%20Raw%20Finish.610.png',
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 202, x: '65%', y: '40%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
@@ -48,7 +48,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15203',    
     name: 'Custom Rectangular Extension Ring',
     type: 'Utility Vault Profile',
-    imgSrc: '/paving/paving riser Square ductile iron.663.png',
+    imgSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Square%20ductile%20iron.663.png',
     HOTSPOTS: [
       { id: 301, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 302, x: '65%', y: '35%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },

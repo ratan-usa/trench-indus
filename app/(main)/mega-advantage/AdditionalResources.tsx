@@ -8,7 +8,7 @@ const RESOURCES = [
         id: 'about',
         title: 'About Us',
         description: 'Learn about Ben & Ben\'s commitment to producing the highest quality paving risers and infrastructure solutions for municipal applications.',
-        imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png',
+        imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5205.png',
         linkText: 'Link',
         href: '#about-us'
     },
@@ -16,7 +16,7 @@ const RESOURCES = [
         id: 'usa',
         title: 'Made in the USA',
         description: 'Committed to providing American-made steel and cast iron products to build and sustain America\'s critical infrastructure.',
-        imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png',
+        imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5205.png',
         linkText: 'Link',
         href: '#made-in-usa'
     },
@@ -24,7 +24,7 @@ const RESOURCES = [
         id: 'history',
         title: 'Company History',
         description: 'A legacy built on heavy iron. Discover how our foundry operations have evolved to meet modern DOT and highway standards over the decades.',
-        imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png',
+        imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5205.png',
         linkText: 'Link',
         href: '#history'
     },
@@ -32,7 +32,7 @@ const RESOURCES = [
         id: 'specs',
         title: 'Product Briefs',
         description: 'Download detailed spec sheets, load ratings, and installation guides for our complete line of fixed and expandable adjustment risers.',
-        imageSrc: '/assets/PAVING-RISERS/paving riser 1.5205.png',
+        imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5205.png',
         linkText: 'Link',
         href: '#product-briefs'
     }

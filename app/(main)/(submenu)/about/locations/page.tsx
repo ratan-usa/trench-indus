@@ -17,7 +17,7 @@ export default function FoundryLocationsPage() {
         {/* Background Imagery */}
         <div className="absolute inset-0 opacity-40">
           <Image 
-            src="/paving/Rectangle Paving Riser 1.619.png" 
+            src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Paving%20Riser%201.619.png" 
             alt="Foundry Operations" 
             fill 
             className="object-cover object-center mix-blend-luminosity" 

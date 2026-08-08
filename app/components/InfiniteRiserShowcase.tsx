@@ -34,7 +34,7 @@ export default function InfiniteRiserShowcase() {
                     <div className="lg:col-span-6">
                         <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                             <video
-                                src="/video/paving-video.mp4"
+                                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4"
                                 autoPlay
                                 loop
                                 muted

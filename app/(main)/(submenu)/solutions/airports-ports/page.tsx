@@ -140,7 +140,7 @@ export default function AirportsPortsPage() {
         <div className="bg-gradient-to-r from-[#CC0000] to-[#800000] p-12 lg:p-24 relative overflow-hidden group">
           <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-50 group-hover:scale-105 transition-transform duration-1000">
             {/* <Layers className="w-[800px] h-[800px] text-black" /> */}
-            <Image src={'/assets/TechnoML (1).png'} alt='Heavy Fabrication Callout' width={'400'} height={'400'}/>
+            <Image src={'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/TechnoML%20(1).png'} alt='Heavy Fabrication Callout' width={'400'} height={'400'}/>
           </div>
           
           <div className="relative z-10 max-w-3xl">

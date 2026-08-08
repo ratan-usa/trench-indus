@@ -11,37 +11,37 @@ const GALLERY_PROJECTS = [
     id: 1,
     title: "O'Hare Tarmac: Extra Heavy Duty Risers",
     category: "Airport",
-    imageSrc: "/assets/projects/air-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/air-1.jpg",
   },
   {
     id: 2,
     title: "Ben & Ben's Retail Plaza: Parking Lot Drainage",
     category: "Commercial",
-    imageSrc: "/assets/projects/comm-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/comm-1.jpg",
   },
   {
     id: 3,
     title: "Logistics Hub: 50-Ton Loading Dock Grates",
     category: "Industrial",
-    imageSrc: "/assets/projects/ind-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/ind-1.jpg",
   },
   {
     id: 4,
     title: "Highway 101 Catch Basin Upgrades",
     category: "Infrastructure",
-    imageSrc: "/assets/projects/hwy-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/hwy-1.jpg",
   },
   {
     id: 5,
     title: "City Center Resurfacing: Manhole Adjustments",
     category: "Municipal",
-    imageSrc: "/assets/projects/muni-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/muni-1.jpg",
   },
   {
     id: 6,
     title: "Suburban Water Meter Box Extensions",
     category: "Residential",
-    imageSrc: "/assets/projects/res-1.jpg",
+    imageSrc: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/projects/res-1.jpg",
   }
 ];
 

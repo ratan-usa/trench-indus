@@ -24,7 +24,7 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
 
     const productImages = product.images && product.images.length > 0
         ? product.images
-        : [{ label: 'Default', src: '/assets/PAVING-RISERS/paving riser 1.5201.png' }];
+        : [{ label: 'Default', src: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/paving%20riser%201.5201.png' }];
 
     const handleNextImage = () => {
         setActiveIndex((prev) => (prev + 1) % productImages.length);

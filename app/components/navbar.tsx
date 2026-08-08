@@ -3,22 +3,39 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ChevronDown } from 'lucide-react'
+import React from 'react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
 
+// Define the navigation structure
 const NAV_LINKS = [
     {
-        title: 'Products',
+        title: 'Main Product',
         href: '#products',
         dropdown: [
-            { name: 'Catch Basin / Inlet Risers', href: '/products/catch-basin-risers' },
-            { name: 'Manhole Riser', href: '/products/manhole-riser' },
+            { isHeader: true, name: 'Paving Riser Product Categories' },
+            { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' },
+            { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
+            { 
+                name: 'Manhole Riser', 
+                href: '/products/manhole-riser',
+                subDropdown: [
+                    { name: 'Fixed Riser', href: '/products/fixed-riser' },
+                    { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
+                ]
+            },
             { name: 'Valve Box Riser', href: '/products/valve-box-risers' },
-            { name: 'Manhole Frame/Cover', href: '/products/manhole-frame-cover' },
-            { name: 'Adjustment Risers', href: '/products/adjustment-risers' },
-            { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
-            { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
-            { name: 'Utility Products', href: '/products/utility-product' },
-            { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
+            { name: 'Installation Tools', href: '/products/installation-tools' },
+            { 
+                name: 'Specialty Castings & Steel', 
+                href: '#',
+                subDropdown: [
+                    { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
+                    { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
+                    { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
+                    { name: 'Utility Products', href: '/products/utility-product' },
+                    { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
+                ]
+            },
         ],
     },
     {
@@ -60,7 +77,7 @@ const Navbar = () => {
                 {/* --- LOGO --- */}
                 <Link href={'/'} className="shrink-0">
                     <Image
-                        src={'/PAVING-RISERS-LOGO.png'}
+                        src={'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/PAVING-RISERS-LOGO.png'}
                         alt='Mega Paving Risers'
                         height={80}
                         width={160}
@@ -71,26 +88,69 @@ const Navbar = () => {
                 {/* --- CENTER MENU --- */}
                 <div className="hidden md:flex gap-1 lg:gap-2 h-full">
                     {NAV_LINKS.map((link) => (
-                        <div key={link.title} className="group relative">
+                        <div key={link.title} className="group/main relative">
                             {/* Main Navigation Item */}
-                            <button className="flex items-center gap-1 px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors group-hover:bg-gray-50">
+                            <button className="flex items-center gap-1 px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors group-hover/main:bg-gray-50">
                                 {link.title}
-                                <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
+                                <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover/main:rotate-180" />
                             </button>
 
                             {/* Dropdown Menu (Black & Red Theme) */}
-                            <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-[60]">
-                                <ul className="w-72 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-hidden">
-                                    {link.dropdown.map((item) => (
-                                        <li key={item.name}>
-                                            <Link
-                                                href={item.href}
-                                                className="block px-6 py-4 text-[12px] font-bold text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 last:border-0 transition-all duration-200"
-                                            >
-                                                {item.name}
-                                            </Link>
-                                        </li>
-                                    ))}
+                            <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover/main:opacity-100 group-hover/main:visible transition-all duration-300 translate-y-2 group-hover/main:translate-y-0 z-[60]">
+                                <ul className="w-72 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-visible">
+                                    {link.dropdown.map((item: any, idx) => {
+                                        
+                                        if (item.isHeader) {
+                                            return (
+                                                <li key={`header-${idx}`} className="px-6 py-4 bg-zinc-50 border-b border-gray-200">
+                                                    <span className="text-[10px] font-black uppercase tracking-[0.1em] text-[#CC0000] leading-tight block">
+                                                        {item.name}
+                                                    </span>
+                                                </li>
+                                            )
+                                        }
+
+                                        if (item.subDropdown) {
+                                            return (
+                                                <li key={item.name} className="group/sub relative">
+                                                    <Link
+                                                        href={item.href || '#'}
+                                                        className="flex items-center justify-between w-full px-6 py-4 text-[12px] font-bold text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 last:border-0 transition-all duration-200"
+                                                    >
+                                                        {item.name}
+                                                        <ChevronRight className="w-4 h-4" />
+                                                    </Link>
+                                                    
+                                                    {/* Nested Submenu */}
+                                                    <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 translate-x-2 group-hover/sub:translate-x-0 z-[70]">
+                                                        <ul className="w-56 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-hidden">
+                                                            {item.subDropdown.map((subItem: any) => (
+                                                                <li key={subItem.name}>
+                                                                    <Link
+                                                                        href={subItem.href}
+                                                                        className="block px-6 py-4 text-[12px] font-bold text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 last:border-0 transition-all duration-200"
+                                                                    >
+                                                                        {subItem.name}
+                                                                    </Link>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            )
+                                        }
+
+                                        return (
+                                            <li key={item.name}>
+                                                <Link
+                                                    href={item.href || '#'}
+                                                    className="block px-6 py-4 text-[12px] font-bold text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 last:border-0 transition-all duration-200"
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        )
+                                    })}
                                 </ul>
                             </div>
                         </div>

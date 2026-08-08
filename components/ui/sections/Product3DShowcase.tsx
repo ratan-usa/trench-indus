@@ -29,48 +29,48 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
-    glbPath: "/gib files/Hero Product.glb",
-    thumbnail: "/paving/paving riser Square coated.665.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Hero%20Product.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Square%20coated.665.png"
   },
   {
     id: 2,
     title: "Round Riser with Screw",
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
-    glbPath: "/gib files/Round Riser with screw coated Finish.glb",
-    thumbnail: "/paving/paving riser with screws.600.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Round%20Riser%20with%20screw%20coated%20Finish.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20with%20screws.600.png"
   },
   {
     id: 3,
     title: "Square Riser – Coated Finish",
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
-    glbPath: "/gib files/Square Riser coated Finish.glb",
-    thumbnail: "/paving/paving riser Square coated.665.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/Square%20Riser%20coated%20Finish.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Square%20coated.665.png"
   },
   {
     id: 4,
     title: "Rectangle Riser – Coated Finish",
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
-    glbPath: "/gib files/RectangleRiser coated Finish.glb",
-    thumbnail: "/paving/Rectangle Paving Riser 4 coated Finish.631.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/RectangleRiser%20coated%20Finish.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/Rectangle%20Paving%20Riser%204%20coated%20Finish.631.png"
   },
   {
     id: 5,
     title: "D-Shape Riser – Coated Finish",
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
-    glbPath: "/gib files/D shape Riser coated Finish.glb",
-    thumbnail: "/paving/D shape Riser with coated Finish.633.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/D%20shape%20Riser%20coated%20Finish.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png"
   },
   {
     id: 6,
     title: "MR3 Master Riser Assembly",
     description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
     type: "ASSEMBLY",
-    glbPath: "/gib files/mr3.glb",
-    thumbnail: "/paving/paving riser Round No screw steel.661.png"
+    glbPath: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/gib%20files/mr3.glb",
+    thumbnail: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%20Round%20No%20screw%20steel.661.png"
   }
 ];
 
@@ -198,7 +198,7 @@ export default function Product3DShowcase() {
                   {/* Text Info */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h5 className={cn(
-                      "font-bold text-sm leading-tight mb-1 group-hover:text-[#CC0000] transition-colors truncate", 
+                      "font-bold text-sm leading-tight mb-1 group-hover:text-[#CC0000] transition-colors truncate",
                       activeModelIndex === idx ? "text-[#CC0000]" : "text-white"
                     )}>
                       {model.title}

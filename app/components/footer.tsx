@@ -18,13 +18,16 @@ import {
 
 const FOOTER_LINKS = [
     {
-        title: 'Products',
+        title: 'Main Product',
         links: [
-            { name: 'Catch Basin / Inlet Risers', href: '/products/catch-basin-risers' },
+            { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' },
+            { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
             { name: 'Manhole Riser', href: '/products/manhole-riser' },
+            { name: '— Fixed Riser', href: '/products/fixed-riser' },
+            { name: '— Adjustable Riser', href: '/products/adjustable-riser' },
             { name: 'Valve Box Riser', href: '/products/valve-box-risers' },
-            { name: 'Manhole Frame/Cover', href: '/products/manhole-frame-cover' },
-            { name: 'Adjustment Risers', href: '/products/adjustment-risers' },
+            { name: 'Installation Tools', href: '/products/installation-tools' },
+            { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
             { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
             { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
             { name: 'Utility Products', href: '/products/utility-product' },

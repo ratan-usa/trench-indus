@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Paving Risers",
   description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",
   icons: {
-    icon: '/favicon.png', 
+    icon: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/favicon.png', 
   },
 };
 

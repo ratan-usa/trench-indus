@@ -16,7 +16,7 @@ export default function LocalDistribution() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <div className="relative w-full h-64 bg-gray-100 rounded-sm overflow-hidden">
             <Image
-              src="/assets/PAVING-RISERS/recatangle riser.png" // Replace with street manhole image
+              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/recatangle%20riser.png" // Replace with street manhole image
               alt="Installed manhole riser on street"
               fill
               className="object-cover"
@@ -24,7 +24,7 @@ export default function LocalDistribution() {
           </div>
           <div className="relative w-full h-64 bg-gray-100 rounded-sm overflow-hidden">
             <Image
-              src="/assets/PAVING-RISERS/recatangle riser.png" // Replace with street manhole image
+              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/recatangle%20riser.png" // Replace with street manhole image
               alt="Utility valve box in commercial district"
               fill
               className="object-cover"
@@ -32,7 +32,7 @@ export default function LocalDistribution() {
           </div>
           <div className="relative w-full h-64 bg-gray-100 rounded-sm overflow-hidden">
             <Image
-              src="/assets/PAVING-RISERS/recatangle riser.png" // Replace with street manhole image
+              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/recatangle%20riser.png" // Replace with street manhole image
               alt="Catch basin frame and grate"
               fill
               className="object-cover"

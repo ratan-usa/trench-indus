@@ -59,7 +59,7 @@ export default function PavingRisersHeroSection() {
 
               {/* Vimeo loop streaming background configurations */}
               <iframe
-                src="/video/C24A_11_options.mp4"
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/C24A_11_options.mp4"
                 allow="autoplay; fullscreen; picture-in-picture"
                 className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
                 title="Paving Risers Factory Production Footage"

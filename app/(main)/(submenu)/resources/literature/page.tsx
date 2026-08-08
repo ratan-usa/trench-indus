@@ -31,7 +31,7 @@ export default function LiteraturePage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-40 scale-105"
         >
-          <source src="/video/paving-video.mp4" type="video/mp4" />
+          <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-video.mp4" type="video/mp4" />
         </video>
 
         {/* Heavy Gradients for text legibility and mood */}
@@ -89,7 +89,7 @@ export default function LiteraturePage() {
                   playsInline
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 >
-                  <source src="/video/paving_riser_solid_ring_utilisation_animation_676.mp4" type="video/mp4" />
+                  <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving_riser_solid_ring_utilisation_animation_676.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-20 h-20 bg-[#CC0000] rounded-full flex items-center justify-center pl-2 opacity-90 group-hover:scale-110 transition-transform">
@@ -118,7 +118,7 @@ export default function LiteraturePage() {
                   playsInline
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 >
-                  <source src="/video/1.719.mp4" type="video/mp4" />
+                  <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/1.719.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-20 h-20 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center pl-2 opacity-90 group-hover:scale-110 transition-transform">
@@ -156,7 +156,7 @@ export default function LiteraturePage() {
             {/* Document Card 1 */}
             <div className="bg-[#111] border border-white/5 group hover:border-[#CC0000] transition-all duration-500 flex flex-col h-[500px]">
               <div className="relative h-64 bg-[#0A0A0A] overflow-hidden flex items-center justify-center border-b border-white/5">
-                <Image src="/paving/paving riser 1 coated.655.png" alt="Master Catalog" fill className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
+                <Image src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/paving/paving%20riser%201%20coated.655.png" alt="Master Catalog" fill className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
                 <BookOpen className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">
@@ -178,7 +178,7 @@ export default function LiteraturePage() {
                 {/* Simulated blueprint background */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(204,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,0,0,0.1)_1px,transparent_1px)] bg-[size:10px_10px]" />
                 <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                  <source src="/video/C24A_11_options.mp4" type="video/mp4" />
+                  <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/C24A_11_options.mp4" type="video/mp4" />
                 </video>
                 <FileCheck2 className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
@@ -199,7 +199,7 @@ export default function LiteraturePage() {
             <div className="bg-[#111] border border-white/5 group hover:border-[#CC0000] transition-all duration-500 flex flex-col h-[500px]">
               <div className="relative h-64 bg-black overflow-hidden flex items-center justify-center border-b border-white/5">
                 <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                  <source src="/video/paving-riser-frame.mp4" type="video/mp4" />
+                  <source src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving-riser-frame.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/40 pointer-events-none" />
                 <Box className="w-16 h-16 text-white relative z-10 group-hover:scale-125 group-hover:text-[#CC0000] transition-all duration-700" />

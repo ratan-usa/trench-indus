@@ -6,21 +6,21 @@ const OVERVIEW_DATA = [
     id: 'product-range',
     title: 'Product Range',
     description: 'Our extensive product range includes solid steel and cast iron adjustment risers, catch basin frames, utility vault access solutions, and custom fabricated grading rings tailored for municipal infrastructure.',
-    imageSrc: '/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
+    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
     altText: 'Installed manhole cover on a city sidewalk'
   },
   {
     id: 'quality-manufacturing',
     title: 'Quality Manufacturing',
     description: 'Integrating automated foundry technology, lean fabrication processes, and decades of experience in crafting heavy-duty metal infrastructure products keeps our facilities performing at peak efficiency.',
-    imageSrc: '/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
+    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
     altText: 'Worker operating heavy machinery in a foundry'
   },
   {
     id: 'distribution-network',
     title: 'Distribution Network',
     description: 'Mega Paving Risers and access solutions are available nationwide at our internal stocking locations and directly through our extensive network of heavy-materials distribution partners.',
-    imageSrc: '/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
+    imageSrc: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png', // Replace with an aerial shot of a large stocking yard or distribution center
     altText: 'Large outdoor inventory yard filled with infrastructure products'
   }
 ];
