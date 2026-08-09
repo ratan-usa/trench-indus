@@ -13,18 +13,44 @@ const NAV_LINKS = [
         href: '#products',
         dropdown: [
             { isHeader: true, name: 'Paving Riser Product Categories' },
-            { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' },
-            { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
             { 
-                name: 'Manhole Riser', 
-                href: '/products/manhole-riser',
+                name: 'Curb Inlets', 
+                href: '#',
+                subDropdown: [
+                    { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' }
+                ]
+            },
+            { 
+                name: 'Catch Basin', 
+                href: '#',
+                subDropdown: [
+                    { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
+                    { name: 'Catch Basin Grates', href: '/products/catch-basin-grates' }
+                ]
+            },
+            { 
+                name: 'Manhole Risers', 
+                href: '#',
                 subDropdown: [
                     { name: 'Fixed Riser', href: '/products/fixed-riser' },
                     { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
                 ]
             },
-            { name: 'Valve Box Riser', href: '/products/valve-box-risers' },
-            { name: 'Installation Tools', href: '/products/installation-tools' },
+            { 
+                name: 'Valve Boxes', 
+                href: '#',
+                subDropdown: [
+                    { name: 'Valve Box Riser', href: '/products/valve-box-risers' }
+                ]
+            },
+            { 
+                name: 'Drainage & Tools', 
+                href: '#',
+                subDropdown: [
+                    { name: 'Trash Racks', href: '/products/trash-racks' },
+                    { name: 'Installation Tools', href: '/products/installation-tools' }
+                ]
+            },
             { 
                 name: 'Specialty Castings & Steel', 
                 href: '#',

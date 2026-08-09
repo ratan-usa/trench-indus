@@ -2,191 +2,226 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { 
-  Mail, 
   MapPin, 
   Phone, 
-  ShieldCheck, 
-  ArrowRight, 
-  FileText, 
-  Flame, 
-  Wrench,
-  Construction,
-  Ruler
+  Construction, 
+  ArrowRight,
+  Settings,
+  ShieldCheck,
+  Mail
 } from 'lucide-react';
 
 const FOOTER_LINKS = [
     {
-        title: 'Main Product',
-        links: [
-            { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' },
-            { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
-            { name: 'Manhole Riser', href: '/products/manhole-riser' },
-            { name: '— Fixed Riser', href: '/products/fixed-riser' },
-            { name: '— Adjustable Riser', href: '/products/adjustable-riser' },
-            { name: 'Valve Box Riser', href: '/products/valve-box-risers' },
-            { name: 'Installation Tools', href: '/products/installation-tools' },
-            { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
-            { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
-            { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
-            { name: 'Utility Products', href: '/products/utility-product' },
-            { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
-        ],
+        title: 'Main Products',
+        categories: [
+            {
+                name: 'Curb Inlets',
+                links: [{ name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' }]
+            },
+            {
+                name: 'Catch Basin',
+                links: [
+                    { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
+                    { name: 'Catch Basin Grates', href: '/products/catch-basin-grates' }
+                ]
+            },
+            {
+                name: 'Manhole Risers',
+                links: [
+                    { name: 'Fixed Riser', href: '/products/fixed-riser' },
+                    { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
+                ]
+            },
+            {
+                name: 'Valve Boxes',
+                links: [{ name: 'Valve Box Riser', href: '/products/valve-box-risers' }]
+            },
+            {
+                name: 'Drainage & Tools',
+                links: [
+                    { name: 'Trash Racks', href: '/products/trash-racks' },
+                    { name: 'Installation Tools', href: '/products/installation-tools' }
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Specialty Castings',
+        categories: [
+            {
+                name: 'Specialty Castings & Steel',
+                links: [
+                    { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
+                    { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
+                    { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
+                    { name: 'Utility Products', href: '/products/utility-product' },
+                    { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
+                ]
+            }
+        ]
     },
     {
         title: 'Infrastructure',
-        links: [
-            { name: 'Municipal Roadway', href: '/solutions/paving-resurfacing' },
-            { name: 'Storm Drainage', href: '/solutions/storm-drainage' },
-            { name: 'Airport & Heavy Port', href: '/solutions/airports-ports' },
-            { name: 'Sanitary Sewer', href: '/solutions/sanitary-sewer' },
-        ],
+        categories: [
+            {
+                name: 'Solutions',
+                links: [
+                    { name: 'Municipal Roadway', href: '/solutions/paving-resurfacing' },
+                    { name: 'Storm Drainage', href: '/solutions/storm-drainage' },
+                    { name: 'Airport & Heavy Port', href: '/solutions/airports-ports' },
+                    { name: 'Sanitary Sewer', href: '/solutions/sanitary-sewer' },
+                ]
+            }
+        ]
     },
     {
         title: 'Technical Library',
-        links: [
-            { name: 'Literature & Specs', href: '/resources/literature' },
-            { name: 'Video Gallery', href: '/resources/videos' },
-            { name: 'Engineering Briefs', href: '/resources/briefs' },
-            { name: 'Calculators & Tools', href: '/resources/calculators' },
-        ],
+        categories: [
+            {
+                name: 'Resources',
+                links: [
+                    { name: 'Literature & Specs', href: '/resources/literature' },
+                    { name: 'Video Gallery', href: '/resources/videos' },
+                    { name: 'Engineering Briefs', href: '/resources/briefs' },
+                    { name: 'Calculators & Tools', href: '/resources/calculators' },
+                ]
+            }
+        ]
     },
     {
         title: 'Contact',
-        links: [
-            { name: 'Request a Quote', href: '/contact/quote' },
-            { name: 'Foundry Locations', href: '/about/locations' },
-            { name: 'Submit Specifications', href: '/contact/specifications' },
-        ],
+        categories: [
+            {
+                name: 'Get in Touch',
+                links: [
+                    { name: 'Request a Quote', href: '/contact/quote' },
+                    { name: 'Foundry Locations', href: '/about/locations' },
+                    { name: 'Submit Specifications', href: '/contact/specifications' },
+                ]
+            }
+        ]
     },
 ];
 
 export default function HeavyFooter() {
   return (
-    <footer id="contact" className="bg-[#CC0000] text-white pt-24 pb-12 border-t-8 border-black relative overflow-hidden font-sans"> 
+    <footer className="bg-[#050505] text-white pt-24 pb-8 border-t border-[#333] relative overflow-hidden font-sans z-50"> 
       
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-16 relative z-10">
+      {/* Background Engineering Grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_top_right,rgba(204,0,0,0.05)_0%,transparent_60%)] pointer-events-none" />
+
+      <div className="w-full px-6 md:px-8 lg:px-12 space-y-20 relative z-10">
         
-        {/* --- TOP BRAND HUD HEADER ROW --- */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 pb-12 border-b border-white/20">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-black">
-              <Construction className="w-6 h-6 animate-pulse" />
-              <span className="text-xl font-black tracking-tighter uppercase text-white">
-                PAVING <span className="text-black">RISERS</span>
-              </span>
+        {/* --- TOP BRAND HEADER --- */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-12 border-b border-[#222]">
+          <div className="space-y-2 group">
+            <div className="flex items-center gap-3">
+              <Construction className="w-8 h-8 text-[#CC0000]" />
+              <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase text-white group-hover:text-[#CC0000] transition-colors duration-500">
+                PAVING <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.8)' }}>RISERS</span>
+              </h2>
             </div>
-            <p className="text-xs font-mono text-white/70 uppercase tracking-widest">
-              Manhole, Valve Box & Catch Basin Elevation Systems • Class 30 Gray Iron
+            <p className="text-xs font-mono text-gray-500 uppercase tracking-widest pl-11">
+              Class 30 Gray Iron • USA Fabricated Steel
             </p>
           </div>
           
-          <div className="flex flex-wrap gap-4 text-xs font-black uppercase tracking-wider">
-            <span className="flex items-center gap-1.5 px-3 py-1 bg-black/20 border border-white/10 rounded-sm text-white">
-              <ShieldCheck className="w-3.5 h-3.5 text-black" /> AASHTO H-20 & HS-20 Traffic Rated
+          <div className="flex flex-wrap gap-4 text-[10px] font-mono uppercase tracking-widest">
+            <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
+              <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> AASHTO H-20 Rated
             </span>
-            <span className="flex items-center gap-1.5 px-3 py-1 bg-black/20 border border-white/10 rounded-sm text-white">
-              <Wrench className="w-3.5 h-3.5 text-black" /> Pivoted Turnbuckle Gripping Power
+            <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
+              <Settings className="w-4 h-4 text-[#CC0000]" /> DOT Compliant Castings
             </span>
           </div>
         </div>
 
-        {/* --- MAIN CORE CONTENT SPLIT GRID --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        {/* --- MAIN CONTENT SPLIT GRID --- */}
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-16 items-start">
           
-          {/* LEFT SECTION: HIGH-VOLUME CONTRACTOR OPERATIONS DESK (4 Columns Wide) */}
-          <div className="lg:col-span-4 space-y-8">
-            <div className="space-y-3">
-              <span className="text-xs font-black uppercase tracking-[0.25em] text-black flex items-center gap-2">
-                <Flame className="w-4 h-4 fill-current" /> Estimating Desk
+          {/* LEFT SECTION: Contact Details (3 Columns) */}
+          <div className="xl:col-span-3 space-y-12">
+            <div className="space-y-4">
+              <span className="text-[10px] font-mono text-[#CC0000] uppercase tracking-widest">
+                [ Estimating Desk ]
               </span>
-              <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white">
+              <h3 className="text-3xl font-black uppercase tracking-tight text-white leading-none">
                 Get Bulk Wholesale <br />
-                <span className="text-black">Riser Pricing Profiles.</span>
+                <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Riser Pricing.</span>
               </h3>
             </div>
 
             <div className="space-y-6">
-              {/* Address Row */}
-              <div className="flex items-start gap-4 p-4 bg-black/20 border border-black/10 rounded-sm group hover:border-black transition-colors duration-300">
-                <div className="w-10 h-10 bg-black rounded-sm border border-black flex items-center justify-center shrink-0 text-white">
-                  <MapPin className="w-5 h-5" />
+              {/* Address Line 1 */}
+              <div className="group flex items-start gap-4">
+                <div className="mt-1 w-8 h-8 flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-gray-600 group-hover:text-[#CC0000] transition-colors" />
                 </div>
-                <div className="text-sm">
-                  <h4 className="font-black uppercase tracking-wider text-white/70 text-xs mb-1">Casting Foundry Logistics</h4>
-                  <p className="font-bold text-white leading-relaxed">
-                   
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1">New York Foundry</h4>
+                  <p className="text-gray-400 text-sm font-medium leading-relaxed mb-1">
                     105 Maxes Road<br />
                     Melville, NY 11747, USA
                   </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <Phone className="w-4 h-4 text-black" />
-                    <span className="font-mono font-bold text-white text-sm">(631) 458-1111</span>
-                  </div>
+                  <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">(631) 458-1111</p>
                 </div>
               </div>
 
-              {/* Address Row - Florida */}
-              <div className="flex items-start gap-4 p-4 bg-black/20 border border-black/10 rounded-sm group hover:border-black transition-colors duration-300">
-                <div className="w-10 h-10 bg-black rounded-sm border border-black flex items-center justify-center shrink-0 text-white">
-                  <MapPin className="w-5 h-5" />
+              {/* Address Line 2 */}
+              <div className="group flex items-start gap-4">
+                <div className="mt-1 w-8 h-8 flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-gray-600 group-hover:text-[#CC0000] transition-colors" />
                 </div>
-                <div className="text-sm">
-                  <p className="font-bold text-white leading-relaxed mt-1">
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1">Florida Operations</h4>
+                  <p className="text-gray-400 text-sm font-medium leading-relaxed mb-1">
                     850 NW FEDERAL HWY<br />
                     STUART, FL 34994
                   </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <Phone className="w-4 h-4 text-black" />
-                    <span className="font-mono font-bold text-white text-sm">(772) 297-0700</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Email Row */}
-              <div className="flex items-start gap-4 p-4 bg-black/20 border border-black/10 rounded-sm group hover:border-black transition-colors duration-300">
-                <div className="w-10 h-10 bg-black rounded-sm border border-black flex items-center justify-center shrink-0 text-white">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div className="text-sm">
-                  <h4 className="font-black uppercase tracking-wider text-white/70 text-xs mb-1">Specs & Submittals Pipeline</h4>
-                  <a href="mailto:info@pavingrisers.com" className="font-mono font-black text-white hover:text-black text-sm break-all transition-colors block mt-0.5">
-                    info@pavingrisers.com
-                  </a>
-                </div>
-              </div>
-
-              {/* Wholesale Pricing Hotline Callout */}
-              <div className="flex items-start gap-4 p-4 bg-black border border-black rounded-sm shadow-xl">
-                <div className="w-10 h-10 bg-white/10 rounded-sm border border-white/10 flex items-center justify-center shrink-0 text-[#CC0000]">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div className="text-sm space-y-0.5">
-                  <h4 className="font-black uppercase tracking-wider text-white/60 text-[10px]">Municipal Sales Division</h4>
-                  <p className="font-black text-white text-base tracking-tight uppercase">Call Now for DOT Project Quotes</p>
+                  <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">(772) 297-0700</p>
                 </div>
               </div>
             </div>
+            
+            <a href="#quote" className="inline-flex items-center gap-4 bg-white text-black font-black uppercase tracking-widest text-xs px-8 py-4 hover:bg-[#CC0000] hover:text-white transition-colors group">
+              Request Project Quote <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
 
-          {/* RIGHT SECTION: SITE MAP LINKS GRID (7 Columns Wide) */}
-          <div className="lg:col-span-8 bg-black/20 border border-black/10 p-8 md:p-10 rounded-sm relative shadow-2xl group overflow-hidden h-full">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
+          {/* RIGHT SECTION: Links Grid (9 Columns) */}
+          <div className="xl:col-span-9">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12">
               {FOOTER_LINKS.map((section, idx) => (
                 <div key={idx} className="space-y-6">
-                  <h4 className="text-white font-black uppercase tracking-widest text-xs border-b border-white/20 pb-3 shadow-sm">{section.title}</h4>
-                  <ul className="space-y-3">
-                    {section.links.map((link, lidx) => (
-                      <li key={lidx}>
-                        <Link href={link.href} className="text-white/80 hover:text-white hover:font-black text-xs font-bold uppercase tracking-wider transition-all inline-block hover:translate-x-1 transform duration-300">
-                          {link.name}
-                        </Link>
-                      </li>
+                  <h4 className="text-white font-black uppercase tracking-widest text-xs border-b border-[#333] pb-4">
+                    {section.title}
+                  </h4>
+                  <div className="space-y-6">
+                    {section.categories.map((cat, cidx) => (
+                      <div key={cidx} className="space-y-3">
+                        {/* Only show category name if it's not just a placeholder for the section */}
+                        {cat.name !== 'Solutions' && cat.name !== 'Resources' && cat.name !== 'Get in Touch' && cat.name !== 'Specialty Castings & Steel' && (
+                           <h5 className="text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-2">{cat.name}</h5>
+                        )}
+                        <ul className="space-y-3">
+                          {cat.links.map((link, lidx) => (
+                            <li key={lidx}>
+                              <Link 
+                                href={link.href} 
+                                className="text-gray-400 hover:text-white text-[11px] font-bold uppercase tracking-widest transition-all inline-block hover:translate-x-1 duration-300 group"
+                              >
+                                <span className="text-transparent group-hover:text-[#CC0000] mr-2 transition-colors">/</span>
+                                {link.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>
@@ -194,18 +229,49 @@ export default function HeavyFooter() {
 
         </div>
 
-        {/* --- BOTTOM RUNNING LEGAL FOOTNOTE BAR --- */}
-        <div className="pt-8 border-t border-black/20 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs font-bold uppercase tracking-wider gap-4">
-          <p className="font-mono text-center md:text-left">
-            &copy; {new Date().getFullYear()} Paving Risers Manufacturing. Infrastructure Engineering Secured.
-          </p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-white border-b border-transparent hover:border-white pb-0.5 transition-all">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white border-b border-transparent hover:border-white pb-0.5 transition-all">Terms of Service</Link>
-          </div>
-        </div>
-
       </div>
+
+      {/* --- CONTINUOUS SCROLLING MARQUEE --- */}
+      <div className="mt-24 border-y border-[#222] bg-black py-4 overflow-hidden flex whitespace-nowrap relative">
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
+        
+        <div className="animate-marquee inline-flex items-center gap-12 text-[10px] font-mono uppercase tracking-[0.3em] text-gray-600">
+          <span>// HEAVY DUTY CASTINGS</span>
+          <span>// DOT APPROVED</span>
+          <span>// 50-TON SHOCK RATED</span>
+          <span>// MANUFACTURED IN USA</span>
+          <span>// AASHTO H-20 COMPLIANT</span>
+          <span>// PAVING RISERS INFRASTRUCTURE</span>
+          <span>// PRECISION ENGINEERING</span>
+          <span>// HEAVY DUTY CASTINGS</span>
+          <span>// DOT APPROVED</span>
+          <span>// 50-TON SHOCK RATED</span>
+          <span>// MANUFACTURED IN USA</span>
+          <span>// AASHTO H-20 COMPLIANT</span>
+          <span>// PAVING RISERS INFRASTRUCTURE</span>
+          <span>// PRECISION ENGINEERING</span>
+        </div>
+      </div>
+
+      {/* --- BOTTOM LEGAL --- */}
+      <div className="w-full px-6 md:px-8 lg:px-12 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-[10px] font-mono uppercase tracking-widest gap-4">
+        <p>&copy; {new Date().getFullYear()} Paving Risers. All Rights Reserved.</p>
+        <div className="flex gap-8">
+          <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+        </div>
+      </div>
+
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}} />
     </footer>
   );
 }
