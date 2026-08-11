@@ -13,46 +13,46 @@ const NAV_LINKS = [
         href: '#products',
         dropdown: [
             { isHeader: true, name: 'Paving Riser Product Categories' },
-            { 
-                name: 'Curb Inlets', 
+            {
+                name: 'Curb Inlets',
                 href: '#',
                 subDropdown: [
                     { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' }
                 ]
             },
-            { 
-                name: 'Catch Basin', 
+            {
+                name: 'Catch Basin',
                 href: '#',
                 subDropdown: [
                     { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
                     { name: 'Catch Basin Grates', href: '/products/catch-basin-grates' }
                 ]
             },
-            { 
-                name: 'Manhole Risers', 
+            {
+                name: 'Manhole Risers',
                 href: '#',
                 subDropdown: [
                     { name: 'Fixed Riser', href: '/products/fixed-riser' },
                     { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
                 ]
             },
-            { 
-                name: 'Valve Boxes', 
+            {
+                name: 'Valve Boxes',
                 href: '#',
                 subDropdown: [
                     { name: 'Valve Box Riser', href: '/products/valve-box-risers' }
                 ]
             },
-            { 
-                name: 'Drainage & Tools', 
+            {
+                name: 'Drainage & Tools',
                 href: '#',
                 subDropdown: [
                     { name: 'Trash Racks', href: '/products/trash-racks' },
                     { name: 'Installation Tools', href: '/products/installation-tools' }
                 ]
             },
-            { 
-                name: 'Specialty Castings & Steel', 
+            {
+                name: 'Specialty Castings & Steel',
                 href: '#',
                 subDropdown: [
                     { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
@@ -125,7 +125,7 @@ const Navbar = () => {
                             <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover/main:opacity-100 group-hover/main:visible transition-all duration-300 translate-y-2 group-hover/main:translate-y-0 z-[60]">
                                 <ul className="w-72 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-visible">
                                     {link.dropdown.map((item: any, idx) => {
-                                        
+
                                         if (item.isHeader) {
                                             return (
                                                 <li key={`header-${idx}`} className="px-6 py-4 bg-zinc-50 border-b border-gray-200">
@@ -146,7 +146,7 @@ const Navbar = () => {
                                                         {item.name}
                                                         <ChevronRight className="w-4 h-4" />
                                                     </Link>
-                                                    
+
                                                     {/* Nested Submenu */}
                                                     <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 translate-x-2 group-hover/sub:translate-x-0 z-[70]">
                                                         <ul className="w-56 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-hidden">
@@ -184,9 +184,14 @@ const Navbar = () => {
                 </div>
 
                 {/* --- CTA BUTTON --- */}
+                <Link href={'/contact/quote'}>
+                    <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black hidden sm:flex rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                        Request a Quote
+                    </Button>
+                </Link>
                 <Link href={'#contact'}>
-                    <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black hidden sm:flex rounded-none px-8 h-12 uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
-                        Get Quote
+                    <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black hidden sm:flex rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                        Download Catalog
                     </Button>
                 </Link>
             </div>

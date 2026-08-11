@@ -3,6 +3,7 @@
 import React from 'react';
 import { Layers, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 export default function InfiniteRiserShowcase() {
     return (
@@ -19,7 +20,7 @@ export default function InfiniteRiserShowcase() {
                         <Layers className="w-4 h-4 text-[#CC0000]" /> Exploded Assembly Sequence
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
-                        Adjustable Round Riser  
+                        Adjustable Round Riser
                         <span className="text-[#CC0000]"> Infinite CAD Showcase.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
@@ -75,9 +76,11 @@ export default function InfiniteRiserShowcase() {
                         </div>
 
                         <a href="#contact" className="block pt-2">
-                            <Button className="w-full h-12 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
-                                Request Specifications <ArrowRight className="w-4 h-4" />
-                            </Button>
+                            <Link href={'/contact/quote'}>
+                                <Button className="w-full h-12 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                                    Request Specifications <ArrowRight className="w-4 h-4" />
+                                </Button>
+                            </Link>
                         </a>
 
                     </div>

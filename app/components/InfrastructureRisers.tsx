@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, ShieldCheck, Ruler, Truck } from 'lucide-react';
+import Link from 'next/link';
 
 export default function InfrastructureRisers() {
   return (
@@ -89,9 +90,12 @@ export default function InfrastructureRisers() {
             </div>
 
             <div className="pt-4 flex gap-4">
-              <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
-                Request Specifications <ArrowUpRight className="ml-2 w-5 h-5" />
-              </Button>
+              <Link href={'/contact/quote'}>
+
+                <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
+                  Request Specifications <ArrowUpRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
 

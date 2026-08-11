@@ -79,7 +79,7 @@ export default function MegaPavingRisers() {
                             </Button>
                         </Link>
                         <Link href="#our-product">
-                            <Button size="lg" variant="outline" className="border-4 border-white text-white hover:bg-[#CC0000] hover:border-[#CC0000] text-sm px-10 py-8 font-black uppercase tracking-[0.2em] rounded-none transition-all duration-300 bg-transparent">
+                            <Button size="lg" variant="outline" className="border-4 border-white cursor-pointer text-white hover:bg-[#CC0000] hover:border-[#CC0000] text-sm px-10 py-8 font-black uppercase tracking-[0.2em] rounded-none transition-all duration-300 bg-transparent">
                                 <Eye className="mr-2 w-5 h-5" /> View Products
                             </Button>
                         </Link>

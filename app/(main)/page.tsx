@@ -42,6 +42,7 @@ const Home = () => {
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
       <InfiniteRiserShowcase />
+<ProductInteractiveImage />
       <Product3DShowcase2 />
       <GratesRacksAndTools />
       <Product3DShowcase />
@@ -77,7 +78,6 @@ const Home = () => {
       <section id='contact-us'>
         <ContactExtraordinary />
       </section>
-      <ProductInteractiveImage />
       {/* <InteractiveProduct/> */}
 
 

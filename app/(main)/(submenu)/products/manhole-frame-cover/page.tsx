@@ -12,6 +12,7 @@ import {
   Lock
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 const MANHOLE_FRAME_DATA = {
   title: 'Manhole Frames & Covers',
@@ -49,7 +50,7 @@ export default function ManholeFrameCoverPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-black">
-      
+
       {/* --- 1. HERO SECTION (DARK MODE) --- */}
       <section className="relative bg-[#050505] text-white overflow-hidden py-20 lg:py-32">
         {/* Abstract Background Elements */}
@@ -57,26 +58,28 @@ export default function ManholeFrameCoverPage() {
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
 
         <div className="w-full px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center gap-16">
-          
+
           {/* Text Content */}
           <div className="lg:w-1/2 space-y-8">
             <div className="inline-block bg-[#CC0000] text-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] shadow-lg">
               Infrastructure Grade
             </div>
-            
+
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
               Manhole Frames <br />
               <span className="text-[#CC0000]">& Covers</span>
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-zinc-400 font-medium leading-relaxed max-w-xl">
               {MANHOLE_FRAME_DATA.description}
             </p>
-            
+
             <div className="pt-4">
-              <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all shadow-xl group">
-                Request Specifications <ArrowRight className="ml-4 group-hover:translate-x-2 transition-transform" />
-              </Button>
+              <Link href={'/contact/quote'}>
+                <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all shadow-xl group">
+                  Request Specifications <ArrowRight className="ml-4 group-hover:translate-x-2 transition-transform" />
+                </Button>
+                </Link >
             </div>
           </div>
 
@@ -84,10 +87,10 @@ export default function ManholeFrameCoverPage() {
           <div className="lg:w-1/2 w-full">
             <div className="aspect-video w-full bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center relative group overflow-hidden shadow-2xl">
               <div className="absolute inset-0 border-2 border-[#CC0000]/0 group-hover:border-[#CC0000]/30 transition-colors duration-700 m-4"></div>
-              
+
               <div className="absolute w-64 h-64 border-[16px] border-zinc-800 rounded-full opacity-50 group-hover:scale-110 transition-transform duration-1000 ease-out"></div>
               <div className="absolute w-48 h-48 border-[8px] border-[#CC0000]/20 rounded-full opacity-50 group-hover:rotate-45 transition-transform duration-1000"></div>
-              
+
               <Construction className="w-16 h-16 text-zinc-600 mb-6 group-hover:text-[#CC0000] transition-colors duration-500 relative z-10" />
               <span className="text-zinc-400 font-bold uppercase tracking-widest text-xs relative z-10">Product Visualization Pending</span>
             </div>
@@ -123,7 +126,7 @@ export default function ManholeFrameCoverPage() {
       {/* --- 3. WIDE SPECS TABLE --- */}
       <section className="py-24 bg-gray-50 border-t border-gray-200">
         <div className="w-full px-6 lg:px-12">
-          
+
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-12 pb-6 border-b-4 border-black gap-4">
             <div>
               <h2 className="text-3xl lg:text-4xl font-black uppercase tracking-tight">
