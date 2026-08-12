@@ -75,13 +75,13 @@ export default function InfiniteRiserShowcase() {
                             </div>
                         </div>
 
-                        <a href="#contact" className="block pt-2">
-                            <Link href={'/contact/quote'}>
+                        <div className="pt-2">
+                            <Link href="/contact/quote" className="block">
                                 <Button className="w-full h-12 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
                                     Request Specifications <ArrowRight className="w-4 h-4" />
                                 </Button>
                             </Link>
-                        </a>
+                        </div>
 
                     </div>
 

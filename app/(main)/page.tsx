@@ -9,7 +9,6 @@ import ContractorResources from '../components/ContractorResources'
 import AdditionalResourcesSlugs from '../components/AdditionalResourcesSlugs'
 import ContactExtraordinary from './ContactExtraordinary'
 import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
-import PavingPathHero from '../components/paving-taglines'
 import ProductInteractiveImage from '../components/ProductInteractiveImage'
 import RedesignedSolutionsSection from './RedesignedSolutionsSection'
 import PavingRisersHeroSection from '../components/PavingRisersHeroSection'
@@ -30,6 +29,7 @@ import GratesRacksAndTools from './GratesRacksAndTools'
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
 const OurProducts = dynamic(() => import('../components/ourProduct'))
+const PavingPathHero = dynamic(() => import('../components/paving-taglines'))
 
 // 3D Canvas components must be loaded dynamically to avoid SSR ProgressEvent errors and timeouts
 const Product3DShowcase = dynamic(() => import('../../components/ui/sections/Product3DShowcase'), { ssr: false })
