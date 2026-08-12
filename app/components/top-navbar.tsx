@@ -7,7 +7,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 const topMenuItems = [
   { label: 'INDUSTRY SOLUTIONS', href: '/industry-solutions' },
-  { label: 'MEGA ADVANTAGE', href: '/mega-advantage' },
+  { label: 'Paving Advantage', href: '/paving-advantage' },
   { label: 'PRO SERVICE', href: '/pro-service' }
 ];
 // 1. Define Options Data

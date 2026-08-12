@@ -28,7 +28,7 @@ const SHOWCASE_PRODUCTS = [
   {
     id: "prod-2",
     index: "02",
-    title: "Mega-Adjust™ Expandable",
+    title: "Paving-Adjust™ Expandable",
     overline: "NEXT-GEN ENGINEERING",
     tagline: "Mechanical Locking. No Mortar Bed.",
     description: "Features an integrated dual-turnbuckle expansion linkage system that bites directly into the base frame structure, eliminating site settlement and asphalt cracking.",

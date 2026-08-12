@@ -75,11 +75,11 @@ const INDUSTRY_SOLUTIONS = [
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20coated.670.png`
   },
   {
-    id: 'megaprojects',
-    title: 'Mega-Infrastructure Projects',
+    id: 'heavy-infrastructure',
+    title: 'Heavy-Infrastructure Projects',
     description: "From pre-bid planning to the final paving pass, Ben & Ben's operates on a massive scale to supply complex highway and airport expansions through single-source fabrication and dedicated logistics.",
     linkText: 'Partner on mega-projects',
-    href: '#megaprojects',
+    href: '#heavy-infrastructure',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20coated.665.png`
   }
 ];

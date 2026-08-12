@@ -36,7 +36,7 @@ export const PRODUCT_DATA: Product[] = [
             heights: '1" to 6" in 1/2" increments',
             coating: 'Raw / Bituminous Asphaltic Coated / Iron Finish'
         },
-        features: ['Mega-Adjust™ Expansion system', 'No excavation required', 'DOT Approved', 'Stackable design'],
+        features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'DOT Approved', 'Stackable design'],
         images: [
             { label: 'Coated Finish', src: '/paving/Round Riser Coated Finish.612.png' },
             { label: 'Raw Finish', src: '/paving/Round Riser Raw Finish.613.png' },

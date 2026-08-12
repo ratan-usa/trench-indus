@@ -31,7 +31,7 @@ export default function PipingRiserFeature() {
               </h3>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Mega Foundries provides precision-cast and forged components for specialized vertical piping risers used in demanding environments—from offshore drilling to high-pressure chemical plants.
+                Paving Risers provides precision-cast and forged components for specialized vertical piping risers used in demanding environments—from offshore drilling to high-pressure chemical plants.
               </p>
 
               {/* Feature List */}

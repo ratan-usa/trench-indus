@@ -43,7 +43,7 @@ const RISER_SECTIONS = [
     id: "expandable-risers",
     theme: "dark",
     overline: "Next-Gen Adjustment",
-    title: "Mega-Adjust™",
+    title: "Paving-Adjust™",
     highlightText: "Expandable Risers",
     description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in turnbuckle linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20ductile%20iron.662.png`,

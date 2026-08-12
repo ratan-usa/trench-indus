@@ -7,8 +7,8 @@ import { Link as LinkIcon, PlayCircle } from 'lucide-react';
 const RESOURCES = [
   {
     id: 'res-1',
-    title: 'Mega-Adjust™ White Paper',
-    slug: 'mega-adjust-white-paper', // Used for routing
+    title: 'Paving-Adjust™ White Paper',
+    slug: 'Paving-Adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`, // Replace with product photo
   },

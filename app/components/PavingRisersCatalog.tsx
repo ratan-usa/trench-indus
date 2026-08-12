@@ -31,7 +31,7 @@ const FEATURES = [
     }
 ];
 
-export default function MegaPavingRisers() {
+export default function PavingRisersSection() {
     return (
         <div className="min-h-screen bg-white font-sans text-black">
 

@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/industry-solutions',
-    '/mega-advantage',
+    '/paving-advantage',
     '/pro-service',
     '/products/catch-basin-risers',
     '/products/manhole-riser',
@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/product/rectangle-risers',
     '/product/d-shape-risers',
     '/products/infra-riser-adjustment-risers',
-    '/resources/mega-adjust-white-paper',
+    '/resources/Paving-Adjust-white-paper',
     '/resources/installation-guidelines',
     '/resources/adjustment-riser-brochure',
     '/resources/adjustment-riser-video',

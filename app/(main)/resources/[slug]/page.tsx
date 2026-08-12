@@ -7,13 +7,13 @@ import { ChevronLeft, Download, PlayCircle, FileText, Calendar, HardDrive } from
 // --- MOCK DATABASE ---
 const RESOURCE_DATABASE = [
   {
-    slug: 'mega-adjust-white-paper',
-    title: 'Mega-Adjust™ White Paper',
+    slug: 'Paving-Adjust-white-paper',
+    title: 'Paving-Adjust™ White Paper',
     type: 'document',
     format: 'PDF',
     size: '2.4 MB',
     date: 'August 2025',
-    description: 'An in-depth technical analysis of the Mega-Adjust™ expandable riser system. This white paper covers load testing results, DOT compliance standards, and long-term cost-saving metrics for municipal roadwork compared to traditional mortar bed installations.',
+    description: 'An in-depth technical analysis of the Paving-Adjust™ expandable riser system. This white paper covers load testing results, DOT compliance standards, and long-term cost-saving metrics for municipal roadwork compared to traditional mortar bed installations.',
   },
   {
     slug: 'installation-guidelines',
@@ -40,7 +40,7 @@ const RESOURCE_DATABASE = [
     format: 'MP4',
     size: '1080p',
     date: 'April 2026',
-    description: 'Watch our field experts demonstrate the rapid installation of a Mega-Adjust™ riser right before the paving crew lays the final asphalt layer. See exactly how the mechanical expansion lock secures the ring to the existing frame.',
+    description: 'Watch our field experts demonstrate the rapid installation of a Paving-Adjust™ riser right before the paving crew lays the final asphalt layer. See exactly how the mechanical expansion lock secures the ring to the existing frame.',
   }
 ];
 

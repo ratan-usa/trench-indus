@@ -23,7 +23,7 @@ const DRAINAGE_DATA = {
   subtitle: 'Drainage Systems',
   heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image3.jpeg`,
   description: 'Precision-engineered for high-velocity runoff. Our drainage risers ensure optimal hydraulic capacity while maintaining a flush street-level profile.',
-  overview: 'Effective stormwater management requires more than just an opening in the ground. It requires a perfectly seated frame that can handle the sheer force of road runoff during heavy precipitation events. Mega Paving Risers provides 3-sided and 4-sided catch basin solutions that prevent bypass and ensure every gallon of water enters the municipal system as intended.',
+  overview: 'Effective stormwater management requires more than just an opening in the ground. It requires a perfectly seated frame that can handle the sheer force of road runoff during heavy precipitation events. Paving Risers provides 3-sided and 4-sided catch basin solutions that prevent bypass and ensure every gallon of water enters the municipal system as intended.',
   stats: [
     { label: 'Hydraulic Capacity', value: '100%', icon: <Waves className="w-6 h-6" /> },
     { label: 'Slope Adjustment', value: '0 - 15%', icon: <MoveDiagonal className="w-6 h-6" /> },

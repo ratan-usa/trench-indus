@@ -85,7 +85,7 @@ export default function SmartInfraSection() {
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#CC0000] rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
 
             <Badge className="w-fit bg-zinc-900 text-zinc-300 border-zinc-700 mb-6 uppercase tracking-widest text-xs">
-              <Database className="w-3 h-3 mr-2 text-[#CC0000]" /> Mega-Grid Platform
+              <Database className="w-3 h-3 mr-2 text-[#CC0000]" /> Paving-Grid Platform
             </Badge>
 
             <h3 className="text-3xl font-bold mb-4">The Connected Catch Basin</h3>

@@ -2,15 +2,15 @@ import AdditionalResources from "./AdditionalResources";
 import BIMGallery from "./BIMGallery";
 import CompanyOverview from "./CompanyOverview";
 import LocalDistribution from "./LocalDistribution";
-import MegaAdvantage from "./MegaAdvantage";
+import PavingAdvantage from "./PavingAdvantage";
 import ResultMap from "./ResultMap";
 
 
-export default function MegaAdvantages() {
+export default function PavingAdvantages() {
     return (
 
         <div>
-            <MegaAdvantage />
+            <PavingAdvantage />
             <LocalDistribution />
             {/* <ResultMap/> */}
             {/* <CompanyOverview/> */}

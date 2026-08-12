@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Map, Wrench, Building2, ArrowRight } from 'lucide-react';
 
-export default function MegaAdvantage() {
+export default function PavingAdvantage() {
   const features = [
     {
       icon: <Map className="w-8 h-8 text-gray-400 group-hover:text-[#CC0000] transition-colors duration-500" />,

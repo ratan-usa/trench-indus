@@ -19,7 +19,7 @@ export default function InfrastructureRisers() {
             <div className="relative z-10 aspect-square w-full rounded-2xl overflow-hidden border border-slate-100 shadow-2xl">
               <Image
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5201.png`} // Ensure this exists
-                alt="Mega Foundries piving Riser Unit"
+                alt="Paving Risers piving Riser Unit"
                 fill
                 className="object-cover"
               />

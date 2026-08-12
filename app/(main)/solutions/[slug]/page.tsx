@@ -21,7 +21,7 @@ const SOLUTIONS_DB = [
     title: 'Storm Drainage Solutions',
     subtitle: 'Catch basin risers and trench grates designed for efficient municipal stormwater management.',
     heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image3.jpeg`,
-    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Mega Paving Risers provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
+    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Paving Risers provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
     benefits: [
       { title: 'Heavy-Duty Grate Compatibility', desc: 'Fits all standard bicycle-safe and heavy-traffic grates.' },
       { title: 'Custom Sloping', desc: 'Tapered designs to match precise street gradients.' },
@@ -42,7 +42,7 @@ const SOLUTIONS_DB = [
       { title: 'Rapid Installation', desc: 'Expandable options eliminate the need for concrete mortar beds.' }
     ],
     applications: ['Mainline Sewer Access', 'Wastewater Treatment Plants', 'Residential Subdivisions'],
-    featuredProducts: ['Solid Cast Iron Risers', 'Mega-Adjust™ Expandable Risers', 'Watertight Manhole Covers']
+    featuredProducts: ['Solid Cast Iron Risers', 'Paving-Adjust™ Expandable Risers', 'Watertight Manhole Covers']
   },
   {
     slug: 'utility',
@@ -119,14 +119,14 @@ const SOLUTIONS_DB = [
     title: 'Paving & Resurfacing',
     subtitle: 'Risers and frames designed to integrate seamlessly with paving projects.',
     heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image20.jpg`,
-    overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Mega-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations in minutes, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
+    overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Paving-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations in minutes, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
     benefits: [
       { title: 'Zero Cure Time', desc: 'Pave immediately after dropping the riser into place.' },
       { title: 'Micro-Adjustments', desc: 'Stackable heights from 3/4" up to 6" for perfect grade matching.' },
       { title: 'No Excavation', desc: 'Avoid digging out base frames with jackhammers.' }
     ],
     applications: ['DOT Highway Resurfacing', 'City Street Overlays', 'HOA Neighborhood Paving'],
-    featuredProducts: ['Mega-Adjust™ Expandable Risers', 'Solid Steel Adjustment Rings', 'Tapered Paving Rings']
+    featuredProducts: ['Paving-Adjust™ Expandable Risers', 'Solid Steel Adjustment Rings', 'Tapered Paving Rings']
   }
 ];
 interface PageProps {
