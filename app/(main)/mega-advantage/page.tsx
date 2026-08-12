@@ -12,8 +12,8 @@ export default function MegaAdvantages() {
         <div>
             <MegaAdvantage />
             <LocalDistribution />
-            <ResultMap/>
-            <CompanyOverview/>
+            {/* <ResultMap/> */}
+            {/* <CompanyOverview/> */}
             <AdditionalResources />
         </div>
     );

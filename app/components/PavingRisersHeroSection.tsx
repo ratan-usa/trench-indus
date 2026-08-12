@@ -40,7 +40,7 @@ export default function PavingRisersHeroSection() {
                   <Clock className="w-4 h-4" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Fast</span>
                 </div>
-                <p className="text-xs font-bold text-slate-500 leading-snug">5-Minute quick installs.</p>
+                <p className="text-xs font-bold text-slate-500 leading-snug">Quick installs.</p>
               </div>
 
               <div className="space-y-1 pl-1">

@@ -14,8 +14,8 @@ const GALLERY_PROJECTS = [
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/air-1.jpg`,
   },
   {
-    id: 2,
-    title: "Ben & Ben's Retail Plaza: Parking Lot Drainage",
+    id: 'commercial',
+    title: "Commercial Retail Plaza: Parking Lot Drainage",
     category: "Commercial",
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/comm-1.jpg`,
   },

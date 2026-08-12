@@ -30,11 +30,11 @@ export default function ResultMap() {
           {/* Legend Overlay (Mimicking the bottom right legend) */}
           <div className="absolute bottom-4 right-4 bg-white border border-gray-200 p-4 shadow-sm flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <span className="block w-3 h-3 rounded-full bg-[#18a2e5]"></span>
+              <span className="block w-3 h-3 rounded-full bg-[#CC0000]"></span>
               <span className="text-xs text-gray-500">Manufacturing Facilities</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="block w-3 h-3 rounded-full bg-[#f47b20]"></span>
+              <span className="block w-3 h-3 rounded-full bg-[#000000]"></span>
               <span className="text-xs text-gray-500">Sales/Stocking Branches</span>
             </div>
             <div className="flex items-center gap-2">
