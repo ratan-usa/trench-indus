@@ -42,7 +42,7 @@ const Home = () => {
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
       <InfiniteRiserShowcase />
-<ProductInteractiveImage />
+      <ProductInteractiveImage />
       <Product3DShowcase2 />
       <GratesRacksAndTools />
       <Product3DShowcase />
