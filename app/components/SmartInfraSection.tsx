@@ -18,25 +18,25 @@ const AI_FEATURES = [
     id: "iot-telemetry",
     title: "IoT Telemetry Sensors",
     icon: <Radio className="w-8 h-8 text-[#CC0000]" />,
-    description: "Optional embedded sensors transmit real-time data on water levels, toxic gas buildup, and temperature directly to municipal dashboards."
+    description: "Optional embedded sensors transmit real-time data on water levels, hazardous gas levels, and temperature directly to municipal dashboards."
   },
   {
     id: "predictive-ml",
     title: "ML Predictive Maintenance",
     icon: <Activity className="w-8 h-8 text-[#CC0000]" />,
-    description: "Machine learning algorithms analyze micro-stress and traffic load patterns over time to predict fatigue before a structural failure occurs."
+    description: "Machine learning algorithms analyze micro-stress and traffic load patterns over time to help identify potential maintenance concers."
   },
   {
     id: "robotic-fab",
     title: "Robotic Precision Casting",
     icon: <Bot className="w-8 h-8 text-[#CC0000]" />,
-    description: "Our foundries utilize AI-guided robotics for 100% automated pouring and milling, ensuring zero-defect tolerances down to the millimeter."
+    description: "Our foundries utilize AI-guided robotics for automated manufacturing toleranced pouring and milling, ensuring tight manufacturing tolerancess down to the millimeter."
   },
   {
     id: "security-grid",
     title: "Automated Threat Detection",
     icon: <ShieldAlert className="w-8 h-8 text-[#CC0000]" />,
-    description: "Smart access frames detect unauthorized lid removal or tampering, immediately alerting central security networks for critical utility vaults."
+    description: "Smart access frames detect unauthorized lid removal or tampering, immediately alerting central security networks for utility vaults."
   }
 ];
 
@@ -90,7 +90,7 @@ export default function SmartInfraSection() {
 
             <h3 className="text-3xl font-bold mb-4">The Connected Catch Basin</h3>
             <p className="text-zinc-400 mb-8 max-w-lg">
-              Equip your highest-risk flood zones with our smart grates. Using low-power wide-area networks (LPWAN), these units autonomously report flow rates and blockage risks, allowing public works to deploy clearing teams exactly where needed, when needed.
+              Equip your flood-prone areas with our smart grates. Using low-power wide-area networks (LPWAN), these units autonomously report flow rates and blockage risks, allowing public works to deploy clearing teams exactly where needed, when needed.
             </p>
 
             {/* Mock Data UI element */}

@@ -233,7 +233,7 @@ export default function QuoteRequestPage() {
                 <ShieldCheck className="w-6 h-6 text-[#CC0000] shrink-0" />
                 <div>
                   <h4 className="font-black uppercase tracking-wider text-sm mb-1">DOT Pre-Approved</h4>
-                  <p className="text-zinc-400 text-xs font-medium leading-relaxed">Our iron meets or exceeds AASHTO H-20 & HS-20 heavy traffic load specifications.</p>
+                  <p className="text-zinc-400 text-xs font-medium leading-relaxed">Our iron meets or exceeds Heavy-Duty Paving Grade & HS-20 heavy traffic load specifications.</p>
                 </div>
               </div>
             </div>

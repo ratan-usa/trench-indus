@@ -18,25 +18,25 @@ import { cn } from "@/lib/utils";
 const PRODUCT_VIDEOS = [
   {
     id: 1,
-    title: "360° View: Round Riser",
+    title: "Round Riser",
     description: "Full rotation showing the variable height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20steel.661.png`
+    src: `/Videos/Videos/paving_riser_solid_ring_utilisation_animation.676.mp4`,
+    thumbnail: `/images/Manhole_riser/Round_Riser_iron_Finish.614.png`
   },
   {
     id: 2,
-    title: "Exploded View: Square Riser",
+    title: "Square Riser",
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20ductile%20steel.664.png`
+    src: `/Videos/Videos/Ayush_Design.752.mp4`,
+    thumbnail: `/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
   },
   {
     id: 3,
-    title: "Installation Demo: Valve Box",
+    title: "Valve Box",
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
@@ -45,12 +45,12 @@ const PRODUCT_VIDEOS = [
   },
   {
     id: 4,
-    title: "Stress Test Simulation",
+    title: "Catch Basin",
     description: "Finite Element Analysis (FEA) visualization of load distribution.",
     duration: "0:30",
     type: "SIMULATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png`
+    src: `/Videos/catch_basin_animation/1.719.mp4`,
+    thumbnail: `/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`
   }
 ];
 

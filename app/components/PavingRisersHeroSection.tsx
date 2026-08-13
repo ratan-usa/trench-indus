@@ -56,11 +56,13 @@ export default function PavingRisersHeroSection() {
           {/* RIGHT PANEL: LIVE FABRICATION INDUSTRIAL LOOP FEED */}
           <div className="lg:col-span-6 w-full">
             <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-[#CC0000] shadow-xl border border-slate-200">
-
-              {/* Vimeo loop streaming background configurations */}
-              <iframe
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/C24A_11_options.mp4`}
-                allow="autoplay; fullscreen; picture-in-picture"
+              <video
+                src="/Videos/Videos/Ayush_Design.752.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
                 className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
                 title="Paving Risers Factory Production Footage"
               />

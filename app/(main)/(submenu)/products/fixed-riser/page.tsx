@@ -83,7 +83,7 @@ export default function FixedRiserPage() {
                 Unbreakable <br/> Integrity.
               </h3>
               <p className="text-gray-400 font-medium leading-relaxed max-w-xl text-lg md:text-xl">
-                Unlike adjustable risers that rely on mechanical expansion, our fixed risers are a solid, single-piece casting. This eliminates any weak points or moving parts, ensuring the riser will never collapse or shift under extreme localized shock loads.
+                Unlike adjustable risers that rely on mechanical expansion, our fixed risers are a solid, single-piece casting. This minimizes any weak points or moving parts, ensuring the riser will never collapse or shift under extreme localized shock loads.
               </p>
             </div>
             <div className="flex-1 relative w-full h-[400px]">

@@ -136,7 +136,7 @@ export default function ProductInteractiveImage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Hammer className="w-4 h-4 text-slate-400" /> Compliance:</span>
-                  <span className="text-[#CC0000]">AASHTO H-20 Traffic</span>
+                  <span className="text-[#CC0000]">Paving Traffic Grade</span>
                 </div>
               </div>
             </div>

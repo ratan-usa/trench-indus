@@ -39,7 +39,7 @@ const SOLUTIONS_DB = [
     benefits: [
       { title: 'I&I Prevention', desc: 'Machined surfaces for watertight gasket seals.' },
       { title: 'Shock Load Rated', desc: 'Engineered to withstand continuous H-20/HS-20 commercial traffic.' },
-      { title: 'Rapid Installation', desc: 'Expandable options eliminate the need for concrete mortar beds.' }
+      { title: 'Rapid Installation', desc: 'Expandable options minimize the need for concrete mortar beds.' }
     ],
     applications: ['Mainline Sewer Access', 'Wastewater Treatment Plants', 'Residential Subdivisions'],
     featuredProducts: ['Solid Cast Iron Risers', 'Paving-Adjust™ Expandable Risers', 'Watertight Manhole Covers']

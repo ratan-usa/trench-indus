@@ -22,7 +22,7 @@ const SHOWCASE_PRODUCTS = [
     tagline: "Precision Lift. Zero Excavation.",
     description: "The primary operational standard for structural manhole elevation adjustments. Engineered to prevent vertical shifting during high-velocity heavy vehicle traffic road overlays.",
     specLabel: "Load Class",
-    specValue: "AASHTO H-20 Rated",
+    specValue: "Paving Grade Rated",
     icon: <Grid className="w-5 h-5" />
   },
   {
@@ -155,7 +155,7 @@ export default function PremiumPavingShowcase() {
 
               {/* Technical Property Matrix Metric */}
               <div className="bg-[#0F0F0F] border border-[#1A1A1A] p-4 flex justify-between items-center text-xs font-bold uppercase tracking-wider max-w-xl">
-                <span className="text-zinc-500">Certified Parameter:</span>
+                <span className="text-zinc-500">rated for Parameter:</span>
                 <span className="text-white font-mono border-b border-[#CC0000] pb-0.5">{currentProduct.specValue}</span>
               </div>
             </div>

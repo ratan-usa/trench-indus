@@ -10,28 +10,28 @@ const RESOURCES = [
     title: 'Paving-Adjust™ White Paper',
     slug: 'Paving-Adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`, // Replace with product photo
+    imageSrc: `/images/catch_basin_riser/Rectangle_riser.811.png`, // Replace with product photo
   },
   {
     id: 'res-2',
     title: 'Installation Guidelines',
     slug: 'installation-guidelines',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png`, // Replace with product photo
+    imageSrc: `/images/Custom Riser/D_shape_Rise_ with Iron.635.png`, // Replace with product photo
   },
   {
     id: 'res-3',
     title: 'Adjustment Riser Brochure',
     slug: 'adjustment-riser-brochure',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure%20Riser%20Raw%20Finish.610.png`, // Replace with product photo
+    imageSrc: `/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`, // Replace with product photo
   },
   {
     id: 'res-4',
-    title: 'Adjustment Riser Video',
-    slug: 'adjustment-riser-video',
+    title: 'Manhole Riser Video',
+    slug: 'manhole-riser-video',
     type: 'video',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`, // Replace with product photo
+    imageSrc: `/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`, // Replace with product photo
   }
 ];
 

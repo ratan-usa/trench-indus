@@ -34,7 +34,7 @@ const RESOURCE_DATABASE = [
     description: 'Our complete catalog of heavy-duty adjustment risers, catch basin frames, and utility vault access solutions. Includes sizing charts and material specifications.',
   },
   {
-    slug: 'adjustment-riser-video',
+    slug: 'manhole-riser-video',
     title: 'Adjustment Riser Installation Video',
     type: 'video',
     format: 'MP4',

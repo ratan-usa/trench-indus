@@ -53,7 +53,7 @@ export default function ToolsAndAccessoriesCatalog() {
             <span className="text-[#CC0000]">For Rapid On-Site Fitment.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Equip your road crews with certified jobsite accessories engineered to reduce deployment labor times and guarantee perfect riser positioning.
+            Equip your road crews with rated for jobsite accessories engineered to reduce deployment labor times and helps insure accurate positioning
           </p>
         </div>
 

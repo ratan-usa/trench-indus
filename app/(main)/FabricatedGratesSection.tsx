@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 const GRATE_FEATURES = [
   {
     title: "Heavy-Duty Welded Steel Construction",
-    description: "Built from high-tensile structural carbon steel or ductile iron matrices designed to withstand continuous AASHTO H-20 highway impacts."
+    description: "Built from high-tensile structural carbon steel or ductile iron matrices designed to withstand continuous Heavy-Duty Paving Grade highway impacts."
   },
   {
     title: "Custom Structural Form Factors",
@@ -36,7 +36,7 @@ const GRATE_FEATURES = [
 ];
 
 const FABRICATION_SPECS = [
-  { label: "Load Rating", value: "AASHTO H-20 & HS-20 Traffic" },
+  { label: "Load Rating", value: "Heavy-Duty Paving Traffic" },
   { label: "Material Grade", value: "ASTM A36 Steel / Class 35B Iron" },
   { label: "Grate Depth", value: "Built to Match Seat Thickness" },
   { label: "Coating Options", value: "Bituminous Black / Galvanized" }

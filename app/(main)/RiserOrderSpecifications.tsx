@@ -53,7 +53,7 @@ export default function RiserOrderSpecifications() {
             <span className="text-[#CC0000]">Dimensional Verification.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            To ensure an absolute tight fitment that locks permanently into place under continuous heavy vehicle traffic, verify the following 4 structural site data parameters prior to manufacturing.
+            To ensure an absolute tight fitment that locks securely locks into the frame into place under continuous heavy vehicle traffic, verify the following 4 structural site data parameters prior to manufacturing.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function RiserOrderSpecifications() {
             {/* Verification Quality Shield Footer */}
             <div className="border border-slate-200 bg-slate-50 p-4 rounded-sm flex items-center gap-3 text-xs font-bold text-slate-600">
               <ShieldCheck className="w-5 h-5 text-[#CC0000] shrink-0" />
-              <span>Precise data matching eliminates out-of-round shifting and protects modern thin-layer wearing courses.</span>
+              <span>Precise data matching minimizes out-of-round shifting and protects modern thin-layer wearing courses.</span>
             </div>
           </div>
 

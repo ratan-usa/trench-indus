@@ -29,13 +29,13 @@ const CATEGORIES = [
     subtitle: 'High-Volume Drainage & Load Surface Covers',
     icon: <Grid className="w-5 h-5" />,
     features: [
-      { title: 'Heavy-Duty Welded Construction', desc: 'Engineered from high-tensile carbon steel or ductile iron to sustain continuous AASHTO H-20 & HS-20 traffic loads.' },
+      { title: 'Heavy-Duty Welded Construction', desc: 'Engineered from high-tensile carbon steel or ductile iron to sustain continuous Heavy-Duty Paving Traffic loads.' },
       { title: 'Bespoke Hydraulic Flow Profiles', desc: 'Available in standard parallel slotted, bicycle-safe diagonal, or ADA-compliant pedestrian safe configurations.' },
       { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing or heavy bituminous asphaltum to resist road salts and chemical exposure.' },
       { title: 'Custom Seating Dimensions', desc: 'Precision fabricated to drop directly into existing municipal catch basin frames or elevated paving risers.' }
     ],
     specs: [
-      { label: 'Load Rating', value: 'AASHTO H-20 / HS-20 Certified' },
+      { label: 'Load Rating', value: 'Heavy-Duty Paving rated for' },
       { label: 'Material Grade', value: 'ASTM A36 Steel / Class 35B Iron' },
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
       { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
@@ -78,7 +78,7 @@ const CATEGORIES = [
       { label: 'Pry Capacity', value: '500+ lbs Lifting Leverage' },
       { label: 'Shim Material', value: 'High-Density Non-Crush Polymer' }
     ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5201.png`
+    image: `/images/tools/SEWER_PLUG_PILLER.12.png`
   }
 ];
 
@@ -173,7 +173,7 @@ export default function GratesRacksAndTools() {
             <div className="bg-[#0F0F0F] text-white p-6 rounded-sm border border-zinc-800 space-y-4">
               <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                  Certified Engineering Matrix
+                  rated for Engineering Matrix
                 </span>
                 <span className="text-xs font-mono font-bold text-[#CC0000]">
                   {current.title}

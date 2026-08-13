@@ -46,7 +46,7 @@ export default function SanitarySewerPage() {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button className="bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest rounded-none h-14 px-8 transition-colors">
-                  Eliminate I&I
+                  minimize I&I
                 </Button>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function SanitarySewerPage() {
               <ShieldAlert className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-4">No Mortar Degradation</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Traditional brick and mortar adjustments crumble under heavy traffic and freeze-thaw cycles, allowing massive water infiltration. Solid iron risers completely eliminate mortar failure.
+                Traditional brick and mortar adjustments crumble under heavy traffic and freeze-thaw cycles, allowing massive water infiltration. Solid iron risers completely minimize mortar failure.
               </p>
             </div>
 

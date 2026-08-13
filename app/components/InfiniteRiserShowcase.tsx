@@ -35,7 +35,7 @@ export default function InfiniteRiserShowcase() {
                     <div className="lg:col-span-6">
                         <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                             <video
-                                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`}
+                                src={'/Videos/d_shape_riser.mp4'}
                                 autoPlay
                                 loop
                                 muted
@@ -56,14 +56,14 @@ export default function InfiniteRiserShowcase() {
                                 Mechanical Expansion Technology
                             </h3>
                             <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                Designed to eliminate full manhole frame excavations during road overlays. The internal turnbuckle assembly bites outward directly into existing structures for a zero-shift, high-impact traffic seal.
+                                Designed to minimize full manhole frame excavations during road overlays. The internal turnbuckle assembly bites outward directly into existing structures for a Helps minimize shifting, high-impact traffic seal.
                             </p>
                         </div>
 
                         <div className="space-y-3 border-t border-b border-zinc-800 py-6">
                             <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                 <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
-                                <span>Heavy Traffic Load Certified</span>
+                                <span>Heavy Traffic Load rated for</span>
                             </div>
                             <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                 <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />

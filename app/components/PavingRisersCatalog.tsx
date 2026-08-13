@@ -15,9 +15,9 @@ import { Button } from "@/components/ui/button";
 
 const FEATURES = [
     {
-        title: "AASHTO H-20 Rated",
+        title: "Paving Grade Rated",
         icon: <Truck className="w-8 h-8 text-[#CC0000]" />,
-        description: "Certified for heavy-duty traffic and municipal roadway standards."
+        description: "rated for for heavy-duty traffic and municipal roadway standards."
     },
     {
         title: "High Tensile Strength",
@@ -25,7 +25,7 @@ const FEATURES = [
         description: "Superior durability with precision-cast iron and impact resistance."
     },
     {
-        title: "7 Years Warranty",
+        title: "7-Year Warranty",
         icon: <ShieldCheck className="w-8 h-8 text-[#CC0000]" />,
         description: "Guaranteed quality performance for long-term infrastructure."
     }

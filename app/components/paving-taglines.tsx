@@ -27,8 +27,8 @@ export default function PavingPathHero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative w-full bg-[#E0E0E0] overflow-hidden font-sans border-b-4 border-[#CC0000]">
-      <div className="w-full pl-6 md:pl-8 lg:pl-12 space-y-12  min-h-[220px] lg:min-h-[260px] grid grid-cols-1 lg:grid-cols-12 items-center">
+    <section className="relative w-full bg-[#E0E0E0] overflow-hidden font-sans">
+      <div className="w-full pl-6 md:pl-8 lg:pl-12 grid grid-cols-1 lg:grid-cols-12 items-center">
         
         {/* --- LEFT COLUMN: BRAND TYPOGRAPHY & BADGES --- */}
         <div className="lg:col-span-7 py-6 lg:py-8 space-y-4 z-10">
@@ -39,7 +39,7 @@ export default function PavingPathHero() {
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tight leading-none"
+              className="flex items-center gap-2 text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none"
             >
               <span className="text-[#0F0F0F]">PAVING</span>
               <span className="text-[#CC0000]">YOUR WAY</span>
@@ -78,7 +78,7 @@ export default function PavingPathHero() {
 
         </div>
         {/* --- RIGHT COLUMN: ANGLED BLACK & RED GRAPHIC WITH IMAGE --- */}
-        <div className="lg:col-span-5 relative w-full h-[220px] lg:h-[260px] overflow-hidden flex items-end justify-end">
+        <div className="lg:col-span-5 relative w-full overflow-hidden flex items-end justify-end">
           {/* Image Container */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}

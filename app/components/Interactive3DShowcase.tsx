@@ -83,7 +83,7 @@ const GLB_MODELS: GlbModel[] = [
                 description: "Reinforced structural profile designed to bear continuous high-velocity impact loads from commercial truck traffic.",
                 x: 0.6, y: 0, z: 0.4,
                 specLabel: "Traffic Rating",
-                specValue: "AASHTO H-20 & HS-20 Traffic"
+                specValue: "Heavy-Duty Paving Traffic"
             }
         ]
     },

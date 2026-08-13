@@ -89,7 +89,7 @@ export default function EngineeringBriefsPage() {
                   Solid Ring <br /><span className="text-[#CC0000]">Mechanics</span>
                 </h3>
                 <p className="text-lg text-zinc-400 leading-relaxed font-medium mb-8">
-                  Engineering Brief #104 details the kinetic advantages of utilizing a seamless solid cast ring. By eliminating welds and joints in the primary load-bearing surface, we eliminate microscopic stress fractures caused by high-frequency vibration from overhead traffic.
+                  Engineering Brief #104 details the kinetic advantages of utilizing a seamless solid cast ring. By eliminating welds and joints in the primary load-bearing surface, we minimize microscopic stress fractures caused by high-frequency vibration from overhead traffic.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-[#111] px-6 py-4 border border-white/5 flex items-center gap-3">

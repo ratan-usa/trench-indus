@@ -103,7 +103,7 @@ const Navbar = () => {
                 {/* --- LOGO --- */}
                 <Link href={'/'} className="shrink-0">
                     <Image
-                        src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/PAVING-RISERS-LOGO.png`}
+                        src={'/images/paving_logo.png'}
                         alt='Paving Risers'
                         height={80}
                         width={160}

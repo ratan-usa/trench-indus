@@ -89,20 +89,7 @@ const FOOTER_LINKS = [
                 ]
             }
         ]
-    },
-    {
-        title: 'Contact',
-        categories: [
-            {
-                name: 'Get in Touch',
-                links: [
-                    { name: 'Request a Quote', href: '/contact/quote' },
-                    { name: 'Foundry Locations', href: '/about/locations' },
-                    { name: 'Submit Specifications', href: '/contact/specifications' },
-                ]
-            }
-        ]
-    },
+    } 
 ];
 
 export default function HeavyFooter() {
@@ -131,7 +118,7 @@ export default function HeavyFooter() {
           
           <div className="flex flex-wrap gap-4 text-[10px] font-mono uppercase tracking-widest">
             <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
-              <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> AASHTO H-20 Rated
+              <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Paving Grade Rated
             </span>
             <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
               <Settings className="w-4 h-4 text-[#CC0000]" /> DOT Compliant Castings
@@ -193,7 +180,7 @@ export default function HeavyFooter() {
 
           {/* RIGHT SECTION: Links Grid (9 Columns) */}
           <div className="xl:col-span-9">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
               {FOOTER_LINKS.map((section, idx) => (
                 <div key={idx} className="space-y-6">
                   <h4 className="text-white font-black uppercase tracking-widest text-xs border-b border-[#333] pb-4">
@@ -238,17 +225,17 @@ export default function HeavyFooter() {
         
         <div className="animate-marquee inline-flex items-center gap-12 text-[10px] font-mono uppercase tracking-[0.3em] text-gray-600">
           <span>// HEAVY DUTY CASTINGS</span>
-          <span>// DOT APPROVED</span>
+          <span>// design to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
-          <span>// AASHTO H-20 COMPLIANT</span>
+          <span>// PAVING GRADE COMPLIANT</span>
           <span>// PAVING RISERS INFRASTRUCTURE</span>
           <span>// PRECISION ENGINEERING</span>
           <span>// HEAVY DUTY CASTINGS</span>
-          <span>// DOT APPROVED</span>
+          <span>// design to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
-          <span>// AASHTO H-20 COMPLIANT</span>
+          <span>// PAVING GRADE COMPLIANT</span>
           <span>// PAVING RISERS INFRASTRUCTURE</span>
           <span>// PRECISION ENGINEERING</span>
         </div>

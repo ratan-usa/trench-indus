@@ -21,7 +21,7 @@ const MANHOLE_FRAME_DATA = {
   specs: [
     { label: 'Material', value: 'Ductile Iron (65-45-12) or Gray Cast Iron' },
     { label: 'Profile Type', value: 'Standard Round or Heavy Duty' },
-    { label: 'Load Rating', value: 'AASHTO M306 / H-20 / HS-20 Heavy Traffic' },
+    { label: 'Load Rating', value: 'Paving Standard M306 / H-20 / HS-20 Heavy Traffic' },
     { label: 'Standard Sizes', value: '24", 30", 36" Clear Openings' },
     { label: 'Cover Options', value: 'Watertight, Locking, Vented or Solid' },
     { label: 'Certification', value: 'Buy America Act Compliant, ISO 9001:2015' },
@@ -30,7 +30,7 @@ const MANHOLE_FRAME_DATA = {
     {
       icon: CircleDot,
       title: 'Anti-Rattle Design',
-      desc: 'Precision machined bearing surfaces eliminate rattling and movement under heavy highway traffic.'
+      desc: 'Precision machined bearing surfaces minimize rattling and movement under heavy highway traffic.'
     },
     {
       icon: Lock,

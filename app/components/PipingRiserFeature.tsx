@@ -92,7 +92,7 @@ export default function PipingRiserFeature() {
 
               {/* Visual Highlight Text */}
               <div className="absolute bottom-6 left-6 p-3 bg-[#0F0F0F]/50 backdrop-blur-sm rounded-md border border-[#CC0000]">
-                <p className="text-xl font-bold text-white leading-none">ISO 9001 Certified Materials</p>
+                <p className="text-xl font-bold text-white leading-none">ISO 9001 rated for Materials</p>
               </div>
             </div>
 

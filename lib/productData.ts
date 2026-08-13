@@ -31,12 +31,12 @@ export const PRODUCT_DATA: Product[] = [
         description: 'Standard round risers for manholes and catch basins.',
         specs: {
             material: 'Heavy Duty Cast Iron (ASTM A48 Class 35B)',
-            loadRating: 'AASHTO H-20 & HS-20 Traffic Rated',
+            loadRating: 'Heavy-Duty Paving Traffic Rated',
             standardSizes: '24", 26", 28", 30", 32", 36"',
             heights: '1" to 6" in 1/2" increments',
             coating: 'Raw / Bituminous Asphaltic Coated / Iron Finish'
         },
-        features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'DOT Approved', 'Stackable design'],
+        features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Coated Finish', src: '/paving/Round Riser Coated Finish.612.png' },
             { label: 'Raw Finish', src: '/paving/Round Riser Raw Finish.613.png' },
@@ -56,12 +56,12 @@ export const PRODUCT_DATA: Product[] = [
         description: 'Round risers featuring integrated set screws for precise height adjustment and level alignment without shims.',
         specs: {
             material: 'Heavy Duty Cast Iron (ASTM A48 Class 35B)',
-            loadRating: 'AASHTO H-20 & HS-20 Traffic Rated',
+            loadRating: 'Heavy-Duty Paving Traffic Rated',
             standardSizes: '24", 26", 28", 30", 32", 36"',
             heights: '1" to 6" in 1/2" increments',
             coating: 'Raw / Bituminous Asphaltic Coated / Iron Finish'
         },
-        features: ['Integrated Leveling Screws', 'No excavation required', 'DOT Approved', 'Stackable design'],
+        features: ['Integrated Leveling Screws', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Coated Finish', src: '/paving/Round Riser with screw coated Finish.618.png' },
             { label: 'Raw Finish', src: '/paving/Round Riser with screw Raw Finish.617.png' },
@@ -178,7 +178,7 @@ export const PRODUCT_DATA: Product[] = [
         description: 'Heavy duty riser systems featuring secure locking set screws for high traffic roadways and highways.',
         specs: {
             material: 'Heavy Duty Ductile Iron or Fabricated Steel',
-            loadRating: 'AASHTO HS-25 Traffic Rated',
+            loadRating: 'Paving Standard HS-25 Traffic Rated',
             standardSizes: '24", 30", 36"',
             heights: '1.5" to 8"',
             coating: 'Anti-corrosion coated / painted'

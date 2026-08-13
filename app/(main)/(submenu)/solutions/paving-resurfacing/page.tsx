@@ -42,7 +42,7 @@ export default function PavingResurfacingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl border-l-4 border-[#CC0000] pl-8">
             <p className="text-xl text-zinc-300 font-medium leading-relaxed">
-              When a city street is milled and repaved, utility structures are often left buried or dangerously depressed. Our engineered risers eliminate the need to dig up and reset existing castings.
+              When a city street is milled and repaved, utility structures are often left buried or dangerously depressed. Our engineered risers minimize the need to dig up and reset existing castings.
             </p>
             <div className="flex flex-col justify-center gap-4">
               <Button size="lg" className="bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest rounded-none h-14 w-full md:w-auto transition-colors shadow-[0_0_30px_rgba(204,0,0,0.3)]">

@@ -28,7 +28,7 @@ export default function CatchBasinSteelRisers() {
             <span className="text-[#cc2221]">Tailored Custom Fitment.</span>
           </h2>
           <p className="text-zinc-600 text-lg font-medium leading-relaxed max-w-none">
-            Eliminate intensive structural rebuilds during overlays. Our high-tensile steel frame extensions are precision manufactured to match localized storm drain geometries perfectly.
+            minimize intensive structural rebuilds during overlays. Our high-tensile steel frame extensions are precision manufactured to match localized storm drain geometries perfectly.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function CatchBasinSteelRisers() {
                   <h3 className="font-black uppercase tracking-wider text-xs text-[#0a0a0a]">Origin Quality</h3>
                 </div>
                 <p className="text-sm font-bold text-zinc-800">Proudly Made in America</p>
-                <p className="text-xs text-slate-500 leading-relaxed">Forged and assembled domestically using certified high-tensile steel alloys matching domestic construction mandates.</p>
+                <p className="text-xs text-slate-500 leading-relaxed">Forged and assembled domestically using rated for high-tensile steel alloys matching domestic construction mandates.</p>
               </div>
 
               {/* Feature 4 */}

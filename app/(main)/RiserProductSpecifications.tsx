@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 // --- STRUCTURAL FEATURE DATA EXTRACTED FROM 2.png ---
 const SOLID_IRON_FEATURES = [
   { title: "Most Economical Option", desc: "Maximizes infrastructure budget layout efficiency across large municipal projects." },
-  { title: "Cast from Class 30 Gray Iron", desc: "Heavy-duty structural casting optimized for brutal vehicular weight distributions." },
+  { title: "Cast from Class 30 Gray Iron", desc: "Heavy-duty structural casting optimized for heavy vehicular loads" },
   { title: "Machined to Fit Street Covers", desc: "Precision tailored to accommodate existing street manhole setups seamlessly." },
   { title: "Minimum Vertical Rise", desc: "Engineered clearance calculated precisely at lid thickness + 1/2\" increments." },
   { title: "Standard Sizes In Stock", desc: "Readily available and stocked in standard 2\" and 3\" elevation rises." },
@@ -25,7 +25,7 @@ const SOLID_IRON_FEATURES = [
 
 const ADJUSTABLE_STEEL_FEATURES = [
   { title: "Diameter Variance Adjust", desc: "Flexible perimeter configuration adjusts in or out up to 1/2\" to clear frame irregularities." },
-  { title: "Pivoted Turnbuckle System", desc: "Built-in mechanical linkage delivering positive, immovable gripping power to the base." },
+  { title: "Pivoted Turnbuckle System", desc: "Built-in mechanical linkage delivering positive, high-grip mechanical locking to the base." },
   { title: "Installs in Minutes", desc: "Accelerates on-site field assembly timelines to match fast-paced asphalt crews." },
   { title: "Ultra-Low Minimum Rise", desc: "Provides as little as 3/4\" vertical rise—essential for modern micro-surfacing paving overlays." }
 ];
@@ -45,7 +45,7 @@ export default function RiserProductSpecifications() {
             <span className="text-[#CC0000]">Benefits & Performance Features.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Review certified operational line features. Choose between high-economy solid cast profiles or mechanical precision steel adjustments.
+            Review rated for operational line features. Choose between high-economy solid cast profiles or mechanical precision steel adjustments.
           </p>
         </div>
 

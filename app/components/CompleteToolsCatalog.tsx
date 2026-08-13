@@ -211,8 +211,8 @@ const ACCESSORIES_DATA = [
     title: "Hydrant Setter",
     category: "Wrenches & Setters",
     sku: "PR-HDS-09",
-    description: "Rigging-certified chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
-    spec: "Dual Lifting Eyes • Certified Chain Link",
+    description: "Rigging-rated for chain and balance bar tool assembly built for the precise placement of hydrant assemblies.",
+    spec: "Dual Lifting Eyes • rated for Chain Link",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/paving%20rings/mr2.4.png`
   }
 ];

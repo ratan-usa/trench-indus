@@ -34,7 +34,7 @@ const D_SHAPE_DATA = {
   specs: [
     { label: 'Material', value: 'Ductile Iron (65-45-12) or Cast Iron' },
     { label: 'Profile Type', value: 'Single Flat-Back "D" Geometry' },
-    { label: 'Load Rating', value: 'AASHTO M306 / H-20 Heavy Traffic' },
+    { label: 'Load Rating', value: 'Paving Standard M306 / H-20 Heavy Traffic' },
     { label: 'Standard Sizes', value: '24", 30", 32" Diameter equivalents' },
     { label: 'Rise Increments', value: '1.5" to 4" (Custom stackable available)' },
     { label: 'Certification', value: 'ISO 9001:2015 Material Standards' },

@@ -59,7 +59,7 @@ export default function CatchBasinRisersPage() {
           <div className="lg:col-span-5 space-y-8 relative z-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-[#CC0000] animate-pulse" />
-              <span className="text-xs font-mono font-bold tracking-widest text-zinc-300 uppercase">AASHTO H-20 Rated</span>
+              <span className="text-xs font-mono font-bold tracking-widest text-zinc-300 uppercase">Paving Grade Rated</span>
             </div>
 
             <div className="space-y-4">

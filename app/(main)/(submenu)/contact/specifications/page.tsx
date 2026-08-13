@@ -129,7 +129,7 @@ export default function SubmitSpecificationsPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-4 left-4 flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
-                  <span className="text-xs font-black uppercase tracking-widest">AASHTO Compliant</span>
+                  <span className="text-xs font-black uppercase tracking-widest">Paving Standard Compliant</span>
                 </div>
               </div>
               <div className="p-6">
