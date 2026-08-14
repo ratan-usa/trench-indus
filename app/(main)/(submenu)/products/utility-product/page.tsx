@@ -14,7 +14,7 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Standard Raw', image: '/paving/Sqaure Riser Raw Finish.610.png' },
+  { name: 'Standard Raw', image: '/paving/Sqaure_Riser_Raw_Finish.610.png' },
   { name: 'Coated Black', image: '/paving/Sqaure Riser Coated Finish.611.png' },
   { name: 'Solid Cast Iron', image: '/paving/Sqaure Riser iron.609.png' },
 ];

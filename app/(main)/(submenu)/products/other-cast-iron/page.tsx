@@ -16,7 +16,7 @@ const CAST_IRON_PRODUCTS = [
     title: 'Heavy Duty Trench Grates',
     category: 'Drainage Castings',
     description: 'Class 30 Gray Iron trench grates designed for heavy highway and airport tarmac load requirements.',
-    image: '/paving/Rectangle Paving Riser 1.619.png',
+    image: '/paving/Rectangle_Paving_Riser_1.619.png',
   },
   {
     title: 'Round Extension Rings',

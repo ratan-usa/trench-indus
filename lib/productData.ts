@@ -84,7 +84,7 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Perfect for utility vaults', 'Reinforced corners', 'Anti-slip surface compatibility'],
         images: [
             { label: 'Coated Finish', src: '/paving/Sqaure Riser Coated Finish.611.png' },
-            { label: 'Raw Finish', src: '/paving/Sqaure Riser Raw Finish.610.png' },
+            { label: 'Raw Finish', src: '/paving/Sqaure_Riser_Raw_Finish.610.png' },
             { label: 'Iron Finish', src: '/paving/Sqaure Riser iron.609.png' },
             { label: 'Square Raw', src: '/paving/paving riser Square raw.666.png' },
             { label: 'Square Coated', src: '/paving/paving riser Square coated.665.png' },
@@ -109,9 +109,9 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Precision welded seams', 'Adjustable height bolts', 'Curb-side compatible'],
         images: [
             { label: 'Coated Finish', src: '/paving/Rectangle Riser coated Finish.605.png' },
-            { label: 'Raw Finish', src: '/paving/Rectangle Riser Raw Finish.606.png' },
-            { label: 'Iron Finish', src: '/paving/Rectangle Riser iron.608.png' },
-            { label: 'Riser 1 Standard', src: '/paving/Rectangle Paving Riser 1.619.png' },
+            { label: 'Raw Finish', src: '/paving/Rectangle_Riser_Raw_Finish.606.png' },
+            { label: 'Iron Finish', src: '/paving/Rectangle_Riser_iron.608.png' },
+            { label: 'Riser 1 Standard', src: '/paving/Rectangle_Paving_Riser_1.619.png' },
             { label: 'Riser 1 Coated', src: '/paving/Rectangle Paving Riser 1 Coated finish.621.png' },
             { label: 'Riser 1 Right', src: '/paving/Rectangle Paving Riser 1 Right.622.png' },
             { label: 'Riser 2 Raw', src: '/paving/Rectangle Paving Riser 2 Raw Finish.624.png' },

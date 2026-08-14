@@ -199,7 +199,7 @@ export default function QuoteRequestPage() {
               <div className="absolute inset-0 flex items-center justify-center z-10 p-8">
                 <Image 
                   src={
-                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201.619.png` : 
+                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Paving_Riser_1.619.png` : 
                     selectedProduct === 'valve-box' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure%20Riser%20Coated%20Finish.611.png` : 
                     `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201%20ductile%20iron.653.png`
                   }

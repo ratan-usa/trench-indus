@@ -36,7 +36,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15205',
     name: 'Heavy Duty Square Frame Riser',
     type: 'Catch Basin Configuration',
-    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure%20Riser%20Raw%20Finish.610.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure_Riser_Raw_Finish.610.png`,
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 202, x: '65%', y: '40%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },

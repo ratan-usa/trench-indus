@@ -18,9 +18,9 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20Raw%20Finish.606.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Riser_Raw_Finish.606.png` },
   { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20coated%20Finish.605.png` },
-  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Riser%20iron.608.png` },
+  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Riser_iron.608.png` },
   { name: 'Ductile Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20ductile%20iron.672.png` },
   { name: 'Steel Fabricated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20steel.671.png` },
 ];
