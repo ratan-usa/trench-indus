@@ -39,7 +39,7 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Coated Finish', src: '/paving/Round Riser Coated Finish.612.png' },
-            { label: 'Raw Finish', src: '/paving/Round Riser Raw Finish.613.png' },
+            { label: 'Raw Finish', src: '/paving/Round_Riser_Raw_Finish.613.png' },
             { label: 'Iron Finish', src: '/paving/Round Riser iron Finish.614.png' },
             { label: 'Round No-Screw Raw', src: '/paving/paving riser Round No screw raw.659.png' },
             { label: 'Round No-Screw Coated', src: '/paving/paving riser Round No screw coated.660.png' },
@@ -186,7 +186,7 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Heavy-Duty Set Screws', 'Anti-skid design', 'Perfect highway grade alignment'],
         images: [
             { label: 'Screws Option 1', src: '/paving/paving riser with screws.600.png' },
-            { label: 'Screws Option 2', src: '/paving/paving riser with screws.601.png' }
+            { label: 'Screws Option 2', src: '/paving/paving_riser_with_screws.601.png' }
         ]
     }
 ];

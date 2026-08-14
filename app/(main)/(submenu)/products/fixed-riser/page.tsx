@@ -6,7 +6,7 @@ import { ShieldCheck, Ruler, ArrowRight, Anchor } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const FINISHES = [
-  { id: 'F01', name: 'Raw Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Raw%20Finish.613.png`, desc: 'Industrial grade raw iron for immediate use.' },
+  { id: 'F01', name: 'Raw Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`, desc: 'Industrial grade raw iron for immediate use.' },
   { id: 'F02', name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Coated%20Finish.612.png`, desc: 'Black coated to resist extreme environmental corrosion.' },
   { id: 'F03', name: 'Standard Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`, desc: 'Standard foundry casting for maximum shock load.' },
   { id: 'F04', name: 'Ductile Alloy', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20ductile%20iron.662.png`, desc: 'High flexibility ductile iron to prevent sudden cracking.' },
@@ -46,7 +46,7 @@ export default function FixedRiserPage() {
           
           <div className="relative z-10 w-full aspect-square md:aspect-video flex items-center justify-center animate-in fade-in zoom-in-95 duration-1000">
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Raw%20Finish.613.png`}
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`}
               alt="Fixed Riser"
               fill
               className="object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.9)] hover:scale-105 transition-transform duration-700 ease-out"

@@ -13,7 +13,7 @@ const TOOLS = [
     title: 'Manhole Hook',
     desc: 'Forged steel hook designed to lift and maneuver heavy cast iron covers safely without pinching.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Raw%20Finish.613.png`, 
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`, 
   },
   {
     id: '02',
@@ -45,7 +45,7 @@ const TOOLS = [
     title: 'Extraction Hook',
     desc: 'Specialized dual-hook puller designed to safely extract heavy drainage grates without damaging the surrounding frame.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Raw%20Finish.613.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`,
   },
   {
     id: '06',

@@ -22,7 +22,7 @@ const CAST_IRON_PRODUCTS = [
     title: 'Round Extension Rings',
     category: 'Utility Adjustments',
     description: 'Solid cast rings to elevate existing manhole covers without requiring a full frame replacement.',
-    image: '/paving/Round Riser Raw Finish.613.png',
+    image: '/paving/Round_Riser_Raw_Finish.613.png',
   },
   {
     title: 'Square Vault Covers',
