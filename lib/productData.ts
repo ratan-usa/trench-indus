@@ -38,14 +38,11 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
-            { label: 'Coated Finish', src: '/paving/Round Riser Coated Finish.612.png' },
-            { label: 'Raw Finish', src: '/paving/Round_Riser_Raw_Finish.613.png' },
-            { label: 'Iron Finish', src: '/paving/Round Riser iron Finish.614.png' },
-            { label: 'Round No-Screw Raw', src: '/paving/paving riser Round No screw raw.659.png' },
-            { label: 'Round No-Screw Coated', src: '/paving/paving riser Round No screw coated.660.png' },
-            { label: 'Round No-Screw Iron', src: '/paving/paving riser Round No screw iron.658.png' },
-            { label: 'Round No-Screw Ductile Iron', src: '/paving/paving riser Round No screw ductile iron.662.png' },
-            { label: 'Round No-Screw Steel', src: '/paving/paving riser Round No screw steel.661.png' }
+            { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_Raw_Finish.613.png` },
+            { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png` },
+            { label: 'Coated Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/fixed_round_riser_.810.png` },
+            { label: 'Adjustable Coated', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png` },
+            { label: 'Low Screw Coated', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png` }
         ]
     },
     {
@@ -63,9 +60,11 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Integrated Leveling Screws', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
-            { label: 'Coated Finish', src: '/paving/Round Riser with screw coated Finish.618.png' },
-            { label: 'Raw Finish', src: '/paving/Round Riser with screw Raw Finish.617.png' },
-            { label: 'Iron Finish', src: '/paving/Round Riser with screw iron Finish.615.png' }
+            { label: 'Screws 1', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.601.png` },
+            { label: 'Screws 2', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.673.png` },
+            { label: 'Screws 3', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.676.png` },
+            { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` },
+            { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_Raw_Finish.617.png` }
         ]
     },
     {
@@ -83,14 +82,9 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Perfect for utility vaults', 'Reinforced corners', 'Anti-slip surface compatibility'],
         images: [
-            { label: 'Coated Finish', src: '/paving/Sqaure Riser Coated Finish.611.png' },
-            { label: 'Raw Finish', src: '/paving/Sqaure_Riser_Raw_Finish.610.png' },
-            { label: 'Iron Finish', src: '/paving/Sqaure Riser iron.609.png' },
-            { label: 'Square Raw', src: '/paving/paving riser Square raw.666.png' },
-            { label: 'Square Coated', src: '/paving/paving riser Square coated.665.png' },
-            { label: 'Square Iron', src: '/paving/paving riser Square iron.667.png' },
-            { label: 'Square Ductile Iron', src: '/paving/paving riser Square ductile iron.663.png' },
-            { label: 'Square Ductile Steel', src: '/paving/paving riser Square ductile steel.664.png' }
+            { label: 'Coated Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png` },
+            { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png` },
+            { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png` }
         ]
     },
     {
@@ -108,42 +102,22 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Precision welded seams', 'Adjustable height bolts', 'Curb-side compatible'],
         images: [
-            { label: 'Coated Finish', src: '/paving/Rectangle Riser coated Finish.605.png' },
-            { label: 'Raw Finish', src: '/paving/Rectangle_Riser_Raw_Finish.606.png' },
-            { label: 'Iron Finish', src: '/paving/Rectangle_Riser_iron.608.png' },
-            { label: 'Riser 1 Standard', src: '/paving/Rectangle_Paving_Riser_1.619.png' },
-            { label: 'Riser 1 Coated', src: '/paving/Rectangle Paving Riser 1 Coated finish.621.png' },
-            { label: 'Riser 1 Right', src: '/paving/Rectangle Paving Riser 1 Right.622.png' },
-            { label: 'Riser 2 Raw', src: '/paving/Rectangle_Paving_Riser_2_Raw_Finish.624.png' },
-            { label: 'Riser 2 Black Coated', src: '/paving/Rectangle Paving Riser 2 Black Coated Finish.625.png' },
-            { label: 'Riser 2 Iron', src: '/paving/Rectangle Paving Riser 2 Iron.623.png' },
-            { label: 'Riser 3 Raw', src: '/paving/Rectangle_Paving_Riser_3_Raw_Finish.627.png' },
-            { label: 'Riser 3 Black Coated', src: '/paving/Rectangle Paving Riser 3 Black Coated Finish.626.png' },
-            { label: 'Riser 3 Iron', src: '/paving/Rectangle_Paving_Riser_3_iron.628.png' },
-            { label: 'Riser 4 Raw', src: '/paving/Rectangle_Paving_Riser_4_Raw_Finish.630.png' },
-            { label: 'Riser 4 Coated', src: '/paving/Rectangle Paving Riser 4 coated Finish.631.png' },
-            { label: 'Riser 4 Iron', src: '/paving/Rectangle_Paving_Riser_4_iron.629.png' },
-            { label: 'Rectangle Raw', src: '/paving/paving riser rectangle raw.669.png' },
-            { label: 'Rectangle Coated', src: '/paving/paving riser rectangle coated.670.png' },
-            { label: 'Rectangle Iron', src: '/paving/paving riser rectangle iron.668.png' },
-            { label: 'Rectangle Ductile Iron', src: '/paving/paving riser rectangle ductile iron.672.png' },
-            { label: 'Rectangle Steel', src: '/paving/paving riser rectangle steel.671.png' },
-            { label: 'Paving Riser 1 Standard', src: '/paving/paving riser 1.641.png' },
-            { label: 'Paving Riser 1 Raw', src: '/paving/paving riser 1 raw.656.png' },
-            { label: 'Paving Riser 1 Coated', src: '/paving/paving riser 1 coated.655.png' },
-            { label: 'Paving Riser 1 Iron', src: '/paving/paving riser 1 iron.657.png' },
-            { label: 'Paving Riser 1 Ductile Iron', src: '/paving/paving riser 1 ductile iron.653.png' },
-            { label: 'Paving Riser 1 Steel', src: '/paving/paving riser 1 steel.654.png' },
-            { label: 'Paving Riser 2 Raw', src: '/paving/paving riser 2 raw .648.png' },
-            { label: 'Paving Riser 2 Coated', src: '/paving/paving riser 2 coated.649.png' },
-            { label: 'Paving Riser 2 Raw Iron', src: '/paving/paving riser 2 raw iron.647.png' },
-            { label: 'Paving Riser 2 Ductile Iron', src: '/paving/paving riser 2 ductile iron.651.png' },
-            { label: 'Paving Riser 2 Steel', src: '/paving/paving riser 2 steel.650.png' },
-            { label: 'Paving Riser 3 Raw', src: '/paving/paving riser 3 raw.645.png' },
-            { label: 'Paving Riser 3 Coated', src: '/paving/paving riser 3 coated.644.png' },
-            { label: 'Paving Riser 3 Raw Iron', src: '/paving/paving riser 3 raw iron.646.png' },
-            { label: 'Paving Riser 3 Ductile Iron', src: '/paving/paving riser 3 ductile iron.642.png' },
-            { label: 'Paving Riser 3 Steel', src: '/paving/paving riser 3 Steel.643.png' }
+            { label: 'Rectangle Riser', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_riser.811.png` },
+            { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_Raw_Finish.606.png` },
+            { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_iron.608.png` },
+            { label: 'Coated Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png` },
+            { label: 'With Cast Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png` },
+            { label: 'Riser 1', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1.619.png` },
+            { label: 'Riser 1 Right', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png` },
+            { label: 'Riser 2 Raw', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Raw_Finish.624.png` },
+            { label: 'Riser 2 Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Iron.623.png` },
+            { label: 'Riser 3 Raw', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_3_Raw_Finish.627.png` },
+            { label: 'Riser 3 Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_3_iron.628.png` },
+            { label: 'Riser 4 Raw', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_Raw_Finish.630.png` },
+            { label: 'Riser 4 Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_iron.629.png` },
+            { label: 'Riser 4 Coated A', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.814.png` },
+            { label: 'Riser 4 Coated B', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png` },
+            { label: 'Riser 4 Coated C', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.816.png` }
         ]
     },
     {
@@ -161,13 +135,11 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Flush curb alignment', 'No-shift installation', 'Storm-water optimized'],
         images: [
-            { label: 'Coated Finish', src: '/paving/D shape Riser coated Finish.604.png' },
-            { label: 'Raw Finish', src: '/paving/D_shape_Riser_Raw_Finish.602.png' },
-            { label: 'Iron Finish', src: '/paving/D shape Riser Iron Finish.603.png' },
-            { label: 'With Iron', src: '/paving/D shape Riser with Iron.635.png' },
-            { label: 'With Steel', src: '/paving/D_shape_Riser_with_Steel.634.png' },
-            { label: 'With Cast Iron', src: '/paving/D shape Riser with cast iron.636.png' },
-            { label: 'With Coated Finish', src: '/paving/D shape Riser with coated Finish.633.png' }
+            { label: 'D-Shape Riser', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_riser.812.png` },
+            { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png` },
+            { label: 'With Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Rise__with_Iron.635.png` },
+            { label: 'With Cast Iron', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png` },
+            { label: 'With Steel', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png` }
         ]
     },
     {
@@ -185,8 +157,8 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Heavy-Duty Set Screws', 'Anti-skid design', 'Perfect highway grade alignment'],
         images: [
-            { label: 'Screws Option 1', src: '/paving/paving riser with screws.600.png' },
-            { label: 'Screws Option 2', src: '/paving/paving_riser_with_screws.601.png' }
+            { label: 'Screws Option 1', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.673.png` },
+            { label: 'Screws Option 2', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.676.png` }
         ]
     }
 ];

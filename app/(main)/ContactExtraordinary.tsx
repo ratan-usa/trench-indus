@@ -55,7 +55,7 @@ export default function ContactExtraordinary() {
               {/* 3D Image Container (Floating Animation) */}
               <div className="relative w-120 h-120 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
                 <Image
-                  src={`/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`} // Put a high-res, transparent 3D render of a riser here
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`} // Put a high-res, transparent 3D render of a riser here
                   alt="3D Paving Riser Render"
                   fill
                   className="object-contain drop-shadow-[0_20px_50px_rgba(201,32,39,0.5)]"

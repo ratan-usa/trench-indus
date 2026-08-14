@@ -40,7 +40,7 @@ const CATEGORIES = [
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
       { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
     ],
-    image: `/images/Fabricated_Steel_Drainage_Grate_Assembl.png`
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Fabricated_Steel_Drainage_Grate_Assembl.png`
   },
   {
     id: 'trash-racks',
@@ -59,7 +59,7 @@ const CATEGORIES = [
       { label: 'Mounting Style', value: 'Bolt-On / Hinged / Vault Seat' },
       { label: 'Design Standard', value: 'DOT Municipal Inlet Standard' }
     ],
-    image: `/images/trash_racks/tr1.21.png`
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`
   },
   {
     id: 'tools',
@@ -78,7 +78,7 @@ const CATEGORIES = [
       { label: 'Pry Capacity', value: '500+ lbs Lifting Leverage' },
       { label: 'Shim Material', value: 'High-Density Non-Crush Polymer' }
     ],
-    image: `/images/tools/SEWER_PLUG_PILLER.12.png`
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/SEWER_PLUG_PILLER.12.png`
   }
 ];
 

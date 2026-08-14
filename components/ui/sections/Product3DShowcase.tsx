@@ -29,56 +29,56 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
-    glbPath: "/glbs/PR_manhole_round_riser_black_coated_.glb",
-    thumbnail: "/images/Manhole_riser/Round_Riser_Raw_Finish.613.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_Raw_Finish.613.png`
   },
   {
     id: 2,
     title: "Round Riser with Screw",
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
-    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb",
-    thumbnail: "/images/Manhole_riser/paving_riser_with_screws.601.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.601.png`
   },
   {
     id: 3,
     title: "Round Riser Low Screw",
     description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
     type: "ROUND_LOW_SCREW",
-    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb",
-    thumbnail: "/images/Manhole_riser/fixed_round_riser_.810.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/fixed_round_riser_.810.png`
   },
   {
     id: 4,
     title: "Square Riser – Catch Basin",
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
-    glbPath: "/glbs/PR_catch_basin_square_riser_black_coated_.glb",
-    thumbnail: "/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png`
   },
   {
     id: 5,
     title: "Rectangle Riser – Catch Basin",
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
-    glbPath: "/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb",
-    thumbnail: "/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png`
   },
   {
     id: 6,
     title: "Curb Inlet Riser",
     description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
     type: "CURB_INLET",
-    glbPath: "/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb",
-    thumbnail: "/images/curb_inlet_riser/Rectangle_Paving_Riser_4_iron.629.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_iron.629.png`
   },
   {
     id: 7,
     title: "D-Shape Paving Riser",
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
-    glbPath: "/glbs/D_shape_paving_riser.glb",
-    thumbnail: "/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png"
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`
   }
 ];
 

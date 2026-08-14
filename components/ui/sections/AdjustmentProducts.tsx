@@ -11,7 +11,7 @@ export const PRODUCT_CATEGORIES = [
     title: "Adjustment Risers",
     slug: "adjustment-risers",
     description: "Adjust any manhole or catch basin to final grade with steel or cast iron riser rings.",
-    imageSrc: `/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
   },
   {
     id: 2,

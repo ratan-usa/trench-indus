@@ -25,7 +25,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15200',
     name: 'Class 30 Solid Iron Riser',
     type: 'Standard Circular Profile',
-    imgSrc: `/images/Manhole_riser/Round_Riser_iron_Finish.614.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`,
     HOTSPOTS: [
       { id: 101, x: '37%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 102, x: '45%', y: '70%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
@@ -36,7 +36,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15205',
     name: 'Heavy Duty Square Frame Riser',
     type: 'Catch Basin Configuration',
-    imgSrc: `/images/catch_basin_riser/Rectangle_Riser_iron.608.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_iron.608.png`,
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 202, x: '65%', y: '40%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
@@ -48,7 +48,7 @@ const data: ProductDataItem[] = [
     id: 'riser-15203',    
     name: 'Custom Rectangular Extension Ring',
     type: 'Utility Vault Profile',
-    imgSrc: `/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
     HOTSPOTS: [
       { id: 301, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 302, x: '65%', y: '35%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
