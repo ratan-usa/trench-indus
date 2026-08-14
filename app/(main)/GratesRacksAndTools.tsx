@@ -40,7 +40,7 @@ const CATEGORIES = [
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
       { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
     ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/Fabricated%20Steel%20Drainage%20Grate%20Assembl.png`
+    image: `/images/Fabricated_Steel_Drainage_Grate_Assembl.png`
   },
   {
     id: 'trash-racks',
@@ -59,7 +59,7 @@ const CATEGORIES = [
       { label: 'Mounting Style', value: 'Bolt-On / Hinged / Vault Seat' },
       { label: 'Design Standard', value: 'DOT Municipal Inlet Standard' }
     ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5204.png`
+    image: `/images/trash_racks/tr1.21.png`
   },
   {
     id: 'tools',

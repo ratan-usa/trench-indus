@@ -44,7 +44,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-coated",
         name: "Round Riser – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Round%20Riser%20coated%20Finish.glb`,
+        path: "/glbs/PR_manhole_round_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "rr-p1",
@@ -66,8 +66,8 @@ const GLB_MODELS: GlbModel[] = [
     },
     {
         id: "round-riser-with-screw",
-        name: "Round Riser with Screw – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Round%20Riser%20with%20screw%20coated%20Finish.glb`,
+        name: "Round Riser with Screw",
+        path: "/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb",
         hotspots: [
             {
                 id: "rs-p1",
@@ -83,14 +83,37 @@ const GLB_MODELS: GlbModel[] = [
                 description: "Reinforced structural profile designed to bear continuous high-velocity impact loads from commercial truck traffic.",
                 x: 0.6, y: 0, z: 0.4,
                 specLabel: "Traffic Rating",
-                specValue: "Heavy-Duty Paving Traffic"
+                specValue: "Heavy-Duty Paving Grade"
+            }
+        ]
+    },
+    {
+        id: "round-riser-low-screw",
+        name: "Round Riser Low Screw",
+        path: "/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb",
+        hotspots: [
+            {
+                id: "rl-p1",
+                title: "Low Profile Adjustment",
+                description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
+                x: 0, y: 0.5, z: 0.4,
+                specLabel: "Profile",
+                specValue: "Shallow Trench Configuration"
+            },
+            {
+                id: "rl-p2",
+                title: "Precision Grade Matching",
+                description: "Allows for micro-adjustments in environments where standard risers would exceed maximum allowable height constraints.",
+                x: 0.6, y: 0, z: 0.4,
+                specLabel: "Tolerance",
+                specValue: "+/- 1/8 Inch Precision"
             }
         ]
     },
     {
         id: "square-riser-coated",
-        name: "Square Riser – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Square%20Riser%20coated%20Finish.glb`,
+        name: "Square Riser – Catch Basin",
+        path: "/glbs/PR_catch_basin_square_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "sq-p1",
@@ -112,8 +135,8 @@ const GLB_MODELS: GlbModel[] = [
     },
     {
         id: "rectangle-riser-coated",
-        name: "Rectangle Riser – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/RectangleRiser%20coated%20Finish.glb`,
+        name: "Rectangle Riser – Catch Basin",
+        path: "/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "re-p1",
@@ -134,9 +157,32 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "d-shape-riser-coated",
-        name: "D-Shape Riser – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/D%20shape%20Riser%20coated%20Finish.glb`,
+        id: "curb-inlet-riser",
+        name: "Curb Inlet Riser",
+        path: "/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb",
+        hotspots: [
+            {
+                id: "ci-p1",
+                title: "Curb-Side Geometry",
+                description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
+                x: 0, y: 1.0, z: 0.5,
+                specLabel: "Application",
+                specValue: "Curb Inlet Adjustment"
+            },
+            {
+                id: "ci-p2",
+                title: "Flow-Optimized Edge",
+                description: "Sloped interior edge geometries designed to maximize water flow velocity into the catchment basin without debris obstruction.",
+                x: 0.5, y: -0.5, z: 0.3,
+                specLabel: "Hydraulics",
+                specValue: "High-Velocity Flow Matrix"
+            }
+        ]
+    },
+    {
+        id: "d-shape-paving-riser",
+        name: "D-Shape Paving Riser",
+        path: "/glbs/D_shape_paving_riser.glb",
         hotspots: [
             {
                 id: "ds-p1",
@@ -148,34 +194,11 @@ const GLB_MODELS: GlbModel[] = [
             },
             {
                 id: "ds-p2",
-                title: "Curb Inlet Alignment System",
-                description: "Precision-engineered curb-side riser frame that seamlessly integrates with existing stormwater inlet infrastructure.",
+                title: "Flush Alignment Configuration",
+                description: "Precision-engineered backwall that seamlessly integrates with existing poured concrete barriers and curbs.",
                 x: 0, y: 0, z: 0.4,
-                specLabel: "Application",
-                specValue: "Curb Inlet Adjustment"
-            }
-        ]
-    },
-    {
-        id: "mr3-master-riser",
-        name: "MR3 Master Riser Assembly",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/mr3.glb`,
-        hotspots: [
-            {
-                id: "mr-p1",
-                title: "Full Assembly Structure",
-                description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
-                x: 0, y: 1.0, z: 0.5,
-                specLabel: "Assembly Type",
-                specValue: "Multi-Stack Master Unit"
-            },
-            {
-                id: "mr-p2",
-                title: "Interlocking Base Ring",
-                description: "Bottom seating ring with machined registration features for secure interlocking between stacked riser components.",
-                x: 0.5, y: -0.5, z: 0.3,
-                specLabel: "Material Spec",
-                specValue: "ASTM A48 Class 35B Iron"
+                specLabel: "Mounting",
+                specValue: "Flush Barrier Mount"
             }
         ]
     }
@@ -185,8 +208,7 @@ const GLB_MODELS: GlbModel[] = [
 // ────────────────────────────────────────────────────
 function ModelViewer({ url }: { url: string }) {
     const { scene } = useGLTF(url);
-    const clonedScene = useMemo(() => scene.clone(true), [scene]);
-    return <primitive object={clonedScene} dispose={null} />;
+    return <primitive object={scene} />;
 }
 
 // ────────────────────────────────────────────────────
@@ -303,11 +325,11 @@ function SceneContent({
 }) {
     return (
         <>
-            <Stage environment="city" adjustCamera={true}>
-                <Suspense fallback={<CanvasLoader />}>
+            <Suspense fallback={<CanvasLoader />}>
+                <Stage key={model.path} environment="city" adjustCamera={true}>
                     <ModelViewer url={model.path} />
-                </Suspense>
-            </Stage>
+                </Stage>
+            </Suspense>
 
             {/* Hotspot dots anchored in 3D space — OUTSIDE Stage to prevent camera re-adjust */}
             {model.hotspots.map((spot) => (
@@ -400,7 +422,7 @@ export default function Interactive3DShowcase() {
                         </div>
 
                         {/* ── The single Canvas — hotspots are INSIDE here ── */}
-                        <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
+                        <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10">
                             <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
                                 <ambientLight intensity={0.7} />
                                 <SceneContent

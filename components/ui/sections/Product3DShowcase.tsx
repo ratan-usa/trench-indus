@@ -29,56 +29,63 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Hero%20Product.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20coated.665.png`
+    glbPath: "/glbs/PR_manhole_round_riser_black_coated_.glb",
+    thumbnail: "/images/Manhole_riser/Round_Riser_Raw_Finish.613.png"
   },
   {
     id: 2,
     title: "Round Riser with Screw",
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Round%20Riser%20with%20screw%20coated%20Finish.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20with%20screws.600.png`
+    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb",
+    thumbnail: "/images/Manhole_riser/paving_riser_with_screws.601.png"
   },
   {
     id: 3,
-    title: "Square Riser – Coated Finish",
-    description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
-    type: "SQUARE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/Square%20Riser%20coated%20Finish.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20coated.665.png`
+    title: "Round Riser Low Screw",
+    description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
+    type: "ROUND_LOW_SCREW",
+    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb",
+    thumbnail: "/images/Manhole_riser/fixed_round_riser_.810.png"
   },
   {
     id: 4,
-    title: "Rectangle Riser – Coated Finish",
-    description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
-    type: "RECTANGLE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/RectangleRiser%20coated%20Finish.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%204%20coated%20Finish.631.png`
+    title: "Square Riser – Catch Basin",
+    description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
+    type: "SQUARE",
+    glbPath: "/glbs/PR_catch_basin_square_riser_black_coated_.glb",
+    thumbnail: "/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png"
   },
   {
     id: 5,
-    title: "D-Shape Riser – Coated Finish",
-    description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
-    type: "D_SHAPE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/D%20shape%20Riser%20coated%20Finish.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png`
+    title: "Rectangle Riser – Catch Basin",
+    description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
+    type: "RECTANGLE",
+    glbPath: "/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb",
+    thumbnail: "/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png"
   },
   {
     id: 6,
-    title: "MR3 Master Riser Assembly",
-    description: "Complete master riser assembly showcasing the full multi-component stacking system for deep-set utility adjustments.",
-    type: "ASSEMBLY",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/gib%20files/mr3.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20steel.661.png`
+    title: "Curb Inlet Riser",
+    description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
+    type: "CURB_INLET",
+    glbPath: "/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb",
+    thumbnail: "/images/curb_inlet_riser/Rectangle_Paving_Riser_4_iron.629.png"
+  },
+  {
+    id: 7,
+    title: "D-Shape Paving Riser",
+    description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
+    type: "D_SHAPE",
+    glbPath: "/glbs/D_shape_paving_riser.glb",
+    thumbnail: "/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png"
   }
 ];
 
 // ── GLB Model Renderer ──
 function ModelViewer({ url }: { url: string }) {
   const { scene } = useGLTF(url);
-  const clonedScene = useMemo(() => scene.clone(true), [scene]);
-  return <primitive object={clonedScene} dispose={null} />;
+  return <primitive object={scene} />;
 }
 
 // ── Canvas Loading Indicator ──
@@ -130,14 +137,14 @@ export default function Product3DShowcase() {
               </div>
 
               {/* 3D Canvas */}
-              <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
+              <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10">
                 <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
                   <ambientLight intensity={0.7} />
-                  <Stage environment="city" adjustCamera={true}>
-                    <Suspense fallback={<CanvasLoader />}>
+                  <Suspense fallback={<CanvasLoader />}>
+                    <Stage key={activeModel.glbPath} environment="city" adjustCamera={true}>
                       <ModelViewer url={activeModel.glbPath} />
-                    </Suspense>
-                  </Stage>
+                    </Stage>
+                  </Suspense>
                   <OrbitControls makeDefault enableZoom={true} />
                 </Canvas>
               </div>

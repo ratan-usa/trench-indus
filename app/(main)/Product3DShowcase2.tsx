@@ -41,7 +41,7 @@ const PRODUCT_VIDEOS = [
     duration: "2:00",
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20cast%20iron.636.png`
+    thumbnail: `/images/Valve_box_riser/tr1.21.png`
   },
   {
     id: 4,
