@@ -162,10 +162,10 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Flush curb alignment', 'No-shift installation', 'Storm-water optimized'],
         images: [
             { label: 'Coated Finish', src: '/paving/D shape Riser coated Finish.604.png' },
-            { label: 'Raw Finish', src: '/paving/D shape Riser Raw Finish.602.png' },
+            { label: 'Raw Finish', src: '/paving/D_shape_Riser_Raw_Finish.602.png' },
             { label: 'Iron Finish', src: '/paving/D shape Riser Iron Finish.603.png' },
             { label: 'With Iron', src: '/paving/D shape Riser with Iron.635.png' },
-            { label: 'With Steel', src: '/paving/D shape Riser with Steel.634.png' },
+            { label: 'With Steel', src: '/paving/D_shape_Riser_with_Steel.634.png' },
             { label: 'With Cast Iron', src: '/paving/D shape Riser with cast iron.636.png' },
             { label: 'With Coated Finish', src: '/paving/D shape Riser with coated Finish.633.png' }
         ]

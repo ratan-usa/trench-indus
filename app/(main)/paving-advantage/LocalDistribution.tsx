@@ -70,7 +70,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20Raw%20Finish.602.png`} 
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png`} 
               alt="Catch basin frame and grate"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"

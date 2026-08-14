@@ -17,7 +17,7 @@ const RESOURCES = [
     title: 'Installation Guidelines',
     slug: 'installation-guidelines',
     type: 'document',
-    imageSrc: `/images/Custom Riser/D_shape_Rise_ with Iron.635.png`, // Replace with product photo
+    imageSrc: `/images/Custom_Riser/D_shape_Rise__with_Iron.635.png`, // Replace with product photo
   },
   {
     id: 'res-3',

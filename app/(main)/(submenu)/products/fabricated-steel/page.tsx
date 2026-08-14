@@ -17,7 +17,7 @@ import { Button } from '@/components/ui/button';
 const STEEL_PRODUCTS = [
   { id: 'custom-round', name: 'Custom Round', image: '/paving/paving riser Round No screw steel.661.png', spec: '1/4" to 3/4" Rolled Steel' },
   { id: 'custom-square', name: 'Custom Square', image: '/paving/paving riser Square ductile steel.664.png', spec: 'A36 Carbon Steel Plate' },
-  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: '/paving/D shape Riser with Steel.634.png', spec: 'Welded Angle Iron' },
+  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: '/paving/D_shape_Riser_with_Steel.634.png', spec: 'Welded Angle Iron' },
   { id: 'heavy-duty', name: 'Heavy Duty Rectangle', image: '/paving/paving riser rectangle steel.671.png', spec: 'Structural Channel' },
 ];
 

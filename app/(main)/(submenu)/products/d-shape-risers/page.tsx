@@ -17,11 +17,11 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20Raw%20Finish.602.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png` },
   { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20coated%20Finish.604.png` },
   { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20Iron%20Finish.603.png` },
   { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20Iron.635.png` },
-  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20Steel.634.png` },
+  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_with_Steel.634.png` },
   { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20cast%20iron.636.png` },
   { name: 'With Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png` }
 ];
