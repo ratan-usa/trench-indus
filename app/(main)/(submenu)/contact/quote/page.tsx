@@ -25,7 +25,7 @@ export default function QuoteRequestPage() {
           onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale mix-blend-screen scale-105"
         >
-          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`} type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
         </video>
         
         {/* Gradients for text readability */}
@@ -73,7 +73,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'catch-basin' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/Catch_basin_riser_ayush_718.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -84,14 +84,30 @@ export default function QuoteRequestPage() {
                     <div className="absolute top-4 right-4 text-[#CC0000]"><CheckCircle2 className="w-8 h-8" /></div>
                   )}
                 </div>
-
+                {/* Visual Option: Valve Box */}
+                <div 
+                  onClick={() => setSelectedProduct('valve-box')}
+                  className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'valve-box' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
+                >
+                  <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.750.mp4`} type="video/mp4" />
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Valve Box Risers</h3>
+                    <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest">Water / Gas Mains</p>
+                  </div>
+                  {selectedProduct === 'valve-box' && (
+                    <div className="absolute top-4 right-4 text-[#CC0000]"><CheckCircle2 className="w-8 h-8" /></div>
+                  )}
+                </div>
                 {/* Visual Option: Manhole */}
                 <div 
                   onClick={() => setSelectedProduct('manhole')}
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'manhole' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/1.719.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable manhole riser black coated.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -103,23 +119,7 @@ export default function QuoteRequestPage() {
                   )}
                 </div>
 
-                {/* Visual Option: Valve Box */}
-                <div 
-                  onClick={() => setSelectedProduct('valve-box')}
-                  className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'valve-box' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
-                >
-                  <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/GIF_paving_risere_with_frame_698.mp4`} type="video/mp4" />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Valve Box Risers</h3>
-                    <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest">Water / Gas Mains</p>
-                  </div>
-                  {selectedProduct === 'valve-box' && (
-                    <div className="absolute top-4 right-4 text-[#CC0000]"><CheckCircle2 className="w-8 h-8" /></div>
-                  )}
-                </div>
+
 
               </div>
             </div>
@@ -199,9 +199,9 @@ export default function QuoteRequestPage() {
               <div className="absolute inset-0 flex items-center justify-center z-10 p-8">
                 <Image 
                   src={
-                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Paving_Riser_1.619.png` : 
-                    selectedProduct === 'valve-box' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure%20Riser%20Coated%20Finish.611.png` : 
-                    `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201%20ductile%20iron.653.png`
+                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png` : 
+                    selectedProduct === 'valve-box' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/4.357.jpg.jpeg` : 
+                    `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`
                   }
                   alt="Product Rendering" 
                   fill

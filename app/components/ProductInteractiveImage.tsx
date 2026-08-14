@@ -27,8 +27,8 @@ const data: ProductDataItem[] = [
     type: 'Standard Circular Profile',
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`,
     HOTSPOTS: [
-      { id: 101, x: '37%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
-      { id: 102, x: '45%', y: '70%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 101, x: '33%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
+      { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
       { id: 103, x: '68%', y: '60%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
     ]
   }, 
@@ -40,8 +40,8 @@ const data: ProductDataItem[] = [
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 202, x: '65%', y: '40%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 203, x: '69%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 204, x: '34%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 204, x: '30%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
     ]
   }, 
   {
@@ -50,9 +50,9 @@ const data: ProductDataItem[] = [
     type: 'Utility Vault Profile',
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
     HOTSPOTS: [
-      { id: 301, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
-      { id: 302, x: '65%', y: '35%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 303, x: '69%', y: '65%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 301, x: '32%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
+      { id: 302, x: '68%', y: '35%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 303, x: '61%', y: '65%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
     ]
   }
 ];
@@ -132,7 +132,7 @@ export default function ProductInteractiveImage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>
-                  <span className="text-[#0F0F0F]">0.25" to 4.00" Rise</span>
+                  <span className="text-[#0F0F0F]">0.5" to 4" Rise</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Hammer className="w-4 h-4 text-slate-400" /> Compliance:</span>

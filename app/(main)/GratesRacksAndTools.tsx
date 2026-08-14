@@ -78,7 +78,7 @@ const CATEGORIES = [
       { label: 'Pry Capacity', value: '500+ lbs Lifting Leverage' },
       { label: 'Shim Material', value: 'High-Density Non-Crush Polymer' }
     ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/SEWER_PLUG_PILLER.12.png`
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mpCHOOL.7.png`
   }
 ];
 

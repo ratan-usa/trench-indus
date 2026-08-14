@@ -17,7 +17,7 @@ export default function FoundryLocationsPage() {
         {/* Background Imagery */}
         <div className="absolute inset-0 opacity-40">
           <Image 
-            src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Paving_Riser_1.619.png`} 
+            src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/fixed_round_riser_.810.png`} 
             alt="Foundry Operations" 
             fill 
             className="object-cover object-center mix-blend-luminosity" 

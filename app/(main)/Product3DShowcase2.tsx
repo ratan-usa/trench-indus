@@ -36,12 +36,12 @@ const PRODUCT_VIDEOS = [
   },
   {
     id: 3,
-    title: "Valve Box",
+    title: "Valve Box Riser",
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/valve_box_liffer.11.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const PRODUCT_VIDEOS = [
     duration: "0:30",
     type: "SIMULATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/1.719.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
   }
 ];
 
