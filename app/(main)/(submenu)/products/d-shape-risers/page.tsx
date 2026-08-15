@@ -17,20 +17,18 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png` },
-  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20coated%20Finish.604.png` },
-  { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20Iron%20Finish.603.png` },
-  { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20Iron.635.png` },
-  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_with_Steel.634.png` },
-  { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20cast%20iron.636.png` },
-  { name: 'With Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png` }
+  { name: 'D-Shape Riser', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_riser.812.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png` },
+  { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Rise__with_Iron.635.png` },
+  { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png` },
+  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png` }
 ];
 
 const D_SHAPE_DATA = {
   title: 'D-Shape Curb Risers',
   headline: 'Specialized Geometry for Perimeter Curb Inlets.',
   description: 'The D-Shape Riser is a precision-engineered solution for curb-back manholes and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these risers allow for seamless asphalt resurfacing around complex perimeter geometries without obstructing the gutter line.',
-  image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20cast%20iron.636.png`,
+  image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
   specs: [
     { label: 'Material', value: 'Ductile Iron (65-45-12) or Cast Iron' },
     { label: 'Profile Type', value: 'Single Flat-Back "D" Geometry' },
@@ -57,7 +55,7 @@ const D_SHAPE_DATA = {
 
 export default function DShapeRisersPage() {
   const router = useRouter();
-  const [activeFinish, setActiveFinish] = useState(FINISHES[5]); // Default to 'With Cast Iron'
+  const [activeFinish, setActiveFinish] = useState(FINISHES[3]); // Default to 'With Cast Iron'
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {

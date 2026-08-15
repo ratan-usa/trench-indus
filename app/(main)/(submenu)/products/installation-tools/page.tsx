@@ -13,7 +13,7 @@ const TOOLS = [
     title: 'Manhole Hook',
     desc: 'Forged steel hook designed to lift and maneuver heavy cast iron covers safely without pinching.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`, 
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mp1.8.png`, 
   },
   {
     id: '02',
@@ -21,7 +21,7 @@ const TOOLS = [
     title: 'Adjustment Wrench',
     desc: 'High-torque wrench specifically calibrated for expanding the mechanical turnbuckles on our adjustable risers.',
     icon: Wrench,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mpCHOOL.7.png`,
   },
   {
     id: '03',
@@ -29,7 +29,7 @@ const TOOLS = [
     title: 'Magnetic Lifter',
     desc: 'Industrial magnetic lifting tool to easily lower and align heavy cast iron risers into place before paving.',
     icon: Hammer,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`,
   },
   {
     id: '04',
@@ -37,7 +37,7 @@ const TOOLS = [
     title: 'Alignment Bar',
     desc: 'Solid steel pry bar for making micro-adjustments to the seating of risers in older, irregular frames.',
     icon: ShieldAlert,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20steel.661.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/VALVE_BOX_COVER_BAR.9.png`,
   },
   {
     id: '05',
@@ -45,7 +45,7 @@ const TOOLS = [
     title: 'Extraction Hook',
     desc: 'Specialized dual-hook puller designed to safely extract heavy drainage grates without damaging the surrounding frame.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round_Riser_Raw_Finish.613.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_tounge.10.png`,
   },
   {
     id: '06',
@@ -53,15 +53,15 @@ const TOOLS = [
     title: 'Alignment Pins',
     desc: 'Heavy-duty steel guide pins used to precisely align multi-part manhole covers and risers during final assembly.',
     icon: Wrench,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/SEWER_PLUG_PILLER.12.png`,
   },
   {
     id: '07',
     name: 'Lifting Tongs',
-    title: 'Scissor Tongs',
-    desc: 'Scissor-action lifting tongs designed for secure, two-person handling of oversized utility castings and steel grates.',
-    icon: Hammer,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20steel.661.png`,
+    title: 'Cover Tongs',
+    desc: 'Heavy-duty lifting tongs to provide a secure grip on flat manhole covers and solid grates during extraction.',
+    icon: ShieldAlert,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mpCHOOL.7.png`,
   }
 ];
 

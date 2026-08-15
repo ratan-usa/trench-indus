@@ -18,7 +18,7 @@ import {
   ArrowRight,
   CheckCircle2
 } from 'lucide-react';
- 
+
 const RISER_SECTIONS = [
   {
     id: "standard-municipal",
@@ -80,7 +80,7 @@ const RISER_SECTIONS = [
     overline: "Road Crowning Solutions",
     title: "Sloped &",
     highlightText: "Tapered Risers",
-    description: "Roads are rarely perfectly flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a perfectly flush fit.",
+    description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
     isComingSoon: true, // Added flag for the badge
     features: [
@@ -93,7 +93,7 @@ const RISER_SECTIONS = [
   }
 ];
 
- 
+
 const ADVANTAGES = [
   { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and pave. Reduce labor costs on every single utility hole." },
   { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" riser securely for exact elevation matching." },
@@ -101,7 +101,7 @@ const ADVANTAGES = [
   { icon: "HardHat", title: "design to meet applicable DOT requirements", desc: "Materials and load ratings designed to designed to support muncipal compliance" }
 ];
 
- 
+
 const renderIcon = (iconName: string, className: string) => {
   switch (iconName) {
     case "ShieldCheck": return <ShieldCheck className={className} />;
@@ -159,8 +159,8 @@ export default function ComprehensivePavingRisersMapped() {
                       </div>
                     )}
                   </div>
-                  
-                  
+
+
                   {/* Decorative square behind image (only on light theme) */}
                   {!isDark && (
                     <div className={`absolute -bottom-6 ${isImageLeft ? '-right-6' : '-left-6'} w-1/2 aspect-square bg-slate-50 border border-slate-200 rounded-2xl -z-10 hidden md:block`}></div>
@@ -236,7 +236,7 @@ export default function ComprehensivePavingRisersMapped() {
       {/* --- ADVANTAGES SECTION --- */}
       <section className="py-20 bg-[#CC0000] text-white">
         <div className="w-full px-6 md:px-8 lg:px-12 mx-auto">
-          
+
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto font-medium">
@@ -248,7 +248,7 @@ export default function ComprehensivePavingRisersMapped() {
             {ADVANTAGES.map((adv, i) => (
               <div key={i} className="bg-white/10 border border-white/20 p-8 rounded-xl backdrop-blur-sm text-center shadow-lg hover:bg-white/20 transition-colors group">
                 <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform">
-                   {renderIcon(adv.icon, "w-12 h-12 text-white")}
+                  {renderIcon(adv.icon, "w-12 h-12 text-white")}
                 </div>
                 <h4 className="text-xl font-bold mb-2 uppercase tracking-wide">{adv.title}</h4>
                 <p className="text-sm text-red-50 leading-relaxed">{adv.desc}</p>

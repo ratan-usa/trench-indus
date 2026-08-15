@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { 
-  Construction, 
-  MapPin, 
-  Ruler, 
+import {
+  Construction,
+  MapPin,
+  Ruler,
   ArrowRight,
   Target,
   Wrench,
@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button';
 export default function PavingResurfacingPage() {
   return (
     <div className="min-h-screen bg-[#050505] font-sans text-white selection:bg-[#CC0000] selection:text-white pb-32">
-      
+
       {/* BACKGROUND TEXTURES */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(204,0,0,0.1)_0%,transparent_50%)]" />
@@ -26,14 +26,14 @@ export default function PavingResurfacingPage() {
       </div>
 
       <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
-        
+
         {/* --- HERO SECTION --- */}
         <div className="max-w-6xl mb-32">
           <div className="flex items-center gap-3 mb-8">
             <span className="w-16 h-1 bg-[#CC0000]" />
             <span className="text-xs font-black uppercase tracking-[0.2em] text-[#CC0000]">Infrastructure Solutions</span>
           </div>
-          
+
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12">
             Municipal<br />
             <span className="text-zinc-500">Paving &</span><br />
@@ -59,7 +59,7 @@ export default function PavingResurfacingPage() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
+
             {/* Step 1 */}
             <div className="bg-[#0A0A0A] border border-white/5 p-12 group hover:border-[#CC0000] transition-colors duration-500 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 text-8xl font-black text-white/5 group-hover:text-[#CC0000]/10 transition-colors duration-500">
@@ -92,7 +92,7 @@ export default function PavingResurfacingPage() {
               <Target className="w-12 h-12 text-white group-hover:text-black mb-8 transition-colors" />
               <h3 className="text-3xl font-black uppercase tracking-wide text-white group-hover:text-black mb-4 transition-colors">Perfect Grade</h3>
               <p className="text-white/90 group-hover:text-black/80 font-bold leading-relaxed relative z-10 transition-colors">
-                The original heavy lid is placed on top of the newly installed riser. The structure is now perfectly flush with the new asphalt, achieving safety compliance in minutes rather than hours.
+                The original heavy lid is placed on top of the newly installed riser. The structure is now precision flush with the new asphalt, achieving safety compliance in minutes rather than hours.
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export default function PavingResurfacingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
+
             {/* Manhole Risers Solution Card */}
             <div className="bg-gradient-to-br from-[#111] to-black border border-white/10 p-12 hover:border-[#CC0000] transition-all duration-500 group flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-1 space-y-6">
@@ -126,10 +126,10 @@ export default function PavingResurfacingPage() {
                 </div>
               </div>
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-full flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
-                <Image 
-                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`} 
-                  alt="Manhole Riser Solution" 
-                  fill 
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`}
+                  alt="Manhole Riser Solution"
+                  fill
                   className="object-contain p-4"
                 />
               </div>
@@ -149,10 +149,10 @@ export default function PavingResurfacingPage() {
                 </div>
               </div>
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-sm flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
-                <Image 
-                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`} 
-                  alt="Catch Basin Riser Solution" 
-                  fill 
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`}
+                  alt="Catch Basin Riser Solution"
+                  fill
                   className="object-contain p-4"
                 />
               </div>

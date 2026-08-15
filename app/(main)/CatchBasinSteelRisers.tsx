@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { 
-  ShieldCheck, 
-  Settings, 
-  Flag, 
-  ArrowUpRight, 
-  Info, 
-  Layers 
+import {
+  ShieldCheck,
+  Settings,
+  Flag,
+  ArrowUpRight,
+  Info,
+  Layers
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -17,7 +17,7 @@ export default function CatchBasinSteelRisers() {
     <section className="bg-white py-12 border-b border-gray-100 font-sans w-full">
       {/* Absolute strict fluid full width padding */}
       <div className="w-full px-4 sm:px-6 lg:px-10 space-y-12">
-        
+
         {/* --- MAIN SECTION INTRO HEADER --- */}
         <div className="w-full space-y-3">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#cc2221] flex items-center gap-2">
@@ -28,17 +28,17 @@ export default function CatchBasinSteelRisers() {
             <span className="text-[#cc2221]">Tailored Custom Fitment.</span>
           </h2>
           <p className="text-zinc-600 text-lg font-medium leading-relaxed max-w-none">
-            minimize intensive structural rebuilds during overlays. Our high-tensile steel frame extensions are precision manufactured to match localized storm drain geometries perfectly.
+            minimize intensive structural rebuilds during overlays. Our high-tensile steel frame extensions are precision manufactured to match localized storm drain geometries precision.
           </p>
         </div>
 
         {/* --- DUAL GRID VIEWPORT ARCHITECTURE --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
-          
+
           {/* LEFT: CRISP ARCHITECTURAL SPECS LIST (7 Columns Wide) */}
           <div className="lg:col-span-7 space-y-6 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-              
+
               {/* Feature 1 */}
               <div className="border border-gray-100 bg-gray-50/50 p-6 rounded-xs space-y-2">
                 <div className="flex items-center gap-2 text-[#cc2221]">
@@ -84,14 +84,14 @@ export default function CatchBasinSteelRisers() {
 
           {/* RIGHT: SCHEMATIC VIEWPORT (5 Columns Wide) */}
           <div className="lg:col-span-5 relative  h-full bg-gray-50 border border-gray-200 rounded-xs overflow-hidden p-6 flex items-center justify-center group shadow-sm hover:border-[#cc2221] transition-colors duration-300 w-full">
-            <Image 
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`} 
+            <Image
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`}
               alt="Catch Basin Riser Schematic Layout"
               fill
               className="object-contain p-8 mix-blend-multiply transition-transform duration-500 group-hover:scale-102"
               priority
             />
-            
+
             <div className="absolute bottom-4 left-4 right-4 bg-[#0a0a0a]/95 border border-zinc-900 px-3 py-2 text-[9px] uppercase font-bold tracking-wider text-zinc-400 text-center pointer-events-none">
               Asset Display: Steel Catch Basin Riser Component
             </div>
@@ -102,7 +102,7 @@ export default function CatchBasinSteelRisers() {
         {/* --- LOWER REQUIREMENTS SPECIFICATION BAR --- */}
         <div className="bg-[#0a0a0a] text-white p-6 md:p-8 rounded-xs border border-zinc-900 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 shadow-2xl relative overflow-hidden w-full">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#cc2221]/10 rounded-full blur-3xl pointer-events-none" />
-          
+
           <div className="flex items-start gap-5 relative z-10 w-full xl:max-w-4xl">
             <div className="w-12 h-12 bg-[#141414] border border-zinc-900 text-[#cc2221] flex items-center justify-center rounded-xs shrink-0 shadow-inner mt-1">
               <Info className="w-6 h-6" />

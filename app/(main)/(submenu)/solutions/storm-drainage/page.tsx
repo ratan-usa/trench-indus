@@ -23,7 +23,7 @@ const DRAINAGE_DATA = {
   subtitle: 'Drainage Systems',
   heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
   description: 'Precision-engineered for high-velocity runoff. Our drainage risers ensure optimal hydraulic capacity while maintaining a flush street-level profile.',
-  overview: 'Effective stormwater management requires more than just an opening in the ground. It requires a perfectly seated frame that can handle the sheer force of road runoff during heavy precipitation events. Paving Risers provides 3-sided and 4-sided catch basin solutions that prevent bypass and ensure every gallon of water enters the municipal system as intended.',
+  overview: 'Effective stormwater management requires more than just an opening in the ground. It requires a precision seated frame that can handle the sheer force of road runoff during heavy precipitation events. Paving Risers provides 3-sided and 4-sided catch basin solutions that prevent bypass and ensure every gallon of water enters the municipal system as intended.',
   stats: [
     { label: 'Hydraulic Capacity', value: '100%', icon: <Waves className="w-6 h-6" /> },
     { label: 'Slope Adjustment', value: '0 - 15%', icon: <MoveDiagonal className="w-6 h-6" /> },
@@ -44,7 +44,7 @@ export default function StormDrainagePage() {
       </div>
 
       <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
-        
+
         {/* ========================================= */}
         {/* 1. HYDRO HERO SECTION                     */}
         {/* ========================================= */}
@@ -56,14 +56,14 @@ export default function StormDrainagePage() {
                 Stormwater Management
               </span>
             </div>
-            
+
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85]">
               {DRAINAGE_DATA.title} <br />
               <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.8)' }}>
                 Drainage
               </span>
             </h1>
-            
+
             <p className="text-xl text-zinc-400 font-medium leading-relaxed max-w-2xl border-l-4 border-[#CC0000] pl-6">
               {DRAINAGE_DATA.description}
             </p>
@@ -128,7 +128,7 @@ export default function StormDrainagePage() {
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <div className="bg-[#111] border border-white/10 p-10 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CC0000]/10 blur-3xl" />
-                
+
                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#CC0000] mb-8 flex items-center gap-2 border-b border-white/10 pb-4">
                   <FileText size={16} /> Hydraulic Data Sheet
                 </h3>
@@ -169,7 +169,7 @@ export default function StormDrainagePage() {
         {/* ========================================= */}
         <div className="border-t border-white/10 pt-32 mb-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
+
             <div className="space-y-8">
               <h2 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.9]">
                 3-Sided vs. <br />
@@ -178,7 +178,7 @@ export default function StormDrainagePage() {
               <p className="text-zinc-400 text-lg font-medium leading-relaxed">
                 Different drainage structures require different seating geometries. We offer 3-sided risers for curb-back inlets and full 4-sided frames for flat street grates.
               </p>
-              
+
               <div className="grid gap-4 pt-4">
                 {[
                   { title: '3-Sided', desc: 'Optimized for curb abutments' },
@@ -212,14 +212,14 @@ export default function StormDrainagePage() {
         {/* ========================================= */}
         <div className="bg-[#CC0000] p-12 md:p-24 relative overflow-hidden text-center">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.2)_0%,transparent_70%)] pointer-events-none" />
-          
+
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none text-white relative z-10">
             Secure Your <br /> Gutter Flow
           </h2>
           <p className="max-w-2xl mx-auto font-bold text-xl text-white/90 mb-12 italic relative z-10">
             "Preventing street flooding begins with precision at the pavement level."
           </p>
-          
+
           <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
             <Button className="bg-black text-white hover:bg-white hover:text-black font-black px-12 h-20 text-lg uppercase tracking-widest transition-colors rounded-none shadow-2xl">
               Get A Drainage Quote

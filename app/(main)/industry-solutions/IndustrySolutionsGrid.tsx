@@ -53,7 +53,7 @@ const INDUSTRY_SOLUTIONS = [
   {
     id: 'utilities',
     title: 'Underground Utilities',
-    description: "Access our deep inventory of standard and expandable adjustment rings. See for yourself why utility contractors rely on us to keep manholes and valve vaults perfectly aligned with final grade.",
+    description: "Access our deep inventory of standard and expandable adjustment rings. See for yourself why utility contractors rely on us to keep manholes and valve vaults precision aligned with final grade.",
     linkText: 'Find utility solutions',
     href: '#utilities',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%202%20coated.649.png`
@@ -103,8 +103,8 @@ export default function IndustrySolutionsGrid() {
             const isWide = index === 0 || index === 3 || index === 6;
 
             return (
-              <div 
-                key={item.id} 
+              <div
+                key={item.id}
                 className={cn(
                   "group relative flex flex-col bg-[#111] border border-[#333] hover:border-[#CC0000] hover:shadow-[0_0_40px_rgba(204,0,0,0.15)] transition-all duration-500 overflow-hidden",
                   isWide ? "xl:col-span-2 xl:flex-row" : "flex-col"
@@ -117,7 +117,7 @@ export default function IndustrySolutionsGrid() {
                 )}>
                   {/* Grid background */}
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:16px_16px]"></div>
-                  
+
                   <img
                     src={item.imageSrc}
                     alt={item.title}
@@ -138,7 +138,7 @@ export default function IndustrySolutionsGrid() {
                   <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white mb-4 group-hover:text-[#CC0000] transition-colors leading-tight">
                     {item.title}
                   </h3>
-                  
+
                   <p className="text-gray-400 text-xs leading-loose mb-8 flex-grow">
                     {item.description}
                   </p>

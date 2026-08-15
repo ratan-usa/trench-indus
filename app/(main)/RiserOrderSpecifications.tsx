@@ -2,12 +2,12 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { 
-  ClipboardList, 
-  MoveUp, 
-  Maximize, 
-  Minimize, 
-  Compass, 
+import {
+  ClipboardList,
+  MoveUp,
+  Maximize,
+  Minimize,
+  Compass,
   ArrowRight,
   ShieldCheck
 } from 'lucide-react';
@@ -33,7 +33,7 @@ const ORDER_REQUIREMENTS = [
   },
   {
     title: "Height Need to Raise",
-    description: "The targeted vertical height adjustment required to perfectly match the final road asphalt wearing layer course.",
+    description: "The targeted vertical height adjustment required to precision match the final road asphalt wearing layer course.",
     icon: <MoveUp className="w-5 h-5 text-[#CC0000]" />
   }
 ];
@@ -42,7 +42,7 @@ export default function RiserOrderSpecifications() {
   return (
     <section className="bg-white py-8 border-b border-slate-100 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
-        
+
         {/* --- MAIN HEADER COMPONENT BLOCK --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
@@ -59,13 +59,13 @@ export default function RiserOrderSpecifications() {
 
         {/* --- TWIN-PANEL GRID MATRIX ARCHITECTURE --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* LEFT PANEL: EXPLICIT STRUCTURAL BLUEPRINT SPECS CHECKLIST (7 Columns Wide) */}
           <div className="lg:col-span-7 flex flex-col justify-between gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {ORDER_REQUIREMENTS.map((req, idx) => (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="border border-slate-100 bg-slate-50/50 p-6 rounded-sm space-y-3 hover:border-[#CC0000] hover:bg-white transition-all duration-300 shadow-sm flex flex-col justify-between group"
                 >
                   <div className="space-y-2">
@@ -95,10 +95,10 @@ export default function RiserOrderSpecifications() {
 
           {/* RIGHT PANEL: SIDE COMPONENT DISPLAY LAYOUT IMAGE (5 Columns Wide) */}
           <div className="lg:col-span-5 relative bg-[#0F0F0F] border border-zinc-800 rounded-sm overflow-hidden p-8 flex flex-col justify-between shadow-2xl min-h-[400px] lg:min-h-0 group">
-            
+
             {/* Ambient Background Brand Branding Red Radial Glow */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#CC0000]/10 rounded-full blur-3xl pointer-events-none group-hover:scale-110 transition-transform duration-500" />
-            
+
             <div className="space-y-2 relative z-10">
               <span className="text-[9px] font-mono font-black tracking-widest text-[#CC0000] uppercase block">
                 Visual Reference Guide
@@ -116,8 +116,8 @@ export default function RiserOrderSpecifications() {
               Displays image source file reference "4.png" via standardNext.js optimized asset routing layout parameters.
             */}
             <div className="relative w-full h-48 bg-zinc-900 border border-zinc-800 rounded-sm mt-6 mb-6 overflow-hidden flex items-center justify-center p-4 shadow-inner">
-              <Image 
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20coated%20Finish.604.png`} 
+              <Image
+                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20coated%20Finish.604.png`}
                 alt="4.png Ordering Data Visual Guide Component Reference"
                 fill
                 className="object-contain p-2 opacity-90 mix-blend-screen transition-transform duration-500 group-hover:scale-102"

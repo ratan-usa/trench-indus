@@ -1014,7 +1014,7 @@ export const menuData = {
         videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving_riser/paving riser 1.5223.mp4",
         items: [
           "Automatic slope correction",
-          "Perfectly level paved finish",
+          "precision level paved finish",
           "Reduces onsite adjustments",
           "Ideal for rooftops and terraces",
           "Compatible with adjustable pedestals"

@@ -38,7 +38,7 @@ const NEW_TAGLINES = [
     primary: "Lay the Course.",
     secondary: "Match the Crown.",
     highlight: "Pave with Fluidity.",
-    desc: "Millimeter-precise profile rings designed to match your paving equipment layout lines perfectly. Drop, align, and roll asphalt straight over the unit.",
+    desc: "Millimeter-precise profile rings designed to match your paving equipment layout lines precision. Drop, align, and roll asphalt straight over the unit.",
     statLabel: "Workflow Acceleration",
     statValue: "Paving Crew Synergy"
   }

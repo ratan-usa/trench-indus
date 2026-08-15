@@ -14,10 +14,10 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20raw.659.png` },
-  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20coated.660.png` },
-  { name: 'Fabricated Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Round%20No%20screw%20steel.661.png` },
-  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/6.359.jpg.jpeg` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg` },
+  { name: 'Fabricated Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/3.356.jpg.jpeg` },
+  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/5.358.jpg.jpeg` },
 ];
 
 export default function ValveBoxRisersPage() {

@@ -109,9 +109,9 @@ export default function SanitarySewerPage() {
 
         {/* --- FEATURED PRODUCTS BANNER --- */}
         <div className="bg-[#CC0000] p-12 lg:p-24 relative overflow-hidden">
-          <div className="absolute -right-32 -bottom-32 opacity-10">
+          <div className="absolute -right-32 -bottom-32 opacity-50">
             <Image 
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20with%20screw%20Raw%20Finish.617.png`} 
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`} 
               alt="Background Riser" 
               width={800} 
               height={800} 

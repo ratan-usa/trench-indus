@@ -6,10 +6,10 @@ import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const FINISHES = [
-  { id: '01', name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Paving_Riser_2_Raw_Finish.624.png` },
-  { id: '02', name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png` },
-  { id: '03', name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle_Paving_Riser_3_iron.628.png` },
-  { id: '04', name: 'Heavy-Duty Coated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%204%20coated%20Finish.631.png` },
+  { id: '01', name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Iron.623.png` },
+  { id: '02', name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Raw_Finish.624.png` },
+  { id: '03', name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_3_iron.628.png` },
+  { id: '04', name: 'Heavy-Duty Coated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png` },
 ];
 
 export default function CurbInletParallaxPage() {
@@ -31,19 +31,19 @@ export default function CurbInletParallaxPage() {
 
   return (
     <div className="bg-black text-white font-sans selection:bg-[#CC0000] selection:text-white">
-      
+
       {/* 
         --- STICKY BACKGROUND LAYER --- 
         This layer locks to the screen while the rest of the page scrolls over it.
       */}
       <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
-        
+
         {/* Glow & Grid */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(204,0,0,0.1)_0%,transparent_60%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]" />
-        
+
         {/* Massive Background Typography */}
-        <div 
+        <div
           className="absolute inset-0 flex flex-col items-center justify-center opacity-30 select-none"
           style={{ transform: `translateY(${scrollProgress * -100}px)` }}
         >
@@ -56,9 +56,9 @@ export default function CurbInletParallaxPage() {
         </div>
 
         {/* The Product Image */}
-        <div 
+        <div
           className="relative z-10 w-[90vw] md:w-[60vw] max-w-5xl transition-all duration-1000 ease-out"
-          style={{ 
+          style={{
             opacity: 1 - scrollProgress * 0.5,
             transform: `scale(${1 - scrollProgress * 0.1}) translateY(${scrollProgress * 50}px)`
           }}
@@ -81,7 +81,7 @@ export default function CurbInletParallaxPage() {
         This content scrolls smoothly over the fixed background.
       */}
       <div className="relative z-10 pt-[80vh] pb-[20vh] pointer-events-auto flex flex-col items-center">
-        
+
         {/* Intro Text Block */}
         <div className="w-full max-w-4xl px-6 md:px-12 mb-[40vh]">
           <div className="backdrop-blur-xl bg-black/40 border border-white/10 p-8 md:p-12 shadow-2xl">
@@ -103,7 +103,7 @@ export default function CurbInletParallaxPage() {
             <div>
               <h3 className="text-2xl md:text-4xl font-black uppercase tracking-widest mb-4">Custom Fabrication</h3>
               <p className="text-gray-400 font-medium leading-loose">
-                No two curbs are identical. We custom-weld non-standard rectangular inlets, sloped seats, and complex catch basin profiles to match your exact municipal blueprints perfectly. Designed and fabricated entirely in the USA.
+                No two curbs are identical. We custom-weld non-standard rectangular inlets, sloped seats, and complex catch basin profiles to match your exact municipal blueprints precision. Designed and fabricated entirely in the USA.
               </p>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function CurbInletParallaxPage() {
 
         {/* Finish Selector Panel */}
         <div className="w-full max-w-7xl px-6 md:px-12 mb-[20vh] flex flex-col md:flex-row gap-12 items-end justify-between">
-          
+
           <div className="max-w-xl">
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6">Select Material</h2>
             <p className="text-gray-500 font-medium leading-relaxed">
@@ -144,8 +144,8 @@ export default function CurbInletParallaxPage() {
                 }}
                 className={cn(
                   "flex items-center gap-6 px-8 py-4 backdrop-blur-xl transition-all duration-500 group border",
-                  activeFinish.id === finish.id 
-                    ? "bg-[#CC0000]/10 border-[#CC0000]" 
+                  activeFinish.id === finish.id
+                    ? "bg-[#CC0000]/10 border-[#CC0000]"
                     : "bg-white/5 border-white/10 hover:bg-white/10"
                 )}
               >

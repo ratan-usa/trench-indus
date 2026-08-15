@@ -17,14 +17,14 @@ export default function InfiniteRiserShowcase() {
                 {/* --- HEADER --- */}
                 <div className=" space-y-3">
                     <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-                        <Layers className="w-4 h-4 text-[#CC0000]" /> Exploded Assembly Sequence
+                        <Layers className="w-4 h-4 text-[#CC0000]" /> Adjustable Round Riser
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
                         Adjustable Round Riser
                         <span className="text-[#CC0000]"> Infinite CAD Showcase.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
-                        Continuous exploded breakdown illustrating the outer flange frame, variable adjustment ring, turnbuckle set-screws, and top grate assembly.
+                        An exploded view of the outer frame, adjustment ring, turnbuckle set-screws, and top grate, showing how the assembly goes together.
                     </p>
                 </div>
 

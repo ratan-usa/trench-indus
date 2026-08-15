@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const MANHOLE_FRAME_DATA = {
   title: 'Manhole Frames & Covers',
@@ -79,23 +80,18 @@ export default function ManholeFrameCoverPage() {
                 <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all shadow-xl group">
                   Request Specifications <ArrowRight className="ml-4 group-hover:translate-x-2 transition-transform" />
                 </Button>
-                </Link >
+              </Link >
             </div>
           </div>
 
           {/* Visual Placeholder / Mockup Area */}
           <div className="lg:w-1/2 w-full">
             <div className="aspect-video w-full bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center relative group overflow-hidden shadow-2xl">
+              <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`} alt='' width={500} height={500} />
               <div className="absolute inset-0 border-2 border-[#CC0000]/0 group-hover:border-[#CC0000]/30 transition-colors duration-700 m-4"></div>
-
-              <div className="absolute w-64 h-64 border-[16px] border-zinc-800 rounded-full opacity-50 group-hover:scale-110 transition-transform duration-1000 ease-out"></div>
-              <div className="absolute w-48 h-48 border-[8px] border-[#CC0000]/20 rounded-full opacity-50 group-hover:rotate-45 transition-transform duration-1000"></div>
-
-              <Construction className="w-16 h-16 text-zinc-600 mb-6 group-hover:text-[#CC0000] transition-colors duration-500 relative z-10" />
-              <span className="text-zinc-400 font-bold uppercase tracking-widest text-xs relative z-10">Product Visualization Pending</span>
+ 
             </div>
           </div>
-
         </div>
       </section>
 

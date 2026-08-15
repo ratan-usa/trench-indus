@@ -94,7 +94,7 @@ const FOOTER_LINKS = [
 
 export default function HeavyFooter() {
   return (
-    <footer className="bg-[#050505] text-white pt-24 pb-8 border-t border-[#333] relative overflow-hidden font-sans z-50"> 
+    <footer className="bg-[#050505] text-white pt-24 pb-8 border-t border-[#333] relative overflow-hidden font-sans z-10"> 
       
       {/* Background Engineering Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none" />

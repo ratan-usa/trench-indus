@@ -107,7 +107,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'manhole' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable manhole riser black coated.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_black_coated.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
