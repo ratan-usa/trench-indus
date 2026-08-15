@@ -38,7 +38,7 @@ const SOLUTIONS_DB = [
     overview: 'Sanitary sewer systems require absolutely watertight access points to prevent environmental hazards and costly water treatment overloads. Our solid cast iron and expandable risers are designed to create a perfect, sealed fit with existing manhole frames, ensuring zero movement under heavy traffic loads.',
     benefits: [
       { title: 'I&I Prevention', desc: 'Machined surfaces for watertight gasket seals.' },
-      { title: 'Shock Load Rated', desc: 'Engineered to withstand continuous H-20/HS-20 commercial traffic.' },
+      { title: 'Shock Load Rated', desc: 'Engineered to withstand continuous Load Rating: See individual product specification/Load Rating: See individual product specification commercial traffic.' },
       { title: 'Rapid Installation', desc: 'Expandable options minimize the need for concrete mortar beds.' }
     ],
     applications: ['Mainline Sewer Access', 'Wastewater Treatment Plants', 'Residential Subdivisions'],

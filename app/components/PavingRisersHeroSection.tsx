@@ -13,7 +13,7 @@ export default function PavingRisersHeroSection() {
           <div className="lg:col-span-6 space-y-6">
             <div className="space-y-3">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Infrastructure Engineering
+                <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Manufacturing
               </span>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-[1.05]">
                 Watch your risers <br />
@@ -32,7 +32,7 @@ export default function PavingRisersHeroSection() {
                   <Zap className="w-4 h-4 fill-current" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Easy</span>
                 </div>
-                <p className="text-xs font-bold text-slate-500 leading-snug">Drop-in design. No excavation.</p>
+                <p className="text-xs font-bold text-slate-500 leading-snug">No excavation. The riser sits over the existing frame.</p>
               </div>
 
               <div className="space-y-1 border-x border-slate-200 px-3">

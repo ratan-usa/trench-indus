@@ -30,12 +30,12 @@ const D_SHAPE_DATA = {
   description: 'The D-Shape Riser is a precision-engineered solution for curb-back manholes and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these risers allow for seamless asphalt resurfacing around complex perimeter geometries without obstructing the gutter line.',
   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
   specs: [
-    { label: 'Material', value: 'Ductile Iron (65-45-12) or Cast Iron' },
+    { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Single Flat-Back "D" Geometry' },
-    { label: 'Load Rating', value: 'Paving Standard M306 / H-20 Heavy Traffic' },
+    { label: 'Load Rating', value: 'Load Rating: See individual product specification' },
     { label: 'Standard Sizes', value: '24", 30", 32" Diameter equivalents' },
     { label: 'Rise Increments', value: '1.5" to 4" (Custom stackable available)' },
-    { label: 'Certification', value: 'ISO 9001:2015 Material Standards' },
+    { label: 'Certification', value: 'Compliance documentation available upon request' },
   ],
   technicalPoints: [
     {

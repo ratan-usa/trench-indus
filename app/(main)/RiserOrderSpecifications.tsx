@@ -18,22 +18,22 @@ import { Button } from "@/components/ui/button";
 const ORDER_REQUIREMENTS = [
   {
     title: "Cover Diameter",
-    description: "The complete horizontal dimension across the primary structural utility cover disk plate.",
+    description: "The horizontal dimension across the cover disc plate.",
     icon: <Compass className="w-5 h-5 text-[#CC0000]" />
   },
   {
     title: "Cover Thickness",
-    description: "The exact vertical seat depth measurement of the manhole cover rim to ensure a completely flush seating lip.",
+    description: "The depth of the cover rim where it seats.",
     icon: <Minimize className="w-5 h-5 text-[#CC0000]" />
   },
   {
     title: "Inside Clear Opening of Frame",
-    description: "The true interior clear structural diameter spacing inside the utility frame rim boundary.",
+    description: "The clear / open space inside the frame.",
     icon: <Maximize className="w-5 h-5 text-[#CC0000]" />
   },
   {
-    title: "Height Need to Raise",
-    description: "The targeted vertical height adjustment required to precision match the final road asphalt wearing layer course.",
+    title: "Height to Raise",
+    description: "How much you need to lift the cover to reach the newly-paved road height.",
     icon: <MoveUp className="w-5 h-5 text-[#CC0000]" />
   }
 ];
@@ -46,14 +46,14 @@ export default function RiserOrderSpecifications() {
         {/* --- MAIN HEADER COMPONENT BLOCK --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-            <ClipboardList className="w-4 h-4 text-[#CC0000]" /> Procurement Guideline
+            <ClipboardList className="w-4 h-4 text-[#CC0000]" /> How to Order
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-none">
-            Information Needed To Order <br />
-            <span className="text-[#CC0000]">Dimensional Verification.</span>
+            What we need to <br />
+            <span className="text-[#CC0000]">size your riser.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            To ensure an absolute tight fitment that locks securely locks into the frame into place under continuous heavy vehicle traffic, verify the following 4 structural site data parameters prior to manufacturing.
+            Send these four measurements before we make your riser to ensure an absolute tight fitment that locks into place under continuous heavy vehicle traffic.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function RiserOrderSpecifications() {
             {/* Verification Quality Shield Footer */}
             <div className="border border-slate-200 bg-slate-50 p-4 rounded-sm flex items-center gap-3 text-xs font-bold text-slate-600">
               <ShieldCheck className="w-5 h-5 text-[#CC0000] shrink-0" />
-              <span>Precise data matching minimizes out-of-round shifting and protects modern thin-layer wearing courses.</span>
+              <span>Accurate measurements mean a proper fit.</span>
             </div>
           </div>
 

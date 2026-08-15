@@ -134,7 +134,7 @@ export default function TrashRacksSnapPage() {
 
         <div className="mt-16 text-center">
           <a href="#quote" className="inline-flex items-center gap-4 bg-white text-black font-black uppercase tracking-widest px-10 py-5 text-sm hover:bg-[#CC0000] hover:text-white transition-all duration-300">
-            Request Fabrication Quote <ArrowRight className="w-5 h-5" />
+            Request a Quote <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </section>

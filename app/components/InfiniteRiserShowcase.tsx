@@ -20,8 +20,8 @@ export default function InfiniteRiserShowcase() {
                         <Layers className="w-4 h-4 text-[#CC0000]" /> Adjustable Round Riser
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
-                        Adjustable Round Riser
-                        <span className="text-[#CC0000]"> Infinite CAD Showcase.</span>
+                        See the adjustable riser, 
+                        <span className="text-[#CC0000]"> part by part.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
                         An exploded view of the outer frame, adjustment ring, turnbuckle set-screws, and top grate, showing how the assembly goes together.
@@ -53,21 +53,18 @@ export default function InfiniteRiserShowcase() {
 
                         <div className="space-y-4">
                             <h3 className="text-2xl font-black uppercase tracking-tight text-white">
-                                Mechanical Expansion Technology
+                                Turnbuckle Adjustment
                             </h3>
                             <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                Designed to minimize full manhole frame excavations during road overlays. The internal turnbuckle assembly bites outward directly into existing structures for a Helps minimize shifting, high-impact traffic seal.
+                                Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using built-in turnbuckle set-screws. Turning the screws holds the ring in position while you pave.
                             </p>
                         </div>
 
                         <div className="space-y-3 border-t border-b border-zinc-800 py-6">
+
                             <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                 <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
-                                <span>Heavy Traffic Load rated for</span>
-                            </div>
-                            <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
-                                <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
-                                <span>Excavation-Free Field Deployment</span>
+                                <span>Installs without excavating the frame.</span>
                             </div>
                             <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                 <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
@@ -78,7 +75,7 @@ export default function InfiniteRiserShowcase() {
                         <div className="pt-2">
                             <Link href="/contact/quote" className="block">
                                 <Button className="w-full h-12 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
-                                    Request Specifications <ArrowRight className="w-4 h-4" />
+                                    Request a Quote <ArrowRight className="w-4 h-4" />
                                 </Button>
                             </Link>
                         </div>

@@ -9,7 +9,7 @@ import { ChevronDown, ChevronRight } from 'lucide-react'
 // Define the navigation structure
 const NAV_LINKS = [
     {
-        title: 'Main Product',
+        title: 'Products',
         href: '#products',
         dropdown: [
             { isHeader: true, name: 'Paving Riser Product Categories' },

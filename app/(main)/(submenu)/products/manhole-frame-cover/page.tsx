@@ -20,12 +20,12 @@ const MANHOLE_FRAME_DATA = {
   headline: 'Heavy-Duty Access for Municipal Infrastructure.',
   description: 'Our Manhole Frames and Covers are engineered for extreme durability, providing secure access to underground utilities, sanitary sewers, and storm drains. Manufactured from premium ductile or cast iron to withstand heavy traffic and severe environmental conditions.',
   specs: [
-    { label: 'Material', value: 'Ductile Iron (65-45-12) or Gray Cast Iron' },
+    { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Standard Round or Heavy Duty' },
-    { label: 'Load Rating', value: 'Paving Standard M306 / H-20 / HS-20 Heavy Traffic' },
+    { label: 'Load Rating', value: 'Load Rating: See individual product specification' },
     { label: 'Standard Sizes', value: '24", 30", 36" Clear Openings' },
     { label: 'Cover Options', value: 'Watertight, Locking, Vented or Solid' },
-    { label: 'Certification', value: 'Buy America Act Compliant, ISO 9001:2015' },
+    { label: 'Certification', value: 'Compliance & Testing documentation available upon request' },
   ],
   technicalPoints: [
     {
@@ -78,7 +78,7 @@ export default function ManholeFrameCoverPage() {
             <div className="pt-4">
               <Link href={'/contact/quote'}>
                 <Button className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all shadow-xl group">
-                  Request Specifications <ArrowRight className="ml-4 group-hover:translate-x-2 transition-transform" />
+                  Request a Quote <ArrowRight className="ml-4 group-hover:translate-x-2 transition-transform" />
                 </Button>
               </Link >
             </div>

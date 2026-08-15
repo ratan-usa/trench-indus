@@ -15,7 +15,7 @@ export default function PavingAdvantage() {
       icon: <ShieldCheck className="w-8 h-8 text-gray-400 group-hover:text-[#CC0000] transition-colors duration-500" />,
       title: "Strict Compliance",
       description: "All products strictly comply with Federal, State, and local municipal DOT standards.",
-      metric: "H-20 RATED"
+      metric: "Load Rating: See individual product specification RATED"
     },
     {
       icon: <Wrench className="w-8 h-8 text-gray-400 group-hover:text-[#CC0000] transition-colors duration-500" />,

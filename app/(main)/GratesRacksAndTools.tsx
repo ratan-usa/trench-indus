@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { 
-  Grid, 
-  ShieldCheck, 
-  Wrench, 
-  Filter, 
-  CheckCircle2, 
-  ArrowUpRight, 
-  Settings, 
-  Ruler, 
-  Hammer, 
+import {
+  Grid,
+  ShieldCheck,
+  Wrench,
+  Filter,
+  CheckCircle2,
+  ArrowUpRight,
+  Settings,
+  Ruler,
+  Hammer,
   Construction,
   Layers,
   Sparkles
@@ -29,14 +29,13 @@ const CATEGORIES = [
     subtitle: 'High-Volume Drainage & Load Surface Covers',
     icon: <Grid className="w-5 h-5" />,
     features: [
-      { title: 'Heavy-Duty Welded Construction', desc: 'Engineered from high-tensile carbon steel or ductile iron to sustain continuous Heavy-Duty Paving Traffic loads.' },
-      { title: 'Bespoke Hydraulic Flow Profiles', desc: 'Available in standard parallel slotted, bicycle-safe diagonal, or ADA-compliant pedestrian safe configurations.' },
-      { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing or heavy bituminous asphaltum to resist road salts and chemical exposure.' },
-      { title: 'Custom Seating Dimensions', desc: 'Precision fabricated to drop directly into existing municipal catch basin frames or elevated paving risers.' }
+      { title: 'Heavy-Duty Welded Construction', desc: 'Manufactured from carbon steel or ductile iron to sustain heavy-duty traffic loads.' },
+      { title: 'Hydraulic Flow Profiles', desc: 'Slot patterns: parallel, diagonal, or pedestrian-safe.' },
+      { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing or bituminous coating to resist road salt and moisture.' },
+      { title: 'Custom Seating Dimensions', desc: 'Made precisely to fit existing catch basin frames or paving risers.' }
     ],
     specs: [
-      { label: 'Load Rating', value: 'Heavy-Duty Paving rated for' },
-      { label: 'Material Grade', value: 'ASTM A36 Steel / Class 35B Iron' },
+      { label: 'Material Grade', value: 'Steel / Iron' },
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
       { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
     ],
@@ -89,18 +88,18 @@ export default function GratesRacksAndTools() {
   return (
     <section className="bg-white text-slate-900 py-24 font-sans border-b border-slate-100">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
-        
+
         {/* --- SECTION HEADER --- */}
         <div className="space-y-4">
           <Badge className="bg-[#0F0F0F] text-white px-4 py-1 text-xs uppercase tracking-widest rounded-sm">
             Municipal Hardware Catalog
           </Badge>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none text-slate-900">
-            Fabricated Grates, Trash Racks  
+            Fabricated Grates, Trash Racks
             <span className="text-[#CC0000]"> & Installation Field Tools.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Complete your storm drainage infrastructure. From heavy welded steel grates and culvert trash racks to specialized contractor turnbuckle wrenches and lid hooks.
+            Welded steel grates, culvert trash racks, and the field tools that go with them, including turnbuckle wrenches and lid hooks.
           </p>
         </div>
 
@@ -124,8 +123,8 @@ export default function GratesRacksAndTools() {
                 )}
                 <div className={cn(
                   "w-10 h-10 rounded-sm flex items-center justify-center shrink-0 border transition-colors",
-                  isActive 
-                    ? "bg-[#CC0000] border-[#CC0000] text-white" 
+                  isActive
+                    ? "bg-[#CC0000] border-[#CC0000] text-white"
                     : "bg-white border-slate-200 text-slate-700 group-hover:border-[#CC0000] group-hover:text-[#CC0000]"
                 )}>
                   {cat.icon}
@@ -145,14 +144,14 @@ export default function GratesRacksAndTools() {
 
         {/* --- DYNAMIC DISPLAY CONTENT MATRIX --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* LEFT PANEL: SPECIFICATION & FEATURES LIST (7 Columns) */}
           <div className="lg:col-span-7 flex flex-col justify-between space-y-8">
-            
+
             {/* Feature Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {current.features.map((feat, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="border border-slate-100 bg-slate-50/50 p-6 rounded-sm space-y-2 hover:border-[#CC0000] hover:bg-white transition-all duration-300 shadow-sm group"
                 >
@@ -173,7 +172,7 @@ export default function GratesRacksAndTools() {
             <div className="bg-[#0F0F0F] text-white p-6 rounded-sm border border-zinc-800 space-y-4">
               <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                  rated for Engineering Matrix
+                  Grate Specifications
                 </span>
                 <span className="text-xs font-mono font-bold text-[#CC0000]">
                   {current.title}
@@ -193,10 +192,10 @@ export default function GratesRacksAndTools() {
 
           {/* RIGHT PANEL: VISUAL SHOWCASE & BLUEPRINT CARD (5 Columns) */}
           <div className="lg:col-span-5 relative bg-[#0F0F0F] border border-zinc-800 rounded-sm overflow-hidden p-8 flex flex-col justify-between shadow-2xl group min-h-[440px]">
-            
+
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#CC0000]/10 rounded-full blur-3xl pointer-events-none group-hover:scale-110 transition-transform duration-500" />
-            
+
             <div className="space-y-2 relative z-10">
               <span className="text-[9px] font-mono font-black tracking-widest text-[#CC0000] uppercase block">
                 Manufacturing Spec
@@ -211,7 +210,7 @@ export default function GratesRacksAndTools() {
 
             {/* Asset Image Viewport */}
             <div className="relative w-full h-56 bg-zinc-900 border border-zinc-800 rounded-sm my-6 overflow-hidden flex items-center justify-center p-6">
-              <Image 
+              <Image
                 src={current.image}
                 alt={current.title}
                 fill

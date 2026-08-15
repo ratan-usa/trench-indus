@@ -279,9 +279,7 @@ const ProductCatalog = () => {
                           </div>
 
                           {/* Action Button */}
-                          <button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white py-4 font-bold uppercase tracking-widest text-xs transition-colors rounded-none mt-auto">
-                            View Specifications
-                          </button>
+                          <button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white py-4 font-bold uppercase tracking-widest text-xs transition-colors rounded-none mt-auto">Download Catalog</button>
                         </div>
                       </div>
                     ))}

@@ -29,12 +29,12 @@ const MANHOLE_RISER_DATA = {
   headline: 'Precision Adjustment for Municipal Manholes.',
   description: 'Our Manhole Risers provide an efficient and durable solution for elevating manhole covers to grade level during paving and resurfacing operations. Fabricated from high-strength cast or ductile iron, they minimize the need for costly digging and rebuilding, ensuring a perfect flush fit with the new asphalt surface.',
   specs: [
-    { label: 'Material', value: 'Ductile Iron (65-45-12) or Cast Iron' },
+    { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Standard Round / Adjustable' },
-    { label: 'Load Rating', value: 'Paving Standard M306 / H-20 Heavy Traffic' },
+    { label: 'Load Rating', value: 'Load Rating: See individual product specification' },
     { label: 'Standard Diameters', value: '24", 27", 30", 36" equivalents' },
     { label: 'Rise Increments', value: '3/4" to 4" (Custom stackable available)' },
-    { label: 'Certification', value: 'Buy America Act Compliant, ISO 9001:2015' },
+    { label: 'Certification', value: 'Compliance & Testing documentation available upon request' },
   ],
   technicalPoints: [
     {
@@ -98,7 +98,7 @@ export default function ManholeRiserPage() {
             
             <div className="pt-8">
               <Button className="bg-white hover:bg-[#CC0000] text-black hover:text-white font-black h-16 px-10 uppercase tracking-[0.2em] rounded-none transition-all duration-300">
-                Explore Specs <ArrowRight className="ml-3" />
+                Download Catalog <ArrowRight className="ml-3" />
               </Button>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function ManholeRiserPage() {
            <div className="lg:col-span-2 bg-[#CC0000] text-white p-10 flex flex-col justify-between hover:bg-[#B30000] transition-colors duration-300 group">
               <ShieldCheck className="w-12 h-12 text-white/50 group-hover:text-white transition-colors" />
               <div>
-                <h3 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-2">H-20</h3>
+                <h3 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-2">Load Rating: See individual product specification</h3>
                 <p className="font-bold uppercase tracking-widest text-xs opacity-80">Paving Standard M306 Load Rating</p>
               </div>
            </div>

@@ -50,10 +50,10 @@ export default function ToolsAndAccessoriesCatalog() {
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-[1.1]">
             Tools & Accessories <br />
-            <span className="text-[#CC0000]">For Rapid On-Site Fitment.</span>
+            <span className="text-[#CC0000]">for on-site fitting.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Equip your road crews with rated for jobsite accessories engineered to reduce deployment labor times and helps insure accurate positioning
+            Equip tools that help your crew set risers and covers faster and accurately.
           </p>
         </div>
 

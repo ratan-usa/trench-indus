@@ -78,7 +78,7 @@ export default function CatchBasinRisersPage() {
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href={'/contact/quote'}>
               <Button size="lg" className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase tracking-widest px-8 h-14 rounded-sm transition-all duration-300 shadow-[0_0_40px_rgba(204,0,0,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
-                Request Specifications
+                Request a Quote
               </Button>
               </Link>
               <Button size="lg" variant="outline" className="border-white/20 text-black hover:bg-white hover:text-black font-black uppercase tracking-widest px-8 h-14 rounded-sm transition-all duration-300 bg-white">

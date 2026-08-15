@@ -112,7 +112,7 @@ export default function HeavyFooter() {
               </h2>
             </div>
             <p className="text-xs font-mono text-gray-500 uppercase tracking-widest pl-11">
-              Class 30 Gray Iron • USA Fabricated Steel
+              Gray Iron • USA Fabricated Steel
             </p>
           </div>
           

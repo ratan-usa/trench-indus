@@ -152,7 +152,7 @@ export default function AirportsPortsPage() {
               Require A Custom <br /> Load Rating?
             </h2>
             <p className="text-xl font-bold text-white/90 leading-relaxed mb-12">
-              If your facility hosts specialized heavy equipment that exceeds standard highway H-20 ratings, our foundry engineers will design and cast a custom solution guaranteed to perform.
+              If your facility hosts specialized heavy equipment that exceeds standard highway Load Rating: See individual product specification ratings, our foundry engineers will design and cast a custom solution guaranteed to perform.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">

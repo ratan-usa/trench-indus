@@ -34,14 +34,14 @@ export default function PavingRiserClassification() {
         {/* --- SECTION HEADER --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-            <Layers className="w-4 h-4 text-[#CC0000]" /> Product Architecture
+            <Layers className="w-4 h-4 text-[#CC0000]" /> Product Range
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-none">
-            Types of Paving Risers <br />
-            <span className="text-[#CC0000]">System Classification.</span>
+            The types of risers <br />
+            <span className="text-[#CC0000]">we make.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Every job site demands a specific installation blueprint. We manufacture custom solutions categorized seamlessly by exact composition materials and mechanical designs.
+            Every job site demands a specific installation blueprint. We manufacture custom solutions grouped by material and mechanical design.
           </p>
         </div>
 
@@ -123,11 +123,8 @@ export default function PavingRiserClassification() {
                 Dimensional Parameters
               </span>
               <h4 className="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
-                General Size Option From: <span className="text-[#CC0000]">0.25 to 4 Inch</span>
+                Available in step heights from <span className="text-[#CC0000]">1/4 inch to 4 inches.</span>
               </h4>
-              <p className="text-xs text-zinc-400 font-medium max-w-xl">
-                Precision calibrated step depths matching precise roadway resurfacing courses and micro-surfacing layer profiles.
-              </p>
             </div>
           </div>
 

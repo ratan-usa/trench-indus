@@ -19,11 +19,11 @@ import { Button } from "@/components/ui/button";
 const GRATE_FEATURES = [
   {
     title: "Heavy-Duty Welded Steel Construction",
-    description: "Built from high-tensile structural carbon steel or ductile iron matrices designed to withstand continuous Heavy-Duty Paving Grade highway impacts."
+    description: "Welded from structural carbon steel or ductile iron."
   },
   {
     title: "Custom Structural Form Factors",
-    description: "Precision fabricated in round, square, rectangular, and D-shape profiles to drop directly into existing municipal frames."
+    description: "Made in round, square, rectangular, and D-shape to fit existing frames."
   },
   {
     title: "Bespoke Hydraulic Flow Patterns",
@@ -31,13 +31,12 @@ const GRATE_FEATURES = [
   },
   {
     title: "Corrosion & Salt Protection",
-    description: "Factory-applied heavy bituminous asphaltum coating or hot-dip galvanizing to resist severe weather, road salt, and chemical exposure."
+    description: "Bituminous or galvanized coating for salt and weather resistance."
   }
 ];
 
 const FABRICATION_SPECS = [
-  { label: "Load Rating", value: "Heavy-Duty Paving Traffic" },
-  { label: "Material Grade", value: "ASTM A36 Steel / Class 35B Iron" },
+  { label: "Material Grade", value: "Steel / Iron" },
   { label: "Grate Depth", value: "Built to Match Seat Thickness" },
   { label: "Coating Options", value: "Bituminous Black / Galvanized" }
 ];
@@ -57,7 +56,7 @@ export default function FabricatedGratesSection() {
             <span className="text-[#CC0000]">Inlet Frame Covers.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Custom welded heavy-duty steel grates engineered to pair seamlessly with our catch basin and paving riser frameworks. Built to exact DOT specifications for rapid field replacement.
+            Custom welded steel grates that fit our catch basin and riser frames.
           </p>
         </div>
 
@@ -149,7 +148,7 @@ export default function FabricatedGratesSection() {
         <div className="border border-slate-200 bg-slate-50 p-6 rounded-sm flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-xs font-bold text-slate-700">
             <ShieldCheck className="w-5 h-5 text-[#CC0000] shrink-0" />
-            <span>All fabricated steel grates and frames meet state and local Department of Transportation (DOT) structural requirements.</span>
+            <span>Compliance and testing documentation available upon request.</span>
           </div>
           <a href="#contact" className="shrink-0">
             <span className="text-xs font-black uppercase tracking-wider text-[#CC0000] hover:underline flex items-center gap-1">

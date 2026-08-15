@@ -31,7 +31,7 @@ const data: ProductDataItem[] = [
       { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
       { id: 103, x: '68%', y: '60%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
     ]
-  }, 
+  },
   {
     id: 'riser-15205',
     name: 'Heavy Duty Square Frame Riser',
@@ -43,9 +43,9 @@ const data: ProductDataItem[] = [
       { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
       { id: 204, x: '30%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
     ]
-  }, 
+  },
   {
-    id: 'riser-15203',    
+    id: 'riser-15203',
     name: 'Custom Rectangular Extension Ring',
     type: 'Utility Vault Profile',
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
@@ -64,11 +64,11 @@ export default function ProductInteractiveImage() {
   return (
     <section className="py-24 bg-white font-sans text-[#0F0F0F]">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
-        
+
         {/* --- HEADER DESK --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-            <Crosshair className="w-4 h-4 text-[#CC0000]" /> Visual Blueprint Inspection
+            <Crosshair className="w-4 h-4 text-[#CC0000]" /> Product Detail
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
             Interactive Product <br />
@@ -81,10 +81,10 @@ export default function ProductInteractiveImage() {
 
         {/* --- SPLIT MATRIX TO FILL SIDE SPACE --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* LEFT COLUMN: INTERACTIVE NAVIGATION & TECHNICAL STATS (5 Columns) */}
           <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-24">
-            
+
             {/* Tab Swappers */}
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block px-1">
@@ -96,11 +96,10 @@ export default function ProductInteractiveImage() {
                   <button
                     key={item.id}
                     onClick={() => setActiveTab(idx)}
-                    className={`w-full text-left p-5 rounded-sm border transition-all duration-200 flex flex-col gap-1 relative overflow-hidden ${
-                      isActive 
-                        ? 'bg-[#0F0F0F] border-[#0F0F0F] text-white pl-8 shadow-xl' 
-                        : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100 hover:border-slate-300'
-                    }`}
+                    className={`w-full text-left p-5 rounded-sm border transition-all duration-200 flex flex-col gap-1 relative overflow-hidden ${isActive
+                      ? 'bg-[#0F0F0F] border-[#0F0F0F] text-white pl-8 shadow-xl'
+                      : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100 hover:border-slate-300'
+                      }`}
                   >
                     {isActive && (
                       <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#CC0000]" />
@@ -121,23 +120,20 @@ export default function ProductInteractiveImage() {
               <div className="flex items-center gap-2 text-[#CC0000] border-b border-slate-200 pb-3">
                 <ShieldCheck className="w-5 h-5" />
                 <h4 className="text-xs font-black uppercase tracking-widest text-[#0F0F0F]">
-                  Rigid Structural Metrics
+                  Specifications
                 </h4>
               </div>
 
               <div className="space-y-3 text-xs font-bold text-slate-600 uppercase tracking-wider">
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Layers className="w-4 h-4 text-slate-400" /> Casting Core:</span>
-                  <span className="text-[#0F0F0F]">Class 30 Gray Iron</span>
+                  <span className="text-[#0F0F0F]">Gray Iron</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>
-                  <span className="text-[#0F0F0F]">0.5" to 4" Rise</span>
+                  <span className="text-[#0F0F0F]">1/4" to 4" Rise</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="flex items-center gap-1.5"><Hammer className="w-4 h-4 text-slate-400" /> Compliance:</span>
-                  <span className="text-[#CC0000]">Paving Traffic Grade</span>
-                </div>
+
               </div>
             </div>
 
@@ -152,7 +148,7 @@ export default function ProductInteractiveImage() {
             <div className="absolute top-4 left-4 bg-[#0F0F0F] border border-zinc-800 rounded px-3 py-1 text-[9px] font-mono uppercase tracking-widest text-slate-400 z-10 pointer-events-none">
               Viewport: active_spec_{currentProduct.id}.png
             </div>
-            
+
             <div key={currentProduct.id} className="w-full animate-[fadeIn_0.35s_ease-out]">
               <InteractiveProduct
                 imageSrc={currentProduct.imgSrc}

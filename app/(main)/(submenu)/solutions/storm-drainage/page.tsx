@@ -27,7 +27,7 @@ const DRAINAGE_DATA = {
   stats: [
     { label: 'Hydraulic Capacity', value: '100%', icon: <Waves className="w-6 h-6" /> },
     { label: 'Slope Adjustment', value: '0 - 15%', icon: <MoveDiagonal className="w-6 h-6" /> },
-    { label: 'Load Rating', value: 'H-20 Heavy', icon: <BarChart3 className="w-6 h-6" /> },
+    { label: 'Load Rating', value: 'Load Rating: See individual product specification Heavy', icon: <BarChart3 className="w-6 h-6" /> },
   ]
 };
 

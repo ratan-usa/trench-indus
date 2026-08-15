@@ -95,7 +95,7 @@ export const PRODUCT_DATA: Product[] = [
         description: 'Durable rectangular solutions for larger storm drainage structures and curb inlets.',
         specs: {
             material: 'Heavy Duty Fabricated Steel',
-            loadRating: 'H-20 Traffic Rated',
+            loadRating: 'Load Rating: See individual product specification Traffic Rated',
             standardSizes: '24"x36", 24"x48" (Custom Available)',
             heights: '2" to 8"',
             coating: 'Raw / Coated / Iron Finish'

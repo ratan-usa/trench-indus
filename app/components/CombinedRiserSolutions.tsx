@@ -29,14 +29,14 @@ const RISER_SECTIONS = [
     description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
     features: [
-      { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for H-20 heavy traffic loads." },
+      { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for Load Rating: See individual product specification heavy traffic loads." },
       { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
     ],
     meta: [
       { label: "Material", value: "Ductile/Grey Iron ASTM A48" },
       { label: "Standard Sizes", value: "24\", 30\", and Custom Increments" }
     ],
-    buttonText: "Request Specifications",
+    buttonText: "Request a Quote",
     buttonLink: "#specs"
   },
   {
@@ -84,7 +84,7 @@ const RISER_SECTIONS = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
     isComingSoon: true, // Added flag for the badge
     features: [
-      { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to 15%+ grades." },
+      { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to Slopes available per design specs." },
       { icon: "ShieldCheck", title: "Snowplow Safe", desc: "Ensures covers sit flush, preventing plow blade snags." }
     ],
     meta: [],
@@ -205,7 +205,7 @@ export default function ComprehensivePavingRisersMapped() {
                     <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-zinc-900/50 border-zinc-800' : 'bg-slate-50 border-slate-100'}`}>
                       <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
                         <span className={`font-medium italic text-sm ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>Our Pledge:</span>
-                        <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Undertaking every casting... regardless."</span>
+                        <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Custom manufacturing available... regardless."</span>
                       </div>
                       {section.meta.map((metaItem, i) => (
                         <div key={i} className="flex justify-between text-sm">

@@ -59,7 +59,7 @@ export default function InfrastructureRisers() {
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900">Load Bearing</h5>
-                  <p className="text-sm text-slate-500">Rated for H-20 heavy traffic loads.</p>
+                  <p className="text-sm text-slate-500">Rated for Load Rating: See individual product specification heavy traffic loads.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -77,7 +77,7 @@ export default function InfrastructureRisers() {
             <div className="p-6 bg-slate-50 rounded-xl space-y-3 border border-slate-100">
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500 font-medium italic text-sm">Our Pledge:</span>
-                <span className="text-slate-900 font-bold text-sm text-right italic">"Undertaking every casting... regardless."</span>
+                <span className="text-slate-900 font-bold text-sm text-right italic">"Custom manufacturing available... regardless."</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-500">Material</span>
@@ -93,7 +93,7 @@ export default function InfrastructureRisers() {
               <Link href={'/contact/quote'}>
 
                 <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105">
-                  Request Specifications <ArrowUpRight className="ml-2 w-5 h-5" />
+                  Request a Quote <ArrowUpRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
             </div>

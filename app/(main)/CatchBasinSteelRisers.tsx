@@ -21,14 +21,14 @@ export default function CatchBasinSteelRisers() {
         {/* --- MAIN SECTION INTRO HEADER --- */}
         <div className="w-full space-y-3">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#cc2221] flex items-center gap-2">
-            <Layers className="w-4 h-4 text-[#cc2221]" /> Heavy Drainage Catalog
+            <Layers className="w-4 h-4 text-[#cc2221]" /> Catch Basin Risers
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-[#0a0a0a] leading-none">
-            Catch Basin Risers – Steel <br />
-            <span className="text-[#cc2221]">Tailored Custom Fitment.</span>
+            Steel catch basin risers, <br />
+            <span className="text-[#cc2221]">made to fit.</span>
           </h2>
           <p className="text-zinc-600 text-lg font-medium leading-relaxed max-w-none">
-            minimize intensive structural rebuilds during overlays. Our high-tensile steel frame extensions are precision manufactured to match localized storm drain geometries precision.
+            Minimize intensive structural rebuilds during overlays. Our high-tensile steel riser extensions are built to fit your existing catch basin frames.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function CatchBasinSteelRisers() {
                   <h3 className="font-black uppercase tracking-wider text-xs text-[#0a0a0a]">Depth Grading</h3>
                 </div>
                 <p className="text-sm font-bold text-zinc-800">3/4" Base with 1/4" Increments</p>
-                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin asphalt lifts and scales upward seamlessly in precise 1/4" increments.</p>
+                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin asphalt lifts and scales upward seamlessly in precise Custom rise increments available.</p>
               </div>
 
             </div>
