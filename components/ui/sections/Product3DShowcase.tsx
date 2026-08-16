@@ -193,6 +193,7 @@ export default function Product3DShowcase() {
                       src={model.thumbnail}
                       alt={model.title}
                       fill
+                      sizes="96px"
                       className="object-cover opacity-70 group-hover:opacity-100 transition-opacity"
                     />
                     {activeModelIndex === idx && (

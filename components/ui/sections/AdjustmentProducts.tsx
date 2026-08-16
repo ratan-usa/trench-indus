@@ -50,6 +50,7 @@ export default function AdjustmentProducts() {
                       src={category.imageSrc}
                       alt={category.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                       className="object-contain"
                     />
                   </div>
@@ -67,6 +68,7 @@ export default function AdjustmentProducts() {
                       src={category.imageSrc}
                       alt={category.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                       className="object-contain p-4 scale-110"
                     />
                   </div>

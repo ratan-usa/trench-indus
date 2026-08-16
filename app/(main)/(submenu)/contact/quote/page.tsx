@@ -4,9 +4,50 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { PlayCircle, ShieldCheck, HardHat, FileText, Send, Building2, Truck, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { supabase } from '@/lib/supabaseClient';
 
 export default function QuoteRequestPage() {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      product_type: selectedProduct || 'not-selected',
+      specifications: {
+        quantity: formData.get('quantity'),
+        rise: formData.get('rise'),
+        material: formData.get('material')
+      },
+      full_name: formData.get('fullName'),
+      company_name: formData.get('company'),
+      work_email: formData.get('email'),
+      phone_number: formData.get('phone'),
+      delivery_zip: formData.get('zip')
+    };
+
+    try {
+      const { error } = await supabase
+        .from('quote_requests')
+        .insert([data]);
+        
+      if (error) throw error;
+      
+      setIsSubmitted(true);
+      e.currentTarget.reset();
+      
+      setTimeout(() => setIsSubmitted(false), 3000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your request. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#020202] text-white font-sans selection:bg-[#CC0000] selection:text-white pb-0">
@@ -90,7 +131,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'valve-box' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.750.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -125,6 +166,7 @@ export default function QuoteRequestPage() {
             </div>
 
             {/* Step 2: Project Specifications */}
+            <form onSubmit={handleSubmit} className="space-y-16">
             <div className="space-y-6">
               <div className="flex items-center gap-4 border-b border-white/10 pb-4">
                 <div className="w-8 h-8 rounded-full bg-[#CC0000] text-white flex items-center justify-center font-black text-sm">2</div>
@@ -134,15 +176,15 @@ export default function QuoteRequestPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Estimated Quantity</label>
-                  <input type="number" placeholder="e.g. 150" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
+                  <input type="number" name="quantity" required placeholder="e.g. 150" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Required Rise (Inches)</label>
-                  <input type="text" placeholder="e.g. 1.5&quot; to 3&quot;" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
+                  <input type="text" name="rise" placeholder="e.g. 1.5&quot; to 3&quot;" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Material Specification</label>
-                  <select className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-bold outline-none transition-colors appearance-none cursor-pointer">
+                  <select name="material" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-bold outline-none transition-colors appearance-none cursor-pointer">
                     <option>Gray Iron (Standard)</option>
                     <option>Ductile Iron (Heavy Duty)</option>
                     <option>A36 Fabricated Steel</option>
@@ -161,31 +203,32 @@ export default function QuoteRequestPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Full Name</label>
-                  <input type="text" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
+                  <input type="text" name="fullName" required className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Company Name</label>
-                  <input type="text" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
+                  <input type="text" name="company" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Work Email</label>
-                  <input type="email" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
+                  <input type="email" name="email" required className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Phone Number</label>
-                  <input type="tel" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
+                  <input type="tel" name="phone" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white outline-none transition-colors" />
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Delivery Zip Code (For Freight Estimate)</label>
-                  <input type="text" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
+                  <input type="text" name="zip" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-mono outline-none transition-colors" />
                 </div>
               </div>
             </div>
 
-            <Button className="w-full bg-[#CC0000] text-white hover:bg-white hover:text-black font-black uppercase tracking-[0.2em] h-20 text-lg transition-colors rounded-none group flex items-center justify-center gap-4">
-              Submit Request for Quote
-              <Send className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+            <Button type="submit" disabled={isSubmitting || isSubmitted} className={`w-full ${isSubmitted ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-[#CC0000] text-white hover:bg-white hover:text-black'} font-black uppercase tracking-[0.2em] h-20 text-lg transition-colors rounded-none group flex items-center justify-center gap-4`}>
+              {isSubmitting ? 'Encrypting & Sending...' : isSubmitted ? 'Quote Request Sent' : 'Submit Request for Quote'}
+              {!isSubmitting && !isSubmitted && <Send className="w-6 h-6 group-hover:translate-x-2 transition-transform" />}
             </Button>
+            </form>
 
           </div>
 

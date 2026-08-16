@@ -91,6 +91,7 @@ export default function PavingPathHero() {
               alt="Paving Riser Manhole Cover Assembly"
               height={400}  
               width={500}
+              style={{ width: "auto", height: "auto" }}
               className="object-contain object-right"
               priority
             />

@@ -214,6 +214,7 @@ export default function GratesRacksAndTools() {
                 src={current.image}
                 alt={current.title}
                 fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
               />
             </div>

@@ -88,8 +88,8 @@ export default function CatchBasinSteelRisers() {
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`}
               alt="Catch Basin Riser Schematic Layout"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-contain p-8 mix-blend-multiply transition-transform duration-500 group-hover:scale-102"
-              priority
             />
 
             <div className="absolute bottom-4 left-4 right-4 bg-[#0a0a0a]/95 border border-zinc-900 px-3 py-2 text-[9px] uppercase font-bold tracking-wider text-zinc-400 text-center pointer-events-none">

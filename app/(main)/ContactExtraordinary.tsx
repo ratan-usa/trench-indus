@@ -3,21 +3,42 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Send, Phone, Mail, MapPin, HardHat, CheckCircle2 } from 'lucide-react';
+import { supabase } from '@/lib/supabaseClient';
 
 export default function ContactExtraordinary() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      full_name: formData.get('fullName'),
+      company: formData.get('company'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      project_requirements: formData.get('requirements'),
+    };
+
+    try {
+      const { error } = await supabase
+        .from('contact_requests')
+        .insert([data]);
+        
+      if (error) throw error;
+      
       setIsSubmitted(true);
-      // Reset after 3 seconds
+      e.currentTarget.reset();
+      
       setTimeout(() => setIsSubmitted(false), 3000);
-    }, 1500);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your request. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -104,6 +125,7 @@ export default function ContactExtraordinary() {
                     <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Full Name</label>
                     <input
                       type="text"
+                      name="fullName"
                       required
                       className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
                       placeholder="John Doe"
@@ -113,6 +135,7 @@ export default function ContactExtraordinary() {
                     <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Company / Municipality</label>
                     <input
                       type="text"
+                      name="company"
                       required
                       className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
                       placeholder="City Paving Dept."
@@ -126,6 +149,7 @@ export default function ContactExtraordinary() {
                     <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Email Address</label>
                     <input
                       type="email"
+                      name="email"
                       required
                       className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
                       placeholder="john@company.com"
@@ -135,6 +159,7 @@ export default function ContactExtraordinary() {
                     <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Phone Number</label>
                     <input
                       type="tel"
+                      name="phone"
                       className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
                       placeholder="(555) 000-0000"
                     />
@@ -145,6 +170,7 @@ export default function ContactExtraordinary() {
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Project Requirements (Specs, Sizes, Load Ratings)</label>
                   <textarea
+                    name="requirements"
                     rows={4}
                     required
                     className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all resize-none"
@@ -163,7 +189,7 @@ export default function ContactExtraordinary() {
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
-                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                      <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
                       Encrypting & Sending...
                     </span>
                   ) : isSubmitted ? (

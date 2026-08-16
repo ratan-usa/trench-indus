@@ -31,7 +31,7 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/Ayush_Design.752.mp4`,
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.719.mp4`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
   },
   {
@@ -40,7 +40,7 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`,
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
   },
   {

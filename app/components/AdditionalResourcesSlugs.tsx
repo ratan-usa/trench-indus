@@ -59,6 +59,7 @@ export default function AdditionalResourcesSlugs() {
                 src={resource.imageSrc}
                 alt={resource.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 className="object-cover opacity-90 transition-all duration-500"
               />
 
