@@ -25,6 +25,7 @@ import FabricatedGratesSection from './FabricatedGratesSection'
 import RiserAnimationShowcase from '../components/RiserAnimationShowcase'
 import InfiniteRiserShowcase from '../components/InfiniteRiserShowcase'
 import GratesRacksAndTools from './GratesRacksAndTools'
+import PavingProductsTable from '../components/PavingProductsTable'
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -71,6 +72,7 @@ const Home = () => {
       {/* <InfrastructureRisers /> */}
       <CombinedRiserSolutions />
       {/* <ProductCatalog /> */}
+      {/* <PavingProductsTable /> */}
       <SmartInfraSection />
       <AdjustmentProducts />
       <PremiumPavingShowcase />

@@ -32,6 +32,34 @@ const RESOURCES = [
     slug: 'manhole-riser-video',
     type: 'video',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`, // Replace with product photo
+  },
+  {
+    id: 'res-5',
+    title: 'Load Test Reports',
+    slug: 'load-test-reports',
+    type: 'document',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
+  },
+  {
+    id: 'res-6',
+    title: 'Custom Fabrication Guide',
+    slug: 'custom-fabrication-guide',
+    type: 'document',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`,
+  },
+  {
+    id: 'res-7',
+    title: 'INFRA-RISER Specs',
+    slug: 'infra-riser-specs',
+    type: 'document',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`,
+  },
+  {
+    id: 'res-8',
+    title: 'Case Study: Highway Paving',
+    slug: 'case-study-highway-paving',
+    type: 'document',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`,
   }
 ];
 
