@@ -3,8 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 
-// --- DATA ---
-// I added a 'description' field to populate the text on hover
 export const PRODUCT_CATEGORIES = [
   {
     id: 1,
@@ -18,7 +16,7 @@ export const PRODUCT_CATEGORIES = [
     title: "INFRA-RISER® Adjustment Risers",
     slug: "infra-riser-adjustment-risers",
     description: "Prolong structure life with the INFRA-RISER® rubber composite adjustment riser",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20iron%20Finish.614.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
   }
 ];
 
