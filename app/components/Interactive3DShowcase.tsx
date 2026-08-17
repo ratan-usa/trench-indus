@@ -326,7 +326,10 @@ function SceneContent({
     return (
         <>
             <Suspense fallback={<CanvasLoader />}>
-                <Stage key={model.path} environment="city" adjustCamera={true}>
+                <ambientLight intensity={1.2} />
+                <directionalLight position={[10, 10, 5]} intensity={1.5} castShadow />
+                <directionalLight position={[-10, 5, -5]} intensity={0.5} />
+                <Stage key={model.path} environment={null} adjustCamera={true}>
                     <ModelViewer url={model.path} />
                 </Stage>
             </Suspense>
