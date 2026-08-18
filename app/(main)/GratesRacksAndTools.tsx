@@ -29,15 +29,15 @@ const CATEGORIES = [
     subtitle: 'High-Volume Drainage & Load Surface Covers',
     icon: <Grid className="w-5 h-5" />,
     features: [
-      { title: 'Heavy-Duty Welded Construction', desc: 'Manufactured from carbon steel or ductile iron to sustain heavy-duty traffic loads.' },
+      { title: 'Heavy-Duty Welded Construction', desc: 'Manufactured from mild steel to sustain heavy-duty traffic loads.' },
       { title: 'Hydraulic Flow Profiles', desc: 'Slot patterns: parallel, diagonal, or pedestrian-safe.' },
-      { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing or bituminous coating to resist road salt and moisture.' },
+      { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing, water-based bitumen, or powder coatings to resist road salt and moisture.' },
       { title: 'Custom Seating Dimensions', desc: 'Made precisely to fit existing catch basin frames or paving risers.' }
     ],
     specs: [
-      { label: 'Material Grade', value: 'Steel / Iron' },
+      { label: 'Material Grade', value: 'Mild Steel' },
       { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
-      { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Bituminous' }
+      { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Water-Based Bitumen / Powder Coating' }
     ],
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Fabricated_Steel_Drainage_Grate_Assembl.png`
   },
@@ -66,7 +66,7 @@ const CATEGORIES = [
     subtitle: 'Specialized Hardware for Riser & Frame Field Crews',
     icon: <Wrench className="w-5 h-5" />,
     features: [
-      { title: 'Turnbuckle Adjustment Keys', desc: 'Heavy-duty steel T-handle wrenches custom machined to turn internal riser expansion set-screws smoothly.' },
+      { title: 'expansion adjustment Keys', desc: 'Heavy-duty steel T-handle wrenches custom machined to turn internal riser expansion set-screws smoothly.' },
       { title: 'Manhole & Cover Pry Hooks', desc: 'Forged alloy steel lifting hooks designed for safe removal of heavy iron lids and grate covers without frame damage.' },
       { title: 'Laser Alignment Gauges', desc: 'Compact grade alignment levels for verifying flush street surface elevations prior to final asphalt rolling.' },
       { title: 'Paving Riser Shim Kits', desc: 'High-density composite alignment shims engineered to correct sloped or crowned frame conditions.' }
@@ -99,7 +99,7 @@ export default function GratesRacksAndTools() {
             <span className="text-[#CC0000]"> & Installation Field Tools.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Welded steel grates, culvert trash racks, and the field tools that go with them, including turnbuckle wrenches and lid hooks.
+            Welded steel grates, culvert trash racks, and the field tools that go with them, including expansion wrenches and lid hooks.
           </p>
         </div>
 
@@ -243,7 +243,7 @@ export default function GratesRacksAndTools() {
                 Need Custom Fabrication or Bulk Installation Tools?
               </h4>
               <p className="text-xs text-zinc-400 font-medium max-w-2xl leading-relaxed">
-                Send us your CAD drawings (.dwg, .pdf, .step) or field measurement logs for custom trash racks, fabricated grates, and turnbuckle adjustment tools.
+                Send us your CAD drawings (.dwg, .pdf, .step) or field measurement logs for custom trash racks, fabricated grates, and expansion adjustment tools.
               </p>
             </div>
           </div>

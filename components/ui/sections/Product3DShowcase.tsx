@@ -111,15 +111,12 @@ export default function Product3DShowcase() {
 
         {/* --- SECTION HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <Rotate3d className="text-[#CC0000] w-5 h-5 animate-spin-slow" />
-              <span className="text-[#CC0000] font-bold uppercase tracking-widest text-sm">
-                Interactive Showroom
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">
-              3D Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Visualization</span>
+          <div className="space-y-4">
+            <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
+              <Rotate3d className="w-4 h-4 text-[#CC0000]" /> Interactive 3D Hardware
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+              Engineered Infrastructure <span className="text-[#CC0000]">Models.</span>
             </h2>
           </div>
         </div>

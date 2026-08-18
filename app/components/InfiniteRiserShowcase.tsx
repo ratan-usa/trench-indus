@@ -4,6 +4,7 @@ import React from 'react';
 import { Layers, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function InfiniteRiserShowcase() {
     return (
@@ -24,7 +25,7 @@ export default function InfiniteRiserShowcase() {
                         <span className="text-[#CC0000]"> part by part.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
-                        An exploded view of the outer frame, adjustment ring, turnbuckle set-screws, and top grate, showing how the assembly goes together.
+                        An exploded view of the outer frame, adjustment ring, mechanical expansion, and top grate, showing how the assembly goes together.
                     </p>
                 </div>
 
@@ -34,14 +35,12 @@ export default function InfiniteRiserShowcase() {
                     {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
                     <div className="lg:col-span-6">
                         <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                            <video
-                                suppressHydrationWarning
-                                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/d_shape_riser.mp4`}
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="w-full h-full object-cover"
+                            <Image
+                                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
+                                alt="Round Adjustable Riser"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="w-full h-full object-contain p-8"
                             />
                         </div>
                     </div>
@@ -54,10 +53,10 @@ export default function InfiniteRiserShowcase() {
 
                         <div className="space-y-4">
                             <h3 className="text-2xl font-black uppercase tracking-tight text-white">
-                                Turnbuckle Adjustment
+                                Mechanical Expansion
                             </h3>
                             <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using built-in turnbuckle set-screws. Turning the screws holds the ring in position while you pave.
+                                Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.
                             </p>
                         </div>
 

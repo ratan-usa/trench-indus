@@ -25,7 +25,7 @@ const SOLID_IRON_FEATURES = [
 
 const ADJUSTABLE_STEEL_FEATURES = [
   { title: "Diameter Variance Adjust", desc: "Adjusts in or out up to 1/2 inch to clear the frame." },
-  { title: "Pivoted Turnbuckle System", desc: "Built-in mechanical linkage delivering positive, high-grip mechanical locking to the base." },
+  { title: "Pivoted Expansion System", desc: "Built-in mechanical linkage delivering positive, high-grip mechanical locking to the base." },
   { title: "Installs in Minutes", desc: "Accelerates on-site field assembly timelines to match fast-paced asphalt crews." },
   { title: "Ultra-Low Minimum Rise", desc: "Provides as little as 3/4\" vertical rise—essential for modern micro-surfacing paving overlays." }
 ];
@@ -97,7 +97,7 @@ export default function RiserProductSpecifications() {
                 Adjustable Steel Rings
               </CardTitle>
               <CardDescription className="text-slate-500 font-medium text-sm">
-                Steel rings with a turnbuckle that locks to the frame.
+                Steel rings with a expansion mechanism that locks to the frame.
               </CardDescription>
             </CardHeader>
 
@@ -134,7 +134,7 @@ export default function RiserProductSpecifications() {
                 Optimized Specifically For <span className="text-[#CC0000]">Modern Thin Paving Layers.</span>
               </h4>
               <p className="text-xs text-zinc-400 font-medium max-w-xl">
-                Deploy turnbuckle setups to handle minimal 3/4\" height corrections cleanly without cracking new wear courses.
+                Deploy expansion setups to handle minimal 3/4\" height corrections cleanly without cracking new wear courses.
               </p>
             </div>
           </div>

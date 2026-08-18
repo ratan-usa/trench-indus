@@ -1,15 +1,16 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   Play,
   Pause,
   Rotate3d,
-  Maximize,
   ChevronRight,
-  Box,
   Layers,
-  Infinity
+  Infinity as InfinityIcon,
+  Crosshair
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -42,38 +43,26 @@ const PRODUCT_VIDEOS = [
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
-  },
-  {
-    id: 4,
-    title: "Catch Basin",
-    description: "Finite Element Analysis (FEA) visualization of load distribution.",
-    duration: "0:30",
-    type: "SIMULATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/1.719.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
   }
 ];
 
 export default function Product3DShowcase2() {
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true); // Default to true to boot up immediately
+  const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const activeVideo = PRODUCT_VIDEOS[activeVideoIndex];
 
-  // Logic: Handle automatic cyclical looping when a sequence terminates
   const handleVideoEnd = () => {
-    // Cycles seamlessly to the next index, wrapping back to 0 at the end of the array
     setActiveVideoIndex((prevIndex) => (prevIndex + 1) % PRODUCT_VIDEOS.length);
   };
 
-  // Effect: Forces live streaming pipeline reloads when target index updates
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.load();
       if (isPlaying) {
         videoRef.current.play().catch((err) => {
-          console.log("Autoplay blocked by browser configurations until active click:", err);
+          console.log("Autoplay blocked by browser:", err);
         });
       }
     }
@@ -90,29 +79,33 @@ export default function Product3DShowcase2() {
   };
 
   return (
-    <section className="bg-zinc-950 text-white py-4 border-t border-zinc-900">
-      <div className="p-6 md:p-8 lg:p-12">
+    <section className="relative bg-[#0a0a0a] text-white py-24 border-t border-zinc-900 overflow-hidden font-sans">
+      
+      {/* Background Ambience */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-[#CC0000]/5 rounded-full blur-[150px]" />
+        <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="max-w-[90rem] mx-auto px-6 md:px-8 relative z-10">
 
         {/* --- SECTION HEADER --- */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <Rotate3d className="text-[#CC0000] w-5 h-5 animate-spin-slow" />
-              <span className="text-[#CC0000] font-bold uppercase tracking-widest text-sm">
-                Interactive Showroom
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">
-              3D Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Visualization</span>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="space-y-4">
+            <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
+              <Rotate3d className="w-4 h-4 text-[#CC0000]" /> Engineering Visualization
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none">
+              Precision 3D <span className="text-[#CC0000]">Modeling.</span>
             </h2>
           </div>
 
           <Button
             onClick={togglePlayPause}
             className={cn(
-              "gap-2 font-bold uppercase tracking-wider px-8 h-12 transition-all rounded-sm shadow-md",
+              "gap-2 font-black uppercase tracking-widest px-8 h-12 transition-all duration-300 rounded-sm shadow-md",
               isPlaying
-                ? "bg-[#CC0000] text-white hover:bg-[#B30000]"
+                ? "bg-[#CC0000] text-white hover:bg-white hover:text-black shadow-[0_0_20px_-5px_rgba(204,0,0,0.5)]"
                 : "bg-white text-black hover:bg-gray-200"
             )}
           >
@@ -122,106 +115,133 @@ export default function Product3DShowcase2() {
         </div>
 
         {/* --- MAIN PLAYER AREA --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-stretch">
 
           {/* LEFT: Main Player Aspect Screen Window */}
-          <div className="lg:col-span-2">
-            <div className="relative aspect-video bg-[#0F0F0F] rounded-lg border border-zinc-800 shadow-2xl overflow-hidden group">
-
-              {/* Viewport Dynamic Overlay Badge */}
-              <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm border border-zinc-800 rounded px-3 py-1.5 text-[9px] font-mono uppercase tracking-widest text-gray-400 z-20 flex items-center gap-2 pointer-events-none">
-                <Infinity className="w-3.5 h-3.5 text-[#CC0000] animate-pulse" /> Continuous Loop Playback
+          <div className="xl:col-span-8 flex flex-col h-full">
+            <div className="relative w-full flex-grow aspect-video lg:aspect-auto min-h-[400px] lg:min-h-[600px] bg-black rounded-sm border border-zinc-800 shadow-[0_0_50px_-15px_rgba(0,0,0,1)] overflow-hidden group">
+              
+              {/* Dynamic Overlay Badge */}
+              <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-md border border-zinc-800/50 rounded-sm px-4 py-2 text-[10px] font-mono uppercase tracking-widest text-zinc-300 z-20 flex items-center gap-3 pointer-events-none shadow-xl">
+                <div className="w-2 h-2 rounded-full bg-[#CC0000] animate-pulse" />
+                Autoplay Sequence Active
               </div>
 
               {/* CORE LOOPED PLAYBACK WINDOW */}
-              <video
-                ref={videoRef}
-                className="w-full h-full object-contain bg-[#0F0F0F]"
-                controls
-                autoPlay={isPlaying}
-                muted // Muted parameter handles cross-browser autoplay authorization smoothly
-                onEnded={handleVideoEnd}
-              >
-                <source src={activeVideo.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <AnimatePresence mode="wait">
+                <motion.video
+                  key={activeVideo.id}
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  ref={videoRef}
+                  className="absolute inset-0 w-full h-full object-cover bg-black"
+                  controls={false}
+                  autoPlay={isPlaying}
+                  muted
+                  onEnded={handleVideoEnd}
+                >
+                  <source src={activeVideo.src} type="video/mp4" />
+                </motion.video>
+              </AnimatePresence>
 
               {/* Bottom Telemetry Metadata Bar */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/90 to-transparent z-10 pointer-events-none">
-                <div className="flex items-center gap-3 mb-1">
-                  <Badge className="bg-[#CC0000] text-white border-none rounded-none uppercase text-[10px] font-black tracking-wider px-2 py-0.5">
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent z-10 pointer-events-none translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center gap-4 mb-3">
+                  <Badge className="bg-[#CC0000] text-white hover:bg-[#CC0000] border-none rounded-sm uppercase text-[10px] font-black tracking-widest px-3 py-1">
                     {activeVideo.type.replace('_', ' ')}
                   </Badge>
-                  <span className="text-xs text-zinc-400 font-mono font-bold tracking-wide">{activeVideo.duration}</span>
+                  <span className="text-xs text-zinc-400 font-mono font-bold tracking-widest flex items-center gap-2">
+                    <Crosshair className="w-3 h-3 text-[#CC0000]" /> {activeVideo.duration}
+                  </span>
                 </div>
-                <h3 className="text-xl font-black uppercase text-white tracking-wide mt-1">{activeVideo.title}</h3>
-                <p className="text-gray-400 text-xs font-medium max-w-xl leading-relaxed mt-0.5">{activeVideo.description}</p>
+                <h3 className="text-3xl font-black uppercase text-white tracking-tight mb-2 drop-shadow-md">{activeVideo.title}</h3>
+                <p className="text-zinc-300 text-sm font-medium max-w-2xl leading-relaxed drop-shadow-md">{activeVideo.description}</p>
               </div>
             </div>
           </div>
 
           {/* RIGHT: Model Selector Sidebar Playlist */}
-          <div className="lg:col-span-1 bg-zinc-900/50 rounded-lg border border-zinc-800 p-4 h-full flex flex-col min-h-0 overflow-hidden">
-            <h4 className="text-gray-400 font-bold uppercase text-xs tracking-widest mb-4 flex items-center gap-2 shrink-0">
-              <Layers className="w-4 h-4" />
-              Playlist Sequence Loop
-            </h4>
+          <div className="xl:col-span-4 flex flex-col h-full bg-zinc-900/40 backdrop-blur-md rounded-sm border border-zinc-800/50 p-6 shadow-xl">
+            <div className="flex items-center justify-between mb-8 border-b border-zinc-800 pb-4">
+              <h4 className="text-zinc-400 font-black uppercase text-xs tracking-widest flex items-center gap-3">
+                <Layers className="w-4 h-4 text-[#CC0000]" />
+                Video Sequence
+              </h4>
+              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">
+                {PRODUCT_VIDEOS.length} Assets
+              </span>
+            </div>
 
-            <div className="space-y-3 overflow-y-auto pr-2 custom-scrollbar flex-grow min-h-0">
+            <div className="space-y-4 flex-grow overflow-y-auto pr-2 custom-scrollbar min-h-[300px]">
               {PRODUCT_VIDEOS.map((video, idx) => {
                 const isCurrent = activeVideoIndex === idx;
                 return (
-                  <div
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     key={video.id}
                     onClick={() => {
                       setActiveVideoIndex(idx);
                       setIsPlaying(true);
                     }}
                     className={cn(
-                      "flex gap-4 p-3 rounded-sm cursor-pointer transition-all border group select-none",
+                      "flex gap-5 p-4 rounded-sm cursor-pointer transition-all border group select-none relative overflow-hidden",
                       isCurrent
-                        ? "bg-[#0F0F0F] text-white border-[#CC0000] shadow-md"
-                        : "bg-[#0F0F0F]/40 border-zinc-800/80 hover:border-zinc-700 text-zinc-400 hover:text-white"
+                        ? "bg-[#CC0000]/10 border-[#CC0000]/50 shadow-lg"
+                        : "bg-black/50 border-zinc-800 hover:border-zinc-600 hover:bg-zinc-800/50"
                     )}
                   >
+                    {isCurrent && (
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#CC0000]" />
+                    )}
+                    
                     {/* Thumbnail Block */}
-                    <div className="relative w-24 h-16 bg-zinc-200 rounded-sm overflow-hidden shrink-0 flex items-center justify-center border border-zinc-800">
+                    <div className="relative w-28 h-20 bg-black rounded-sm overflow-hidden shrink-0 flex items-center justify-center border border-zinc-800 group-hover:border-zinc-700 transition-colors">
                       <Image
                         src={video.thumbnail}
-                        alt="Video Thumbnail Preview"
+                        alt={video.title}
                         fill
-                        className="object-cover opacity-60 group-hover:opacity-100 transition-opacity"
-                        sizes="96px"
+                        className={cn(
+                          "object-cover transition-all duration-500",
+                          isCurrent ? "opacity-100 scale-110" : "opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100"
+                        )}
+                        sizes="112px"
                       />
 
                       {isCurrent && (
-                        <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
-                          <div className="w-2 h-2 bg-[#CC0000] rounded-full animate-ping" />
+                        <div className="absolute inset-0 flex items-center justify-center z-10">
+                          <Play className="w-6 h-6 text-white drop-shadow-lg" />
                         </div>
                       )}
                     </div>
 
                     {/* Text Description fields */}
-                    <div className="flex flex-col justify-center min-w-0">
+                    <div className="flex flex-col justify-center min-w-0 pr-2">
                       <h5 className={cn(
-                        "font-black text-xs uppercase tracking-wide truncate mb-0.5 transition-colors",
-                        isCurrent ? "text-[#CC0000]" : "text-white group-hover:text-[#CC0000]"
+                        "font-black text-sm uppercase tracking-wider truncate mb-1.5 transition-colors",
+                        isCurrent ? "text-white" : "text-zinc-400 group-hover:text-white"
                       )}>
                         {video.title}
                       </h5>
-                      <p className="text-[11px] text-zinc-500 line-clamp-1 leading-normal font-medium">{video.description}</p>
+                      <p className="text-[11px] text-zinc-500 line-clamp-2 leading-relaxed font-medium group-hover:text-zinc-400 transition-colors">
+                        {video.description}
+                      </p>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
 
             {/* Bottom Call to Action Frame */}
-            <div className="mt-4 pt-4 border-t border-zinc-800 text-center shrink-0">
-              <p className="text-xs text-gray-500 mb-3 font-medium">Need 3D CAD blueprints for project layouts?</p>
-              <Button variant="outline" className="w-full text-xs text-[#CC0000] border-[#CC0000] bg-transparent hover:bg-white hover:text-black uppercase tracking-wider font-black h-11 rounded-sm transition-colors">
-                Request CAD / BIM Files <ChevronRight className="w-3 h-3 ml-1" />
-              </Button>
+            <div className="mt-8 pt-6 border-t border-zinc-800 text-center shrink-0">
+              <p className="text-xs text-zinc-500 mb-4 font-medium tracking-wide">Require 3D CAD blueprints for your project designs?</p>
+              <Link href="/contact/quote" className="block">
+                <Button className="w-full h-14 bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest text-xs rounded-sm transition-all duration-300 shadow-[0_0_30px_-10px_rgba(204,0,0,0.4)] hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.4)]">
+                  Request CAD / BIM Files <ChevronRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
 

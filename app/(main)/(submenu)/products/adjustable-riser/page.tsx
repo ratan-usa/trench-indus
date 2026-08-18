@@ -31,7 +31,7 @@ export default function AdjustableRiserPage() {
   }, []);
 
   // Hotspot logic based on scroll percentage across the 300vh sticky container
-  // Section 1: 0 to 0.33 (Turnbuckle)
+  // Section 1: 0 to 0.33 (Expansion Mechanism)
   // Section 2: 0.33 to 0.66 (Solid Rim)
   // Section 3: 0.66 to 1.0 (Diameter Specs)
   
@@ -85,7 +85,7 @@ export default function AdjustableRiserPage() {
               priority
             />
 
-            {/* HOTSPOT 1: The Turnbuckle Screw (Approximate position on image) */}
+            {/* HOTSPOT 1: The Expansion Screw (Approximate position on image) */}
             <div className={cn(
               "absolute top-[60%] left-[30%] md:top-[65%] md:left-[35%] transition-all duration-700 ease-out flex items-center",
               activeHotspot === 0 ? "opacity-100 scale-100" : "opacity-0 scale-50 pointer-events-none"
@@ -97,7 +97,7 @@ export default function AdjustableRiserPage() {
               <div className="h-[1px] w-12 md:w-24 bg-[#CC0000]"></div>
               <div className="backdrop-blur-md bg-black/60 border border-[#CC0000]/50 p-6 shadow-2xl max-w-xs transform translate-x-2 pointer-events-auto">
                 <Settings className="w-5 h-5 text-[#CC0000] mb-3" />
-                <h3 className="text-xl font-black uppercase tracking-widest text-white mb-2">Mechanical Turnbuckle</h3>
+                <h3 className="text-xl font-black uppercase tracking-widest text-white mb-2">Mechanical Expansion</h3>
                 <p className="text-gray-400 text-xs leading-loose font-medium">Engineered expansion screw allows for precise +/- ¾” diameter adjustments on the fly, guaranteeing a perfect fit in irregular manhole frames.</p>
               </div>
             </div>

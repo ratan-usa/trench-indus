@@ -110,7 +110,7 @@ export default function EngineeringBriefsPage() {
         </section>
 
         {/* ========================================= */}
-        {/* BRIEF 02: TURNBUCKLE EXPANSION            */}
+        {/* BRIEF 02: EXPANSION MECHANISM EXPANSION            */}
         {/* ========================================= */}
         <section className="mb-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -118,10 +118,10 @@ export default function EngineeringBriefsPage() {
               <h2 className="text-8xl font-black text-white/5 uppercase tracking-tighter -mb-16">02</h2>
               <div className="relative z-10">
                 <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-6">
-                  Turnbuckle <br /><span className="text-[#CC0000]">Expansion Tech</span>
+                  Expansion Mechanism <br /><span className="text-[#CC0000]">Expansion Tech</span>
                 </h3>
                 <p className="text-lg text-zinc-400 leading-relaxed font-medium mb-8">
-                  Engineering Brief #208 explores the lateral force generation of our proprietary pivoting turnbuckle system. As the stainless steel bolt is torqued, the riser expands mechanically against the host frame, generating over 10,000 PSI of outward radial pressure to prevent dislodgement.
+                  Engineering Brief #208 explores the lateral force generation of our proprietary pivoting Expansion System. As the stainless steel bolt is torqued, the riser expands mechanically against the host frame, generating over 10,000 PSI of outward radial pressure to prevent dislodgement.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-[#111] px-6 py-4 border border-white/5 flex items-center gap-3">

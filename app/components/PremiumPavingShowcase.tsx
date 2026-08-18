@@ -31,7 +31,7 @@ const SHOWCASE_PRODUCTS = [
     title: "Paving-Adjust™ Expandable",
     overline: "NEXT-GEN ENGINEERING",
     tagline: "Mechanical Locking. No Mortar Bed.",
-    description: "Features an integrated dual-turnbuckle expansion linkage system that bites directly into the base frame structure, eliminating site settlement and asphalt cracking.",
+    description: "Features an integrated dual-expansion expansion linkage system that bites directly into the base frame structure, eliminating site settlement and asphalt cracking.",
     specLabel: "Cure Window",
     specValue: "Instant Traffic Ready",
     icon: <Layers className="w-5 h-5" />

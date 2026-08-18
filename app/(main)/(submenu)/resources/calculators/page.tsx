@@ -160,7 +160,7 @@ export default function CalculatorsPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-zinc-500 mb-2">
                     <BarChart4 className="w-4 h-4" />
-                    <span className="text-[10px] font-black uppercase tracking-widest">Turnbuckle Expansion Force</span>
+                    <span className="text-[10px] font-black uppercase tracking-widest">Expansion Mechanism Expansion Force</span>
                   </div>
                   <p className="text-5xl lg:text-7xl font-mono font-black tracking-tighter text-white">
                     {expansionForce.toLocaleString()}<span className="text-2xl text-zinc-600 ml-2">PSI</span>

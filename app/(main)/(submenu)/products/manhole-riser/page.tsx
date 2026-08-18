@@ -42,8 +42,8 @@ const MANHOLE_RISER_DATA = {
       desc: 'Quickly raise existing utilities to the new paving grade in minutes, saving substantial labor and material costs compared to traditional masonry adjustments.'
     },
     {
-      title: 'Locking Turnbuckles',
-      desc: 'Available with robust screw and turnbuckle mechanisms to expand and securely lock the riser into the existing frame.'
+      title: 'Locking Expanders',
+      desc: 'Available with robust screw and expansion mechanisms to expand and securely lock the riser into the existing frame.'
     },
     {
       title: 'Heavy Traffic Rated',
@@ -226,9 +226,9 @@ export default function ManholeRiserPage() {
            <div className="lg:col-span-2 bg-white text-black p-10 flex flex-col justify-between hover:scale-[1.01] hover:shadow-2xl transition-transform duration-300 cursor-default">
               <Construction className="w-12 h-12 text-[#CC0000]" />
               <div>
-                 <h4 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter mb-4 leading-none">Locking Turnbuckles</h4>
+                 <h4 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter mb-4 leading-none">Locking Expanders</h4>
                  <p className="text-sm font-bold text-gray-600 max-w-lg leading-relaxed">
-                   Available with robust screw and turnbuckle mechanisms to expand and securely lock the riser directly into the existing municipal frame under extreme pressure.
+                   Available with robust screw and expansion mechanisms to expand and securely lock the riser directly into the existing municipal frame under extreme pressure.
                  </p>
               </div>
            </div>

@@ -10,18 +10,32 @@ const ITEMS_PER_PAGE = 15;
 export default function PavingProductsTable() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedSize, setSelectedSize] = useState<string>('All');
+  const [selectedHeight, setSelectedHeight] = useState<string>('All');
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Extract unique categories
+  // Extract unique categories, sizes, and heights
   const categories = useMemo(() => {
     const cats = new Set(PAVING_PRODUCTS.map(p => p.Category));
     return ['All', ...Array.from(cats)];
+  }, []);
+
+  const sizes = useMemo(() => {
+    const s = new Set(PAVING_PRODUCTS.map(p => p['Parsed Size']).filter(Boolean));
+    return ['All', ...Array.from(s)];
+  }, []);
+
+  const heights = useMemo(() => {
+    const h = new Set(PAVING_PRODUCTS.map(p => p['Height (in)']).filter(v => v !== null && v !== undefined));
+    return ['All', ...Array.from(h).sort((a, b) => Number(a) - Number(b)).map(String)];
   }, []);
 
   // Filter and search logic
   const filteredProducts = useMemo(() => {
     return PAVING_PRODUCTS.filter((product) => {
       const matchesCategory = selectedCategory === 'All' || product.Category === selectedCategory;
+      const matchesSize = selectedSize === 'All' || product['Parsed Size'] === selectedSize;
+      const matchesHeight = selectedHeight === 'All' || String(product['Height (in)']) === selectedHeight;
       const searchLower = searchTerm.toLowerCase();
       const matchesSearch = 
         (product['Paving NO. (Raw)']?.toLowerCase().includes(searchLower)) ||
@@ -29,9 +43,9 @@ export default function PavingProductsTable() {
         (product['Description']?.toLowerCase().includes(searchLower)) ||
         (product['Parsed Size']?.toLowerCase().includes(searchLower));
       
-      return matchesCategory && matchesSearch;
+      return matchesCategory && matchesSize && matchesHeight && matchesSearch;
     });
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, selectedSize, selectedHeight]);
 
   // Pagination logic
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
@@ -50,7 +64,7 @@ export default function PavingProductsTable() {
   // Reset page on filter change
   React.useEffect(() => {
     setCurrentPage(1);
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, selectedSize, selectedHeight]);
 
   return (
     <section className="py-24 bg-[#0a0a0a] font-sans border-t border-zinc-900 relative overflow-hidden" id="spec-table">
@@ -58,8 +72,7 @@ export default function PavingProductsTable() {
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-[#CC0000]/5 rounded-full blur-[120px]" />
       </div>
-
-      <div className="max-w-[90rem] mx-auto px-6 md:px-8 relative z-10">
+      <div className="px-10 md:px-20 relative z-10">
         
         {/* Header Area */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -93,25 +106,64 @@ export default function PavingProductsTable() {
             />
           </div>
 
-          {/* Category Dropdown */}
-          <div className="relative w-full lg:w-72 shrink-0">
-            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <Filter className="w-5 h-5 text-zinc-500" />
+          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+            {/* Category Dropdown */}
+            <div className="relative w-full sm:w-48 shrink-0">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                <Filter className="w-5 h-5 text-zinc-500" />
+              </div>
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="w-full bg-zinc-900/50 border border-zinc-800 text-white rounded-sm pl-12 pr-10 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] appearance-none cursor-pointer transition-all"
+              >
+                {categories.map(cat => (
+                  <option key={cat} value={cat} className="bg-zinc-900 text-white">
+                    {cat === 'All' ? 'All Categories' : cat}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
             </div>
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full bg-zinc-900/50 border border-zinc-800 text-white rounded-sm pl-12 pr-10 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] appearance-none cursor-pointer transition-all"
-            >
-              {categories.map(cat => (
-                <option key={cat} value={cat} className="bg-zinc-900 text-white">
-                  {cat === 'All' ? 'All Categories' : cat}
-                </option>
-              ))}
-            </select>
-            {/* Custom Dropdown Arrow */}
-            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
-              <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+
+            {/* Size Dropdown */}
+            <div className="relative w-full sm:w-40 shrink-0">
+              <select
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+                className="w-full bg-zinc-900/50 border border-zinc-800 text-white rounded-sm pl-4 pr-10 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] appearance-none cursor-pointer transition-all"
+              >
+                <option value="All" className="bg-zinc-900 text-white">All Sizes</option>
+                {sizes.filter(s => s !== 'All').map(size => (
+                  <option key={size} value={size} className="bg-zinc-900 text-white">
+                    {size}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+            </div>
+
+            {/* Height Dropdown */}
+            <div className="relative w-full sm:w-40 shrink-0">
+              <select
+                value={selectedHeight}
+                onChange={(e) => setSelectedHeight(e.target.value)}
+                className="w-full bg-zinc-900/50 border border-zinc-800 text-white rounded-sm pl-4 pr-10 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] appearance-none cursor-pointer transition-all"
+              >
+                <option value="All" className="bg-zinc-900 text-white">All Heights</option>
+                {heights.filter(h => h !== 'All').map(height => (
+                  <option key={height} value={height} className="bg-zinc-900 text-white">
+                    {height}"
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
             </div>
           </div>
         </div>

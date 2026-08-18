@@ -132,7 +132,7 @@ export default function LiteraturePage() {
                 </div>
                 <h3 className="text-3xl font-black uppercase tracking-wide mb-3">Frame & Riser Integration</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
-                  A high-speed breakdown of how the adjustable paving riser locks securely locks into the frame into the host frame using pivoting turnbuckles.
+                  A high-speed breakdown of how the adjustable paving riser locks securely locks into the frame into the host frame using pivoting expansion mechanisms.
                 </p>
               </div>
             </div>

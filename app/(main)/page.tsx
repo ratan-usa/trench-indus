@@ -74,7 +74,7 @@ const Home = () => {
       {/* <InfrastructureRisers /> */}
       <CombinedRiserSolutions />
       {/* <ProductCatalog /> */}
-      {/* <PavingProductsTable /> */}
+       <PavingProductsTable />  
       <SmartInfraSection />
       <AdjustmentProducts />
       <PremiumPavingShowcase />

@@ -84,7 +84,7 @@ export default function SanitarySewerPage() {
               <Lock className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-4">Mechanical Lockdown</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Pivoting turnbuckles expand the riser tight against the existing manhole frame. This extreme mechanical pressure prevents any shifting or rattling that could break the water seal over time.
+                Pivoting expansion mechanisms expand the riser tight against the existing manhole frame. This extreme mechanical pressure prevents any shifting or rattling that could break the water seal over time.
               </p>
             </div>
 
@@ -100,7 +100,7 @@ export default function SanitarySewerPage() {
               <Wrench className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-4">Epoxy Seal Integration</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Designed to be installed with industrial-grade epoxy adhesives. The combination of expanding turnbuckles and epoxy creates a completely watertight, permanent bond with the host frame.
+                Designed to be installed with industrial-grade epoxy adhesives. The combination of expanding expansion mechanisms and epoxy creates a completely watertight, permanent bond with the host frame.
               </p>
             </div>
 

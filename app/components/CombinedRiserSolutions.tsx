@@ -45,7 +45,7 @@ const RISER_SECTIONS = [
     overline: "Next-Gen Adjustment",
     title: "Paving-Adjust™",
     highlightText: "Expandable Risers",
-    description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in turnbuckle linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
+    description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in expansion linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
     features: [
       { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to bite into the base frame securely locks into the frame." },

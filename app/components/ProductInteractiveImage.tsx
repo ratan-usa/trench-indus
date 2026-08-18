@@ -29,7 +29,7 @@ const data: ProductDataItem[] = [
     HOTSPOTS: [
       { id: 101, x: '33%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
       { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 103, x: '68%', y: '60%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 103, x: '68%', y: '60%', title: 'Durable Finish', desc: 'Heavy-Duty Cast Iron Construction' },
     ]
   },
   {
@@ -38,10 +38,10 @@ const data: ProductDataItem[] = [
     type: 'Catch Basin Configuration',
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
     HOTSPOTS: [
-      { id: 201, x: '30%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
-      { id: 202, x: '65%', y: '40%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 204, x: '30%', y: '62%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 201, x: '30%', y: '40%', title: 'Continuous Welding', desc: 'Maximum Structural Integrity' },
+      { id: 202, x: '65%', y: '40%', title: 'Powder Coating', desc: 'Corrosion Resistant Finish' },
+      { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Steel Catch Basin Risers' },
+      { id: 204, x: '30%', y: '62%', title: 'Precision Angles', desc: 'Sloped & Tapered Profiles' },
     ]
   },
   {
@@ -50,9 +50,9 @@ const data: ProductDataItem[] = [
     type: 'Utility Vault Profile',
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
     HOTSPOTS: [
-      { id: 301, x: '32%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
-      { id: 302, x: '68%', y: '35%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
-      { id: 303, x: '61%', y: '65%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 301, x: '32%', y: '40%', title: 'Continuous Welding', desc: 'Maximum Structural Integrity' },
+      { id: 302, x: '68%', y: '35%', title: 'Powder Coating', desc: 'Corrosion Resistant Finish' },
+      { id: 303, x: '61%', y: '65%', title: 'Bulk Ready', desc: 'Custom Steel Risers' },
     ]
   }
 ];
@@ -68,10 +68,10 @@ export default function ProductInteractiveImage() {
         {/* --- HEADER DESK --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-            <Crosshair className="w-4 h-4 text-[#CC0000]" /> Product Detail
+            <Crosshair className="w-4 h-4 text-[#CC0000]" /> Product Details
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
-            Interactive Product <br />
+            Interactive Products <br />
             <span className="text-[#CC0000]">Feature Hotspots.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
@@ -127,7 +127,7 @@ export default function ProductInteractiveImage() {
               <div className="space-y-3 text-xs font-bold text-slate-600 uppercase tracking-wider">
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Layers className="w-4 h-4 text-slate-400" /> Casting Core:</span>
-                  <span className="text-[#0F0F0F]">Gray Iron</span>
+                  <span className="text-[#0F0F0F] text-right">Grey Iron / Ductile Iron / Mild Steel</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>
@@ -137,16 +137,13 @@ export default function ProductInteractiveImage() {
               </div>
             </div>
 
-            <p className="text-center lg:text-left text-slate-400 text-xs italic tracking-wide">
-              * Hover over target hotpoints on the layout preview to open dynamic telemetry windows.
-            </p>
 
           </div>
 
           {/* RIGHT COLUMN: HIGH-CONTRAST INTERACTIVE CANVAS FRAME (7 Columns) */}
           <div className="lg:col-span-7 bg-slate-50 border border-slate-200 rounded-sm p-6 md:p-10 shadow-inner min-h-[500px] flex items-center justify-center relative group">
-            <div className="absolute top-4 left-4 bg-[#0F0F0F] border border-zinc-800 rounded px-3 py-1 text-[9px] font-mono uppercase tracking-widest text-slate-400 z-10 pointer-events-none">
-              Viewport: active_spec_{currentProduct.id}.png
+            <div className="absolute top-4 left-4 bg-transparent border-b-2 border-[#CC0000] px-1 py-1 text-xs md:text-sm font-black uppercase tracking-widest text-[#CC0000] z-10 pointer-events-none">
+              {currentProduct.name}
             </div>
 
             <div key={currentProduct.id} className="w-full animate-[fadeIn_0.35s_ease-out]">

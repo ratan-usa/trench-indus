@@ -117,7 +117,7 @@ export default function PavingResurfacingPage() {
               <div className="flex-1 space-y-6">
                 <h3 className="text-3xl font-black uppercase tracking-wide">Manhole Risers</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
-                  Available in standard sizes from 24" up to 36", featuring turnbuckle adjustment screws for micro-elevation changes on uneven road slopes.
+                  Available in standard sizes from 24" up to 36", featuring expansion adjustment screws for micro-elevation changes on uneven road slopes.
                 </p>
                 <div className="pt-4">
                   <Button className="bg-white text-black hover:bg-[#CC0000] hover:text-white font-black uppercase tracking-widest rounded-none h-12 px-6 transition-colors">

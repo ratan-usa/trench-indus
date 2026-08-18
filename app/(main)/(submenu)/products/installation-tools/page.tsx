@@ -17,9 +17,9 @@ const TOOLS = [
   },
   {
     id: '02',
-    name: 'Turnbuckle Wrench',
+    name: 'Expansion Wrench',
     title: 'Adjustment Wrench',
-    desc: 'High-torque wrench specifically calibrated for expanding the mechanical turnbuckles on our adjustable risers.',
+    desc: 'High-torque wrench specifically calibrated for expanding the Mechanical Expansions on our adjustable risers.',
     icon: Wrench,
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mpCHOOL.7.png`,
   },

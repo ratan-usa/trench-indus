@@ -25,7 +25,7 @@ const ASSEMBLY_STEPS = [
   },
   {
     time: "0:17 - 0:28",
-    title: "2. Mechanical Turnbuckle Expansion",
+    title: "2. Mechanical Expansion",
     desc: "Detailed close-up on the internal set-screws expanding outward to lock the riser firmly against the existing cast iron frame."
   },
   {

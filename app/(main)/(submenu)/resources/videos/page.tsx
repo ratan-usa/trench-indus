@@ -131,7 +131,7 @@ export default function AvantGardeVideosPage() {
               Mechanical <span className="text-[#CC0000]">Breakdown</span>
             </h2>
             <p className="text-zinc-500 font-medium max-w-xl mx-auto">
-              Examine the precise turnbuckle expansion methodology utilizing our 3D rendered cinematic assets.
+              Examine the precise expansion mechanism expansion methodology utilizing our 3D rendered cinematic assets.
             </p>
           </div>
 
@@ -143,7 +143,7 @@ export default function AvantGardeVideosPage() {
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/curb_inlet_riser.702.mp4`} type="video/mp4" />
               </video>
               <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
-                <p className="text-xl font-black uppercase tracking-widest text-white drop-shadow-md">Turnbuckle Expansion</p>
+                <p className="text-xl font-black uppercase tracking-widest text-white drop-shadow-md">Expansion Mechanism Expansion</p>
               </div>
             </div>
 
