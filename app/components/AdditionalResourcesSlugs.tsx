@@ -72,8 +72,7 @@ export default function AdditionalResourcesSlugs() {
         <h2 className="text-3xl md:text-4xl font-black text-[#CC0000] uppercase tracking-tight mb-8">
           Additional Resources
         </h2>
-
-        {/* --- 4-COLUMN GRID --- */}
+ 
         <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-8 gap-6">
           {RESOURCES.map((resource) => (
             <Link
@@ -81,8 +80,7 @@ export default function AdditionalResourcesSlugs() {
               href={`/resources/${resource.slug}`} // Dynamic routing using the slug
               className="group bg-[#CC0000] relative w-full aspect-[3/4]  overflow-hidden rounded-sm block"
             >
-
-              {/* Background Image */}
+ 
               <Image
                 src={resource.imageSrc}
                 alt={resource.title}
@@ -91,15 +89,12 @@ export default function AdditionalResourcesSlugs() {
                 className="object-cover opacity-90 transition-all duration-500"
               />
 
- 
-              {/* Top Text (Title) */}
+  
               <div className="absolute top-6 left-6 right-6 z-10">
-                <h3 className="text-white text-lg md:text-xl font-bold leading-snug drop-shadow-md">
+                <h3 className="text-white text-sm md:text-lg font-bold leading-snug drop-shadow-md">
                   {resource.title}
                 </h3>
-              </div>
-
-              {/* Bottom Action Icon & Text */}
+              </div> 
               <div className="absolute bottom-6 left-6 z-10 flex items-center text-[#CC0000] font-black uppercase tracking-widest text-sm group-hover:text-white transition-colors duration-300">
                 {resource.type === 'video' ? (
                   <>

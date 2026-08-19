@@ -32,7 +32,7 @@ export default function InfiniteRiserShowcase() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                         {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
-                        <div className="lg:col-span-6">
+                        {/* <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
@@ -42,9 +42,21 @@ export default function InfiniteRiserShowcase() {
                                     className="w-full h-full object-contain p-8"
                                 />
                             </div>
+                        </div> */}
+
+                        <div className="lg:col-span-6">
+                            <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
+                                <video
+                                    suppressHydrationWarning
+                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
                         </div>
-
-
 
 
                         {/* RIGHT: TECHNICAL FEATURES & CALL TO ACTION (5 Columns) */}
@@ -144,12 +156,14 @@ export default function InfiniteRiserShowcase() {
                         {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <Image
-                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`}
-                                    alt="Round Adjustable Riser"
-                                    fill
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                    className="w-full h-full object-contain p-8"
+                                <video
+                                    suppressHydrationWarning
+                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/fixed_manhole_riser_installation.mp4`}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
                         </div>
