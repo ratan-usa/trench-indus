@@ -46,6 +46,7 @@ const Home = () => {
       <PavingPathHero />
       <Product3DShowcase2 />
       <UltimateResultsPattern />
+      <PavingRiserClassification />
       <SaferRoadsCTA />
       <InfiniteRiserShowcase />
       <CombinedRiserSolutions />
@@ -54,7 +55,6 @@ const Home = () => {
       <Product3DShowcase />
       <PavingRisersHeroSection />
       <Interactive3DShowcase />
-      <PavingRiserClassification />
       <RiserProductSpecifications />
       <CatchBasinSteelRisers />
       <FabricatedGratesSection />

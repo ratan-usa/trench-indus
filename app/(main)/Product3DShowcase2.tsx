@@ -87,7 +87,7 @@ export default function Product3DShowcase2() {
         <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
       </div>
 
-      <div className="max-w-[90rem] mx-auto px-6 md:px-8 relative z-10">
+      <div className="w-full px-10 md:px-20 relative z-10">
 
         {/* --- SECTION HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
