@@ -5,8 +5,9 @@ import { Layers, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import Image from 'next/image';
-
-export default function InfiniteRiserShowcase() {
+// cast iron, ductle iron
+// round , square , custom 
+export default function InfiniteRiserShowcase2() {
     return (
         <section className="bg-[#0F0F0F] text-white py-8 font-sans border-b border-zinc-800 relative overflow-hidden">
 
@@ -21,7 +22,7 @@ export default function InfiniteRiserShowcase() {
                         <Layers className="w-4 h-4 text-[#CC0000]" /> Adjustable Round Riser
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
-                        See the round adjustable riser, 
+                        See the round fixed riser, 
                         <span className="text-[#CC0000]"> part by part.</span>
                     </h2>
                     <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">

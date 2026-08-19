@@ -149,6 +149,7 @@ export default function ComprehensivePavingRisersMapped() {
                       src={section.image}
                       alt={section.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.2)]' : ''}`}
                     />
 

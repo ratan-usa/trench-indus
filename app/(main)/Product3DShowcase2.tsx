@@ -96,7 +96,7 @@ export default function Product3DShowcase2() {
               <Rotate3d className="w-4 h-4 text-[#CC0000]" /> Engineering Visualization
             </span>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none">
-              Precision 3D <span className="text-[#CC0000]">Modeling.</span>
+              World of <span className="text-[#CC0000]">Risers.</span>
             </h2>
           </div>
 

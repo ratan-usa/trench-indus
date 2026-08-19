@@ -27,6 +27,8 @@ import InfiniteRiserShowcase from '../components/InfiniteRiserShowcase'
 import GratesRacksAndTools from './GratesRacksAndTools'
 import PavingProductsTable from '../components/PavingProductsTable'
 import SaferRoadsCTA from '../components/SaferRoadsCTA'
+import UltimateResultsPattern from '../components/UltimateResultsPattern'
+import InfiniteRiserShowcase2 from '../components/InfiniteRiserShowcase2';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -43,10 +45,13 @@ const Home = () => {
     <div>
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
+      <Product3DShowcase2 />
+      <UltimateResultsPattern />
       <SaferRoadsCTA />
       <InfiniteRiserShowcase />
+      <InfiniteRiserShowcase2 />
+      <CombinedRiserSolutions />
       <ProductInteractiveImage />
-      <Product3DShowcase2 />
       <GratesRacksAndTools />
       <Product3DShowcase />
       <PavingRisersHeroSection />
@@ -72,7 +77,6 @@ const Home = () => {
       {/* <PipingRiserFeature /> */}
       <ContractorResources />
       {/* <InfrastructureRisers /> */}
-      <CombinedRiserSolutions />
       {/* <ProductCatalog /> */}
        <PavingProductsTable />  
       <SmartInfraSection />

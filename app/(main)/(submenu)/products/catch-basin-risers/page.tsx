@@ -133,7 +133,7 @@ export default function CatchBasinRisersPage() {
                       activeFinish.name === finish.name ? 'border-[#CC0000]' : 'border-transparent hover:border-white/30'
                     }`}
                   >
-                    <Image src={finish.image} alt={finish.name} fill className="object-cover opacity-50 hover:opacity-100 transition-opacity" />
+                    <Image src={finish.image} alt={finish.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-50 hover:opacity-100 transition-opacity" />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/60">
                       <span className={`text-[9px] font-black uppercase tracking-widest z-10 transition-colors ${
                         activeFinish.name === finish.name ? 'text-[#CC0000]' : 'text-white'

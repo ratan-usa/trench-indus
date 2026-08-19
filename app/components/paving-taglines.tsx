@@ -3,11 +3,11 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { 
-  Layers, 
-  ShieldCheck, 
-  Cog, 
-  Construction 
+import {
+  Layers,
+  ShieldCheck,
+  Cog,
+  Construction
 } from 'lucide-react';
 
 const FEATURE_BADGES = [
@@ -16,26 +16,44 @@ const FEATURE_BADGES = [
   { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "EASY", subtitle: "INSTALLATION" },
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
+const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS","AIR PORTS","SEA PORTS","ICONIC PROJECTS","SUPER STRUCTURES"];
 
 export default function PavingPathHero() {
   const [mounted, setMounted] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
+useEffect(() => {
+    if (subIndex === words[index].length + 1 && !reverse) {
+      const timeout = setTimeout(() => setReverse(true), 1500);
+      return () => clearTimeout(timeout);
+    }
+    if (subIndex === 0 && reverse) {
+      setReverse(false);
+      setIndex((prev) => (prev + 1) % words.length);
+      return;
+    }
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (reverse ? -1 : 1));
+    }, reverse ? 40 : 80);
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, reverse]);
   if (!mounted) return null;
 
   return (
     <section className="relative w-full bg-[#edecec] overflow-hidden font-sans">
       <div className="w-full pl-6 md:pl-8 lg:pl-12 grid grid-cols-1 lg:grid-cols-12 items-center">
-        
+
         {/* --- LEFT COLUMN: BRAND TYPOGRAPHY & BADGES --- */}
-        <div className="lg:col-span-7 py-6 lg:py-8 space-y-4 z-10">
-          
+        <div className="lg:col-span-10 py-6 lg:py-8 space-y-4 z-10">
+
           {/* Main Headline Stack */}
           <div className="space-y-1">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -45,7 +63,7 @@ export default function PavingPathHero() {
               <span className="text-[#CC0000]">YOUR WAY</span>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -55,11 +73,35 @@ export default function PavingPathHero() {
               <span className="bg-[#0F0F0F] text-white px-3 py-0.5 rounded-none inline-flex items-center gap-0.5">
                 ANY SITUATION<span className="text-[#CC0000] font-mono">.</span>
               </span>
+                            <span className="block min-h-[1.2em] relative mt-2 lg:mt-4 flex items-center">
+
+                {/* Transparent Outline Text Effect */}
+                <span
+                  className="text-transparent font-black select-none"
+                  style={{
+                    WebkitTextStroke: "2px #CC0000",
+                  }}
+                >
+                  {words[index].substring(0, subIndex)}
+                </span>
+
+                {/* Typing Cursor Accent Indicator */}
+                <motion.span
+                  animate={{ opacity: [1, 0] }}
+                  transition={{ repeat: Infinity, duration: 0.8 }}
+                  className="w-1.5 h-10 sm:h-14 md:h-16 bg-[#cc2221] ml-3 shrink-0 inline-block"
+                />
+              </span>
             </motion.div>
           </div>
+          {/* Main Title Heading */}
+          <h1 className="text-white font-black uppercase tracking-tighter leading-none">
+            <span className="block text-xl sm:text-4xl md:text-5xl  font-black text-white">
 
+            </span>
+          </h1>
           {/* Feature Badges Matrix */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -78,19 +120,19 @@ export default function PavingPathHero() {
 
         </div>
         {/* --- RIGHT COLUMN: ANGLED BLACK & RED GRAPHIC WITH IMAGE --- */}
-        <div className="lg:col-span-5 relative w-full overflow-hidden flex items-end justify-end">
+        <div className="lg:col-span-2 relative w-full overflow-hidden flex items-end justify-end">
           {/* Image Container */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative w-full h-full flex items-center  justify-end z-20"
           >
-            <Image  
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/paving_hero.png`}
+            <Image
+              src={`/images/GIF_paving_risere_with_frame.872.png`}
               alt="Paving Riser Manhole Cover Assembly"
-              height={400}  
-              width={500}
+              height={250}
+              width={300}
               style={{ width: "auto", height: "auto" }}
               className="object-contain object-right"
               priority
