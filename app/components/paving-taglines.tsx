@@ -47,9 +47,8 @@ export default function PavingPathHero() {
   return (
     <section className="relative w-full bg-[#edecec] overflow-hidden font-sans">
       <div className="w-full pl-6 md:pl-8 lg:pl-12 grid grid-cols-1 lg:grid-cols-12 items-center">
-
         {/* --- LEFT COLUMN: BRAND TYPOGRAPHY & BADGES --- */}
-        <div className="lg:col-span-10 py-6 lg:py-8 space-y-4 z-10">
+        <div className="lg:col-span-8 py-6 lg:py-8 space-y-4 z-10">
 
           {/* Main Headline Stack */}
           <div className="space-y-1">
@@ -67,7 +66,7 @@ export default function PavingPathHero() {
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 text-xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight"
+              className="flex items-center gap-2 text-xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight"
             >
               <span className="text-[#0F0F0F]">FOR</span>
               <span className="bg-[#0F0F0F] text-white px-3 py-0.5 rounded-none inline-flex items-center gap-0.5">
@@ -96,7 +95,6 @@ export default function PavingPathHero() {
           {/* Main Title Heading */}
           <h1 className="text-white font-black uppercase tracking-tighter leading-none">
             <span className="block text-xl sm:text-4xl md:text-5xl  font-black text-white">
-
             </span>
           </h1>
           {/* Feature Badges Matrix */}
@@ -119,19 +117,19 @@ export default function PavingPathHero() {
 
         </div>
         {/* --- RIGHT COLUMN: ANGLED BLACK & RED GRAPHIC WITH IMAGE --- */}
-        <div className="lg:col-span-2 relative w-full overflow-hidden flex items-end justify-end">
+        <div className="lg:col-span-4 relative w-full overflow-hidden flex items-end justify-end">
           {/* Image Container */}
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative w-full h-full flex items-center  justify-end z-20"
           >
-            <Image
-              src={`/images/GIF_paving_risere_with_frame.872.png`}
+            <Image  
+              src={`/images/paving_hero2.png`}
               alt="Paving Riser Manhole Cover Assembly"
-              height={250}
-              width={300}
+              height={400}  
+              width={500}
               style={{ width: "auto", height: "auto" }}
               className="object-contain object-right"
               priority
@@ -139,7 +137,6 @@ export default function PavingPathHero() {
           </motion.div>
 
         </div>
-
       </div>
     </section>
   );

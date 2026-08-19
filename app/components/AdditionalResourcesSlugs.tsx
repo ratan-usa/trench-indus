@@ -74,7 +74,7 @@ export default function AdditionalResourcesSlugs() {
         </h2>
 
         {/* --- 4-COLUMN GRID --- */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-8 gap-6">
           {RESOURCES.map((resource) => (
             <Link
               key={resource.id}
@@ -94,7 +94,7 @@ export default function AdditionalResourcesSlugs() {
  
               {/* Top Text (Title) */}
               <div className="absolute top-6 left-6 right-6 z-10">
-                <h3 className="text-white text-xl md:text-2xl font-bold leading-snug drop-shadow-md">
+                <h3 className="text-white text-lg md:text-xl font-bold leading-snug drop-shadow-md">
                   {resource.title}
                 </h3>
               </div>
