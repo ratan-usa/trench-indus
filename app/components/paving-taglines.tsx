@@ -16,7 +16,7 @@ const FEATURE_BADGES = [
   { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "EASY", subtitle: "INSTALLATION" },
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
-const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS","AIR PORTS","SEA PORTS","ICONIC PROJECTS","SUPER STRUCTURES"];
+const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS", "AIR PORTS", "SEA PORTS", "ICONIC PROJECTS", "SUPER STRUCTURES"];
 
 export default function PavingPathHero() {
   const [mounted, setMounted] = useState(false);
@@ -27,7 +27,7 @@ export default function PavingPathHero() {
   useEffect(() => {
     setMounted(true);
   }, []);
-useEffect(() => {
+  useEffect(() => {
     if (subIndex === words[index].length + 1 && !reverse) {
       const timeout = setTimeout(() => setReverse(true), 1500);
       return () => clearTimeout(timeout);
@@ -71,15 +71,14 @@ useEffect(() => {
             >
               <span className="text-[#0F0F0F]">FOR</span>
               <span className="bg-[#0F0F0F] text-white px-3 py-0.5 rounded-none inline-flex items-center gap-0.5">
-                ANY SITUATION<span className="text-[#CC0000] font-mono">.</span>
+                ANY SITUATION 
               </span>
-                            <span className="block min-h-[1.2em] relative mt-2 lg:mt-4 flex items-center">
+              <span className="min-h-[1.2em] relative flex items-center">
 
-                {/* Transparent Outline Text Effect */}
                 <span
                   className="text-transparent font-black select-none"
                   style={{
-                    WebkitTextStroke: "2px #CC0000",
+                    WebkitTextStroke: "1px #CC0000",
                   }}
                 >
                   {words[index].substring(0, subIndex)}
@@ -89,7 +88,7 @@ useEffect(() => {
                 <motion.span
                   animate={{ opacity: [1, 0] }}
                   transition={{ repeat: Infinity, duration: 0.8 }}
-                  className="w-1.5 h-10 sm:h-14 md:h-16 bg-[#cc2221] ml-3 shrink-0 inline-block"
+                  className="w-1.5 h-10 sm:h-8 md:h-10 bg-[#cc2221] ml-3 shrink-0 inline-block"
                 />
               </span>
             </motion.div>

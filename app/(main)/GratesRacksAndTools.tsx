@@ -24,24 +24,6 @@ import { cn } from "@/lib/utils";
 // --- PRODUCT CATALOG DATA ---
 const CATEGORIES = [
   {
-    id: 'grates',
-    title: 'Fabricated Steel Grates',
-    subtitle: 'High-Volume Drainage & Load Surface Covers',
-    icon: <Grid className="w-5 h-5" />,
-    features: [
-      { title: 'Heavy-Duty Welded Construction', desc: 'Manufactured from mild steel to sustain heavy-duty traffic loads.' },
-      { title: 'Hydraulic Flow Profiles', desc: 'Slot patterns: parallel, diagonal, or pedestrian-safe.' },
-      { title: 'Corrosion Protection Coatings', desc: 'Finished with hot-dip galvanizing, water-based bitumen, or powder coatings to resist road salt and moisture.' },
-      { title: 'Custom Seating Dimensions', desc: 'Made precisely to fit existing catch basin frames or paving risers.' }
-    ],
-    specs: [
-      { label: 'Material Grade', value: 'Mild Steel' },
-      { label: 'Bar Thickness', value: '1/4" to 1/2" Structural Steel' },
-      { label: 'Coating Finish', value: 'Hot-Dip Galvanized / Water-Based Bitumen / Powder Coating' }
-    ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Fabricated_Steel_Drainage_Grate_Assembl.png`
-  },
-  {
     id: 'trash-racks',
     title: 'Debris & Trash Racks',
     subtitle: 'Debris Interception & Culvert Inflow Shielding',
@@ -59,25 +41,6 @@ const CATEGORIES = [
       { label: 'Design Standard', value: 'DOT Municipal Inlet Standard' }
     ],
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`
-  },
-  {
-    id: 'tools',
-    title: 'Installation & Field Tools',
-    subtitle: 'Specialized Hardware for Riser & Frame Field Crews',
-    icon: <Wrench className="w-5 h-5" />,
-    features: [
-      { title: 'expansion adjustment Keys', desc: 'Heavy-duty steel T-handle wrenches custom machined to turn internal riser expansion set-screws smoothly.' },
-      { title: 'Manhole & Cover Pry Hooks', desc: 'Forged alloy steel lifting hooks designed for safe removal of heavy iron lids and grate covers without frame damage.' },
-      { title: 'Laser Alignment Gauges', desc: 'Compact grade alignment levels for verifying flush street surface elevations prior to final asphalt rolling.' },
-      { title: 'Paving Riser Shim Kits', desc: 'High-density composite alignment shims engineered to correct sloped or crowned frame conditions.' }
-    ],
-    specs: [
-      { label: 'Tool Alloy', value: 'Forged Heat-Treated Chrome-Moly' },
-      { label: 'Wrench Drive', value: 'Standard Hex / Square Socket' },
-      { label: 'Pry Capacity', value: '500+ lbs Lifting Leverage' },
-      { label: 'Shim Material', value: 'High-Density Non-Crush Polymer' }
-    ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/mpCHOOL.7.png`
   }
 ];
 
@@ -86,20 +49,17 @@ export default function GratesRacksAndTools() {
   const current = CATEGORIES[activeTab];
 
   return (
-    <section className="bg-white text-slate-900 py-24 font-sans border-b border-slate-100">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
+    <section className="bg-white text-slate-900 py-8 font-sans border-b border-slate-100">
+      <div className="w-full px-6 md:px-8 lg:px-12 space-y-4">
 
         {/* --- SECTION HEADER --- */}
         <div className="space-y-4">
-          <Badge className="bg-[#0F0F0F] text-white px-4 py-1 text-xs uppercase tracking-widest rounded-sm">
-            Municipal Hardware Catalog
-          </Badge>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none text-slate-900">
-            Fabricated Grates, Trash Racks
-            <span className="text-[#CC0000]"> & Installation Field Tools.</span>
+            Trash 
+            <span className="text-[#CC0000]"> Racks.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Welded steel grates, culvert trash racks, and the field tools that go with them, including expansion wrenches and lid hooks.
+            Culvert trash racks that go with them, including expansion wrenches and lid hooks.
           </p>
         </div>
 
