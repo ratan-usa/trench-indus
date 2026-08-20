@@ -82,6 +82,7 @@ const NAV_LINKS = [
             { name: 'Video Gallery', href: '/resources/videos' },
             { name: 'Engineering Briefs', href: '/resources/briefs' },
             { name: 'Calculators & Tools', href: '/resources/calculators' },
+            { name: 'Blogs', href: '/resources/blog' },
         ],
     },
     {
