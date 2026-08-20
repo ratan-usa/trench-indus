@@ -93,12 +93,12 @@ export default function RiserAnimationShowcase() {
             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl group">
               
               {/* VIDEO ELEMENT */}
-              <video
+              <video autoPlay loop muted playsInline 
                 ref={videoRef}
                 className="w-full h-full object-cover"
-                loop
-                muted
-                playsInline
+                
+                
+                
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
               >

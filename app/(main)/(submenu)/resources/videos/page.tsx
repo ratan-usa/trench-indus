@@ -32,11 +32,11 @@ export default function AvantGardeVideosPage() {
         <div className="lg:w-2/3 relative w-full h-[60vh] lg:h-[80vh] group">
           <div className="absolute inset-0 bg-[#CC0000] transform rotate-2 translate-x-4 translate-y-4 opacity-50 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-700" />
           <div className="absolute inset-0 bg-[#0A0A0A] overflow-hidden border border-white/20 transform -rotate-2 group-hover:rotate-0 transition-all duration-700">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
+            <video autoPlay loop muted playsInline  
+               
+               
+               
+              
               onEnded={(e) => e.currentTarget.play()}
               className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0"
             >
@@ -67,7 +67,7 @@ export default function AvantGardeVideosPage() {
           
           {/* Tile 1: Video (Large) */}
           <div className="col-span-1 md:col-span-2 row-span-2 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
               <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -88,7 +88,7 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 3: Video */}
           <div className="col-span-1 row-span-1 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
               <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Two_Grate_Riser_Animation.mp4`} type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -105,7 +105,7 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 5: Video */}
           <div className="col-span-1 md:col-span-1 row-span-1 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
               <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/GIF_paving_risere_with_frame.699.mp4`} type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -139,7 +139,7 @@ export default function AvantGardeVideosPage() {
             
             {/* Split Video 1 */}
             <div className="lg:w-1/2 aspect-video relative bg-black group border border-white/20 hover:border-[#CC0000] transition-colors cursor-pointer">
-              <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
+              <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/curb_inlet_riser.702.mp4`} type="video/mp4" />
               </video>
               <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
@@ -149,7 +149,7 @@ export default function AvantGardeVideosPage() {
 
             {/* Split Video 2 */}
             <div className="lg:w-1/2 aspect-video relative bg-black group border border-white/20 hover:border-[#CC0000] transition-colors cursor-pointer">
-              <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
+              <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
               </video>
               <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">

@@ -160,12 +160,12 @@ export default function CatchBasinGratesPage() {
               <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
               
               {section.isVideo ? (
-                <video 
+                <video autoPlay loop muted playsInline  
                   src={section.media}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                  
+                  
+                  
+                  
                   className="relative z-10 w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 group-hover:opacity-100 transition-all duration-1000 ease-out"
                 />
               ) : (

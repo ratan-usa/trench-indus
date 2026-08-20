@@ -126,11 +126,11 @@ export default function CalculatorsPage() {
           {/* Telemetry / Output Panel */}
           <div className="lg:col-span-7 bg-[#111] border border-[#CC0000]/30 relative overflow-hidden flex flex-col justify-between">
             {/* Background 3D Model Video */}
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
+            <video autoPlay loop muted playsInline  
+               
+               
+               
+              
               className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen pointer-events-none"
             >
               <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`} type="video/mp4" />

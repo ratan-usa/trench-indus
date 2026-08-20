@@ -31,11 +31,11 @@ export default function SubmitSpecificationsPage() {
 
         {/* Right Media Column */}
         <div className="w-full lg:w-1/2 relative h-[50vh] lg:h-full bg-black group overflow-hidden border-l border-white/10">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline 
+          <video autoPlay loop muted playsInline 
+            
+            
+            
+             
             className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
           >
             <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Curb_Inlet_riser/Curb_inlet.mp4`} type="video/mp4" />
@@ -68,7 +68,7 @@ export default function SubmitSpecificationsPage() {
             <div className="relative w-full h-[400px] bg-[#0A0A0A] border-2 border-dashed border-white/20 hover:border-[#CC0000] transition-colors duration-500 group cursor-pointer flex flex-col items-center justify-center overflow-hidden">
 
               {/* Background Ghost Video */}
-              <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity">
+              <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity">
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/paving_riser_solid_ring_utilisation_animation.685.mp4`} type="video/mp4" />
               </video>
 
@@ -173,11 +173,11 @@ export default function SubmitSpecificationsPage() {
       {/* 3. FULL-WIDTH VIDEO SEPARATOR             */}
       {/* ========================================= */}
       <div className="w-full relative h-[400px] border-t border-white/10 bg-black overflow-hidden mt-16 group">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <video autoPlay loop muted playsInline 
+          
+          
+          
+          
           onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-70 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
         >

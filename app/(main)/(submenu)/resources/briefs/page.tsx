@@ -23,11 +23,11 @@ export default function EngineeringBriefsPage() {
       {/* 1. CINEMATIC LONG-SCROLL HERO             */}
       {/* ========================================= */}
       <div className="relative w-full h-[90vh] min-h-[700px] flex flex-col justify-between overflow-hidden border-b border-white/10">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+        <video autoPlay loop muted playsInline  
+           
+           
+           
+          
           className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen scale-105"
         >
           <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Two_Grate_Riser_Animation.mp4`} type="video/mp4" />
@@ -66,11 +66,11 @@ export default function EngineeringBriefsPage() {
         <section className="mb-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
+              <video autoPlay loop muted playsInline  
+                 
+                 
+                 
+                
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.751.mp4`} type="video/mp4" />
@@ -140,11 +140,11 @@ export default function EngineeringBriefsPage() {
             </div>
             
             <div className="relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
+              <video autoPlay loop muted playsInline  
+                 
+                 
+                 
+                
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/paving_riser_solid_ring_utilisation_animation.686.mp4`} type="video/mp4" />
@@ -164,11 +164,11 @@ export default function EngineeringBriefsPage() {
         <section className="mb-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
+              <video autoPlay loop muted playsInline  
+                 
+                 
+                 
+                
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
                 <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.711.mp4`} type="video/mp4" />

@@ -31,6 +31,39 @@ const TopNavbar = () => {
   const [selectedCountry, setSelectedCountry] = useState(countryOptions[0])
   return (
     <div className='w-full relative z-50'>
+      
+      {/* --- ALERTS MARQUEE BANNER --- */}
+      <div className="bg-[#CC0000] text-white w-full py-1.5 overflow-hidden flex whitespace-nowrap">
+        <style>{`
+          @keyframes scroll-marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll-marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll-marquee 20s linear infinite;
+          }
+        `}</style>
+        <div className="animate-scroll-marquee">
+          {/* We duplicate the text twice to create a seamless infinite scroll loop */}
+          <div className="flex shrink-0">
+            {[...Array(10)].map((_, i) => (
+              <span key={i} className="mx-6 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2">
+                🚧 Site is Under Construction
+              </span>
+            ))}
+          </div>
+          <div className="flex shrink-0">
+            {[...Array(10)].map((_, i) => (
+              <span key={i + 10} className="mx-6 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2">
+                🚧 Site is Under Construction
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <nav className="bg-neutral-800 text-neutral-200 w-full  shadow-md">
 
         <div className="w-full px-6 md:px-8 lg:px-12">

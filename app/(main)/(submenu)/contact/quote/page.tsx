@@ -58,11 +58,11 @@ export default function QuoteRequestPage() {
       <div className="relative w-full h-[60vh] min-h-[400px] flex items-center border-b border-white/10 overflow-hidden">
         
         {/* Full Bleed Background Video */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+        <video autoPlay loop muted playsInline  
+           
+           
+           
+          
           onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale mix-blend-screen scale-105"
         >
@@ -113,7 +113,7 @@ export default function QuoteRequestPage() {
                   onClick={() => setSelectedProduct('catch-basin')}
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'catch-basin' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
-                  <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
+                  <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
                     <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
@@ -130,7 +130,7 @@ export default function QuoteRequestPage() {
                   onClick={() => setSelectedProduct('valve-box')}
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'valve-box' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
-                  <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
+                  <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
                     <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
@@ -147,7 +147,7 @@ export default function QuoteRequestPage() {
                   onClick={() => setSelectedProduct('manhole')}
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'manhole' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
-                  <video autoPlay loop muted playsInline onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
+                  <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
                     <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_black_coated.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />

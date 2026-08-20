@@ -7,11 +7,11 @@ export default function IndustrySolutionsBanner() {
 
       {/* --- VIDEO BACKGROUND --- */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <video autoPlay loop muted playsInline 
+          
+          
+          
+          
           className="absolute min-w-full min-h-full object-cover opacity-30 mix-blend-luminosity grayscale"
         >
           {/* We use paving-video.mp4 from R2 mapped through the local env variable */}

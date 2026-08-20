@@ -88,13 +88,14 @@ export default function UltimateResultsPattern() {
             The Ultimate.
           </h3>
 
-          <Link href="/contact/quote">
-            <button className="group relative px-10 py-5 bg-transparent overflow-hidden rounded-sm border border-zinc-800 hover:border-[#CC0000] transition-colors duration-500">
-              <div className="absolute inset-0 bg-[#CC0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-              <span className="relative z-10 flex items-center gap-3 text-sm font-black uppercase tracking-widest text-white">
-                Get Certified Specs <ChevronRight className="w-4 h-4" />
-              </span>
-            </button>
+          <Link 
+            href="/contact/quote"
+            className="group relative px-10 py-5 bg-transparent overflow-hidden rounded-sm border border-zinc-800 hover:border-[#CC0000] transition-colors duration-500 block"
+          >
+            <div className="absolute inset-0 bg-[#CC0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 flex items-center gap-3 text-sm font-black uppercase tracking-widest text-white">
+              Get Certified Specs <ChevronRight className="w-4 h-4" />
+            </span>
           </Link>
         </motion.div>
 

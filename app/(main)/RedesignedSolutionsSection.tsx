@@ -255,13 +255,13 @@ export default function RedesignedSolutionsSection() {
           {/* BOTTOM LEFT: VIDEO PREVIEW DISPLAY (5 Columns) */}
           <div className="lg:col-span-5 lg:sticky lg:top-24 space-y-3">
             <div className="relative aspect-video lg:aspect-[4/3] w-full rounded-sm overflow-hidden bg-[#0F0F0F] border-2 border-slate-900 shadow-2xl group">
-              <video
+              <video autoPlay loop muted playsInline 
                 key={activeVideoUrl} // Forces video re-mount on src change
                 src={activeVideoUrl}
-                autoPlay
-                loop
-                muted
-                playsInline
+                
+                
+                
+                
                 className="w-full h-full object-cover"
               />
 

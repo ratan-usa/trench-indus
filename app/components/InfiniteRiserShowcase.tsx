@@ -46,13 +46,13 @@ export default function InfiniteRiserShowcase() {
 
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <video
+                                <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
                                     src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`}
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
+                                    
+                                    
+                                    
+                                    
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -156,13 +156,13 @@ export default function InfiniteRiserShowcase() {
                         {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <video
+                                <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
                                     src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/fixed_manhole_riser_installation.mp4`}
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
+                                    
+                                    
+                                    
+                                    
                                     className="w-full h-full object-cover"
                                 />
                             </div>
