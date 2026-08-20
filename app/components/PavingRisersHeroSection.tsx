@@ -26,8 +26,8 @@ export default function PavingRisersHeroSection() {
             </p>
 
             {/* THE THREE CONTRACTOR BULLET PILLARS */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200">
-              <div className="space-y-1">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 pt-6 sm:divide-x divide-slate-200 border-t border-slate-200">
+              <div className="space-y-1 sm:pr-4 sm:w-1/3">
                 <div className="flex items-center gap-1.5 text-[#CC0000]">
                   <Zap className="w-4 h-4 fill-current" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Easy</span>
@@ -35,7 +35,7 @@ export default function PavingRisersHeroSection() {
                 <p className="text-xs font-bold text-slate-500 leading-snug">No excavation. The riser sits over the existing frame.</p>
               </div>
 
-              <div className="space-y-1 border-x border-slate-200 px-3">
+              <div className="space-y-1 sm:px-4 sm:w-1/3 pt-4 sm:pt-0 border-t sm:border-t-0 border-slate-200">
                 <div className="flex items-center gap-1.5 text-[#CC0000]">
                   <Clock className="w-4 h-4" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Fast</span>
@@ -43,7 +43,7 @@ export default function PavingRisersHeroSection() {
                 <p className="text-xs font-bold text-slate-500 leading-snug">Quick installs.</p>
               </div>
 
-              <div className="space-y-1 pl-1">
+              <div className="space-y-1 sm:pl-4 sm:w-1/3 pt-4 sm:pt-0 border-t sm:border-t-0 border-slate-200">
                 <div className="flex items-center gap-1.5 text-[#CC0000]">
                   <Target className="w-4 h-4" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Accurate</span>

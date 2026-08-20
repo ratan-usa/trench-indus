@@ -230,6 +230,8 @@ export default function Product3DShowcase() {
 }
 
 // Pre-fetch models
-PRODUCT_MODELS.forEach((model) => {
-  useGLTF.preload(model.glbPath);
-});
+if (typeof window !== 'undefined') {
+  PRODUCT_MODELS.forEach((model) => {
+    useGLTF.preload(model.glbPath);
+  });
+}

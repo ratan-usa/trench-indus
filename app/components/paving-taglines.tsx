@@ -56,7 +56,7 @@ export default function PavingPathHero() {
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none"
+              className="flex flex-wrap items-center gap-2 text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none"
             >
               <span className="text-[#0F0F0F]">PAVING</span>
               <span className="text-[#CC0000]">YOUR WAY</span>
@@ -66,7 +66,7 @@ export default function PavingPathHero() {
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 text-xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight"
+              className="flex flex-wrap items-center gap-2 mt-2 text-xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight"
             >
               <span className="text-[#0F0F0F]">FOR</span>
               <span className="bg-[#0F0F0F] text-white px-3 py-0.5 rounded-none inline-flex items-center gap-0.5">

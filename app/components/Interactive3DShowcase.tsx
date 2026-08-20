@@ -541,6 +541,8 @@ export default function Interactive3DShowcase() {
 }
 
 // Pre-fetches models for faster file switching performance
-GLB_MODELS.forEach((model) => {
-    useGLTF.preload(model.path);
-});
+if (typeof window !== 'undefined') {
+    GLB_MODELS.forEach((model) => {
+        useGLTF.preload(model.path);
+    });
+}

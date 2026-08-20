@@ -3,8 +3,8 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import React, { useState } from 'react'
+import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
 
 // Define the navigation structure
 const NAV_LINKS = [
@@ -96,6 +96,14 @@ const NAV_LINKS = [
 ];
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+    const toggleDropdown = (title: string) => {
+        if (openDropdown === title) setOpenDropdown(null);
+        else setOpenDropdown(title);
+    };
+
     return (
         <header className="bg-white border-b-[4px] border-[#CC0000] sticky top-0 z-50 shadow-sm font-sans">
             <div className="w-full px-6 md:px-8 lg:px-12 py-3 flex justify-between items-center">
@@ -185,17 +193,94 @@ const Navbar = () => {
                 </div>
 
                 {/* --- CTA BUTTON --- */}
-                <Link href={'/contact/quote'}>
-                    <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black hidden sm:flex rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
-                        Request a Quote
-                    </Button>
-                </Link>
-                <Link href={'#contact'}>
-                    <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black hidden sm:flex rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
-                        Download Catalog
-                    </Button>
-                </Link>
+                <div className="hidden sm:flex items-center gap-2">
+                    <Link href={'/contact/quote'}>
+                        <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                            Request a Quote
+                        </Button>
+                    </Link>
+                    <Link href={'#contact'}>
+                        <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
+                            Download Catalog
+                        </Button>
+                    </Link>
+                </div>
+
+                {/* --- MOBILE MENU TOGGLE --- */}
+                <div className="flex md:hidden items-center">
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="p-2 text-black hover:text-[#CC0000] transition-colors focus:outline-none"
+                    >
+                        {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+                    </button>
+                </div>
             </div>
+
+            {/* --- MOBILE MENU PANEL --- */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden bg-white border-t border-gray-200 absolute w-full left-0 top-full shadow-2xl flex flex-col max-h-[80vh] overflow-y-auto z-50">
+                    <div className="flex flex-col py-2">
+                        {NAV_LINKS.map((link) => (
+                            <div key={link.title} className="flex flex-col border-b border-gray-100 last:border-0">
+                                <button
+                                    onClick={() => toggleDropdown(link.title)}
+                                    className="flex items-center justify-between px-6 py-4 text-[#CC0000] text-[13px] font-black uppercase tracking-widest hover:bg-gray-50 transition-colors"
+                                >
+                                    {link.title}
+                                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openDropdown === link.title ? 'rotate-180' : ''}`} />
+                                </button>
+                                
+                                {openDropdown === link.title && (
+                                    <div className="flex flex-col bg-gray-50 py-2 px-6 space-y-2 border-t border-gray-100">
+                                        {link.dropdown.map((item: any, idx) => {
+                                            if (item.isHeader) {
+                                                return (
+                                                    <span key={`header-${idx}`} className="text-[10px] font-black uppercase tracking-[0.1em] text-gray-500 pt-2 pb-1">
+                                                        {item.name}
+                                                    </span>
+                                                )
+                                            }
+                                            if (item.subDropdown) {
+                                                return (
+                                                    <div key={item.name} className="flex flex-col space-y-1 py-1">
+                                                        <span className="text-[11px] font-bold text-black uppercase">{item.name}</span>
+                                                        <div className="pl-3 flex flex-col space-y-1 border-l-2 border-[#CC0000]/20 ml-1 mt-1">
+                                                            {item.subDropdown.map((subItem: any) => (
+                                                                <Link key={subItem.name} href={subItem.href} onClick={() => setIsMobileMenuOpen(false)} className="text-[11px] text-gray-600 py-1 hover:text-[#CC0000]">
+                                                                    {subItem.name}
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                )
+                                            }
+                                            return (
+                                                <Link key={item.name} href={item.href || '#'} onClick={() => setIsMobileMenuOpen(false)} className="text-[12px] font-bold text-black py-2 hover:text-[#CC0000]">
+                                                    {item.name}
+                                                </Link>
+                                            )
+                                        })}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                        
+                        <div className="flex flex-col gap-2 p-6 sm:hidden">
+                            <Link href={'/contact/quote'} onClick={() => setIsMobileMenuOpen(false)}>
+                                <Button className="w-full bg-[#0F0F0F] text-white font-black rounded-none h-12 uppercase tracking-widest text-[11px]">
+                                    Request a Quote
+                                </Button>
+                            </Link>
+                            <Link href={'#contact'} onClick={() => setIsMobileMenuOpen(false)}>
+                                <Button className="w-full bg-[#CC0000] text-white font-black rounded-none h-12 uppercase tracking-widest text-[11px]">
+                                    Download Catalog
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
         </header>
     )
 }

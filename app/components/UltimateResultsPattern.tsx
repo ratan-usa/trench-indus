@@ -53,7 +53,7 @@ export default function UltimateResultsPattern() {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-none text-white"
+            className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-none text-white"
           >
             Pushing
           </motion.h2>
@@ -63,7 +63,7 @@ export default function UltimateResultsPattern() {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500"
+            className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500"
           >
             The Limits
           </motion.h2>
