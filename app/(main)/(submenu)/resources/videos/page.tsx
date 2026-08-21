@@ -24,7 +24,7 @@ export default function AvantGardeVideosPage() {
             <span className="text-[#CC0000]">FOOTAGE</span>
           </h1>
           <p className="mt-8 text-xl text-zinc-400 font-medium max-w-sm">
-            Unfiltered field installations, mechanical testing, and 3D technical deep dives into the Mega Paving Riser ecosystem.
+            Unfiltered field installations, mechanical testing, and 3D technical deep dives into the Paving Riser ecosystem.
           </p>
         </div>
 

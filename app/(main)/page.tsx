@@ -28,6 +28,7 @@ import GratesRacksAndTools from './GratesRacksAndTools'
 import PavingProductsTable from '../components/PavingProductsTable'
 import SaferRoadsCTA from '../components/SaferRoadsCTA'
 import UltimateResultsPattern from '../components/UltimateResultsPattern'
+import SponsorMarquee from './SponsorMarquee';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -46,6 +47,7 @@ const Home = () => {
       <PavingPathHero />
       <Product3DShowcase2 />
       <UltimateResultsPattern />
+      <SponsorMarquee/>
       <PavingRiserClassification />
       <SaferRoadsCTA />
       <InfiniteRiserShowcase />

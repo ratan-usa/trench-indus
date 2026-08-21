@@ -42,12 +42,12 @@ const FixedQuoteBtn = () => {
   const strokeDashoffset = circleCircumference - (circleCircumference * scrollProgress) / 100;
 
   return (
-    <> 
+    <>
       {/* ========================================= */}
       {/* BOTTOM RIGHT FIXED STACK                  */}
       {/* ========================================= */}
       <div className="fixed bottom-6 right-6 z-[9999] flex flex-col gap-4 items-center">
-        
+
         {/* BOTTOM THREE: Social / Contact Icons */}
         {/* A. WhatsApp */}
         <Link
@@ -80,7 +80,7 @@ const FixedQuoteBtn = () => {
 
         {/* C. Email */}
         <Link
-          href="mailto:sales@megafoundries.com"
+          href="mailto:sales@pavingrisers.com"
           className="
             w-12 h-12 flex items-center justify-center 
             bg-[#CC0000] hover:bg-[#0F0F0F] text-white 
@@ -93,7 +93,7 @@ const FixedQuoteBtn = () => {
         </Link>
 
         {/* TOP: Scroll to Top Button with Progress Ring */}
-        <div 
+        <div
           className={`relative w-12 h-12 transition-all duration-300 ${isVisible ? "opacity-100 scale-100 mt-2" : "opacity-0 scale-0 pointer-events-none h-0 w-0 !gap-0 !mt-0"}`}
         >
           {/* Background Track Circle */}
@@ -107,7 +107,7 @@ const FixedQuoteBtn = () => {
               strokeWidth="2"
             />
           </svg>
-          
+
           {/* Progress Circle (Rotated to start at top) */}
           <svg className="absolute inset-0 w-12 h-12 -rotate-90 pointer-events-none">
             <circle
