@@ -7,7 +7,8 @@ import {
   Ruler, 
   CheckCircle2, 
   ShieldCheck, 
-  ArrowUpRight 
+  ArrowUpRight,
+  Target
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,13 @@ const DESIGN_OPTIONS = [
   "Fixed / Solid Riser",
   "Adjustable Riser",
   "Stackable Riser"
+];
+
+const APPLICATION_OPTIONS = [
+  "Manhole Risers",
+  "Catch Basin Risers",
+  "Curb Inlet Risers",
+  "Valve Box Risers"
 ];
 
 export default function PavingRiserClassification() {
@@ -45,8 +53,8 @@ export default function PavingRiserClassification() {
           </p>
         </div>
 
-        {/* --- TWO-COLUMN BRANCHING CLASSIFICATION GRID --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        {/* --- THREE-COLUMN BRANCHING CLASSIFICATION GRID --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           
           {/* BRANCH 1: BY MATERIAL */}
           <Card className="border-2 border-slate-100 bg-slate-50/50 rounded-sm shadow-none hover:shadow-xl hover:border-[#CC0000] transition-all duration-300 flex flex-col justify-between group overflow-hidden">
@@ -61,7 +69,7 @@ export default function PavingRiserClassification() {
                   Composition Matrix
                 </span>
               </div>
-              <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
+              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
                 Classification By Material
               </CardTitle>
             </CardHeader>
@@ -91,7 +99,7 @@ export default function PavingRiserClassification() {
                   Mechanical Framework
                 </span>
               </div>
-              <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
+              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
                 Classification By Design
               </CardTitle>
             </CardHeader>
@@ -99,6 +107,36 @@ export default function PavingRiserClassification() {
             <CardContent className="p-8 pt-0 flex-grow flex flex-col justify-between">
               <ul className="space-y-3">
                 {DESIGN_OPTIONS.map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-base font-bold text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-[#CC0000] shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* BRANCH 3: BY APPLICATION */}
+          <Card className="border-2 border-slate-100 bg-slate-50/50 rounded-sm shadow-none hover:shadow-xl hover:border-[#CC0000] transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+            <div className="w-full h-[4px] bg-[#0F0F0F] group-hover:bg-[#CC0000] transition-colors duration-300" />
+            
+            <CardHeader className="p-8 pb-4">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-10 h-10 bg-slate-100 border border-slate-200 text-slate-800 flex items-center justify-center rounded-sm group-hover:bg-[#0F0F0F] group-hover:text-white group-hover:border-[#0F0F0F] transition-all duration-300">
+                  <Target className="w-5 h-5" />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#CC0000]">
+                  Utility Type
+                </span>
+              </div>
+              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
+                Classification By Application
+              </CardTitle>
+            </CardHeader>
+
+            <CardContent className="p-8 pt-0 flex-grow flex flex-col justify-between">
+              <ul className="space-y-3">
+                {APPLICATION_OPTIONS.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-base font-bold text-slate-700">
                     <CheckCircle2 className="w-5 h-5 text-[#CC0000] shrink-0" />
                     <span>{item}</span>

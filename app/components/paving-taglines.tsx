@@ -11,9 +11,9 @@ import {
 } from 'lucide-react';
 
 const FEATURE_BADGES = [
-  { icon: <Layers className="w-4 h-4 text-[#CC0000]" />, title: "ENGINEERED", subtitle: "SOLUTIONS" },
+  { icon: <Layers className="w-4 h-4 text-[#CC0000]" />, title: "ADVANCED", subtitle: "SOLUTIONS" },
   { icon: <ShieldCheck className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "DURABILITY" },
-  { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "EASY", subtitle: "INSTALLATION" },
+  { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "RAPID", subtitle: "INSTALLATION" },
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
 const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS", "AIR PORTS", "SEA PORTS", "ICONIC PROJECTS", "SUPER STRUCTURES"];
