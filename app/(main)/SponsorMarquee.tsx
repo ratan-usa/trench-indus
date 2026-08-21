@@ -24,7 +24,7 @@ export default function SponsorMarquee() {
                 {/* STRUCTURAL ENGINEERING HEADER */}
                 <div className="flex flex-col items-center text-center mb-12 px-6">
                     <h2 className="text-xl md:text-3xl font-black text-[#CC0000] uppercase tracking-tighter leading-none">
-                        Proudly Supporting <span className="text-black">& Sponsoring</span>
+                        Complying to <span className="text-black">Standards</span>
                     </h2>
                 </div>
 

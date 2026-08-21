@@ -69,7 +69,7 @@ export default function PavingRiserClassification() {
                   Composition Matrix
                 </span>
               </div>
-              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
+              <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
                 Classification By Material
               </CardTitle>
             </CardHeader>
@@ -99,7 +99,7 @@ export default function PavingRiserClassification() {
                   Mechanical Framework
                 </span>
               </div>
-              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
+              <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
                 Classification By Design
               </CardTitle>
             </CardHeader>
@@ -129,8 +129,8 @@ export default function PavingRiserClassification() {
                   Utility Type
                 </span>
               </div>
-              <CardTitle className="text-xl font-black uppercase tracking-tight text-slate-900">
-                Classification By Application
+              <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
+                Application
               </CardTitle>
             </CardHeader>
 
