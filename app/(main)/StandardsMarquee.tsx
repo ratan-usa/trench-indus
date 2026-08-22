@@ -4,18 +4,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const sponsorLogos = [
-    { src: "/images/sponsor/NEPCA.JPG", alt: "Sponsor 01" },
-    { src: "/images/sponsor/njpca.jpg", alt: "Sponsor 02" },
-    { src: "/images/sponsor/pcany.jpg", alt: "Sponsor 03" },
-    { src: "/images/sponsor/pcav.jpg", alt: "Sponsor 04" },
-    { src: "/images/sponsor/pcma.png", alt: "Sponsor 05" },
-    { src: "/images/sponsor/ppa.JPG", alt: "Sponsor 06" },
-];
+const standardLogos = Array.from({ length: 13 }).map((_, i) => ({
+    src: `/images/standards/${i + 1}.png`,
+    alt: `Standard ${i + 1}`
+}));
 
-export default function SponsorMarquee() {
+export default function StandardsMarquee() {
     // Triple the array to guarantee zero gaps during long animations
-    const infiniteLogos = [...sponsorLogos, ...sponsorLogos, ...sponsorLogos];
+    const infiniteLogos = [...standardLogos, ...standardLogos, ...standardLogos];
 
     return (
         <section className="w-full bg-white py-4 border-t border-b border-[#CC0000]/10 overflow-hidden select-none">

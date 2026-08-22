@@ -30,7 +30,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_Raw_Finish.613.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.601.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`
   },
   {
     id: 5,
@@ -78,7 +78,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`
   }
 ];
 

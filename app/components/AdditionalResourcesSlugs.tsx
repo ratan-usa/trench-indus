@@ -45,7 +45,7 @@ const RESOURCES = [
     title: 'Custom Fabrication Guide',
     slug: 'custom-fabrication-guide',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
   },
   {
     id: 'res-7',
