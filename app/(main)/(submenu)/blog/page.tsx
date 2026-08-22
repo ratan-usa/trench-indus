@@ -35,7 +35,7 @@ export default function BlogListingPage() {
       </div>
 
       {/* ─── BLOG GRID ─── */}
-      <div className="max-w-7xl mx-auto px-6 pt-24">
+      <div className="px-10 pt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           {blogs.map((blog, index) => (
             <motion.article 
@@ -47,7 +47,7 @@ export default function BlogListingPage() {
               className="group relative flex flex-col bg-[#0a0a0a] border border-zinc-900 rounded-sm overflow-hidden hover:border-zinc-700 transition-colors duration-500"
             >
               {/* Image Container */}
-              <Link href={`/blog/1${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-zinc-950 flex items-center justify-center p-8">
+              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-zinc-950 flex items-center justify-center p-8">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
                 <Image 
                   src={blog.image} 

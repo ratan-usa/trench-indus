@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Paving Risers | Professional Grade Infrastructure Solutions",
+    default: "Paving Risers",
     template: "%s | Paving Risers",
   },
   description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",

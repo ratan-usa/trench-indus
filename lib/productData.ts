@@ -61,7 +61,6 @@ export const PRODUCT_DATA: Product[] = [
         features: ['Integrated Leveling Screws', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Screws 1', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.601.png` },
-            { label: 'Screws 2', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.673.png` },
             { label: 'Screws 3', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.676.png` },
             { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` },
             { label: 'Raw Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_Raw_Finish.617.png` }
@@ -157,7 +156,6 @@ export const PRODUCT_DATA: Product[] = [
         },
         features: ['Heavy-Duty Set Screws', 'Anti-skid design', 'Perfect highway grade alignment'],
         images: [
-            { label: 'Screws Option 1', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.673.png` },
             { label: 'Screws Option 2', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.676.png` }
         ]
     }
