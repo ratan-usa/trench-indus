@@ -76,7 +76,7 @@ const RISER_SECTIONS = [
   },
   {
     id: "sloped-tapered",
-    theme: "light",
+    theme: "dark",
     overline: "Road Crowning Solutions",
     title: "Sloped &",
     highlightText: "Tapered Risers",
@@ -132,25 +132,26 @@ export default function ComprehensivePavingRisersMapped() {
         return (
           <section
             key={section.id}
-            className={`py-20 relative overflow-hidden ${isDark ? 'bg-zinc-950 text-white' : 'bg-white text-slate-900 border-b border-gray-100'}`}
+            className={`py-20 relative overflow-hidden ${isDark ? 'bg-[#0A0A0A] text-white border-b border-white/5' : 'bg-zinc-50 text-slate-900 border-b border-gray-200'}`}
           >
-            {/* Dark mode background glow */}
-            {isDark && (
-              <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
-            )}
+            {/* Premium Grid Pattern Background */}
+            <div className={`absolute inset-0 z-0 opacity-[0.15] pointer-events-none`} style={{ backgroundImage: `radial-gradient(${isDark ? '#ffffff' : '#000000'} 1px, transparent 1px)`, backgroundSize: '40px 40px' }}></div>
+            
+            {/* Dynamic Red Glow */}
+            <div className={`absolute top-[10%] ${isImageLeft ? 'left-[-10%]' : 'right-[-10%]'} w-[600px] h-[600px] bg-[#CC0000]/${isDark ? '20' : '10'} rounded-full blur-[120px] pointer-events-none z-0`}></div>
 
             <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 {/* --- IMAGE COLUMN --- */}
                 <div className={`relative ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className={`relative z-10 aspect-square w-full rounded-2xl overflow-hidden border ${isDark ? 'border-zinc-800 bg-zinc-900' : 'border-slate-100 shadow-xl bg-slate-50'}`}>
+                  <div className={`relative z-10 aspect-square w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 bg-[#111] shadow-2xl' : 'border-gray-200 bg-white shadow-xl'}`}>
                     <Image
                       src={section.image}
                       alt={section.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.2)]' : ''}`}
+                      className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.15)]' : ''}`}
                     />
 
                     {/* --- COMING SOON OVERLAY --- */}
@@ -160,12 +161,6 @@ export default function ComprehensivePavingRisersMapped() {
                       </div>
                     )}
                   </div>
-
-
-                  {/* Decorative square behind image (only on light theme) */}
-                  {!isDark && (
-                    <div className={`absolute -bottom-6 ${isImageLeft ? '-right-6' : '-left-6'} w-1/2 aspect-square bg-slate-50 border border-slate-200 rounded-2xl -z-10 hidden md:block`}></div>
-                  )}
                 </div>
 
                 {/* --- TEXT CONTENT COLUMN --- */}
@@ -186,10 +181,10 @@ export default function ComprehensivePavingRisersMapped() {
 
                   {/* Features Grid */}
                   {section.features && section.features.length > 0 && (
-                    <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 ${isDark ? 'border-t border-zinc-800' : ''}`}>
+                    <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
                       {section.features.map((feat, i) => (
                         <div key={i} className="flex items-start gap-4">
-                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center ${isDark ? 'bg-transparent' : 'bg-[#0F0F0F] text-[#CC0000]'}`}>
+                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center bg-transparent`}>
                             {renderIcon(feat.icon, `w-6 h-6 text-[#CC0000]`)}
                           </div>
                           <div>
@@ -203,8 +198,8 @@ export default function ComprehensivePavingRisersMapped() {
 
                   {/* Meta Information Table */}
                   {section.meta && section.meta.length > 0 && (
-                    <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-zinc-900/50 border-zinc-800' : 'bg-slate-50 border-slate-100'}`}>
-                      <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
+                    <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-[#111] border-white/10' : 'bg-white border-gray-200'}`}>
+                      <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
                         <span className={`font-medium italic text-sm ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>Our Pledge:</span>
                         <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Custom manufacturing available... regardless."</span>
                       </div>
@@ -235,8 +230,8 @@ export default function ComprehensivePavingRisersMapped() {
       })}
 
       {/* --- ADVANTAGES SECTION --- */}
-      <section className="py-20 bg-[#CC0000] text-white">
-        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto">
+      <section className="py-20 relative bg-[#CC0000] text-white overflow-hidden">
+        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto relative z-10">
 
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>
@@ -247,19 +242,19 @@ export default function ComprehensivePavingRisersMapped() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {ADVANTAGES.map((adv, i) => (
-              <div key={i} className="bg-white/10 border border-white/20 p-8 rounded-xl backdrop-blur-sm text-center shadow-lg hover:bg-white/20 transition-colors group">
-                <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform">
-                  {renderIcon(adv.icon, "w-12 h-12 text-white")}
+              <div key={i} className="bg-white p-8 rounded-xl text-center shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+                <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+                  {renderIcon(adv.icon, "w-12 h-12 text-[#CC0000]")}
                 </div>
-                <h4 className="text-xl font-bold mb-2 uppercase tracking-wide">{adv.title}</h4>
-                <p className="text-sm text-red-50 leading-relaxed">{adv.desc}</p>
+                <h4 className="text-xl font-bold mb-2 uppercase tracking-wide text-black">{adv.title}</h4>
+                <p className="text-sm text-slate-600 leading-relaxed">{adv.desc}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-16 text-center">
             <Link href="#contact">
-              <Button className="bg-white text-[#CC0000] hover:bg-[#0F0F0F] hover:text-white px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl rounded-lg">
+              <Button className="bg-[#0F0F0F] text-white hover:bg-white hover:text-[#CC0000] px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl rounded-lg">
                 Equip Your Next Jobsite <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>

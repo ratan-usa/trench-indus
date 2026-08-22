@@ -77,38 +77,35 @@ export default function AdditionalResourcesSlugs() {
           {RESOURCES.map((resource) => (
             <Link
               key={resource.id}
-              href={`/resources/${resource.slug}`} // Dynamic routing using the slug
-              className="group bg-[#CC0000] relative w-full aspect-[3/4]  overflow-hidden rounded-sm block"
+              href={`/resources/${resource.slug}`}
+              className="group relative w-full overflow-hidden flex flex-col transition-all duration-300 h-full bg-zinc-50 border border-zinc-200 hover:border-[#CC0000] rounded-sm shadow-sm hover:shadow-md"
             >
- 
-              <Image
-                src={resource.imageSrc}
-                alt={resource.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                className="object-cover opacity-90 transition-all duration-500"
-              />
-
-  
-              <div className="absolute top-6 left-6 right-6 z-10">
-                <h3 className="text-white text-sm md:text-lg font-bold leading-snug drop-shadow-md">
+              {/* TOP TEXT SECTION */}
+              <div className="p-4 flex justify-between items-start gap-2 z-10 relative bg-[#CC0000] shrink-0 transition-colors duration-300">
+                <h3 className="text-white text-sm md:text-[15px] font-bold leading-snug">
                   {resource.title}
                 </h3>
+                
+                {/* Type Indicator Icon */}
+                <div className="text-white/80 shrink-0 mt-0.5">
+                  {resource.type === 'video' ? (
+                    <PlayCircle className="w-5 h-5" strokeWidth={2.5} />
+                  ) : (
+                    <LinkIcon className="w-5 h-5" strokeWidth={2.5} />
+                  )}
+                </div>
               </div> 
-              <div className="absolute bottom-6 left-6 z-10 flex items-center text-[#CC0000] font-black uppercase tracking-widest text-sm group-hover:text-white transition-colors duration-300">
-                {resource.type === 'video' ? (
-                  <>
-                    <PlayCircle className="w-5 h-5 mr-2" strokeWidth={2.5} />
-                    Video
-                  </>
-                ) : (
-                  <>
-                    <LinkIcon className="w-4 h-4 mr-2" strokeWidth={3} />
-                    Link
-                  </>
-                )}
-              </div>
 
+              {/* BOTTOM IMAGE SECTION */}
+              <div className="relative w-full aspect-[4/3] bg-zinc-50 group-hover:bg-white transition-colors duration-300 overflow-hidden flex items-center justify-center border-t border-zinc-200">
+                <Image
+                  src={resource.imageSrc}
+                  alt={resource.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-contain p-6 group-hover:scale-105 transition-transform duration-500 mix-blend-multiply"
+                />
+              </div>
             </Link>
           ))}
         </div>

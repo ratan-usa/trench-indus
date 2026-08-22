@@ -126,7 +126,7 @@ export default function PavingPathHero() {
             className="relative w-full h-full flex items-center  justify-end z-20"
           >
             <Image  
-              src={`/images/paving_hero2.png`}
+              src={`/images/paving_hero.png`}
               alt="Paving Riser Manhole Cover Assembly"
               height={400}  
               width={500}

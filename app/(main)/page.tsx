@@ -29,6 +29,7 @@ import PavingProductsTable from '../components/PavingProductsTable'
 import SaferRoadsCTA from '../components/SaferRoadsCTA'
 import UltimateResultsPattern from '../components/UltimateResultsPattern'
 import StandardsMarquee from './StandardsMarquee';
+import Preloader from '../components/Preloader';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -43,6 +44,7 @@ const Interactive3DShowcase = dynamic(() => import('../components/Interactive3DS
 const Home = () => {
   return (
     <div>
+      {/* <Preloader /> */}
       {/* <HeroScrollSequence /> */}
       <PavingPathHero />
       <Product3DShowcase2 />

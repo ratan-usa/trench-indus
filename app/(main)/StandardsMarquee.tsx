@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const standardLogos = Array.from({ length: 13 }).map((_, i) => ({
@@ -25,22 +24,27 @@ export default function StandardsMarquee() {
                 </div>
 
                 {/* MARQUEE RUNWAY WRAPPER */}
-                <div className="relative w-full overflow-hidden flex items-center h-24">
+                <div className="relative w-full overflow-hidden flex items-center h-24 marquee-wrapper cursor-pointer">
 
                     {/* High-density gradient masks for clean entry and exit fading */}
                     <div className="absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
                     <div className="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
+                    <style>{`
+                        @keyframes scroll-marquee {
+                            0% { transform: translateX(0%); }
+                            100% { transform: translateX(-50%); }
+                        }
+                        .animate-marquee {
+                            animation: scroll-marquee 40s linear infinite;
+                        }
+                        .marquee-wrapper:hover .animate-marquee {
+                            animation-play-state: paused;
+                        }
+                    `}</style>
+
                     {/* INFINITE LOOP RUNWAY */}
-                    <motion.div
-                        animate={{ x: ["0%", "-50%"] }}
-                        transition={{
-                            duration: 25, // Adjust speed here (higher number = slower speed)
-                            ease: "linear",
-                            repeat: Infinity,
-                        }}
-                        className="flex items-center gap-16 w-max pr-16 whitespace-nowrap will-change-transform"
-                    >
+                    <div className="flex items-center gap-16 w-max pr-16 whitespace-nowrap will-change-transform animate-marquee">
                         {infiniteLogos.map((logo, i) => (
                             <div
                                 key={i}
@@ -57,7 +61,7 @@ export default function StandardsMarquee() {
                                 </div>
                             </div>
                         ))}
-                    </motion.div>
+                    </div>
 
                 </div>
             </div>

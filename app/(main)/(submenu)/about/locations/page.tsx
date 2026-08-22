@@ -49,7 +49,7 @@ export default function FoundryLocationsPage() {
       {/* 2. LOCATIONS SPLIT VIEW                   */}
       {/* ========================================= */}
       <div className="w-full px-6 md:px-8 lg:px-12 mt-32 max-w-[1600px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           
           {/* NEW YORK HQ */}
           <div className="relative group">
@@ -77,7 +77,7 @@ export default function FoundryLocationsPage() {
                 <div className="grid grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Phone className="w-3 h-3" /> Phone</p>
-                    <p className="text-xl font-mono font-bold text-white">(631) 458-1111</p>
+                    <p className="text-xl font-mono font-bold text-white">+1 (516) 252-1111</p>
                   </div>
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>
@@ -121,6 +121,49 @@ export default function FoundryLocationsPage() {
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Phone className="w-3 h-3" /> Phone</p>
                     <p className="text-xl font-mono font-bold text-white">(772) 297-0700</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>
+                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@pavingrisers.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 pt-8 border-t border-white/10">
+                <Button className="w-full bg-white/5 border border-white/10 text-white hover:bg-[#CC0000] hover:border-[#CC0000] font-black uppercase tracking-widest rounded-none h-14 transition-colors">
+                  Get Directions
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* CANADA FACILITY */}
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-l from-[#CC0000]/20 to-transparent blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="relative bg-[#0A0A0A] border border-white/10 p-8 md:p-12 hover:border-white/30 transition-colors h-full flex flex-col">
+              
+              <div className="flex justify-between items-start mb-12">
+                <div>
+                  <p className="text-[#CC0000] font-mono text-sm font-bold tracking-[0.2em] mb-2 uppercase">Canadian Hub</p>
+                  <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white">Canada</h2>
+                </div>
+                <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center border border-white/10 group-hover:bg-[#CC0000] group-hover:border-[#CC0000] transition-colors shrink-0">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+              </div>
+
+              <div className="space-y-8 flex-1">
+                <div className="space-y-2">
+                  <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2">Address</p>
+                  <p className="text-2xl font-bold leading-tight">One Younge Street<br />Toronto, Ontario M5E 1R4, Canada</p>
+                </div>
+
+                <div className="h-[1px] w-full bg-white/10" />
+
+                <div className="grid grid-cols-2 gap-8">
+                  <div className="space-y-2">
+                    <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Phone className="w-3 h-3" /> Phone</p>
+                    <p className="text-sm lg:text-base font-mono font-bold text-white whitespace-nowrap">+1 (438) 805-9990</p>
                   </div>
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>

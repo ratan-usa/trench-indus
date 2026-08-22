@@ -153,7 +153,7 @@ export default function HeavyFooter() {
                     105 Maxes Road<br />
                     Melville, NY 11747, USA
                   </p>
-                  <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">(631) 458-1111</p>
+                  <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">+1 (516) 252-1111</p>
                 </div>
               </div>
 
@@ -169,6 +169,21 @@ export default function HeavyFooter() {
                     STUART, FL 34994
                   </p>
                   <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">(772) 297-0700</p>
+                </div>
+              </div>
+
+              {/* Address Line 3 - Canada */}
+              <div className="group flex items-start gap-4">
+                <div className="mt-1 w-8 h-8 flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-gray-600 group-hover:text-[#CC0000] transition-colors" />
+                </div>
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1">Canadian Hub</h4>
+                  <p className="text-gray-400 text-sm font-medium leading-relaxed mb-1">
+                    ONE YOUNGE STREET<br />
+                    TORONTO, ONTARIO M5E 1R4 CANADA
+                  </p>
+                  <p className="font-black text-lg tracking-wider hover:text-[#CC0000] transition-colors cursor-pointer">+1 (438) 805-9990</p>
                 </div>
               </div>
             </div>

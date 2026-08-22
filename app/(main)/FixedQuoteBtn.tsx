@@ -51,7 +51,7 @@ const FixedQuoteBtn = () => {
         {/* BOTTOM THREE: Social / Contact Icons */}
         {/* A. WhatsApp */}
         <Link
-          href="https://wa.me/15127828880"
+          href="https://wa.me/15162521111"
           target="_blank"
           className="
             w-12 h-12 flex items-center justify-center 
@@ -66,7 +66,7 @@ const FixedQuoteBtn = () => {
 
         {/* B. Phone Call */}
         <Link
-          href="tel:+15127828880"
+          href="tel:+15162521111"
           className="
             w-12 h-12 flex items-center justify-center 
             bg-[#CC0000] hover:bg-[#0F0F0F] text-white 

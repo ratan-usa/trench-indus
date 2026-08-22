@@ -85,7 +85,7 @@ export default function UltimateResultsPattern() {
           className="flex flex-col items-center"
         >
           <h3 className="text-3xl md:text-5xl font-black uppercase tracking-widest text-[#CC0000] mb-8">
-            The Ultimate.
+            The Ultimate Risers.
           </h3>
 
           <Link 

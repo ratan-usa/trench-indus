@@ -115,12 +115,12 @@ export default function RiserOrderSpecifications() {
               VISUAL ASSET HOUSING FRAMEPLACE: 
               Displays image source file reference "4.png" via standardNext.js optimized asset routing layout parameters.
             */}
-            <div className="relative w-full h-48 bg-zinc-900 border border-zinc-800 rounded-sm mt-6 mb-6 overflow-hidden flex items-center justify-center p-4 shadow-inner">
+            <div className="relative w-full h-64 bg-white border border-gray-200 rounded-sm mt-6 mb-6 overflow-hidden flex items-center justify-center p-4 shadow-inner">
               <Image
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/d_shape_3d.png`}
                 alt="4.png Ordering Data Visual Guide Component Reference"
                 fill
-                className="object-contain p-2 opacity-90 mix-blend-screen transition-transform duration-500 group-hover:scale-102"
+                className="object-contain transition-transform duration-500 group-hover:scale-102"
               />
             </div>
 

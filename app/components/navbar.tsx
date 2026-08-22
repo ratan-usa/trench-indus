@@ -82,8 +82,11 @@ const NAV_LINKS = [
             { name: 'Video Gallery', href: '/resources/videos' },
             { name: 'Engineering Briefs', href: '/resources/briefs' },
             { name: 'Calculators & Tools', href: '/resources/calculators' },
-            { name: 'Blogs', href: '/blog' },
         ],
+    },
+    {
+        title: 'Blog',
+        href: '/blog',
     },
     {
         title: 'Contact',
@@ -123,18 +126,20 @@ const Navbar = () => {
 
                 {/* --- CENTER MENU --- */}
                 <div className="hidden md:flex gap-1 lg:gap-2 h-full">
-                    {NAV_LINKS.map((link) => (
+                    {NAV_LINKS.map((link: any) => (
                         <div key={link.title} className="group/main relative">
-                            {/* Main Navigation Item */}
-                            <button className="flex items-center gap-1 px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors group-hover/main:bg-gray-50">
-                                {link.title}
-                                <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover/main:rotate-180" />
-                            </button>
+                            {link.dropdown && link.dropdown.length > 0 ? (
+                                <>
+                                    {/* Main Navigation Item */}
+                                    <button className="flex items-center gap-1 px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors group-hover/main:bg-gray-50">
+                                        {link.title}
+                                        <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover/main:rotate-180" />
+                                    </button>
 
-                            {/* Dropdown Menu (Black & Red Theme) */}
-                            <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover/main:opacity-100 group-hover/main:visible transition-all duration-300 translate-y-2 group-hover/main:translate-y-0 z-[60]">
-                                <ul className="w-72 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-visible">
-                                    {link.dropdown.map((item: any, idx) => {
+                                    {/* Dropdown Menu (Black & Red Theme) */}
+                                    <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover/main:opacity-100 group-hover/main:visible transition-all duration-300 translate-y-2 group-hover/main:translate-y-0 z-[60]">
+                                        <ul className="w-72 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 overflow-visible">
+                                            {link.dropdown.map((item: any, idx: number) => {
 
                                         if (item.isHeader) {
                                             return (
@@ -187,19 +192,36 @@ const Navbar = () => {
                                             </li>
                                         )
                                     })}
-                                </ul>
-                            </div>
+                                        </ul>
+                                    </div>
+                                </>
+                            ) : (
+                                <Link href={link.href} className="flex items-center h-full px-4 text-[#CC0000] py-2 text-[13px] font-black uppercase tracking-widest hover:text-black transition-colors hover:bg-gray-50">
+                                    {link.title}
+                                </Link>
+                            )}
                         </div>
                     ))}
                 </div>
 
                 {/* --- CTA BUTTON --- */}
                 <div className="hidden sm:flex items-center gap-2">
-                    <Link href={'/contact/quote'}>
-                        <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
-                            Request a Quote
+                    <div className="relative group/cert h-10">
+                        <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none px-4 h-full cursor-pointer uppercase tracking-[0.15em] text-[10px] transition-all duration-300 border-b-2 border-transparent active:scale-95 flex items-center gap-1.5">
+                            Req. Certification
+                            <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover/cert:rotate-180" />
                         </Button>
-                    </Link>
+                        <div className="absolute right-0 top-full pt-1 opacity-0 invisible group-hover/cert:opacity-100 group-hover/cert:visible transition-all duration-300 z-[60]">
+                            <div className="w-52 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 flex flex-col">
+                                <Link href="#" className="px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 transition-colors">
+                                    USA Certification
+                                </Link>
+                                <Link href="#" className="px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-black hover:bg-[#0F0F0F] hover:text-white transition-colors">
+                                    SGS Certification
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                     <Link href={'#contact'}>
                         <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
                             Download Catalog
@@ -222,19 +244,21 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white border-t border-gray-200 absolute w-full left-0 top-full shadow-2xl flex flex-col max-h-[80vh] overflow-y-auto z-50">
                     <div className="flex flex-col py-2">
-                        {NAV_LINKS.map((link) => (
+                        {NAV_LINKS.map((link: any) => (
                             <div key={link.title} className="flex flex-col border-b border-gray-100 last:border-0">
-                                <button
-                                    onClick={() => toggleDropdown(link.title)}
-                                    className="flex items-center justify-between px-6 py-4 text-[#CC0000] text-[13px] font-black uppercase tracking-widest hover:bg-gray-50 transition-colors"
-                                >
-                                    {link.title}
-                                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openDropdown === link.title ? 'rotate-180' : ''}`} />
-                                </button>
-                                
-                                {openDropdown === link.title && (
-                                    <div className="flex flex-col bg-gray-50 py-2 px-6 space-y-2 border-t border-gray-100">
-                                        {link.dropdown.map((item: any, idx) => {
+                                {link.dropdown && link.dropdown.length > 0 ? (
+                                    <>
+                                        <button
+                                            onClick={() => toggleDropdown(link.title)}
+                                            className="flex items-center justify-between px-6 py-4 text-[#CC0000] text-[13px] font-black uppercase tracking-widest hover:bg-gray-50 transition-colors"
+                                        >
+                                            {link.title}
+                                            <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openDropdown === link.title ? 'rotate-180' : ''}`} />
+                                        </button>
+                                        
+                                        {openDropdown === link.title && (
+                                            <div className="flex flex-col bg-gray-50 py-2 px-6 space-y-2 border-t border-gray-100">
+                                                {link.dropdown.map((item: any, idx: number) => {
                                             if (item.isHeader) {
                                                 return (
                                                     <span key={`header-${idx}`} className="text-[10px] font-black uppercase tracking-[0.1em] text-gray-500 pt-2 pb-1">
@@ -264,15 +288,35 @@ const Navbar = () => {
                                         })}
                                     </div>
                                 )}
-                            </div>
-                        ))}
-                        
-                        <div className="flex flex-col gap-2 p-6 sm:hidden">
-                            <Link href={'/contact/quote'} onClick={() => setIsMobileMenuOpen(false)}>
-                                <Button className="w-full bg-[#0F0F0F] text-white font-black rounded-none h-12 uppercase tracking-widest text-[11px]">
-                                    Request a Quote
-                                </Button>
+                            </>
+                        ) : (
+                            <Link 
+                                href={link.href}
+                                className="flex items-center justify-between px-6 py-4 text-[#CC0000] text-[13px] font-black uppercase tracking-widest hover:bg-gray-50 transition-colors"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                {link.title}
                             </Link>
+                        )}
+                        </div>
+                    ))}
+                    
+                    <div className="flex flex-col gap-2 p-6 sm:hidden">
+                        <div className="flex flex-col gap-2 mb-2">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-gray-500 text-center">Req. Certification</span>
+                            <div className="flex gap-2">
+                                <Link href={'#'} onClick={() => setIsMobileMenuOpen(false)} className="w-1/2">
+                                    <Button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none h-12 uppercase tracking-widest text-[10px] px-2 text-center whitespace-normal leading-tight">
+                                        USA
+                                    </Button>
+                                </Link>
+                                <Link href={'#'} onClick={() => setIsMobileMenuOpen(false)} className="w-1/2">
+                                    <Button className="w-full bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none h-12 uppercase tracking-widest text-[10px] px-2 text-center whitespace-normal leading-tight">
+                                        SGS
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
                             <Link href={'#contact'} onClick={() => setIsMobileMenuOpen(false)}>
                                 <Button className="w-full bg-[#CC0000] text-white font-black rounded-none h-12 uppercase tracking-widest text-[11px]">
                                     Download Catalog
