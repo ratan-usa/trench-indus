@@ -57,7 +57,7 @@ export default function PavingRisersHeroSection() {
           <div className="lg:col-span-6 w-full">
             <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-[#CC0000] shadow-xl border border-slate-200">
               <video autoPlay loop muted playsInline 
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/Ayush_Design.752.mp4`}
+                src={`/Videos/Videos/Ayush_Design.752.mp4`}
                 
                 
                 

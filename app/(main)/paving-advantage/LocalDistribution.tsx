@@ -34,7 +34,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20iron.668.png`} 
+              src={`/paving/paving%20riser%20rectangle%20iron.668.png`} 
               alt="Installed manhole riser on street"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
@@ -52,7 +52,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201.641.png`} 
+              src={`/paving/paving%20riser%201.641.png`} 
               alt="Utility valve box in commercial district"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
@@ -70,7 +70,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png`} 
+              src={`/paving/D_shape_Riser_Raw_Finish.602.png`} 
               alt="Catch basin frame and grate"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"

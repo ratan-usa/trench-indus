@@ -15,7 +15,7 @@ export default function IndustrySolutionsBanner() {
           className="absolute min-w-full min-h-full object-cover opacity-30 mix-blend-luminosity grayscale"
         >
           {/* We use paving-video.mp4 from R2 mapped through the local env variable */}
-          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/video/paving-video.mp4`} type="video/mp4" />
+          <source src={`/video/paving-video.mp4`} type="video/mp4" />
         </video>
         {/* Dark cinematic gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>

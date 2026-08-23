@@ -82,7 +82,7 @@ export default function PipingRiserFeature() {
             <div className="relative aspect-[4/3] lg:aspect-auto lg:h-full ">
 
               <Image
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5200.png`} // Placeholder path
+                src={`/assets/PAVING-RISERS/paving%20riser%201.5200.png`} // Placeholder path
                 alt="Industrial Piping Riser Components"
                 layout="fill"
                 objectFit="cover"

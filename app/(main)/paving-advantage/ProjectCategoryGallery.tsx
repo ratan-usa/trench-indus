@@ -11,37 +11,37 @@ const GALLERY_PROJECTS = [
     id: 1,
     title: "O'Hare Tarmac: Extra Heavy Duty Risers",
     category: "Airport",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/air-1.jpg`,
+    imageSrc: `/assets/projects/air-1.jpg`,
   },
   {
     id: 'commercial',
     title: "Commercial Retail Plaza: Parking Lot Drainage",
     category: "Commercial",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/comm-1.jpg`,
+    imageSrc: `/assets/projects/comm-1.jpg`,
   },
   {
     id: 3,
     title: "Logistics Hub: 50-Ton Loading Dock Grates",
     category: "Industrial",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/ind-1.jpg`,
+    imageSrc: `/assets/projects/ind-1.jpg`,
   },
   {
     id: 4,
     title: "Highway 101 Catch Basin Upgrades",
     category: "Infrastructure",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/hwy-1.jpg`,
+    imageSrc: `/assets/projects/hwy-1.jpg`,
   },
   {
     id: 5,
     title: "City Center Resurfacing: Manhole Adjustments",
     category: "Municipal",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/muni-1.jpg`,
+    imageSrc: `/assets/projects/muni-1.jpg`,
   },
   {
     id: 6,
     title: "Suburban Water Meter Box Extensions",
     category: "Residential",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/res-1.jpg`,
+    imageSrc: `/assets/projects/res-1.jpg`,
   }
 ];
 

@@ -29,7 +29,7 @@ export const blogs: BlogPost[] = [
     `,
     date: "August 12, 2026",
     author: "Engineering Team",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    image: `/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
     category: "Guides"
   },
   {
@@ -48,7 +48,7 @@ export const blogs: BlogPost[] = [
     `,
     date: "July 28, 2026",
     author: "Technical Sales",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
+    image: `/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
     category: "Technical Analysis"
   },
   {
@@ -67,7 +67,7 @@ export const blogs: BlogPost[] = [
     `,
     date: "July 05, 2026",
     author: "Project Management",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
+    image: `/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
     category: "Case Studies"
   },
   {
@@ -88,7 +88,7 @@ export const blogs: BlogPost[] = [
     `,
     date: "June 19, 2026",
     author: "Materials Engineering",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`,
+    image: `/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`,
     category: "Materials"
   }
 ];

@@ -8,7 +8,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Exceed your city inspectors' expectations with access to thousands of DOT-approved, professional-grade adjustment risers and catch basin frames.",
     linkText: 'Explore municipal solutions',
     href: '#municipal',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20with%20screws.600.png`
+    imageSrc: `/paving/paving%20riser%20with%20screws.600.png`
   },
   {
     id: 'commercial',
@@ -16,7 +16,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Depend on Ben & Ben's as the big-job solution for commercial contractors. We supply the heavy-duty grading rings needed for high-traffic retail plazas and parking structures.",
     linkText: 'Find commercial solutions',
     href: '#commercial',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Sqaure%20Riser%20Coated%20Finish.611.png`
+    imageSrc: `/paving/Sqaure%20Riser%20Coated%20Finish.611.png`
   },
   {
     id: 'logistics',
@@ -24,7 +24,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Save time, cut costs, and optimize your jobsite operations by using us as your single-source supplier for direct-to-site delivery of all your cast iron and steel needs.",
     linkText: 'Discover logistics support',
     href: '#logistics',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Round%20Riser%20Coated%20Finish.612.png`
+    imageSrc: `/paving/Round%20Riser%20Coated%20Finish.612.png`
   },
   {
     id: 'fabrication',
@@ -32,7 +32,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Take advantage of our extensive fabrication facilities. We custom-weld non-standard rectangular inlets, sloped seats, and extra-heavy-duty frames to your exact specs.",
     linkText: 'Explore fabrication',
     href: '#fabrication',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`
+    imageSrc: `/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`
   },
   {
     id: 'water',
@@ -40,7 +40,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Keep essential utilities accessible with our huge inventory of solid and expandable valve box risers, designed specifically for water distribution and sanitary sewer rehab.",
     linkText: 'Discover water solutions',
     href: '#water',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png`
+    imageSrc: `/paving/D%20shape%20Riser%20with%20coated%20Finish.633.png`
   },
   {
     id: 'industrial',
@@ -48,7 +48,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Expect more from your infrastructure. We supply specialized 50-ton shock load grates and specialized access covers for factory and logistics center applications.",
     linkText: 'Explore industrial solutions',
     href: '#industrial',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201%20coated.655.png`
+    imageSrc: `/paving/paving%20riser%201%20coated.655.png`
   },
   {
     id: 'utilities',
@@ -56,7 +56,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Access our deep inventory of standard and expandable adjustment rings. See for yourself why utility contractors rely on us to keep manholes and valve vaults precision aligned with final grade.",
     linkText: 'Find utility solutions',
     href: '#utilities',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%202%20coated.649.png`
+    imageSrc: `/paving/paving%20riser%202%20coated.649.png`
   },
   {
     id: 'stormwater',
@@ -64,7 +64,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "Rely on our watertight grade rings and heavy-duty catch basin frames for critical sanitary sewer and stormwater infrastructure projects to prevent inflow and infiltration.",
     linkText: 'Explore stormwater solutions',
     href: '#stormwater',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%203%20coated.644.png`
+    imageSrc: `/paving/paving%20riser%203%20coated.644.png`
   },
   {
     id: 'residential',
@@ -72,7 +72,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "From new neighborhood developments to HOA road resurfacing, we provide personalized support and a full catalog of curb inlets and meter box risers to keep your paving crews moving.",
     linkText: 'Explore residential solutions',
     href: '#residential',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20coated.670.png`
+    imageSrc: `/paving/paving%20riser%20rectangle%20coated.670.png`
   },
   {
     id: 'heavy-infrastructure',
@@ -80,7 +80,7 @@ const INDUSTRY_SOLUTIONS = [
     description: "From pre-bid planning to the final paving pass, Ben & Ben's operates on a massive scale to supply complex highway and airport expansions through single-source fabrication and dedicated logistics.",
     linkText: 'Partner on mega-projects',
     href: '#heavy-infrastructure',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20Square%20coated.665.png`
+    imageSrc: `/paving/paving%20riser%20Square%20coated.665.png`
   }
 ];
 

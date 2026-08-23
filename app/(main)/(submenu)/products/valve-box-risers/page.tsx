@@ -14,10 +14,10 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/6.359.jpg.jpeg` },
-  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg` },
-  { name: 'Fabricated Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/3.356.jpg.jpeg` },
-  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/5.358.jpg.jpeg` },
+  { name: 'Raw Finish', image: `/images/Valve_box_riser/6.359.jpg.jpeg` },
+  { name: 'Coated Finish', image: `/images/Valve_box_riser/1.5.354.jpg.jpeg` },
+  { name: 'Fabricated Steel', image: `/images/Valve_box_riser/3.356.jpg.jpeg` },
+  { name: 'Cast Iron', image: `/images/Valve_box_riser/5.358.jpg.jpeg` },
 ];
 
 export default function ValveBoxRisersPage() {

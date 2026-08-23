@@ -116,7 +116,7 @@ export default function SmartInfraSection() {
               <p className="text-sm text-zinc-400">Specially milled access configurations designed to accommodate automated subterranean survey crawlers without human entry.</p>
             </div>
             {/* Add an actual image here if you have one */}
-            {/* <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/robot-crawler.jpg`} alt="Robotic Access" fill className="object-cover opacity-30 mix-blend-luminosity" /> */}
+            {/* <Image src={`/assets/robot-crawler.jpg`} alt="Robotic Access" fill className="object-cover opacity-30 mix-blend-luminosity" /> */}
           </div>
         </div>
 

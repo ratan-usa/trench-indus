@@ -8,7 +8,7 @@ const RESOURCES = [
         id: 'about',
         title: 'About Us',
         description: 'Learn about Trench Industries\' commitment to producing the highest quality Trench Industries and infrastructure solutions for municipal applications.',
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20iron.668.png`,
+        imageSrc: `/paving/paving%20riser%20rectangle%20iron.668.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#about-us'
     },
@@ -16,7 +16,7 @@ const RESOURCES = [
         id: 'usa',
         title: 'Made in the USA',
         description: 'Committed to providing American-made steel and cast iron products to build and sustain America\'s critical infrastructure.',
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%201.641.png`,
+        imageSrc: `/paving/paving%20riser%201.641.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#made-in-usa'
     },
@@ -24,7 +24,7 @@ const RESOURCES = [
         id: 'history',
         title: 'Company History',
         description: 'A legacy built on heavy iron. Discover how our foundry operations have evolved to meet modern DOT and highway standards over the decades.',
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png`,
+        imageSrc: `/paving/D_shape_Riser_Raw_Finish.602.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#history'
     },
@@ -32,7 +32,7 @@ const RESOURCES = [
         id: 'specs',
         title: 'Product Briefs',
         description: 'Download detailed spec sheets, load ratings, and installation guides for our complete line of fixed and expandable adjustment risers.',
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`,
+        imageSrc: `/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#product-briefs'
     }

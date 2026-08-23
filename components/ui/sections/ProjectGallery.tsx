@@ -26,13 +26,13 @@ const PROJECTS = [
     id: 101,
     title: "Ben & Ben's City Center Resurfacing: Manhole Adustments",
     category: "Municipal Roadways",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/muni-1.jpg`,
+    imageSrc: `/assets/projects/muni-1.jpg`,
   },
   {
     id: 102,
     title: "Main St. Storm Drain Upgrade by Ben & Ben's",
     category: "Municipal Roadways",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/muni-2.jpg`,
+    imageSrc: `/assets/projects/muni-2.jpg`,
   },
 
   // 2. Commercial Developments
@@ -40,19 +40,19 @@ const PROJECTS = [
     id: 201,
     title: "Ben & Ben's Retail Plaza: Parking Lot Drainage",
     category: "Commercial Dept",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/comm-1.jpg`,
+    imageSrc: `/assets/projects/comm-1.jpg`,
   },
   {
     id: 202,
     title: "Tech Park Utility Access Frames",
     category: "Commercial Dept",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/comm-2.jpg`,
+    imageSrc: `/assets/projects/comm-2.jpg`,
   },
   {
     id: 203,
     title: "Ben & Ben's Hotel Driveway: Leveling Risers",
     category: "Commercial Dept",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/comm-3.jpg`,
+    imageSrc: `/assets/projects/comm-3.jpg`,
   },
 
   // 3. Industrial Heavy Duty
@@ -60,13 +60,13 @@ const PROJECTS = [
     id: 301,
     title: "Ben & Ben's Logistics Hub: 50-Ton Loading Dock",
     category: "Industrial Heavy",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/ind-1.jpg`,
+    imageSrc: `/assets/projects/ind-1.jpg`,
   },
   {
     id: 302,
     title: "Factory Waste Water Access Points",
     category: "Industrial Heavy",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/ind-2.jpg`,
+    imageSrc: `/assets/projects/ind-2.jpg`,
   },
 
   // 4. Residential Subdivisions
@@ -74,13 +74,13 @@ const PROJECTS = [
     id: 401,
     title: "Ben & Ben's Oakwood Estates: Curb Inlets",
     category: "Residential",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/res-1.jpg`,
+    imageSrc: `/assets/projects/res-1.jpg`,
   },
   {
     id: 402,
     title: "Suburban Water Meter Box Risers",
     category: "Residential",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/res-2.jpg`,
+    imageSrc: `/assets/projects/res-2.jpg`,
   },
 
   // 5. Highway & DOT
@@ -88,13 +88,13 @@ const PROJECTS = [
     id: 501,
     title: "Ben & Ben's Interstate 95: High Speed Grates",
     category: "Highway & DOT",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/hwy-1.jpg`,
+    imageSrc: `/assets/projects/hwy-1.jpg`,
   },
   {
     id: 502,
     title: "State Route 9 Bridge Scupper Drains",
     category: "Highway & DOT",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/hwy-2.jpg`,
+    imageSrc: `/assets/projects/hwy-2.jpg`,
   },
 
   // 6. Airport Infrastructure
@@ -102,13 +102,13 @@ const PROJECTS = [
     id: 601,
     title: "Ben & Ben's Tarmac Repair: Extra Heavy Duty Risers",
     category: "Airport Infra",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/air-1.jpg`,
+    imageSrc: `/assets/projects/air-1.jpg`,
   },
   {
     id: 602,
     title: "Runway Lighting & Utility Vault Access",
     category: "Airport Infra",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/air-2.jpg`,
+    imageSrc: `/assets/projects/air-2.jpg`,
   },
 
   // 7. Water & Sewer Utilities
@@ -116,13 +116,13 @@ const PROJECTS = [
     id: 701,
     title: "Sanitary Sewer Rehab: Watertight Frames",
     category: "Water & Sewer",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/water-1.jpg`,
+    imageSrc: `/assets/projects/water-1.jpg`,
   },
   {
     id: 702,
     title: "Ben & Ben's Water Main Valve Box Extensions",
     category: "Water & Sewer",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/water-2.jpg`,
+    imageSrc: `/assets/projects/water-2.jpg`,
   },
 
   // 8. Telecommunications
@@ -130,13 +130,13 @@ const PROJECTS = [
     id: 801,
     title: "Ben & Ben's Fiber Optic Vault Risers",
     category: "Telecom Utility",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/tel-1.jpg`,
+    imageSrc: `/assets/projects/tel-1.jpg`,
   },
   {
     id: 802,
     title: "Data Center Underground Utility Access",
     category: "Telecom Utility",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/tel-2.jpg`,
+    imageSrc: `/assets/projects/tel-2.jpg`,
   },
 
   // 9. Parks & Recreation
@@ -144,13 +144,13 @@ const PROJECTS = [
     id: 901,
     title: "City Park Walkways: Decorative Catch Basins",
     category: "Parks & Rec",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/park-1.jpg`,
+    imageSrc: `/assets/projects/park-1.jpg`,
   },
   {
     id: 902,
     title: "Ben & Ben's Sports Complex Field Drainage",
     category: "Parks & Rec",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/park-2.jpg`,
+    imageSrc: `/assets/projects/park-2.jpg`,
   },
 
   // 10. Custom Fabrication
@@ -158,13 +158,13 @@ const PROJECTS = [
     id: 1001,
     title: "Ben & Ben's Historic District: Custom Iron Risers",
     category: "Custom Fab",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/cust-1.jpg`,
+    imageSrc: `/assets/projects/cust-1.jpg`,
   },
   {
     id: 1002,
     title: "Oversized Rectangular Inlet Fabrication",
     category: "Custom Fab",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/projects/cust-2.jpg`,
+    imageSrc: `/assets/projects/cust-2.jpg`,
   }
 ];
 export default function ProjectGallery() {

@@ -35,7 +35,7 @@ export default function InfiniteRiserShowcase() {
                         {/* <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <Image
-                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
+                                    src={`/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
                                     alt="Round Adjustable Riser"
                                     fill
                                     sizes="(max-width: 1024px) 100vw, 50vw"

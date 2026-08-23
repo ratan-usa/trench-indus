@@ -43,7 +43,7 @@ export default function ServiceLogistics() {
             <div className="relative w-full h-64 md:h-full min-h-[350px] overflow-hidden rounded-sm shadow-sm border border-gray-100">
               {/* Replace the src with an actual image of a delivery truck or jobsite staging area */}
               <Image
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5200.png`}
+                src={`/assets/PAVING-RISERS/paving%20riser%201.5200.png`}
                 alt="Trench Industries Delivery Truck at Jobsite"
                 fill
                 className="object-cover"
