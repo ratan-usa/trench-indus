@@ -48,7 +48,7 @@ export default function InfiniteRiserShowcase() {
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
-                                    src={`/Videos/1_to_23.2400.mp4`}
+                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1_to_23.2400.mp4`}
                                     
                                     
                                     
@@ -158,7 +158,7 @@ export default function InfiniteRiserShowcase() {
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
-                                    src={`/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4`}
+                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4`}
                                     
                                     
                                     
