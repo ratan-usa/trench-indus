@@ -108,11 +108,11 @@ export default function HeavyFooter() {
             <div className="flex items-center gap-3">
               <Construction className="w-8 h-8 text-[#CC0000]" />
               <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase text-white group-hover:text-[#CC0000] transition-colors duration-500">
-                PAVING <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.8)' }}>RISERS</span>
+                TRENCH <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.8)' }}>INDUSTRIES</span>
               </h2>
             </div>
             <p className="text-xs font-mono text-gray-500 uppercase tracking-widest pl-11">
-              Paving America Miles By Miles
+              TRENCH America Miles By Miles
             </p>
           </div>
           
@@ -258,7 +258,7 @@ export default function HeavyFooter() {
 
       {/* --- BOTTOM LEGAL --- */}
       <div className="w-full px-6 md:px-8 lg:px-12 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-[10px] font-mono uppercase tracking-widest gap-4">
-        <p>&copy; {new Date().getFullYear()} Paving Risers. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Trench Industries. All Rights Reserved.</p>
         <div className="flex gap-8">
           <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
           <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>

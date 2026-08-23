@@ -40,7 +40,7 @@ export default function FoundryLocationsPage() {
           </h1>
           
           <p className="text-xl text-zinc-400 font-medium leading-relaxed max-w-2xl border-l-4 border-[#CC0000] pl-6 bg-black/40 p-4 backdrop-blur-sm">
-            Strategically positioned manufacturing and distribution hubs ensuring rapid deployment of DOT-approved paving risers across the Eastern Seaboard.
+            Strategically positioned manufacturing and distribution hubs ensuring rapid deployment of DOT-approved Trench Industries across the Eastern Seaboard.
           </p>
         </div>
       </div>

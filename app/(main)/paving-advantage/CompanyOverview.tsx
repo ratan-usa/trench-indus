@@ -19,7 +19,7 @@ const OVERVIEW_DATA = [
   {
     id: 'distribution-network',
     title: 'Distribution Network',
-    description: 'Paving Risers and access solutions are available nationwide at our internal stocking locations and directly through our extensive network of heavy-materials distribution partners.',
+    description: 'Trench Industries and access solutions are available nationwide at our internal stocking locations and directly through our extensive network of heavy-materials distribution partners.',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/d-shape.png`, // Replace with an aerial shot of a large stocking yard or distribution center
     altText: 'Large outdoor inventory yard filled with infrastructure products'
   }

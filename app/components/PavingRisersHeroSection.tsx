@@ -22,7 +22,7 @@ export default function PavingRisersHeroSection() {
             </div>
 
             <p className="text-slate-600 text-lg leading-relaxed font-medium max-w-xl">
-              Ditch the complex setups and mortar beds. Our specialized paving risers unlock quick installs on-site while preserving precision structural alignments under demanding municipal loads.
+              Ditch the complex setups and mortar beds. Our specialized Trench Industries unlock quick installs on-site while preserving precision structural alignments under demanding municipal loads.
             </p>
 
             {/* THE THREE CONTRACTOR BULLET PILLARS */}
@@ -64,7 +64,7 @@ export default function PavingRisersHeroSection() {
                 
                 preload="auto"
                 className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
-                title="Paving Risers Factory Production Footage"
+                title="Trench Industries Factory Production Footage"
               />
               <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10" />
               <div className="absolute top-4 left-4 bg-[#0F0F0F]/80 backdrop-blur-sm text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm flex items-center gap-2 pointer-events-none z-20">

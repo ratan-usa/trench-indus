@@ -69,7 +69,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
   terraces: [
     {
       id: 'terraces-1',
-      title: "Adjustable Paving Risers",
+      title: "Adjustable Trench Industries",
       icon: <Grid className="w-5 h-5" />,
       description: "Heavy-duty millimeter-precise elevation units optimized for dimensional granite and architectural slab tiles.",
       href: "/solutions/adjustable-paving-risers",

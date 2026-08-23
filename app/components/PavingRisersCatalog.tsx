@@ -68,7 +68,7 @@ export default function PavingRisersSection() {
                         Built to <span className="text-[#CC0000]">Last</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 font-bold uppercase tracking-widest italic">
-                        Professional Grade Paving Risers. <br />
+                        Professional Grade Trench Industries. <br />
                         <span className="text-white">Iron • Ductile Iron • Aluminum</span>
                     </p>
 

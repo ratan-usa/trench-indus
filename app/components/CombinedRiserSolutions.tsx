@@ -25,7 +25,7 @@ const RISER_SECTIONS = [
     theme: "light",
     overline: "Municipal Solutions",
     title: "Cast Iron",
-    highlightText: "Paving Risers",
+    highlightText: "Trench Industries",
     description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
     features: [

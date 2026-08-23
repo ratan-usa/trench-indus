@@ -7,7 +7,7 @@ const RESOURCES = [
     {
         id: 'about',
         title: 'About Us',
-        description: 'Learn about Paving Risers\' commitment to producing the highest quality paving risers and infrastructure solutions for municipal applications.',
+        description: 'Learn about Trench Industries\' commitment to producing the highest quality Trench Industries and infrastructure solutions for municipal applications.',
         imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/paving%20riser%20rectangle%20iron.668.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#about-us'
@@ -54,7 +54,7 @@ export default function AdditionalResources() {
                             Project <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px #CC0000' }}>Resources</span>
                         </h2>
                         <p className="text-gray-400 font-mono text-sm uppercase tracking-widest leading-relaxed">
-                            Talk to an expert at Paving Risers to find out how our adjustment risers can work for your next project.
+                            Talk to an expert at Trench Industries to find out how our adjustment risers can work for your next project.
                         </p>
                     </div>
                     

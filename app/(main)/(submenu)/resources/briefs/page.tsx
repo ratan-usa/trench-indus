@@ -47,7 +47,7 @@ export default function EngineeringBriefsPage() {
           </h1>
           
           <p className="text-xl text-zinc-400 font-medium leading-relaxed max-w-2xl border-l-4 border-[#CC0000] pl-6">
-            In-depth technical whitepapers, kinetic load analyses, and mechanical deep-dives into the design philosophy behind Paving Risers.
+            In-depth technical whitepapers, kinetic load analyses, and mechanical deep-dives into the design philosophy behind Trench Industries.
           </p>
         </div>
 

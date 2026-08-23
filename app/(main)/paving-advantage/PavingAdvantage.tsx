@@ -52,7 +52,7 @@ export default function PavingAdvantage() {
 
           <div className="max-w-md">
             <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium">
-              We're here to support your next infrastructure or roadwork project. Our sales team at Paving Risers understands your local market and can guide you to the best options from our extensive catalog.
+              We're here to support your next infrastructure or roadwork project. Our sales team at Trench Industries understands your local market and can guide you to the best options from our extensive catalog.
             </p>
           </div>
 

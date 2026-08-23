@@ -81,7 +81,7 @@ export default function PavingProductsTable() {
               Complete <span className="text-[#CC0000]">Specifications</span>
             </h2>
             <p className="text-zinc-400 font-medium max-w-2xl text-lg">
-              Search our comprehensive database of paving risers, adjustment rings, and catch basins. Filter by size, material, or paving number.
+              Search our comprehensive database of Trench Industries, adjustment rings, and catch basins. Filter by size, material, or paving number.
             </p>
           </div>
 

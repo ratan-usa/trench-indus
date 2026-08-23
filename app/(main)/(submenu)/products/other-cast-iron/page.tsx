@@ -68,7 +68,7 @@ export default function OtherCastIronPage() {
           </h1>
 
           <p className="text-xl text-zinc-400 font-medium max-w-2xl mx-auto leading-relaxed">
-            Beyond standard paving risers, our foundry produces a massive array of heavy-duty municipal and commercial cast iron infrastructure products.
+            Beyond standard Trench Industries, our foundry produces a massive array of heavy-duty municipal and commercial cast iron infrastructure products.
           </p>
         </div>
 

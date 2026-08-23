@@ -87,7 +87,7 @@ export default function LocalDistribution() {
           <div className="absolute top-0 left-0 w-1 h-full bg-[#CC0000]" />
           
           <p className="text-gray-400 text-sm md:text-base leading-loose font-medium relative z-10">
-            Our nationwide distribution network, <Link href="#manufacturing" className="text-white hover:text-[#CC0000] underline decoration-[#333] hover:decoration-[#CC0000] transition-colors">USA-based manufacturing facilities</Link>, and <Link href="#sales" className="text-white hover:text-[#CC0000] underline decoration-[#333] hover:decoration-[#CC0000] transition-colors">regional sales hubs</Link> put us in the perfect position to back our paving risers with real, responsive customer service. Because we understand local municipal and state DOT standards inside and out, our regional production lines keep the exact cast iron and steel components you need within quick reach of your jobsite.
+            Our nationwide distribution network, <Link href="#manufacturing" className="text-white hover:text-[#CC0000] underline decoration-[#333] hover:decoration-[#CC0000] transition-colors">USA-based manufacturing facilities</Link>, and <Link href="#sales" className="text-white hover:text-[#CC0000] underline decoration-[#333] hover:decoration-[#CC0000] transition-colors">regional sales hubs</Link> put us in the perfect position to back our Trench Industries with real, responsive customer service. Because we understand local municipal and state DOT standards inside and out, our regional production lines keep the exact cast iron and steel components you need within quick reach of your jobsite.
           </p>
         </div>
 

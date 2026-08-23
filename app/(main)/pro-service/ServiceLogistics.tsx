@@ -10,7 +10,7 @@ export default function ServiceLogistics() {
         {/* --- TOP HEADER & INTRO --- */}
         <div className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            How Paving Risers supports your crew
+            How Trench Industries supports your crew
           </h2>
           <p className="text-gray-700 text-base md:text-lg max-w-4xl leading-relaxed">
             We provide expert support for every stage of your paving and infrastructure projects. Discover how you can keep your jobsite fully stocked, cut down on installation time, and keep your paving crews moving with our dedicated supply and logistics services.
@@ -44,7 +44,7 @@ export default function ServiceLogistics() {
               {/* Replace the src with an actual image of a delivery truck or jobsite staging area */}
               <Image
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/PAVING-RISERS/paving%20riser%201.5200.png`}
-                alt="Paving Risers Delivery Truck at Jobsite"
+                alt="Trench Industries Delivery Truck at Jobsite"
                 fill
                 className="object-cover"
               />

@@ -21,7 +21,7 @@ const SOLUTIONS_DB = [
     title: 'Storm Drainage Solutions',
     subtitle: 'Catch basin risers and trench grates designed for efficient municipal stormwater management.',
     heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image3.jpeg`,
-    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Paving Risers provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
+    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Trench Industries provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
     benefits: [
       { title: 'Heavy-Duty Grate Compatibility', desc: 'Fits all standard bicycle-safe and heavy-traffic grates.' },
       { title: 'Custom Sloping', desc: 'Tapered designs to match precise street gradients.' },

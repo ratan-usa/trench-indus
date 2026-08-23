@@ -26,7 +26,7 @@ export const PRODUCT_DATA: Product[] = [
     {
         id: 'round',
         slug: 'round-risers',
-        title: 'Round Paving Risers',
+        title: 'Round Trench Industries',
         materials: ['Cast Iron', 'Ductile Iron', 'Steel'],
         description: 'Standard round risers for manholes and catch basins.',
         specs: {
@@ -134,7 +134,7 @@ export const PRODUCT_DATA: Product[] = [
     {
         id: 'paving-riser-screws',
         slug: 'paving-risers-with-screws',
-        title: 'Paving Risers with Screws',
+        title: 'Trench Industries with Screws',
         materials: ['Ductile Iron', 'Cast Iron'],
         description: 'Heavy duty riser systems featuring secure locking set screws for high traffic roadways and highways.',
         specs: {

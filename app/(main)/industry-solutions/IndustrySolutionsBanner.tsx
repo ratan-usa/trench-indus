@@ -39,7 +39,7 @@ export default function IndustrySolutionsBanner() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-300 to-gray-600">Solutions</span>
             </h1>
             <p className="mt-8 text-gray-400 font-medium max-w-2xl text-sm md:text-base uppercase tracking-widest leading-loose animate-in fade-in duration-1000 delay-300">
-              Expect heavy-duty, field-tested paving risers and infrastructure solutions from the industry experts to help your crew finish every municipal and commercial job on time.
+              Expect heavy-duty, field-tested Trench Industries and infrastructure solutions from the industry experts to help your crew finish every municipal and commercial job on time.
             </p>
           </div>
 

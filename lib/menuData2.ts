@@ -953,13 +953,13 @@ export const menuData = {
 
     categories: [
 
-      // 1) Adjustable Paving Risers
+      // 1) Adjustable Trench Industries
       {
         name: "ADJUSTABLE PAVING RISERS",
         slug: "adjustable-paving-risers",
         image: "/assets/PAVING-RISERS/paving riser 1.5200.png",
         description:
-          "Height-adjustable paving risers designed for raised flooring, terraces, rooftops and outdoor decking applications.",
+          "Height-adjustable Trench Industries designed for raised flooring, terraces, rooftops and outdoor decking applications.",
         videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/paving_riser/paving riser 1.5213.mp4",
         items: [
           "Wide height adjustment range",

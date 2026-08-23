@@ -14,7 +14,7 @@ const HERO_SLIDES = [
         title: "Paving & Riser Systems",
         subtitle: "Precision grade control for streets and roadways.",
         description:
-            "Fixed and adjustable paving risers designed for accurate elevation control of manholes and catch basins. Built for long-term roadway performance.",
+            "Fixed and adjustable Trench Industries designed for accurate elevation control of manholes and catch basins. Built for long-term roadway performance.",
         cta: "View Products",
         link: "/products/paving-risers",
         imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Iron.623.png`

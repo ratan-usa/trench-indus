@@ -28,7 +28,7 @@ const data: ProductDataItem[] = [
     imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`,
     HOTSPOTS: [
       { id: 101, x: '33%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
-      { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Paving Risers' },
+      { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Trench Industries' },
       { id: 103, x: '68%', y: '60%', title: 'Durable Finish', desc: 'Heavy-Duty Cast Iron Construction' },
     ]
   },

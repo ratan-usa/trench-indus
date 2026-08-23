@@ -15,7 +15,7 @@ export const blogs: BlogPost[] = [
     id: "1",
     slug: "the-ultimate-guide-to-adjustable-risers",
     title: "The Ultimate Guide to Adjustable Risers",
-    excerpt: "Discover how adjustable paving risers can eliminate costly road reconstruction and dramatically reduce closure times.",
+    excerpt: "Discover how adjustable Trench Industries can eliminate costly road reconstruction and dramatically reduce closure times.",
     content: `
       ## Why Choose Adjustable Risers?
       When resurfacing roads, municipalities and paving contractors often struggle with aligning existing manholes to the new grade. Adjustable risers offer a seamless mechanical expansion mechanism that locks directly into the existing frame.
@@ -77,7 +77,7 @@ export const blogs: BlogPost[] = [
     excerpt: "Water-based bitumen, hot-dip galvanizing, and powder coatings: which finish is right for your environment?",
     content: `
       ## Protecting the Investment
-      Underground utility infrastructure is subjected to harsh environments, including road salts, acidic soils, and constant moisture. Choosing the right coating is critical for the lifespan of your paving risers.
+      Underground utility infrastructure is subjected to harsh environments, including road salts, acidic soils, and constant moisture. Choosing the right coating is critical for the lifespan of your Trench Industries.
       
       ### Coating Options
       - **Water-Based Bitumen**: An environmentally friendly standard that provides excellent basic moisture barriers.

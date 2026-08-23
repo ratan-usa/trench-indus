@@ -9,7 +9,7 @@ export default function OrderOptions() {
         {/* --- HEADER --- */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-            Order Paving Risers your way
+            Order Trench Industries your way
           </h2>
           <p className="text-gray-700 text-base md:text-lg">
             On the jobsite, in the truck, or at the office—get the heavy-duty adjustment rings and frames you need, exactly how you want to buy them.

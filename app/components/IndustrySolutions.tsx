@@ -93,7 +93,7 @@ export default function IndustrySolutions() {
                         Industry <span className="text-[#CC0000]">Solutions</span>
                     </h2>
                     <p className="text-gray-500 font-medium max-w-2xl mx-auto text-lg">
-                        Paving Risers delivers DOT-approved infrastructure solutions for municipalities and contractors across the USA.
+                        Trench Industries delivers DOT-approved infrastructure solutions for municipalities and contractors across the USA.
                     </p>
                 </div>
 

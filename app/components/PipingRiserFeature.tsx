@@ -27,11 +27,11 @@ export default function PipingRiserFeature() {
               </div>
 
               <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                High-Integrity <span className="text-[#CC0000]">Paving Risers</span> & Vertical Assemblies
+                High-Integrity <span className="text-[#CC0000]">Trench Industries</span> & Vertical Assemblies
               </h3>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Paving Risers provides precision-cast and forged components for specialized vertical piping risers used in demanding environments—from offshore drilling to high-pressure chemical plants.
+                Trench Industries provides precision-cast and forged components for specialized vertical piping risers used in demanding environments—from offshore drilling to high-pressure chemical plants.
               </p>
 
               {/* Feature List */}

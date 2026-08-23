@@ -17,23 +17,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Paving Risers",
-    template: "%s | Paving Risers",
+    default: "Trench Industries",
+    template: "%s | Trench Industries",
   },
-  description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",
-  metadataBase: new URL('https://www.pavingrisers.com'),
+  description: "Professional Grade Infrastructure Solutions",
+  metadataBase: new URL('https://www.trench-industries.com'),
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
-    apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
+    icon: `/images/favicon.png`,
+    apple: `/images/favicon.png`,
   },
   openGraph: {
-    title: 'Paving Risers',
+    title: 'Trench Industries',
     description: 'Professional Grade Infrastructure Solutions',
-    url: 'https://www.pavingrisers.com',
-    siteName: 'Paving Risers',
+    url: 'https://www.trench-industries.com',
+    siteName: 'Trench Industries',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
+        url: `/images/favicon.png`,
         width: 1200,
         height: 630,
       },
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Paving Risers',
-    description: 'Heavy-duty adjustment rings and paving access solutions.',
-    images: [`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`],
+    title: 'Trench Industries',
+    description: 'Professional Grade Infrastructure Solutions',
+    images: [`/images/favicon.png`],
   },
   robots: {
     index: true,
