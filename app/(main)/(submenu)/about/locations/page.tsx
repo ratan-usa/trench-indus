@@ -81,7 +81,7 @@ export default function FoundryLocationsPage() {
                   </div>
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>
-                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@pavingrisers.com</p>
+                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@trench-industries.com</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function FoundryLocationsPage() {
                   </div>
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>
-                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@pavingrisers.com</p>
+                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@trench-industries.com</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export default function FoundryLocationsPage() {
                   </div>
                   <div className="space-y-2">
                     <p className="text-xs font-black uppercase tracking-widest text-zinc-500 mb-2 flex items-center gap-2"><Mail className="w-3 h-3" /> Email</p>
-                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@pavingrisers.com</p>
+                    <p className="text-sm font-mono font-bold text-white truncate hover:text-[#CC0000] cursor-pointer">info@trench-industries.com</p>
                   </div>
                 </div>
               </div>

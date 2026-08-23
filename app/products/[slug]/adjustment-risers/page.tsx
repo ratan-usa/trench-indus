@@ -89,7 +89,7 @@ const ProductCatalog = () => {
     <div className="bg-[#0A0A0A] min-h-screen font-sans text-white">
       {/* HERO SECTION */}
       <section className="relative w-full h-[400px] border-b border-[#333] overflow-hidden flex items-end">
-        <div className="absolute inset-0 bg-[url('https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/assets/PAVING-RISERS/d-shape.png')] bg-cover bg-center opacity-10 mix-blend-luminosity grayscale"></div>
+        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/assets/PAVING-RISERS/d-shape.png')] bg-cover bg-center opacity-10 mix-blend-luminosity grayscale"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
         
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 pb-12 flex flex-col md:flex-row justify-between items-end gap-6">

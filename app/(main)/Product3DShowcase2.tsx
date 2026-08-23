@@ -23,7 +23,7 @@ const PRODUCT_VIDEOS = [
     description: "Full rotation showing the variable trench adjustment mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: `/Videos/48-48 1.2053.mp4`,
+    src: `/Videos/48-48_1.2053.mp4`,
     thumbnail: `/images/pre-trench-04.jpg`
   },
   {
@@ -32,8 +32,8 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the trench interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `/Videos/Flexible Tree Grate.mp4`,
-    thumbnail: `/images/trench-grate-horizontal-view (12).jpeg`
+    src: `/Videos/Flexible_Tree_Grate.mp4`,
+    thumbnail: `/images/trench-grate-horizontal-view_(12).jpeg`
   },
   {
     id: 3,
@@ -41,8 +41,8 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a Trench Industries valve box installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: `/Videos/catch basin dxf.2445.mp4`,
-    thumbnail: `/images/trench-grates-img-diagonal-view (5).jpeg`
+    src: `/Videos/catch_basin_dxf.2445.mp4`,
+    thumbnail: `/images/trench-grates-img-diagonal-view_(5).jpeg`
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const PRODUCT_VIDEOS = [
     description: "Industrial strength trench grate for high traffic areas.",
     duration: "1:30",
     type: "LOAD_TEST",
-    src: `/Videos/10-36 NEW GRATE ANIAMTION normal.5110.mp4`,
+    src: `/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4`,
     thumbnail: `/images/pre-trench-06.JPG`
   },
   {
@@ -59,8 +59,8 @@ const PRODUCT_VIDEOS = [
     description: "Adaptable trench system designed for urban landscaping.",
     duration: "2:15",
     type: "ANIMATION",
-    src: `/Videos/dxf tree grate.2293.mp4`,
-    thumbnail: `/images/trench-grates-img-diagonal-view (8).jpeg`
+    src: `/Videos/dxf_tree_grate.2293.mp4`,
+    thumbnail: `/images/trench-grates-img-diagonal-view_(8).jpeg`
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const PRODUCT_VIDEOS = [
     description: "Detailed breakdown of custom trench profiles and dimensions.",
     duration: "0:55",
     type: "360_ROTATION",
-    src: `/Videos/1 to 23.2400.mp4`,
+    src: `/Videos/1_to_23.2400.mp4`,
     thumbnail: `/images/TI-010.JPG`
   }
 ];

@@ -80,7 +80,7 @@ const FixedQuoteBtn = () => {
 
         {/* C. Email */}
         <Link
-          href="mailto:sales@pavingrisers.com"
+          href="mailto:sales@trench-industries.com"
           className="
             w-12 h-12 flex items-center justify-center 
             bg-[#CC0000] hover:bg-[#0F0F0F] text-white 

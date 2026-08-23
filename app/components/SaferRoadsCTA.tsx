@@ -12,7 +12,7 @@ export default function SaferRoadsCTA() {
       {/* Background Graphic Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Subtle dot pattern */}
-        <div className="absolute inset-0 bg-[url('https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/images/dot-pattern.svg')] opacity-5" />
+        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/images/dot-pattern.svg')] opacity-5" />
         
         {/* Red Glows */}
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px] -translate-y-1/2" />
@@ -39,7 +39,7 @@ export default function SaferRoadsCTA() {
           className="text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-white leading-none max-w-5xl mb-6"
         >
           Our roads will be safer with <br className="hidden md:block" />
-          <span className="text-[#CC0000]">PavingRisers.com</span>
+          <span className="text-[#CC0000]">TrenchIndustries.com</span>
         </motion.h2>
 
         <motion.p 

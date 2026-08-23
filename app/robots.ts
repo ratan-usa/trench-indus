@@ -21,6 +21,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'yahoo-blogs/v3.9', allow: '/' },
       { userAgent: '*', allow: '/', disallow: '/cgi-bin/' },
     ],
-    sitemap: 'https://www.pavingrisers.com/sitemap.xml',
+    sitemap: 'https://www.trench-industries.com/sitemap.xml',
   }
 }

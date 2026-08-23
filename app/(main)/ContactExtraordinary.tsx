@@ -102,7 +102,7 @@ export default function ContactExtraordinary() {
                 </div>
                 <div>
                   <p className="text-zinc-500 text-sm font-bold uppercase tracking-wider mb-1">Send Blueprints</p>
-                  <p className="text-white text-xl font-medium">info@pavingrisers.com</p>
+                  <p className="text-white text-xl font-medium">info@trench-industries.com</p>
                 </div>
               </div>
             </div>
