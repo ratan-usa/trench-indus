@@ -19,30 +19,57 @@ import { cn } from "@/lib/utils";
 const PRODUCT_VIDEOS = [
   {
     id: 1,
-    title: "Round Riser",
-    description: "Full rotation showing the variable height adjustment ring mechanism.",
+    title: "Standard Trench",
+    description: "Full rotation showing the variable trench adjustment mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/paving_riser_solid_ring_utilisation_animation.676.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`
+    src: `/Videos/48-48 1.2053.mp4`,
+    thumbnail: `/images/pre-trench-04.jpg`
   },
   {
     id: 2,
-    title: "Square Riser",
-    description: "Technical breakdown of the corner interlocking system and frame strength.",
+    title: "Square Trench",
+    description: "Technical breakdown of the trench interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.719.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
+    src: `/Videos/Flexible Tree Grate.mp4`,
+    thumbnail: `/images/trench-grate-horizontal-view (12).jpeg`
   },
   {
     id: 3,
-    title: "Valve Box Riser",
-    description: "Step-by-step 3D animation of a standard valve box riser installation.",
+    title: "Trench Valve Box",
+    description: "Step-by-step 3D animation of a Trench Industries valve box installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
+    src: `/Videos/catch basin dxf.2445.mp4`,
+    thumbnail: `/images/trench-grates-img-diagonal-view (5).jpeg`
+  },
+  {
+    id: 4,
+    title: "Heavy Duty Grate",
+    description: "Industrial strength trench grate for high traffic areas.",
+    duration: "1:30",
+    type: "LOAD_TEST",
+    src: `/Videos/10-36 NEW GRATE ANIAMTION normal.5110.mp4`,
+    thumbnail: `/images/pre-trench-06.JPG`
+  },
+  {
+    id: 5,
+    title: "Adjustable Tree Grate",
+    description: "Adaptable trench system designed for urban landscaping.",
+    duration: "2:15",
+    type: "ANIMATION",
+    src: `/Videos/dxf tree grate.2293.mp4`,
+    thumbnail: `/images/trench-grates-img-diagonal-view (8).jpeg`
+  },
+  {
+    id: 6,
+    title: "Custom Trench Profile",
+    description: "Detailed breakdown of custom trench profiles and dimensions.",
+    duration: "0:55",
+    type: "360_ROTATION",
+    src: `/Videos/1 to 23.2400.mp4`,
+    thumbnail: `/images/TI-010.JPG`
   }
 ];
 
@@ -96,7 +123,7 @@ export default function Product3DShowcase2() {
               <Rotate3d className="w-4 h-4 text-[#CC0000]" /> Engineering Visualization
             </span>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none">
-              World of <span className="text-[#CC0000]">Risers.</span>
+              World of <span className="text-[#CC0000]">Trench.</span>
             </h2>
           </div>
 
@@ -174,7 +201,7 @@ export default function Product3DShowcase2() {
               </span>
             </div>
 
-            <div className="space-y-4 flex-grow overflow-y-auto pr-2 custom-scrollbar min-h-[300px]">
+            <div className="space-y-4 flex-grow overflow-y-auto pr-2 custom-scrollbar min-h-[300px] max-h-[400px] xl:max-h-[480px]">
               {PRODUCT_VIDEOS.map((video, idx) => {
                 const isCurrent = activeVideoIndex === idx;
                 return (

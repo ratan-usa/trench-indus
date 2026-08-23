@@ -17,10 +17,10 @@ export default function InfiniteRiserShowcase() {
                     {/* --- HEADER --- */}
                     <div className=" space-y-3">
                         <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-                            <Layers className="w-4 h-4 text-[#CC0000]" /> Adjustable Round Riser
+                            <Layers className="w-4 h-4 text-[#CC0000]" /> Adjustable Round Trench
                         </span>
                         <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
-                            See the round adjustable riser,
+                            See the round adjustable trench,
                             <span className="text-[#CC0000]"> part by part.</span>
                         </h2>
                         <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
@@ -48,7 +48,7 @@ export default function InfiniteRiserShowcase() {
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
-                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`}
+                                    src={`/Videos/1 to 23.2400.mp4`}
                                     
                                     
                                     
@@ -67,7 +67,7 @@ export default function InfiniteRiserShowcase() {
                                     Mechanical Expansion
                                 </h3>
                                 <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                    Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.
+                                    Designed to minimize full manhole frame excavations during road overlays. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
                                 </p>
                             </div>
 
@@ -104,10 +104,10 @@ export default function InfiniteRiserShowcase() {
                     {/* --- HEADER --- */}
                     <div className=" space-y-3">
                         <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-                            <Layers className="w-4 h-4 text-[#CC0000]" /> Fixed Round Riser
+                            <Layers className="w-4 h-4 text-[#CC0000]" /> Fixed Round Trench
                         </span>
                         <h2 className="text-3xl md:text-5xl font-black    uppercase tracking-tight text-white leading-none">
-                            See the round fixed riser,
+                            See the round fixed trench,
                             <span className="text-[#CC0000]"> part by part.</span>
                         </h2>
                         <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed">
@@ -128,7 +128,7 @@ export default function InfiniteRiserShowcase() {
                                     Mechanical Expansion
                                 </h3>
                                 <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                    Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.
+                                    Designed to minimize full manhole frame excavations during road overlays. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
                                 </p>
                             </div>
 
@@ -158,7 +158,7 @@ export default function InfiniteRiserShowcase() {
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
                                 <video autoPlay loop muted playsInline 
                                     suppressHydrationWarning
-                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/fixed_manhole_riser_installation.mp4`}
+                                    src={`/Videos/10-36 NEW GRATE ANIAMTION normal.5110.mp4`}
                                     
                                     
                                     

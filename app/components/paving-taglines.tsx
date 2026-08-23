@@ -58,7 +58,7 @@ export default function PavingPathHero() {
               transition={{ duration: 0.5 }}
               className="flex flex-wrap items-center gap-2 text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none"
             >
-              <span className="text-[#0F0F0F]">PAVING</span>
+              <span className="text-[#0F0F0F]">TRENCH</span>
               <span className="text-[#CC0000]">YOUR WAY</span>
             </motion.div>
 
@@ -127,7 +127,7 @@ export default function PavingPathHero() {
           >
             <Image  
               src={`/images/paving_hero.png`}
-              alt="Paving Riser Manhole Cover Assembly"
+              alt="Trench Riser Manhole Cover Assembly"
               height={400}  
               width={500}
               style={{ width: "auto", height: "auto" }}

@@ -22,16 +22,16 @@ const MATERIAL_OPTIONS = [
 ];
 
 const DESIGN_OPTIONS = [
-  "Fixed / Solid Riser",
-  "Adjustable Riser",
-  "Stackable Riser"
+  "Fixed / Solid Trench",
+  "Adjustable Trench",
+  "Stackable Trench"
 ];
 
 const APPLICATION_OPTIONS = [
-  "Manhole Risers",
-  "Catch Basin Risers",
-  "Curb Inlet Risers",
-  "Valve Box Risers"
+  "Manhole Trench",
+  "Catch Basin Trench",
+  "Curb Inlet Trench",
+  "Valve Box Trench"
 ];
 
 export default function PavingRiserClassification() {
@@ -45,7 +45,7 @@ export default function PavingRiserClassification() {
             <Layers className="w-4 h-4 text-[#CC0000]" /> Product Range
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-none">
-            The types of risers <br />
+            The types of trench <br />
             <span className="text-[#CC0000]">we make.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
