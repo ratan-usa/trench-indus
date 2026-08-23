@@ -71,6 +71,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-full relative`}
       >
         <TopNavbar />
+
+        
         <Navbar />
         {children} 
         <Footer />
