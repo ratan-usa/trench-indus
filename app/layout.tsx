@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   description: "Professional Grade Infrastructure Solutions",
   metadataBase: new URL('https://www.trench-industries.com'),
   icons: {
-    icon: `/images/favicon.png`,
-    apple: `/images/favicon.png`,
+    icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
+    apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
   },
   openGraph: {
     title: 'Trench Industries',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'Trench Industries',
     images: [
       {
-        url: `/images/favicon.png`,
+        url: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
         width: 1200,
         height: 630,
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Trench Industries',
     description: 'Professional Grade Infrastructure Solutions',
-    images: [`/images/favicon.png`],
+    images: [`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`],
   },
   robots: {
     index: true,

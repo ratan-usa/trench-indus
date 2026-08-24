@@ -40,7 +40,7 @@ const CATEGORIES = [
       { label: 'Mounting Style', value: 'Bolt-On / Hinged / Vault Seat' },
       { label: 'Design Standard', value: 'DOT Municipal Inlet Standard' }
     ],
-    image: `/images/trash_racks/tr1.21.png`
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`
   }
 ];
 

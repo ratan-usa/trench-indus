@@ -15,10 +15,10 @@ import {
 import { Button } from '@/components/ui/button';
 
 const STEEL_PRODUCTS = [
-  { id: 'custom-round', name: 'Custom Round', image: `/images/Manhole_riser/Round_Riser_Raw_Finish.613.png`, spec: '1/4" to 3/4" Rolled Steel' },
-  { id: 'custom-square', name: 'Custom Square', image: `/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png`, spec: 'A36 Carbon Steel Plate' },
-  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: `/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`, spec: 'Welded Angle Iron' },
-  { id: 'heavy-duty', name: 'Heavy Duty Rectangle', image: `/images/catch_basin_riser/Rectangle_Riser_Raw_Finish.606.png`, spec: 'Structural Channel' },
+  { id: 'custom-round', name: 'Custom Round', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`, spec: '1/4" to 3/4" Rolled Steel' },
+  { id: 'custom-square', name: 'Custom Square', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG`, spec: 'A36 Carbon Steel Plate' },
+  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`, spec: 'Welded Angle Iron' },
+  { id: 'heavy-duty', name: 'Heavy Duty Rectangle', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG`, spec: 'Structural Channel' },
 ];
 
 export default function FabricatedSteelPage() {

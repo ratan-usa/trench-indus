@@ -26,8 +26,8 @@ const RISER_SECTIONS = [
     overline: "Municipal Solutions",
     title: "Cast Iron",
     highlightText: "Trench Industries",
-    description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
-    image: `/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
+    description: "Maintain seamless urban traffic flow. Our heavy-duty solid trenches allow for precise trench elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`,
     features: [
       { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for Load Rating: See individual product specification heavy traffic loads." },
       { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
@@ -43,13 +43,13 @@ const RISER_SECTIONS = [
     id: "expandable-risers",
     theme: "dark",
     overline: "Next-Gen Adjustment",
-    title: "Paving-Adjust™",
-    highlightText: "Expandable Risers",
-    description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in expansion linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
-    image: `/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
+    title: "Trench-Adjust™",
+    highlightText: "Expandable Trenches",
+    description: "Ditch the mortar bed. Our expandable mechanical trenches feature a built-in expansion linkage that locks directly into the existing trench frame. Twist to expand, lock it in, and trench right over it.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`,
     features: [
       { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to bite into the base frame securely locks into the frame." },
-      { icon: "Timer", title: "Zero Cure Time", desc: "Paving crews can lay asphalt immediately after installation." }
+      { icon: "Timer", title: "Zero Cure Time", desc: "Trenching crews can lay asphalt immediately after installation." }
     ],
     meta: [],
     buttonText: "View Expandable Specs",
@@ -61,8 +61,8 @@ const RISER_SECTIONS = [
     overline: "Drainage Infrastructure",
     title: "Catch Basin &",
     highlightText: "Curb Inlets",
-    description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers designed specifically to raise storm grates and curb inlets to final grade.",
-    image: `/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
+    description: "Roadwork requires more than just round trench adjustments. We fabricate heavy-duty steel and cast iron rectangular trenches designed specifically to raise storm grates and curb inlets to final grade.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`,
     features: [
       { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
       { icon: "ShieldCheck", title: "Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
@@ -71,7 +71,7 @@ const RISER_SECTIONS = [
       { label: "Configurations", value: "Square, Rectangular, U-Shape" },
       { label: "Compatibility", value: "Matches DOT curb profiles" }
     ],
-    buttonText: "Explore Drainage Risers",
+    buttonText: "Explore Drainage Trenches",
     buttonLink: "#drainage"
   },
   {
@@ -79,9 +79,9 @@ const RISER_SECTIONS = [
     theme: "dark",
     overline: "Road Crowning Solutions",
     title: "Sloped &",
-    highlightText: "Tapered Risers",
-    description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
-    image: `/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    highlightText: "Tapered Trenches",
+    description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat trenches cause trench covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`,
     isComingSoon: true, // Added flag for the badge
     features: [
       { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to Slopes available per design specs." },
@@ -95,8 +95,8 @@ const RISER_SECTIONS = [
 
 
 const ADVANTAGES = [
-  { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and pave. Reduce labor costs on every single utility hole." },
-  { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" riser securely for exact elevation matching." },
+  { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and secure. Reduce labor costs on every single utility hole." },
+  { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" trench securely for exact elevation matching." },
   { icon: "Wrench", title: "No Digging", desc: "Keep jackhammers off the jobsite. Avoid digging out the concrete base structure." },
   { icon: "HardHat", title: "design to meet applicable DOT requirements", desc: "Materials and load ratings designed to designed to support muncipal compliance" }
 ];
@@ -234,9 +234,9 @@ export default function ComprehensivePavingRisersMapped() {
         <div className="w-full px-6 md:px-8 lg:px-12 mx-auto relative z-10">
 
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>
+            <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Trenching Crews Choose Us</h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto font-medium">
-              We design our risers to minimize road closure times and maximize daily paving footprints.
+              We design our trenches to minimize road closure times and maximize daily trenching footprints.
             </p>
           </div>
 

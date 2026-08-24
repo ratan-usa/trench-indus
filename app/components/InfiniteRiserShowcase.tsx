@@ -14,6 +14,7 @@ export default function InfiniteRiserShowcase() {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[140px] pointer-events-none" />
                 <div className="w-full px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
 
+
                     {/* --- HEADER --- */}
                     <div className=" space-y-3">
                         <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
@@ -31,18 +32,6 @@ export default function InfiniteRiserShowcase() {
                     {/* --- GRID DISPLAY --- */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                        {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
-                        {/* <div className="lg:col-span-6">
-                            <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <Image
-                                    src={`/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
-                                    alt="Round Adjustable Riser"
-                                    fill
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                    className="w-full h-full object-contain p-8"
-                                />
-                            </div>
-                        </div> */}
 
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">

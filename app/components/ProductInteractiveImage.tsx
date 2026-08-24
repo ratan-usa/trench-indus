@@ -22,37 +22,37 @@ interface ProductDataItem {
 
 const data: ProductDataItem[] = [
   {
-    id: 'riser-15200',
-    name: 'Class 30 Solid Iron Riser',
+    id: 'trench-15200',
+    name: 'Heavy Duty Trench Grate',
     type: 'Standard Circular Profile',
-    imgSrc: `/images/Manhole_riser/Round_Riser_iron_Finish.614.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`,
     HOTSPOTS: [
-      { id: 101, x: '33%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Risers' },
+      { id: 101, x: '33%', y: '40%', title: 'Precision Angles', desc: 'Sloped & Tapered Profiles' },
       { id: 102, x: '41%', y: '66%', title: 'Bulk Ready', desc: 'Cast Iron Trench Industries' },
       { id: 103, x: '68%', y: '60%', title: 'Durable Finish', desc: 'Heavy-Duty Cast Iron Construction' },
     ]
   },
   {
-    id: 'riser-15205',
-    name: 'Heavy Duty Square Frame Riser',
+    id: 'trench-15205',
+    name: 'Square Trench Grate',
     type: 'Catch Basin Configuration',
-    imgSrc: `/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(8).jpeg`,
     HOTSPOTS: [
       { id: 201, x: '30%', y: '40%', title: 'Continuous Welding', desc: 'Maximum Structural Integrity' },
       { id: 202, x: '65%', y: '40%', title: 'Powder Coating', desc: 'Corrosion Resistant Finish' },
-      { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Steel Catch Basin Risers' },
+      { id: 203, x: '67%', y: '62%', title: 'Bulk Ready', desc: 'Steel Catch Basin Grates' },
       { id: 204, x: '30%', y: '62%', title: 'Precision Angles', desc: 'Sloped & Tapered Profiles' },
     ]
   },
   {
-    id: 'riser-15203',
-    name: 'Custom Rectangular Extension Ring',
+    id: 'trench-15203',
+    name: 'Custom Rectangular Trench Frame',
     type: 'Utility Vault Profile',
-    imgSrc: `/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
+    imgSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`,
     HOTSPOTS: [
       { id: 301, x: '32%', y: '40%', title: 'Continuous Welding', desc: 'Maximum Structural Integrity' },
       { id: 302, x: '68%', y: '35%', title: 'Powder Coating', desc: 'Corrosion Resistant Finish' },
-      { id: 303, x: '61%', y: '65%', title: 'Bulk Ready', desc: 'Custom Steel Risers' },
+      { id: 303, x: '61%', y: '65%', title: 'Bulk Ready', desc: 'Custom Steel Trenches' },
     ]
   }
 ];
@@ -131,7 +131,7 @@ export default function ProductInteractiveImage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>
-                  <span className="text-[#0F0F0F]">1/4" to 4" Rise</span>
+                  <span className="text-[#0F0F0F]">1/4" to 4" Profile</span>
                 </div>
 
               </div>

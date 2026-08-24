@@ -10,56 +10,56 @@ const RESOURCES = [
     title: 'Paving-Adjust™ White Paper',
     slug: 'Paving-Adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
-    imageSrc: `/images/catch_basin_riser/Rectangle_riser.811.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg`, // Replace with product photo
   },
   {
     id: 'res-2',
     title: 'Installation Guidelines',
     slug: 'installation-guidelines',
     type: 'document',
-    imageSrc: `/images/Custom_Riser/D_shape_Rise__with_Iron.635.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T18_45_49_105Z.jpeg`, // Replace with product photo
   },
   {
     id: 'res-3',
     title: 'Adjustment Riser Brochure',
     slug: 'adjustment-riser-brochure',
     type: 'document',
-    imageSrc: `/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg`, // Replace with product photo
   },
   {
     id: 'res-4',
     title: 'Manhole Riser Video',
     slug: 'manhole-riser-video',
     type: 'video',
-    imageSrc: `/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`, // Replace with product photo
   },
   {
     id: 'res-5',
     title: 'Load Test Reports',
     slug: 'load-test-reports',
     type: 'document',
-    imageSrc: `/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG`,
   },
   {
     id: 'res-6',
     title: 'Custom Fabrication Guide',
     slug: 'custom-fabrication-guide',
     type: 'document',
-    imageSrc: `/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`,
   },
   {
     id: 'res-7',
     title: 'INFRA-RISER Specs',
     slug: 'infra-riser-specs',
     type: 'document',
-    imageSrc: `/images/trash_racks/tr1.21.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG`,
   },
   {
     id: 'res-8',
     title: 'Case Study: Highway Paving',
     slug: 'case-study-highway-paving',
     type: 'document',
-    imageSrc: `/images/catch_basin_riser/Sqaure_Riser_iron.609.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`,
   }
 ];
 

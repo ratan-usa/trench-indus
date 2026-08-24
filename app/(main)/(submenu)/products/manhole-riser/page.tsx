@@ -16,12 +16,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `/images/Manhole_riser/Round_Riser_Raw_Finish.613.png` },
-  { name: 'Coated Finish', image: `/images/Manhole_riser/fixed_round_riser_.810.png` },
-  { name: 'Iron Finish', image: `/images/Manhole_riser/Round_Riser_iron_Finish.614.png` },
-  { name: 'With Screw (Raw)', image: `/images/Manhole_riser/Round_Riser_with_screw_Raw_Finish.617.png` },
-  { name: 'With Screw (Coated)', image: `/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png` },
-  { name: 'With Screw (Iron)', image: `/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` }
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg` },
+  { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg` },
+  { name: 'With Screw (Raw)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T18_45_49_105Z.jpeg` },
+  { name: 'With Screw (Coated)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg` },
+  { name: 'With Screw (Iron)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG` }
 ];
 
 const MANHOLE_RISER_DATA = {

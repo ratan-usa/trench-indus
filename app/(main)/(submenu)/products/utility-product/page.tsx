@@ -14,9 +14,9 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Standard Raw', image: `/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png` },
-  { name: 'Coated Black', image: `/images/catch_basin_riser/Square_riser_coated_finish.807.png` },
-  { name: 'Solid Cast Iron', image: `/images/catch_basin_riser/Sqaure_Riser_iron.609.png` },
+  { name: 'Standard Raw', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg` },
+  { name: 'Coated Black', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg` },
+  { name: 'Solid Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg` },
 ];
 
 export default function UtilityProductsPage() {

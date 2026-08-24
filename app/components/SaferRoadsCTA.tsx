@@ -12,7 +12,7 @@ export default function SaferRoadsCTA() {
       {/* Background Graphic Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Subtle dot pattern */}
-        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/images/dot-pattern.svg')] opacity-5" />
+        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg')] opacity-5" />
         
         {/* Red Glows */}
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px] -translate-y-1/2" />

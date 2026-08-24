@@ -16,8 +16,7 @@ const FEATURE_BADGES = [
   { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "RAPID", subtitle: "INSTALLATION" },
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
-const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS", "AIR PORTS", "SEA PORTS", "ICONIC PROJECTS", "SUPER STRUCTURES"];
-
+const words = ["Double Strength", "Powered Coatings", "Advanced Designs"];
 export default function PavingPathHero() {
   const [mounted, setMounted] = useState(false);
   const [index, setIndex] = useState(0);
@@ -126,7 +125,7 @@ export default function PavingPathHero() {
             className="relative w-full h-full flex items-center  justify-end z-20"
           >
             <Image  
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/paving_hero.png`}
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg`}
               alt="Trench Riser Manhole Cover Assembly"
               height={400}  
               width={500}

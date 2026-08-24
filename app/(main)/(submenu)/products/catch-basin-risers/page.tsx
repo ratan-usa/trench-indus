@@ -18,11 +18,11 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `/images/catch_basin_riser/Sqaure_Riser_iron.609.png` },
-  { name: 'Coated Finish', image: `/images/catch_basin_riser/Square_riser_coated_finish.807.png` },
-  { name: 'Cast Iron', image: `/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png` },
-  { name: 'Ductile Iron', image: `/images/catch_basin_riser/Rectangle_Riser_iron.608.png` },
-  { name: 'Steel Fabricated', image: `/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T18_45_49_105Z.jpeg` },
+  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg` },
+  { name: 'Ductile Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG` },
+  { name: 'Steel Fabricated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG` },
 ];
 
 export default function CatchBasinRisersPage() {

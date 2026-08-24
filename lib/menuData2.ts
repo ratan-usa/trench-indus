@@ -16,7 +16,7 @@ export const menuData = {
         image: "/assets/image1.jpeg",
         description:
           "Durable ductile iron an d gray iron manhole covers and frames engineered for municipal, highway, and smart-city infrastructure.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/manhole-covers.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Circular manhole covers",
           "Square & rectangular manhole covers",
@@ -34,7 +34,7 @@ export const menuData = {
         image: "/assets/image2.jpeg",
         description:
           "High-strength drainage gratings and trench covers designed for stormwater control, highways, airports, and industrial facilities.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/drainage-gratings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Trench gratings",
           "Kerb inlet grates",
@@ -52,7 +52,7 @@ export const menuData = {
         image: "/assets/image3.jpeg",
         description:
           "Precision cast components manufactured for excavators, loaders, batching plants, cranes and concrete machinery.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/machinery-cast-components.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Pump housings",
           "Gearbox casings",
@@ -70,7 +70,7 @@ export const menuData = {
         image: "/assets/image4.jpg",
         description:
           "Decorative and structural castings used in building architecture, railing systems, façade elements, and landscape structures.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/architectural-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Cast balustrades & railings",
           "Lamp post castings",
@@ -88,7 +88,7 @@ export const menuData = {
         image: "/assets/image5.jpeg",
         description:
           "Castings designed for water supply systems, telecom chambers, electric networks, and smart city infrastructure projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/utility-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Surface boxes",
           "Valve boxes",
@@ -116,7 +116,7 @@ export const menuData = {
         image: "/assets/image6.jpg",
         description:
           "High-strength cast valve bodies and components designed for potable water, wastewater and industrial water handling applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/valve-bodies.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Gate valve bodies",
           "Butterfly valve bodies",
@@ -134,7 +134,7 @@ export const menuData = {
         image: "/assets/image7.jpg",
         description:
           "Cast components used in municipal water networks for underground and above-ground fire hydrants and distribution systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/hydrant-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Fire hydrant bodies",
           "Hydrant risers",
@@ -152,7 +152,7 @@ export const menuData = {
         image: "/assets/image8.jpg",
         description:
           "Ductile iron and alloy cast fittings engineered for water pipelines, joint connections and network pressure systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/pipe-fitting-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Flanged fittings",
           "Socket fittings",
@@ -170,7 +170,7 @@ export const menuData = {
         image: "/assets/image9.jpeg",
         description:
           "Durable castings used for water meter housings, access covers and inspection systems in urban water networks.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/meter-box-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Water meter box covers",
           "Cast iron enclosures",
@@ -187,7 +187,7 @@ export const menuData = {
         image: "/assets/image10.jpeg",
         description:
           "Precision-engineered castings for pumps and fluid movement systems used in potable water, irrigation and wastewater treatment.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/pump-castings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Pump casings",
           "Impeller castings",
@@ -211,7 +211,7 @@ export const menuData = {
         slug: "zinc-aluminium-cast-anodes",
         image: "/assets/image11.jpg",
         description: "High-purity zinc and aluminium cast anodes designed for long-term corrosion prevention in marine and industrial environments.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Zinc slab anodes",
           "Aluminium block anodes",
@@ -225,7 +225,7 @@ export const menuData = {
         slug: "coated-titanium-anodes",
         image: "/assets/image12.jpg",
         description: "Mixed-metal oxide (MMO) coated titanium anodes built for high-performance cathodic protection with minimal maintenance.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "MMO rod anodes",
           "MMO mesh anodes",
@@ -239,7 +239,7 @@ export const menuData = {
         slug: "magnesium-anodes",
         image: "/assets/image13.jpg",
         description: "Premium magnesium anodes designed for cathodic protection in underground and freshwater applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "High potential magnesium anodes",
           "AZ63 magnesium rods",
@@ -253,7 +253,7 @@ export const menuData = {
         slug: "transformers-rectifiers",
         image: "/assets/image14.jpeg",
         description: "Reliable transformers and rectifiers engineered to deliver controlled DC output for cathodic protection systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Transformer rectifier units (TRU)",
           "Digital automatic rectifiers",
@@ -267,7 +267,7 @@ export const menuData = {
         slug: "junction-boxes",
         image: "/assets/image15.jpg",
         description: "Industrial-grade junction boxes designed for safe and secure connectivity in cathodic protection setups.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Test station junction boxes",
           "Current distribution boxes",
@@ -281,7 +281,7 @@ export const menuData = {
         slug: "monitoring-equipments",
         image: "/assets/image16.jpg",
         description: "Advanced monitoring equipment for tracking, measuring and maintaining optimal cathodic protection levels.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Reference electrodes",
           "Remote monitoring units (RMU)",
@@ -295,7 +295,7 @@ export const menuData = {
         slug: "cales-and-wiring-systems",
         image: "/assets/image17.jpg",
         description: "Durable cabling and wiring systems engineered for cathodic protection installations in challenging conditions.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Anode lead wires",
           "High molecular weight polyethylene cables",
@@ -323,7 +323,7 @@ export const menuData = {
         image: "/assets/image18.jpeg",
         description:
           "High-precision molds engineered for manufacturing durable, dimensionally accurate precast concrete elements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4 feet mold.54.mp4",
 
         items: [
           "Slab molds",
@@ -341,7 +341,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "Molds designed for precast components used in roads, highways, bridges and transportation infrastructure.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi feet mold.54.mp4",
 
         items: [
           "Crash barrier molds",
@@ -359,7 +359,7 @@ export const menuData = {
         image: "/assets/image20.jpg",
         description:
           "Heavy-duty molds for manufacturing RCC and precast concrete pipes with high load-bearing capacity.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4 feet mold.54.mp4",
 
         items: [
           "RCC Hume pipe molds",
@@ -377,7 +377,7 @@ export const menuData = {
         image: "/assets/image1.jpeg",
         description:
           "Molds used for precast elements in residential, commercial and industrial building construction.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4 feet mold.54.mp4",
 
         items: [
           "Wall panel molds",
@@ -395,7 +395,7 @@ export const menuData = {
         image: "/assets/image2.jpeg",
         description:
           "Architectural molds for landscape development, garden structures and city beautification elements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 feet mold.54.mp4",
 
         items: [
           "Paving block molds",
@@ -413,7 +413,7 @@ export const menuData = {
         image: "/assets/image3.jpeg",
         description:
           "Molds developed for smart city projects, utilities and public infrastructure applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 feet mold.54.mp4",
 
         items: [
           "Manhole cover molds",
@@ -431,7 +431,7 @@ export const menuData = {
         image: "/assets/image4.jpg",
         description:
           "Precast molds for compound walls, fencing and boundary applications offering high strength and fast installation.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4 feet mold.54.mp4",
 
         items: [
           "Prestressed boundary wall molds",
@@ -449,7 +449,7 @@ export const menuData = {
         image: "/assets/image5.jpeg",
         description:
           "Molds for precast elements used in factories, warehouses, utility buildings and heavy industry projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 feet mold.54.mp4",
 
         items: [
           "Machine foundation molds",
@@ -467,7 +467,7 @@ export const menuData = {
         image: "/assets/image6.jpg",
         description:
           "Precast molds designed for agricultural infrastructure and farm development components.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4 feet mold.54.mp4",
 
         items: [
           "Irrigation canal molds",
@@ -485,7 +485,7 @@ export const menuData = {
         image: "/assets/image7.jpg",
         description:
           "Flexible modular mold systems allowing quick size changes and high productivity for multiple product designs.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi feet mold.54.mp4",
 
         items: [
           "Adjustable shuttering systems",
@@ -503,7 +503,7 @@ export const menuData = {
         image: "/assets/image8.jpg",
         description:
           "Accessories that enhance mold performance, surface finish and production efficiency.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/mold/2 feet mold.54.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4 feet mold.54.mp4",
 
         items: [
           "Vibration systems",
@@ -532,7 +532,7 @@ export const menuData = {
         image: "/assets/image9.jpeg",
         description:
           "High-quality cementitious materials and ready-mix solutions for structural, masonry and finishing applications in building projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/cement-products.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Portland cement",
           "Ready-mix concrete",
@@ -549,7 +549,7 @@ export const menuData = {
         image: "/assets/image10.jpeg",
         description:
           "Structural and lightweight masonry products for walls, partitions and façade applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/masonry-units.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Clay bricks",
           "Concrete blocks",
@@ -566,7 +566,7 @@ export const menuData = {
         image: "/assets/image11.jpg",
         description:
           "Durable roofing and exterior cladding solutions engineered for weather resistance and architectural aesthetics.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/roofing-cladding.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Metal roofing sheets",
           "Sandwich panels",
@@ -583,7 +583,7 @@ export const menuData = {
         image: "/assets/image12.jpg",
         description:
           "Energy-efficient doors and windows with a complete range of architectural hardware for commercial and residential buildings.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/doors-windows.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "UPVC doors & windows",
           "Aluminium doors & windows",
@@ -600,7 +600,7 @@ export const menuData = {
         image: "/assets/image13.jpg",
         description:
           "Comprehensive plumbing and sanitary ware solutions designed for water supply, drainage and hygiene management.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/plumbing-sanitary.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "CPVC / UPVC piping systems",
           "Sanitary fittings",
@@ -617,7 +617,7 @@ export const menuData = {
         image: "/assets/image14.jpeg",
         description:
           "Electrical distribution and lighting solutions for residential, industrial and commercial building infrastructure.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/electrical-lighting.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Switches & sockets",
           "MCB & distribution boards",
@@ -645,7 +645,7 @@ export const menuData = {
         image: "/assets/image15.jpg",
         description:
           "Heavy-duty square tree grates designed for pedestrian pathways, plazas, malls and urban landscaping projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/square-tree-grates.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Two-piece square grates",
           "Four-piece modular grates",
@@ -662,7 +662,7 @@ export const menuData = {
         image: "/assets/image16.jpg",
         description:
           "Cast iron circular tree grates providing protection while allowing healthy aeration and water flow to tree roots.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/circular-tree-grates.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "One-piece circular grates",
           "Segmented circular grates",
@@ -679,7 +679,7 @@ export const menuData = {
         image: "/assets/image17.jpg",
         description:
           "High-strength ductile iron tree grates complying with international load-class standards for public walkways and traffic areas.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/ductile-tree-grates.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Heavy duty ductile iron grates",
           "Corrosion-protected coated grates",
@@ -696,7 +696,7 @@ export const menuData = {
         image: "/assets/image18.jpeg",
         description:
           "Protective systems designed to safeguard young trees against pedestrian traffic, vehicles and physical damage.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/tree-guards.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Steel tree guards",
           "Cast iron tree guards",
@@ -713,7 +713,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "Tailor-made tree grate solutions engineered to meet unique architectural, city planning and landscape design requirements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/custom-tree-grates.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Custom size and shape grates",
           "Laser-cut design patterns",
@@ -864,7 +864,7 @@ export const menuData = {
         image: "/assets/image7.jpg",
         description:
           "Custom fabricated steel structures and frames designed for industrial buildings, warehouses and heavy engineering applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/steel-structures.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Structural steel frames",
           "PEB building structures",
@@ -881,7 +881,7 @@ export const menuData = {
         image: "/assets/image8.jpg",
         description:
           "Precision sheet metal fabricated parts produced through cutting, bending and forming processes with high dimensional accuracy.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/sheet-metal-fabrication.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Enclosures & cabinets",
           "Control panels",
@@ -898,7 +898,7 @@ export const menuData = {
         image: "/assets/image9.jpeg",
         description:
           "Heavy-duty fabricated equipment for cement plants, power plants, mining, steel industries and material handling systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/industrial-fabricated-equipment.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Hoppers & bunkers",
           "Chutes & ducts",
@@ -915,7 +915,7 @@ export const menuData = {
         image: "/assets/image10.jpeg",
         description:
           "Fabricated pipe spools and piping assemblies for oil & gas, chemical plants, water treatment facilities and process industries.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/piping-fabrication.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Pipe spool assemblies",
           "MS/SS piping skids",
@@ -932,7 +932,7 @@ export const menuData = {
         image: "/assets/image11.jpg",
         description:
           "Tailor-made fabricated products developed based on client drawings, specifications and OEM manufacturing requirements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/custom-fabrication.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Prototype fabrication",
           "Low-volume special fabrications",
@@ -960,7 +960,7 @@ export const menuData = {
         image: "/assets/PAVING-RISERS/paving riser 1.5200.png",
         description:
           "Height-adjustable Trench Industries designed for raised flooring, terraces, rooftops and outdoor decking applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/paving_riser/paving riser 1.5213.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4 riser 1.5213.mp4",
         items: [
           "Wide height adjustment range",
           "Self-levelling functionality",
@@ -977,7 +977,7 @@ export const menuData = {
         image: "/assets/PAVING-RISERS/paving riser 1.5203.png",
         description:
           "Cost-effective fixed-height risers used for uniform elevation in pedestrian areas, plazas and garden paving projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/paving_riser/paving riser 1.5216.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 riser 1.5216.mp4",
         items: [
           "Low-profile supports",
           "Predefined height options",
@@ -994,7 +994,7 @@ export const menuData = {
         image: "/assets/PAVING-RISERS/paving riser 1.5204.png",
         description:
           "Strong pedestal systems engineered for high-load applications like commercial plazas, industrial walkways and public spaces.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/paving_riser/paving riser 1.5217.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 riser 1.5217.mp4",
         items: [
           "Reinforced support structure",
           "High load carrying capacity",
@@ -1011,7 +1011,7 @@ export const menuData = {
         image: "/assets/PAVING-RISERS/paving riser 1.5205.png",
         description:
           "Self-levelling risers designed to compensate for surface irregularities and slopes while maintaining level paving surfaces.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/paving_riser/paving riser 1.5223.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4 riser 1.5223.mp4",
         items: [
           "Automatic slope correction",
           "precision level paved finish",
@@ -1028,7 +1028,7 @@ export const menuData = {
         image: "/assets/PAVING-RISERS/paving riser 1.5200.png",
         description:
           "Complete range of accessories for pedestal systems including spacers, shims and edge supports for accurate tile alignment.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/paving_riser/paving riser 1.5251.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 riser 1.5251.mp4",
         items: [
           "Tile spacers",
           "Rubber shims",
@@ -1056,7 +1056,7 @@ export const menuData = {
   //       image: "/assets/image12.jpg",
   //       description:
   //         "Critical cast and fabricated components used in refineries and petrochemical process plants operating under high temperature and pressure.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/petro/video1.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
   //       items: [
   //         "Pressure vessel components",
   //         "Heat exchanger parts",
@@ -1073,7 +1073,7 @@ export const menuData = {
   //       image: "/assets/image13.jpg",
   //       description:
   //         "Comprehensive range of pipeline components for upstream, midstream and downstream oil & gas transportation systems.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/petro/video1.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
   //       items: [
   //         "Pipe fittings & elbows",
   //         "Induction bends",
@@ -1090,7 +1090,7 @@ export const menuData = {
   //       image: "/assets/image14.jpeg",
   //       description:
   //         "High-performance castings for valves and pumps designed for corrosive fluids, hydrocarbons and high-pressure applications.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/petro/video1.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
   //       items: [
   //         "Gate & globe valve bodies",
   //         "Ball valve housings",
@@ -1107,7 +1107,7 @@ export const menuData = {
   //       image: "/assets/image15.jpg",
   //       description:
   //         "Components engineered for offshore platforms, subsea systems and drilling operations in harsh marine environments.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/petro/video1.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
   //       items: [
   //         "Subsea valve bodies",
   //         "Christmas tree components",
@@ -1124,7 +1124,7 @@ export const menuData = {
   //       image: "/assets/image16.jpg",
   //       description:
   //         "Equipment and components used in crude oil storage tanks, terminals and distribution stations.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/petro/video1.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
   //       items: [
   //         "Floating roof tank components",
   //         "Roof drain system parts",
@@ -1151,7 +1151,7 @@ export const menuData = {
   //       image: "/assets/image18.jpeg",
   //       description:
   //         "Complete range of groundwater monitoring wells designed to measure water levels, water quality and aquifer characteristics.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/groundwater-monitoring-wells.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
   //       items: [
   //         "PVC monitoring well casings",
   //         "HDPE monitoring well pipes",
@@ -1168,7 +1168,7 @@ export const menuData = {
   //       image: "/assets/image19.jpeg",
   //       description:
   //         "Observation wells used for environmental site assessment, contamination studies, and remediation projects.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/environmental-observation-wells.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
   //       items: [
   //         "Soil vapor monitoring wells",
   //         "Leachate observation wells",
@@ -1185,7 +1185,7 @@ export const menuData = {
   //       image: "/assets/image20.jpg",
   //       description:
   //         "High-performance well screens and gravel filter packs designed to prevent sand entry while maintaining maximum flow rate.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/well-screens.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
   //       items: [
   //         "PVC well screens",
   //         "SS slotted screens",
@@ -1202,7 +1202,7 @@ export const menuData = {
   //       image: "/assets/image1.jpeg",
   //       description:
   //         "Heavy-duty surface protection and access systems for monitoring wells used in industrial, roadway and urban environments.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/well-headworks.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
   //       items: [
   //         "Cast iron well covers",
   //         "Steel traffic-rated covers",
@@ -1219,7 +1219,7 @@ export const menuData = {
   //       image: "/assets/image2.jpeg",
   //       description:
   //         "Advanced measurement and logging instruments for continuous monitoring of water level, pressure and water quality parameters.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/well-instruments.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
   //       items: [
   //         "Water level loggers",
   //         "Pressure transducers",
@@ -1247,7 +1247,7 @@ export const menuData = {
   //       image: "/assets/image3.jpeg",
   //       description:
   //         "Specialized tools designed for lifting, aligning, cutting and jointing water pipelines safely and efficiently.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/pipe-installation-tools.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
   //       items: [
   //         "Pipe lifting clamps",
   //         "Pipe alignment tools",
@@ -1264,7 +1264,7 @@ export const menuData = {
   //       image: "/assets/image4.jpg",
   //       description:
   //         "Tools used for installation, operation, servicing and preventive maintenance of gate valves, butterfly valves and hydrants.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/valve-maintenance-tools.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
   //       items: [
   //         "Valve key wrenches",
   //         "Hydrant operating tools",
@@ -1281,7 +1281,7 @@ export const menuData = {
   //       image: "/assets/image5.jpeg",
   //       description:
   //         "Advanced acoustic and electronic tools for detecting underground water leakage and pinpointing pipeline faults.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/leak-detection.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
   //       items: [
   //         "Acoustic leak detectors",
   //         "Ground microphones",
@@ -1298,7 +1298,7 @@ export const menuData = {
   //       image: "/assets/image6.jpg",
   //       description:
   //         "Professional tools for hot tapping, drilling and on-line connection works on pressurized and non-pressurized pipelines.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/tapping-cutting-tools.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
   //       items: [
   //         "Hot tapping machines",
   //         "Hydrant tapping tools",
@@ -1315,7 +1315,7 @@ export const menuData = {
   //       image: "/assets/image7.jpg",
   //       description:
   //         "Protective and supporting equipment used during trenching, pipeline installation and confined space water works.",
-  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/water-works-safety.mp4",
+  //       videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
   //       items: [
   //         "Trench shoring systems",
   //         "Confined space entry kits",
@@ -1343,7 +1343,7 @@ export const menuData = {
         image: "/assets/image8.jpg",
         description:
           "High-performance irrigation pipes and fittings engineered for long-term durability, leak-proof performance and efficient water transport.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 PRODUCTS/video1.mp4",
         items: [
           "HDPE pipes",
           "PVC pressure pipes",
@@ -1360,7 +1360,7 @@ export const menuData = {
         image: "/assets/image9.jpeg",
         description:
           "Advanced sprinkler irrigation systems designed to distribute uniform water coverage for farms, lawns, fields and plantations.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video2.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4 PRODUCTS/video2.mp4",
         items: [
           "Impact sprinklers",
           "Rain gun systems",
@@ -1377,7 +1377,7 @@ export const menuData = {
         image: "/assets/image10.jpeg",
         description:
           "Smart irrigation control components for precise flow regulation, pressure management and automatic system operation.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video3.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi PRODUCTS/video3.mp4",
         items: [
           "Solenoid valves",
           "Butterfly & gate valves",
@@ -1394,7 +1394,7 @@ export const menuData = {
         image: "/assets/image11.jpg",
         description:
           "Reliable pumping systems engineered for agricultural water lifting, drip irrigation and sprinkler irrigation applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video4.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4 PRODUCTS/video4.mp4",
         items: [
           "Centrifugal pumps",
           "Submersible pumps",
@@ -1411,7 +1411,7 @@ export const menuData = {
         image: "/assets/image12.jpg",
         description:
           "A wide range of accessories and tools used for installation, maintenance and operation of irrigation networks.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4 PRODUCTS/video1.mp4",
         items: [
           "Punch tools",
           "Pipe cutters",
@@ -1428,7 +1428,7 @@ export const menuData = {
         image: "/assets/image13.jpg",
         description:
           "Irrigation solutions for parks, villas, resorts, golf courses, public gardens and urban landscaping projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video2.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 PRODUCTS/video2.mp4",
         items: [
           "Drip irrigation kits",
           "Micro sprinklers",
@@ -1445,7 +1445,7 @@ export const menuData = {
         image: "/assets/image14.jpeg",
         description:
           "Heavy-duty irrigation systems designed for commercial agriculture, greenhouses, agro-industries and large plantations.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/IRRIGATION PRODUCTS/video3.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 PRODUCTS/video3.mp4",
         items: [
           "High-pressure filtration systems",
           "Automated fertigation units",
@@ -1473,7 +1473,7 @@ export const menuData = {
         image: "/assets/image15.jpg",
         description:
           "Large-size forgings produced using open-die forging processes for heavy engineering, power and oil & gas sectors.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/open-die-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Blocks & slabs",
           "Discs & flanges",
@@ -1490,7 +1490,7 @@ export const menuData = {
         image: "/assets/image16.jpg",
         description:
           "High-precision closed-die forgings used for automotive, mining, agriculture and construction machinery components.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/closed-die-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Connecting rods",
           "Crankshafts",
@@ -1507,7 +1507,7 @@ export const menuData = {
         image: "/assets/image17.jpg",
         description:
           "Seamless rolled rings manufactured in various diameters and cross sections for bearings, turbines and gear applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/ring-rolled-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Seamless rings",
           "Bearing races",
@@ -1524,7 +1524,7 @@ export const menuData = {
         image: "/assets/image18.jpeg",
         description:
           "High-strength forged shafts designed for marine, power plant, cement plant, and heavy industrial machinery.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/shaft-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Straight shafts",
           "Step shafts",
@@ -1541,7 +1541,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "Forgings manufactured from carbon steel, alloy steel, duplex and stainless steels for critical environments and pressure applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/steel-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Carbon steel forgings",
           "Alloy steel forgings",
@@ -1558,7 +1558,7 @@ export const menuData = {
         image: "/assets/image20.jpg",
         description:
           "Tailor-made precision forgings manufactured based on customer drawings, 3D models and OEM specifications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/custom-forgings.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Near-net shape forgings",
           "Closed tolerance forgings",
@@ -1586,7 +1586,7 @@ export const menuData = {
         image: "/assets/image15.jpg",
         description:
           "High-performance bronze and stainless-steel propeller and impeller castings engineered for marine propulsion systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Ship propeller castings",
           "Pump impeller castings",
@@ -1603,7 +1603,7 @@ export const menuData = {
         image: "/assets/image16.jpg",
         description:
           "Rugged deck and hull hardware components designed to withstand harsh saline and offshore environments.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings2.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Cleats & bollards",
           "Fairleads & chocks",
@@ -1620,7 +1620,7 @@ export const menuData = {
         image: "/assets/image17.jpg",
         description:
           "Sacrificial and impressed-current anode castings designed to protect ship hulls and marine structures from corrosion.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Zinc anodes",
           "Aluminium anodes",
@@ -1637,7 +1637,7 @@ export const menuData = {
         image: "/assets/image18.jpeg",
         description:
           "Heavy-duty structural castings used in hull framing, rudder systems and load-bearing areas of ships and offshore vessels.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings2.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Rudder horn castings",
           "Stern frame castings",
@@ -1654,7 +1654,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "Cast components engineered for offshore drilling rigs, subsea structures, mooring and production systems.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Mooring chain components",
           "Subsea connector castings",
@@ -1821,7 +1821,7 @@ export const menuData = {
         image: "/assets/image8.jpg",
         description:
           "Manufacturing services based strictly on customer drawings, 3D models and technical specifications with complete confidentiality.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/build-to-print.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Drawing-based component production",
           "Tight tolerance machining",
@@ -1838,7 +1838,7 @@ export const menuData = {
         image: "/assets/image9.jpeg",
         description:
           "Rapid prototyping and new product development support from concept design to functional prototype and pilot production.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/prototype-development.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Rapid 3D prototyping",
           "Sample & trial batch casting",
@@ -1855,7 +1855,7 @@ export const menuData = {
         image: "/assets/image10.jpeg",
         description:
           "Flexible manufacturing setups ideal for specialized components, aftermarket parts and low-to-medium production requirements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/low-volume-production.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Small batch manufacturing",
           "Job shop production",
@@ -1872,7 +1872,7 @@ export const menuData = {
         image: "/assets/image11.jpg",
         description:
           "End-to-end manufacturing solutions combining casting, forging, machining, fabrication and surface finishing in a single window.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/multi-process-manufacturing.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Casting + machining integration",
           "Fabrication + machining assemblies",
@@ -1889,7 +1889,7 @@ export const menuData = {
         image: "/assets/image12.jpg",
         description:
           "Dedicated OEM manufacturing and private label production for brands requiring custom product identity and packaging.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/oem-private-label.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Brand-specific product development",
           "Custom packaging & labeling",
@@ -1917,7 +1917,7 @@ export const menuData = {
         image: "/assets/image13.jpg",
         description:
           "High-performance forging dies and tooling solutions designed for open-die, closed-die and ring-rolling operations.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/forging-dies.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Closed die impression tooling",
           "Open die tooling",
@@ -1934,7 +1934,7 @@ export const menuData = {
         image: "/assets/image14.jpeg",
         description:
           "Heavy-duty forging hammers and hydraulic/mechanical presses for high-volume forging production lines.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/forging-hammers.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Drop forging hammers",
           "Pneumatic forging hammers",
@@ -1951,7 +1951,7 @@ export const menuData = {
         image: "/assets/image15.jpg",
         description:
           "Energy-efficient heating systems and industrial furnaces for billet, ingot and bar heating prior to forging.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/forging-furnace.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Billet heating furnaces",
           "Forging reheating furnaces",
@@ -1968,7 +1968,7 @@ export const menuData = {
         image: "/assets/image16.jpg",
         description:
           "Material handling systems designed for safe movement of hot billets, forgings and heavy dies inside forge shops.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/forging-manipulators.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Hydraulic forging manipulators",
           "Billet handling systems",
@@ -1985,7 +1985,7 @@ export const menuData = {
         image: "/assets/image17.jpg",
         description:
           "Post-forging heat treatment and finishing systems that improve mechanical properties and product surface quality.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/heat-treatment.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Quenching tanks",
           "Tempering furnaces",
@@ -2013,7 +2013,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "Heavy-duty material handling machinery designed for mines, ports, warehouses and industrial production facilities.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/material-handling-machinery.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Belt conveyors",
           "Bucket elevators",
@@ -2030,7 +2030,7 @@ export const menuData = {
         image: "/assets/image20.jpg",
         description:
           "Industrial crushers and screens used in mining, quarrying, aggregates and mineral processing applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/crushing-machinery.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Jaw crushers",
           "Cone crushers",
@@ -2047,7 +2047,7 @@ export const menuData = {
         image: "/assets/image1.jpeg",
         description:
           "Machinery and systems supporting thermal, hydro, renewable and captive power generation plants.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/power-energy-equipment.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Steam turbines components",
           "Boiler auxiliary systems",
@@ -2064,7 +2064,7 @@ export const menuData = {
         image: "/assets/image2.jpeg",
         description:
           "Machinery engineered for cement, steel, chemical, fertilizer, paper and food processing industries.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/process-industry-machinery.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Kiln & mill components",
           "Mixers & blenders",
@@ -2081,7 +2081,7 @@ export const menuData = {
         image: "/assets/image3.jpeg",
         description:
           "Smart automation solutions integrating electrical, mechanical and control systems for improved productivity and safety.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/industrial-automation.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Robotic handling systems",
           "Automated assembly lines",
@@ -2109,7 +2109,7 @@ export const menuData = {
         image: "/assets/image1.jpeg",
         description:
           "Heavy-duty snow ploughs mounted on trucks for clearing highways, airports and city roads during heavy snowfall.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/truck-mounted-snow-ploughs.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "Straight blade ploughs",
           "V-type snow ploughs",
@@ -2126,7 +2126,7 @@ export const menuData = {
         image: "/assets/image2.jpeg",
         description:
           "Snow plough attachments designed for loaders, dozers and tractors for municipal and industrial snow clearing.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/loader-mounted-ploughs.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "Front-end loader snow ploughs",
           "Dozer blade snow ploughs",
@@ -2143,7 +2143,7 @@ export const menuData = {
         image: "/assets/image3.jpeg",
         description:
           "Rotary broom and mechanical sweepers for clearing light to medium snow from streets, parking areas and pedestrian zones.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/snow-sweepers.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Rotary broom sweepers",
           "Compact municipal sweepers",
@@ -2160,7 +2160,7 @@ export const menuData = {
         image: "/assets/image4.jpg",
         description:
           "Equipment for spreading salt and de-icing chemicals to prevent road freezing and improve vehicle traction.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/salt-spreaders.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Truck mounted salt spreaders",
           "Towed salt spreaders",
@@ -2177,7 +2177,7 @@ export const menuData = {
         image: "/assets/image5.jpeg",
         description:
           "A complete range of accessories and spare parts ensuring reliable operation of snow plough systems in harsh winter conditions.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/snow-plough-accessories.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Cutting edges & wear blades",
           "Hydraulic cylinders",
@@ -2375,7 +2375,7 @@ export const menuData = {
         image: "/assets/image18.jpeg",
         description:
           "Tailor-made casting solutions engineered to meet unique dimensional, metallurgical and performance requirements.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/bespoke-casting-solutions.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Custom geometry castings",
           "Special alloy grade castings",
@@ -2392,7 +2392,7 @@ export const menuData = {
         image: "/assets/image19.jpeg",
         description:
           "High-precision machining and fabrication services for critical components requiring tight tolerance and perfect finish.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/precision-machining.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "CNC turning & milling",
           "5-axis machining",
@@ -2409,7 +2409,7 @@ export const menuData = {
         image: "/assets/image20.jpg",
         description:
           "Dedicated OEM & private label production services including brand-specific tooling, packaging and documentation.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/oem-private-label.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
           "Brand-specific product development",
           "Custom packaging and labelling",
@@ -2426,7 +2426,7 @@ export const menuData = {
         image: "/assets/image1.jpeg",
         description:
           "Accurate reverse-engineering service for discontinued, legacy and critical spare components without available drawings.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/reverse-engineering.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/GRATE_IMAGES.504.mp4",
         items: [
           "3D scanning & measurement",
           "Digital model creation",
@@ -2443,7 +2443,7 @@ export const menuData = {
         image: "/assets/image2.jpeg",
         description:
           "Turnkey engineering and manufacturing executed on complete project scope including design, production and delivery.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/project-based-manufacturing.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/untitled.2296.avi",
         items: [
           "EPC project manufacturing support",
           "Industrial project components",
@@ -2460,7 +2460,7 @@ export const menuData = {
         image: "/assets/image3.jpeg",
         description:
           "Engineering consultation service helping clients convert ideas and application needs into manufacturable products.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/custom-design-assistance.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/1_to_23.2400.mp4",
         items: [
           "Concept to 3D model conversion",
           "Design for manufacturability",
@@ -2488,7 +2488,7 @@ export const menuData = {
         image: "/assets/marine_castings/marine_castings2.jpeg",
         description:
           "High-performance bronze and stainless-steel castings used in marine propulsion systems for vessels of all sizes.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4",
         items: [
           "Fixed pitch propeller castings",
           "Controllable pitch propeller hubs",
@@ -2505,7 +2505,7 @@ export const menuData = {
         image: "/assets/marine_castings/marine_castings1.jpeg",
         description:
           "Heavy-duty castings used for mooring, towing and securing vessels in ports, harbors and offshore platforms.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings2.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4",
         items: [
           "Bitts & bollards",
           "Cleats & chocks",
@@ -2522,7 +2522,7 @@ export const menuData = {
         image: "/assets/marine_castings/marine_castings2.jpeg",
         description:
           "Structural cast parts used in rudder assemblies and steering mechanisms for marine vessels and ships.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/Mashroom Anchor.578.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 Anchor.578.mp4",
         items: [
           "Rudder horn castings",
           "Rudder stock castings",
@@ -2539,7 +2539,7 @@ export const menuData = {
         image: "/assets/marine_castings/marine_castings3.jpeg",
         description:
           "Zinc, aluminium and magnesium anode castings designed for cathodic protection of ship hulls and marine structures.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/marine_castings1.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4",
         items: [
           "Hull anodes",
           "Tank anodes",
@@ -2556,7 +2556,7 @@ export const menuData = {
         image: "/assets/marine_castings/marine_castings1.jpeg",
         description:
           "Castings manufactured for subsea production systems, offshore platforms and deep-water equipment.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/video/marine_castings/Mooring Bollards.13.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 Bollards.13.mp4",
         items: [
           "Subsea connector castings",
           "Manifold components",

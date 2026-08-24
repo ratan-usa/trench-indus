@@ -66,7 +66,7 @@ export default function QuoteRequestPage() {
           onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale mix-blend-screen scale-105"
         >
-          <source src={`/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1_to_23.2400.mp4`} type="video/mp4" />
         </video>
         
         {/* Gradients for text readability */}
@@ -114,7 +114,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'catch-basin' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`/Videos/catch_basin_animation/Catch_basin_riser_ayush.718.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -131,7 +131,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'valve-box' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`/Videos/full_valve_design_with_riser-PR.852.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/48-48_1.2053.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -148,7 +148,7 @@ export default function QuoteRequestPage() {
                   className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'manhole' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
-                    <source src={`/Videos/Manhole_riser/adjustable_manhole_riser_black_coated.mp4`} type="video/mp4" />
+                    <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_dxf.2445.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -242,9 +242,9 @@ export default function QuoteRequestPage() {
               <div className="absolute inset-0 flex items-center justify-center z-10 p-8">
                 <Image 
                   src={
-                    selectedProduct === 'catch-basin' ? `/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png` : 
-                    selectedProduct === 'valve-box' ? `/images/Valve_box_riser/4.357.jpg.jpeg` : 
-                    `/images/Manhole_riser/Round_Riser_iron_Finish.614.png`
+                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG` : 
+                    selectedProduct === 'valve-box' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg` : 
+                    `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG`
                   }
                   alt="Product Rendering" 
                   fill
