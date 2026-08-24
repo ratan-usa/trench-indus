@@ -12,26 +12,26 @@ import {
   ChevronRight 
 } from 'lucide-react';
 
-// --- PAVING INFRASTRUCTURE PRODUCT DATA ---
+// --- trenching INFRASTRUCTURE PRODUCT DATA ---
 const SHOWCASE_PRODUCTS = [
   {
     id: "prod-1",
     index: "01",
-    title: "Round Traffic Risers",
+    title: "Round Traffic Grates",
     overline: "MUNICIPAL STANDARD",
     tagline: "Precision Lift. Zero Excavation.",
-    description: "The primary operational standard for structural manhole elevation adjustments. Engineered to prevent vertical shifting during high-velocity heavy vehicle traffic road overlays.",
+    description: "The primary operational standard for structural trench elevation adjustments. Engineered to prevent vertical shifting during high-velocity heavy vehicle traffic stormwater management.",
     specLabel: "Load Class",
-    specValue: "Paving Grade Rated",
+    specValue: "Trenching Grade Rated",
     icon: <Grid className="w-5 h-5" />
   },
   {
     id: "prod-2",
     index: "02",
-    title: "Paving-Adjust™ Expandable",
+    title: "Trenching-Adjust™ Expandable",
     overline: "NEXT-GEN ENGINEERING",
     tagline: "Mechanical Locking. No Mortar Bed.",
-    description: "Features an integrated dual-expansion expansion linkage system that bites directly into the base frame structure, eliminating site settlement and asphalt cracking.",
+    description: "Features an integrated dual-expansion expansion linkage system that bites directly into the base frame structure, eliminating site settlement and infrastructure cracking.",
     specLabel: "Cure Window",
     specValue: "Instant Traffic Ready",
     icon: <Layers className="w-5 h-5" />
@@ -60,7 +60,7 @@ const SHOWCASE_PRODUCTS = [
   }
 ];
 
-export default function PremiumPavingShowcase() {
+export default function PremiumtrenchingShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
   const currentProduct = SHOWCASE_PRODUCTS[activeIndex];
 
@@ -79,12 +79,12 @@ export default function PremiumPavingShowcase() {
             </span>
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-white leading-none">
               High-Performance <br />
-              <span className="text-[#CC0000]">Paving Solutions.</span>
+              <span className="text-[#CC0000]">Trenching Solutions.</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-zinc-400 text-sm font-medium leading-relaxed">
-              Cross-examine our premier line of heavy highway casting risers. Built with uncompromising structural integrity to handle continuous high-impact vehicular traffic loading vectors.
+              Cross-examine our premier line of heavy highway casting grates. Built with uncompromising structural integrity to handle continuous high-impact vehicular traffic loading vectors.
             </p>
           </div>
         </div>

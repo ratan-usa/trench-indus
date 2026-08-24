@@ -16,9 +16,9 @@ import { Button } from "@/components/ui/button";
 // --- ACCESSORIES PRODUCT DATABASE ---
 const ACCESSORY_PRODUCTS = [
   {
-    title: "Manhole Lifting Hooks",
+    title: "Trench Lifting Hooks",
     sku: "HK-MH-HD",
-    description: "Forged heavy-duty steel hooks engineered to easily pull standard municipal manhole covers and solid iron riser lines without slipping.",
+    description: "Forged heavy-duty steel hooks engineered to easily pull standard municipal trench covers and solid iron grate lines without slipping.",
     spec: "30\" Length • Heat-Treated Alloy Steel",
     icon: <Hammer className="w-6 h-6 text-[#CC0000]" />
   },
@@ -30,9 +30,9 @@ const ACCESSORY_PRODUCTS = [
     icon: <Construction className="w-6 h-6 text-[#CC0000]" />
   },
   {
-    title: "Valve Box Risers",
+    title: "Valve Box Grates",
     sku: "VR-VB-DI",
-    description: "Drop-in extension rings designed to elevate standard 5-1/4\" water and gas valve boxes seamlessly during asphalt overlays.",
+    description: "Drop-in extension rings designed to elevate standard 5-1/4\" water and gas valve boxes seamlessly during infrastructure stormwater systems.",
     spec: "1\" to 6\" Height Increments Available",
     icon: <Layers className="w-6 h-6 text-[#CC0000]" />
   }
@@ -53,7 +53,7 @@ export default function ToolsAndAccessoriesCatalog() {
             <span className="text-[#CC0000]">for on-site fitting.</span>
           </h2>
           <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Equip tools that help your crew set risers and covers faster and accurately.
+            Equip tools that help your crew set grates and covers faster and accurately.
           </p>
         </div>
 

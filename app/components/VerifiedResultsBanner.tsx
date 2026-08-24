@@ -12,7 +12,7 @@ export default function VerifiedResultsBanner() {
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-[#CC0000]/10 rounded-[100%] blur-[120px] opacity-70" />
         
-        {/* Subtle Grid Pattern Overlay */}
+        {/* Subtle Grid Pattern stormwater system */}
         <div 
           className="absolute inset-0 opacity-[0.03]" 
           style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}

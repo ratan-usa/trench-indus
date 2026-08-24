@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
             Ready to Upgrade Your <span className="text-[#CC0000]">Infrastructure?</span>
           </h3>
           <p className="text-zinc-400 max-w-xl mx-auto mb-8">
-            Connect with our engineering team today to discuss how our verified paving solutions can save your next project time and money.
+            Connect with our engineering team today to discuss how our verified trenching solutions can save your next project time and money.
           </p>
           <Link 
             href="/contact/quote"

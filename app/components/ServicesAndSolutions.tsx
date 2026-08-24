@@ -7,7 +7,7 @@ const SERVICES_DATA = [
     id: 'delivery',
     overline: 'FEATURED SERVICE',
     title: 'Direct-to-Site Delivery',
-    description: 'Get back on the job fast. Order standard and custom adjustment risers online or over the phone to get heavy-duty cast iron delivered straight to your staging area.',
+    description: 'Get back on the job fast. Order standard and custom adjustment grates online or over the phone to get heavy-duty cast iron delivered straight to your staging area.',
     linkText: 'Schedule delivery',
     href: '#delivery'
   },
@@ -23,7 +23,7 @@ const SERVICES_DATA = [
     id: 'desk',
     overline: 'FEATURED SERVICE',
     title: 'Pro Supply Desk',
-    description: 'Our warehouse counters serve the unique needs of municipal paving crews. Find exactly what you need, from expert DOT spec advice to in-stock catch basin frames.',
+    description: 'Our warehouse counters serve the unique needs of municipal trenching crews. Find exactly what you need, from expert DOT spec advice to in-stock catch basin frames.',
     linkText: 'Find your local desk',
     href: '#locations'
   }

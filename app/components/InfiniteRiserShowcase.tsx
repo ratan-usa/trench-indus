@@ -56,7 +56,7 @@ export default function InfiniteRiserShowcase() {
                                     Mechanical Expansion
                                 </h3>
                                 <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                    Designed to minimize full manhole frame excavations during road overlays. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
+                                    Designed to minimize full trench frame excavations during stormwater management. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
                                 </p>
                             </div>
 
@@ -117,7 +117,7 @@ export default function InfiniteRiserShowcase() {
                                     Mechanical Expansion
                                 </h3>
                                 <p className="text-sm text-zinc-400 font-medium leading-relaxed">
-                                    Designed to minimize full manhole frame excavations during road overlays. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
+                                    Designed to minimize full trench frame excavations during stormwater management. The trench fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the trench holds the ring securely in position while you pave.
                                 </p>
                             </div>
 

@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 
 const FEATURES = [
     {
-        title: "Paving Grade Rated",
+        title: "Trenching Grade Rated",
         icon: <Truck className="w-8 h-8 text-[#CC0000]" />,
         description: "rated for for heavy-duty traffic and municipal roadway standards."
     },
@@ -31,7 +31,7 @@ const FEATURES = [
     }
 ];
 
-export default function PavingRisersSection() {
+export default function trenchingRisersSection() {
     return (
         <div className="min-h-screen bg-white font-sans text-black">
 
@@ -56,7 +56,7 @@ export default function PavingRisersSection() {
 
             {/* --- HERO SECTION --- */}
             <section className="relative bg-[#0F0F0F] text-white py-32 overflow-hidden">
-                {/* Visual Texture Overlay */}
+                {/* Visual Texture stormwater system */}
                 <div className="absolute inset-0 opacity-10 pointer-events-none"
                     style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
@@ -73,7 +73,7 @@ export default function PavingRisersSection() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href={`/assets/catalog/MEGA-PAVING-RISERS-CATALOGS.pdf`}>
+                        <Link href={`/assets/catalog/MEGA-trenching-RISERS-CATALOGS.pdf`}>
                             <Button size="lg" className="bg-[#CC0000] hover:bg-white hover:text-black text-white text-sm px-10 py-8 font-black uppercase tracking-[0.2em] rounded-none transition-all duration-300">
                                 <Download className="mr-2 w-5 h-5" /> Download Catalog
                             </Button>

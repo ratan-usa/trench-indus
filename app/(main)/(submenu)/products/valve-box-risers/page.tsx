@@ -34,7 +34,7 @@ export default function ValveBoxRisersPage() {
           <div className="w-full max-w-4xl h-full max-h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(204,0,0,0.15)_0%,transparent_70%)] blur-2xl" />
         </div>
         
-        {/* Grid Overlay */}
+        {/* Grid stormwater system */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none" />
 
         <div className="relative z-10 text-center space-y-6 mb-12">
@@ -45,7 +45,7 @@ export default function ValveBoxRisersPage() {
             Valve Box
             <br />
             <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.9)' }}>
-              Risers
+              Grates
             </span>
           </h1>
         </div>
@@ -103,7 +103,7 @@ export default function ValveBoxRisersPage() {
               </div>
               <h3 className="text-2xl font-black uppercase tracking-wide mb-4">Slip-In Installation</h3>
               <p className="text-zinc-400 text-sm leading-relaxed font-medium">
-                Our valve box risers are designed for instant drop-in installation. Simply slip them into the existing utility box frame before paving to achieve perfect grade instantly without excavation.
+                Our valve box grates are designed for instant drop-in installation. Simply slip them into the existing utility box frame before trenching to achieve perfect grade instantly without excavation.
               </p>
             </div>
 
@@ -114,7 +114,7 @@ export default function ValveBoxRisersPage() {
               </div>
               <h3 className="text-2xl font-black uppercase tracking-wide mb-4">Water & Gas Rated</h3>
               <p className="text-zinc-400 text-sm leading-relaxed font-medium">
-                Engineered specifically for municipal water mains and gas utility boxes. These risers protect critical valves from being paved over, ensuring immediate access for emergency shutoffs.
+                Engineered specifically for municipal water mains and gas utility boxes. These grates protect critical valves from being paved over, ensuring immediate access for emergency shutoffs.
               </p>
             </div>
 

@@ -26,7 +26,7 @@ export default function OrderOptions() {
                 Online
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Place orders in a few clicks through your <Link href="#portal" className="text-[#CC0000] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron risers delivered directly to your staging area so your crew never has to wait.
+                Place orders in a few clicks through your <Link href="#portal" className="text-[#CC0000] hover:underline font-medium">contractor portal</Link>. Save time and have pallets of steel and cast iron grates delivered directly to your staging area so your crew never has to wait.
               </p>
               <div>
                 <Link
@@ -62,7 +62,7 @@ export default function OrderOptions() {
                 At the warehouse
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm md:text-base">
-                Your local <Link href="#locations" className="text-[#CC0000] hover:underline font-medium">supply counter</Link> has everything you need to keep your paving crew moving. Pull up the truck and pick from thousands of standard adjustment risers and extensions guaranteed to be in stock.
+                Your local <Link href="#locations" className="text-[#CC0000] hover:underline font-medium">supply counter</Link> has everything you need to keep your trenching crew moving. Pull up the truck and pick from thousands of standard adjustment grates and extensions guaranteed to be in stock.
               </p>
               <div>
                 <Link

@@ -24,7 +24,7 @@ export default function AvantGardeVideosPage() {
             <span className="text-[#CC0000]">FOOTAGE</span>
           </h1>
           <p className="mt-8 text-xl text-zinc-400 font-medium max-w-sm">
-            Unfiltered field installations, mechanical testing, and 3D technical deep dives into the Paving Riser ecosystem.
+            Unfiltered field installations, mechanical testing, and 3D technical deep dives into the Trench Grate ecosystem.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 2: Static Image */}
           <div className="col-span-1 row-span-1 relative group overflow-hidden bg-[#111] border-[0.5px] border-white/10">
-            <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg`} alt="Riser" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+            <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg`} alt="Grate" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
             <div className="absolute top-4 left-4 text-[10px] font-mono font-bold text-white bg-black/50 px-2 py-1">FRAME: RECTANGLE</div>
           </div>
 

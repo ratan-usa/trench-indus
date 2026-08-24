@@ -72,17 +72,17 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       title: "Adjustable Trench Industries",
       icon: <Grid className="w-5 h-5" />,
       description: "Heavy-duty millimeter-precise elevation units optimized for dimensional granite and architectural slab tiles.",
-      href: "/solutions/adjustable-paving-risers",
+      href: "/solutions/adjustable-trenching-grates",
       tag: "Top Specified",
       stats: "Max 1200mm",
       videoUrl: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/untitled.2296.avi`
     },
     {
       id: 'terraces-2',
-      title: "Decking Support Risers",
+      title: "Decking Support Grates",
       icon: <Layers className="w-5 h-5" />,
       description: "Sub-frame leveling cradles engineered to anchor joist substructures for natural timber and composite decking.",
-      href: "/solutions/decking-support-risers",
+      href: "/solutions/decking-support-grates",
       tag: "Fast-Fit",
       stats: "Anti-Rot",
       videoUrl: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1_to_23.2400.mp4`
@@ -99,10 +99,10 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
     },
     {
       id: 'terraces-4',
-      title: "Fixed Height Risers",
+      title: "Fixed Height Grates",
       icon: <Mountain className="w-5 h-5" />,
-      description: "Low-profile, stackable separator rings designed for rapid-lay balcony paving over structural membranes.",
-      href: "/solutions/fixed-height-risers",
+      description: "Low-profile, stackable separator rings designed for rapid-lay balcony trenching over structural membranes.",
+      href: "/solutions/fixed-height-grates",
       tag: "Low-Clearance",
       stats: "10-15mm Base",
       videoUrl: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/48-48_1.2053.mp4`
@@ -121,10 +121,10 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
   landscaping: [
     {
       id: 'landscaping-1',
-      title: "Garden Paving Supports",
+      title: "Garden Trenching Supports",
       icon: <Flower2 className="w-5 h-5" />,
       description: "Stable base plates designed to raise natural stepping pathways cleanly over root systems.",
-      href: "/solutions/garden-paving-supports",
+      href: "/solutions/garden-trenching-supports",
       tag: "Eco-Poly",
       stats: "Permeable",
       videoUrl: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/dxf_tree_grate.2293.mp4`
@@ -177,7 +177,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       id: 'joinery-2',
       title: "Industrial Support Systems",
       icon: <Layers className="w-5 h-5" />,
-      description: "Corrosion-proof, fiber-reinforced risers tailored to support mechanical plant flooring layouts.",
+      description: "Corrosion-proof, fiber-reinforced grates tailored to support mechanical plant flooring layouts.",
       href: "/solutions/industrial-support-systems",
       tag: "Chemical-Res",
       stats: "FRP Core",
@@ -265,7 +265,7 @@ export default function RedesignedSolutionsSection() {
                 className="w-full h-full object-cover"
               />
 
-              {/* Dark Gradient Overlay */}
+              {/* Dark Gradient stormwater system */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
 
               {/* Top Status Badge */}

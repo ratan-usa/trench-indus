@@ -47,7 +47,7 @@ export default function FixedRiserPage() {
           <div className="relative z-10 w-full aspect-square md:aspect-video flex items-center justify-center animate-in fade-in zoom-in-95 duration-1000">
             <Image
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg`}
-              alt="Fixed Riser"
+              alt="Fixed Grate"
               fill
               className="object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.9)] hover:scale-105 transition-transform duration-700 ease-out"
               priority
@@ -56,7 +56,7 @@ export default function FixedRiserPage() {
           
           <div className="mt-8 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-widest mb-4">
-              Solid Ring <span className="text-[#CC0000]">Risers</span>
+              Solid Ring <span className="text-[#CC0000]">Grates</span>
             </h2>
             <p className="text-gray-400 font-medium text-sm md:text-base max-w-lg mx-auto leading-relaxed">
               Achieve precise grade adjustments instantly. Built from a solid, continuous cast iron ring for unparalleled structural integrity under heavy municipal traffic.
@@ -83,13 +83,13 @@ export default function FixedRiserPage() {
                 Unbreakable <br/> Integrity.
               </h3>
               <p className="text-gray-400 font-medium leading-relaxed max-w-xl text-lg md:text-xl">
-                Unlike adjustable risers that rely on mechanical expansion, our fixed risers are a solid, single-piece casting. This minimizes any weak points or moving parts, ensuring the riser will never collapse or shift under extreme localized shock loads.
+                Unlike adjustable grates that rely on mechanical expansion, our fixed grates are a solid, single-piece casting. This minimizes any weak points or moving parts, ensuring the grate will never collapse or shift under extreme localized shock loads.
               </p>
             </div>
             <div className="flex-1 relative w-full h-[400px]">
               <Image 
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg`}
-                alt="Solid Cast Iron Riser"
+                alt="Solid Cast Iron Grate"
                 fill
                 className="object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.9)]"
               />
@@ -109,13 +109,13 @@ export default function FixedRiserPage() {
                 Highway <br/> Approved.
               </h3>
               <p className="text-gray-400 font-medium leading-relaxed max-w-xl text-lg md:text-xl">
-                Engineered specifically for DOT compliance. These fixed risers are the standard choice for major highway resurfacing, airport tarmacs, and high-speed intersections where failure is simply not an option.
+                Engineered specifically for DOT compliance. These fixed grates are the standard choice for major highway streetscaping, airport tarmacs, and high-speed intersections where failure is simply not an option.
               </p>
             </div>
             <div className="flex-1 relative w-full h-[400px]">
               <Image 
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T18_45_49_105Z.jpeg`}
-                alt="Highway Approved Riser"
+                alt="Highway Approved Grate"
                 fill
                 className="object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.9)]"
               />
@@ -134,7 +134,7 @@ export default function FixedRiserPage() {
               Exact <span className="text-[#CC0000]">Specs.</span>
             </h3>
             <p className="text-gray-400 font-medium leading-relaxed max-w-3xl text-lg md:text-2xl mx-auto mb-12">
-              Available in increments of 1/4" to ensure your manholes match the final asphalt grade with millimeter precision. No shimming, no stacking, no settling.
+              Available in increments of 1/4" to ensure your trenches match the final infrastructure grade with millimeter precision. No shimming, no stacking, no settling.
             </p>
             
             <a

@@ -24,7 +24,7 @@ const PROJECTS = [
   // 1. Municipal Roadways
   {
     id: 101,
-    title: "Ben & Ben's City Center Resurfacing: Manhole Adustments",
+    title: "Ben & Ben's City Center streetscaping: Trench Adustments",
     category: "Municipal Roadways",
     imageSrc: `/assets/projects/muni-1.jpg`,
   },
@@ -50,7 +50,7 @@ const PROJECTS = [
   },
   {
     id: 203,
-    title: "Ben & Ben's Hotel Driveway: Leveling Risers",
+    title: "Ben & Ben's Hotel Driveway: Leveling Grates",
     category: "Commercial Dept",
     imageSrc: `/assets/projects/comm-3.jpg`,
   },
@@ -78,7 +78,7 @@ const PROJECTS = [
   },
   {
     id: 402,
-    title: "Suburban Water Meter Box Risers",
+    title: "Suburban Water Meter Box Grates",
     category: "Residential",
     imageSrc: `/assets/projects/res-2.jpg`,
   },
@@ -100,7 +100,7 @@ const PROJECTS = [
   // 6. Airport Infrastructure
   {
     id: 601,
-    title: "Ben & Ben's Tarmac Repair: Extra Heavy Duty Risers",
+    title: "Ben & Ben's Tarmac Repair: Extra Heavy Duty Grates",
     category: "Airport Infra",
     imageSrc: `/assets/projects/air-1.jpg`,
   },
@@ -128,7 +128,7 @@ const PROJECTS = [
   // 8. Telecommunications
   {
     id: 801,
-    title: "Ben & Ben's Fiber Optic Vault Risers",
+    title: "Ben & Ben's Fiber Optic Vault Grates",
     category: "Telecom Utility",
     imageSrc: `/assets/projects/tel-1.jpg`,
   },
@@ -156,7 +156,7 @@ const PROJECTS = [
   // 10. Custom Fabrication
   {
     id: 1001,
-    title: "Ben & Ben's Historic District: Custom Iron Risers",
+    title: "Ben & Ben's Historic District: Custom Iron Grates",
     category: "Custom Fab",
     imageSrc: `/assets/projects/cust-1.jpg`,
   },
@@ -224,7 +224,7 @@ export default function ProjectGallery() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
-                {/* Hover Overlay */}
+                {/* Hover stormwater system */}
                 <div className="absolute inset-0 bg-[#0F0F0F]/0 group-hover:bg-[#0F0F0F]/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <div className="bg-white p-2 rounded-full shadow-lg">
                     <ExternalLink className="w-5 h-5 text-black" />

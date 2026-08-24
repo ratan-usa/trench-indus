@@ -49,7 +49,7 @@ export default function FabricatedSteelPage() {
           </div>
           <div className="max-w-md lg:text-right space-y-6">
             <p className="text-zinc-400 font-medium leading-relaxed">
-              When standard castings don't fit, we build it from scratch. Our in-house welding and fabrication facility creates exact-dimension steel risers for any irregular infrastructure project.
+              When standard castings don't fit, we build it from scratch. Our in-house welding and fabrication facility creates exact-dimension steel grates for any irregular infrastructure project.
             </p>
             <Button size="lg" className="bg-white text-black hover:bg-[#CC0000] hover:text-white font-black uppercase tracking-widest rounded-none h-14 px-8 w-full lg:w-auto transition-colors">
               Submit Custom Blueprints
@@ -141,7 +141,7 @@ export default function FabricatedSteelPage() {
               </h4>
               <h5 className="text-2xl font-black uppercase tracking-wide">A36 Carbon Steel</h5>
               <p className="text-zinc-400 font-medium leading-relaxed">
-                We utilize structural-grade A36 carbon steel for all fabricated risers. It offers exceptional yield strength and weldability, ensuring the riser will never buckle under heavy street-level impacts.
+                We utilize structural-grade A36 carbon steel for all fabricated grates. It offers exceptional yield strength and weldability, ensuring the grate will never buckle under heavy street-level impacts.
               </p>
             </div>
 
@@ -161,7 +161,7 @@ export default function FabricatedSteelPage() {
               </h4>
               <h5 className="text-2xl font-black uppercase tracking-wide text-[#CC0000]">Rapid Turnaround</h5>
               <p className="text-zinc-400 font-medium leading-relaxed">
-                Emergency paving job? We specialize in rapid turnarounds for custom steel fabrication. Send us your specs and we can have your custom steel risers welded and shipped directly to the job site.
+                Emergency trenching job? We specialize in rapid turnarounds for custom steel fabrication. Send us your specs and we can have your custom steel grates welded and shipped directly to the job site.
               </p>
             </div>
 

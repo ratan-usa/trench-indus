@@ -27,7 +27,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
 
   // A small helper to split title into the last word and everything else,
   // to replicate the black and red text styling: 
-  // "Adjustment" (black) and "Risers" (red)
+  // "Adjustment" (black) and "Grates" (red)
   const titleWords = rawTitle.split(' ');
   const lastWord = titleWords.length > 1 ? titleWords.pop() : '';
   const firstPart = titleWords.join(' ');
@@ -112,7 +112,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
             <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
               {firstPart} <span className="text-[#CC0000]">{lastWord}</span>
             </h1>
-            <p className="text-gray-500 font-medium mt-2">Filter and search through our industrial risers.</p>
+            <p className="text-gray-500 font-medium mt-2">Filter and search through our industrial grates.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">

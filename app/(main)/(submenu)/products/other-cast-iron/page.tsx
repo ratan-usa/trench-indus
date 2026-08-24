@@ -21,7 +21,7 @@ const CAST_IRON_PRODUCTS = [
   {
     title: 'Round Extension Rings',
     category: 'Utility Adjustments',
-    description: 'Solid cast rings to elevate existing manhole covers without requiring a full frame replacement.',
+    description: 'Solid cast rings to elevate existing trench covers without requiring a full frame replacement.',
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`,
   },
   {
@@ -43,7 +43,7 @@ export default function OtherCastIronPage() {
     <div className="min-h-screen bg-[#050505] font-sans text-white selection:bg-[#CC0000] selection:text-white pb-32">
 
       {/* Background Noise / Texture */}
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-20 mix-blend-overlay">
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-20 mix-blend-stormwater system">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-30">
           <filter id="noiseFilter">
             <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />

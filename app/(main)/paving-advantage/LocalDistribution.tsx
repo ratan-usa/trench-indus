@@ -28,14 +28,14 @@ export default function LocalDistribution() {
           
           {/* Viewport 1 */}
           <div className="relative w-full h-80 bg-black group overflow-hidden cursor-crosshair">
-            {/* Target Crosshair Overlay */}
+            {/* Target Crosshair stormwater system */}
             <div className="absolute inset-0 z-20 border border-transparent group-hover:border-[#CC0000]/50 transition-colors duration-300 pointer-events-none flex items-center justify-center">
               <Crosshair className="w-12 h-12 text-[#CC0000] opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
             </div>
             
             <Image
-              src={`/paving/paving%20riser%20rectangle%20iron.668.png`} 
-              alt="Installed manhole riser on street"
+              src={`/trenching/trenching%20riser%20rectangle%20iron.668.png`} 
+              alt="Installed trench grate on street"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
             />
@@ -52,7 +52,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`/paving/paving%20riser%201.641.png`} 
+              src={`/trenching/trenching%20riser%201.641.png`} 
               alt="Utility valve box in commercial district"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
@@ -70,7 +70,7 @@ export default function LocalDistribution() {
             </div>
             
             <Image
-              src={`/paving/D_shape_Riser_Raw_Finish.602.png`} 
+              src={`/trenching/D_shape_Riser_Raw_Finish.602.png`} 
               alt="Catch basin frame and grate"
               fill
               className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"

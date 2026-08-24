@@ -6,26 +6,26 @@ const SERVICE_OPTIONS = [
   {
     id: 'online',
     title: "Online Ordering & Tracking",
-    description: "Manage your riser inventory from the truck. Use our contractor portal to check live stock for standard cast iron rings, submit specs for custom fabrication, and track your jobsite deliveries in real-time.",
+    description: "Manage your grate inventory from the truck. Use our contractor portal to check live stock for standard cast iron rings, submit specs for custom fabrication, and track your jobsite deliveries in real-time.",
     linkText: "Explore online tools",
     linkHref: "#online-tools",
-    imageSrc: `/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
+    imageSrc: `/assets/trenching-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   },
   {
     id: 'jobsite',
     title: "Heavy-Duty Jobsite Delivery",
-    description: "Don't waste time making warehouse runs. We deliver pallets of steel and ductile iron adjustment risers straight to your staging area. Our logistics crew ensures you have the exact sizes you need before the road gets torn up.",
+    description: "Don't waste time making warehouse runs. We deliver pallets of steel and ductile iron adjustment grates straight to your staging area. Our logistics crew ensures you have the exact sizes you need before the road gets torn up.",
     linkText: "Find delivery solutions",
     linkHref: "#delivery",
-    imageSrc: `/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
+    imageSrc: `/assets/trenching-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   },
   {
     id: 'branch',
     title: "Pro Desk & Warehouse Support",
-    description: "Drop by our warehouse to get hands-on help from our infrastructure experts. We can help you match degraded manhole seats with the right expandable rings, walk you through DOT specs, and set up commercial credit terms.",
+    description: "Drop by our warehouse to get hands-on help from our infrastructure experts. We can help you match degraded trench seats with the right expandable rings, walk you through DOT specs, and set up commercial credit terms.",
     linkText: "Connect with our pro desk",
     linkHref: "#pro-desk",
-    imageSrc: `/assets/PAVING-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
+    imageSrc: `/assets/trenching-RISERS/d-shape.png` // Replace with an image of a contractor on a tablet
   }
 ];
 

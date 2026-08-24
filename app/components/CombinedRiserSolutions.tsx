@@ -26,7 +26,7 @@ const RISER_SECTIONS = [
     overline: "Municipal Solutions",
     title: "Cast Iron",
     highlightText: "Trench Industries",
-    description: "Maintain seamless urban traffic flow. Our heavy-duty solid trenches allow for precise trench elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
+    description: "Maintain seamless urban traffic flow. Our heavy-duty solid trenches allow for precise trench elevation adjustment during stormwater management, eliminating the need to dig up and rebuild the entire structure.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`,
     features: [
       { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for Load Rating: See individual product specification heavy traffic loads." },
@@ -40,7 +40,7 @@ const RISER_SECTIONS = [
     buttonLink: "#specs"
   },
   {
-    id: "expandable-risers",
+    id: "expandable-grates",
     theme: "dark",
     overline: "Next-Gen Adjustment",
     title: "Trench-Adjust™",
@@ -49,7 +49,7 @@ const RISER_SECTIONS = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`,
     features: [
       { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to bite into the base frame securely locks into the frame." },
-      { icon: "Timer", title: "Zero Cure Time", desc: "Trenching crews can lay asphalt immediately after installation." }
+      { icon: "Timer", title: "Zero Cure Time", desc: "Trenching crews can lay infrastructure immediately after installation." }
     ],
     meta: [],
     buttonText: "View Expandable Specs",
@@ -61,7 +61,7 @@ const RISER_SECTIONS = [
     overline: "Drainage Infrastructure",
     title: "Catch Basin &",
     highlightText: "Curb Inlets",
-    description: "Roadwork requires more than just round trench adjustments. We fabricate heavy-duty steel and cast iron rectangular trenches designed specifically to raise storm grates and curb inlets to final grade.",
+    description: "municipal drainage requires more than just round trench adjustments. We fabricate heavy-duty steel and cast iron rectangular trenches designed specifically to raise storm grates and curb inlets to final grade.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`,
     features: [
       { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
@@ -80,7 +80,7 @@ const RISER_SECTIONS = [
     overline: "Road Crowning Solutions",
     title: "Sloped &",
     highlightText: "Tapered Trenches",
-    description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat trenches cause trench covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
+    description: "Roads are rarely precision flat. When infrastructure requires accommodating high water volume or grade changes, standard flat trenches cause trench covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`,
     isComingSoon: true, // Added flag for the badge
     features: [
@@ -120,7 +120,7 @@ const renderIcon = (iconName: string, className: string) => {
 // ==========================================
 // MAIN COMPONENT
 // ==========================================
-export default function ComprehensivePavingRisersMapped() {
+export default function ComprehensivetrenchingRisersMapped() {
   return (
     <div className="w-full font-sans">
 
@@ -154,7 +154,7 @@ export default function ComprehensivePavingRisersMapped() {
                       className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.15)]' : ''}`}
                     />
 
-                    {/* --- COMING SOON OVERLAY --- */}
+                    {/* --- COMING SOON stormwater system --- */}
                     {section.isComingSoon && (
                       <div className="absolute bottom-0 left-0 right-0 bg-[#CC0000] text-white text-center py-4 font-black uppercase tracking-[0.25em] text-sm shadow-[0_-10px_20px_rgba(204,0,0,0.2)] z-20">
                         Comming Soon

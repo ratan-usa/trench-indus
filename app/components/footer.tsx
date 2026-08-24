@@ -18,25 +18,25 @@ const FOOTER_LINKS = [
         categories: [
             {
                 name: 'Curb Inlets',
-                links: [{ name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' }]
+                links: [{ name: 'Curb Inlet Grate', href: '/products/curb-inlet-grate' }]
             },
             {
                 name: 'Catch Basin',
                 links: [
-                    { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
+                    { name: 'Catch Basin Grate', href: '/products/catch-basin-grates' },
                     { name: 'Catch Basin Grates', href: '/products/catch-basin-grates' }
                 ]
             },
             {
-                name: 'Manhole Risers',
+                name: 'Trench Grates',
                 links: [
-                    { name: 'Fixed Riser', href: '/products/fixed-riser' },
-                    { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
+                    { name: 'Fixed Grate', href: '/products/fixed-grate' },
+                    { name: 'Adjustable Grate', href: '/products/adjustable-grate' }
                 ]
             },
             {
                 name: 'Valve Boxes',
-                links: [{ name: 'Valve Box Riser', href: '/products/valve-box-risers' }]
+                links: [{ name: 'Valve Box Grate', href: '/products/valve-box-grates' }]
             },
             {
                 name: 'Drainage & Tools',
@@ -53,8 +53,8 @@ const FOOTER_LINKS = [
             {
                 name: 'Specialty Castings & Steel',
                 links: [
-                    { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
-                    { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
+                    { name: 'Trench Frame & Cover', href: '/products/trench-frame-cover' },
+                    { name: 'D-Shape Grates', href: '/products/d-shape-grates' },
                     { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
                     { name: 'Utility Products', href: '/products/utility-product' },
                     { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
@@ -68,7 +68,7 @@ const FOOTER_LINKS = [
             {
                 name: 'Solutions',
                 links: [
-                    { name: 'Municipal Roadway', href: '/solutions/paving-resurfacing' },
+                    { name: 'Municipal Roadway', href: '/solutions/trenching-streetscaping' },
                     { name: 'Storm Drainage', href: '/solutions/storm-drainage' },
                     { name: 'Airport & Heavy Port', href: '/solutions/airports-ports' },
                     { name: 'Sanitary Sewer', href: '/solutions/sanitary-sewer' },
@@ -118,7 +118,7 @@ export default function HeavyFooter() {
           
           <div className="flex flex-wrap gap-4 text-[10px] font-mono uppercase tracking-widest">
             <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
-              <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Paving Grade Rated
+              <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Trenching Grade Rated
             </span>
             <span className="flex items-center gap-2 px-4 py-2 border border-[#333] text-gray-400 hover:text-white hover:border-[#CC0000] transition-colors">
               <Settings className="w-4 h-4 text-[#CC0000]" /> DOT Compliant Castings
@@ -137,7 +137,7 @@ export default function HeavyFooter() {
               </span>
               <h3 className="text-3xl font-black uppercase tracking-tight text-white leading-none">
                 Get Bulk Wholesale <br />
-                <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Riser Pricing.</span>
+                <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Grate Pricing.</span>
               </h3>
             </div>
 
@@ -243,15 +243,15 @@ export default function HeavyFooter() {
           <span>// design to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
-          <span>// PAVING GRADE COMPLIANT</span>
-          <span>// PAVING RISERS INFRASTRUCTURE</span>
+          <span>// trenching GRADE COMPLIANT</span>
+          <span>// trenching RISERS INFRASTRUCTURE</span>
           <span>// PRECISION ENGINEERING</span>
           <span>// HEAVY DUTY CASTINGS</span>
           <span>// design to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
-          <span>// PAVING GRADE COMPLIANT</span>
-          <span>// PAVING RISERS INFRASTRUCTURE</span>
+          <span>// trenching GRADE COMPLIANT</span>
+          <span>// trenching RISERS INFRASTRUCTURE</span>
           <span>// PRECISION ENGINEERING</span>
         </div>
       </div>

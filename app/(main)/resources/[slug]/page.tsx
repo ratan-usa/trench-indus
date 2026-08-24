@@ -7,13 +7,13 @@ import { ChevronLeft, Download, PlayCircle, FileText, Calendar, HardDrive } from
 // --- MOCK DATABASE ---
 const RESOURCE_DATABASE = [
   {
-    slug: 'Paving-Adjust-white-paper',
-    title: 'Paving-Adjust™ White Paper',
+    slug: 'Trenching-Adjust-white-paper',
+    title: 'Trenching-Adjust™ White Paper',
     type: 'document',
     format: 'PDF',
     size: '2.4 MB',
     date: 'August 2025',
-    description: 'An in-depth technical analysis of the Paving-Adjust™ expandable riser system. This white paper covers load testing results, DOT compliance standards, and long-term cost-saving metrics for municipal roadwork compared to traditional mortar bed installations.',
+    description: 'An in-depth technical analysis of the Trenching-Adjust™ expandable grate system. This white paper covers load testing results, DOT compliance standards, and long-term cost-saving metrics for municipal municipal drainage compared to traditional mortar bed installations.',
   },
   {
     slug: 'installation-guidelines',
@@ -22,25 +22,25 @@ const RESOURCE_DATABASE = [
     format: 'PDF',
     size: '1.1 MB',
     date: 'January 2026',
-    description: 'Step-by-step field instructions for installing solid steel, cast iron, and expandable adjustment risers. Includes torque specifications, sealant recommendations, and safety protocols for high-traffic paving environments.',
+    description: 'Step-by-step field instructions for installing solid steel, cast iron, and expandable adjustment grates. Includes torque specifications, sealant recommendations, and safety protocols for high-traffic trenching environments.',
   },
   {
-    slug: 'adjustment-riser-brochure',
-    title: 'Adjustment Riser Brochure',
+    slug: 'adjustment-grate-brochure',
+    title: 'Adjustment Grate Brochure',
     type: 'document',
     format: 'PDF',
     size: '5.8 MB',
     date: 'March 2026',
-    description: 'Our complete catalog of heavy-duty adjustment risers, catch basin frames, and utility vault access solutions. Includes sizing charts and material specifications.',
+    description: 'Our complete catalog of heavy-duty adjustment grates, catch basin frames, and utility vault access solutions. Includes sizing charts and material specifications.',
   },
   {
-    slug: 'manhole-riser-video',
-    title: 'Adjustment Riser Installation Video',
+    slug: 'trench-grate-video',
+    title: 'Adjustment Grate Installation Video',
     type: 'video',
     format: 'MP4',
     size: '1080p',
     date: 'April 2026',
-    description: 'Watch our field experts demonstrate the rapid installation of a Paving-Adjust™ riser right before the paving crew lays the final asphalt layer. See exactly how the mechanical expansion lock secures the ring to the existing frame.',
+    description: 'Watch our field experts demonstrate the rapid installation of a Trenching-Adjust™ grate right before the trenching crew lays the final infrastructure layer. See exactly how the mechanical expansion lock secures the ring to the existing frame.',
   }
 ];
 

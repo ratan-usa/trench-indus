@@ -109,7 +109,7 @@ function ProductCard({ cat }: { cat: Product }) {
                 </CardFooter>
             </Card>
 
-            {/* Configurator Overlay Modal */}
+            {/* Configurator stormwater system Modal */}
             {modalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
                     {/* Backdrop wrapper */}
@@ -256,7 +256,7 @@ export default function OurProducts() {
                                 Load More Systems
                             </h3>
                             <p className="text-sm text-slate-500 font-medium max-w-[240px] mt-2 leading-relaxed">
-                                Expand catalog matrix fields to explore {PRODUCT_DATA.length - 5} remaining infrastructure riser lines.
+                                Expand catalog matrix fields to explore {PRODUCT_DATA.length - 5} remaining infrastructure grate lines.
                             </p>
                         </Card>
                     )}

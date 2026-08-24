@@ -11,13 +11,13 @@ import ContactExtraordinary from './ContactExtraordinary'
 import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
 import ProductInteractiveImage from '../components/ProductInteractiveImage'
 import RedesignedSolutionsSection from './RedesignedSolutionsSection'
-import PavingRisersHeroSection from '../components/PavingRisersHeroSection'
+import trenchingRisersHeroSection from '../components/trenchingRisersHeroSection'
 import ToolsAndAccessoriesCatalog from '../components/ToolsAndAccessoriesCatalog'
 import CompleteToolsCatalog from '../components/CompleteToolsCatalog'
 import InteractiveProduct from '../components/InteractiveProduct'
-import PremiumPavingShowcase from '../components/PremiumPavingShowcase'
-import AppleStylePavingShowcase from '../components/AppleStylePavingShowcase'
-import PavingRiserClassification from './PavingRiserClassification'
+import PremiumtrenchingShowcase from '../components/PremiumtrenchingShowcase'
+import AppleStyletrenchingShowcase from '../components/AppleStyletrenchingShowcase'
+import trenchingRiserClassification from './trenchingRiserClassification'
 import RiserProductSpecifications from './RiserProductSpecifications'
 import CatchBasinSteelRisers from './CatchBasinSteelRisers'
 import RiserOrderSpecifications from './RiserOrderSpecifications'
@@ -25,16 +25,16 @@ import FabricatedGratesSection from './FabricatedGratesSection'
 import RiserAnimationShowcase from '../components/RiserAnimationShowcase'
 import InfiniteRiserShowcase from '../components/InfiniteRiserShowcase'
 import GratesRacksAndTools from './GratesRacksAndTools'
-import PavingProductsTable from '../components/PavingProductsTable'
+import trenchingProductsTable from '../components/trenchingProductsTable'
 import SaferRoadsCTA from '../components/SaferRoadsCTA'
 import UltimateResultsPattern from '../components/UltimateResultsPattern'
 import StandardsMarquee from './StandardsMarquee';
 import Preloader from '../components/Preloader';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
-const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
+const trenchingRisersCatalog = dynamic(() => import('../components/trenchingRisersCatalog'))
 const OurProducts = dynamic(() => import('../components/ourProduct'))
-const PavingPathHero = dynamic(() => import('../components/paving-taglines'))
+const trenchingPathHero = dynamic(() => import('../components/trenching-taglines'))
 
 // 3D Canvas components must be loaded dynamically to avoid SSR ProgressEvent errors and timeouts
 const Product3DShowcase = dynamic(() => import('../../components/ui/sections/Product3DShowcase'), { ssr: false })
@@ -46,28 +46,28 @@ const Home = () => {
     <div>
       {/* <Preloader /> */}
       {/* <HeroScrollSequence /> */}
-      <PavingPathHero />
+      <trenchingPathHero />
       <Product3DShowcase2 />
       <UltimateResultsPattern />
       <StandardsMarquee/>
-      <PavingRiserClassification />
+      <trenchingRiserClassification />
       <SaferRoadsCTA />
       <InfiniteRiserShowcase />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
       <GratesRacksAndTools />
       {/* <Product3DShowcase /> */}
-      <PavingRisersHeroSection />
+      <trenchingRisersHeroSection />
       {/* <Interactive3DShowcase /> */}
       <RiserProductSpecifications />
       <CatchBasinSteelRisers />
       <FabricatedGratesSection />
       <RiserOrderSpecifications />
-      {/* <AppleStylePavingShowcase/> */}
+      {/* <AppleStyletrenchingShowcase/> */}
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
       <HeroCarousel />
-      <PavingRisersCatalog />
+      <trenchingRisersCatalog />
       <RedesignedSolutionsSection />
       <section className='our-product' id='our-product'>
         <OurProducts />
@@ -80,10 +80,10 @@ const Home = () => {
       <ContractorResources />
       {/* <InfrastructureRisers /> */}
       {/* <ProductCatalog /> */}
-       <PavingProductsTable />  
+       <trenchingProductsTable />  
       <SmartInfraSection />
       <AdjustmentProducts />
-      <PremiumPavingShowcase />
+      <PremiumtrenchingShowcase />
       <AdditionalResourcesSlugs />
       <section id='contact-us'>
         <ContactExtraordinary />

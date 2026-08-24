@@ -26,7 +26,7 @@ export default function BlogListingPage() {
             <span className="text-xs font-black uppercase tracking-[0.2em] text-zinc-400">Industry Insights</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">
-            Paving <span className="text-[#CC0000]">Intelligence</span>
+            Trenching <span className="text-[#CC0000]">Intelligence</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-400 max-w-2xl">
             Deep dives into infrastructure, verified installation methods, and the engineering behind modern road solutions.

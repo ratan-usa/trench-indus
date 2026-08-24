@@ -14,13 +14,13 @@ export default function IndustrySolutionsBanner() {
           
           className="absolute min-w-full min-h-full object-cover opacity-30 mix-blend-luminosity grayscale"
         >
-          {/* We use paving-video.mp4 from R2 mapped through the local env variable */}
+          {/* We use trenching-video.mp4 from R2 mapped through the local env variable */}
           <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/48-48_1.2053.mp4`} type="video/mp4" />
         </video>
-        {/* Dark cinematic gradient overlays */}
+        {/* Dark cinematic gradient stormwater systems */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-transparent to-[#0A0A0A]/50"></div>
-        {/* Technical Grid Overlay */}
+        {/* Technical Grid stormwater system */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]"></div>
       </div>
 
@@ -57,7 +57,7 @@ export default function IndustrySolutionsBanner() {
                 <span className="text-[10px] font-mono text-gray-600">SYS.READY</span>
               </div>
               <p className="text-gray-300 text-xs leading-relaxed mb-8">
-                Our experienced team works directly with contractors and municipal planners. Whether you are dealing with sloped manhole seats, non-standard catch basins, or high-traffic highway specs, our fabrication division ensures you get the exact components you need.
+                Our experienced team works directly with contractors and municipal planners. Whether you are dealing with sloped trench seats, non-standard catch basins, or high-traffic highway specs, our fabrication division ensures you get the exact components you need.
               </p>
               
               <a

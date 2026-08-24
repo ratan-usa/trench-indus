@@ -21,13 +21,13 @@ export default function ResultMap() {
         <div className="relative w-full h-[300px] md:h-[400px] bg-white">
 
           <Image
-            src={`/assets/PAVING-RISERS/paving%20riser%201.5200.png`} // Replace with the actual map image containing the state outlines, lines, and text
+            src={`/assets/trenching-RISERS/trenching%20riser%201.5200.png`} // Replace with the actual map image containing the state outlines, lines, and text
             alt="Map of Manufacturing Facilities, Sales Branches, and Distribution Centers"
             fill
             className="object-contain object-left md:object-center"
           />
 
-          {/* Legend Overlay (Mimicking the bottom right legend) */}
+          {/* Legend stormwater system (Mimicking the bottom right legend) */}
           <div className="absolute bottom-4 right-4 bg-white border border-gray-200 p-4 shadow-sm flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <span className="block w-3 h-3 rounded-full bg-[#CC0000]"></span>

@@ -13,7 +13,7 @@ export default function ServiceLogistics() {
             How Trench Industries supports your crew
           </h2>
           <p className="text-gray-700 text-base md:text-lg max-w-4xl leading-relaxed">
-            We provide expert support for every stage of your paving and infrastructure projects. Discover how you can keep your jobsite fully stocked, cut down on installation time, and keep your paving crews moving with our dedicated supply and logistics services.
+            We provide expert support for every stage of your trenching and infrastructure projects. Discover how you can keep your jobsite fully stocked, cut down on installation time, and keep your trenching crews moving with our dedicated supply and logistics services.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function ServiceLogistics() {
               Direct-to-Jobsite Delivery
             </h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We stock a massive inventory of standard and custom adjustment risers so you never have to wait on parts. Our logistics team coordinates directly with your project managers to deliver heavy-duty cast iron and steel risers exactly when and where you need them, keeping your roadwork on schedule.
+              We stock a massive inventory of standard and custom adjustment grates so you never have to wait on parts. Our logistics team coordinates directly with your project managers to deliver heavy-duty cast iron and steel grates exactly when and where you need them, keeping your municipal drainage on schedule.
             </p>
 
             <a
@@ -43,7 +43,7 @@ export default function ServiceLogistics() {
             <div className="relative w-full h-64 md:h-full min-h-[350px] overflow-hidden rounded-sm shadow-sm border border-gray-100">
               {/* Replace the src with an actual image of a delivery truck or jobsite staging area */}
               <Image
-                src={`/assets/PAVING-RISERS/paving%20riser%201.5200.png`}
+                src={`/assets/trenching-RISERS/trenching%20riser%201.5200.png`}
                 alt="Trench Industries Delivery Truck at Jobsite"
                 fill
                 className="object-cover"

@@ -26,7 +26,7 @@ interface ProductModel {
 const PRODUCT_MODELS: ProductModel[] = [
   {
     id: 1,
-    title: "Round Riser – Coated Finish",
+    title: "Round Grate – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
@@ -34,7 +34,7 @@ const PRODUCT_MODELS: ProductModel[] = [
   },
   {
     id: 2,
-    title: "Round Riser with Screw",
+    title: "Round Grate with Screw",
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
@@ -42,7 +42,7 @@ const PRODUCT_MODELS: ProductModel[] = [
   },
   {
     id: 3,
-    title: "Round Riser Low Screw",
+    title: "Round Grate Low Screw",
     description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
     type: "ROUND_LOW_SCREW",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
@@ -50,7 +50,7 @@ const PRODUCT_MODELS: ProductModel[] = [
   },
   {
     id: 4,
-    title: "Square Riser – Catch Basin",
+    title: "Square Grate – Catch Basin",
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
@@ -58,7 +58,7 @@ const PRODUCT_MODELS: ProductModel[] = [
   },
   {
     id: 5,
-    title: "Rectangle Riser – Catch Basin",
+    title: "Rectangle Grate – Catch Basin",
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
@@ -66,18 +66,18 @@ const PRODUCT_MODELS: ProductModel[] = [
   },
   {
     id: 6,
-    title: "Curb Inlet Riser",
-    description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
+    title: "Curb Inlet Grate",
+    description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent trenching.",
     type: "CURB_INLET",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg`
   },
   {
     id: 7,
-    title: "D-Shape Paving Riser",
+    title: "D-Shape Trench Grate",
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
+    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_trenching_riser.glb`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`
   }
 ];
@@ -146,7 +146,7 @@ export default function Product3DShowcase() {
                 </Canvas>
               </div>
 
-              {/* Bottom Info Overlay */}
+              {/* Bottom Info stormwater system */}
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent z-20 pointer-events-none">
                 <div className="flex items-center gap-3 mb-1">
                   <Badge variant="outline" className="text-[#CC0000] border-[#CC0000] bg-[#CC0000]/10">

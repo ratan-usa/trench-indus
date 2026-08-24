@@ -19,37 +19,37 @@ const SOLUTIONS_DB = [
   {
     slug: 'storm-drainage',
     title: 'Storm Drainage Solutions',
-    subtitle: 'Catch basin risers and trench grates designed for efficient municipal stormwater management.',
+    subtitle: 'Catch basin grates and trench grates designed for efficient municipal stormwater management.',
     heroImage: `/assets/industries/image3.jpeg`,
-    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Trench Industries provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular risers that integrate seamlessly with local DOT road crowning and slope requirements.',
+    overview: 'Effective stormwater management is critical to preventing infrastructure decay and urban flooding. Trench Industries provides precision-engineered catch basin frames, 3-sided curb inlets, and rectangular grates that integrate seamlessly with local DOT road crowning and slope requirements.',
     benefits: [
       { title: 'Heavy-Duty Grate Compatibility', desc: 'Fits all standard bicycle-safe and heavy-traffic grates.' },
       { title: 'Custom Sloping', desc: 'Tapered designs to match precise street gradients.' },
       { title: 'Corrosion Resistant', desc: 'Available in galvanized steel and coated cast iron.' }
     ],
     applications: ['Highway Shoulders', 'Commercial Parking Lots', 'Municipal Intersections', 'Logistics Centers'],
-    featuredProducts: ['4-Sided Catch Basin Risers', '3-Sided Curb Inlets', 'Sloped Drainage Frames']
+    featuredProducts: ['4-Sided Catch Basin Grates', '3-Sided Curb Inlets', 'Sloped Drainage Frames']
   },
   {
     slug: 'sanitary-sewer',
     title: 'Sanitary Sewer Infrastructure',
-    subtitle: 'Manhole covers and risers engineered to prevent Inflow & Infiltration (I&I).',
+    subtitle: 'Trench covers and grates engineered to prevent Inflow & Infiltration (I&I).',
     heroImage: `/assets/industries/image5.jpeg`,
-    overview: 'Sanitary sewer systems require absolutely watertight access points to prevent environmental hazards and costly water treatment overloads. Our solid cast iron and expandable risers are designed to create a perfect, sealed fit with existing manhole frames, ensuring zero movement under heavy traffic loads.',
+    overview: 'Sanitary sewer systems require absolutely watertight access points to prevent environmental hazards and costly water treatment overloads. Our solid cast iron and expandable grates are designed to create a perfect, sealed fit with existing trench frames, ensuring zero movement under heavy traffic loads.',
     benefits: [
       { title: 'I&I Prevention', desc: 'Machined surfaces for watertight gasket seals.' },
       { title: 'Shock Load Rated', desc: 'Engineered to withstand continuous Load Rating: See individual product specification/Load Rating: See individual product specification commercial traffic.' },
       { title: 'Rapid Installation', desc: 'Expandable options minimize the need for concrete mortar beds.' }
     ],
     applications: ['Mainline Sewer Access', 'Wastewater Treatment Plants', 'Residential Subdivisions'],
-    featuredProducts: ['Solid Cast Iron Risers', 'Paving-Adjust™ Expandable Risers', 'Watertight Manhole Covers']
+    featuredProducts: ['Solid Cast Iron Grates', 'Trenching-Adjust™ Expandable Grates', 'Watertight Trench Covers']
   },
   {
     slug: 'utility',
     title: 'Utility Infrastructure',
     subtitle: 'Access assemblies protecting underground gas, electric, and water utilities.',
     heroImage: `/assets/industries/image13.jpg`,
-    overview: 'Underground utilities require secure, easily accessible, and highly identifiable access points. We fabricate heavy-duty valve box risers, monument boxes, and electrical vault covers that protect critical infrastructure while allowing rapid access for municipal maintenance crews.',
+    overview: 'Underground utilities require secure, easily accessible, and highly identifiable access points. We fabricate heavy-duty valve box grates, monument boxes, and electrical vault covers that protect critical infrastructure while allowing rapid access for municipal maintenance crews.',
     benefits: [
       { title: 'Secure Access', desc: 'Locking mechanisms available for high-security vault covers.' },
       { title: 'Clear Identification', desc: 'Custom lettering available (WATER, GAS, ELECTRIC, COMM).' },
@@ -77,7 +77,7 @@ const SOLUTIONS_DB = [
     title: 'Water Distribution',
     subtitle: 'Valve boxes, hydrant surrounds, and access solutions for reliable water networks.',
     heroImage: `/assets/industries/image17.jpg`,
-    overview: 'Maintaining clean, continuous water flow to municipalities requires durable infrastructure. We supply a massive inventory of valve box risers, curb boxes, and meter pit covers designed specifically to keep water distribution controls accessible and protected from street paving overlays.',
+    overview: 'Maintaining clean, continuous water flow to municipalities requires durable infrastructure. We supply a massive inventory of valve box grates, curb boxes, and meter pit covers designed specifically to keep water distribution controls accessible and protected from street trenching stormwater systems.',
     benefits: [
       { title: 'Adjustable Heights', desc: 'Slip-type and screw-type valve box extensions.' },
       { title: 'Frost-Proof Durability', desc: 'Cast iron built to survive deep freeze and thaw cycles.' },
@@ -112,21 +112,21 @@ const SOLUTIONS_DB = [
       { title: 'Bolted Security', desc: 'Secured grates to prevent displacement from jet blast or heavy braking.' }
     ],
     applications: ['Airport Runways & Taxiways', 'Maritime Cargo Ports', 'Military Logistics Bases'],
-    featuredProducts: ['Extra-Heavy Duty Trench Grates', 'Airport Rated Manhole Covers', 'Bolted Access Hatches']
+    featuredProducts: ['Extra-Heavy Duty Trench Grates', 'Airport Rated Trench Covers', 'Bolted Access Hatches']
   },
   {
-    slug: 'paving-resurfacing',
-    title: 'Paving & Resurfacing',
-    subtitle: 'Risers and frames designed to integrate seamlessly with paving projects.',
+    slug: 'trenching-streetscaping',
+    title: 'Trenching & streetscaping',
+    subtitle: 'Grates and frames designed to integrate seamlessly with trenching projects.',
     heroImage: `/assets/industries/image20.jpg`,
-    overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Paving-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations in minutes, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
+    overview: 'Time is the most expensive variable in road streetscaping. We engineer our adjustment grates specifically for trenching contractors. By utilizing our Trenching-Adjust™ mechanical grates or our stackable solid iron rings, trenching crews can adjust utility elevations in minutes, allowing infrastructure layers to be laid immediately without waiting for concrete to cure.',
     benefits: [
-      { title: 'Zero Cure Time', desc: 'Pave immediately after dropping the riser into place.' },
+      { title: 'Zero Cure Time', desc: 'Pave immediately after dropping the grate into place.' },
       { title: 'Micro-Adjustments', desc: 'Stackable heights from 3/4" up to 6" for perfect grade matching.' },
       { title: 'No Excavation', desc: 'Avoid digging out base frames with jackhammers.' }
     ],
-    applications: ['DOT Highway Resurfacing', 'City Street Overlays', 'HOA Neighborhood Paving'],
-    featuredProducts: ['Paving-Adjust™ Expandable Risers', 'Solid Steel Adjustment Rings', 'Tapered Paving Rings']
+    applications: ['DOT Highway streetscaping', 'City Street stormwater systems', 'HOA Neighborhood Trenching'],
+    featuredProducts: ['Trenching-Adjust™ Expandable Grates', 'Solid Steel Adjustment Rings', 'Tapered Trenching Rings']
   }
 ];
 interface PageProps {

@@ -31,7 +31,7 @@ export default function PipingRiserFeature() {
               </h3>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Trench Industries provides precision-cast and forged components for specialized vertical piping risers used in demanding environments—from offshore drilling to high-pressure chemical plants.
+                Trench Industries provides precision-cast and forged components for specialized vertical piping grates used in demanding environments—from offshore drilling to high-pressure chemical plants.
               </p>
 
               {/* Feature List */}
@@ -82,8 +82,8 @@ export default function PipingRiserFeature() {
             <div className="relative aspect-[4/3] lg:aspect-auto lg:h-full ">
 
               <Image
-                src={`/assets/PAVING-RISERS/paving%20riser%201.5200.png`} // Placeholder path
-                alt="Industrial Piping Riser Components"
+                src={`/assets/trenching-RISERS/trenching%20riser%201.5200.png`} // Placeholder path
+                alt="Industrial Piping Grate Components"
                 layout="fill"
                 objectFit="cover"
                 className="opacity-70"

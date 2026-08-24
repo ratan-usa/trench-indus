@@ -59,7 +59,7 @@ export default function CatchBasinRisersPage() {
           <div className="lg:col-span-5 space-y-8 relative z-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-[#CC0000] animate-pulse" />
-              <span className="text-xs font-mono font-bold tracking-widest text-zinc-300 uppercase">Paving Grade Rated</span>
+              <span className="text-xs font-mono font-bold tracking-widest text-zinc-300 uppercase">Trenching Grade Rated</span>
             </div>
 
             <div className="space-y-4">
@@ -67,11 +67,11 @@ export default function CatchBasinRisersPage() {
                 Catch Basin
                 <br />
                 <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '2px #CC0000' }}>
-                  Risers
+                  Grates
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-zinc-400 max-w-xl font-medium leading-relaxed">
-                Engineered for maximum drainage efficiency. Our rectangular and square catch basin risers provide seamless elevation adjustments for severe weather infrastructure.
+                Engineered for maximum drainage efficiency. Our rectangular and square catch basin grates provide seamless elevation adjustments for severe weather infrastructure.
               </p>
             </div>
 
@@ -97,7 +97,7 @@ export default function CatchBasinRisersPage() {
               <Image
                 key={activeFinish.name}
                 src={activeFinish.image}
-                alt={`Catch Basin Riser - ${activeFinish.name}`}
+                alt={`Catch Basin Grate - ${activeFinish.name}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-20 hover:scale-105 transition-transform duration-700 p-8"
@@ -184,7 +184,7 @@ export default function CatchBasinRisersPage() {
             <div className="bg-[#111] border border-white/5 p-8 rounded-sm hover:border-white/20 transition-colors">
               <ShieldCheck className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-3">Corrosion Defense</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">Asphalt coating and galvanized options to withstand harsh road salts and constant water exposure.</p>
+              <p className="text-zinc-500 text-sm leading-relaxed">infrastructure coating and galvanized options to withstand harsh road salts and constant water exposure.</p>
             </div>
 
           </div>

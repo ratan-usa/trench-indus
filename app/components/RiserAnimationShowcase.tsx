@@ -26,7 +26,7 @@ const ASSEMBLY_STEPS = [
   {
     time: "0:17 - 0:28",
     title: "2. Mechanical Expansion",
-    desc: "Detailed close-up on the internal set-screws expanding outward to lock the riser firmly against the existing cast iron frame."
+    desc: "Detailed close-up on the internal set-screws expanding outward to lock the grate firmly against the existing cast iron frame."
   },
   {
     time: "0:29 - 0:39",
@@ -73,7 +73,7 @@ export default function RiserAnimationShowcase() {
               <Layers className="w-4 h-4 text-[#CC0000]" /> 3D Exploded Assembly Animation
             </span>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white leading-none">
-              Adjustable Round Riser <br />
+              Adjustable Round Grate <br />
               <span className="text-[#CC0000]">Mechanical Breakdown.</span>
             </h2>
           </div>
@@ -107,7 +107,7 @@ export default function RiserAnimationShowcase() {
                 Your browser does not support the video tag.
               </video>
 
-              {/* OVERLAY PLAY/PAUSE INTERACTION BAR */}
+              {/* stormwater system PLAY/PAUSE INTERACTION BAR */}
               <div 
                 onClick={togglePlay}
                 className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center cursor-pointer"
@@ -119,7 +119,7 @@ export default function RiserAnimationShowcase() {
                 )}
               </div>
 
-              {/* VIDEO CONTROLS HUD OVERLAY */}
+              {/* VIDEO CONTROLS HUD stormwater system */}
               <div className="absolute bottom-4 left-4 right-4 bg-[#0F0F0F]/90 backdrop-blur-md border border-zinc-800 p-3 rounded-sm flex items-center justify-between z-20">
                 <div className="flex items-center gap-3">
                   <Button 

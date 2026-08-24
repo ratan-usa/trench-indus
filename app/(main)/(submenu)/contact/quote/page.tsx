@@ -118,7 +118,7 @@ export default function QuoteRequestPage() {
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Catch Basin Risers</h3>
+                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Catch Basin Grates</h3>
                     <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest">Rectangular / Square</p>
                   </div>
                   {selectedProduct === 'catch-basin' && (
@@ -135,27 +135,27 @@ export default function QuoteRequestPage() {
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Valve Box Risers</h3>
+                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Valve Box Grates</h3>
                     <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest">Water / Gas Mains</p>
                   </div>
                   {selectedProduct === 'valve-box' && (
                     <div className="absolute top-4 right-4 text-[#CC0000]"><CheckCircle2 className="w-8 h-8" /></div>
                   )}
                 </div>
-                {/* Visual Option: Manhole */}
+                {/* Visual Option: Trench */}
                 <div 
-                  onClick={() => setSelectedProduct('manhole')}
-                  className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'manhole' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
+                  onClick={() => setSelectedProduct('trench')}
+                  className={`relative aspect-[4/5] bg-black border ${selectedProduct === 'trench' ? 'border-[#CC0000] shadow-[0_0_30px_rgba(204,0,0,0.2)]' : 'border-white/10 hover:border-white/30'} cursor-pointer group overflow-hidden transition-all duration-300`}
                 >
                   <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity">
                     <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_dxf.2445.mp4`} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Manhole Risers</h3>
+                    <h3 className="text-xl font-black uppercase tracking-wide mb-1 group-hover:text-[#CC0000] transition-colors">Trench Grates</h3>
                     <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest">Round / Sloped</p>
                   </div>
-                  {selectedProduct === 'manhole' && (
+                  {selectedProduct === 'trench' && (
                     <div className="absolute top-4 right-4 text-[#CC0000]"><CheckCircle2 className="w-8 h-8" /></div>
                   )}
                 </div>
@@ -255,7 +255,7 @@ export default function QuoteRequestPage() {
                 <span className="bg-[#CC0000] text-white text-[10px] font-black uppercase tracking-widest px-3 py-1">
                   {selectedProduct === 'catch-basin' ? 'Catch Basin Frame' : 
                    selectedProduct === 'valve-box' ? 'Valve Box Cover' : 
-                   'Manhole Solid Ring'}
+                   'Trench Solid Ring'}
                 </span>
               </div>
             </div>
@@ -276,7 +276,7 @@ export default function QuoteRequestPage() {
                 <ShieldCheck className="w-6 h-6 text-[#CC0000] shrink-0" />
                 <div>
                   <h4 className="font-black uppercase tracking-wider text-sm mb-1">DOT Pre-Approved</h4>
-                  <p className="text-zinc-400 text-xs font-medium leading-relaxed">Our iron meets or exceeds Heavy-Duty Paving Grade & Load Rating: See individual product specification heavy traffic load specifications.</p>
+                  <p className="text-zinc-400 text-xs font-medium leading-relaxed">Our iron meets or exceeds Heavy-Duty Trenching Grade & Load Rating: See individual product specification heavy traffic load specifications.</p>
                 </div>
               </div>
             </div>

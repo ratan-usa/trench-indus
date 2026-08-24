@@ -103,7 +103,7 @@ export default function LiteraturePage() {
                 </div>
                 <h3 className="text-3xl font-black uppercase tracking-wide mb-3">Solid Ring Utilization</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
-                  Watch exactly how our solid ring systems are deployed in the field to securely elevate existing utility frames prior to top-coat paving.
+                  Watch exactly how our solid ring systems are deployed in the field to securely elevate existing utility frames prior to top-coat trenching.
                 </p>
               </div>
             </div>
@@ -130,9 +130,9 @@ export default function LiteraturePage() {
                 <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3">
                   <Video className="w-3 h-3" /> Frame Assembly
                 </div>
-                <h3 className="text-3xl font-black uppercase tracking-wide mb-3">Frame & Riser Integration</h3>
+                <h3 className="text-3xl font-black uppercase tracking-wide mb-3">Frame & Grate Integration</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
-                  A high-speed breakdown of how the adjustable paving riser locks securely locks into the frame into the host frame using pivoting expansion mechanisms.
+                  A high-speed breakdown of how the adjustable trench grate locks securely locks into the frame into the host frame using pivoting expansion mechanisms.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function LiteraturePage() {
                 <div>
                   <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Master Product Catalog</h3>
                   <p className="text-zinc-500 text-sm font-medium leading-relaxed">
-                    The complete 2026 paving riser catalog containing dimensions, weights, and part numbers for all fabricated steel and iron products.
+                    The complete 2026 trench grate catalog containing dimensions, weights, and part numbers for all fabricated steel and iron products.
                   </p>
                 </div>
                 <Button className="w-full bg-white/5 border border-white/10 hover:bg-[#CC0000] hover:border-[#CC0000] text-white font-black uppercase tracking-widest rounded-none h-12 mt-6 transition-colors">

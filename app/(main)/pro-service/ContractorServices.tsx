@@ -23,8 +23,8 @@ export default function ContractorServices() {
           {/* Banner Image (Right Side) */}
           <div className="relative w-full md:w-1/3 min-h-[200px] md:min-h-full hidden md:block">
             <Image
-              src={`/assets/PAVING-RISERS/d-shape.png`} // Replace with a shot of workers installing a riser
-              alt="Contractors installing a manhole riser"
+              src={`/assets/trenching-RISERS/d-shape.png`} // Replace with a shot of workers installing a grate
+              alt="Contractors installing a trench grate"
               fill
               className="object-cover opacity-60 mix-blend-multiply grayscale"
             />

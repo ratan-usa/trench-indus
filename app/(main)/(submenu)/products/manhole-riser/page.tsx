@@ -25,9 +25,9 @@ const FINISHES = [
 ];
 
 const MANHOLE_RISER_DATA = {
-  title: 'Manhole Risers',
-  headline: 'Precision Adjustment for Municipal Manholes.',
-  description: 'Our Manhole Risers provide an efficient and durable solution for elevating manhole covers to grade level during paving and resurfacing operations. Fabricated from high-strength cast or ductile iron, they minimize the need for costly digging and rebuilding, ensuring a perfect flush fit with the new asphalt surface.',
+  title: 'Trench Grates',
+  headline: 'Precision Adjustment for Municipal Trenches.',
+  description: 'Our Trench Grates provide an efficient and durable solution for elevating trench covers to grade level during trenching and streetscaping operations. Fabricated from high-strength cast or ductile iron, they minimize the need for costly digging and rebuilding, ensuring a perfect flush fit with the new infrastructure surface.',
   specs: [
     { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Standard Round / Adjustable' },
@@ -39,11 +39,11 @@ const MANHOLE_RISER_DATA = {
   technicalPoints: [
     {
       title: 'Seamless Grade Adjustment',
-      desc: 'Quickly raise existing utilities to the new paving grade in minutes, saving substantial labor and material costs compared to traditional masonry adjustments.'
+      desc: 'Quickly raise existing utilities to the new trenching grade in minutes, saving substantial labor and material costs compared to traditional masonry adjustments.'
     },
     {
       title: 'Locking Expanders',
-      desc: 'Available with robust screw and expansion mechanisms to expand and securely lock the riser into the existing frame.'
+      desc: 'Available with robust screw and expansion mechanisms to expand and securely lock the grate into the existing frame.'
     },
     {
       title: 'Heavy Traffic Rated',
@@ -88,8 +88,8 @@ export default function ManholeRiserPage() {
             
             {/* Outline Text Styling */}
             <h1 className="text-6xl sm:text-8xl lg:text-[9rem] font-black uppercase tracking-tighter leading-[0.8] text-white mix-blend-difference drop-shadow-2xl">
-              Manhole<br/>
-              <span className="text-transparent" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.7)' }}>Risers</span>
+              Trench<br/>
+              <span className="text-transparent" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.7)' }}>Grates</span>
             </h1>
             
             <p className="text-zinc-400 text-lg sm:text-xl font-medium leading-relaxed max-w-md pt-8">
@@ -188,7 +188,7 @@ export default function ManholeRiserPage() {
               <ShieldCheck className="w-12 h-12 text-white/50 group-hover:text-white transition-colors" />
               <div>
                 <h3 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-2">Load Rating: See individual product specification</h3>
-                <p className="font-bold uppercase tracking-widest text-xs opacity-80">Paving Standard M306 Load Rating</p>
+                <p className="font-bold uppercase tracking-widest text-xs opacity-80">Trenching Standard M306 Load Rating</p>
               </div>
            </div>
 
@@ -212,7 +212,7 @@ export default function ManholeRiserPage() {
               <CircleDot className="w-8 h-8 text-[#CC0000] group-hover:scale-110 transition-transform" />
               <div>
                  <h4 className="font-black uppercase mb-3 text-white tracking-widest text-sm">Seamless Grade</h4>
-                 <p className="text-xs text-zinc-400 font-medium leading-relaxed">Save labor by raising utilities to paving grade in minutes without costly digging.</p>
+                 <p className="text-xs text-zinc-400 font-medium leading-relaxed">Save labor by raising utilities to trenching grade in minutes without costly digging.</p>
               </div>
            </div>
 
@@ -228,7 +228,7 @@ export default function ManholeRiserPage() {
               <div>
                  <h4 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter mb-4 leading-none">Locking Expanders</h4>
                  <p className="text-sm font-bold text-gray-600 max-w-lg leading-relaxed">
-                   Available with robust screw and expansion mechanisms to expand and securely lock the riser directly into the existing municipal frame under extreme pressure.
+                   Available with robust screw and expansion mechanisms to expand and securely lock the grate directly into the existing municipal frame under extreme pressure.
                  </p>
               </div>
            </div>

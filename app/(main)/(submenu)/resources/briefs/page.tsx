@@ -121,7 +121,7 @@ export default function EngineeringBriefsPage() {
                   Expansion Mechanism <br /><span className="text-[#CC0000]">Expansion Tech</span>
                 </h3>
                 <p className="text-lg text-zinc-400 leading-relaxed font-medium mb-8">
-                  Engineering Brief #208 explores the lateral force generation of our proprietary pivoting Expansion System. As the stainless steel bolt is torqued, the riser expands mechanically against the host frame, generating over 10,000 PSI of outward radial pressure to prevent dislodgement.
+                  Engineering Brief #208 explores the lateral force generation of our proprietary pivoting Expansion System. As the stainless steel bolt is torqued, the grate expands mechanically against the host frame, generating over 10,000 PSI of outward radial pressure to prevent dislodgement.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-[#111] px-6 py-4 border border-white/5 flex items-center gap-3">
@@ -264,7 +264,7 @@ export default function EngineeringBriefsPage() {
                 <p className="text-[#CC0000] font-mono text-[10px] font-bold tracking-[0.2em] mb-2">BRIEF #505</p>
                 <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Slope Tapering Effects</h3>
                 <p className="text-zinc-500 text-sm font-medium leading-relaxed mb-6">
-                  Analyzing the necessity of custom-tapered risers on steeply crowned municipal roadways.
+                  Analyzing the necessity of custom-tapered grates on steeply crowned municipal roadways.
                 </p>
                 <a href="#" className="text-white text-xs font-black uppercase tracking-widest flex items-center group-hover:text-[#CC0000] transition-colors">
                   Read Whitepaper <ChevronRight className="w-4 h-4 ml-1" />

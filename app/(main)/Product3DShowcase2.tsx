@@ -148,7 +148,7 @@ export default function Product3DShowcase2() {
           <div className="xl:col-span-8 flex flex-col h-full">
             <div className="relative w-full flex-grow aspect-video lg:aspect-auto min-h-[400px] lg:min-h-[600px] bg-black rounded-sm border border-zinc-800 shadow-[0_0_50px_-15px_rgba(0,0,0,1)] overflow-hidden group">
               
-              {/* Dynamic Overlay Badge */}
+              {/* Dynamic stormwater system Badge */}
               <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-md border border-zinc-800/50 rounded-sm px-4 py-2 text-[10px] font-mono uppercase tracking-widest text-zinc-300 z-20 flex items-center gap-3 pointer-events-none shadow-xl">
                 <div className="w-2 h-2 rounded-full bg-[#CC0000] animate-pulse" />
                 Autoplay Sequence Active

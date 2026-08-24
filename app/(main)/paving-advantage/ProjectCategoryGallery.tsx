@@ -9,7 +9,7 @@ const FILTERS = ["All", "Airport", "Commercial", "Industrial", "Infrastructure",
 const GALLERY_PROJECTS = [
   {
     id: 1,
-    title: "O'Hare Tarmac: Extra Heavy Duty Risers",
+    title: "O'Hare Tarmac: Extra Heavy Duty Grates",
     category: "Airport",
     imageSrc: `/assets/projects/air-1.jpg`,
   },
@@ -33,7 +33,7 @@ const GALLERY_PROJECTS = [
   },
   {
     id: 5,
-    title: "City Center Resurfacing: Manhole Adjustments",
+    title: "City Center streetscaping: Trench Adjustments",
     category: "Municipal",
     imageSrc: `/assets/projects/muni-1.jpg`,
   },

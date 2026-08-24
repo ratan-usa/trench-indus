@@ -9,21 +9,21 @@ export const menuData = {
 
     categories: [
 
-      // 1) Manhole Covers & Frames
+      // 1) Trench Covers & Frames
       {
         name: "MANHOLE COVERS & FRAMES",
-        slug: "manhole-covers-and-frames",
+        slug: "trench-covers-and-frames",
         image: "/assets/image1.jpeg",
         description:
-          "Durable ductile iron an d gray iron manhole covers and frames engineered for municipal, highway, and smart-city infrastructure.",
+          "Durable ductile iron an d gray iron trench covers and frames engineered for municipal, highway, and smart-city infrastructure.",
         videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4",
         items: [
-          "Circular manhole covers",
-          "Square & rectangular manhole covers",
+          "Circular trench covers",
+          "Square & rectangular trench covers",
           "Solid top covers",
           "Recessed infill covers",
           "Vented / perforated covers",
-          "Manhole frames & seating rings"
+          "Trench frames & seating rings"
         ]
       },
 
@@ -137,7 +137,7 @@ export const menuData = {
         videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4",
         items: [
           "Fire hydrant bodies",
-          "Hydrant risers",
+          "Hydrant grates",
           "Hydrant bonnet castings",
           "Hydrant base castings",
           "Hydrant nozzle connectors",
@@ -366,7 +366,7 @@ export const menuData = {
           "Box culvert pipe molds",
           "Jack pipe molds",
           "Pressure pipe molds",
-          "Manhole pipe molds"
+          "Trench pipe molds"
         ]
       },
 
@@ -398,7 +398,7 @@ export const menuData = {
         videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 feet mold.54.mp4",
 
         items: [
-          "Paving block molds",
+          "Trenching block molds",
           "Planter molds",
           "Tree guard molds",
           "Street furniture molds",
@@ -416,7 +416,7 @@ export const menuData = {
         videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 feet mold.54.mp4",
 
         items: [
-          "Manhole cover molds",
+          "Trench cover molds",
           "Sewer chamber molds",
           "Electric cable trench molds",
           "Utility vault molds",
@@ -944,23 +944,23 @@ export const menuData = {
     ]
   }
   ,
-  paving_risers: {
-    id: 'paving_risers',
-    label: 'PAVING RISERS',
+  trenching_risers: {
+    id: 'trenching_risers',
+    label: 'trenching RISERS',
     icon: Cog, // change if you prefer
-    bannerImage: '/assets/PAVING-RISERS/paving riser 1.5200.png',
+    bannerImage: '/assets/trenching-RISERS/trench grate 1.5200.png',
     color: 'bg-[#CC0000] text-white',
 
     categories: [
 
       // 1) Adjustable Trench Industries
       {
-        name: "ADJUSTABLE PAVING RISERS",
-        slug: "adjustable-paving-risers",
-        image: "/assets/PAVING-RISERS/paving riser 1.5200.png",
+        name: "ADJUSTABLE trenching RISERS",
+        slug: "adjustable-trenching-grates",
+        image: "/assets/trenching-RISERS/trench grate 1.5200.png",
         description:
           "Height-adjustable Trench Industries designed for raised flooring, terraces, rooftops and outdoor decking applications.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4 riser 1.5213.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/10-36_NEW_GRATE_ANIAMTION_normal.5110.mp4 grate 1.5213.mp4",
         items: [
           "Wide height adjustment range",
           "Self-levelling functionality",
@@ -970,20 +970,20 @@ export const menuData = {
         ]
       },
 
-      // 2) Fixed Height Risers
+      // 2) Fixed Height Grates
       {
         name: "FIXED HEIGHT RISERS",
-        slug: "fixed-height-risers",
-        image: "/assets/PAVING-RISERS/paving riser 1.5203.png",
+        slug: "fixed-height-grates",
+        image: "/assets/trenching-RISERS/trench grate 1.5203.png",
         description:
-          "Cost-effective fixed-height risers used for uniform elevation in pedestrian areas, plazas and garden paving projects.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 riser 1.5216.mp4",
+          "Cost-effective fixed-height grates used for uniform elevation in pedestrian areas, plazas and garden trenching projects.",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/48-48_1.2053.mp4 grate 1.5216.mp4",
         items: [
           "Low-profile supports",
           "Predefined height options",
           "Anti-slip design",
           "UV and weather resistant material",
-          "Ideal for lightweight paving units"
+          "Ideal for lightweight trenching units"
         ]
       },
 
@@ -991,10 +991,10 @@ export const menuData = {
       {
         name: "HEAVY-DUTY PEDESTAL SYSTEMS",
         slug: "heavy-duty-pedestal-systems",
-        image: "/assets/PAVING-RISERS/paving riser 1.5204.png",
+        image: "/assets/trenching-RISERS/trench grate 1.5204.png",
         description:
           "Strong pedestal systems engineered for high-load applications like commercial plazas, industrial walkways and public spaces.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 riser 1.5217.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/catch_basin_dxf.2445.mp4 grate 1.5217.mp4",
         items: [
           "Reinforced support structure",
           "High load carrying capacity",
@@ -1004,14 +1004,14 @@ export const menuData = {
         ]
       },
 
-      // 4) Self-Levelling Risers
+      // 4) Self-Levelling Grates
       {
         name: "SELF-LEVELLING RISERS",
-        slug: "self-levelling-risers",
-        image: "/assets/PAVING-RISERS/paving riser 1.5205.png",
+        slug: "self-levelling-grates",
+        image: "/assets/trenching-RISERS/trench grate 1.5205.png",
         description:
-          "Self-levelling risers designed to compensate for surface irregularities and slopes while maintaining level paving surfaces.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4 riser 1.5223.mp4",
+          "Self-levelling grates designed to compensate for surface irregularities and slopes while maintaining level trenching surfaces.",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/dxf_tree_grate.2293.mp4 grate 1.5223.mp4",
         items: [
           "Automatic slope correction",
           "precision level paved finish",
@@ -1024,11 +1024,11 @@ export const menuData = {
       // 5) Accessories & Spacers
       {
         name: "ACCESSORIES & SPACERS",
-        slug: "paving-riser-accessories-and-spacers",
-        image: "/assets/PAVING-RISERS/paving riser 1.5200.png",
+        slug: "trenching-grate-accessories-and-spacers",
+        image: "/assets/trenching-RISERS/trench grate 1.5200.png",
         description:
           "Complete range of accessories for pedestal systems including spacers, shims and edge supports for accurate tile alignment.",
-        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 riser 1.5251.mp4",
+        videoUrl: "https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/Videos/Flexible_Tree_Grate.mp4 grate 1.5251.mp4",
         items: [
           "Tile spacers",
           "Rubber shims",
@@ -1111,7 +1111,7 @@ export const menuData = {
   //       items: [
   //         "Subsea valve bodies",
   //         "Christmas tree components",
-  //         "Riser & manifold components",
+  //         "Grate & manifold components",
   //         "Wellhead housings",
   //         "Anchor and mooring castings"
   //       ]
@@ -1365,7 +1365,7 @@ export const menuData = {
           "Impact sprinklers",
           "Rain gun systems",
           "Pop-up sprinklers",
-          "Sprinkler laterals & risers",
+          "Sprinkler laterals & grates",
           "Nozzles and spray guns"
         ]
       },
@@ -1658,7 +1658,7 @@ export const menuData = {
         items: [
           "Mooring chain components",
           "Subsea connector castings",
-          "Riser support castings",
+          "Grate support castings",
           "Anchor and pile shoe castings",
           "Offshore platform brackets"
         ]
@@ -2560,7 +2560,7 @@ export const menuData = {
         items: [
           "Subsea connector castings",
           "Manifold components",
-          "Riser support castings",
+          "Grate support castings",
           "Anchor castings",
           "Mooring system components"
         ]

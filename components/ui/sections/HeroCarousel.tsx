@@ -6,48 +6,48 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 // --- HERO SLIDE DATA ---
-// Paving & Risers products only (Municipal, Roadway, Utility applications)
+// Trenching & Grates products only (Municipal, Roadway, Utility applications)
 
 const HERO_SLIDES = [
     {
         id: 1,
-        title: "Paving & Riser Systems",
+        title: "Trenching & Grate Systems",
         subtitle: "Precision grade control for streets and roadways.",
         description:
-            "Fixed and adjustable Trench Industries designed for accurate elevation control of manholes and catch basins. Built for long-term roadway performance.",
+            "Fixed and adjustable Trench Industries designed for accurate elevation control of trenches and catch basins. Built for long-term roadway performance.",
         cta: "View Products",
-        link: "/products/paving-risers",
+        link: "/products/trenching-grates",
         imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`
     },
     {
         id: 2,
-        title: "Manhole Riser Solutions",
+        title: "Trench Grate Solutions",
         subtitle: "Built for heavy traffic and harsh conditions.",
         description:
-            "Durable riser systems engineered to withstand repeated traffic loads, snowplows, and extreme weather without settlement or movement.",
-        cta: "Explore Manhole Risers",
-        link: "/products/manhole-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG` // Close-up of manhole riser installation
+            "Durable grate systems engineered to withstand repeated traffic loads, snowplows, and extreme weather without settlement or movement.",
+        cta: "Explore Trench Grates",
+        link: "/products/trench-grates",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG` // Close-up of trench grate installation
     },
     {
         id: 3,
-        title: "Catch Basin & Frame Risers",
+        title: "Catch Basin & Frame Grates",
         subtitle: "Reliable support for drainage infrastructure.",
         description:
-            "Risers and frames designed for catch basins to maintain surface alignment and structural integrity in municipal drainage systems.",
+            "Grates and frames designed for catch basins to maintain surface alignment and structural integrity in municipal drainage systems.",
         cta: "View Applications",
-        link: "/products/catch-basin-risers",
+        link: "/products/catch-basin-grates",
         imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`  
     },
     {
         id: 4,
-        title: "Snowplow-Resistant Riser Systems",
+        title: "Snowplow-Resistant Grate Systems",
         subtitle: "Designed for winter maintenance and heavy impact.",
         description:
-            "Paving risers engineered to resist snowplow strikes and freeze–thaw cycles, maintaining grade accuracy and surface safety year after year.",
+            "Trenching grates engineered to resist snowplow strikes and freeze–thaw cycles, maintaining grade accuracy and surface safety year after year.",
         cta: "See Performance",
-        link: "/products/snowplow-resistant-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg` // Winter roadway with manhole riser
+        link: "/products/snowplow-resistant-grates",
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg` // Winter roadway with trench grate
     }
 ];
 
@@ -106,7 +106,7 @@ export default function HeroCarousel() {
                             priority={index === 0}
                         />
 
-                        {/* Dark Overlay Gradient - Matches the style of image_e82d04.jpg */}
+                        {/* Dark stormwater system Gradient - Matches the style of image_e82d04.jpg */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
 
                         {/* Radial Vignette for focus */}

@@ -2,15 +2,15 @@ import AdditionalResources from "./AdditionalResources";
 import BIMGallery from "./BIMGallery";
 import CompanyOverview from "./CompanyOverview";
 import LocalDistribution from "./LocalDistribution";
-import PavingAdvantage from "./PavingAdvantage";
+import trenchingAdvantage from "./trenchingAdvantage";
 import ResultMap from "./ResultMap";
 
 
-export default function PavingAdvantages() {
+export default function trenchingAdvantages() {
     return (
 
         <div>
-            <PavingAdvantage />
+            <trenchingAdvantage />
             <LocalDistribution />
             {/* <ResultMap/> */}
             {/* <CompanyOverview/> */}

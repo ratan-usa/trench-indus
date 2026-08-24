@@ -6,22 +6,22 @@ const RESOURCES = [
   {
     id: 'safety',
     title: 'Safety & DOT Compliance',
-    description: 'Learn best practices for minimizing jobsite risks and ensuring your adjustment risers meet local DOT load ratings.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`, // Replace with an active paving/roadwork jobsite
+    description: 'Learn best practices for minimizing jobsite risks and ensuring your adjustment grates meet local DOT load ratings.',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`, // Replace with an active trenching/municipal drainage jobsite
     href: '#safety'
   },
   {
     id: 'installation',
     title: 'Installation Guides',
     description: 'Get step-by-step tips from the foundry on setting, sealing, and expanding heavy-duty cast iron frames.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(8).jpeg`, // Replace with an active paving/roadwork jobsite
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(8).jpeg`, // Replace with an active trenching/municipal drainage jobsite
     href: '#installation'
   },
   {
     id: 'case-studies',
     title: 'Case Studies',
-    description: 'See how our direct-to-site delivery helped municipal road crews overcome tight resurfacing deadlines.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`, // Replace with an active paving/roadwork jobsite
+    description: 'See how our direct-to-site delivery helped municipal road crews overcome tight streetscaping deadlines.',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`, // Replace with an active trenching/municipal drainage jobsite
     href: '#case-studies'
   }
 ];

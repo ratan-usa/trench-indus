@@ -50,10 +50,10 @@ export default function RiserOrderSpecifications() {
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-none">
             What we need to <br />
-            <span className="text-[#CC0000]">size your riser.</span>
+            <span className="text-[#CC0000]">size your grate.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Send these four measurements before we make your riser to ensure an absolute tight fitment that locks into place under continuous heavy vehicle traffic.
+            Send these four measurements before we make your grate to ensure an absolute tight fitment that locks into place under continuous heavy vehicle traffic.
           </p>
         </div>
 

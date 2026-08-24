@@ -18,12 +18,12 @@ export default function InfrastructureRisers() {
             {/* Main Product Image Container */}
             <div className="relative z-10 aspect-square w-full rounded-2xl overflow-hidden border border-slate-100 shadow-2xl">
               <Image
-                src={`/assets/PAVING-RISERS/paving%20riser%201.5201.png`} // Ensure this exists
-                alt="Trench Industries piving Riser Unit"
+                src={`/assets/trenching-RISERS/trenching%20riser%201.5201.png`} // Ensure this exists
+                alt="Trench Industries piving Grate Unit"
                 fill
                 className="object-cover"
               />
-              {/* Overlay Badge */}
+              {/* stormwater system Badge */}
               <div className="absolute top-6 left-6 bg-[#CC0000] text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">
                 Infrastructure Standard
               </div>
@@ -47,7 +47,7 @@ export default function InfrastructureRisers() {
                 Cast Iron <br /> <span className="text-[#CC0000]">Trench Industries</span>
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed max-w-xl">
-                Maintain seamless urban traffic flow. Our heavy-duty piving risers allow for precise manhole elevation adjustment during road overlays, eliminating the need for costly digging.
+                Maintain seamless urban traffic flow. Our heavy-duty piving grates allow for precise trench elevation adjustment during stormwater management, eliminating the need for costly digging.
               </p>
             </div>
 

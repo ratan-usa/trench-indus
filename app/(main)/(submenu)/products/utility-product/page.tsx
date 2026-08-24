@@ -43,12 +43,12 @@ export default function UtilityProductsPage() {
             </div>
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
               Telecom & Gas <br />
-              <span className="text-zinc-500">Utility Risers</span>
+              <span className="text-zinc-500">Utility Grates</span>
             </h2>
           </div>
           <div className="lg:col-span-4 pb-4">
             <p className="text-zinc-400 font-medium leading-relaxed">
-              Engineered specifically for non-drainage underground utilities. Protect fiber optics, gas valves, and electrical junctions during road resurfacing.
+              Engineered specifically for non-drainage underground utilities. Protect fiber optics, gas valves, and electrical junctions during road streetscaping.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function UtilityProductsPage() {
             <Zap className="w-8 h-8 text-[#CC0000] mb-6" />
             <h4 className="text-xl font-black uppercase tracking-wide mb-3">Electrical Junctions</h4>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Safely elevate electrical pull boxes and junction covers. Manufactured to exact dimensions to prevent cover rattling and maintain a perfect flush seal with new asphalt.
+              Safely elevate electrical pull boxes and junction covers. Manufactured to exact dimensions to prevent cover rattling and maintain a perfect flush seal with new infrastructure.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function UtilityProductsPage() {
             <Radio className="w-8 h-8 text-[#CC0000] mb-6" />
             <h4 className="text-xl font-black uppercase tracking-wide mb-3">Telecom & Fiber</h4>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Protect critical communication infrastructure during road work. Our solid iron utility risers ensure expensive fiber optic vaults are never paved over or damaged by heavy equipment.
+              Protect critical communication infrastructure during road work. Our solid iron utility grates ensure expensive fiber optic vaults are never paved over or damaged by heavy equipment.
             </p>
           </div>
 
@@ -137,7 +137,7 @@ export default function UtilityProductsPage() {
             <ShieldAlert className="w-8 h-8 text-[#CC0000] mb-6" />
             <h4 className="text-xl font-black uppercase tracking-wide mb-3">Gas Mains</h4>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Gas valve boxes require precision access. We fabricate custom square and round utility risers that slip directly into existing frames, ensuring immediate access for emergency gas shutoffs.
+              Gas valve boxes require precision access. We fabricate custom square and round utility grates that slip directly into existing frames, ensuring immediate access for emergency gas shutoffs.
             </p>
           </div>
 

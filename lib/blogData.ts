@@ -13,19 +13,19 @@ export interface BlogPost {
 export const blogs: BlogPost[] = [
   {
     id: "1",
-    slug: "the-ultimate-guide-to-adjustable-risers",
-    title: "The Ultimate Guide to Adjustable Risers",
+    slug: "the-ultimate-guide-to-adjustable-grates",
+    title: "The Ultimate Guide to Adjustable Grates",
     excerpt: "Discover how adjustable Trench Industries can eliminate costly road reconstruction and dramatically reduce closure times.",
     content: `
-      ## Why Choose Adjustable Risers?
-      When resurfacing roads, municipalities and paving contractors often struggle with aligning existing manholes to the new grade. Adjustable risers offer a seamless mechanical expansion mechanism that locks directly into the existing frame.
+      ## Why Choose Adjustable Grates?
+      When streetscaping roads, municipalities and trenching contractors often struggle with aligning existing trenches to the new grade. Adjustable grates offer a seamless mechanical expansion mechanism that locks directly into the existing frame.
       
       ### Key Benefits
       - **Mechanical Expansion**: Eliminates the need for concrete collars or welding.
       - **Time Savings**: Installations drop from hours to minutes.
       - **Longevity**: Hot-dipped galvanized or powder-coated options ensure decades of corrosion resistance.
 
-      If your crew is looking to maximize their daily paving footprint, transitioning to our adjustable models is the ultimate verified solution.
+      If your crew is looking to maximize their daily trenching footprint, transitioning to our adjustable models is the ultimate verified solution.
     `,
     date: "August 12, 2026",
     author: "Engineering Team",
@@ -54,14 +54,14 @@ export const blogs: BlogPost[] = [
   {
     id: "3",
     slug: "minimizing-road-closure-times",
-    title: "Minimizing Road Closure Times with Quick-Install Risers",
-    excerpt: "A look at the economic and logistical benefits of deploying precision-engineered risers on high-traffic municipal roads.",
+    title: "Minimizing Road Closure Times with Quick-Install Grates",
+    excerpt: "A look at the economic and logistical benefits of deploying precision-engineered grates on high-traffic municipal roads.",
     content: `
-      ## Time is Money on the Asphalt
+      ## Time is Money on the infrastructure
       Every minute a road is closed to traffic costs municipalities money and causes public frustration. Traditional methods of excavating, raising, and re-pouring concrete around utility frames are notoriously slow.
       
       ### The Quick-Install Paradigm
-      By utilizing our precision-engineered manhole and catch basin risers, paving crews can elevate utility access points in mere minutes. The mechanical expansion ensures a lock-tight fit without the cure time of concrete.
+      By utilizing our precision-engineered trench and catch basin grates, trenching crews can elevate utility access points in mere minutes. The mechanical expansion ensures a lock-tight fit without the cure time of concrete.
 
       **Verified Results**: Crews have reported up to a 60% reduction in intersection closure times after switching to our quick-install models.
     `,
@@ -84,7 +84,7 @@ export const blogs: BlogPost[] = [
       - **Hot-Dip Galvanizing**: The gold standard for extreme environments. The metallurgical bond prevents rust from creeping.
       - **Powder Coating**: Provides a durable, thick aesthetic finish that resists chipping and impacts during installation.
 
-      Choosing the right finish ensures that your risers outlast the surrounding asphalt.
+      Choosing the right finish ensures that your grates outlast the surrounding infrastructure.
     `,
     date: "June 19, 2026",
     author: "Materials Engineering",

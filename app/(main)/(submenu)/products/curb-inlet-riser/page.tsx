@@ -66,7 +66,7 @@ export default function CurbInletParallaxPage() {
           <Image
             key={activeFinish.name}
             src={activeFinish.image}
-            alt="Curb Inlet Riser"
+            alt="Curb Inlet Grate"
             width={1200}
             height={800}
             className="w-full h-auto object-contain drop-shadow-[0_0_80px_rgba(204,0,0,0.2)] animate-in fade-in zoom-in duration-1000"
@@ -89,7 +89,7 @@ export default function CurbInletParallaxPage() {
               Precision Engineered <br /> <span className="text-[#CC0000]">For The Street.</span>
             </h2>
             <p className="text-gray-400 font-medium leading-relaxed max-w-2xl text-lg">
-              The ultimate solution for municipal paving and resurfacing projects. Our curb inlet risers provide instant, perfect grade alignment without costly and time-consuming concrete excavation.
+              The ultimate solution for municipal trenching and streetscaping projects. Our curb inlet grates provide instant, perfect grade alignment without costly and time-consuming concrete excavation.
             </p>
           </div>
         </div>

@@ -7,8 +7,8 @@ import { Link as LinkIcon, PlayCircle } from 'lucide-react';
 const RESOURCES = [
   {
     id: 'res-1',
-    title: 'Paving-Adjust™ White Paper',
-    slug: 'Paving-Adjust-white-paper', // Used for routing
+    title: 'Trenching-Adjust™ White Paper',
+    slug: 'Trenching-Adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg`, // Replace with product photo
   },
@@ -21,15 +21,15 @@ const RESOURCES = [
   },
   {
     id: 'res-3',
-    title: 'Adjustment Riser Brochure',
-    slug: 'adjustment-riser-brochure',
+    title: 'Adjustment Grate Brochure',
+    slug: 'adjustment-grate-brochure',
     type: 'document',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg`, // Replace with product photo
   },
   {
     id: 'res-4',
-    title: 'Manhole Riser Video',
-    slug: 'manhole-riser-video',
+    title: 'Trench Grate Video',
+    slug: 'trench-grate-video',
     type: 'video',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`, // Replace with product photo
   },
@@ -50,14 +50,14 @@ const RESOURCES = [
   {
     id: 'res-7',
     title: 'INFRA-RISER Specs',
-    slug: 'infra-riser-specs',
+    slug: 'infra-grate-specs',
     type: 'document',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-006.JPG`,
   },
   {
     id: 'res-8',
-    title: 'Case Study: Highway Paving',
-    slug: 'case-study-highway-paving',
+    title: 'Case Study: Highway Trenching',
+    slug: 'case-study-highway-trenching',
     type: 'document',
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`,
   }

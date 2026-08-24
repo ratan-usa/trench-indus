@@ -41,7 +41,7 @@ export default function SanitarySewerPage() {
               </h1>
               
               <p className="text-lg text-zinc-400 font-medium leading-relaxed max-w-xl">
-                Municipal wastewater systems face constant threat from surface water infiltration. Our precision-engineered risers create an impenetrable mechanical seal, preventing stormwater from overwhelming treatment plants.
+                Municipal wastewater systems face constant threat from surface water infiltration. Our precision-engineered grates create an impenetrable mechanical seal, preventing stormwater from overwhelming treatment plants.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -84,7 +84,7 @@ export default function SanitarySewerPage() {
               <Lock className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-4">Mechanical Lockdown</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Pivoting expansion mechanisms expand the riser tight against the existing manhole frame. This extreme mechanical pressure prevents any shifting or rattling that could break the water seal over time.
+                Pivoting expansion mechanisms expand the grate tight against the existing trench frame. This extreme mechanical pressure prevents any shifting or rattling that could break the water seal over time.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function SanitarySewerPage() {
               <ShieldAlert className="w-10 h-10 text-white mb-6" />
               <h3 className="text-xl font-black uppercase tracking-wide mb-4">No Mortar Degradation</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Traditional brick and mortar adjustments crumble under heavy traffic and freeze-thaw cycles, allowing massive water infiltration. Solid iron risers completely minimize mortar failure.
+                Traditional brick and mortar adjustments crumble under heavy traffic and freeze-thaw cycles, allowing massive water infiltration. Solid iron grates completely minimize mortar failure.
               </p>
             </div>
 
@@ -112,7 +112,7 @@ export default function SanitarySewerPage() {
           <div className="absolute -right-32 -bottom-32 opacity-50">
             <Image 
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`} 
-              alt="Background Riser" 
+              alt="Background Grate" 
               width={800} 
               height={800} 
               className="object-contain"
@@ -124,10 +124,10 @@ export default function SanitarySewerPage() {
               Protect Your Treatment Plant.
             </h2>
             <p className="text-xl font-medium text-white/90 leading-relaxed mb-10">
-              Deploy our fully adjustable manhole risers on your next sanitary sewer resurfacing project and instantly lock out surface stormwater.
+              Deploy our fully adjustable trench grates on your next sanitary sewer streetscaping project and instantly lock out surface stormwater.
             </p>
             <Button size="lg" className="bg-black hover:bg-white text-white hover:text-black font-black uppercase tracking-widest px-10 h-16 rounded-none transition-colors">
-              View Adjustable Risers <ArrowRight className="w-5 h-5 ml-2" />
+              View Adjustable Grates <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
         </div>

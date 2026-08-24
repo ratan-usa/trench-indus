@@ -56,7 +56,7 @@ export default function FabricatedGratesSection() {
             <span className="text-[#CC0000]">Inlet Frame Covers.</span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-            Custom welded steel grates that fit our catch basin and riser frames.
+            Custom welded steel grates that fit our catch basin and grate frames.
           </p>
         </div>
 

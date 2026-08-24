@@ -89,7 +89,7 @@ const ProductCatalog = () => {
     <div className="bg-[#0A0A0A] min-h-screen font-sans text-white">
       {/* HERO SECTION */}
       <section className="relative w-full h-[400px] border-b border-[#333] overflow-hidden flex items-end">
-        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/assets/PAVING-RISERS/d-shape.png')] bg-cover bg-center opacity-10 mix-blend-luminosity grayscale"></div>
+        <div className="absolute inset-0 bg-[url('https://pub-cda644091d0e4a2189f90506f8921d34.r2.dev/assets/trenching-RISERS/d-shape.png')] bg-cover bg-center opacity-10 mix-blend-luminosity grayscale"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
         
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 pb-12 flex flex-col md:flex-row justify-between items-end gap-6">
@@ -99,7 +99,7 @@ const ProductCatalog = () => {
               <span className="text-[#CC0000] font-bold uppercase tracking-[0.2em] text-xs">Infrastructure Solutions</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-              Adjustment <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Risers</span>
+              Adjustment <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Grates</span>
             </h1>
           </div>
           <p className="text-gray-400 font-medium max-w-sm text-sm uppercase tracking-widest leading-relaxed">
@@ -257,7 +257,7 @@ const ProductCatalog = () => {
                       
                       {/* Image Viewer */}
                       <div className="relative w-full h-64 bg-[#0A0A0A] p-8 flex items-center justify-center overflow-hidden border-b border-[#222]">
-                        {/* Technical Grid Overlay */}
+                        {/* Technical Grid stormwater system */}
                         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
                         
                         <img

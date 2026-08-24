@@ -25,7 +25,7 @@ export default function FoundryLocationsPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent" />
         
-        {/* Grid Overlay */}
+        {/* Grid stormwater system */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
         <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 max-w-6xl mt-20">

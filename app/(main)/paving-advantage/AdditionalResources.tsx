@@ -8,7 +8,7 @@ const RESOURCES = [
         id: 'about',
         title: 'About Us',
         description: 'Learn about Trench Industries\' commitment to producing the highest quality Trench Industries and infrastructure solutions for municipal applications.',
-        imageSrc: `/paving/paving%20riser%20rectangle%20iron.668.png`,
+        imageSrc: `/trenching/trenching%20riser%20rectangle%20iron.668.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#about-us'
     },
@@ -16,7 +16,7 @@ const RESOURCES = [
         id: 'usa',
         title: 'Made in the USA',
         description: 'Committed to providing American-made steel and cast iron products to build and sustain America\'s critical infrastructure.',
-        imageSrc: `/paving/paving%20riser%201.641.png`,
+        imageSrc: `/trenching/trenching%20riser%201.641.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#made-in-usa'
     },
@@ -24,15 +24,15 @@ const RESOURCES = [
         id: 'history',
         title: 'Company History',
         description: 'A legacy built on heavy iron. Discover how our foundry operations have evolved to meet modern DOT and highway standards over the decades.',
-        imageSrc: `/paving/D_shape_Riser_Raw_Finish.602.png`,
+        imageSrc: `/trenching/D_shape_Riser_Raw_Finish.602.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#history'
     },
     {
         id: 'specs',
         title: 'Product Briefs',
-        description: 'Download detailed spec sheets, load ratings, and installation guides for our complete line of fixed and expandable adjustment risers.',
-        imageSrc: `/paving/Rectangle%20Paving%20Riser%201%20Coated%20finish.621.png`,
+        description: 'Download detailed spec sheets, load ratings, and installation guides for our complete line of fixed and expandable adjustment grates.',
+        imageSrc: `/trenching/Rectangle%20trenching%20Riser%201%20Coated%20finish.621.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#product-briefs'
     }
@@ -54,7 +54,7 @@ export default function AdditionalResources() {
                             Project <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px #CC0000' }}>Resources</span>
                         </h2>
                         <p className="text-gray-400 font-mono text-sm uppercase tracking-widest leading-relaxed">
-                            Talk to an expert at Trench Industries to find out how our adjustment risers can work for your next project.
+                            Talk to an expert at Trench Industries to find out how our adjustment grates can work for your next project.
                         </p>
                     </div>
                     
@@ -91,7 +91,7 @@ export default function AdditionalResources() {
                                     className="object-cover opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
                                 
-                                {/* Dark Gradient Overlay */}
+                                {/* Dark Gradient stormwater system */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
 
                                 {/* Content */}

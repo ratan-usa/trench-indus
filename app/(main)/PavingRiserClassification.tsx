@@ -28,13 +28,13 @@ const DESIGN_OPTIONS = [
 ];
 
 const APPLICATION_OPTIONS = [
-  "Manhole Trench",
+  "Trench Trench",
   "Catch Basin Trench",
   "Curb Inlet Trench",
   "Valve Box Trench"
 ];
 
-export default function PavingRiserClassification() {
+export default function trenchingRiserClassification() {
   return (
     <section className="bg-white py-8 border-b border-gray-100 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">

@@ -43,7 +43,7 @@ export default function SubmitSpecificationsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent lg:hidden" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] to-transparent hidden lg:block w-1/3" />
 
-          {/* Overlay Tech Grid */}
+          {/* stormwater system Tech Grid */}
           <div className="absolute inset-0 bg-[linear-gradient(rgba(204,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
         </div>
       </div>
@@ -124,11 +124,11 @@ export default function SubmitSpecificationsPage() {
             {/* Visual Callout Card */}
             <div className="w-full bg-black border border-white/10 overflow-hidden group">
               <div className="relative aspect-video">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/GRATE_IMAGES.504.mp4 basin riser ayush.717.jpg.jpeg`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/GRATE_IMAGES.504.mp4 basin grate ayush.717.jpg.jpeg`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-4 left-4 flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
-                  <span className="text-xs font-black uppercase tracking-widest">Paving Standard Compliant</span>
+                  <span className="text-xs font-black uppercase tracking-widest">Trenching Standard Compliant</span>
                 </div>
               </div>
               <div className="p-6">

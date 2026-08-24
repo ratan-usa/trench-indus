@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Map, Wrench, Building2, ArrowRight } from 'lucide-react';
 
-export default function PavingAdvantage() {
+export default function trenchingAdvantage() {
   const features = [
     {
       icon: <Map className="w-8 h-8 text-gray-400 group-hover:text-[#CC0000] transition-colors duration-500" />,
@@ -20,7 +20,7 @@ export default function PavingAdvantage() {
     {
       icon: <Wrench className="w-8 h-8 text-gray-400 group-hover:text-[#CC0000] transition-colors duration-500" />,
       title: "Robust Infrastructure",
-      description: "Extensive catalog of heavy-duty steel and cast iron adjustment risers built for severe durability.",
+      description: "Extensive catalog of heavy-duty steel and cast iron adjustment grates built for severe durability.",
       metric: "CLASS 30 IRON"
     },
     {
@@ -52,7 +52,7 @@ export default function PavingAdvantage() {
 
           <div className="max-w-md">
             <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium">
-              We're here to support your next infrastructure or roadwork project. Our sales team at Trench Industries understands your local market and can guide you to the best options from our extensive catalog.
+              We're here to support your next infrastructure or municipal drainage project. Our sales team at Trench Industries understands your local market and can guide you to the best options from our extensive catalog.
             </p>
           </div>
 

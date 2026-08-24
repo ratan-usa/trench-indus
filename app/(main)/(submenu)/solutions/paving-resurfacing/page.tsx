@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-export default function PavingResurfacingPage() {
+export default function trenchingstreetscapingPage() {
   return (
     <div className="min-h-screen bg-[#050505] font-sans text-white selection:bg-[#CC0000] selection:text-white pb-32">
 
@@ -36,13 +36,13 @@ export default function PavingResurfacingPage() {
 
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12">
             Municipal<br />
-            <span className="text-zinc-500">Paving &</span><br />
-            Resurfacing
+            <span className="text-zinc-500">Trenching &</span><br />
+            streetscaping
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl border-l-4 border-[#CC0000] pl-8">
             <p className="text-xl text-zinc-300 font-medium leading-relaxed">
-              When a city street is milled and repaved, utility structures are often left buried or dangerously depressed. Our engineered risers minimize the need to dig up and reset existing castings.
+              When a city street is milled and repaved, utility structures are often left buried or dangerously depressed. Our engineered grates minimize the need to dig up and reset existing castings.
             </p>
             <div className="flex flex-col justify-center gap-4">
               <Button size="lg" className="bg-[#CC0000] hover:bg-white text-white hover:text-black font-black uppercase tracking-widest rounded-none h-14 w-full md:w-auto transition-colors shadow-[0_0_30px_rgba(204,0,0,0.3)]">
@@ -55,7 +55,7 @@ export default function PavingResurfacingPage() {
         {/* --- THE THREE-STEP PROCESS (Cinematic Timeline) --- */}
         <div className="mb-40">
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-16">
-            The <span className="text-[#CC0000]">Resurfacing</span> Workflow
+            The <span className="text-[#CC0000]">streetscaping</span> Workflow
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -68,7 +68,7 @@ export default function PavingResurfacingPage() {
               <Tractor className="w-12 h-12 text-zinc-500 group-hover:text-[#CC0000] mb-8 transition-colors" />
               <h3 className="text-3xl font-black uppercase tracking-wide mb-4">Mill & Pave</h3>
               <p className="text-zinc-400 font-medium leading-relaxed relative z-10">
-                Contractors mill the existing asphalt and lay down a fresh wear course. Existing manholes and catch basins are now sitting 1-3 inches below the new grade, creating dangerous potholes.
+                Contractors mill the existing infrastructure and lay down a fresh wear course. Existing trenches and catch basins are now sitting 1-3 inches below the new grade, creating dangerous potholes.
               </p>
             </div>
 
@@ -78,9 +78,9 @@ export default function PavingResurfacingPage() {
                 02
               </div>
               <Layers className="w-12 h-12 text-zinc-500 group-hover:text-[#CC0000] mb-8 transition-colors" />
-              <h3 className="text-3xl font-black uppercase tracking-wide mb-4">Drop-In Riser</h3>
+              <h3 className="text-3xl font-black uppercase tracking-wide mb-4">Drop-In Grate</h3>
               <p className="text-zinc-400 font-medium leading-relaxed relative z-10">
-                Instead of deploying excavators to dig up the entire heavy iron frame, crews simply insert a Paving Riser directly into the existing casting frame.
+                Instead of deploying excavators to dig up the entire heavy iron frame, crews simply insert a Trench Grate directly into the existing casting frame.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function PavingResurfacingPage() {
               <Target className="w-12 h-12 text-white group-hover:text-black mb-8 transition-colors" />
               <h3 className="text-3xl font-black uppercase tracking-wide text-white group-hover:text-black mb-4 transition-colors">Perfect Grade</h3>
               <p className="text-white/90 group-hover:text-black/80 font-bold leading-relaxed relative z-10 transition-colors">
-                The original heavy lid is placed on top of the newly installed riser. The structure is now precision flush with the new asphalt, achieving safety compliance in minutes rather than hours.
+                The original heavy lid is placed on top of the newly installed grate. The structure is now precision flush with the new infrastructure, achieving safety compliance in minutes rather than hours.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export default function PavingResurfacingPage() {
         <div className="border-t border-white/10 pt-32">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-              Primary Solutions for <span className="text-[#CC0000]">Paving</span>
+              Primary Solutions for <span className="text-[#CC0000]">Trenching</span>
             </h2>
             <Button variant="outline" className="border-white/20 text-[#CC0000] hover:bg-white hover:text-black font-black uppercase tracking-widest rounded-none px-8 h-12 transition-colors">
               View All Products <ArrowRight className="w-4 h-4 ml-2" />
@@ -112,33 +112,33 @@ export default function PavingResurfacingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Manhole Risers Solution Card */}
+            {/* Trench Grates Solution Card */}
             <div className="bg-gradient-to-br from-[#111] to-black border border-white/10 p-12 hover:border-[#CC0000] transition-all duration-500 group flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-1 space-y-6">
-                <h3 className="text-3xl font-black uppercase tracking-wide">Manhole Risers</h3>
+                <h3 className="text-3xl font-black uppercase tracking-wide">Trench Grates</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
                   Available in standard sizes from 24" up to 36", featuring expansion adjustment screws for micro-elevation changes on uneven road slopes.
                 </p>
                 <div className="pt-4">
                   <Button className="bg-white text-black hover:bg-[#CC0000] hover:text-white font-black uppercase tracking-widest rounded-none h-12 px-6 transition-colors">
-                    Explore Manhole Risers
+                    Explore Trench Grates
                   </Button>
                 </div>
               </div>
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-full flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`}
-                  alt="Manhole Riser Solution"
+                  alt="Trench Grate Solution"
                   fill
                   className="object-contain p-4"
                 />
               </div>
             </div>
 
-            {/* Catch Basin Risers Solution Card */}
+            {/* Catch Basin Grates Solution Card */}
             <div className="bg-gradient-to-br from-[#111] to-black border border-white/10 p-12 hover:border-[#CC0000] transition-all duration-500 group flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-1 space-y-6">
-                <h3 className="text-3xl font-black uppercase tracking-wide">Catch Basin Risers</h3>
+                <h3 className="text-3xl font-black uppercase tracking-wide">Catch Basin Grates</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed">
                   Heavy-duty rectangular frames designed to rapidly elevate existing curb inlets and drainage basins during full-depth reclamation.
                 </p>
@@ -151,7 +151,7 @@ export default function PavingResurfacingPage() {
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-sm flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG`}
-                  alt="Catch Basin Riser Solution"
+                  alt="Catch Basin Grate Solution"
                   fill
                   className="object-contain p-4"
                 />

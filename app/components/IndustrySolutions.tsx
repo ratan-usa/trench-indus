@@ -21,7 +21,7 @@ const SOLUTIONS = [
         title: "STORM DRAINAGE",
         slug: "storm-drainage",
         icon: <Waves className="w-10 h-10 mb-2 text-[#CC0000]" />,
-        description: "Catch basin risers, trench grates, and drainage access solutions designed for efficient stormwater management.",
+        description: "Catch basin grates, trench grates, and drainage access solutions designed for efficient stormwater management.",
         imageSrc: `/assets/industries/image3.jpeg`,
     },
     {
@@ -29,7 +29,7 @@ const SOLUTIONS = [
         title: "SANITARY SEWER",
         slug: "sanitary-sewer",
         icon: <Droplets className="w-10 h-10 mb-2 text-[#CC0000]" />,
-        description: "Manhole covers and risers engineered for safe, durable access to sanitary sewer systems.",
+        description: "Trench covers and grates engineered for safe, durable access to sanitary sewer systems.",
         imageSrc: `/assets/industries/image5.jpeg`,
     },
     {
@@ -37,7 +37,7 @@ const SOLUTIONS = [
         title: "UTILITY – GAS, ELECTRIC & WATER",
         slug: "utility",
         icon: <Zap className="w-10 h-10 mb-2 text-[#CC0000]" />,
-        description: "Access assemblies and riser solutions protecting underground gas, electric, and water utilities.",
+        description: "Access assemblies and grate solutions protecting underground gas, electric, and water utilities.",
         imageSrc: `/assets/industries/image13.jpg`,
     },
     {
@@ -74,10 +74,10 @@ const SOLUTIONS = [
     },
     {
         id: 8,
-        title: "PAVING & RESURFACING",
-        slug: "paving-resurfacing",
+        title: "trenching & streetscaping",
+        slug: "trenching-streetscaping",
         icon: <Layers className="w-10 h-10 mb-2 text-[#CC0000]" />,
-        description: "Risers and frames designed to integrate seamlessly with paving and resurfacing projects.",
+        description: "Grates and frames designed to integrate seamlessly with trenching and streetscaping projects.",
         imageSrc: `/assets/industries/image20.jpg`,
     },
 ];
@@ -117,10 +117,10 @@ export default function IndustrySolutions() {
                                     className="object-cover group-hover:scale-105 transition-transform duration-700 z-0"
                                 />
 
-                                {/* Fallback overlay (visible if image fails to load or to darken the image) */}
+                                {/* Fallback stormwater system (visible if image fails to load or to darken the image) */}
                                 <div className="absolute inset-0 bg-[#0F0F0F]/20 z-10 pointer-events-none"></div>
 
-                                {/* Hover Description Overlay */}
+                                {/* Hover Description stormwater system */}
                                 <div className="absolute inset-0 bg-[#0F0F0F]/80 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
                                     <div className="flex flex-col items-center text-center">
                                         {item.icon}

@@ -12,35 +12,35 @@ const NAV_LINKS = [
         title: 'Products',
         href: '#products',
         dropdown: [
-            { isHeader: true, name: 'Paving Riser Product Categories' },
+            { isHeader: true, name: 'Trench Grate Product Categories' },
             {
                 name: 'Curb Inlets',
                 href: '#',
                 subDropdown: [
-                    { name: 'Curb Inlet Riser', href: '/products/curb-inlet-riser' }
+                    { name: 'Curb Inlet Grate', href: '/products/curb-inlet-grate' }
                 ]
             },
             {
                 name: 'Catch Basin',
                 href: '#',
                 subDropdown: [
-                    { name: 'Catch Basin Riser', href: '/products/catch-basin-risers' },
+                    { name: 'Catch Basin Grate', href: '/products/catch-basin-grates' },
                     { name: 'Catch Basin Grates', href: '/products/catch-basin-grates' }
                 ]
             },
             {
-                name: 'Manhole Risers',
+                name: 'Trench Grates',
                 href: '#',
                 subDropdown: [
-                    { name: 'Fixed Riser', href: '/products/fixed-riser' },
-                    { name: 'Adjustable Riser', href: '/products/adjustable-riser' }
+                    { name: 'Fixed Grate', href: '/products/fixed-grate' },
+                    { name: 'Adjustable Grate', href: '/products/adjustable-grate' }
                 ]
             },
             {
                 name: 'Valve Boxes',
                 href: '#',
                 subDropdown: [
-                    { name: 'Valve Box Riser', href: '/products/valve-box-risers' }
+                    { name: 'Valve Box Grate', href: '/products/valve-box-grates' }
                 ]
             },
             {
@@ -55,8 +55,8 @@ const NAV_LINKS = [
                 name: 'Specialty Castings & Steel',
                 href: '#',
                 subDropdown: [
-                    { name: 'Manhole Frame & Cover', href: '/products/manhole-frame-cover' },
-                    { name: 'D-Shape Risers', href: '/products/d-shape-risers' },
+                    { name: 'Trench Frame & Cover', href: '/products/trench-frame-cover' },
+                    { name: 'D-Shape Grates', href: '/products/d-shape-grates' },
                     { name: 'Other Cast Iron Products', href: '/products/other-cast-iron' },
                     { name: 'Utility Products', href: '/products/utility-product' },
                     { name: 'Fabricated Steel', href: '/products/fabricated-steel' },
@@ -68,7 +68,7 @@ const NAV_LINKS = [
         title: 'Infrastructure',
         href: '/solutions',
         dropdown: [
-            { name: 'Municipal Roadway', href: '/solutions/paving-resurfacing' },
+            { name: 'Municipal Roadway', href: '/solutions/trenching-streetscaping' },
             { name: 'Storm Drainage', href: '/solutions/storm-drainage' },
             { name: 'Airport & Heavy Port', href: '/solutions/airports-ports' },
             { name: 'Sanitary Sewer', href: '/solutions/sanitary-sewer' },

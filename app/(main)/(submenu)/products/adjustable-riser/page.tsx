@@ -61,7 +61,7 @@ export default function AdjustableRiserPage() {
             <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none animate-in fade-in slide-in-from-left duration-1000 delay-150">
               Adjustable <br/> 
               <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.8)' }}>
-                Risers
+                Grates
               </span>
             </h1>
           </div>
@@ -79,7 +79,7 @@ export default function AdjustableRiserPage() {
             
             <Image
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg`}
-              alt="Adjustable Riser Blueprint"
+              alt="Adjustable Grate Blueprint"
               fill
               className="object-contain filter drop-shadow-[0_0_60px_rgba(204,0,0,0.2)]"
               priority
@@ -98,7 +98,7 @@ export default function AdjustableRiserPage() {
               <div className="backdrop-blur-md bg-black/60 border border-[#CC0000]/50 p-6 shadow-2xl max-w-xs transform translate-x-2 pointer-events-auto">
                 <Settings className="w-5 h-5 text-[#CC0000] mb-3" />
                 <h3 className="text-xl font-black uppercase tracking-widest text-white mb-2">Mechanical Expansion</h3>
-                <p className="text-gray-400 text-xs leading-loose font-medium">Engineered expansion screw allows for precise +/- ¾” diameter adjustments on the fly, guaranteeing a perfect fit in irregular manhole frames.</p>
+                <p className="text-gray-400 text-xs leading-loose font-medium">Engineered expansion screw allows for precise +/- ¾” diameter adjustments on the fly, guaranteeing a perfect fit in irregular trench frames.</p>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function AdjustableRiserPage() {
               <div className="backdrop-blur-md bg-black/80 border border-[#CC0000] p-6 shadow-[0_0_40px_rgba(204,0,0,0.3)] max-w-sm text-center pointer-events-auto">
                 <Target className="w-5 h-5 text-[#CC0000] mb-3 mx-auto" />
                 <h3 className="text-xl font-black uppercase tracking-widest text-white mb-2">Universal Sizing</h3>
-                <p className="text-gray-400 text-xs leading-loose font-medium">Available in standard starting diameters from 24" up to 36", with rise increments available from 1" up to 6" for deep paving lifts.</p>
+                <p className="text-gray-400 text-xs leading-loose font-medium">Available in standard starting diameters from 24" up to 36", with rise increments available from 1" up to 6" for deep trenching lifts.</p>
               </div>
             </div>
 

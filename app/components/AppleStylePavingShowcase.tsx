@@ -20,7 +20,7 @@ const NEW_TAGLINES = [
     primary: "True Alignment.",
     secondary: "Instant Leveling.",
     highlight: "Zero Disruption.",
-    desc: "Engineered seating tolerances that bring manhole covers flush to new asphalt horizons. No digging, no masonry, no downtime.",
+    desc: "Engineered seating tolerances that bring trench covers flush to new infrastructure horizons. No digging, no masonry, no downtime.",
     statLabel: "Site Turnaround",
     statValue: "100% Excavation-Free"
   },
@@ -34,17 +34,17 @@ const NEW_TAGLINES = [
     statValue: "0.00mm Structural Warp"
   },
   {
-    badge: "The Asphalt Companion",
+    badge: "The infrastructure Companion",
     primary: "Lay the Course.",
     secondary: "Match the Crown.",
     highlight: "Pave with Fluidity.",
-    desc: "Millimeter-precise profile rings designed to match your paving equipment layout lines precision. Drop, align, and roll asphalt straight over the unit.",
+    desc: "Millimeter-precise profile rings designed to match your trenching equipment layout lines precision. Drop, align, and roll infrastructure straight over the unit.",
     statLabel: "Workflow Acceleration",
-    statValue: "Paving Crew Synergy"
+    statValue: "Trenching Crew Synergy"
   }
 ];
 
-export default function AppleStylePavingShowcase() {
+export default function AppleStyletrenchingShowcase() {
   const [activeIdx, setActiveIdx] = useState(0);
   const current = NEW_TAGLINES[activeIdx];
 
@@ -114,7 +114,7 @@ export default function AppleStylePavingShowcase() {
         <div className="lg:col-span-7 w-full flex flex-col gap-6">
           <div className="relative aspect-video w-full rounded-2xl bg-[#0F0F0F] border border-zinc-800/80 overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] group cursor-pointer">
 
-            {/* Viewport Top Diagnostics HUD Indicator Overlay */}
+            {/* Viewport Top Diagnostics HUD Indicator stormwater system */}
             <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full px-3 py-1 text-[9px] font-mono uppercase tracking-widest text-zinc-400 z-20 flex items-center gap-1.5 pointer-events-none">
               <span className="w-1.5 h-1.5 rounded-full bg-[#CC0000] animate-pulse" /> Asset Renderer: Sandbox Mode
             </div>
@@ -146,7 +146,7 @@ export default function AppleStylePavingShowcase() {
               </div>
             </div>
 
-            {/* Ambient Base Description Bar Footer Overlay */}
+            {/* Ambient Base Description Bar Footer stormwater system */}
             <div className="absolute bottom-4 left-4 right-4 bg-black/40 backdrop-blur-sm border border-zinc-800/40 p-3 rounded-xl text-[10px] uppercase font-bold tracking-wider text-zinc-400 flex items-center justify-between z-10">
               <span className="flex items-center gap-1.5"><Play className="w-3 h-3 text-[#CC0000] fill-current" /> Operational Blueprint Active</span>
               <span className="font-mono text-zinc-600">Scale: 1:1 Matrix</span>

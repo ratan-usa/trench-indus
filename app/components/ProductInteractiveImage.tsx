@@ -115,7 +115,7 @@ export default function ProductInteractiveImage() {
               })}
             </div>
 
-            {/* Paving Engineering Context Info Block */}
+            {/* Trenching Engineering Context Info Block */}
             <div className="border border-slate-200 rounded-sm p-6 bg-slate-50/50 space-y-4">
               <div className="flex items-center gap-2 text-[#CC0000] border-b border-slate-200 pb-3">
                 <ShieldCheck className="w-5 h-5" />

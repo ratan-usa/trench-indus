@@ -17,7 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'D-Shape Riser', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(8).jpeg` },
+  { name: 'D-Shape Grate', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(8).jpeg` },
   { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TRENCH_GRATES_001_(4).jpeg` },
   { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg` },
   { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_17_880Z.jpeg` },
@@ -25,9 +25,9 @@ const FINISHES = [
 ];
 
 const D_SHAPE_DATA = {
-  title: 'D-Shape Curb Risers',
+  title: 'D-Shape Curb Grates',
   headline: 'Specialized Geometry for Perimeter Curb Inlets.',
-  description: 'The D-Shape Riser is a precision-engineered solution for curb-back manholes and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these risers allow for seamless asphalt resurfacing around complex perimeter geometries without obstructing the gutter line.',
+  description: 'The D-Shape Grate is a precision-engineered solution for curb-back trenches and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these grates allow for seamless drainage infrastructure around complex perimeter geometries without obstructing the gutter line.',
   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg`,
   specs: [
     { label: 'Material', value: 'Material: See product specification' },
@@ -40,15 +40,15 @@ const D_SHAPE_DATA = {
   technicalPoints: [
     {
       title: 'Flush Curb Alignment',
-      desc: 'The flat side is precision-machined to ensure a tight, no-gap fit against existing concrete curbs, preventing asphalt seepage into the basin.'
+      desc: 'The flat side is precision-machined to ensure a tight, no-gap fit against existing concrete curbs, preventing infrastructure seepage into the basin.'
     },
     {
       title: 'Anti-Lateral Shift',
-      desc: 'Features integrated seat-locking lugs to prevent the riser from rotating or shifting under the pressure of a steam roller.'
+      desc: 'Features integrated seat-locking lugs to prevent the grate from rotating or shifting under the pressure of a steam roller.'
     },
     {
       title: 'High-Temp Coating',
-      desc: 'Finished with industrial-grade bituminous paint to withstand the extreme temperatures of fresh hot-mix asphalt.'
+      desc: 'Finished with industrial-grade bituminous paint to withstand the extreme temperatures of fresh hot-mix infrastructure.'
     }
   ]
 };
@@ -114,7 +114,7 @@ export default function DShapeRisersPage() {
             <div>
               <h1 className="text-5xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-6">
                 D-Shape <br />
-                <span className="text-[#CC0000]">Risers</span>
+                <span className="text-[#CC0000]">Grates</span>
               </h1>
 
               <div className="inline-block bg-gray-50 text-black px-4 py-2 font-bold uppercase tracking-widest text-xs mb-8 rounded-sm border border-gray-200">
@@ -186,7 +186,7 @@ export default function DShapeRisersPage() {
               Available <span className="text-[#CC0000]">Finishes</span>
             </h2>
           </div>
-          <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our D-Shape Risers.</p>
+          <p className="text-gray-500 font-medium mb-12">Explore the various material and coating options for our D-Shape Grates.</p>
           
           <div className="relative">
             {/* Scroll Left Button */}

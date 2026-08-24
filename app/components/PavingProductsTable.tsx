@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { PAVING_PRODUCTS, PavingProduct } from '@/lib/PAVING_PRODUCTS';
+import { trenching_PRODUCTS, trenchingProduct } from '@/lib/trenching_PRODUCTS';
 import { Search, Filter, ChevronLeft, ChevronRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ITEMS_PER_PAGE = 15;
 
-export default function PavingProductsTable() {
+export default function trenchingProductsTable() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedSize, setSelectedSize] = useState<string>('All');
@@ -16,29 +16,29 @@ export default function PavingProductsTable() {
 
   // Extract unique categories, sizes, and heights
   const categories = useMemo(() => {
-    const cats = new Set(PAVING_PRODUCTS.map(p => p.Category));
+    const cats = new Set(trenching_PRODUCTS.map(p => p.Category));
     return ['All', ...Array.from(cats)];
   }, []);
 
   const sizes = useMemo(() => {
-    const s = new Set(PAVING_PRODUCTS.map(p => p['Parsed Size']).filter(Boolean));
+    const s = new Set(trenching_PRODUCTS.map(p => p['Parsed Size']).filter(Boolean));
     return ['All', ...Array.from(s)];
   }, []);
 
   const heights = useMemo(() => {
-    const h = new Set(PAVING_PRODUCTS.map(p => p['Height (in)']).filter(v => v !== null && v !== undefined));
+    const h = new Set(trenching_PRODUCTS.map(p => p['Height (in)']).filter(v => v !== null && v !== undefined));
     return ['All', ...Array.from(h).sort((a, b) => Number(a) - Number(b)).map(String)];
   }, []);
 
   // Filter and search logic
   const filteredProducts = useMemo(() => {
-    return PAVING_PRODUCTS.filter((product) => {
+    return trenching_PRODUCTS.filter((product) => {
       const matchesCategory = selectedCategory === 'All' || product.Category === selectedCategory;
       const matchesSize = selectedSize === 'All' || product['Parsed Size'] === selectedSize;
       const matchesHeight = selectedHeight === 'All' || String(product['Height (in)']) === selectedHeight;
       const searchLower = searchTerm.toLowerCase();
       const matchesSearch = 
-        (product['Paving NO. (Raw)']?.toLowerCase().includes(searchLower)) ||
+        (product['Trenching NO. (Raw)']?.toLowerCase().includes(searchLower)) ||
         (product['Base Code']?.toLowerCase().includes(searchLower)) ||
         (product['Description']?.toLowerCase().includes(searchLower)) ||
         (product['Parsed Size']?.toLowerCase().includes(searchLower));
@@ -81,7 +81,7 @@ export default function PavingProductsTable() {
               Complete <span className="text-[#CC0000]">Specifications</span>
             </h2>
             <p className="text-zinc-400 font-medium max-w-2xl text-lg">
-              Search our comprehensive database of Trench Industries, adjustment rings, and catch basins. Filter by size, material, or paving number.
+              Search our comprehensive database of Trench Industries, adjustment rings, and catch basins. Filter by size, material, or trenching number.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function PavingProductsTable() {
             </div>
             <input
               type="text"
-              placeholder="Search by Paving No, Base Code, Size, or Description..."
+              placeholder="Search by Trenching No, Base Code, Size, or Description..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full bg-zinc-900/50 border border-zinc-800 text-white rounded-sm pl-12 pr-4 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
@@ -174,7 +174,7 @@ export default function PavingProductsTable() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-zinc-900/80 border-b border-zinc-800">
-                  <th className="px-6 py-4 text-xs font-black uppercase tracking-wider text-zinc-400 whitespace-nowrap">Paving NO.</th>
+                  <th className="px-6 py-4 text-xs font-black uppercase tracking-wider text-zinc-400 whitespace-nowrap">Trenching NO.</th>
                   <th className="px-6 py-4 text-xs font-black uppercase tracking-wider text-zinc-400 whitespace-nowrap">Category</th>
                   <th className="px-6 py-4 text-xs font-black uppercase tracking-wider text-zinc-400 whitespace-nowrap">Size</th>
                   <th className="px-6 py-4 text-xs font-black uppercase tracking-wider text-zinc-400 whitespace-nowrap">Height</th>
@@ -188,7 +188,7 @@ export default function PavingProductsTable() {
                     <tr key={product["SL No."]} className="hover:bg-zinc-800/30 transition-colors group">
                       <td className="px-6 py-4">
                         <span className="font-mono text-sm font-bold text-white group-hover:text-[#CC0000] transition-colors">
-                          {product["Paving NO. (Raw)"]}
+                          {product["Trenching NO. (Raw)"]}
                         </span>
                       </td>
                       <td className="px-6 py-4">

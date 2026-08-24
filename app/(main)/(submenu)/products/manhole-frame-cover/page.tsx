@@ -16,9 +16,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const MANHOLE_FRAME_DATA = {
-  title: 'Manhole Frames & Covers',
+  title: 'Trench Frames & Covers',
   headline: 'Heavy-Duty Access for Municipal Infrastructure.',
-  description: 'Our Manhole Frames and Covers are engineered for extreme durability, providing secure access to underground utilities, sanitary sewers, and storm drains. Manufactured from premium ductile or cast iron to withstand heavy traffic and severe environmental conditions.',
+  description: 'Our Trench Frames and Covers are engineered for extreme durability, providing secure access to underground utilities, sanitary sewers, and storm drains. Manufactured from premium ductile or cast iron to withstand heavy traffic and severe environmental conditions.',
   specs: [
     { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Standard Round or Heavy Duty' },
@@ -67,7 +67,7 @@ export default function ManholeFrameCoverPage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
-              Manhole Frames <br />
+              Trench Frames <br />
               <span className="text-[#CC0000]">& Covers</span>
             </h1>
 

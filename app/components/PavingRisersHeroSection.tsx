@@ -3,7 +3,7 @@
 import React from 'react';
 import { ShieldCheck, PlayCircle, Zap, Clock, Target } from 'lucide-react';
 
-export default function PavingRisersHeroSection() {
+export default function trenchingRisersHeroSection() {
   return (
     <section className="bg-slate-50 py-4 border-b border-slate-200 font-sans">
       <div className="w-full px-6 md:px-8 lg:px-12">
@@ -16,7 +16,7 @@ export default function PavingRisersHeroSection() {
                 <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Manufacturing
               </span>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-[1.05]">
-                Watch your risers <br />
+                Watch your grates <br />
                 <span className="text-[#CC0000]">being built live.</span>
               </h2>
             </div>
@@ -32,7 +32,7 @@ export default function PavingRisersHeroSection() {
                   <Zap className="w-4 h-4 fill-current" />
                   <span className="text-xs font-black uppercase tracking-wider text-slate-900">Easy</span>
                 </div>
-                <p className="text-xs font-bold text-slate-500 leading-snug">No excavation. The riser sits over the existing frame.</p>
+                <p className="text-xs font-bold text-slate-500 leading-snug">No excavation. The grate sits over the existing frame.</p>
               </div>
 
               <div className="space-y-1 sm:px-4 sm:w-1/3 pt-4 sm:pt-0 border-t sm:border-t-0 border-slate-200">

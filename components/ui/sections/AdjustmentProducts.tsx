@@ -6,23 +6,23 @@ import { ChevronRight } from 'lucide-react';
 export const PRODUCT_CATEGORIES = [
   {
     id: 1,
-    title: "Adjustment Risers",
-    slug: "adjustment-risers",
-    description: "Adjust any manhole or catch basin to final grade with steel or cast iron riser rings.",
+    title: "Adjustment Grates",
+    slug: "adjustment-grates",
+    description: "Adjust any trench or catch basin to final grade with steel or cast iron grate rings.",
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T18_45_49_105Z.jpeg`,
   },
   {
     id: 2,
-    title: "INFRA-RISER® Adjustment Risers",
-    slug: "infra-riser-adjustment-risers",
-    description: "Prolong structure life with the INFRA-RISER® rubber composite adjustment riser",
+    title: "INFRA-RISER® Adjustment Grates",
+    slug: "infra-grate-adjustment-grates",
+    description: "Prolong structure life with the INFRA-RISER® rubber composite adjustment grate",
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2025_01_02T12_56_56_434Z.jpeg`,
   },
   {
     id: 3,
-    title: "Rectangular Catch Basin Risers",
-    slug: "catch-basin-risers",
-    description: "Heavy-duty steel fabricated risers designed specifically to raise storm grates and curb inlets to final grade.",
+    title: "Rectangular Catch Basin Grates",
+    slug: "catch-basin-grates",
+    description: "Heavy-duty steel fabricated grates designed specifically to raise storm grates and curb inlets to final grade.",
     imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/TI-010.JPG`,
   },
   {

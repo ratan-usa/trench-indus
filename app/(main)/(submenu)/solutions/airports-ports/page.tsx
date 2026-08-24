@@ -52,7 +52,7 @@ export default function AirportsPortsPage() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#CC0000]/10 blur-3xl pointer-events-none" />
               <Crosshair className="w-8 h-8 text-[#CC0000] mb-4 group-hover:rotate-90 transition-transform duration-700" />
               <p className="text-lg text-zinc-400 font-medium leading-relaxed">
-                Aviation tarmacs and deep-water port terminals endure the highest concentrated vehicular weight on earth. Our extra-heavy-duty casting risers are engineered specifically to survive cargo handlers and commercial aircraft traffic.
+                Aviation tarmacs and deep-water port terminals endure the highest concentrated vehicular weight on earth. Our extra-heavy-duty casting grates are engineered specifically to survive cargo handlers and commercial aircraft traffic.
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function AirportsPortsPage() {
                 <Plane className="w-12 h-12 text-zinc-600 group-hover:text-white mb-8 transition-colors" />
                 <h3 className="text-4xl font-black uppercase tracking-wide mb-4">Aviation Tarmacs</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed max-w-lg">
-                  Runways, taxiways, and terminal aprons require infrastructure that will not deflect under the massive point-load of a commercial jetliner gear. Our solid iron utility risers lock down flush to ensure zero FOD (Foreign Object Debris) hazard.
+                  Runways, taxiways, and terminal aprons require infrastructure that will not deflect under the massive point-load of a commercial jetliner gear. Our solid iron utility grates lock down flush to ensure zero FOD (Foreign Object Debris) hazard.
                 </p>
               </div>
               <div className="mt-12 flex justify-end">
@@ -121,7 +121,7 @@ export default function AirportsPortsPage() {
                 <Anchor className="w-12 h-12 text-zinc-600 group-hover:text-white mb-8 transition-colors" />
                 <h3 className="text-4xl font-black uppercase tracking-wide mb-4">Intermodal Ports</h3>
                 <p className="text-zinc-400 font-medium leading-relaxed max-w-lg">
-                  Gantry cranes, reach stackers, and fully loaded shipping containers exert extreme continuous pressure on port asphalt. Our heavy-duty catch basin frames handle the crushing weight while draining massive seaside stormwater volumes.
+                  Gantry cranes, reach stackers, and fully loaded shipping containers exert extreme continuous pressure on port infrastructure. Our heavy-duty catch basin frames handle the crushing weight while draining massive seaside stormwater volumes.
                 </p>
               </div>
               <div className="mt-12 flex justify-end">

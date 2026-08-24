@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 const SOLID_IRON_FEATURES = [
   { title: "Most Economical Option", desc: "Maximizes infrastructure budget layout efficiency across large municipal projects." },
   { title: "Cast from Gray Iron", desc: "Heavy-duty structural casting optimized for heavy vehicular loads" },
-  { title: "Machined to Fit Street Covers", desc: "Fabricated to fit precisely in the existing manhole covers." },
+  { title: "Machined to Fit Street Covers", desc: "Fabricated to fit precisely in the existing trench covers." },
   { title: "Minimum Vertical Rise", desc: "Engineered clearance calculated precisely at lid thickness + 1/2\" increments." },
   { title: "Standard Sizes In Stock", desc: "Readily available and stocked in standard 2\" and 3\" elevation rises." },
   { title: "Stackable Configuration", desc: "Can be securely nested and stacked on site for increased elevation matching." }
@@ -26,8 +26,8 @@ const SOLID_IRON_FEATURES = [
 const ADJUSTABLE_STEEL_FEATURES = [
   { title: "Diameter Variance Adjust", desc: "Adjusts in or out up to 1/2 inch to clear the frame." },
   { title: "Pivoted Expansion System", desc: "Built-in mechanical linkage delivering positive, high-grip mechanical locking to the base." },
-  { title: "Installs in Minutes", desc: "Accelerates on-site field assembly timelines to match fast-paced asphalt crews." },
-  { title: "Ultra-Low Minimum Rise", desc: "Provides as little as 3/4\" vertical rise—essential for modern micro-surfacing paving overlays." }
+  { title: "Installs in Minutes", desc: "Accelerates on-site field assembly timelines to match fast-paced infrastructure crews." },
+  { title: "Ultra-Low Minimum Rise", desc: "Provides as little as 3/4\" vertical rise—essential for modern micro-surfacing trenching stormwater systems." }
 ];
 
 export default function RiserProductSpecifications() {
@@ -38,7 +38,7 @@ export default function RiserProductSpecifications() {
         {/* --- SECTION INTRO HEADER --- */}
         <div className="max-w-3xl space-y-4">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Riser Selection Criteria
+            <ShieldCheck className="w-4 h-4 text-[#CC0000]" /> Grate Selection Criteria
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-none">
             Solid iron <br />
@@ -62,7 +62,7 @@ export default function RiserProductSpecifications() {
                 <span className="text-[10px] font-black uppercase tracking-widest">Rigid Cast Framework</span>
               </div>
               <CardTitle className="text-2xl font-black uppercase tracking-tight text-slate-900">
-                Solid Iron Riser Rings
+                Solid Iron Grate Rings
               </CardTitle>
               <CardDescription className="text-slate-500 font-medium text-sm">
                 Cast gray iron rings for standard road work.
@@ -131,7 +131,7 @@ export default function RiserProductSpecifications() {
                 Operation Workflow Notice
               </span>
               <h4 className="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
-                Optimized Specifically For <span className="text-[#CC0000]">Modern Thin Paving Layers.</span>
+                Optimized Specifically For <span className="text-[#CC0000]">Modern Thin Trenching Layers.</span>
               </h4>
               <p className="text-xs text-zinc-400 font-medium max-w-xl">
                 Deploy expansion setups to handle minimal 3/4\" height corrections cleanly without cracking new wear courses.

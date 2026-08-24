@@ -64,7 +64,7 @@ export default function CalculatorsPage() {
           <div className="lg:col-span-5 bg-[#0A0A0A] border border-white/10 p-8 md:p-12">
             <div className="flex items-center gap-3 mb-10 border-b border-white/10 pb-6">
               <Settings2 className="w-6 h-6 text-[#CC0000]" />
-              <h2 className="text-2xl font-black uppercase tracking-wide">Riser Spec Configurator</h2>
+              <h2 className="text-2xl font-black uppercase tracking-wide">Grate Spec Configurator</h2>
             </div>
 
             <div className="space-y-10">
@@ -204,7 +204,7 @@ export default function CalculatorsPage() {
                   <Database className="w-10 h-10 text-[#CC0000] mb-6" />
                   <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Hydraulic Flow Calculator</h3>
                   <p className="text-zinc-500 font-medium leading-relaxed mb-8">
-                    Calculate total GPM (Gallons Per Minute) runoff bypass prevention when upgrading from 3-sided to 4-sided catch basin risers.
+                    Calculate total GPM (Gallons Per Minute) runoff bypass prevention when upgrading from 3-sided to 4-sided catch basin grates.
                   </p>
                 </div>
                 <span className="text-white text-xs font-black uppercase tracking-widest flex items-center group-hover:text-[#CC0000] group-hover:translate-x-2 transition-all">
@@ -222,7 +222,7 @@ export default function CalculatorsPage() {
                   <Activity className="w-10 h-10 text-[#CC0000] mb-6" />
                   <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Epoxy Volume Estimator</h3>
                   <p className="text-zinc-500 font-medium leading-relaxed mb-8">
-                    Input your required riser circumference and elevation gap to calculate exactly how many tubes of industrial epoxy sealant are required per frame.
+                    Input your required grate circumference and elevation gap to calculate exactly how many tubes of industrial epoxy sealant are required per frame.
                   </p>
                 </div>
                 <span className="text-white text-xs font-black uppercase tracking-widest flex items-center group-hover:text-[#CC0000] group-hover:translate-x-2 transition-all">

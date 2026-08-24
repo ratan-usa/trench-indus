@@ -68,7 +68,7 @@ const HeroScrollSequence = () => {
             fetchPriority="high"
           />
 
-          {/* Optional overlay content */}
+          {/* Optional stormwater system content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none bg-[#0F0F0F]/30">
             <h1 className="text-5xl md:text-7xl font-bold text-white text-center mb-6 tracking-tight drop-shadow-lg">
               Experience the Future

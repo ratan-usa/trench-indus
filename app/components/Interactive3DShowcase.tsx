@@ -42,8 +42,8 @@ export interface GlbModel {
 
 const GLB_MODELS: GlbModel[] = [
     {
-        id: "round-riser-coated",
-        name: "Round Riser – Coated Finish",
+        id: "round-grate-coated",
+        name: "Round Grate – Coated Finish",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
         hotspots: [
             {
@@ -57,7 +57,7 @@ const GLB_MODELS: GlbModel[] = [
             {
                 id: "rr-p2",
                 title: "Concentric Ring Profile",
-                description: "Precision-machined circular profile ensures a snug universal fit over standard round manhole frames and utility castings.",
+                description: "Precision-machined circular profile ensures a snug universal fit over standard round trench frames and utility castings.",
                 x: 0.7, y: -0.2, z: 0.3,
                 specLabel: "Profile Shape",
                 specValue: "Round Concentric Ring"
@@ -65,8 +65,8 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "round-riser-with-screw",
-        name: "Round Riser with Screw",
+        id: "round-grate-with-screw",
+        name: "Round Grate with Screw",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
         hotspots: [
             {
@@ -83,13 +83,13 @@ const GLB_MODELS: GlbModel[] = [
                 description: "Reinforced structural profile designed to bear continuous high-velocity impact loads from commercial truck traffic.",
                 x: 0.6, y: 0, z: 0.4,
                 specLabel: "Traffic Rating",
-                specValue: "Heavy-Duty Paving Grade"
+                specValue: "Heavy-Duty Trenching Grade"
             }
         ]
     },
     {
-        id: "round-riser-low-screw",
-        name: "Round Riser Low Screw",
+        id: "round-grate-low-screw",
+        name: "Round Grate Low Screw",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
         hotspots: [
             {
@@ -103,7 +103,7 @@ const GLB_MODELS: GlbModel[] = [
             {
                 id: "rl-p2",
                 title: "Precision Grade Matching",
-                description: "Allows for micro-adjustments in environments where standard risers would exceed maximum allowable height constraints.",
+                description: "Allows for micro-adjustments in environments where standard grates would exceed maximum allowable height constraints.",
                 x: 0.6, y: 0, z: 0.4,
                 specLabel: "Tolerance",
                 specValue: "+/- 1/8 Inch Precision"
@@ -111,8 +111,8 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "square-riser-coated",
-        name: "Square Riser – Catch Basin",
+        id: "square-grate-coated",
+        name: "Square Grate – Catch Basin",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
         hotspots: [
             {
@@ -134,8 +134,8 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "rectangle-riser-coated",
-        name: "Rectangle Riser – Catch Basin",
+        id: "rectangle-grate-coated",
+        name: "Rectangle Grate – Catch Basin",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
         hotspots: [
             {
@@ -157,14 +157,14 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "curb-inlet-riser",
-        name: "Curb Inlet Riser",
+        id: "curb-inlet-grate",
+        name: "Curb Inlet Grate",
         path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
         hotspots: [
             {
                 id: "ci-p1",
                 title: "Curb-Side Geometry",
-                description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
+                description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent trenching.",
                 x: 0, y: 1.0, z: 0.5,
                 specLabel: "Application",
                 specValue: "Curb Inlet Adjustment"
@@ -180,9 +180,9 @@ const GLB_MODELS: GlbModel[] = [
         ]
     },
     {
-        id: "d-shape-paving-riser",
-        name: "D-Shape Paving Riser",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
+        id: "d-shape-trenching-grate",
+        name: "D-Shape Trench Grate",
+        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_trenching_riser.glb`,
         hotspots: [
             {
                 id: "ds-p1",

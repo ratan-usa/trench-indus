@@ -76,8 +76,8 @@ export default function ContactExtraordinary() {
               {/* 3D Image Container (Floating Animation) */}
               <div className="relative w-120 h-120 animate-[bounce_4s_ease-in-out_infinite] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`} // Put a high-res, transparent 3D render of a riser here
-                  alt="3D Paving Riser Render"
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grates-img-diagonal-view_(5).jpeg`} // Put a high-res, transparent 3D render of a grate here
+                  alt="3D Trench Grate Render"
                   fill
                   className="object-contain drop-shadow-[0_20px_50px_rgba(201,32,39,0.5)]"
                 />
@@ -138,7 +138,7 @@ export default function ContactExtraordinary() {
                       name="company"
                       required
                       className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all"
-                      placeholder="City Paving Dept."
+                      placeholder="City Trenching Dept."
                     />
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function ContactExtraordinary() {
                     rows={4}
                     required
                     className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-lg px-5 py-4 focus:outline-none focus:border-[#CC0000] focus:ring-1 focus:ring-[#CC0000] transition-all resize-none"
-                    placeholder="We need 50 expandable adjustment rings for a highway resurfacing project..."
+                    placeholder="We need 50 expandable adjustment rings for a highway streetscaping project..."
                   ></textarea>
                 </div>
 

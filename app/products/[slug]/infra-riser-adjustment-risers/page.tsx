@@ -96,9 +96,9 @@ const ProductCatalog = () => {
         <div className="mb-12 border-b-4 border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-4">
           <div>
             <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight">
-              Adjustment <span className="text-[#CC0000]">Risers</span>
+              Adjustment <span className="text-[#CC0000]">Grates</span>
             </h1>
-            <p className="text-gray-500 font-medium mt-2">Filter and search through our industrial risers.</p>
+            <p className="text-gray-500 font-medium mt-2">Filter and search through our industrial grates.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">

@@ -17,7 +17,7 @@ const FEATURE_BADGES = [
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
 const words = ["Double Strength", "Powered Coatings", "Advanced Designs"];
-export default function PavingPathHero() {
+export default function trenchingPathHero() {
   const [mounted, setMounted] = useState(false);
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -126,7 +126,7 @@ export default function PavingPathHero() {
           >
             <Image  
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Skype_Picture_2024_12_27T12_12_04_319Z.jpeg`}
-              alt="Trench Riser Manhole Cover Assembly"
+              alt="Trench Grate Trench Cover Assembly"
               height={400}  
               width={500}
               style={{ width: "auto", height: "auto" }}

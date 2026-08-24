@@ -92,10 +92,10 @@ const ACCESSORIES_DATA = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-06.JPG`
   },
   {
-    title: "Manhole Cover Hook",
+    title: "Trench Cover Hook",
     category: "Lifting Hooks & Keys",
     sku: "PR-MHH-01",
-    description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
+    description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal trench cover frames cleanly.",
     spec: "Heat-Treated Solid Carbon Steel",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/pre-trench-04.jpg`
   },
@@ -111,14 +111,14 @@ const ACCESSORIES_DATA = [
     title: "Service Box Extensions",
     category: "Specialized Kits",
     sku: "PR-SBE-22",
-    description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during paving overlays.",
+    description: "Heavy structural sleeve extensions that telescope over service boxes to raise them cleanly to grade during trenching stormwater systems.",
     spec: "Available in Three Uniform Length Tiers",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`
   },
 
   // --- FILE REFERENCE: 9.jpg ---
   {
-    title: "The Chook™ – Combination Chisel & Manhole Hook",
+    title: "The Chook™ – Combination Chisel & Trench Hook",
     category: "Lifting Hooks & Keys",
     sku: "PR-CHK-02",
     description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
@@ -252,7 +252,7 @@ export default function CompleteToolsCatalog() {
 
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-900 leading-tight">
               Tools & Site Accessories <br />
-              <span className="text-[#CC0000]">For Paving & Utility Crews.</span>
+              <span className="text-[#CC0000]">For Trenching & Utility Crews.</span>
             </h2>
           </div>
 

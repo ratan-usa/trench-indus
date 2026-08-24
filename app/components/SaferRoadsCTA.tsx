@@ -49,7 +49,7 @@ export default function SaferRoadsCTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-zinc-400 font-medium max-w-2xl mb-12 leading-relaxed"
         >
-          Eliminate dangerous manhole drops and sinking catch basins. Equip your infrastructure with precision-engineered adjustment risers designed for permanent structural integrity.
+          Eliminate dangerous trench drops and sinking catch basins. Equip your infrastructure with precision-engineered adjustment grates designed for permanent structural integrity.
         </motion.p>
 
         <motion.div

@@ -21,14 +21,14 @@ export default function CatchBasinSteelRisers() {
         {/* --- MAIN SECTION INTRO HEADER --- */}
         <div className="w-full space-y-3">
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#cc2221] flex items-center gap-2">
-            <Layers className="w-4 h-4 text-[#cc2221]" /> Catch Basin Risers
+            <Layers className="w-4 h-4 text-[#cc2221]" /> Catch Basin Grates
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-[#0a0a0a] leading-none">
-            Steel catch basin risers, <br />
+            Steel catch basin grates, <br />
             <span className="text-[#cc2221]">made to fit.</span>
           </h2>
           <p className="text-zinc-600 text-lg font-medium leading-relaxed max-w-none">
-            Minimize intensive structural rebuilds during overlays. Our high-tensile steel riser extensions are built to fit your existing catch basin frames.
+            Minimize intensive structural rebuilds during stormwater systems. Our high-tensile steel grate extensions are built to fit your existing catch basin frames.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function CatchBasinSteelRisers() {
                   <h3 className="font-black uppercase tracking-wider text-xs text-[#0a0a0a]">Depth Grading</h3>
                 </div>
                 <p className="text-sm font-bold text-zinc-800">3/4" Base with 1/4" Increments</p>
-                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin asphalt lifts and scales upward seamlessly in precise Custom rise increments available.</p>
+                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin infrastructure lifts and scales upward seamlessly in precise Custom rise increments available.</p>
               </div>
 
             </div>
@@ -86,14 +86,14 @@ export default function CatchBasinSteelRisers() {
           <div className="lg:col-span-5 relative  h-full bg-gray-50 border border-gray-200 rounded-xs overflow-hidden p-6 flex items-center justify-center group shadow-sm hover:border-[#cc2221] transition-colors duration-300 w-full">
             <Image
               src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trench-grate-horizontal-view_(12).jpeg`}
-              alt="Catch Basin Riser Schematic Layout"
+              alt="Catch Basin Grate Schematic Layout"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-contain p-8 mix-blend-multiply transition-transform duration-500 group-hover:scale-102"
             />
 
             <div className="absolute bottom-4 left-4 right-4 bg-[#0a0a0a]/95 border border-zinc-900 px-3 py-2 text-[9px] uppercase font-bold tracking-wider text-zinc-400 text-center pointer-events-none">
-              Asset Display: Steel Catch Basin Riser Component
+              Asset Display: Steel Catch Basin Grate Component
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export default function CatchBasinSteelRisers() {
 
           <div className="w-full xl:w-auto shrink-0 relative z-10">
             <Button className="w-full xl:w-auto bg-[#cc2221] hover:bg-[#b01e1d] text-white font-black uppercase tracking-widest text-xs h-12 px-8 rounded-none transition-all duration-200 shadow-md flex items-center justify-center gap-2 border-none">
-              Submit Riser Measurements <ArrowUpRight className="w-4 h-4" />
+              Submit Grate Measurements <ArrowUpRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
